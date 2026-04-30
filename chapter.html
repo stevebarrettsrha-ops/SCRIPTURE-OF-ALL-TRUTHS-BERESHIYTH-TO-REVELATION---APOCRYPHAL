@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter — Scripture of All Truths</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  body { display: flex; flex-direction: column; height: 100vh; margin: 0; }
+  .chapter-bar { flex: 0 0 auto; }
+  .pdf-frame { flex: 1 1 auto; height: auto; }
+</style>
+</head>
+<body>
+
+<div class="chapter-bar">
+  <div class="title">
+    <a href="index.html" style="margin-right:0.6rem;">&larr;</a>
+    <span class="heb" id="bar-heb">…</span>
+    <span class="eng" id="bar-eng"></span>
+    <span id="bar-ch" style="margin-left:0.6rem; color: var(--ink-dim);"></span>
+  </div>
+  <div class="controls">
+    <a id="prev" href="#">&larr; Prev</a>
+    <a id="book-toc" href="#">Chapters</a>
+    <a id="next" href="#">Next &rarr;</a>
+  </div>
+</div>
+
+<iframe id="pdf" class="pdf-frame" src="about:blank" title="Scripture page"></iframe>
+
+<script>
+const params = new URLSearchParams(location.search);
+const bookId = params.get('id');
+const chapter = parseInt(params.get('ch'), 10) || 1;
+
+fetch('assets/index.json')
+  .then(r => r.json())
+  .then(data => {
+    const book = data.books.find(b => b.id === bookId);
+    if (!book) {
+      document.body.innerHTML = '<p class="note">Book not found. <a href="index.html">Return home</a></p>';
+      return;
+    }
+    const chData = book.chapters[String(chapter)];
+    if (!chData) {
+      document.body.innerHTML = `<p class="note">Chapter ${chapter} not found in ${book.hebrew}. <a href="book.html?id=${book.id}">Choose another chapter</a></p>`;
+      return;
+    }
+
+    document.title = `${book.hebrew} ${book.chapter_count > 1 ? chapter : ''} — Scripture of All Truths`;
+    document.getElementById('bar-heb').textContent = book.hebrew;
+    document.getElementById('bar-eng').textContent = `(${book.english})`;
+    if (book.chapter_count > 1) {
+      document.getElementById('bar-ch').textContent = `Chapter ${chapter}`;
+    }
+
+    // Prev / Next links
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    if (chapter <= 1) prev.classList.add('disabled');
+    else prev.href = `chapter.html?id=${book.id}&ch=${chapter - 1}`;
+
+    if (chapter >= book.chapter_count) next.classList.add('disabled');
+    else next.href = `chapter.html?id=${book.id}&ch=${chapter + 1}`;
+
+    document.getElementById('book-toc').href = `book.html?id=${book.id}`;
+
+    // Embed PDF at the right page using #page=N URL fragment (PDF.js & native PDF viewers)
+    const pdfPath = `SCRIPTURE/${chData.pdf}#page=${chData.page}&toolbar=1&navpanes=0&view=FitH`;
+    document.getElementById('pdf').src = pdfPath;
+  })
+  .catch(err => {
+    document.body.innerHTML = '<p class="note">Failed to load canon index. Open this site via a local web server (not file://). E.g. <code>python3 -m http.server</code></p>';
+    console.error(err);
+  });
+</script>
+</body>
+</html>

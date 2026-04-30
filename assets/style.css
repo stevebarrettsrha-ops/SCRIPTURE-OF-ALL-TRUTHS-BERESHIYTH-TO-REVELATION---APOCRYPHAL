@@ -1,0 +1,231 @@
+:root {
+  --bg: #1a1410;
+  --panel: #251c16;
+  --ink: #f4ead5;
+  --ink-dim: #c9b893;
+  --gold: #d4af37;
+  --gold-dim: #8a6f23;
+  --rule: #4a3a28;
+  --link: #f1d573;
+  --link-hover: #fff3b8;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Cardo", "EB Garamond", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.55;
+  min-height: 100%;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(180deg, #2c211a 0%, #1a1410 100%);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  text-align: center;
+}
+.site-header .sub {
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+  text-align: center;
+  margin-top: 0.25rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.site-header nav {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.site-header nav a { margin: 0 0.6rem; }
+
+main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+
+.section {
+  margin-bottom: 2.5rem;
+}
+.section h2 {
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.5rem 1rem;
+}
+.book-link {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-left: 2px solid transparent;
+  transition: border-color 120ms, background 120ms;
+}
+.book-link:hover {
+  border-left-color: var(--gold);
+  background: rgba(212,175,55,0.05);
+  text-decoration: none;
+}
+.book-link .heb {
+  display: block;
+  color: var(--link);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.book-link .eng {
+  display: block;
+  color: var(--ink-dim);
+  font-size: 0.78rem;
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
+/* Book chapter index */
+.book-title {
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+.book-title .heb {
+  font-size: 2.2rem;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+.book-title .eng {
+  color: var(--ink-dim);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+.chapter-link {
+  display: block;
+  padding: 0.7rem 0.4rem;
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--link);
+  font-size: 1rem;
+  transition: all 120ms;
+}
+.chapter-link:hover {
+  background: var(--gold);
+  color: #1a1410;
+  border-color: var(--gold);
+  text-decoration: none;
+}
+
+/* Chapter page */
+.chapter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  background: var(--panel);
+  border-bottom: 1px solid var(--rule);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.chapter-bar .title {
+  color: var(--gold);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.chapter-bar .title .heb {
+  letter-spacing: 0.02em;
+}
+.chapter-bar .title .eng {
+  color: var(--ink-dim);
+  font-style: italic;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+.chapter-bar .controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.chapter-bar .controls a, .chapter-bar .controls .btn {
+  padding: 0.35rem 0.8rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--link);
+  font-size: 0.9rem;
+}
+.chapter-bar .controls a:hover {
+  background: var(--gold);
+  color: #1a1410;
+  border-color: var(--gold);
+  text-decoration: none;
+}
+.chapter-bar .controls .disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: calc(100vh - 110px);
+  border: 0;
+  display: block;
+  background: #2a2018;
+}
+
+.note {
+  padding: 1rem;
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Search */
+#search {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+#search:focus { outline: none; border-color: var(--gold); }
+
+@media (max-width: 600px) {
+  .pdf-frame { height: calc(100vh - 150px); }
+  .chapter-bar { padding: 0.5rem; font-size: 0.9rem; }
+  .book-title .heb { font-size: 1.6rem; }
+}
