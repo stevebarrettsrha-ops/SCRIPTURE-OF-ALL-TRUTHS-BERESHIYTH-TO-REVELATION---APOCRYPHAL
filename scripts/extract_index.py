@@ -94,8 +94,14 @@ BESORAH_BOOKS = [
 ]
 
 def normalize(s):
-    """Strip accents and make uppercase for matching."""
-    return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').upper()
+    """Strip accents, normalize curly quotes/dashes to ASCII, uppercase."""
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    # Normalize Unicode punctuation that varies between source and our table
+    for src, dst in [('‘', "'"), ('’', "'"), ('“', '"'), ('”', '"'),
+                     ('—', '-'), ('–', '-')]:
+        s = s.replace(src, dst)
+    return s.upper()
 
 def printed_to_pdf(printed_page):
     """0001.pdf covers printed pages 1-700; 0002.pdf covers 701-1344."""
@@ -131,28 +137,32 @@ def build_besorah_index():
         heb_norm = normalize(match_name)
         heb_norm_nospace = heb_norm.replace(" ", "")
 
-        # Walk pages in order. On each page (column-aware text), find ALL
-        # chapter-heading patterns: `\n<num>\n<Capital>` (chapter num on its own
-        # line followed by verse-1 text). The first occurrence on a page wins
-        # for that chapter. We process pages sequentially so chapter N's anchor
-        # is locked before chapter N+1 is searched for.
+        # Walk pages in order, looking for actual chapter starts in the body
+        # (digit alone on a line followed by a capital — the Besorah's drop-cap
+        # convention). The running page header (e.g. "TEHILLIM 51") is NOT
+        # reliable, because the Besorah's running head sometimes references a
+        # psalm that begins on a later page.
+        # We DO use the running header for the FIRST chapter of each book, since
+        # the header on the first page reliably says "<book> 1".
+        first_page_txt = get_text(start)
+        first_head = normalize(first_page_txt[:200])
+        for pat in (rf'{re.escape(heb_norm)}\s+(\d+)',
+                    rf'{re.escape(heb_norm_nospace)}\s*(\d+)'):
+            m = re.search(pat, first_head)
+            if m:
+                ch = int(m.group(1))
+                if 1 <= ch <= ch_count and ch not in ch_pages:
+                    ch_pages[ch] = start
+                break
+
         for p in range(start, end + 1):
             txt = get_text(p)
-            # Page-header chapter mark, e.g. "722TEHILLIM 4 …" — detects pages
-            # where the first chapter on the page is the continuation header.
-            head = normalize(txt[:200])
-            for pat in (rf'{re.escape(heb_norm)}\s+(\d+)',
-                        rf'{re.escape(heb_norm_nospace)}\s*(\d+)'):
-                m = re.search(pat, head)
-                if m:
-                    ch = int(m.group(1))
-                    if 1 <= ch <= ch_count and ch not in ch_pages:
-                        ch_pages[ch] = p
-                    break
-
-            # Body chapter starts: a digit on its own line followed by capital.
-            # Skip the header region we already scanned to avoid double-counting.
-            body = txt[200:]
+            # Body chapter starts: a digit on its own line followed by a capital.
+            # Exclude only the FIRST LINE (which is the running header like
+            # "TEHILLIM 51" or "653 DANI'EL 2") so a chapter heading on row 2 is
+            # still detected.
+            first_nl = txt.find('\n')
+            body = txt[first_nl + 1:] if first_nl != -1 else txt
             for m in re.finditer(r'(?:^|\n)\s*(\d+)\s*\n\s*(?=[A-ZÀ-￿"“‘\'])', body):
                 ch = int(m.group(1))
                 if 1 <= ch <= ch_count and ch not in ch_pages:
