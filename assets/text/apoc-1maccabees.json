@@ -1,0 +1,1465 @@
+{
+ "id": "apoc-1maccabees",
+ "hebrew": "1 MAQQABIM",
+ "english": "1 Maccabees",
+ "section": "Apocrypha",
+ "chapter_count": 16,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "7": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "13": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "14": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "15": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "16": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "After Alexander son of Philip, the Macedonian, who came from the land of Kittim, had defeated Darius, king of the Persians and the Medes, he succeeded him as king. (He had previously become king of Greece.)"
+    },
+    {
+     "n": 2,
+     "t": "He fought many battles, conquered strongholds, and put to death the kings of the earth."
+    },
+    {
+     "n": 3,
+     "t": "He advanced to the ends of the earth, and plundered many nations. When the earth became quiet before him, he was exalted, and his heart was lifted up."
+    },
+    {
+     "n": 4,
+     "t": "He gathered a very strong army and ruled over countries, nations, and princes, and they became tributary to him."
+    },
+    {
+     "n": 5,
+     "t": "After this he fell sick and perceived that he was dying."
+    },
+    {
+     "n": 6,
+     "t": "So he summoned his most honored officers, who had been brought up with him from youth, and divided his kingdom among them while he was still alive."
+    },
+    {
+     "n": 7,
+     "t": "And after Alexander had reigned twelve years, he died."
+    },
+    {
+     "n": 8,
+     "t": "Then his officers began to rule, each in his own place."
+    },
+    {
+     "n": 9,
+     "t": "They all put on crowns after his death, and so did their sons after them for many years; and they caused many evils on the earth."
+    },
+    {
+     "n": 10,
+     "t": "From them came forth a sinful root, Antiochus Epiphanes, son of Antiochus the king; he had been a hostage in Rome. He began to reign in the one hundred and thirty-seventh year of the kingdom of the Greeks."
+    },
+    {
+     "n": 11,
+     "t": "In those days lawless men came forth from Israel, and misled many, saying, \"Let us go and make a covenant with the Gentiles round about us, for since we separated from them many evils have come upon us.\""
+    },
+    {
+     "n": 12,
+     "t": "This proposal pleased them,"
+    },
+    {
+     "n": 13,
+     "t": "and some of the people eagerly went to the king. He authorized them to observe the ordinances of the Gentiles."
+    },
+    {
+     "n": 14,
+     "t": "So they built a gymnasium in Jerusalem, according to Gentile custom,"
+    },
+    {
+     "n": 15,
+     "t": "and removed the marks of circumci sion, and abandoned the holy covenant. They joined with the Gentiles and sold themselves to do evil."
+    },
+    {
+     "n": 16,
+     "t": "When Antiochus saw that his kingdom was established, he determined to become king of the land of Egypt, that he might reign over both kingdoms."
+    },
+    {
+     "n": 17,
+     "t": "So he invaded Egypt with a strong force, with chariots and elephants and cavalry and with a large fleet."
+    },
+    {
+     "n": 18,
+     "t": "He engaged Ptolemy king of Egypt in battle, and Ptolemy turned and fled before him, and many were wounded and felL"
+    },
+    {
+     "n": 19,
+     "t": "And they captured the fortified cities in the land of Egypt, and he plundered the land of Egypt."
+    },
+    {
+     "n": 20,
+     "t": "After subduing Egypt, Antiochus returned in the one hundred and forty-third year. He went up against Israel and came to Jerusalem with a strong force."
+    },
+    {
+     "n": 21,
+     "t": "He arrogantly entered the sanctuary and took the golden altar, the lampstand for the light, and all its utensils."
+    },
+    {
+     "n": 22,
+     "t": "He took also the table for the bread of the Presence, the cups for drink offerings, the bowls, the golden censers, the curtain, the crowns, and the gold decoration on the front of the temple; he stripped it all off."
+    },
+    {
+     "n": 23,
+     "t": "He took the silver and the gold, and the costly vessels; he took also the hidden treasures which he found."
+    },
+    {
+     "n": 24,
+     "t": "Taking them all, he departed to his own land. He committed deeds of murder, and spoke with great arrogance."
+    },
+    {
+     "n": 25,
+     "t": "Israel mourned deeply in every commun ity,"
+    },
+    {
+     "n": 26,
+     "t": "rulers and elders groaned, maidens and young men became faint, the beauty of women faded."
+    },
+    {
+     "n": 27,
+     "t": "Every bridegroom took up the lament; she who sat in the bridal chamber was mourning."
+    },
+    {
+     "n": 28,
+     "t": "Even the land shook for its inhabitants, and all the house of Jacob was clothed with shame."
+    },
+    {
+     "n": 29,
+     "t": "Two years later the king sent to the cities of Judah a chief collector of tribute, and he came to Jerusalem with a large force."
+    },
+    {
+     "n": 30,
+     "t": "Deceitfully he spoke peaceable words to them, and they believed him; but he suddenly fell upon the city, dealt it a severe blow, and destroyed many people of IsraeL"
+    },
+    {
+     "n": 31,
+     "t": "He plundered the city, burned it with fire, and tore down its houses and its surrounding walls."
+    },
+    {
+     "n": 32,
+     "t": "And they took captive the women and children, and seized the cattle."
+    },
+    {
+     "n": 33,
+     "t": "Then they fortified the city of David with a great strong wall and strong towers, and it became their citadeL"
+    },
+    {
+     "n": 34,
+     "t": "And they stationed there a sinful people, lawless men. These strengthened their position;"
+    },
+    {
+     "n": 35,
+     "t": "they stored up arms and food, and collecting the spoils of Jerusalem they stored them there, and became a great snare."
+    },
+    {
+     "n": 36,
+     "t": "It became an ambush against the sanctuary, an evil adversary of Israel continually."
+    },
+    {
+     "n": 37,
+     "t": "On every side of the sanctuary they shed innocent blood; they even defiled the sanctuary."
+    },
+    {
+     "n": 38,
+     "t": "Because of them the residents of Jerusalem fled; she became a dwelling of strangers; she became strange to her offspring, and her children forsook her."
+    },
+    {
+     "n": 39,
+     "t": "Her sanctuary became desolate as a desert; her feasts were turned into mourning, her sabbaths into a reproach, her honor into contempt."
+    },
+    {
+     "n": 40,
+     "t": "Her dishonor now grew as great as her glory; her exaltation was turned into mourning."
+    },
+    {
+     "n": 41,
+     "t": "Then the king wrote to his whole kingdom that all should be one people,"
+    },
+    {
+     "n": 42,
+     "t": "and that each should give up his customs."
+    },
+    {
+     "n": 43,
+     "t": "All the Gentiles accepted the command of the king. Many even from Israel gladly adopted his religion; they sacrificed to idols and profaned the sabbath."
+    },
+    {
+     "n": 44,
+     "t": "And the king sent letters by messengers to Jerusalem and the cities of Judah; he directed them to follow customs strange to the land,"
+    },
+    {
+     "n": 45,
+     "t": "to forbid burnt offerings and sacrifices and drink offerings in the sanctuary, to profane sabbaths and feasts,"
+    },
+    {
+     "n": 46,
+     "t": "to defile the sanctuary and the priests,"
+    },
+    {
+     "n": 47,
+     "t": "to build altars and sacred precincts and shrines for idols, to sacrifice swine and unclean animals,"
+    },
+    {
+     "n": 48,
+     "t": "and to leave their sons uncircumcised. They were to make themselves abominable by everything unclean and profane,"
+    },
+    {
+     "n": 49,
+     "t": "so that they should forget the law and change all the ordinances."
+    },
+    {
+     "n": 50,
+     "t": "\"And whoever does not obey the command of the king shall die.\""
+    },
+    {
+     "n": 51,
+     "t": "In such words he wrote to his whole kingdom. And he appointed inspectors over all the people and commanded the cities of Judah to offer sacrifice, city by city."
+    },
+    {
+     "n": 52,
+     "t": "Many of the people, every one who forsook the law, joined them, and they did evil in the land;"
+    },
+    {
+     "n": 53,
+     "t": "they drove Israel into hiding in every place of refuge they had."
+    },
+    {
+     "n": 54,
+     "t": "Now on the fifteenth day of Chislev, in the one hundred and forty-fifth year, they erected a desolating sacrilege upon the altar of burnt offering. They also built altars in the surrounding cities of Judah,"
+    },
+    {
+     "n": 55,
+     "t": "and burned incense at the doors of the houses and in the streets."
+    },
+    {
+     "n": 56,
+     "t": "The books of the law which they found they tore to pieces and burned with fire."
+    },
+    {
+     "n": 57,
+     "t": "Where the book of the covenant was found in the possession of any one, or if any one adhered to the law, the decree of the king condemned him to death."
+    },
+    {
+     "n": 58,
+     "t": "They kept using violence against Israel, against those found month after month in the cities."
+    },
+    {
+     "n": 59,
+     "t": "And on the twenty-fifth day of the month they offered sacrifice on the altar which was upon the altar of burnt offering."
+    },
+    {
+     "n": 60,
+     "t": "Accord ing to the decree, they put to death the women who had their children circumci sed,"
+    },
+    {
+     "n": 61,
+     "t": "and their families and those who circumcised them; and they hung the infants from their mothers' necks."
+    },
+    {
+     "n": 62,
+     "t": "But many in Israel stood firm and were resolved in their hearts not to eat unclean food."
+    },
+    {
+     "n": 63,
+     "t": "They chose to die rather than to be defiled by food or to profane the holy covenant; and they did die."
+    },
+    {
+     "n": 64,
+     "t": "And very great wrath came upon Israel. IMac.2"
+    },
+    {
+     "n": 65,
+     "t": "\"Now behold, I know that Simeon your brother is wise in counsel; always listen to him; he shall be your father."
+    },
+    {
+     "n": 66,
+     "t": "Judas Maccabeus has been a mighty warrior from his youth; he shall command the army for you and fight the battle against the peoples."
+    },
+    {
+     "n": 67,
+     "t": "You shall rally about you all who observe the law, and avenge the wrong done to your people."
+    },
+    {
+     "n": 68,
+     "t": "Pay back the Gentiles in full, and heed what the law commands.\""
+    },
+    {
+     "n": 69,
+     "t": "Then he blessed them, and was gathered to his fathers."
+    },
+    {
+     "n": 70,
+     "t": "He died in the one hundred and forty-sixth year and was buried in the tomb of his fathers at Modein. And all Israel mourned for him with great lamentation. IMac.3"
+    }
+   ],
+   "page": 82,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  }
+ }
+}

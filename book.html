@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book — Scripture of All Truths</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <h1 id="page-title">SCRIPTURE OF ALL TRUTHS</h1>
+  <div class="sub" id="page-section"></div>
+  <nav><a href="index.html">&larr; All Books</a></nav>
+</header>
+
+<main>
+  <div class="book-title">
+    <div class="heb" id="book-heb"></div>
+    <div class="eng" id="book-eng"></div>
+  </div>
+  <div id="chapter-list"></div>
+</main>
+
+<script>
+const params = new URLSearchParams(location.search);
+const bookId = params.get('id');
+
+fetch('assets/index.json')
+  .then(r => r.json())
+  .then(data => {
+    const book = data.books.find(b => b.id === bookId);
+    if (!book) {
+      document.getElementById('chapter-list').innerHTML = '<p class="note">Book not found.</p>';
+      return;
+    }
+    document.title = `${book.hebrew} (${book.english}) — Scripture of All Truths`;
+    document.getElementById('page-title').textContent = book.hebrew;
+    document.getElementById('page-section').textContent = book.section.toUpperCase();
+    document.getElementById('book-heb').textContent = book.hebrew;
+    document.getElementById('book-eng').textContent = book.english;
+
+    const list = document.getElementById('chapter-list');
+    if (book.chapter_count === 1) {
+      // Single-chapter books — link directly to the only chapter
+      const a = document.createElement('a');
+      a.className = 'chapter-link';
+      a.href = `chapter.html?id=${encodeURIComponent(book.id)}&ch=1`;
+      a.style.maxWidth = '300px';
+      a.style.margin = '2rem auto';
+      a.style.fontSize = '1.1rem';
+      a.style.padding = '1rem';
+      a.textContent = `Read ${book.hebrew} →`;
+      list.appendChild(a);
+    } else {
+      const heading = document.createElement('p');
+      heading.style.textAlign = 'center';
+      heading.style.color = 'var(--ink-dim)';
+      heading.style.marginTop = '1rem';
+      heading.textContent = `${book.chapter_count} chapters`;
+      list.appendChild(heading);
+
+      const grid = document.createElement('div');
+      grid.className = 'chapter-grid';
+      for (let i = 1; i <= book.chapter_count; i++) {
+        const a = document.createElement('a');
+        a.className = 'chapter-link';
+        a.href = `chapter.html?id=${encodeURIComponent(book.id)}&ch=${i}`;
+        a.textContent = i;
+        grid.appendChild(a);
+      }
+      list.appendChild(grid);
+    }
+  })
+  .catch(err => {
+    document.getElementById('chapter-list').innerHTML =
+      '<p class="note">Failed to load canon index. Open this site via a local web server (not file://).</p>';
+    console.error(err);
+  });
+</script>
+</body>
+</html>

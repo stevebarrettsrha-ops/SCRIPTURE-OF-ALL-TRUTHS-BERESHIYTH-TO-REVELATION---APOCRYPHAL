@@ -1,0 +1,591 @@
+{
+ "id": "amos",
+ "hebrew": "AMOS",
+ "english": "Amos",
+ "section": "Nebi'im",
+ "chapter_count": 9,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The words of Amos, who was among the herdsmen of Teqowa, which he saw concerning Yisra’ĕl in the days of Uzziyah sovereign of Yahuḏah and in the days of Yaroḇ‛am son of Yo’ash, sovereign of Yisra’ĕl, two years before the earthquake."
+    },
+    {
+     "n": 2,
+     "t": "And he said, “HWHY roars from Tsiyon and gives forth His voice from Yerushalayim. And the pastures of the shepherds shall mourn and the top of Karmel shall wither.”"
+    },
+    {
+     "n": 3,
+     "t": "Thus said HWHY, “For three transgressions of Damascus and for four, I do not turn it back, because they threshed Gil‛aḏ with threshing implements of iron."
+    },
+    {
+     "n": 4,
+     "t": "“But I shall send fire upon the house of Ḥaza’ĕl and it shall consume the palaces of Ben-Haḏaḏ."
+    },
+    {
+     "n": 5,
+     "t": "“And I shall break the bar of Damascus and cut off the inhabitant from the Valley of Awen and the one who holds the sceptre from Bĕyth Ĕḏen. And the people of Aram shall go exiled to Qir,” said HWHY."
+    },
+    {
+     "n": 6,
+     "t": "Thus said HWHY, “For three transgressions of Azzah and for four, I do not turn it back, because they took into exile an entire exile, to surrender it to Eḏom."
+    },
+    {
+     "n": 7,
+     "t": "“But I shall send fire upon the wall of Azzah and it shall consume its palaces."
+    },
+    {
+     "n": 8,
+     "t": "“And I shall cut off the inhabitant from Ashdoḏ and the one who holds the sceptre from Ashqelon. And I shall turn My hand against Eqron and the remnant of the Philistines shall perish,” said the Master HWHY."
+    },
+    {
+     "n": 9,
+     "t": "Thus said HWHY, “For three transgressions of Tsor and for four, I do not turn it back, because they surrendered an entire exile to Eḏom and did not remember the brotherly covenant."
+    },
+    {
+     "n": 10,
+     "t": "“But I shall send fire upon the wall of Tsor and it shall consume its palaces.”"
+    },
+    {
+     "n": 11,
+     "t": "Thus said HWHY, “For three transgressions of Eḏom and for four, I do not turn it back, because he pursued his brother with the sword and cast off all compassion. And his displeasure tore incessantly and he kept his wrath forever."
+    },
+    {
+     "n": 12,
+     "t": "“But I shall send fire upon Tĕman and it shall consume the palaces of Botsrah.”"
+    },
+    {
+     "n": 13,
+     "t": "Thus said HWHY, “For three transgressions of the children of Ammon and for four, I do not turn it back, because they ripped open the pregnant women in Gil‛aḏ, to enlarge their border."
+    },
+    {
+     "n": 14,
+     "t": "“So I shall kindle a fire upon the wall of Rabbah and it shall consume its palaces, with a shout in the day of battle, with a storm in the day of the whirlwind."
+    },
+    {
+     "n": 15,
+     "t": "“And their sovereign shall go into exile, he and his heads together,” said HWHY."
+    }
+   ],
+   "page": 682,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Thus said HWHY, “For three transgressions of Mo’aḇ and for four, I do not turn it back, because he burned the bones of the sovereign of Eḏom to lime."
+    },
+    {
+     "n": 2,
+     "t": "“But I shall send fire upon Mo’aḇ and it shall consume the palaces of Qeriyoth. And Mo’aḇ shall die amid uproar, with a cry and with the sound of a ram’s horn."
+    },
+    {
+     "n": 3,
+     "t": "“And I shall cut off the judge from its midst and slay all its heads with him,” said HWHY."
+    },
+    {
+     "n": 4,
+     "t": "Thus said HWHY, “For three transgressions of Yahuḏah and for four, I do not turn it back because they have rejected the Torah of HWHY and did not guard His laws. And their lies after which their fathers walked lead them astray."
+    },
+    {
+     "n": 5,
+     "t": "“But I shall send fire upon Yahuḏah and it shall consume the palaces of Yerushalayim.”"
+    },
+    {
+     "n": 6,
+     "t": "Thus said HWHY, “For three transgressions of Yisra’ĕl and for four, I do not turn it back, because they sell the righteous for silver and the poor for a pair of sandals,"
+    },
+    {
+     "n": 7,
+     "t": "who crush the head of the poor ones in the dust of the earth and turn aside the way of the meek. And a man and his father go in to the same girl, to defile My set-apart Name."
+    },
+    {
+     "n": 8,
+     "t": "“And they lie down by every altar on garments taken in pledge and in the house of their mighty one they drink the wine of those who have been fined."
+    },
+    {
+     "n": 9,
+     "t": "“Yet I destroyed the Amorite before them, whose height was like the height of the cedars. And he was as strong as the oaks, yet I destroyed his fruit from above and his roots from beneath."
+    },
+    {
+     "n": 10,
+     "t": "“And I brought you up from the land of Mitsrayim and led you forty years through the wilderness, to possess the land of the Amorite."
+    },
+    {
+     "n": 11,
+     "t": "“And I raised up some of your sons as prophets and some of your young men as Nazirites. Not so? O you children of Yisra’ĕl?” declares HWHY."
+    },
+    {
+     "n": 12,
+     "t": "“But you made the Nazirites drink wine and commanded the prophets saying, ‘Do not prophesy!’"
+    },
+    {
+     "n": 13,
+     "t": "“See, I am weighed down by you, as a wagon is weighed down when filled with sheaves."
+    },
+    {
+     "n": 14,
+     "t": "“And a place to flee shall perish from the swift and the strong not strengthen his power and the mighty not save his life,"
+    },
+    {
+     "n": 15,
+     "t": "and he who handles the bow not stand and the swift of foot not save, nor he who rides a horse save his life,"
+    },
+    {
+     "n": 16,
+     "t": "and the bravest among the mighty flee naked, in that day,” declares HWHY."
+    }
+   ],
+   "page": 682,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Hear this word that HWHY has spoken against you, O children of Yisra’ĕl, against the entire clan which I brought up from the land of Mitsrayim, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“You alone have I known of all the clans of the earth, therefore I punish you for all your crookednesses.”"
+    },
+    {
+     "n": 3,
+     "t": "Would two walk together, without having met?"
+    },
+    {
+     "n": 4,
+     "t": "Does a lion roar in the forest, when he has no prey? Does a young lion give forth his voice out of his den unless he has caught?"
+    },
+    {
+     "n": 5,
+     "t": "Does a bird fall into a snare on the earth, where there is no trap for it? Does a snare spring up from the earth, if it has not captured prey?"
+    },
+    {
+     "n": 6,
+     "t": "If a ram’s horn is blown in a city, do the people not tremble? If there is calamity in a city, shall not HWHY have done it?"
+    },
+    {
+     "n": 7,
+     "t": "For the Master HWHY does no matter unless He reveals His secret to His servants the prophets."
+    },
+    {
+     "n": 8,
+     "t": "A lion has roared! Who is not afraid? The Master HWHY has spoken ! Who would not prophesy?"
+    },
+    {
+     "n": 9,
+     "t": "“Cry out at the palaces in Ashdoḏ and at the palaces in the land of Mitsrayim and say, ‘Gather on the mountains of Shomeron and see the many unrests in her midst and the oppressed ones within her."
+    },
+    {
+     "n": 10,
+     "t": "‘But they do not know to do what is right,’ declares HWHY, ‘these who store up plunder and loot in their palaces.’ ”"
+    },
+    {
+     "n": 11,
+     "t": "Therefore thus said the Master HWHY, “An enemy, even all around the land! And he shall bring down your strength from you and your palaces shall be plundered.”"
+    },
+    {
+     "n": 12,
+     "t": "Thus said HWHY, “As a shepherd rescues from the mouth of a lion two legs or a piece of an ear, so are the children of Yisra’ĕl who dwell in Shomeron to be rescued – in the corner of a bed and on the edge of a couch!"
+    },
+    {
+     "n": 13,
+     "t": "“Hear and witness against the house of Ya‛aqoḇ,” declares the Master HWHY, the Elohim of hosts."
+    },
+    {
+     "n": 14,
+     "t": "“For in the day I visit Yisra’ĕl for their transgressions, I shall also punish concerning the altars of Bĕyth Ĕl. vineyards and your fig trees and your olive trees. But you did not turn back to Me,” declares HWHY."
+    },
+    {
+     "n": 15,
+     "t": "“And I shall smite the winter house along with the summer house. And the houses of ivory shall perish and the great houses shall be swept away,” declares HWHY."
+    }
+   ],
+   "page": 683,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Hear this word, you cows of Bashan,who are on the mountain of Shomeron, who are oppressing the poor, who are crushing the needy, who are saying to their masters, “Bring wine, let us drink!”"
+    },
+    {
+     "n": 2,
+     "t": "The Master HWHY has sworn by His set-apartness, “See, days are coming upon you when He shall take you away with hooks and your descendants with fish-hooks,"
+    },
+    {
+     "n": 3,
+     "t": "and let you go out at the breaches, each woman before her and you shall be cast out toward Harmon,” declares HWHY."
+    },
+    {
+     "n": 4,
+     "t": "”Come to Bĕyth Ĕl and transgress, to Gilgal, increase transgression. And bring your slaughterings every morning, your tithes every three days."
+    },
+    {
+     "n": 5,
+     "t": "“And burn an offering of thanksgiving with leaven, proclaim voluntary offerings, loudly. For you have loved this, you children of Yisra’ĕl!” declares the Master HWHY."
+    },
+    {
+     "n": 6,
+     "t": "“And I also gave you cleanness of teeth in all your cities and lack of bread in all your places. But you did not turn back to Me,” declares HWHY."
+    },
+    {
+     "n": 7,
+     "t": "“And I also withheld rain from you, three months before the harvest. Then I would send rain on one city and on another city I would not send rain. One part was rained upon and where it did not rain the part would dry up."
+    },
+    {
+     "n": 8,
+     "t": "“Then two or three cities would wander to another city to drink water, but they were not satisfied. But you did not turn back to Me,” declares HWHY."
+    },
+    {
+     "n": 9,
+     "t": "“I have smitten you with blight and with mildew. The creeping locust devoured your many gardens and your"
+    }
+   ],
+   "page": 684,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Hear this word which I take up against you, this lamentation, O house of Yisra’ĕl:"
+    },
+    {
+     "n": 2,
+     "t": "The maiden of Yisra’ĕl has fallen, not to rise again. She lies forsaken on her land, with no one to lift her up."
+    },
+    {
+     "n": 3,
+     "t": "For thus said the Master HWHY, “The city that goes out by a thousand has a hundred left and that which goes out by a hundred has ten left to the house of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "For thus said HWHY to the house of Yisra’ĕl, “Seek Me and live,"
+    },
+    {
+     "n": 5,
+     "t": "but do not seek Bĕyth Ĕl, nor enter Gilgal, nor pass over to Be’ĕrsheḇa. For Gilgal shall certainly go into exile and Bĕyth Ĕl become a non-entity."
+    },
+    {
+     "n": 6,
+     "t": "“Seek HWHY and live, lest He break out like fire upon the house of Yosĕph and shall consume it, with no one to quench it in Bĕyth Ĕl. And the horns of the altar shall be broken and they shall fall to the ground."
+    },
+    {
+     "n": 7,
+     "t": "“And I also withheld rain from you, three months before the harvest. Then I would send rain on one city and on another city I would not send rain. One part was rained upon and where it did not rain the part would dry up."
+    },
+    {
+     "n": 8,
+     "t": "“Then two or three cities would wander to another city to drink water, but they were not satisfied. But you did not turn back to Me,” declares HWHY."
+    },
+    {
+     "n": 9,
+     "t": "“I have smitten you with blight and with mildew. The creeping locust devoured your many gardens and your"
+    },
+    {
+     "n": 10,
+     "t": "They hated the one who reproves in the gate and they despise the one who speaks the truth."
+    },
+    {
+     "n": 11,
+     "t": "Therefore, because you trample on the poor and take grain taxes from him – you have built houses of hewn stone but you are not going to dwell in them, you have planted pleasant vineyards but not drink wine from them."
+    },
+    {
+     "n": 12,
+     "t": "For I know your transgressions are many and your sins are great, afflicting the righteous and accepting bribes and turning aside the poor at the gate."
+    },
+    {
+     "n": 13,
+     "t": "Therefore the wise keep silent at that time, for it is an evil time."
+    },
+    {
+     "n": 14,
+     "t": "Seek good and not evil, so that you live. And let HWHY Elohim of hosts be with you, as you have spoken ."
+    },
+    {
+     "n": 15,
+     "t": "Hate evil and love good and set up right-ruling in the gate. It might be that HWHY Elohim of hosts shows favour to the remnant of Yosĕph."
+    },
+    {
+     "n": 16,
+     "t": "Therefore HWHY Elohim of hosts, HWHY, said this, “There is wailing in all open squares and in all the streets they say, ‘Alas! Alas!’ and shall call the farmer to mourning and skilled lamenters to wailing."
+    },
+    {
+     "n": 17,
+     "t": "“And in all vineyards there is wailing, for I pass through your midst,” said HWHY."
+    },
+    {
+     "n": 18,
+     "t": "Woe to you who are longing for the day of HWHY! What does the day of HWHY mean to you? It is darkness and not light,"
+    },
+    {
+     "n": 19,
+     "t": "as when a man flees from a lion and a bear shall meet him; or entered his house, rested his hand on the wall and a serpent shall bite him."
+    },
+    {
+     "n": 20,
+     "t": "Is not the day of HWHY darkness and not light? Is it not very dark, with no brightness in it?"
+    },
+    {
+     "n": 21,
+     "t": "“I have hated, I have despised your festivals and I am not pleased with your assemblies."
+    },
+    {
+     "n": 22,
+     "t": "“Though you offer Me burnt offerings and your grain offerings, I do not accept them, nor do I look on your fattened peace offerings."
+    },
+    {
+     "n": 23,
+     "t": "“Take away from Me the noise of your songs, for I do not hear the sound of your stringed instruments."
+    },
+    {
+     "n": 24,
+     "t": "“And let right-ruling roll on like water and righteousness like a mighty stream."
+    },
+    {
+     "n": 25,
+     "t": "“You brought Me slaughterings and meal offerings in the wilderness for forty years, O house of Yisra’ĕl,"
+    },
+    {
+     "n": 26,
+     "t": "but you took up Sikkuth your sovereign and Kiyyun, your idols, your astral mighty ones, which you made for yourselves!"
+    },
+    {
+     "n": 27,
+     "t": "“Therefore I shall send you into exile beyond Damascus,” said HWHY Elohim of hosts – His Name."
+    }
+   ],
+   "page": 684,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Woe to those at ease in Tsiyon and those trusting in Mount Shomeron, the distinguished ones among the chief of the nations, to whom the house of Yisra’ĕl comes!"
+    },
+    {
+     "n": 2,
+     "t": "Pass over to Kalneh and see and from there go to Ḥamath the great. Then go down to Gath of the Philistines. Are you better than these reigns, or is their border greater than your border?"
+    },
+    {
+     "n": 3,
+     "t": "You who are putting off the day of evil, yet bring near the seat of violence,"
+    },
+    {
+     "n": 4,
+     "t": "who are lying on beds of ivory and are stretched out on your couches and are eating lambs from the flock and calves from the midst of the stall,"
+    },
+    {
+     "n": 5,
+     "t": "who are singing to the sound of the harp, having composed songs for themselves like Dawiḏ,"
+    },
+    {
+     "n": 6,
+     "t": "who are drinking wine from bowls and anoint with the finest ointments, yet they have not been pained over the breach of Yosĕph! it consumed the great deep and did consume the portion,"
+    },
+    {
+     "n": 7,
+     "t": "This is what He showed me and see, HWHY stood on a wall made with a plumbline, with a plumb-line in His hand,"
+    },
+    {
+     "n": 8,
+     "t": "and HWHY said to me, “Amos, what do you see?” And I said, “A plumb- line.” And HWHY said, “See, I am setting a plumb-line in the midst of My people Yisra’ĕl, no longer do I pardon them."
+    },
+    {
+     "n": 9,
+     "t": "“And the high places of Yitsḥaq shall be laid waste and the set-apart places of Yisra’ĕl shall be destroyed. And I shall rise with the sword against the house of Yaroḇ‛am.”"
+    },
+    {
+     "n": 10,
+     "t": "Then Amatsyah the priest of Bĕyth Ĕl sent to Yaroḇ‛am sovereign of Yisra’ĕl, saying, “Amos has conspired against you in the midst of the house of Yisra’ĕl. The land is not able to endure all his words,"
+    },
+    {
+     "n": 11,
+     "t": "for this is what Amos said, ‘Yaroḇ‛am shall die by the sword and Yisra’ĕl certainly be exiled from their own land.’ ”"
+    },
+    {
+     "n": 12,
+     "t": "And Amatsyah said to Amos, “Go, you seer! Flee to the land of Yahuḏah and eat bread and prophesy there,"
+    },
+    {
+     "n": 13,
+     "t": "but do not prophesy any more at Bĕyth Ĕl, for it is the sovereign’s set- apart place and it is the house of the reign.”"
+    },
+    {
+     "n": 14,
+     "t": "And Amos answered and said to Amatsyah, “I am not a prophet, nor am I a son of a prophet, for I am a herdsman and a grower of sycamore figs."
+    },
+    {
+     "n": 15,
+     "t": "“But HWHY took me from behind the flock and HWHY said to me, ‘Go, prophesy to My people Yisra’ĕl.’"
+    },
+    {
+     "n": 16,
+     "t": "“And now, hear the Word of HWHY. You are saying, ‘Do not prophesy against Yisra’ĕl and do not drop words against the house of Yitsḥaq.’"
+    },
+    {
+     "n": 17,
+     "t": "“Therefore thus said HWHY, ‘Your"
+    }
+   ],
+   "page": 685,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "7": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "This is what the Master HWHY showed me and see, He was forming locust swarms at the beginning of the late crop. And see, it was the late crop after the mowings of the sovereign."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be, when they had finished eating the grass of the land, that I said, “O Master HWHY, forgive, I pray! How does Ya‛aqoḇ survive, for he is small?”"
+    },
+    {
+     "n": 3,
+     "t": "HWHY relented concerning this. “It shall not be,” said HWHY."
+    },
+    {
+     "n": 4,
+     "t": "This is what the Master HWHY showed me and see, the Master HWHY was calling to contend by fire and"
+    }
+   ],
+   "page": 686,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "This is what the Master HWHY showed me and see, a basket of summer fruit."
+    },
+    {
+     "n": 2,
+     "t": "And He said, “Amos, what do you see?” And I said, “A basket of summer fruit.” And HWHY said to me, “The end has come upon my people Yisra’ĕl, no longer do I pardon them."
+    },
+    {
+     "n": 3,
+     "t": "“And the songs of the hĕḵal shall be wailing in that day,” declares the Master HWHY, “many dead bodies everywhere, thrown into any place – hush!”"
+    },
+    {
+     "n": 4,
+     "t": "Hear this, you who are swallowing up the needy, to do away with the poor of the land,"
+    },
+    {
+     "n": 5,
+     "t": "saying, “When does the New Moon pass so that we sell grain and the Sabbath so that we trade our wheat, to make the ĕphah small and the sheqel large and to falsify the scales by deceit,"
+    },
+    {
+     "n": 6,
+     "t": "to buy the poor for silver and the needy for a pair of sandals and sell the chaff of the wheat?”"
+    },
+    {
+     "n": 7,
+     "t": "HWHY has sworn by the Excellency of Ya‛aqoḇ, “I shall never forget any of their works."
+    },
+    {
+     "n": 8,
+     "t": "“Shall the land not tremble for this and everyone mourn who dwells in it? And all of it shall swell like the River, heave and subside like the River of Mitsrayim."
+    },
+    {
+     "n": 9,
+     "t": "“And it shall be in that day,” declares the Master HWHY, “that I shall cause the sun to go down at noon and shall darken the earth on a day of brightness,"
+    },
+    {
+     "n": 10,
+     "t": "and shall turn your festivals into mourning and all your songs into lamentation and bring sackcloth on all loins and baldness on every head and shall make it like mourning for an only son and its end like a day of bitterness."
+    },
+    {
+     "n": 11,
+     "t": "“See, days are coming,” declares the Master HWHY, “that I shall send a hunger in the land, not a hunger for bread, nor a thirst for water, but for hearing the Words of HWHY."
+    },
+    {
+     "n": 12,
+     "t": "“And they shall wander from sea to sea and from north to east – they shall diligently search, seeking the Word of HWHY, but they shall not find it."
+    },
+    {
+     "n": 13,
+     "t": "“In that day the pretty maidens and strong young men shall faint from thirst,"
+    },
+    {
+     "n": 14,
+     "t": "those swearing by the guilt of Shomeron, who say, ‘As your mighty one lives, O Dan!’ and, ‘As the way of Be’ĕrsheḇa lives!’ And they shall fall and never rise again.”"
+    }
+   ],
+   "page": 686,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "I saw HWHY standing by the altar and He said, “Smite the column head, so that the thresholds shake and break them off by the head, all of them. And the last of them I slay with the sword. Not one of them fleeing gets away and not one fugitive of them escapes."
+    },
+    {
+     "n": 2,
+     "t": "“If they dig into the grave, from there my hand does take them; and if they climb up to the heavens, from there I bring them down."
+    },
+    {
+     "n": 3,
+     "t": "“And if they hide themselves on top of Karmel, from there I shall search and take them. And if they hide from before My eyes at the bottom of the sea, from there I shall command the serpent and it shall bite them."
+    },
+    {
+     "n": 4,
+     "t": "“And if they go into captivity before their enemies, from there I shall command the sword and it shall slay them. And I shall set My eyes on them for evil and not for good.”"
+    },
+    {
+     "n": 5,
+     "t": "And the Master HWHY of hosts is He who touches the earth so that it melts and all who dwell in it mourn and all of it come up like the River and subside like the River of Mitsrayim –"
+    },
+    {
+     "n": 6,
+     "t": "who is building His upper room in the heavens and has founded His firmament on the earth, who is calling for the waters of the sea and pours them out on the face of the earth – HWHY is His Name."
+    },
+    {
+     "n": 7,
+     "t": "“Are you not like the people of Kush to Me, O children of Yisra’ĕl?” declares HWHY. “Did I not bring up Yisra’ĕl from the land of Mitsrayim and the Philistines from Kaphtor and Aram from Qir?"
+    },
+    {
+     "n": 8,
+     "t": "“Look, the eyes of the Master HWHY are on the sinful reign, and I shall destroy it from the face of the earth, except that, I do not completely destroy the house of Ya‛aqoḇ,” declares HWHY."
+    },
+    {
+     "n": 9,
+     "t": "“For look, I am commanding and I shall sift the house of Yisra’ĕl among all the gentiles, as one sifts with a sieve, yet not a grain falls to the ground."
+    },
+    {
+     "n": 10,
+     "t": "“All the sinners of My people are going to die by the sword, those who are saying, ‘Evil does not overtake us nor meet us.’"
+    },
+    {
+     "n": 11,
+     "t": "“In that day I shall raise up the booth of Dawiḏ which has fallen down. And I shall repair its breaches and raise up its ruins. And I shall build it as in the days of old,"
+    },
+    {
+     "n": 12,
+     "t": "so that they possess the remnant of Eḏom and all the gentiles on whom My Name is called,” declares HWHY who does this."
+    },
+    {
+     "n": 13,
+     "t": "“Look, the days are coming,” declares HWHY, “that the ploughman shall overtake the reaper and the treader of grapes him who sows seed. And the mountains shall drip new wine and all the hills melt."
+    },
+    {
+     "n": 14,
+     "t": "“And I shall turn back the captivity of My people Yisra’ĕl. And they shall build the waste cities and inhabit them. And they shall plant vineyards and drink wine from them and shall make gardens and eat their fruit."
+    },
+    {
+     "n": 15,
+     "t": "“And I shall plant them on their own soil and not uproot them any more from their own soil I have given them,” said HWHY your Elohim! AMOS 9"
+    }
+   ],
+   "page": 687,
+   "pdf": "TheBesorah-all.0001.pdf"
+  }
+ }
+}

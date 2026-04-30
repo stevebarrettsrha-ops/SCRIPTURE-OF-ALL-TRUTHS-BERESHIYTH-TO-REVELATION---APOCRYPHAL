@@ -1,0 +1,1589 @@
+{
+ "id": "apoc-2esdras",
+ "hebrew": "2 EZRA",
+ "english": "2 Esdras",
+ "section": "Apocrypha",
+ "chapter_count": 16,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "7": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "13": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "14": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "15": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands"
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "16": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The second book of the prophet Ezra the son of Seraiah, son of Azariah, son of Hilkiah, son of Shallum, son of Zadok, son of Ahitub,"
+    },
+    {
+     "n": 2,
+     "t": "son of Ahijah, son of Phinehas, son of Eli, son of Amariah, son of Azariah, son of Meraioth, son of Arna, son of Uzzi, son of Borith, son of Abishua, son of Phinehas, son of Eleazar,"
+    },
+    {
+     "n": 3,
+     "t": "son of Aaron, of the tribe of Levi, who was a captive in the country of the Medes in the reign of Artaxerxes, king of the Persians."
+    },
+    {
+     "n": 4,
+     "t": "The word of the Lord came to me, saying,"
+    },
+    {
+     "n": 5,
+     "t": "\"Go and declare to my people their evil deeds, and to their children the iniquities which they have committed against me, so that they may tell their children's children"
+    },
+    {
+     "n": 6,
+     "t": "that the sins of their parents have increased in them, for they have forgotten me and have offered sacrifices to strange gods."
+    },
+    {
+     "n": 7,
+     "t": "Was it not I who brought them out of the land of Egypt, out of the house of bondage? But they have angered me and despised my counsels."
+    },
+    {
+     "n": 8,
+     "t": "Pull out the hair of your head and hurl all evils upon them, for they have not obeyed my law -- they are a rebellious people."
+    },
+    {
+     "n": 9,
+     "t": "How long shall I endure them, on whom I have bestowed such great benefits?"
+    },
+    {
+     "n": 10,
+     "t": "For their sake I have overthrown many kings: I struck down Pharaoh with his servants, and all his army."
+    },
+    {
+     "n": 11,
+     "t": "I have destroyed all nations before them, and scattered in the east the people of two provinces, Tyre and Sidon; I have slain all their enemies."
+    },
+    {
+     "n": 12,
+     "t": "\"But speak to them and say, Thus says the Lord:"
+    },
+    {
+     "n": 13,
+     "t": "Surely it was I who brought you through the sea, and made safe highways for you where there was no road; I gave you Moses as leader and Aaron as priest;"
+    },
+    {
+     "n": 14,
+     "t": "I provided light for you from a pillar of fire, and did great wonders among you. Yet you have forgotten me, says the Lord."
+    },
+    {
+     "n": 15,
+     "t": "\"Thus says the Lord Almighty: The quails were a sign to you; I gave you camps for your protection, and in them you complained."
+    },
+    {
+     "n": 16,
+     "t": "You have not exulted in my name at the destruction of your enemies, but to this day you still complain."
+    },
+    {
+     "n": 17,
+     "t": "Where are the benefits which I bestowed on you? When you were hungry and thirsty in the wilderness, did you not cry out to me,"
+    },
+    {
+     "n": 18,
+     "t": "saying, 'Why hast thou led us into this wilderness to kill us? It would have been better for us to serve the Egyptians than to die in this wilderness.'"
+    },
+    {
+     "n": 19,
+     "t": "I pitied your groanings and gave you manna for food; you ate the bread of angels."
+    },
+    {
+     "n": 20,
+     "t": "When you were thirsty, did I not cleave the rock so that waters flowed in abundance? Because of the heat I covered you with the leaves of trees."
+    },
+    {
+     "n": 21,
+     "t": "I divided fertile lands among you; I drove out the Canaanites, the Perizzites, and the Philistines before you. What more can I do for you? says the Lord."
+    },
+    {
+     "n": 22,
+     "t": "Thus says the Lord Almighty: When you were in the wilderness, at the bitter stream, thirsty and blaspheming my name,"
+    },
+    {
+     "n": 23,
+     "t": "I did not send fire upon you for your blasphemies, but threw a tree into the water and made the stream sweet."
+    },
+    {
+     "n": 24,
+     "t": "\"What shall I do to you, 0 Jacob? You would not obey me, 0 Judah. I will turn to other nations and will give them my name, that they may keep my statutes."
+    },
+    {
+     "n": 25,
+     "t": "Because you have forsaken me, I also will forsake you. When you beg mercy of me, I will show you no mercy."
+    },
+    {
+     "n": 26,
+     "t": "When you call upon me, I will not listen to you; for you have defiled your hands with blood, and your feet are swift to commit murder."
+    },
+    {
+     "n": 27,
+     "t": "It is not as though you had forsaken me; you have forsaken yourselves, says the Lord."
+    },
+    {
+     "n": 28,
+     "t": "\"Thus says the Lord Almighty: Have I not entreated you as a father entreats his sons or a mother her daughters or a nurse her children,"
+    },
+    {
+     "n": 29,
+     "t": "that you should be my people and I should be your God, and that you should be my sons and I should be your father?"
+    },
+    {
+     "n": 30,
+     "t": "I gathered you as a hen gathers her brood under her wings. But now, what shall I do to you? I will cast you out from my presence."
+    },
+    {
+     "n": 31,
+     "t": "When you offer oblations to me, I will turn my face from you; for I have rejected your feast days, and new moons, and circumcisions of the flesh."
+    },
+    {
+     "n": 32,
+     "t": "I sent to you my servants the prophets, but you have taken and slain them and torn their bodies in pieces; their blood I will require of you, says the Lord."
+    },
+    {
+     "n": 33,
+     "t": "\"Thus says the Lord Almighty: Your house is desolate; I will drive you out as the wind drives straw;"
+    },
+    {
+     "n": 34,
+     "t": "and your sons will have no children, because with you they have neglected my commandment and have done what is evil in my sight."
+    },
+    {
+     "n": 35,
+     "t": "I will give your houses to a people that will come, who without having heard me will believe. Those to whom I have shown no signs will do what I have commanded."
+    },
+    {
+     "n": 36,
+     "t": "They have seen no prophets, yet will recall their former state."
+    },
+    {
+     "n": 37,
+     "t": "I call to witness the gratitude of the people that is to come, whose children rejoice with gladness; though they do not see me with bodily eyes, yet with the spirit they will believe the things I have said."
+    },
+    {
+     "n": 38,
+     "t": "\"And now, father, look with pride and see the people coming from the east;"
+    },
+    {
+     "n": 39,
+     "t": "to them I will give as leaders Abraham, Isaac, and Jacob and Hosea and Amos and Micah and Joel and Obadiah and Jonah"
+    },
+    {
+     "n": 40,
+     "t": "and Nahum and Habakkuk, Zephaniah, Haggai, Zechariah and Malachi, who is also called the messenger of the Lord."
+    },
+    {
+     "n": 41,
+     "t": "The number of your children, whom you desired, is full; beseech the Lord's power that your people, who have been called from the beginning, may be made holy.\""
+    },
+    {
+     "n": 42,
+     "t": "I, Ezra, saw on Mount Zion a great multitude, which I could not number, and they all were praising the Lord with songs."
+    },
+    {
+     "n": 43,
+     "t": "In their midst was a young man of great stature, taller than any of the others, and on the head of each of them he placed a crown, but he was more exalted than they. And I was held spellbound."
+    },
+    {
+     "n": 44,
+     "t": "Then I asked an angel, \"Who are these, my lord?\""
+    },
+    {
+     "n": 45,
+     "t": "He answered and said to me, \"These are they who have put off mortal clothing and have put on the immortal, and they have confessed the name of God; now they are being crowned, and receive palms.\""
+    },
+    {
+     "n": 46,
+     "t": "Then I said to the angel, \"Who is that young man who places crowns on them and puts palms in their hands?\""
+    },
+    {
+     "n": 47,
+     "t": "He answered and said to me, \"He is the Son of God, whom they confessed in the world.\" So I began to praise those who had stood valiantly for the name of the Lord."
+    },
+    {
+     "n": 48,
+     "t": "Then the angel said to me, \"Go, tell my people how great and many are the wonders of the Lord God which you have seen.\""
+    },
+    {
+     "n": 49,
+     "t": "And after this a cloud full of water passed before me and poured down a heavy and violent rain, and when the rainstorm had passed, drops remained in the cloud. [SO] And he said to me, \"Consider it for yourself; for as the rain is more than the drops, and the fire is greater than the smoke, so the quantity that passed was far greater; but drops and smoke remained.\" [Sl] Then I prayed and said, \"Do you think that I shall live until those days? Or who will be alive in those days?\" [S2] He answered me and said, \"Concerning the signs about which you ask me, I can tell you in part; but I was not sent to tell you concerning your life, for I do not know."
+    },
+    {
+     "n": 50,
+     "t": "Then I inquired and said, \"Since thou hast now given me the opportunity, let me speak before thee. Is our mother, of whom thou hast told me, still young? Or is she now approaching old age?\""
+    },
+    {
+     "n": 51,
+     "t": "He replied to me, \"Ask a woman who bears children, and she will tell you."
+    },
+    {
+     "n": 52,
+     "t": "Say to her, \"Why are those whom you have borne recently not like those whom you bore before, but smaller in stature?'"
+    },
+    {
+     "n": 53,
+     "t": "And she herself will answer you, 'Those born in the strength of youth are different from those born during the time of old age, when the womb is failing.'"
+    },
+    {
+     "n": 54,
+     "t": "Therefore you also should consider that you and your contemporaries are smaller in stature than those who were before you,"
+    },
+    {
+     "n": 55,
+     "t": "and those who come after you will be smaller than you, as born of a creation which already is aging and passing the strength of youth.\""
+    },
+    {
+     "n": 56,
+     "t": "And I said, \"0 Lord, I beseech thee, if I have found favor in thy sight, show thy servant through whom thou do visit thy creation.\""
+    }
+   ],
+   "page": 36,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  }
+ }
+}

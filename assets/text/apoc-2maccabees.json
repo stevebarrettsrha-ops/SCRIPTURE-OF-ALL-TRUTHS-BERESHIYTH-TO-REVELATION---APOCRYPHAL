@@ -1,0 +1,1195 @@
+{
+ "id": "apoc-2maccabees",
+ "hebrew": "2 MAQQABIM",
+ "english": "2 Maccabees",
+ "section": "Apocrypha",
+ "chapter_count": 15,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "7": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "13": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "14": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "15": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The Jewish brethren in Jerusalem and those in the land of Judea, To their Jewish brethren in Egypt, Greeting, and good peace."
+    },
+    {
+     "n": 2,
+     "t": "May God do good to you, and may he remember his covenant with Abraham and Isaac and Jacob, his faithful servants."
+    },
+    {
+     "n": 3,
+     "t": "May he give you all a heart to worship him and to do his will with a strong heart and a willing spirit."
+    },
+    {
+     "n": 4,
+     "t": "May he open your heart to his law and his commandments, and may he bring peace."
+    },
+    {
+     "n": 5,
+     "t": "May he hear your prayers and be reconciled to you, and may he not forsake you in time of evil."
+    },
+    {
+     "n": 6,
+     "t": "We are now praying for you here."
+    },
+    {
+     "n": 7,
+     "t": "In the reign of Demetrius, in the one hundred and sixty-ninth year, we Jews wrote to you, in the critical distress which came upon us in those years after Jason and his company revolted from the holy land and the kingdom"
+    },
+    {
+     "n": 8,
+     "t": "and burned the gate and shed innocent blood. We besought the Lord and we were heard, and we offered sacrifice and cereal offering, and we lighted the lamps and we set out the loaves."
+    },
+    {
+     "n": 9,
+     "t": "And now see that you keep the feast of booths in the month of Chislev, in the one hundred and eighty-eighth year."
+    },
+    {
+     "n": 10,
+     "t": "Those in Jerusalem and those in Judea and the senate and Judas, To Aristobulus, who is of the family of the anointed priests, teacher of Ptolemy the king, and to the Jews in Egypt, Greeting, and good health."
+    },
+    {
+     "n": 11,
+     "t": "Having been saved by God out of grave dangers we thank him greatly for taking our side against the king."
+    },
+    {
+     "n": 12,
+     "t": "For he drove out those who fought against the holy city."
+    },
+    {
+     "n": 13,
+     "t": "For when the leader reached Persia with a force that seemed irresistible, they were cut to pieces in the temple of Nanea by a deception employed by the priests of Nanea."
+    },
+    {
+     "n": 14,
+     "t": "For under pretext of intending to marry her, Antiochus came to the place together with his friends, to secure most of its treasures as a dowry."
+    },
+    {
+     "n": 15,
+     "t": "When the priests of the temple of Nanea had set out the treasures and Antiochus had come with a few men inside the wall of the sacred precinct, they closed the temple as soon as he entered it."
+    },
+    {
+     "n": 16,
+     "t": "Opening the secret door in the ceiling, they threw stones and struck down the leader and his men, and dismembered them and cut off their heads and threw them to the people outside. 12 9"
+    },
+    {
+     "n": 17,
+     "t": "Blessed in every way be our God, who has brought judgment upon those who have behaved impiously."
+    },
+    {
+     "n": 18,
+     "t": "Since on the twenty-fifth day of Chislev we shall celebrate the purification of the temple, we thought it necessary to notify you, in order that you also may celebrate the feast of booths and the feast of the fire given when Nehemiah, who built the temple and the altar, offered sacrifices."
+    },
+    {
+     "n": 19,
+     "t": "For when our fathers were being led captive to Persia, the pious priests of that time took some of the fire of the altar and secretly hid it in the hollow of a dry cistern, where they took such precautions that the place was unknown to any one."
+    },
+    {
+     "n": 20,
+     "t": "But after many years had passed, when it pleased God, Nehemiah, having been commissioned by the king of Persia, sent the descendants of the priests who had hidden the fire to get it. And when they reported to us that they had not found fire but thick liquid, he ordered them to dip it out and bring it."
+    },
+    {
+     "n": 21,
+     "t": "And when the materials for the sacrifices were presented, Nehemiah ordered the priests to sprinkle the liquid on the wood and what was laid upon it."
+    },
+    {
+     "n": 22,
+     "t": "When this was done and some time had passed and the sun, which had been clouded over, shone out, a great fire blazed up, so that all marveled."
+    },
+    {
+     "n": 23,
+     "t": "And while the sacrifice was being consumed, the priests offered prayer -- the priests and everyone. Jonathan led, and the rest responded, as did Nehemiah."
+    },
+    {
+     "n": 24,
+     "t": "The prayer was to this effect: \"0 Lord, Lord God, Creator of all things, who art awe-inspiring and strong and just and merciful, who alone art King and art kind,"
+    },
+    {
+     "n": 25,
+     "t": "who alone art bountiful, who alone art just and almighty and eternal, who do rescue Israel from every evil, who didst choose the fathers and consecrate them,"
+    },
+    {
+     "n": 26,
+     "t": "accept this sacrifice on behalf of all thy people Israel and preserve thy portion and make it holy."
+    },
+    {
+     "n": 27,
+     "t": "Gather together our scattered people, set free those who are slaves among the Gentiles, look upon those who are rejected and despised, and let the Gentiles know that thou art our God."
+    },
+    {
+     "n": 28,
+     "t": "Afflict those who oppress and are insolent with pride."
+    },
+    {
+     "n": 29,
+     "t": "Plant thy people in thy holy place, as Moses said.\""
+    },
+    {
+     "n": 30,
+     "t": "Then the priests sang the hymns."
+    },
+    {
+     "n": 31,
+     "t": "And when the materials of the sacrifice were consumed, Nehemiah ordered that the liquid that was left should be poured upon large stones."
+    },
+    {
+     "n": 32,
+     "t": "When this was done, a flame blazed up; but when the light from the altar shone back, it went out."
+    },
+    {
+     "n": 33,
+     "t": "When this matter became known, and it was reported to the king of the Persians that, in the place where the exiled priests had hidden the fire, the liquid had appeared with which Nehemiah and his associates had burned the materials of the sacrifice,"
+    },
+    {
+     "n": 34,
+     "t": "the king investigated the matter, and enclosed the place and made it sacred."
+    },
+    {
+     "n": 35,
+     "t": "And with those persons whom the king favored he exchanged many excellent gifts."
+    },
+    {
+     "n": 36,
+     "t": "13 0 Nehemiah and his associates called this \"nephthar,\" which means purification, but by most people it is called naphtha. 2Mac.2"
+    },
+    {
+     "n": 37,
+     "t": "When the king asked Heliodorus what sort of person would be suitable to send on another mission to Jerusalem, he replied,"
+    },
+    {
+     "n": 38,
+     "t": "\"If you have any enemy or plotter against your government, send him there, for you will get him back thoroughly scourged, if he escapes at all, for there certainly is about the place some power of God."
+    },
+    {
+     "n": 39,
+     "t": "For he who has his dwelling in heaven watches over that place himself and brings it aid, and he strikes and destroys those who come to do it injury.\""
+    },
+    {
+     "n": 40,
+     "t": "This was the outcome of the episode of Heliodorus and the protection of the treasury. 2Mac.4"
+    },
+    {
+     "n": 41,
+     "t": "But when the Jews became aware of Lysimachus' attack, some picked up stones, some blocks of wood, and others took handfuls of the ashes that were lying about, and threw them in wild confusion at Lysimachus and his men."
+    },
+    {
+     "n": 42,
+     "t": "As a result, they wounded many of them, and killed some, and put them all to flight; and the temple robber himself they killed close by the treasury."
+    },
+    {
+     "n": 43,
+     "t": "Charges were brought against Menelaus about this incident."
+    },
+    {
+     "n": 44,
+     "t": "When the king came to Tyre, three men sent by the senate presented the case before him."
+    },
+    {
+     "n": 45,
+     "t": "But Menelaus, already as good as beaten, promised a substantial bribe to Ptolemy son of Dorymenes to win over the king."
+    },
+    {
+     "n": 46,
+     "t": "Therefore Ptolemy, taking the king aside into a colonnade as if for refreshment, induced the king to change his mind."
+    },
+    {
+     "n": 47,
+     "t": "Menelaus, the cause of all the evil, he acquitted of the charges against him, while he sentenced to death those unfortunate men, who would have been freed uncondemned if they had pleaded even before Scythians."
+    },
+    {
+     "n": 48,
+     "t": "And so those who had spoken for the city and the villages and the holy vessels quickly suffered the unjust penalty."
+    },
+    {
+     "n": 49,
+     "t": "Therefore even the Tyrians, showing their hatred of the crime, provided magnificently for their funeral."
+    },
+    {
+     "n": 50,
+     "t": "But Menelaus, because of the cupidity of those in power, remained in office, growing in wickedness, having become the chief plotter against his fellow citizens. 2Mac.5"
+    }
+   ],
+   "page": 131,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  }
+ }
+}
