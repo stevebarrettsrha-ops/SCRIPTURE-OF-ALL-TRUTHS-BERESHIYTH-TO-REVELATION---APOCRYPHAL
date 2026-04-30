@@ -1,0 +1,3493 @@
+{
+ "id": "debarim",
+ "hebrew": "DEḆARIM",
+ "english": "Deuteronomy",
+ "section": "Torah",
+ "chapter_count": 34,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "These are the words which Mosheh spoke to all Yisra’ĕl beyond the Yardĕn in the wilderness, in the desert plain opposite Suph, between Paran and Tophel and Laḇan and Ḥatsĕroth and DiZahaḇ,"
+    },
+    {
+     "n": 2,
+     "t": "eleven days’ journey from Ḥorĕḇ by way of Mount Sĕ‛ir to Qaḏĕsh Barnĕa."
+    },
+    {
+     "n": 3,
+     "t": "And it came to be in the fortieth year, in the eleventh month, on the first day of the month, that Mosheh spoke to the children of Yisra’ĕl according to all that HWHY had commanded him concerning them,"
+    },
+    {
+     "n": 4,
+     "t": "after he had smitten Siḥon sovereign of the Amorites, who dwelt in Ḥeshbon and Oḡ sovereign of Bashan, who dwelt at Ashtaroth in Eḏre‛i."
+    },
+    {
+     "n": 5,
+     "t": "Beyond the Yardĕn, in the land of Mo’aḇ, Mosheh undertook to declare this Torah, saying,"
+    },
+    {
+     "n": 6,
+     "t": "“HWHY our Elohim spoke to us in Ḥorĕḇ, saying, ‘You have dwelt long enough at this mountain."
+    },
+    {
+     "n": 7,
+     "t": "‘Turn and set out on your way and go into the mountains of the Amorites and to all the neighbouring places in the desert plain, in the mountains and in the low country and in the Negeḇ and on the seacoast, to the land of the Kena‛anites and to Leḇanon, as far as the great river, the River Euphrates."
+    },
+    {
+     "n": 8,
+     "t": "‘See, I have set the land before you. Go in and possess the land which HWHY swore to your fathers, to Aḇrahim, to Yitsḥaq and to Ya‛aqoḇ, to give to them and their seed after them.’"
+    },
+    {
+     "n": 9,
+     "t": "“And I spoke to you at that time, saying, ‘I am unable to bear you by myself."
+    },
+    {
+     "n": 10,
+     "t": "‘HWHY your Elohim has increased you and see, you are today as numerous as the stars of the heavens."
+    },
+    {
+     "n": 11,
+     "t": "‘HWHY Elohim of your fathers is going to add to you a thousand times more than you are and bless you as He has spoken to you!"
+    },
+    {
+     "n": 12,
+     "t": "‘How do I bear your pressure and your burden and your strife, by myself?"
+    },
+    {
+     "n": 13,
+     "t": "‘Choose men, wise and understanding and known to your tribes and let me appoint them as your heads.’"
+    },
+    {
+     "n": 14,
+     "t": "“And you answered me and said, ‘The word which you have spoken to us to do is good.’"
+    },
+    {
+     "n": 15,
+     "t": "“And I took the heads of your tribes, wise men and known and made them heads over you, leaders of thousands and leaders of hundreds and leaders of fifties and leaders of tens and officers for your tribes."
+    },
+    {
+     "n": 16,
+     "t": "“And I commanded your judges at that time, saying, ‘When hearing between your brothers, judge righteously between a man and his brother or the stranger who is with him."
+    },
+    {
+     "n": 17,
+     "t": "‘Do not show partiality in right- ruling, hear the small as well as the great. Do not be afraid of anyone’s face, for the right-ruling belongs to Elohim. And the case which is too hard for you, bring it to me and I shall hear it.’"
+    },
+    {
+     "n": 18,
+     "t": "“And I commanded you at that time all the words which you should do."
+    },
+    {
+     "n": 19,
+     "t": "“Then we set out from Ḥorĕḇ and went through all that great and awesome wilderness which you saw on the way to the mountains of the Amorites, as HWHY our Elohim had commanded us. And we came to Qaḏĕsh Barnĕa."
+    },
+    {
+     "n": 20,
+     "t": "“And I said to you, ‘You have come to the mountains of the Amorites, which HWHY our Elohim is giving us."
+    },
+    {
+     "n": 21,
+     "t": "‘See, HWHY your Elohim has set the land before you. Go up and possess it, as HWHY Elohim of your fathers has spoken to you. Do not fear nor be discouraged.’"
+    },
+    {
+     "n": 22,
+     "t": "“And all of you came near to me and said, ‘Let us send men before us and let them search out the land for us and bring back word to us of the way by which we should go up and of the cities into which we would come.’"
+    },
+    {
+     "n": 23,
+     "t": "“And the matter was good in my eyes, so I took twelve of your men, one man from each tribe."
+    },
+    {
+     "n": 24,
+     "t": "“And they turned and went up into the mountains and came to the wadi Eshkol and spied it out."
+    },
+    {
+     "n": 25,
+     "t": "“And they took some of the fruit of the land in their hands and brought it down to us. And they brought back word to us, saying, ‘The land which HWHY our Elohim is giving us is good.’"
+    },
+    {
+     "n": 26,
+     "t": "“But you would not go up and rebelled against the mouth of HWHY your Elohim,"
+    },
+    {
+     "n": 27,
+     "t": "and grumbled in your tents and said, ‘Because HWHY was hating us, He has brought us out of the land of Mitsrayim to give us into the hand of the Amorites, to destroy us."
+    },
+    {
+     "n": 28,
+     "t": "‘Where are we going to? Our brothers have made our hearts melt, saying, “The people are greater and taller than we, the cities are great and walled up to the heavens and we saw the sons of the Anaqim there too.” ’"
+    },
+    {
+     "n": 29,
+     "t": "“Then I said to you, ‘Have no dread or fear of them."
+    },
+    {
+     "n": 30,
+     "t": "‘HWHY your Elohim, who is going before you, He does fight for you, according to all He did for you in Mitsrayim before your eyes,"
+    },
+    {
+     "n": 31,
+     "t": "and in the wilderness, where you saw how HWHY your Elohim has borne you, as a man bears his son, in all the way that you went until you came to this place.’"
+    },
+    {
+     "n": 32,
+     "t": "“Yet in this matter you are putting no trust in HWHY your Elohim,"
+    },
+    {
+     "n": 33,
+     "t": "who is going before you in the way to seek out a place for you to pitch your tents, to show you the way you should go, in fire by night and in a cloud by day."
+    },
+    {
+     "n": 34,
+     "t": "“And HWHY heard the voice of your words and was wroth and took an oath, saying,"
+    },
+    {
+     "n": 35,
+     "t": "‘Not one of these men of this evil generation shall see that good land of which I swore to give to your fathers,"
+    },
+    {
+     "n": 36,
+     "t": "except Kalĕḇ son of Yephunneh. He shall see it and to him and his children I give the land on which he walked, because he followed HWHY completely.’"
+    },
+    {
+     "n": 37,
+     "t": "“And HWHY was enraged with me for your sakes, saying, ‘You do not go in there, either."
+    },
+    {
+     "n": 38,
+     "t": "‘Yahusha the son of Nun, who stands before you, he shall go in there. Strengthen him, for he shall cause Yisra’ĕl to inherit."
+    },
+    {
+     "n": 39,
+     "t": "‘And your little ones and your children, who you say are for a prey, who today have no knowledge of good and evil, they are going in there. And to them I give it and they are to possess it."
+    },
+    {
+     "n": 40,
+     "t": "‘But you, turn and take your journey into the wilderness by the Way of the Sea of Reeds.’"
+    },
+    {
+     "n": 41,
+     "t": "“Then you answered and said to me, ‘We have sinned against HWHY. We ourselves are going up and we shall fight, as HWHY our Elohim commanded us.’ And when each one of you had girded on his battle gear, you were ready to go up into the mountain."
+    },
+    {
+     "n": 42,
+     "t": "“And HWHY said to me, ‘Say to them, “Do not go up nor fight, for I am not in your midst, lest you be smitten before your enemies.” ’"
+    },
+    {
+     "n": 43,
+     "t": "“So I spoke to you, but you would not listen and rebelled against the mouth of HWHY and acted proudly and went up into the mountain."
+    },
+    {
+     "n": 44,
+     "t": "“Then the Amorites who dwelt in that mountain came out against you and chased you as bees do and drove you back from Sĕ‛ir to Ḥormah."
+    },
+    {
+     "n": 45,
+     "t": "“And you returned and wept before HWHY, but HWHY would not listen to your voice nor give ear to you."
+    },
+    {
+     "n": 46,
+     "t": "“So you dwelt in Qaḏĕsh many days, according to the days that you dwelt."
+    }
+   ],
+   "page": 235,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 2,
+     "t": "“And HWHY spoke to me, saying,"
+    },
+    {
+     "n": 3,
+     "t": "‘You have gone around this mountain long enough, turn northward."
+    },
+    {
+     "n": 4,
+     "t": "‘And command the people, saying, “You are about to pass over into the border of your brothers, the descendants of Ĕsaw, who live in Sĕ‛ir and they are afraid of you. So be on your guard."
+    },
+    {
+     "n": 5,
+     "t": "“Do not strive with them, for I do not give you any of their land, no, not so much as one footstep, because I have given Mount Sĕ‛ir to Ĕsaw as a possession."
+    },
+    {
+     "n": 6,
+     "t": "“What food you buy from them with silver you shall eat. And also, what water you buy from them with silver you shall drink."
+    },
+    {
+     "n": 7,
+     "t": "“For HWHY your Elohim has blessed you in all the work of your hand. He has known your wandering through this great wilderness. These forty years HWHY your Elohim has been with you, you have not lacked any matter.” ’"
+    },
+    {
+     "n": 8,
+     "t": "“And when we passed beyond our brothers, the descendants of Ĕsaw who dwell in Sĕ‛ir, away from the way of the desert plain, away from Ĕylath and Etsyon Geḇer, we turned and passed over by way of the Wilderness of Mo’aḇ."
+    },
+    {
+     "n": 9,
+     "t": "“And HWHY said to me, ‘Do not distress Mo’aḇ, nor stir yourself up against them in battle, for I do not give you any of their land as a possession, because I have given Ar to the descendants of Lot as a possession.’ ”"
+    },
+    {
+     "n": 10,
+     "t": "The Ĕmites had dwelt there formerly, a people as great and numerous and tall as the Anaqim."
+    },
+    {
+     "n": 11,
+     "t": "They were also reckoned as Repha’ites, like the Anaqim, but the Mo’aḇites call them Ĕmites."
+    },
+    {
+     "n": 12,
+     "t": "And the Ḥorites formerly dwelt in Sĕ‛ir, but the descendants of Ĕsaw dispossessed them and destroyed them from before them and dwelt in their place, as Yisra’ĕl did to the land of their possession which HWHY gave them."
+    },
+    {
+     "n": 13,
+     "t": "“ ‘Now rise up and pass over the wadi Zereḏ.’ So we passed over the wadi Zereḏ."
+    },
+    {
+     "n": 14,
+     "t": "“And the time we took to come from Qaḏĕsh Barnĕa until we passed over the wadi Zereḏ was thirty-eight years, until all the generation of the men of battle was consumed from the midst of the camp, as HWHY had sworn to them."
+    },
+    {
+     "n": 15,
+     "t": "“And also, the hand of HWHY was against them, to destroy them from the midst of the camp until they were consumed."
+    },
+    {
+     "n": 16,
+     "t": "“And it came to be, when all the men of battle had finally perished from among the people,"
+    },
+    {
+     "n": 17,
+     "t": "that HWHY spoke to me, saying,"
+    },
+    {
+     "n": 18,
+     "t": "‘This day you are to pass over at Ar, the boundary of Mo’aḇ."
+    },
+    {
+     "n": 19,
+     "t": "‘And when you come near the children of Ammon, do not distress them nor stir yourself up against them, for I do not give you any of the land of the children of Ammon as a possession, because I have given it to the descendants of Lot as a possession.’"
+    },
+    {
+     "n": 20,
+     "t": "That was also reckoned as a land of Repha’ites. Repha’ites formerly dwelt there. But the Ammonites call them Zamzummim,"
+    },
+    {
+     "n": 21,
+     "t": "a people as great and numerous and tall as the Anaqim. But HWHY destroyed them before them and they dispossessed them and dwelt in their place,"
+    },
+    {
+     "n": 22,
+     "t": "as He had done for the descendants of Ĕsaw, who dwelt in Sĕ‛ir, when He destroyed the Ḥorites from before them. They dispossessed them and dwelt in their place, even to this day."
+    },
+    {
+     "n": 23,
+     "t": "And the Awwim who dwelt in villages as far as Azzah, the Kaphtorim who came from Kaphtor, destroyed them and dwelt in their place)."
+    },
+    {
+     "n": 24,
+     "t": "‘Arise, set out and pass over the wadi Arnon. See, I have given into your hand Siḥon the Amorite, sovereign of Ḥeshbon and his land. Begin to possess it and stir up yourself against him in battle."
+    },
+    {
+     "n": 25,
+     "t": "‘This day I begin to put the dread and fear of you upon the peoples under all the heavens, who, when they hear the report of you, shall tremble and shake because of you.’"
+    },
+    {
+     "n": 26,
+     "t": "“Then I sent messengers from the Wilderness of Qeḏĕmoth to Siḥon sovereign of Ḥeshbon, with words of peace, saying,"
+    },
+    {
+     "n": 27,
+     "t": "‘Let me pass over through your land on the highway. I shall go on the highway and turn neither to the right nor to the left."
+    },
+    {
+     "n": 28,
+     "t": "‘What food you sell me for silver I shall eat and what water you give me for silver I shall drink. Only let me pass over on foot,"
+    },
+    {
+     "n": 29,
+     "t": "as the descendants of Ĕsaw who dwell in Sĕ‛ir and the Mo’aḇites who dwell in Ar did for me – until I pass over the Yardĕn to the land HWHY our Elohim is giving us.’"
+    },
+    {
+     "n": 30,
+     "t": "“But Siḥon sovereign of Ḥeshbon would not let us pass over, for HWHY your Elohim hardened his spirit and strengthened his heart, to give him into your hand, as it is this day."
+    },
+    {
+     "n": 31,
+     "t": "“And HWHY said to me, ‘See, I have begun to give Siḥon and his land over to you. Begin to possess – in order to possess his land.’"
+    },
+    {
+     "n": 32,
+     "t": "“And Siḥon and all his people came out against us to fight at Yahats,"
+    },
+    {
+     "n": 33,
+     "t": "and HWHY our Elohim gave him over to us, so we smote him and his sons and all his people."
+    },
+    {
+     "n": 34,
+     "t": "“And we took all his cities at that time, and we put the men, women and little ones of every city under the ban, we left none remaining."
+    },
+    {
+     "n": 35,
+     "t": "“Only the livestock we took as plunder for ourselves and the spoil of the cities which we captured."
+    },
+    {
+     "n": 36,
+     "t": "“From Aro‛ĕr, which is on the edge of the wadi Arnon and the city that is by the wadi, as far as Gil‛aḏ, there was not one city too high for us. HWHY our Elohim gave all to us."
+    },
+    {
+     "n": 37,
+     "t": "“Only you did not go near the land of the children of Ammon – anywhere along the wadi Yabboq, or to the cities of the mountains, or wherever HWHY our Elohim had forbidden us."
+    }
+   ],
+   "page": 237,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“Then we turned and went up the way to Bashan. And Oḡ sovereign of Bashan came out against us, he and all his people, to battle at Eḏre‛i."
+    },
+    {
+     "n": 2,
+     "t": "“And HWHY said to me, ‘Do not fear him, for I have given him and all his people and his land into your hand. And you shall do to him as you did to Siḥon sovereign of the Amorites, who dwelt at Ḥeshbon.’"
+    },
+    {
+     "n": 3,
+     "t": "“So HWHY our Elohim also gave into our hands Oḡ sovereign of Bashan, with all his people and we smote him until he had no survivors remaining."
+    },
+    {
+     "n": 4,
+     "t": "“And we captured all his cities at that time. There was not a city which we did not take from them: sixty cities, all the district of Argoḇ, the reign of Oḡ in Bashan."
+    },
+    {
+     "n": 5,
+     "t": "“All these cities were fenced with high walls, gates and bars, besides a great many unwalled towns."
+    },
+    {
+     "n": 6,
+     "t": "“And we put them under the ban, as we did to Siḥon sovereign of Ḥeshbon, putting the men, the women and the children of every city under the ban."
+    },
+    {
+     "n": 7,
+     "t": "“But all the livestock and the spoil of the cities we took as booty for ourselves."
+    },
+    {
+     "n": 8,
+     "t": "“And at that time we took the land, from the hand of the two sovereigns of the Amorites, that was beyond the Yardĕn, from the wadi Arnon to Mount Ḥermon"
+    },
+    {
+     "n": 9,
+     "t": "“Tsiḏonians call Ḥermon, Siryon – and the Amorites call it Senir,"
+    },
+    {
+     "n": 10,
+     "t": "all the cities of the plain, all Gil‛aḏ and all Bashan, as far as Salḵah and Eḏre‛i, cities of the reign of Oḡ in Bashan."
+    },
+    {
+     "n": 11,
+     "t": "“For only Oḡ sovereign of Bashan was left of the remnant of the Repha’ites. See, his bedstead was an iron bedstead. Is it not in Rabbah of the children of Ammon? Nine cubits is its length and four cubits its width, according to the cubit of a man."
+    },
+    {
+     "n": 12,
+     "t": "“And this land, which we possessed at that time, from Aro‛ĕr, which is by the wadi Arnon and half the mountains of Gil‛aḏ and its cities, and Your strong hand, for who is a mighty one in the heavens or on earth who does according to Your works and according to Your might?"
+    }
+   ],
+   "page": 238,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“And now, O Yisra’ĕl, listen to the laws and the right-rulings which I am teaching you to do, so that you live and shall go in and possess the land which HWHY Elohim of your fathers is giving you."
+    },
+    {
+     "n": 2,
+     "t": "“Do not add to the Word which I command you and do not take away from it, so as to guard the commands of HWHY your Elohim which I am commanding you."
+    },
+    {
+     "n": 3,
+     "t": "“Your eyes have seen what HWHY did at Ba‛al Pe‛or, for HWHY your Elohim has destroyed from your midst all the men who followed Ba‛al Pe‛or."
+    },
+    {
+     "n": 4,
+     "t": "“But you who are clinging to HWHY your Elohim are alive today, every one of you."
+    },
+    {
+     "n": 5,
+     "t": "“See, I have taught you laws and right-rulings, as HWHY my Elohim commanded me, to do thus in the land which you go to possess."
+    },
+    {
+     "n": 6,
+     "t": "“And you shall guard and do them, for this is your wisdom and your understanding before the eyes of I gave to the Re’uḇĕnites and the Gaḏites."
+    },
+    {
+     "n": 7,
+     "t": "“For what great nation is there which has Elohim so near to it, as HWHY our Elohim is to us, whenever we call on Him?"
+    },
+    {
+     "n": 8,
+     "t": "“And what great nation is there that has such laws and righteous right- rulings like all this Torah which I set before you this day?"
+    },
+    {
+     "n": 9,
+     "t": "“Only, guard yourself and guard your life diligently, lest you forget the Words your eyes have seen and lest they turn aside from your heart all the days of your life. And you shall make them known to your children and your grandchildren."
+    },
+    {
+     "n": 10,
+     "t": "“The day when you stood before HWHY your Elohim in Ḥorĕḇ, HWHY said to me, ‘Assemble the people to Me and I make them hear My Words, so that they learn to fear Me all the days they live on the earth and teach them to their children.’"
+    },
+    {
+     "n": 11,
+     "t": "“And you came near and stood at the foot of the mountain and the mountain burned with fire to the heart of the heavens – darkness, cloud and thick darkness."
+    },
+    {
+     "n": 12,
+     "t": "“And HWHY spoke to you out of the midst of the fire. You heard a voice of words, but saw no form, you only heard a voice."
+    },
+    {
+     "n": 13,
+     "t": "“And He made known to you His covenant which He commanded you to do, the Ten Words and He wrote them on two tablets of stone."
+    },
+    {
+     "n": 14,
+     "t": "“And HWHY commanded me at that time to teach you laws and right- rulings, for you to do them in the land which you pass over to possess."
+    },
+    {
+     "n": 15,
+     "t": "“Therefore, diligently guard yourselves, for you saw no form when HWHY spoke to you at Ḥorĕḇ out of the midst of the fire,"
+    },
+    {
+     "n": 16,
+     "t": "lest you should do corruptly and shall make for yourselves a carved image in the form of any figure – the likeness of male or female,"
+    },
+    {
+     "n": 17,
+     "t": "the likeness of any beast that is on the earth or the likeness of any winged bird that flies in the heavens,"
+    },
+    {
+     "n": 18,
+     "t": "the likeness of any creature that creeps on the ground or the likeness of any fish that is in the water under the earth;"
+    },
+    {
+     "n": 19,
+     "t": "and lest you lift up your eyes to the heavens and shall see the sun and the moon and the stars – all the host of the heavens – and you be drawn away into bowing down to them and serving them, which HWHY your Elohim has allotted to all the peoples under all the heavens."
+    },
+    {
+     "n": 20,
+     "t": "“But HWHY has taken you and brought you out of the iron furnace, out of Mitsrayim, to be His people, an inheritance, as it is today."
+    },
+    {
+     "n": 21,
+     "t": "“And HWHY was enraged with me because of your words and swore that I would not pass over the Yardĕn and that I would not enter the good land which HWHY your Elohim is giving you as an inheritance."
+    },
+    {
+     "n": 22,
+     "t": "“For I am to die in this land, I am not passing over the Yardĕn, but you are passing over and shall possess that good land."
+    },
+    {
+     "n": 23,
+     "t": "“Guard yourselves, lest you forget the covenant of HWHY your Elohim which He made with you and shall make for your selves a carved image in the form of whatever HWHY your Elohim has forbidden you."
+    },
+    {
+     "n": 24,
+     "t": "“For HWHY your Elohim is a consuming fire, a jealous Ĕl."
+    },
+    {
+     "n": 25,
+     "t": "“When you bring forth children and grandchildren and shall grow old in the land and shall do corruptly and make a carved image in the form of whatever and shall do what is evil in the eyes of HWHY your Elohim to provoke Him,"
+    },
+    {
+     "n": 26,
+     "t": "“I shall call the heavens and earth to witness against you on that day, that you soon completely perish from the land which you pass over the Yardĕn to possess – you do not prolong your days in it but are completely destroyed."
+    },
+    {
+     "n": 27,
+     "t": "“And HWHY shall scatter you among the peoples and you shall be left few in number among the gentiles where HWHY drives you."
+    },
+    {
+     "n": 28,
+     "t": "“And there you shall serve mighty ones, the work of men’s hands, wood and stone, which neither see nor hear nor eat nor smell."
+    },
+    {
+     "n": 29,
+     "t": "“But from there you shall seek HWHY your Elohim and shall find, when you search for Him with all your heart and with all your being."
+    },
+    {
+     "n": 30,
+     "t": "“In your distress, when all these words shall come upon you in the latter days, then you shall return to HWHY your Elohim and shall obey His voice."
+    },
+    {
+     "n": 31,
+     "t": "“For HWHY your Elohim is a compassionate Ĕl, He does not forsake you, nor destroy you, nor forget the covenant of your fathers which He swore to them."
+    },
+    {
+     "n": 32,
+     "t": "“For ask now of the days that are past, which were before you, since the day that Elohim created man on the earth and ask from one end of the heavens to the other end of the heavens, whether there has been a Word as great as this, or has been heard like it."
+    },
+    {
+     "n": 33,
+     "t": "“Has a people heard the voice of Elohim speaking out of the midst of the fire, as you have heard and live?"
+    },
+    {
+     "n": 34,
+     "t": "“Or has Elohim tried to go and take for Himself a nation from the midst of a nation by trials and by signs and by wonders and by battle and by a strong hand and an outstretched arm and by great fearsome deeds, according to all that HWHY your Elohim did for you in Mitsrayim before your eyes?"
+    },
+    {
+     "n": 35,
+     "t": "“You have been shown it, to know that HWHY Himself is Elohim; there is no one beside Him."
+    },
+    {
+     "n": 36,
+     "t": "“From the heavens He let you hear His voice, to instruct you and on earth He showed you His great fire and you heard His words out of the midst of the fire."
+    },
+    {
+     "n": 37,
+     "t": "“And because He loved your fathers, therefore He chose their seed after them and brought you out of Mitsrayim with His Presence, with His great power,"
+    },
+    {
+     "n": 38,
+     "t": "to drive out from before you nations greater and stronger than you, to bring you in, to give you their land as an inheritance, as it is today."
+    },
+    {
+     "n": 39,
+     "t": "“And you shall know today and shall recall to your heart that HWHY Himself is Elohim in the heavens above and on the earth beneath; there is none else."
+    },
+    {
+     "n": 40,
+     "t": "“And you shall guard His laws and His commands which I command you today, so that it is well with you and with your children after you and so that you prolong your days on the soil which HWHY your Elohim is giving you for all time. ”"
+    },
+    {
+     "n": 41,
+     "t": "Then Mosheh separated three cities beyond the Yardĕn, toward the rising of the sun,"
+    },
+    {
+     "n": 42,
+     "t": "for him who killed someone to flee there, he who kills his neighbour unintentionally, without having hated him in time past and might flee to one of these cities and live:"
+    },
+    {
+     "n": 43,
+     "t": "Betser in the wilderness in the level land for the Re’uḇĕnites and Ramoth in Gil‛aḏ for the Gaḏites and Golan in Bashan for the Menashshites."
+    },
+    {
+     "n": 44,
+     "t": "And this is the Torah which Mosheh set before the children of Yisra’ĕl."
+    },
+    {
+     "n": 45,
+     "t": "These are the witnesses and the laws and the right-rulings which Mosheh spoke to the children of Yisra’ĕl after they came out of Mitsrayim,"
+    },
+    {
+     "n": 46,
+     "t": "beyond the Yardĕn, in the valley opposite Bĕyth Pe‛or, in the land of Siḥon sovereign of the Amorites, who dwelt at Ḥeshbon, whom Mosheh and the children of Yisra’ĕl had smitten after they came out of Mitsrayim."
+    },
+    {
+     "n": 47,
+     "t": "And they took possession of his land and the land of Oḡ sovereign of Bashan, two sovereigns of the Amorites, who were beyond the Yardĕn, toward the rising of the sun,"
+    },
+    {
+     "n": 48,
+     "t": "from Aro‛ĕr, which is on the bank of the wadi Arnon, even to Mount Siyon, which is Ḥermon,"
+    },
+    {
+     "n": 49,
+     "t": "and all the desert plain beyond the Yardĕn as far as the Sea of the Araḇah, below the slopes of Pisgah."
+    }
+   ],
+   "page": 239,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 2,
+     "t": "“HWHY our Elohim made a covenant with us in Ḥorĕḇ."
+    },
+    {
+     "n": 3,
+     "t": "“HWHY did not make this covenant with our fathers, but with us, those who are here today, all of us who are alive."
+    },
+    {
+     "n": 4,
+     "t": "“HWHY spoke with you face to face on the mountain from the midst of the fire."
+    },
+    {
+     "n": 5,
+     "t": "“I stood between HWHY and you at that time, to declare to you the Word of HWHY – for you were afraid because of the fire and you did not go up the mountain – saying:"
+    },
+    {
+     "n": 6,
+     "t": "‘I am HWHY your Elohim who brought you out of the land of Mitsrayim, out of the house of bondage."
+    },
+    {
+     "n": 7,
+     "t": "‘You have no other mighty ones against My face."
+    },
+    {
+     "n": 8,
+     "t": "‘You do not make for yourself a carved image of any likeness of which is in the heavens above, or which is in the earth beneath, or which is in the waters under the earth,"
+    },
+    {
+     "n": 9,
+     "t": "you do not bow down to them nor serve them. For I, HWHY your Elohim, am a jealous Ĕl, visiting the crookedness of the fathers upon the children to the third and fourth generations of those who hate Me,"
+    },
+    {
+     "n": 10,
+     "t": "but showing kindness to thousands, to those who love Me and guard My commands."
+    },
+    {
+     "n": 11,
+     "t": "‘You do not bring the Name of HWHY your Elohim to ruin, for HWHY does not leave him unpunished who brings His Name to ruin."
+    },
+    {
+     "n": 12,
+     "t": "‘Guard the Sabbath day, to set it apart, as HWHY your Elohim commanded you."
+    },
+    {
+     "n": 13,
+     "t": "‘Six days you labour and shall do all your work,"
+    },
+    {
+     "n": 14,
+     "t": "but the seventh day is a Sabbath of HWHY your Elohim. you do not do any work – you, nor your son, nor your daughter, nor your male servant, nor your female servant, nor your ox, nor your donkey, nor any of your cattle, nor your stranger who is within your we have and does live?"
+    }
+   ],
+   "page": 242,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“And this is the command, the laws and right-rulings which HWHY your Elohim has commanded, to teach you to do in the land which you are passing over to possess,"
+    },
+    {
+     "n": 2,
+     "t": "so that you fear HWHY your Elohim, to guard all His laws and His commands which I command you, you and your son and your grandson, all the days of your life and that your days be prolonged."
+    },
+    {
+     "n": 3,
+     "t": "“And you shall hear, O Yisra’ĕl and shall guard to do, that it might be well with you and that you increase greatly as HWHY Elohim of your fathers has spoken to you, in a land flowing with milk and honey."
+    },
+    {
+     "n": 4,
+     "t": "“Hear, O Yisra’ĕl: HWHY our Elohim, HWHY is one!"
+    },
+    {
+     "n": 5,
+     "t": "“And you shall love HWHY your Elohim with all your heart and with all your being and with all your might."
+    },
+    {
+     "n": 6,
+     "t": "“And these Words which I am commanding you today shall be in your heart,"
+    },
+    {
+     "n": 7,
+     "t": "and you shall impress them upon your children and shall speak of them when you sit in your house and when you walk by the way and when you lie down and when you rise up,"
+    },
+    {
+     "n": 8,
+     "t": "and shall bind them as a sign on your hand and they shall be as frontlets between your eyes."
+    },
+    {
+     "n": 9,
+     "t": "“And you shall write them on the doorposts of your house and on your gates."
+    },
+    {
+     "n": 10,
+     "t": "“And it shall be, when HWHY your Elohim brings you into the land of which He swore to your fathers, to Aḇrahim, to Yitsḥaq and to Ya‛aqoḇ, to give you great and good cities which you did not build,"
+    },
+    {
+     "n": 11,
+     "t": "and houses filled with all kinds of goods, which you did not fill and wells dug which you did not dig, vineyards and olive trees which you did not plant and you shall eat and be satisfied –"
+    },
+    {
+     "n": 12,
+     "t": "be on guard, lest you forget HWHY who brought you out of the land of Mitsrayim, from the house of bondage."
+    },
+    {
+     "n": 13,
+     "t": "“Fear HWHY your Elohim and serve Him and swear by His Name."
+    },
+    {
+     "n": 14,
+     "t": "“Do not go after other mighty ones, the mighty ones of the peoples who are all around you,"
+    },
+    {
+     "n": 15,
+     "t": "for HWHY your Elohim is a jealous Ĕl in your midst, lest the displeasure of HWHY your Elohim burn against you, then He shall destroy you from the face of the earth."
+    },
+    {
+     "n": 16,
+     "t": "“Do not try HWHY your Elohim as you tried Him in Massah."
+    },
+    {
+     "n": 17,
+     "t": "“Diligently guard the commands of HWHY your Elohim, His witnesses and His laws which He has commanded you."
+    },
+    {
+     "n": 18,
+     "t": "“And you shall do what is right and good in the eyes of HWHY, that it might be well with you and you shall go in and possess the good land of which HWHY swore to your fathers,"
+    },
+    {
+     "n": 19,
+     "t": "to drive out all your enemies from before you, as HWHY has spoken ."
+    },
+    {
+     "n": 20,
+     "t": "“When your son asks you in time to come, saying, ‘What is the meaning of the witnesses and the laws and the right-rulings which HWHY our Elohim has commanded you?’"
+    },
+    {
+     "n": 21,
+     "t": "then you shall say to your son, ‘We were slaves of Pharaoh in Mitsrayim a nd HWHY brought us out of Mitsrayim with a strong hand,"
+    },
+    {
+     "n": 22,
+     "t": "and HWHY sent signs and wonders, great and grievous, upon Mitsrayim, upon Pharaoh and upon all his household, before our eyes."
+    },
+    {
+     "n": 23,
+     "t": "‘And He brought us out from there, to bring us in, to give us the land of which He swore to our fathers."
+    },
+    {
+     "n": 24,
+     "t": "‘And HWHY commanded us to do all these laws, to fear HWHY our Elohim, for our good always, to keep us alive, as it is today."
+    },
+    {
+     "n": 25,
+     "t": "‘And it is righteousness for us when we guard to do all this command before HWHY our Elohim, as He has commanded us.’"
+    }
+   ],
+   "page": 243,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "7": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“When HWHY your Elohim brings you into the land which you go to possess, He shall also clear away many nations before you: the Ḥittites and the Girgashites and the Amorites and the Kena‛anites and the Perizzites and the Ḥiwwites and the Yeḇusites, seven nations greater and mightier than you."
+    },
+    {
+     "n": 2,
+     "t": "“And when HWHY your Elohim gives them over to you, you shall smite them and put them under the ban, completely. Make no covenant with them and show them no favour."
+    },
+    {
+     "n": 3,
+     "t": "“And do not intermarry with them – you do not give your daughter to his son and you do not take his daughter for your son,"
+    },
+    {
+     "n": 4,
+     "t": "because he turns your sons away from following Me, to serve other mighty ones. Then the displeasure of HWHY shall burn against you and promptly destroy you."
+    },
+    {
+     "n": 5,
+     "t": "“But this is what you do to them: Break down their altars and smash their pillars and cut down their Ashĕrim and burn their carved images with fire."
+    },
+    {
+     "n": 6,
+     "t": "“For you are a set-apart people to HWHY your Elohim. HWHY your Elohim has chosen you to be a people for Himself, a treasured possession above all the peoples on the face of the earth."
+    },
+    {
+     "n": 7,
+     "t": "“HWHY did not set His love on you nor choose you because you were more numerous than any other people, for you were the least of all peoples,"
+    },
+    {
+     "n": 8,
+     "t": "but because of HWHY loving you and because of Him guarding the oath which He swore to your fathers, HWHY has brought you out with a strong hand and redeemed you from the house of bondage, from the hand of Pharaoh sovereign of Mitsrayim."
+    },
+    {
+     "n": 9,
+     "t": "“And you shall know that HWHY your Elohim, He is Elohim, the trustworthy Ĕl guarding covenant and kindness for a thousand generations with those who love Him and those who guard His commands,"
+    },
+    {
+     "n": 10,
+     "t": "but repaying those who hate Him to their face, to destroy them. He does not delay to do so with him who hates Him, He repays him to his face."
+    },
+    {
+     "n": 11,
+     "t": "“And you shall guard the command, the laws and the right-rulings which I command you today so to do them."
+    },
+    {
+     "n": 12,
+     "t": "“And it shall be, because you hear these right-rulings and shall guard and do them, that HWHY your Elohim shall guard with you the covenant and the kindness which He swore to your fathers,"
+    },
+    {
+     "n": 13,
+     "t": "and shall love you and bless you and increase you and shall bless the fruit of your womb and the fruit of your land, your grain, new wine and your oil, the increase of your cattle and the offspring of your flock, in the land of which He swore to your fathers to give you."
+    },
+    {
+     "n": 14,
+     "t": "“Blessed are you above all peoples – there is not going to be a barren man or a barren woman among you or among your livestock."
+    },
+    {
+     "n": 15,
+     "t": "“And HWHY shall turn away from you all sickness and put on you none of the evil diseases of Mitsrayim which you have known, but He shall put them on all those who hate you."
+    },
+    {
+     "n": 16,
+     "t": "“And you shall consume all the peoples whom HWHY your Elohim is delivering over to you – your eye shall not pardon them. And do not serve their mighty ones, for that is a snare to you."
+    },
+    {
+     "n": 17,
+     "t": "“When you say in your heart, ‘These nations are greater than I, I am unable to drive them out,’"
+    },
+    {
+     "n": 18,
+     "t": "do not be afraid of them. remember well what HWHY your Elohim did to Pharaoh and to all Mitsrayim,"
+    },
+    {
+     "n": 19,
+     "t": "the great trials which your eyes saw and the signs and the wonders, the strong hand and the outstretched arm, by which HWHY your Elohim brought you out. HWHY your Elohim does so to all the peoples of whom you are afraid."
+    },
+    {
+     "n": 20,
+     "t": "“And HWHY your Elohim also sends the hornet among them until those who are left, who hide themselves from you, are destroyed."
+    },
+    {
+     "n": 21,
+     "t": "“Do not be afraid of them, for HWHY your Elohim, the great and awesome Ĕl, is in your midst."
+    },
+    {
+     "n": 22,
+     "t": "“And HWHY your Elohim shall drive out those nations before you, little by little. You are not allowed to destroy them at once, lest the beasts of the field become too numerous for you."
+    },
+    {
+     "n": 23,
+     "t": "“But HWHY your Elohim shall deliver them over to you and destroy them with a great destruction until they are consumed."
+    },
+    {
+     "n": 24,
+     "t": "“And He shall give their sovereigns into your hand and you shall destroy their name from under the heavens. No one is going to be able to stand against you until you have destroyed them."
+    },
+    {
+     "n": 25,
+     "t": "“The carved images of their mighty ones you are to burn with fire. Do not covet the silver or gold that is on them, nor take it for yourselves, lest you be snared by it, for it is an abomination to HWHY your Elohim."
+    },
+    {
+     "n": 26,
+     "t": "“And do not bring an abomination into your house, lest you be accursed like it. Utterly loathe it and utterly hate it because it is accursed."
+    }
+   ],
+   "page": 244,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“Guard to do every command which I command you today, that you might live and shall increase and go in and shall possess the land of which HWHY swore to your fathers."
+    },
+    {
+     "n": 2,
+     "t": "“And you shall remember that HWHY your Elohim led you all the way these forty years in the wilderness, to humble you, prove you, to know what is in your heart, whether you guard His commands or not."
+    },
+    {
+     "n": 3,
+     "t": "“And He humbled you and let you suffer hunger and fed you with manna which you did not know nor did your fathers know, to make you know that man does not live by bread alone but by every Word that comes from the mouth of HWHY."
+    },
+    {
+     "n": 4,
+     "t": "“Your garments did not wear out on you, nor did your foot swell these forty years."
+    },
+    {
+     "n": 5,
+     "t": "“Thus you shall know in your heart that as a man disciplines his son, so HWHY your Elohim disciplines you,"
+    },
+    {
+     "n": 6,
+     "t": "therefore you shall guard the commands of HWHY your Elohim, to walk in His ways and to fear Him."
+    },
+    {
+     "n": 7,
+     "t": "“For HWHY your Elohim is bringing you into a good land, a land of streams of water, of fountains and springs, that flow out of valleys and hills,"
+    },
+    {
+     "n": 8,
+     "t": "a land of wheat and barley, of vines and fig trees and pomegranates, a land of olive oil and honey,"
+    },
+    {
+     "n": 9,
+     "t": "a land in which you eat bread without scarcity, in which you do not lack at all, a land whose stones are iron and out of whose hills you dig copper."
+    },
+    {
+     "n": 10,
+     "t": "“And you shall eat and be satisfied and shall bless HWHY your Elohim for the good land which He has given you."
+    },
+    {
+     "n": 11,
+     "t": "“Be on guard, lest you forget HWHY your Elohim by not guarding His commands and His right-rulings and His laws which I command you today,"
+    },
+    {
+     "n": 12,
+     "t": "lest you eat and shall be satisfied and build lovely houses and shall dwell in them,"
+    },
+    {
+     "n": 13,
+     "t": "and your herds and your flocks increase and your silver and your gold are increased and all that you have is increased,"
+    },
+    {
+     "n": 14,
+     "t": "that your heart then becomes lifted up and you forget HWHY your Elohim who brought you out of the land of Mitsrayim, from the house of bondage,"
+    },
+    {
+     "n": 15,
+     "t": "who led you through that great and awesome wilderness – fiery serpents and scorpions and thirst – where there was no water, who brought water for you out of the flinty rock,"
+    },
+    {
+     "n": 16,
+     "t": "who fed you in the wilderness with manna, which your fathers did not know, in order to humble you and to try you, to do you good in the end,"
+    },
+    {
+     "n": 17,
+     "t": "you then shall say in your heart, ‘My power and the strength of my hand have made for me this wealth!’"
+    },
+    {
+     "n": 18,
+     "t": "“But you shall remember HWHY your Elohim, for it is He who gives you power to get wealth, in order to establish His covenant which He swore to your fathers, as it is today."
+    },
+    {
+     "n": 19,
+     "t": "“And it shall be, if you by any means forget HWHY your Elohim and follow other mighty ones and serve them and bow yourself to them, I have warned you this day that you shall certainly perish."
+    },
+    {
+     "n": 20,
+     "t": "“Like the nations which HWHY is destroying before you, so you are to perish, because you did not obey the voice of HWHY your Elohim."
+    }
+   ],
+   "page": 245,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“Hear, O Yisra’ĕl: You are passing over the Yardĕn today, to go in to dispossess nations greater and stronger than yourself, cities great and walled up to the heavens,"
+    },
+    {
+     "n": 2,
+     "t": "a people great and tall, the descendants of the Anaqim, whom you know and of whom you heard it said, ‘Who does stand before the descendants of Anaq?’"
+    },
+    {
+     "n": 3,
+     "t": "“And you shall know today that HWHY your Elohim is He who is passing over before you as a consuming fire – He does destroy them and subdue them before you. So you shall dispossess them and destroy them quickly, as HWHY has said to you."
+    },
+    {
+     "n": 4,
+     "t": "“Do not think in your heart, after HWHY your Elohim has driven them out before you, saying, ‘Because of my righteousness HWHY has brought me in to possess this land.’ But it is because of the wrong of these nations that HWHY is driving them out from before you."
+    },
+    {
+     "n": 5,
+     "t": "“It is not because of your righteousness or the uprightness of your heart that you go in to possess their land, but because of the wrong of these nations that HWHY your Elohim drives them out from before you, in order to establish the word which HWHY swore to your fathers, to Aḇrahim, to Yitsḥaq and to Ya‛aqoḇ."
+    },
+    {
+     "n": 6,
+     "t": "“And you shall know that HWHY your Elohim is not giving you this good land to possess because of your righteousness, for you are a stiff-necked people."
+    },
+    {
+     "n": 7,
+     "t": "“Remember, do not forget how you provoked to wrath HWHY your Elohim in the wilderness. From the day that you came out of the land of Mitsrayim until you came to this place, you have been rebellious against HWHY."
+    },
+    {
+     "n": 8,
+     "t": "“Even in Ḥorĕḇ you made HWHY wroth, so that HWHY was enraged with you, to destroy you."
+    },
+    {
+     "n": 9,
+     "t": "“When I went up into the mountain to receive the tablets of stone, the tablets of the covenant which HWHY made with you, then I stayed on the mountain forty days and forty nights. I did not eat bread nor did I drink water."
+    },
+    {
+     "n": 10,
+     "t": "“Then HWHY gave me the two tablets of stone written with the finger of Elohim and on them were all the Words which HWHY had spoken to you on the mountain from the midst of the fire in the day of the assembly."
+    },
+    {
+     "n": 11,
+     "t": "“And it came to be, at the end of forty days and forty nights, that HWHY gave me the two tablets of stone, the tablets of the covenant."
+    },
+    {
+     "n": 12,
+     "t": "“Then HWHY said to me, ‘Arise, go down quickly from here, for your people whom you brought out of Mitsrayim have acted corruptly. They have quickly turned aside from the way which I commanded them, they have made themselves a moulded image.’"
+    },
+    {
+     "n": 13,
+     "t": "“And HWHY spoke to me, saying, ‘I have seen this people and look, they are a stiff-necked people."
+    },
+    {
+     "n": 14,
+     "t": "‘Leave Me alone, so that I destroy them and blot out their name from under the heavens and make of you a nation stronger and greater than they.’"
+    },
+    {
+     "n": 15,
+     "t": "“So I turned and came down from the mountain and the mountain burned with fire. And the two tablets of the covenant were in my two hands."
+    },
+    {
+     "n": 16,
+     "t": "“And I looked and saw that you had sinned against HWHY your Elohim and had made for yourselves a moulded calf! You had quickly turned aside from the way which HWHY had commanded you."
+    },
+    {
+     "n": 17,
+     "t": "“And I took the two tablets and threw them out of my two hands and broke them before your eyes,"
+    },
+    {
+     "n": 18,
+     "t": "“and I fell down before HWHY, as at the first, forty days and forty nights. I did not eat bread and I did not drink water, because of all your sins which you committed in doing evil in the eyes of HWHY, to provoke Him."
+    },
+    {
+     "n": 19,
+     "t": "“For I was afraid of the displeasure and rage with which HWHY was wroth with you, to destroy you. But HWHY listened to me that time once more."
+    },
+    {
+     "n": 20,
+     "t": "“And HWHY was very enraged with Aharon, to destroy him, so I prayed for Aharon at that time also."
+    },
+    {
+     "n": 21,
+     "t": "“And I took your sin, the calf which you had made and burned it with fire and crushed it and ground it very small, until it was as fine as dust. And I threw its dust into the stream that came down from the mountain."
+    },
+    {
+     "n": 22,
+     "t": "“And at Taḇ‛ĕrah and at Massah and at Qiḇroth Hatta’awah you made HWHY wroth."
+    },
+    {
+     "n": 23,
+     "t": "“And when HWHY sent you from Qaḏĕsh Barnĕa, saying, ‘Go up and possess the land which I have given you,’ then you rebelled against the mouth of HWHY your Elohim and you neither trusted Him nor listened to His voice."
+    },
+    {
+     "n": 24,
+     "t": "“You have been rebellious against HWHY from the day that I knew you."
+    },
+    {
+     "n": 25,
+     "t": "“So I fell down before HWHY the forty days and forty nights, for I fell down because HWHY had said He would destroy you."
+    },
+    {
+     "n": 26,
+     "t": "“And I prayed to HWHY and said, ‘O Master HWHY, do not destroy Your people and Your inheritance whom You have redeemed in Your greatness, whom You have brought out of Mitsrayim with a strong hand."
+    },
+    {
+     "n": 27,
+     "t": "‘Remember Your servants, Aḇrahim, Yitsḥaq and Ya‛aqoḇ. Do not look on the stubbornness of this people, or on their wrong or on their sin,"
+    },
+    {
+     "n": 28,
+     "t": "lest the land from which You brought us should say, “Because HWHY was not able to bring them to the land which He promised them and because He hated them, He has brought them out to kill them in the wilderness.”"
+    },
+    {
+     "n": 29,
+     "t": "‘And they are Your people and Your inheritance, whom You brought out by Your great power and by Your outstretched arm.’"
+    }
+   ],
+   "page": 246,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“At that time HWHY said to me, ‘Hew for yourself two tablets of stone like the first and come up to Me on the mountain. And you shall make yourself an ark of wood,"
+    },
+    {
+     "n": 2,
+     "t": "then I write on the tablets the Words that were on the first tablets, which you broke and you shall put them in the ark.’"
+    },
+    {
+     "n": 3,
+     "t": "“So I made an ark of acacia wood, hewed two tablets of stone like the first and went up the mountain, with the two tablets in my hand."
+    },
+    {
+     "n": 4,
+     "t": "“And He wrote on the tablets according to the first writing, the Ten Words, which HWHY had spoken to you in the mountain from the midst of the fire in the day of the assembly. Then HWHY gave them to me,"
+    },
+    {
+     "n": 5,
+     "t": "and I turned and came down from the mountain and put the tablets in the ark which I had made. And they are there, as HWHY commanded me.”"
+    },
+    {
+     "n": 6,
+     "t": "Now the children of Yisra’ĕl set out from the wells of Benĕi Ya‛aqan to Mosĕrah. Aharon died there and he was buried there. And El‛azar his son became priest in his place."
+    },
+    {
+     "n": 7,
+     "t": "From there they set out to Guḏgoḏah and from Guḏgoḏah to Yotḇathah, a land of rivers of water."
+    },
+    {
+     "n": 8,
+     "t": "At that time HWHY separated the tribe of Lĕwi to bear the ark of the covenant of HWHY, to stand before HWHY, to serve Him and to bless in His Name, to this day."
+    },
+    {
+     "n": 9,
+     "t": "Therefore Lĕwi has no portion nor inheritance with his brothers. HWHY is his inheritance, as HWHY your Elohim promised him."
+    },
+    {
+     "n": 10,
+     "t": "“And I stayed in the mountain for forty days and forty nights and HWHY heard me at that time and HWHY chose not to destroy you."
+    },
+    {
+     "n": 11,
+     "t": "“And HWHY said to me, ‘Arise, go before the people, to set out and let them go in and possess the land which I swore to their fathers to give them.’"
+    },
+    {
+     "n": 12,
+     "t": "“And now, Yisra’ĕl, what is HWHY your Elohim asking of you, but to fear HWHY your Elohim, to walk in all His ways and to love Him and to serve HWHY your Elohim with all your heart and with all your being,"
+    },
+    {
+     "n": 13,
+     "t": "to guard the commands of HWHY and His laws which I command you today for your good?"
+    },
+    {
+     "n": 14,
+     "t": "“See, the heavens and the heavens of heavens belong to HWHY your Elohim, also the earth with all that is in it."
+    },
+    {
+     "n": 15,
+     "t": "“HWHY delighted only in your fathers, to love them. And He chose their seed after them, you above all peoples, as it is today."
+    },
+    {
+     "n": 16,
+     "t": "“And you shall circumcise the foreskin of your heart and harden your neck no more."
+    },
+    {
+     "n": 17,
+     "t": "“For HWHY your Elohim is Elohim of mighty ones and Master of masters, the great Ĕl, mighty and awesome, who shows no partiality nor takes a bribe."
+    },
+    {
+     "n": 18,
+     "t": "”He executes right-ruling for the fatherless and the widow and loves the stranger, giving him food and a garment."
+    },
+    {
+     "n": 19,
+     "t": "“And you shall love the stranger, for you were strangers in the land of Mitsrayim."
+    },
+    {
+     "n": 20,
+     "t": "“Fear HWHY your Elohim. Serve Him and cling to Him and swear by His Name."
+    },
+    {
+     "n": 21,
+     "t": "”He is your praise and He is your Elohim, who has done for you these great and awesome deeds which your eyes have seen."
+    },
+    {
+     "n": 22,
+     "t": "“Your fathers went down to Mitsrayim with seventy beings and now HWHY your Elohim has made you as numerous as the stars of the heavens."
+    }
+   ],
+   "page": 247,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“And you shall love HWHY your Elohim and guard His Charge: even His laws and His right-rulings and His commands, always."
+    },
+    {
+     "n": 2,
+     "t": "“And you shall know today, it is not your children who have not known and who have not seen the discipline of HWHY your Elohim, His greatness, His strong hand and His outstretched arm,"
+    },
+    {
+     "n": 3,
+     "t": "and His signs and His works which He had done in the midst of Mitsrayim, to Pharaoh sovereign of Mitsrayim and to all his land;"
+    },
+    {
+     "n": 4,
+     "t": "and that which He had done to the army of Mitsrayim, to their horses and their chariots, when He made the waters of the Sea of Reeds overflow them as they pursued you and how HWHY has destroyed them to this day;"
+    },
+    {
+     "n": 5,
+     "t": "and what He had done for you in the wilderness til you came to this place;"
+    },
+    {
+     "n": 6,
+     "t": "and what He had done to Dathan and Aḇiram the sons of Eliyaḇ, son of Re’uḇĕn, when the earth opened its mouth and swallowed them up and their households and their tents and all the living creatures that were in their possession, in the midst of all Yisra’ĕl."
+    },
+    {
+     "n": 7,
+     "t": "“For yours are the eyes that saw all the great work of HWHY, which He did."
+    },
+    {
+     "n": 8,
+     "t": "“And you shall guard every command which I command you today, so that you are strong and shall go in and shall possess the land which you are passing over to possess,"
+    },
+    {
+     "n": 9,
+     "t": "and to prolong your days in the land which HWHY swore to give your fathers, to them and their descendants, a land flowing with milk and honey."
+    },
+    {
+     "n": 10,
+     "t": "“For the land which you are going in to possess is not like the land of Mitsrayim from which you have come, where you sowed your seed and watered it by foot, as a vegetable garden,"
+    },
+    {
+     "n": 11,
+     "t": "but the land which you are passing over to possess is a land of hills and valleys, which drinks water from the rain of the heavens,"
+    },
+    {
+     "n": 12,
+     "t": "a land which HWHY your Elohim looks after. The eyes of HWHY your Elohim are always on it, from the beginning of the year to the latter end of the year."
+    },
+    {
+     "n": 13,
+     "t": "‘And it shall be that if you diligently obey My commands which I command you today, to love HWHY your Elohim and to serve Him with all your heart and with all your being,"
+    },
+    {
+     "n": 14,
+     "t": "then I shall give you the rain for your land in its season, the early rain and the latter rain and you shall gather in your grain and your new wine and your oil."
+    },
+    {
+     "n": 15,
+     "t": "‘And I shall give grass in your fields for your livestock and you shall eat and be satisfied."
+    },
+    {
+     "n": 16,
+     "t": "‘Guard yourselves, lest your heart be deceived and you turn aside and serve other mighty ones and bow down to them."
+    },
+    {
+     "n": 17,
+     "t": "‘Then the displeasure of HWHY shall burn against you and He shall shut up the heavens and there be no rain and the land not give its increase. And you shall perish quickly from the good land which HWHY is giving you."
+    },
+    {
+     "n": 18,
+     "t": "‘And you shall lay up these Words of Mine in your heart and in your being and shall bind them as a sign on your hand and they shall be as frontlets between your eyes."
+    },
+    {
+     "n": 19,
+     "t": "‘And you shall teach them to your children, speaking of them when you sit in your house and when you walk by the way and when you lie down and when you rise up,"
+    },
+    {
+     "n": 20,
+     "t": "and shall write them on the doorposts of your house and on your gates,"
+    },
+    {
+     "n": 21,
+     "t": "so that your days and the days of your children are increased on the soil of which HWHY swore to your fathers to give them, as the days of the heavens on the earth ."
+    },
+    {
+     "n": 22,
+     "t": "‘For if you diligently guard all these commands which I command you, to do it, to love HWHY your Elohim, to walk in all His ways and to cling to Him,"
+    },
+    {
+     "n": 23,
+     "t": "then HWHY shall drive out all these nations before you and you shall dispossess greater and stronger nations than you."
+    },
+    {
+     "n": 24,
+     "t": "‘Every place on which the sole of your foot treads is yours: from the wilderness and Leḇanon, from the river, the River Euphrates, even to the Western Sea is your border."
+    },
+    {
+     "n": 25,
+     "t": "‘No man shall stand against you. HWHY your Elohim shall put the dread of you and the fear of you upon all the land where you tread, as He has spoken to you."
+    },
+    {
+     "n": 26,
+     "t": "‘See, I am setting before you today a blessing and a curse:"
+    },
+    {
+     "n": 27,
+     "t": "the blessing, when you obey the commands of HWHY your Elohim which I command you today;"
+    },
+    {
+     "n": 28,
+     "t": "and the curse, if you do not obey the commands of HWHY your Elohim, but turn aside from the way which I command you today, to go after other mighty ones which you have not known."
+    },
+    {
+     "n": 29,
+     "t": "‘And it shall be, when HWHY your Elohim has brought you into the land which you go to possess, that you shall put the blessing on Mount Gerizim and"
+    },
+    {
+     "n": 30,
+     "t": "‘Are they not beyond the Yardĕn, toward the setting sun, in the land of the Kena‛anites who dwell in the desert plain opposite Gilgal, beside the terebinth trees of Moreh?"
+    },
+    {
+     "n": 31,
+     "t": "‘For you are passing over the Yardĕn to go in to possess the land which HWHY your Elohim is giving you and you shall possess it and dwell in it,"
+    },
+    {
+     "n": 32,
+     "t": "and shall guard to do all the laws and right-rulings which I am setting before you today.’"
+    }
+   ],
+   "page": 248,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“These are the laws and right- rulings which you guard to do in the land which HWHY Elohim of your fathers is giving you to possess, all the days that you live on the soil."
+    },
+    {
+     "n": 2,
+     "t": "“Completely destroy all the places where the nations which you are dispossessing served their mighty ones, on the high mountains and on the hills and under every green tree."
+    },
+    {
+     "n": 3,
+     "t": "“And you shall break down their altars and smash their pillars and burn their Ashĕrim with fire. And you shall cut down the carved images of their mighty ones and shall destroy their name out of that place."
+    },
+    {
+     "n": 4,
+     "t": "“Do not do so to HWHY your Elohim,"
+    },
+    {
+     "n": 5,
+     "t": "but seek the place which HWHY your Elohim chooses, out of all your tribes, to put His Name there, for His Dwelling Place and there you shall enter."
+    },
+    {
+     "n": 6,
+     "t": "“And there you shall take your burnt offerings and your offerings and your tithes and the contributions of your hand and your vowed offerings and your voluntary offerings and the firstlings of your herd and of your flock."
+    },
+    {
+     "n": 7,
+     "t": "“And there you shall eat before HWHY your Elohim and shall rejoice in all that you put your hand to, you and your households, in which HWHY your Elohim has blessed you."
+    },
+    {
+     "n": 8,
+     "t": "“Do not do as we are doing here today – each one doing whatever is right in his own eyes."
+    }
+   ],
+   "page": 250,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "13": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“When there arises among you a prophet or a dreamer of dreams and he shall give you a sign or a wonder,"
+    },
+    {
+     "n": 2,
+     "t": "and the sign or the wonder shall come true, of which he has spoken to you, saying, ‘Let us go after other mighty ones – which you have not known – and serve them,’"
+    },
+    {
+     "n": 3,
+     "t": "do not listen to the words of that prophet or that dreamer of dreams, for HWHY your Elohim is trying you to know whether you love HWHY your Elohim with all your heart and with all your being."
+    },
+    {
+     "n": 4,
+     "t": "“Walk after HWHY your Elohim and fear Him and guard His commands and obey His voice and serve Him and cling to Him."
+    },
+    {
+     "n": 5,
+     "t": "“And that prophet or that dreamer of dreams is put to death, because he has spoken apostasy against HWHY your Elohim – who brought you out of the land of Mitsrayim and redeemed you from the house of bondage – to make you stray from the way in which HWHY your Elohim commanded you to walk. Thus you shall purge the evil from your midst."
+    },
+    {
+     "n": 6,
+     "t": "“When your brother, the son of your mother, or your son or your daughter, or the wife of your bosom, or your friend who is as your own being, entices you secretly, saying, ‘Let us go and serve other mighty ones’– which you have not And you shall rejoice before HWHY your Elohim in all that you put your hands to."
+    },
+    {
+     "n": 7,
+     "t": "of the mighty ones of the people which are all around you, near to you or far off from you, from one end of the earth to the other end of the earth –"
+    },
+    {
+     "n": 8,
+     "t": "do not agree with him or listen to him, nor shall your eye pardon him, nor spare him or conceal him,"
+    },
+    {
+     "n": 9,
+     "t": "but you shall certainly kill him. Your hand is first against him to put him to death and afterward the hand of all the people,"
+    },
+    {
+     "n": 10,
+     "t": "and you shall stone him with stones until he dies, because he sought to entice you away from HWHY your Elohim, who brought you out of the land of Mitsrayim, from the house of bondage."
+    },
+    {
+     "n": 11,
+     "t": "“And let all Yisra’ĕl hear and fear and not again do any such evil matter as this in your midst."
+    },
+    {
+     "n": 12,
+     "t": "“When you hear someone in one of your cities, which HWHY your Elohim gives you to dwell in, saying,"
+    },
+    {
+     "n": 13,
+     "t": "‘Some men, sons of Beliya‛al, have gone out of you midst and led the inhabitants of their city astray, saying, “Let’s go and serve other mighty ones” ’ – mighty ones whom you have not known –"
+    },
+    {
+     "n": 14,
+     "t": "then you shall inquire, search out and ask diligently. And see if the matter is true and established that this abomination was done in your midst,"
+    },
+    {
+     "n": 15,
+     "t": "you shall certainly smite the inhabitants of that city with the edge of the sword, putting it under the ban and all that is in it and its livestock, with the edge of the sword."
+    },
+    {
+     "n": 16,
+     "t": "“And gather all its plunder into the middle of the street and completely burn with fire the city and all its plunder, before HWHY your Elohim. It shall be a heap forever, never to be built again."
+    },
+    {
+     "n": 17,
+     "t": "“And none of that which is put under the ban is to cling to your hand, so that HWHY turns from the fierceness of His displeasure and shall show you compassion, love you and increase you, as He swore to your fathers,"
+    },
+    {
+     "n": 18,
+     "t": "when you obey the voice of HWHY your Elohim, to guard all His commands which I command you today, to do what is right in the eyes of HWHY your Elohim."
+    }
+   ],
+   "page": 251,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "14": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“You are the children of HWHY your Elohim. Do not cut yourselves nor shave the front of your head for the dead,"
+    },
+    {
+     "n": 2,
+     "t": "for you are a set-apart people to HWHY your Elohim and HWHY has chosen you to be a people for Himself, a treasured possession above all the peoples who are on the face of the earth."
+    },
+    {
+     "n": 3,
+     "t": "“Do not eat whatever is abominable."
+    },
+    {
+     "n": 4,
+     "t": "“These are the living creatures which you do eat: ox, sheep and goat,"
+    },
+    {
+     "n": 5,
+     "t": "deer and gazelle and roebuck and wild goat and mountain goat and antelope and mountain sheep."
+    },
+    {
+     "n": 6,
+     "t": "“And every beast that has a split hoof divided in two, chewing the cud, among the beasts, you do eat."
+    },
+    {
+     "n": 7,
+     "t": "“But of those chewing the cud or those having a split hoof completely divided, you do not eat, such as these: the camel and the hare and the rabbit, for they chew the cud but do not have a split hoof, they are unclean for you."
+    },
+    {
+     "n": 8,
+     "t": "“And the pig is unclean for you, because it has a split hoof, but does not chew the cud. Do not eat their flesh or touch their dead carcasses."
+    },
+    {
+     "n": 9,
+     "t": "“These you do eat of all that are in the waters: all that have fins and scales you do eat."
+    },
+    {
+     "n": 10,
+     "t": "“ whatever does not have fins and scales you don’t eat, it is unclean for you."
+    },
+    {
+     "n": 11,
+     "t": "“Any clean bird you do eat,"
+    },
+    {
+     "n": 12,
+     "t": "but these you do not eat: the eagle and the vulture and the black vulture,"
+    },
+    {
+     "n": 13,
+     "t": "and the red kite and the falcon and the buzzard after their kinds,"
+    },
+    {
+     "n": 14,
+     "t": "and every raven after its kind,"
+    },
+    {
+     "n": 15,
+     "t": "and the ostrich and the nighthawk and the seagull and the hawk after their kinds,"
+    },
+    {
+     "n": 16,
+     "t": "the little owl and the great owl and the white owl,"
+    },
+    {
+     "n": 17,
+     "t": "and the pelican and the carrion vulture and the fisher owl,"
+    },
+    {
+     "n": 18,
+     "t": "and the stork and the heron after its kind and the hoopoe and the bat."
+    },
+    {
+     "n": 19,
+     "t": "“And every creeping insect that flies is unclean for you, they are not eaten."
+    },
+    {
+     "n": 20,
+     "t": "“Any clean bird you do eat."
+    },
+    {
+     "n": 21,
+     "t": "“Do not eat whatever dies of itself. Give it to the stranger who is within your gates, to eat it, or sell it to a foreigner. For you are a set-apart people to HWHY your Elohim. Do not cook a young goat in its mother’s milk."
+    },
+    {
+     "n": 22,
+     "t": "“You shall tithe without fail all the yield of your grain that the field brings forth year by year."
+    },
+    {
+     "n": 23,
+     "t": "“And you shall eat before HWHY your Elohim, in the place where He chooses to make His Name dwell, the tithe of your grain and your new wine and your oil and of the firstlings of your herds and your sheep, so that you learn to fear HWHY your Elohim always."
+    },
+    {
+     "n": 24,
+     "t": "“But when the way is too long for you, so that you are not able to bring the tithe, or when the place where HWHY your Elohim chooses to put His Name is too far from you, when HWHY your Elohim is blessing you,"
+    },
+    {
+     "n": 25,
+     "t": "then you shall give it in silver and shall take the silver in your hand and go to the place which HWHY your Elohim chooses."
+    },
+    {
+     "n": 26,
+     "t": "“And you shall use the silver for whatever your being desires: for cattle or sheep, for wine or strong drink, for whatever your being desires. And you shall eat there before HWHY your Elohim and you shall rejoice, you and your household."
+    },
+    {
+     "n": 27,
+     "t": "“And do not forsake the Lĕwite who is within your gates, for he has no part nor inheritance with you."
+    },
+    {
+     "n": 28,
+     "t": "“At the end of every third year you bring out all the tithe of your increase of that year and store it up within your gates."
+    },
+    {
+     "n": 29,
+     "t": "“And the Lĕwite, because he has no portion nor inheritance with you and the sojourner and the fatherless and the widow who are within your gates, shall come and eat and be satisfied, so that HWHY your Elohim does bless you in all the work of your hand which you do."
+    }
+   ],
+   "page": 252,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "15": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“At the end of every seven years you make a release of debts."
+    },
+    {
+     "n": 2,
+     "t": "“And this is the Word of the release: Every creditor is to release what he has loaned to his neighbour, he does not require it of his neighbour or his brother, because it is called the release of HWHY."
+    },
+    {
+     "n": 3,
+     "t": "“Of a foreigner you could require it, but your hand is to release whatever is owed by your brother."
+    },
+    {
+     "n": 4,
+     "t": "“Only, there should be no poor among you. For HWHY does greatly bless you in the land which HWHY your Elohim is giving you to possess as an inheritance,"
+    },
+    {
+     "n": 5,
+     "t": "only if you diligently obey the voice of HWHY your Elohim, to guard to do all these commands which I am commanding you today ."
+    },
+    {
+     "n": 6,
+     "t": "“For HWHY your Elohim shall bless you as He promised you. And you shall lend to many nations, but you shall not borrow. And you shall rule over many nations, but they do not rule over you."
+    },
+    {
+     "n": 7,
+     "t": "“When there is a poor man with you, one of your brothers, within any of the gates in your land which HWHY your Elohim is giving you, do not harden your heart nor shut your hand from your poor brother,"
+    },
+    {
+     "n": 8,
+     "t": "for you shall certainly open your hand to him and certainly lend him enough for his need, whatever he needs."
+    },
+    {
+     "n": 9,
+     "t": "“Be on guard lest there be a thought of Beliya‛al in your heart, saying, ‘The seventh year, the year of release, is near,’ and your eye is evil against your poor brother and you give him naught. And he shall cry out to HWHY against you and it shall be a sin in you."
+    },
+    {
+     "n": 10,
+     "t": "“You shall certainly give to him and your heart should not be grieved when you give to him, because for this reason HWHY your Elohim does bless you in all your works and in all to which you put your hand."
+    },
+    {
+     "n": 11,
+     "t": "“Because the poor one does not cease from the land. Therefore I am commanding you, saying, ‘You shall certainly open your hand to your brother, to your poor and to your needy one, in your land.’"
+    },
+    {
+     "n": 12,
+     "t": "“When your brother is sold to you, a Heḇrew man or a Heḇrew woman and shall serve you six years, then let him go free from you in the seventh year."
+    },
+    {
+     "n": 13,
+     "t": "“And when you send him away free from you, let him not go away emptyhanded."
+    },
+    {
+     "n": 14,
+     "t": "“You shall richly supply him from your flock and from your threshing-floor and from your winepress. With that which HWHY has blessed you with, give to him."
+    },
+    {
+     "n": 15,
+     "t": "“And you shall remember that you were a slave in the land of Mitsrayim and HWHY your Elohim redeemed you. Therefore I am commanding you this word today."
+    },
+    {
+     "n": 16,
+     "t": "“And it shall be, when he says to you, ‘I do not go away from you,’ because he loves you and your house, because it is good for him with you,"
+    },
+    {
+     "n": 17,
+     "t": "then you shall take an awl and thrust it through his ear to the door, and he shall be your servant forever. Do the same to your female servant."
+    },
+    {
+     "n": 18,
+     "t": "“Let it not be hard in your eyes when you send him away free from you, for he has been worth a double hired servant in serving you six years. And HWHY your Elohim shall bless you in all that you do."
+    },
+    {
+     "n": 19,
+     "t": "“Set apart to HWHY your Elohim all the first-born males that come from your herd and your flock. Do no work with the first-born of your herd, nor shear the first-born of your flock."
+    },
+    {
+     "n": 20,
+     "t": "“You and your household are to eat it before HWHY your Elohim year by year in the place which HWHY chooses."
+    },
+    {
+     "n": 21,
+     "t": "“But when there is any defect in it, lame or blind, or has any evil defect, do not slaughter it to HWHY your Elohim."
+    },
+    {
+     "n": 22,
+     "t": "“Eat it within your gates – the unclean and the clean alike – as the gazelle and as the deer."
+    },
+    {
+     "n": 23,
+     "t": "“Only, do not eat its blood, pour it on the ground like water."
+    }
+   ],
+   "page": 253,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "16": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“Guard the month of Aḇiḇ and perform the Passover to HWHY your Elohim, for in the month of Aḇiḇ HWHY your Elohim brought you out of Mitsrayim by night."
+    },
+    {
+     "n": 2,
+     "t": "“And you shall slaughter the Passover to HWHY your Elohim, from the flock and the herd, in the place where HWHY chooses to put His Name."
+    },
+    {
+     "n": 3,
+     "t": "“Eat no leavened bread with it. For seven days you eat unleavened bread with it, bread of affliction, because you came out of the land of Mitsrayim in haste – so that you remember the day in which you came out of the land of Mitsrayim, all the days of your life."
+    },
+    {
+     "n": 4,
+     "t": "“And no leaven should be seen with you in all your border for seven days, neither should any of the meat which you slaughter in the evening on the first day stay all night until morning."
+    },
+    {
+     "n": 5,
+     "t": "“You are not allowed to slaughter the Passover within any of your gates which HWHY your Elohim gives you,"
+    },
+    {
+     "n": 6,
+     "t": "but at the place where HWHY your Elohim chooses to make His Name dwell, there you slaughter the Passover in the evening, at the going down of the sun, at the appointed time you came out of Mitsrayim."
+    },
+    {
+     "n": 7,
+     "t": "“And you shall roast and eat it in the place which HWHY your Elohim chooses and in the morning you shall turn and go to your tents."
+    },
+    {
+     "n": 8,
+     "t": "“Six days you eat unleavened bread and on the seventh day there is a closing festival to HWHY your Elohim – you do no work."
+    },
+    {
+     "n": 9,
+     "t": "“Count seven weeks for yourself. Begin to count seven weeks from the time you begin to put the sickle to the grain."
+    },
+    {
+     "n": 10,
+     "t": "“And you shall perform the Festival of weeks to HWHY your Elohim, according to the voluntary offering from your hand, which you give as HWHY your Elohim blesses you."
+    },
+    {
+     "n": 11,
+     "t": "“And you shall rejoice before HWHY your Elohim, you and your son and your daughter and your male servant and your female servant and the Lĕwite who is within your gates and the stranger and the fatherless and the widow who are in your midst, at the place where HWHY your Elohim chooses to make His Name dwell."
+    },
+    {
+     "n": 12,
+     "t": "“And you shall remember that you were a slave in Mitsrayim and you shall guard and do these laws."
+    },
+    {
+     "n": 13,
+     "t": "“Perform the Festival of Booths for seven days after the ingathering from your threshing-floor and from your winepress,"
+    },
+    {
+     "n": 14,
+     "t": "and you shall rejoice in your festival, you and your son and your daughter and your male servant and your female servant and the Lĕwite and the stranger and the fatherless and the widow who are within your gates."
+    },
+    {
+     "n": 15,
+     "t": "“For seven days you shall observe a festival to HWHY your Elohim in the place which HWHY chooses, because HWHY your Elohim does bless you in all your increase and in all the work of your hands and you shall be only rejoicing!"
+    },
+    {
+     "n": 16,
+     "t": "“Three times a year all your males appear before HWHY your Elohim in the place which He chooses: at the Festival of Unleavened Bread and at the Festival of Weeks and at the Festival of Booths. And none should appear before HWHY empty-handed,"
+    },
+    {
+     "n": 17,
+     "t": "but each one with the gift of his hand, according to the blessing of HWHY your Elohim which He has given you."
+    },
+    {
+     "n": 18,
+     "t": "“Appoint judges and officers within all your gates, which HWHY your Elohim is giving you, according to your tribes. And they shall judge the people with righteous right-ruling."
+    },
+    {
+     "n": 19,
+     "t": "“Do not distort right-ruling. Do not show partiality, nor take a bribe, for a bribe blinds the eyes of the wise and twists the words of the righteous."
+    },
+    {
+     "n": 20,
+     "t": "“Follow righteousness, righteousness alone, so that you live and inherit the land which HWHY your Elohim is giving you."
+    },
+    {
+     "n": 21,
+     "t": "“Do not plant for yourself any tree as an Ashĕrah near the altar of HWHY your Elohim that you make for yourself."
+    },
+    {
+     "n": 22,
+     "t": "“And do not set up a pillar, which HWHY your Elohim hates."
+    }
+   ],
+   "page": 254,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "17": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“Do not slaughter to HWHY your Elohim a bull or sheep which has any blemish, any evil matter, for that is an abomination to HWHY your Elohim."
+    },
+    {
+     "n": 2,
+     "t": "“When there is found in your midst, in any of your cities which HWHY your Elohim is giving you, a man or a woman who does what is evil in the eyes of HWHY your Elohim, in transgressing His covenant,"
+    },
+    {
+     "n": 3,
+     "t": "and has gone and served other mighty ones and bowed down to them, or to the sun or to the moon or to any of the host of the heavens, which I have not commanded,"
+    },
+    {
+     "n": 4,
+     "t": "and it has been made known to you and you have heard and has searched diligently. Then see, if true: the matter is confirmed that such an abomination has been done in Yisra’ĕl,"
+    },
+    {
+     "n": 5,
+     "t": "then you shall bring out to your gates that man or woman who has done this evil matter and you shall stone to death that man or woman with stones."
+    },
+    {
+     "n": 6,
+     "t": "“At the mouth of two or three witnesses shall he that is to die be put to death. He is not put to death by the mouth of one witness."
+    },
+    {
+     "n": 7,
+     "t": "“The hand of the witnesses shall be first against him to put him to death and the hand of all the people last. So you shall purge the evil from your midst."
+    },
+    {
+     "n": 8,
+     "t": "“When any matter arises which is too hard for you to judge, between blood and blood, between plea and plea, or between stroke and stroke – matters of strife within your gates – then you shall rise and go up to the place which HWHY your Elohim chooses,"
+    },
+    {
+     "n": 9,
+     "t": "and shall come to the priests, the Lĕwites and to the judge who is in those days and shall inquire. And they shall declare to you the Word of right-ruling,"
+    },
+    {
+     "n": 10,
+     "t": "and you shall do according to the word which they declare to you from that place which HWHY chooses. And you shall guard to do according to all that they instruct you."
+    },
+    {
+     "n": 11,
+     "t": "“Do according to the Torah in which they teach you, according to the right- ruling which they say to you. you do not turn to the right or to the left from the word which they declare to you."
+    },
+    {
+     "n": 12,
+     "t": "“And the man who acts arrogantly, so as not to listen to the priest who stands to serve there before HWHY your Elohim, or to the judge, that man shall die. So you shall purge the evil from Yisra’ĕl."
+    },
+    {
+     "n": 13,
+     "t": "“And let all the people hear and fear and no longer do arrogantly."
+    },
+    {
+     "n": 14,
+     "t": "“When you come to the land which HWHY your Elohim is giving you and shall possess it and shall dwell in it and you shall say, ‘Let me set a sovereign over me like all the gentiles that are around me,’"
+    },
+    {
+     "n": 15,
+     "t": "you shall certainly set a sovereign over you whom HWHY your Elohim shall choose. Set a sovereign over you from among your brothers, you are not allowed to set a foreigner over you, who is not your brother."
+    },
+    {
+     "n": 16,
+     "t": "“Only, he is not to increase horses for himself, nor cause the people to return to Mitsrayim to increase horses, for HWHY has said to you, ‘Do not return that way again.’"
+    },
+    {
+     "n": 17,
+     "t": "“And he is not to increase wives for himself, lest his heart turn away, nor is he to greatly increase silver and gold for himself."
+    },
+    {
+     "n": 18,
+     "t": "“And it shall be, when he sits on the throne of his reign, that he shall write for himself a copy of this Torah in a book, from the one before the priests, the Lĕwites."
+    },
+    {
+     "n": 19,
+     "t": "“And it shall be with him and he shall read it all the days of his life, so that he learns to fear HWHY his Elohim and guard all the Words of this Torah and these laws, to do them,"
+    },
+    {
+     "n": 20,
+     "t": "so that his heart is not lifted up above his brothers and so as not to turn aside from the command, right or left, so that he prolongs his days in his reign, he and his children, in the midst of Yisra’ĕl."
+    }
+   ],
+   "page": 255,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "18": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“The priests, the Lĕwites, all the tribe of Lĕwi, have no part nor inheritance with Yisra’ĕl. They are to eat the offerings of HWHY made by fire and His inheritance."
+    },
+    {
+     "n": 2,
+     "t": "“But among his brothers Lĕwi has no inheritance. HWHY is his inheritance, as He has spoken to him."
+    },
+    {
+     "n": 3,
+     "t": "“And this is the priest’s right from the people, from those who bring an offering, whether it is bull or sheep: they shall give to the priest the shoulder and the two cheeks and the stomach;"
+    },
+    {
+     "n": 4,
+     "t": "the first-fruits of your grain and your new wine and your oil and the first of the fleece of your sheep, you give to him."
+    },
+    {
+     "n": 5,
+     "t": "“For HWHY your Elohim has chosen him out of all your tribes to stand to serve in the Name of HWHY, him and his sons forever."
+    },
+    {
+     "n": 6,
+     "t": "“And when the Lĕwite comes from one of your gates, from where he has sojourned among all Yisra’ĕl and shall come with all the desire of his being to the place which HWHY chooses,"
+    },
+    {
+     "n": 7,
+     "t": "then he shall serve in the Name of HWHY his Elohim, like all his brothers the Lĕwites, who are standing there before HWHY."
+    },
+    {
+     "n": 8,
+     "t": "“They are to have portion for portion to eat, besides what comes from the sale of his inheritance."
+    },
+    {
+     "n": 9,
+     "t": "“When you come into the land which HWHY your Elohim is giving you, do not learn to do according to the abominations of those gentiles."
+    },
+    {
+     "n": 10,
+     "t": "“Let no one be found among you who makes his son or his daughter pass through the fire, or one who practises divination, or a user of magic, or one who interprets omens or a sorcerer,"
+    },
+    {
+     "n": 11,
+     "t": "or one who conjures spells, or a medium, or a spiritist, or one who calls up the dead."
+    },
+    {
+     "n": 12,
+     "t": "“Because whoever does these are an abomination to HWHY and because of these abominations HWHY your Elohim drives them out from before you."
+    },
+    {
+     "n": 13,
+     "t": "“Be perfect before HWHY your Elohim,"
+    },
+    {
+     "n": 14,
+     "t": "for these nations whom you are possessing do listen to those using magic and to diviners. But as for you, HWHY your Elohim has not appointed such for you."
+    },
+    {
+     "n": 15,
+     "t": "“HWHY your Elohim shall raise up for you a Prophet like me from your midst, from your brothers. Listen to Him,"
+    },
+    {
+     "n": 16,
+     "t": "according to all you asked of HWHY your Elohim in Ḥorĕḇ in the day of the assembly, saying, ‘Let me not hear again the voice of HWHY my Elohim, nor let me see this great fire any more, lest I die.’"
+    },
+    {
+     "n": 17,
+     "t": "“And HWHY said to me, ‘What they have spoken is good."
+    },
+    {
+     "n": 18,
+     "t": "‘I shall raise up for them a Prophet like you out of the midst of their brothers. And I shall put My Words in His mouth and He shall speak to them all that I command Him."
+    },
+    {
+     "n": 19,
+     "t": "‘And it shall be, the man who does not listen to My Words which He speaks in My Name, I require it of him."
+    },
+    {
+     "n": 20,
+     "t": "‘But the prophet who presumes to speak a word in My Name, which I have not commanded him to speak, or who speaks in the Name of other mighty ones, even that prophet shall die.’"
+    },
+    {
+     "n": 21,
+     "t": "“And when you say in your heart, ‘How do we know the word which HWHY has not spoken ?’ –"
+    },
+    {
+     "n": 22,
+     "t": "when the prophet speaks in the Name of HWHY and the word is not, or comes not, that is the word which HWHY has not spoken . The prophet has spoken it presumptuously. Do not be afraid of him."
+    }
+   ],
+   "page": 256,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "19": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "”When HWHY your Elohim cuts off the nations whose land HWHY your Elohim is giving you and you dispossess them and dwell in their cities and in their houses,"
+    },
+    {
+     "n": 2,
+     "t": "separate three cities for yourself in the midst of your land which HWHY your Elohim is giving you to possess."
+    },
+    {
+     "n": 3,
+     "t": "“Prepare a way for yourself and divide into three parts the border of your land which HWHY your Elohim is giving you to inherit, that anyone who killed someone shall flee there."
+    },
+    {
+     "n": 4,
+     "t": "“And this is the matter of the one who killed someone who flees there and live: He who smites his neighbour unintentionally, not having hated him in time past,"
+    },
+    {
+     "n": 5,
+     "t": "even he who goes to the forest with his neighbour to cut timber and his hand swings a stroke with the axe to cut down the tree and the head slips from the handle and strikes his neighbour so that he dies – let him flee to one of these cities and live,"
+    },
+    {
+     "n": 6,
+     "t": "lest the revenger of blood, while his displeasure is hot, pursue the one who killed someone and overtake him, because the way is long and shall smite him, though he was not worthy of death, since he had not hated him before."
+    },
+    {
+     "n": 7,
+     "t": "“Therefore I am commanding you, saying, ‘Separate three cities for yourself.’"
+    },
+    {
+     "n": 8,
+     "t": "“And if HWHY your Elohim enlarges your border, as He swore to your fathers and has given you the land which He promised to give to your fathers –"
+    },
+    {
+     "n": 9,
+     "t": "when you guard all this command to do it, which I am commanding you today, to love HWHY your Elohim and to walk in His ways all the days – then you shall add three more cities for yourself besides these three,"
+    },
+    {
+     "n": 10,
+     "t": "so that innocent blood is not shed in"
+    }
+   ],
+   "page": 257,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "20": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“When you go out to battle against your enemies and shall see horses and chariots and people more numerous than you, do not be afraid of them, for HWHY your Elohim, who brought you up from the land of Mitsrayim, is with you."
+    },
+    {
+     "n": 2,
+     "t": "“And it shall be, when you draw near to the battle, that the priest shall come and speak to the people,"
+    },
+    {
+     "n": 3,
+     "t": "and shall say to them, ‘Hear, O Yisra’ĕl: You are drawing near today to battle with your enemies. Do not let your heart faint, do not fear or tremble, or be afraid before them,"
+    },
+    {
+     "n": 4,
+     "t": "for HWHY your Elohim is He who goes with you, to fight for you against your enemies, to save you.’"
+    },
+    {
+     "n": 5,
+     "t": "“And the officers shall speak to the people, saying, ‘Who is the man who has built a new house and has not dedicated it? Let him go and return to his house, lest he die in the battle and another man dedicate it."
+    },
+    {
+     "n": 6,
+     "t": "‘And who is the man who has planted a vineyard and has not begun to use it? Let him also go and return to his house, lest he die in the battle and another man should begin to use it."
+    },
+    {
+     "n": 7,
+     "t": "‘And who is the man who is engaged to a woman and has not taken her? Let him go and return to his house, lest he die in the battle and another man take her.’"
+    },
+    {
+     "n": 8,
+     "t": "“And the officers shall speak further to the people and say, ‘Who is the man who is afraid and tender of heart? Let him go and return to his house, lest the heart of his brothers faint like his heart.’"
+    },
+    {
+     "n": 9,
+     "t": "“And it shall be, when the officers have finished speaking to the people, that they shall appoint commanders of the divisions to lead the people."
+    },
+    {
+     "n": 10,
+     "t": "“When you draw near to a city to fight against it, then you shall make a call for peace to it."
+    },
+    {
+     "n": 11,
+     "t": "“And it shall be that if it accepts your call for peace and shall open to you, then all the people found in it are to be your compulsory labour and serve you. the midst of your land which HWHY your Elohim is giving you as an inheritance, or blood-guilt shall be upon you."
+    },
+    {
+     "n": 12,
+     "t": "and the elders of his city shall send and bring him from there and give him into the hand of the revenger of blood and he shall die."
+    },
+    {
+     "n": 13,
+     "t": "“Your eye shall not pardon him, but you shall purge the blood of innocent blood from Yisra’ĕl, so that it might be well with you."
+    },
+    {
+     "n": 14,
+     "t": "“Do not remove your neighbour’s boundary, which those in the past have set, in your inheritance which you inherit in the land that HWHY your Elohim is giving you to possess."
+    },
+    {
+     "n": 15,
+     "t": "“One witness does not rise up against a man concerning any crookedness or any sin that he commits. At the mouth of two witnesses or at the mouth of three witnesses a matter is established."
+    },
+    {
+     "n": 16,
+     "t": "“When a malicious witness rises up against any man to accuse him of turning aside,"
+    },
+    {
+     "n": 17,
+     "t": "then both men who have the dispute shall stand before HWHY, before the priests and the judges who serve in those days."
+    },
+    {
+     "n": 18,
+     "t": "“And the judges shall diligently search and see if the witness is a false witness, who has falsely accused his brother,"
+    },
+    {
+     "n": 19,
+     "t": "then you shall do to him as he thought to have done to his brother. Thus you shall purge the evil from your midst."
+    },
+    {
+     "n": 20,
+     "t": "“And let the rest hear and fearand never again do this evil matter in your midst."
+    },
+    {
+     "n": 21,
+     "t": "“And let your eye not pardon,life for life, eye for eye, tooth for tooth, hand for hand, foot for foot."
+    }
+   ],
+   "page": 258,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "21": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“When anyone is found slain, lying in the field in the land which HWHY your Elohim is giving you to possess and it is not known who smote him,"
+    },
+    {
+     "n": 2,
+     "t": "then your elders and your judges shall go out and they shall measure the distance from the slain man to the cities round about."
+    },
+    {
+     "n": 3,
+     "t": "“And it shall be that the elders of the city nearest to the slain man shall take a heifer which has not been worked and which has not pulled with a yoke,"
+    },
+    {
+     "n": 4,
+     "t": "and the elders of that city shall bring the heifer down to a wadi with flowing water, which is neither ploughed nor sown and they shall break the heifer’s neck there in the wadi."
+    },
+    {
+     "n": 5,
+     "t": "“And the priests, the sons of Lĕwi, shall come near, for HWHY your Elohim has chosen them to serve Him and to bless in the Name of HWHY and by their mouth every strife and every stroke is tried."
+    },
+    {
+     "n": 6,
+     "t": "“And let all the elders of that city nearest to the slain man wash their hands over the heifer whose neck was broken in the wadi."
+    },
+    {
+     "n": 7,
+     "t": "“And they shall answer and say, ‘Our hands have not shed this blood, nor have our eyes seen it."
+    },
+    {
+     "n": 8,
+     "t": "‘O HWHY, forgive Your people Yisra’ĕl, whom You have redeemed and do not allow innocent blood in the midst of Your people Yisra’ĕl.’ And the blood-guilt shall be pardoned to them."
+    },
+    {
+     "n": 9,
+     "t": "“Thus you purge the guilt of innocent blood from your midst when you do what is right in the eyes of HWHY."
+    },
+    {
+     "n": 10,
+     "t": "“When you go out to fight against your enemies and HWHY your Elohim shall give them into your hand and you shall take them captive,"
+    },
+    {
+     "n": 11,
+     "t": "and shall see among the captives a woman fair of form and shall delight in her and take her for your wife,"
+    },
+    {
+     "n": 12,
+     "t": "then you shall bring her home to your house and she shall shave her head and trim her nails,"
+    },
+    {
+     "n": 13,
+     "t": "and put aside the mantle of her captivity and shall dwell in your house and mourn her father and her mother a month of days. And after that you shall go in to her and be her husband and she shall be your wife."
+    },
+    {
+     "n": 14,
+     "t": "“And it shall be, if you are not pleased with her, then you shall let her go at her desire, but you do not sell her at all for silver. Do not treat her harshly, since you have humbled her."
+    },
+    {
+     "n": 15,
+     "t": "“When a man has two wives, one loved and the other unloved and they have borne him children, both the loved and the unloved and the first-born son is of her who is unloved,"
+    },
+    {
+     "n": 16,
+     "t": "then it shall be, on the day he makes his sons to inherit his possessions, he is not allowed to treat the son of the beloved wife as first-born in the face of the son of the unloved, who is truly the first-born."
+    },
+    {
+     "n": 17,
+     "t": "“But he is to acknowledge the son of the unloved wife as the first-born by giving him a double portion of all that he has, for he is the beginning of his strength – the right of the first-born is his."
+    },
+    {
+     "n": 18,
+     "t": "“When a man has a wayward and rebellious son who is not listening to the voice of his father or the voice of his mother and who, when they have disciplined him, does not listen to them,"
+    },
+    {
+     "n": 19,
+     "t": "then his father and his mother shall take hold of him and bring him out to the elders of his city, to the gate of his city,"
+    },
+    {
+     "n": 20,
+     "t": "and shall say to the elders of his city, ‘This son of ours is wayward and rebellious. He is not listening to our voice, he is a glutton and a drunkard.’"
+    },
+    {
+     "n": 21,
+     "t": "“Then all the men of his city shall stone him to death with stones. Thus you shall purge the evil from your midst. And let all Yisra’ĕl hear and fear."
+    },
+    {
+     "n": 22,
+     "t": "“And when a man has committed a sin worthy of death, then he shall be put to death and you shall hang him on a tree."
+    },
+    {
+     "n": 23,
+     "t": "“Let his body not remain overnight on the tree, for you shall certainly bury him the same day – for he who is hanged is accursed of Elohim – so that you do not defile the land which HWHY your Elohim is giving you as an inheritance."
+    }
+   ],
+   "page": 259,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "22": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“When you see your brother’s ox or his sheep are straying away, you shall not hide yourself from them. Return them to your brother without fail."
+    },
+    {
+     "n": 2,
+     "t": "“And if your brother is not near you, or if you do not know him, then you shall bring it to your own house and it shall be with you until your brother seeks it, then you shall return it to him."
+    },
+    {
+     "n": 3,
+     "t": "“And so you do with his donkey and so you do with his garment and so you do with whatever your brother loses, which he has lost and you have found. You are not allowed to hide yourself."
+    },
+    {
+     "n": 4,
+     "t": "“When you see your brother’s donkey or his ox fall down on the way, you shall not hide yourself from them. Help him raise them without fail."
+    },
+    {
+     "n": 5,
+     "t": "“A woman does not wear that which pertains to a man, nor does a man put on a woman’s garment, for whoever does this is an abomination to HWHY your Elohim."
+    },
+    {
+     "n": 6,
+     "t": "“When you come upon a bird’s nest along the way, in any tree or on the ground, with young ones or eggs, with the mother sitting on the young or on the eggs, do not take the mother with the young –"
+    },
+    {
+     "n": 7,
+     "t": "let the mother go without fail and take the young for yourself, so that it might be well with you and that you shall prolong your days."
+    },
+    {
+     "n": 8,
+     "t": "“When you build a new house, then you shall make a parapet for your roof, so that you do not bring blood-guilt on your house when one falls from it."
+    },
+    {
+     "n": 9,
+     "t": "“Do not sow your vineyard with different kinds of seed, lest the yield of the seed which you have sown and the fruit of your vineyard be defiled."
+    },
+    {
+     "n": 10,
+     "t": "“Do not plough with an ox and a donkey together."
+    },
+    {
+     "n": 11,
+     "t": "“Do not put on a garment of different kinds, of wool and linen together."
+    },
+    {
+     "n": 12,
+     "t": "“Make tassels on the four corners of the garment with which you cover yourself."
+    },
+    {
+     "n": 13,
+     "t": "“When any man takes a wife and shall go in to her and shall hate her,"
+    },
+    {
+     "n": 14,
+     "t": "and shall make abusive charges against her and bring an evil name on her and say, ‘I took this woman and when I came to her I did not find her a maiden,’"
+    },
+    {
+     "n": 15,
+     "t": "then the father and mother of the young woman shall take and bring out the proof of the girl’s maidenhood to the elders of the city at the gate."
+    },
+    {
+     "n": 16,
+     "t": "“And the girl’s father shall say to the elders, ‘I gave my daughter to this man as wife and he hates her."
+    },
+    {
+     "n": 17,
+     "t": "‘And see, he has made abusive charges against her, saying, “I did not find your daughter a maiden,” and yet these are the proofs of my daughter’s maidenhood.’ And they shall spread the garment before the elders of the city."
+    },
+    {
+     "n": 18,
+     "t": "“And the elders of that city shall take that man and punish him,"
+    },
+    {
+     "n": 19,
+     "t": "and fine him one hundred pieces of silver and give them to the father of the young woman, because he has brought an evil name on a maiden of Yisra’ĕl. And she is to be his wife, he is not allowed to put her away all his days."
+    },
+    {
+     "n": 20,
+     "t": "“But if the matter is true, that the girl was not found a maiden,"
+    },
+    {
+     "n": 21,
+     "t": "then they shall bring out the girl to the door of her father’s house and the men of her city shall stone her to death with stones, because she has done wickedness in Yisra’ĕl, to whore in her father’s house. Thus you shall purge the evil from your midst."
+    },
+    {
+     "n": 22,
+     "t": "“When a man is found lying with a woman married to a husband, then both of them shall die, both the man that lay with the woman and the woman. Thus you shall purge the evil from Yisra’ĕl."
+    },
+    {
+     "n": 23,
+     "t": "“When a girl who is a maiden is engaged to a husband and a man finds her in the city and lies with her,"
+    },
+    {
+     "n": 24,
+     "t": "then you shall bring them both out to the gate of that city and shall stone them to death with stones, the girl because she did not cry out in the city and the man because he has humbled his neighbour’s wife. Thus you shall purge the evil from your midst."
+    },
+    {
+     "n": 25,
+     "t": "“But if a man finds the girl who is engaged in the field and the man seizes her and lies with her, then only the man who lay with her shall die."
+    },
+    {
+     "n": 26,
+     "t": "“But you shall do no matter to the girl. The girl has no sin worthy of death – for the matter is like a man who rises against his neighbour and kills him –"
+    },
+    {
+     "n": 27,
+     "t": "for he found her in the field and she cried out, the engaged girl, but without anyone to save her."
+    },
+    {
+     "n": 28,
+     "t": "“When a man finds a girl who is a maiden, who is not engaged and he seizes her and lies with her and they are found out,"
+    },
+    {
+     "n": 29,
+     "t": "then the man who lay with her shall give to the girl’s father fifty pieces of silver and she is to be his wife because he has humbled her. He is not allowed to put her away all his days."
+    },
+    {
+     "n": 30,
+     "t": "“A man does not take his father’s wife, nor uncover his father’s skirt."
+    }
+   ],
+   "page": 260,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "23": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“No one wounded, crushed or whose member is cut off does enter the assembly of HWHY."
+    },
+    {
+     "n": 2,
+     "t": "“No one of illegitimate birth does enter the assembly of HWHY, even a tenth generation of his does not enter the assembly of HWHY."
+    },
+    {
+     "n": 3,
+     "t": "“An Ammonite or Mo’aḇite does not enter the assembly of HWHY, even a tenth generation of them does not ever enter the assembly of HWHY,"
+    },
+    {
+     "n": 4,
+     "t": "because they did not meet you with bread and water on the way when you came out of Mitsrayim and because they hired against you Bil‛am son of Be‛or from Pethor of Aram Naharayim, to curse you."
+    },
+    {
+     "n": 5,
+     "t": "“But HWHY your Elohim refused to listen to Bil‛am and HWHY your Elohim turned the curse into a blessing for you, because HWHY your Elohim loves you."
+    },
+    {
+     "n": 6,
+     "t": "“Do not seek their peace nor their good, all your days, forever."
+    },
+    {
+     "n": 7,
+     "t": "“Do not loathe an Eḏomite, for he is your brother. Do not loathe a Mitsrite, because you were a stranger in his land."
+    },
+    {
+     "n": 8,
+     "t": "“The children of the third generation born to them do enter the assembly of HWHY."
+    },
+    {
+     "n": 9,
+     "t": "“When the army goes out against your enemies, then you shall guard yourself from every evil matter."
+    },
+    {
+     "n": 10,
+     "t": "“When there is any man among you who is not clean because of an emission in the night, then he shall go outside the camp. Let him not come into the midst of the camp."
+    },
+    {
+     "n": 11,
+     "t": "“And it shall be, when evening comes, that he bathes with water. And when the sun sets let him come into the midst of the camp."
+    },
+    {
+     "n": 12,
+     "t": "“And you shall have a place outside the camp, where you shall go out,"
+    },
+    {
+     "n": 13,
+     "t": "and you shall have a sharp implement among your equipment and when you sit down outside, you shall dig with it and turn and cover your excrement."
+    },
+    {
+     "n": 14,
+     "t": "“For HWHY your Elohim walks in the midst of your camp, to deliver you and give your enemies over to you. Therefore your camp shall be set-apart, so that He does not see unclean matter among you and shall turn away from you."
+    },
+    {
+     "n": 15,
+     "t": "“You do not hand over to his master the slave who has escaped from his master to you."
+    },
+    {
+     "n": 16,
+     "t": "“Let him dwell with you in your midst, in the place which he chooses within one of your gates, where it is pleasing to him. Do not oppress him."
+    },
+    {
+     "n": 17,
+     "t": "“None of the daughters of Yisra’ĕl is to be a cult prostitute, nor any of the sons of Yisra’ĕl be a cult prostitute."
+    },
+    {
+     "n": 18,
+     "t": "“Do not bring the gift of a whore or the pay of a dog to the House of HWHY your Elohim for any vowed offering, for both of these are an abomination to HWHY your Elohim."
+    },
+    {
+     "n": 19,
+     "t": "“Do not lend at interest to your brother, interest of silver, interest of food, or interest of whatever is lent at interest."
+    },
+    {
+     "n": 20,
+     "t": "“To a foreigner you lend at interest, but to your brother you do not lend at interest, so that HWHY your Elohim might bless you in all that you put your hand to in the land which you are entering to possess."
+    },
+    {
+     "n": 21,
+     "t": "“When you make a vow to HWHY your Elohim, do not delay to pay it, for HWHY your Elohim is certainly requiring it of you and it shall be sin in you."
+    },
+    {
+     "n": 22,
+     "t": "“But when you abstain from vowing, it is not sin in you."
+    },
+    {
+     "n": 23,
+     "t": "“That which has gone from your lips you shall guard and do, for you voluntarily vowed to HWHY your Elohim what you have promised with your mouth."
+    },
+    {
+     "n": 24,
+     "t": "“When you come into your neighbour’s vineyard, you shall eat to the satisfaction of your desire, but do not put any in a receptacle of yours."
+    },
+    {
+     "n": 25,
+     "t": "“When you come into your neighbour’s standing grain, you shall pluck the heads with your hand, but do not use a sickle on your neighbour’s standing grain."
+    }
+   ],
+   "page": 261,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "24": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“When a man takes a wife and shall marry her, then it shall be, if she finds no favour in his eyes because he has found a matter of uncoveredness in her and he shall write her a certificate of divorce and put it in her hand and send her out of his house,"
+    },
+    {
+     "n": 2,
+     "t": "and if she left his house and went and became another man’s wife,"
+    },
+    {
+     "n": 3,
+     "t": "and the latter husband shall hate her and write her a certificate of divorce and put it in her hand and send her out of his house, or when the latter husband dies who took her to be his wife,"
+    },
+    {
+     "n": 4,
+     "t": "then her former husband who sent her away is not allowed to take her back to be his wife after she has been defiled, for that would be an abomination before HWHY. And do not bring sin on the land which HWHY your Elohim is giving you as an inheritance ."
+    },
+    {
+     "n": 5,
+     "t": "“When a man has taken a new wife, let him not go out into the army nor let any matter be imposed upon him. He shall be exempt one year for the sake of his home, to rejoice with his wife whom he has taken."
+    }
+   ],
+   "page": 262,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "25": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“When there is a dispute between men, then they shall come unto judgment and they shall be judged and the righteous declared righteous and the wrongdoer declared wrong."
+    },
+    {
+     "n": 2,
+     "t": "“And it shall be, if the wrongdoer is to be beaten, that the judge shall cause him to lie down and be beaten in his presence with the number of blows according to his wrong."
+    },
+    {
+     "n": 3,
+     "t": "“Forty blows he gives him but no more, lest he beat him with many more blows than these and your brother be degraded before your eyes."
+    },
+    {
+     "n": 4,
+     "t": "“Do not muzzle an ox while it is threshing."
+    },
+    {
+     "n": 5,
+     "t": "“When brothers dwell together and one of them has died and has no son, the widow of the dead man shall not become a stranger’s outside. Her husband’s brother does go in to her and shall take her as his wife and perform the duty of a husband’s brother to her."
+    },
+    {
+     "n": 6,
+     "t": "“And it shall be that the first-born son which she bears does rise up for the name of his dead brother, so that his name is not blotted out of Yisra’ĕl."
+    },
+    {
+     "n": 7,
+     "t": "“But if the man does not desire to take his brother’s wife, then let his brother’s wife go up to the gate to the"
+    },
+    {
+     "n": 8,
+     "t": "“Take heed, in an outbreak of leprosy, to diligently guard and do according to all that the priests, the Lĕwites, teach you. As I have commanded them, so you shall guard to do."
+    },
+    {
+     "n": 9,
+     "t": "“Remember what HWHY your Elohim did to Miryam on the way when you came out of Mitsrayim."
+    },
+    {
+     "n": 10,
+     "t": "“When you lend your brother a loan, do not go into his house to get his pledge."
+    },
+    {
+     "n": 11,
+     "t": "“Stand outside and let the man to whom you lend bring the pledge out to you."
+    },
+    {
+     "n": 12,
+     "t": "“And if the man is poor, do not sleep with his pledge."
+    },
+    {
+     "n": 13,
+     "t": "“By all means return the pledge to him at sundown and he shall sleep in his own garment and shall bless you. And it shall be righteousness to you before HWHY your Elohim."
+    },
+    {
+     "n": 14,
+     "t": "“Do not oppress a hired servant who is poor and needy, of your brothers or of the strangers who is in your land within your gates."
+    },
+    {
+     "n": 15,
+     "t": "“Give him his wages on the same day and do not let the sun go down on it, for he is poor and lifts up his being to it, so that he does not cry out against you to HWHY and it shall be sin in you."
+    },
+    {
+     "n": 16,
+     "t": "“Fathers are not put to death for their children and children are not put to death for their fathers, each is to die for his own sin."
+    },
+    {
+     "n": 17,
+     "t": "“Do not twist the right-ruling of a stranger or the fatherless, nor take the garment of a widow."
+    },
+    {
+     "n": 18,
+     "t": "“But you shall remember that you were a slave in Mitsrayim and that HWHY your Elohim redeemed you from there. Therefore I am commanding you to do this word. elders and say, ‘My husband’s brother refuses to raise up a name to his brother in Yisra’ĕl, he does not agree to perform the duty of my husband’s brother.’"
+    },
+    {
+     "n": 19,
+     "t": "“Therefore it shall be, when HWHY your Elohim has given you rest from your enemies all around, in the land which HWHY your Elohim is giving you to possess as an inheritance, that you blot out the remembrance of Amalĕq from under the heavens. Do not forget!"
+    }
+   ],
+   "page": 263,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "26": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“And it shall be, when you come into the land which HWHY your Elohim is giving you as an inheritance and you possess it and dwell in it,"
+    },
+    {
+     "n": 2,
+     "t": "that you shall take some of the first of all the fruits of the soil which you bring from your land that HWHY your Elohim is giving you and shall put it in a basket and go to the place where HWHY your Elohim chooses to make His Name dwell there."
+    },
+    {
+     "n": 3,
+     "t": "“And you shall come to the one who is priest in those days and say to him, ‘I shall declare today to HWHY your Elohim that I have come to the land which HWHY swore to our fathers to give us.’"
+    },
+    {
+     "n": 4,
+     "t": "“And the priest shall take the basket from your hand and place it before the altar of HWHY your Elohim."
+    },
+    {
+     "n": 5,
+     "t": "“And you shall answer and say before HWHY your Elohim, ‘My father was a perishing Aramean and he went down to Mitsrayim and sojourned there with few men. And there he became a nation, great, mighty and numerous."
+    },
+    {
+     "n": 6,
+     "t": "‘But the Mitsrites did evil to us and afflicted us and imposed hard labour on us."
+    },
+    {
+     "n": 7,
+     "t": "‘Then we cried out to HWHY Elohim of our fathers and HWHY heard our voice and saw our affliction and our toil and our oppression."
+    },
+    {
+     "n": 8,
+     "t": "‘And HWHY brought us out of Mitsrayim with a strong hand and with an outstretched arm, with great fear and with signs and wonders."
+    },
+    {
+     "n": 9,
+     "t": "‘And He brought us to this place and has given us this land, “a land flowing with milk and honey.”"
+    },
+    {
+     "n": 10,
+     "t": "‘And now, see, I have brought the first-fruits of the land which You, O HWHY, have given me.’ Then you shall place it before HWHY your Elohim and bow down before HWHY your Elohim,"
+    },
+    {
+     "n": 11,
+     "t": "and shall rejoice in all the good which HWHY your Elohim has given to you and your house, you and the Lĕwite and the stranger who is among you."
+    },
+    {
+     "n": 12,
+     "t": "“When you have completed tithing all the tithe of your increase in the third year, which is the year of tithing and have given it to the Lĕwite, to the stranger, to the fatherless and to the widow and they have eaten within your gates and have been satisfied,"
+    },
+    {
+     "n": 13,
+     "t": "then you shall say before HWHY your Elohim, ‘I have put away the set- apart portion from my house and also have given it to the Lĕwite and to the stranger and to the fatherless and to the widow, according to all Your command which You have commanded me. I have not transgressed Your commands, nor have I forgotten."
+    },
+    {
+     "n": 14,
+     "t": "‘I have not eaten any of it when in mourning, nor have I removed any of it for any unclean use, nor given any of it for the dead. I have obeyed the voice of HWHY my Elohim, I have done according to all that You have commanded me."
+    },
+    {
+     "n": 15,
+     "t": "‘Look from Your set-apart dwelling place, from the heavens and bless Your people Yisra’ĕl and the land which You have given us, as You swore to our fathers, “a land flowing with milk and honey.” ’"
+    },
+    {
+     "n": 16,
+     "t": "“Today HWHY your Elohim is commanding you to do these laws and right-rulings. And you shall guard and do them with all your heart and with all your being."
+    },
+    {
+     "n": 17,
+     "t": "“You have today caused HWHY to proclaim to be your Elohim and to walk in His ways and guard His laws and His commands and His right- rulings and to obey His voice."
+    },
+    {
+     "n": 18,
+     "t": "“And HWHY has caused you to proclaim today to be His people, a treasured possession, as He has spoken to you and to guard all His commands,"
+    },
+    {
+     "n": 19,
+     "t": "so as to set you high above all nations which He has made, for a praise and for a name and for esteem and for you to be a set-apart people to HWHY your Elohim, as He has spoken .”"
+    }
+   ],
+   "page": 264,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "27": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Mosheh, with the elders of Yisra’ĕl, commanded the people, saying, “Guard all the commands which I am commanding you today."
+    },
+    {
+     "n": 2,
+     "t": "“And it shall be, on the day when you pass over the Yardĕn to the land which HWHY your Elohim is giving you, that you shall set up for yourselves large stones and plaster them with plaster,"
+    },
+    {
+     "n": 3,
+     "t": "and write on them all the Words of this Torah, when you have passed over, so that you go into the land which HWHY your Elohim is giving you, ‘a land flowing with milk and honey,’ as HWHY Elohim of your fathers has spoken to you."
+    },
+    {
+     "n": 4,
+     "t": "“And it shall be, when you have passed over the Yardĕn, that on Mount Ĕyḇal you set up these stones, which I command you today and you shall plaster them with plaster,"
+    },
+    {
+     "n": 5,
+     "t": "and build an altar to HWHY your Elohim there, an altar of stones – do not use an iron tool on them."
+    },
+    {
+     "n": 6,
+     "t": "“Build the altar of HWHY your Elohim with complete stones and you shall offer burnt offerings on it to HWHY your Elohim,"
+    },
+    {
+     "n": 7,
+     "t": "and shall offer peace offerings and eat there and rejoice before HWHY your Elohim."
+    },
+    {
+     "n": 8,
+     "t": "“You shall write all the Words of this Torah on the stones, plainly and well.”"
+    },
+    {
+     "n": 9,
+     "t": "And Mosheh and the priests, the Lĕwites, spoke to all Yisra’ĕl, saying, “Be silent and hear, O Yisra’ĕl: This day you have become the people of HWHY your Elohim,"
+    },
+    {
+     "n": 10,
+     "t": "and you shall obey the voice of HWHY your Elohim and do His commands and His laws which I command you today.”"
+    },
+    {
+     "n": 11,
+     "t": "And Mosheh commanded the people on that day, saying,"
+    },
+    {
+     "n": 12,
+     "t": "“These are to stand on Mount Gerizim to bless the people, when you have passed over the Yardĕn: Shim‛on and Lĕwi and Yahuḏah and Yissasḵar"
+    }
+   ],
+   "page": 265,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "28": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“And it shall be, if you diligently obey the voice of HWHY your Elohim, to guard to do all His commands which I command you today, that HWHY your Elohim shall set you high above all nations of the earth."
+    },
+    {
+     "n": 2,
+     "t": "“And all these blessings shall come upon you and overtake you, if you obey the voice of HWHY your Elohim:"
+    },
+    {
+     "n": 3,
+     "t": "“Blessed are you in the city and blessed are you in the field."
+    },
+    {
+     "n": 4,
+     "t": "“Blessed is the fruit of your body and the fruit of your ground and the fruit of your livestock – the increase of your cattle and the offspring of your flocks."
+    },
+    {
+     "n": 5,
+     "t": "“Blessed is your basket and your kneading bowl."
+    },
+    {
+     "n": 6,
+     "t": "“Blessed are you when you come in and blessed are you when you go out."
+    },
+    {
+     "n": 7,
+     "t": "“HWHY causes your enemies who rise against you to be smitten before your face – they come out against you one way and flee before you seven ways."
+    },
+    {
+     "n": 8,
+     "t": "“HWHY commands the blessing on you in your storehouses and in all to which you set your hand and shall bless you in the land which HWHY your Elohim is giving you."
+    },
+    {
+     "n": 9,
+     "t": "“HWHY does establish you as a set-apart people to Himself, as He has sworn to you, if you guard the commands of HWHY your Elohim and walk in His ways."
+    },
+    {
+     "n": 10,
+     "t": "“And all peoples of the earth shall see that the Name of HWHY is called upon you and they shall be afraid of you."
+    },
+    {
+     "n": 11,
+     "t": "“And HWHY shall make you to have plenty of what is good, in the fruit of your body, in the fruit of your livestock and in the fruit of your ground, in the land of which HWHY swore to your fathers to give you."
+    },
+    {
+     "n": 12,
+     "t": "“HWHY opens to you His good treasure, the heavens, to give the rain to your land in its season and to bless all the work of your hand. And you shall lend to many nations, but you do not borrow."
+    },
+    {
+     "n": 13,
+     "t": "“And HWHY shall make you the head and not the tail. And you shall be only on top and not be beneath, if you and Yosĕph and Binyamin."
+    },
+    {
+     "n": 14,
+     "t": "“The Lĕwites shall speak with a loud voice and say to all the men of Yisra’ĕl:"
+    },
+    {
+     "n": 15,
+     "t": "‘Cursed is the man who makes a carved or moulded image, an abomination to HWHY, the work of the hands of the craftsman and sets it up in secret.’ And all the people shall answer and say, ‘Amĕn!’"
+    },
+    {
+     "n": 16,
+     "t": "‘Cursed is he who makes light of his father or his mother.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 17,
+     "t": "‘Cursed is he who moves his neighbour’s boundary.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 18,
+     "t": "‘Cursed is he who misleads the blind in the way.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 19,
+     "t": "‘Cursed is he who twists the right- ruling of the stranger, the fatherless and widow.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 20,
+     "t": "‘Cursed is he who lies with his father’s wife, because he has uncovered his father’s bed.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 21,
+     "t": "‘Cursed is he who lies with any beast.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 22,
+     "t": "‘Cursed is he who lies with his sister, the daughter of his father or the daughter of his mother.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 23,
+     "t": "‘Cursed is he who lies with his motherin-law.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 24,
+     "t": "‘Cursed is he who smites his neighbour secretly.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 25,
+     "t": "‘Cursed is he who takes a bribe to slay an innocent being.’ And all the people shall say, ‘Amĕn!’"
+    },
+    {
+     "n": 26,
+     "t": "‘Cursed is he who does not establish the Words of this Torah.’ And all the people shall say, ‘Amĕn!’ obey the commands of HWHY your Elohim, which I command you today, to guard and do."
+    },
+    {
+     "n": 27,
+     "t": "“HWHY shall smite you with the boils of Mitsrayim, with tumours, with the scab and with the itch, from which you are unable to be healed."
+    },
+    {
+     "n": 28,
+     "t": "“HWHY shall smite you with madness and blindness and bewilderment of heart."
+    },
+    {
+     "n": 29,
+     "t": "“And you shall be groping at noon, as a blind man gropes in darkness and not prosper in your ways. And you shall be only oppressed and plundered all the days, with no one to save you."
+    },
+    {
+     "n": 30,
+     "t": "“You become engaged to a wife, but another man does lie with her. You build a house, but do not dwell in it. You plant a vineyard, but do not use its fruit."
+    },
+    {
+     "n": 31,
+     "t": "“Your ox is slaughtered before your eyes, but you do not eat of it. Your donkey is violently taken from before you and it is not given back to you. Your sheep are given to your enemies, with no one to save them."
+    },
+    {
+     "n": 32,
+     "t": "“Your sons and your daughters are given to another people and your eyes look and fail for them all day long and your hand powerless."
+    },
+    {
+     "n": 33,
+     "t": "“A people whom you have not known eat the fruit of your land and all your labours. And you shall be only oppressed and crushed all the days."
+    },
+    {
+     "n": 34,
+     "t": "“And you shall be maddened because of the sight which your eyes see."
+    },
+    {
+     "n": 35,
+     "t": "“HWHY smites you in the knees and on the legs with evil boils of which you are unable to be healed and from the sole of your foot to the top of your head."
+    },
+    {
+     "n": 36,
+     "t": "“HWHY brings you and the sovereign whom you set over you to a nation which neither you nor your fathers have known and there you shall serve other mighty ones, wood and stone."
+    },
+    {
+     "n": 37,
+     "t": "“Thus you shall become an astonishment, a proverb and a mockery among all the peoples to which HWHY drives you."
+    },
+    {
+     "n": 38,
+     "t": "“You take much seed out into the field but gather little in, for the locust consumes it."
+    },
+    {
+     "n": 39,
+     "t": "“You plant vineyards and shall labour, but you neither drink of the wine nor gather, for the worm eats it."
+    },
+    {
+     "n": 40,
+     "t": "“You have olive trees in all your border, but do not anoint with oil, for your olives drop off."
+    },
+    {
+     "n": 41,
+     "t": "“You bring forth sons and daughters, but they are not with you, for they go into captivity."
+    },
+    {
+     "n": 42,
+     "t": "“Locusts possess all your trees and the fruit of your ground."
+    },
+    {
+     "n": 43,
+     "t": "“The sojourner who is among you rises higher and higher above you, but you come down lower and lower."
+    },
+    {
+     "n": 44,
+     "t": "”He lends to you, but you do not lend to him. He is the head and you are the tail."
+    },
+    {
+     "n": 45,
+     "t": "“And all these curses shall come upon you and they shall pursue and overtake you, until you are destroyed, because you did not obey the voice of HWHY your Elohim, to guard His commands and His laws which He commanded you."
+    },
+    {
+     "n": 46,
+     "t": "“And they shall be upon you for a sign and for a wonder and on your seed, forever."
+    },
+    {
+     "n": 47,
+     "t": "“Because you did not serve HWHY your Elohim with joy and gladness of heart for all the plenty,"
+    },
+    {
+     "n": 48,
+     "t": "you shall serve your enemies whom HWHY sends against you, in hunger and in thirst, in nakedness and in need of all. And he shall put a yoke of iron on your neck until he has destroyed you."
+    },
+    {
+     "n": 49,
+     "t": "“HWHY brings a nation against you from afar, from the end of the earth, as swift as the eagle flies, a nation whose language you shall not understand,"
+    },
+    {
+     "n": 50,
+     "t": "a fierce-looking nation, which shows no regard for the elderly nor show favour to the young,"
+    },
+    {
+     "n": 51,
+     "t": "and they shall eat the fruit of your livestock and the fruit of your land, until you are destroyed. They leave you no grain, nor new wine, nor oil, nor the increase of your cattle or the offspring of your flocks, until they have destroyed you."
+    },
+    {
+     "n": 52,
+     "t": "“And they shall besiege you at all your gates til your high and fenced walls, in which you are trusting, come down in all your land. And they shall besiege you at all your gates in all your land which HWHY your Elohim has given you."
+    },
+    {
+     "n": 53,
+     "t": "“And you shall eat the fruit of your own body, the flesh of your sons and daughters whom HWHY your Elohim has given you, in the siege and distress in which your enemies distress you."
+    },
+    {
+     "n": 54,
+     "t": "“The man among you who is tender, and who is very delicate, his eye is evil against his brother, against the wife of his bosom and against the rest of his children whom he leaves behind,"
+    },
+    {
+     "n": 55,
+     "t": "against giving any of them the flesh of his children that he eats, because it is all that has been left to him in the siege and distress with which your enemy distresses you in all your gates."
+    },
+    {
+     "n": 56,
+     "t": "“The tender and the delicate woman among you, who have not tried to set the sole of her foot on the ground because of her delicateness and tenderness, her eye is evil against the husband of her bosom and against her son and against her daughter,"
+    },
+    {
+     "n": 57,
+     "t": "and against her seed which comes out from between her feet and her children whom she bears, for she eats them in secret for lack of all, in the siege and distress with which your enemy distresses you in all your gates."
+    },
+    {
+     "n": 58,
+     "t": "“If you do not guard to do all the Words of this Torah that are written in this book, to fear this esteemed and awesome Name, HWHY your Elohim,"
+    },
+    {
+     "n": 59,
+     "t": "then HWHY shall bring upon you and your descendants extraordinary plagues, great and lasting plagues and grievous and lasting sicknesses."
+    },
+    {
+     "n": 60,
+     "t": "“And He shall bring back on you all the diseases of Mitsrayim, of which you were afraid and they shall cling to you,"
+    },
+    {
+     "n": 61,
+     "t": "also every sickness and every plague, which is not written in the book of this Torah, HWHY does bring upon you until you are destroyed."
+    },
+    {
+     "n": 62,
+     "t": "“And you shall be left with few men, although you had become as numerous as the stars of the heavens, because you did not obey the voice of HWHY your Elohim."
+    }
+   ],
+   "page": 266,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "29": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "These are the words of the covenant which HWHY commanded Mosheh to make with the children of Yisra’ĕl in the land of Mo’aḇ, besides the covenant which He made with them in Ḥorĕḇ."
+    },
+    {
+     "n": 2,
+     "t": "And Mosheh called all Yisra’ĕl and said to them, “You yourselves saw all that HWHY did before your eyes in the land of Mitsrayim, to Pharaoh and to all his servants and to all his land."
+    },
+    {
+     "n": 3,
+     "t": "“Your eyes saw the great trials, the signs and those great wonders."
+    },
+    {
+     "n": 4,
+     "t": "“But HWHY has not given you a heart to know and eyes to see and ears to hear, til this day."
+    },
+    {
+     "n": 5,
+     "t": "“And I have led you forty years in the wilderness. Your garments have not worn out on you and your sandals have not worn out on your feet."
+    },
+    {
+     "n": 6,
+     "t": "“You ate no bread and drank no wine nor strong drink, so that you might know that I am HWHY your Elohim."
+    },
+    {
+     "n": 7,
+     "t": "“And when you came to this place, Siḥon sovereign of Ḥeshbon and Oḡ sovereign of Bashan came out against us to battle and we smote them,"
+    },
+    {
+     "n": 8,
+     "t": "and took their land and gave it as an inheritance to the Re’uḇĕnites and to the Gaḏites and to half the tribe of Menashsheh."
+    },
+    {
+     "n": 9,
+     "t": "“Therefore you shall guard the words of this covenant and do them so that you prosper in all that you do."
+    },
+    {
+     "n": 10,
+     "t": "“All of you are standing today before HWHY your Elohim: your leaders, your tribes, your elders and your officers, all the men of Yisra’ĕl,"
+    },
+    {
+     "n": 11,
+     "t": "your little ones, your wives and your sojourner who is in the midst of your camp, from the one who cuts your wood to the one who draws your water,"
+    },
+    {
+     "n": 12,
+     "t": "so that you should enter into covenant with HWHY your Elohim and into His oath, which HWHY your Elohim makes with you today,"
+    },
+    {
+     "n": 13,
+     "t": "in order to establish you today as a people for Himself and He Himself be your Elohim, as He has spoken to you and as He has sworn to your fathers, to Aḇrahim, to Yitsḥaq and to Ya‛aqoḇ."
+    },
+    {
+     "n": 14,
+     "t": "“And not with you alone I am making this covenant and this oath,"
+    },
+    {
+     "n": 15,
+     "t": "but with him who stands here with us today before HWHY our Elohim, as well as with him who is not here with us today."
+    },
+    {
+     "n": 16,
+     "t": "“For you know how we dwelt in the land of Mitsrayim and how we passed through the nations which you passed through,"
+    },
+    {
+     "n": 17,
+     "t": "and you saw their abominations and their idols, wood and stone, silver and gold, which were with them,"
+    },
+    {
+     "n": 18,
+     "t": "lest there should be among you a man or woman or clan or tribe, whose heart turns away today from HWHY our Elohim, to go and serve the mighty ones of these nations, lest there should be among you a root bearing bitterness or wormwood."
+    },
+    {
+     "n": 19,
+     "t": "“And it shall be, when he hears the words of this curse, that he should bless himself in his heart, saying, ‘I have peace though I walk in the stubbornness of my heart,’ in order to add drunkenness to thirst."
+    },
+    {
+     "n": 20,
+     "t": "“HWHY would not forgive him, but rather, the displeasure of HWHY and His jealousy shall burn against that man and every curse that is written in this book shall settle on him and HWHY shall blot out his name from under the heavens."
+    },
+    {
+     "n": 21,
+     "t": "“And HWHY shall separate him for evil, out of all the tribes of Yisra’ĕl, according to all the curses of the covenant that are written in this Book of the Torah."
+    },
+    {
+     "n": 22,
+     "t": "“And the generation to come of your children who rise up after you and the foreigner who comes from a far land, shall say when they see the plagues of that land and the sicknesses which HWHY has sent into it:"
+    },
+    {
+     "n": 23,
+     "t": "‘All its land is sulphur, salt and burning; it is not sown, nor does it bear, nor does any grass grow there, like the overthrow of Seḏom and Amorah, Aḏmah and Tseḇoyim, which HWHY overthrew in His displeasure and His wrath.’"
+    },
+    {
+     "n": 24,
+     "t": "“And all nations shall say, ‘Why has HWHY done so to this land? What does the heat of this great displeasure mean?’"
+    },
+    {
+     "n": 25,
+     "t": "“And it shall be said, ‘Because they have forsaken the covenant of HWHY Elohim of their fathers which He made with them when He brought them out of the land of Mitsrayim."
+    },
+    {
+     "n": 26,
+     "t": "‘And they went and served other mighty ones and bowed themselves to them, mighty ones that they did not know and that He had not given to them,"
+    },
+    {
+     "n": 27,
+     "t": "therefore the displeasure of HWHY burned against this land, to bring on it every curse that is written in this book."
+    },
+    {
+     "n": 28,
+     "t": "‘And HWHY uprooted them from their land in displeasure, in wrath and in great rage and cast them into another land, as it is today.’"
+    },
+    {
+     "n": 29,
+     "t": "“The secret matters belong to HWHY our Elohim but what is revealed belongs to us and to our children forever, to do all the Words of this Torah."
+    }
+   ],
+   "page": 268,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "30": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“And it shall be, when all these words come upon you, the blessing and the curse which I have set before you and you shall bring them back to your heart among all the gentiles where HWHY your Elohim drives you,"
+    },
+    {
+     "n": 2,
+     "t": "and shall turn back to HWHY your Elohim and obey His voice, according to all that I command you today, with all your heart and with all your being, you and your children,"
+    },
+    {
+     "n": 3,
+     "t": "then HWHY your Elohim shall turn back your captivity and shall have compassion on you and He shall turn back and gather you from all the peoples where HWHY your Elohim has scattered you."
+    },
+    {
+     "n": 4,
+     "t": "“If any of you are driven out to the farthest parts under the heavens, from there HWHY your Elohim does gather you and from there He does take you."
+    },
+    {
+     "n": 5,
+     "t": "“And HWHY your Elohim shall bring you to the land which your fathers possessed and you shall possess it. He shall do good to you and increase you more than your fathers."
+    },
+    {
+     "n": 6,
+     "t": "“And HWHY your Elohim shall circumcise your heart and the heart of your seed, to love HWHY your Elohim with all your heart and with all your being, so that you might live,"
+    },
+    {
+     "n": 7,
+     "t": "and HWHY your Elohim shall put all these curses on your enemies and on those who hate you, who persecuted you."
+    },
+    {
+     "n": 8,
+     "t": "“And you shall turn back and obey the voice of HWHY and do all His commands which I command you today."
+    },
+    {
+     "n": 9,
+     "t": "“And HWHY your Elohim shall make you have excess in all the work of your hand, in the fruit of your body and in the fruit of your livestock and in the fruit of your ground for good. For HWHY turns back to rejoice over you for good as He rejoiced over your fathers,"
+    },
+    {
+     "n": 10,
+     "t": "if you obey the voice of HWHY your Elohim, to guard His commands and His laws which are written in this Book of the Torah, if you turn back to HWHY your Elohim with all your heart and with all your being."
+    },
+    {
+     "n": 11,
+     "t": "“For this command which I am commanding you today, it is not too hard for you, nor is it far off."
+    },
+    {
+     "n": 12,
+     "t": "“It is not in the heavens, to say, ‘Who shall ascend into the heavens for us and bring it to us and cause us to hear it so that we do it?’"
+    },
+    {
+     "n": 13,
+     "t": "“Nor is it beyond the sea, to say, ‘Who shall go over the sea for us and bring it to us and cause us to hear it so that we do it?’"
+    },
+    {
+     "n": 14,
+     "t": "“For the Word is very near you, in your mouth and in your heart – to do it."
+    },
+    {
+     "n": 15,
+     "t": "“See, I have set before you today life and good and death and evil,"
+    },
+    {
+     "n": 16,
+     "t": "in that I am commanding you today to love HWHY your Elohim, to walk in His ways and to guard His commands and His laws and His right-rulings. And you shall live and increase and HWHY your Elohim shall bless you in the land which you go to possess."
+    },
+    {
+     "n": 17,
+     "t": "“But if your heart turns away and you do not obey and shall be drawn away and shall bow down to other mighty ones and serve them,"
+    },
+    {
+     "n": 18,
+     "t": "“I have declared to you today that you shall certainly perish, you shall not prolong your days in the land which you are passing over the Yardĕn to enter and possess."
+    },
+    {
+     "n": 19,
+     "t": "“I have called the heavens and the earth as witnesses today against you: I have set before you life and death, the blessing and the curse. Therefore you shall choose life, so that you live, both you and your seed,"
+    },
+    {
+     "n": 20,
+     "t": "to love HWHY your Elohim, to obey His voice and to cling to Him – for He is your life and the length of your days – to dwell in the land which HWHY swore to your fathers, to Aḇrahim, to Yitsḥaq and to Ya‛aqoḇ, to give them.”"
+    }
+   ],
+   "page": 270,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "31": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Mosheh went and spoke these words to all Yisra’ĕl,"
+    },
+    {
+     "n": 2,
+     "t": "and he said to them, “I am one hundred and twenty years old today. I am no longer able to go out and come in. And HWHY has said to me, ‘You do not pass over this Yardĕn.’"
+    },
+    {
+     "n": 3,
+     "t": "“HWHY your Elohim Himself is passing over before you. He shall destroy these nations from before you and you possess them. Yahusha himself is passing over before you, as HWHY has spoken ."
+    },
+    {
+     "n": 4,
+     "t": "“And HWHY shall do to them as He did to Siḥon and to Oḡ, the sovereigns of the Amorites and their land, when He destroyed them."
+    },
+    {
+     "n": 5,
+     "t": "“And HWHY shall give them over to you and you shall do to them according to all the command which I have commanded you."
+    },
+    {
+     "n": 6,
+     "t": "“Be strong and courageous, do not fear nor be afraid of them. For it is HWHY your Elohim who is going with you. He does not fail you nor forsake you.”"
+    },
+    {
+     "n": 7,
+     "t": "And Mosheh called Yahusha and said to him before the eyes of all Yisra’ĕl, “Be strong and courageous, for you are going with this people to the land which HWHY has sworn to their fathers to give them and you are to let them inherit it."
+    },
+    {
+     "n": 8,
+     "t": "“And it is HWHY who is going before you, He Himself is with you. He does not fail you nor forsake you. Do not fear nor be discouraged.”"
+    },
+    {
+     "n": 9,
+     "t": "And Mosheh wrote this Torah and gave it to the priests, the sons of Lĕwi, who bore the ark of the covenant of HWHY and to all the elders of Yisra’ĕl."
+    },
+    {
+     "n": 10,
+     "t": "And Mosheh commanded them, saying, “At the end of seven years, at the appointed time, the year of release, at the Festival of Booths,"
+    },
+    {
+     "n": 11,
+     "t": "when all Yisra’ĕl comes to appear before HWHY your Elohim in the place which He chooses, read this Torah before all Yisra’ĕl in their hearing."
+    },
+    {
+     "n": 12,
+     "t": "“Assemble the people, the men and the women and the little ones and your sojourner who is within your gates, so that they hear and so that they learn to fear HWHY your Elohim and guard to do all the Words of this Torah."
+    },
+    {
+     "n": 13,
+     "t": "“And their children, who have not known it, should hear and learn to fear HWHY your Elohim as long as you live in the land you are passing over the Yardĕn to possess.”"
+    },
+    {
+     "n": 14,
+     "t": "And HWHY said to Mosheh, “See, the days have drawn near for you to die. Call Yahusha and present yourselves in the Tent of Meeting, so that I command him.” And Mosheh and Yahusha went and presented themselves in the Tent of Meeting."
+    },
+    {
+     "n": 15,
+     "t": "And HWHY appeared at the Tent in a column of a cloud and the column of a cloud stood above the door of the Tent."
+    },
+    {
+     "n": 16,
+     "t": "And HWHY said to Mosheh, “See, you are about to sleep with your fathers. And this people shall rise and whore after the mighty ones of the strangers of the land into the midst of which they shall enter and forsake Me and break My covenant which I have made with them."
+    },
+    {
+     "n": 17,
+     "t": "“Then My displeasure shall burn against them in that day and I shall for- sake them and hide My face from them and they shall be consumed. And many evils and distresses shall come upon them and it shall be said in that day, ‘Is it not because our Elohim is not in our midst that these evils have come upon us?’"
+    },
+    {
+     "n": 18,
+     "t": "“And I shall certainly hide My face in that day, because of all the evil which they have done, for they shall turn to other mighty ones."
+    },
+    {
+     "n": 19,
+     "t": "“And now write down this song for yourselves and teach it to the children of Yisra’ĕl. Put it in their mouths so that this song is to Me for a witness against the children of Yisra’ĕl."
+    },
+    {
+     "n": 20,
+     "t": "“And I shall bring them to the land flowing with milk and honey, of which I swore to their fathers and they shall eat and be satisfied and be fat, then they shall turn to other mighty ones and they shall serve them and scorn Me and break My covenant."
+    },
+    {
+     "n": 21,
+     "t": "“And it shall be, when many evils and distresses come upon them, that this song shall answer before them as a witness. For it is not to be forgotten in the mouths of their seed, for I know their thoughts which they are forming today, even before I bring them to the land of which I swore to give them.”"
+    },
+    {
+     "n": 22,
+     "t": "And Mosheh wrote this song the same day and taught it to the children of Yisra’ĕl."
+    },
+    {
+     "n": 23,
+     "t": "And He commanded Yahusha son of Nun and said, “Be strong and courageous, for you are to bring the children of Yisra’ĕl into the land of which I swore to them and I Myself am with you.”"
+    },
+    {
+     "n": 24,
+     "t": "And it came to be, when Mosheh had completed writing the Words of this Torah in a book, until their completion,"
+    },
+    {
+     "n": 25,
+     "t": "that Mosheh commanded the Lĕwites, who bore the ark of the covenant of HWHY, saying,"
+    },
+    {
+     "n": 26,
+     "t": "“Take this Book of the Torah and you shall place it beside the ark of the covenant of HWHY your Elohim and it shall be there as a witness against you,"
+    },
+    {
+     "n": 27,
+     "t": "for I myself know your rebellion and your stiff neck. See, while I am still alive with you today, you have been rebellious against HWHY, then how much more after my death?"
+    },
+    {
+     "n": 28,
+     "t": "“Assemble unto me all the elders of your tribes and your officers, so that I speak these words in their hearing and call the heavens and the earth to witness against them."
+    },
+    {
+     "n": 29,
+     "t": "“For I know that after my death you shall do very corruptly and turn aside from the way which I have commanded you. And evil shall come to you in the latter days, because you do what is evil in the eyes of HWHY, to provoke Him through the work of your hands.” DEḆARIM 31"
+    },
+    {
+     "n": 30,
+     "t": "So Mosheh spoke in the hearing of all the assembly of Yisra’ĕl the words of this song until their completion:"
+    }
+   ],
+   "page": 271,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "32": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "“Give ear, O heavens and let me speak; And hear, O earth, The words of my mouth."
+    },
+    {
+     "n": 2,
+     "t": "“Let my instruction fall as rain, My speech drop down as dew, As fine rain on the tender plants, And as showers on the grass."
+    },
+    {
+     "n": 3,
+     "t": "“For I proclaim the Name of HWHY, Ascribe greatness to our Elohim."
+    },
+    {
+     "n": 4,
+     "t": "“The Rock! His work is perfect, For all His ways are right-ruling, An Ĕl of truth and without unrighteousness, righteous and straight is He."
+    },
+    {
+     "n": 5,
+     "t": "“A twisted and crooked generation has corrupted itself, Their blemish, they are not His children."
+    },
+    {
+     "n": 6,
+     "t": "“Do you do this to HWHY, O foolish and unwise people? Is He not your Father, who bought you, Who created you and established you?"
+    },
+    {
+     "n": 7,
+     "t": "“Remember the days of old, Consider the years of many generations. ask your father and let him show you, Your elders and let them say to you:"
+    },
+    {
+     "n": 8,
+     "t": "“When the Most High gave the nations their inheritance When He separated the sons of Aḏam, He set the boundaries of the peoples According to the number of the children of Yisra’ĕl."
+    },
+    {
+     "n": 9,
+     "t": "“For the portion of HWHY is His people, Ya‛aqoḇ His allotted inheritance."
+    },
+    {
+     "n": 10,
+     "t": "”He found him in a wilderness, And in a wasted, howling desert. He encompassed him, He made him understand, He watched over him as the apple of His eye. (See Zek.2:8)"
+    },
+    {
+     "n": 11,
+     "t": "“As an eagle stirs up its nest, Flutters over its young, Spreading out its wings taking them up, Bearing them on its wings."
+    },
+    {
+     "n": 12,
+     "t": "“HWHY alone led him, And there was no strange mighty one with him."
+    },
+    {
+     "n": 13,
+     "t": "”He made him ride in the heights of the earth, And he ate the fruit of the fields, And He made him to draw honey from the rock and oil from the flinty rock,"
+    },
+    {
+     "n": 14,
+     "t": "“Curds from the cattle, And milk of the flock, With fat of lambs, And rams of the breed of Bashan, And goats, with the choicest wheat; And you drank wine, the blood of the grapes."
+    },
+    {
+     "n": 15,
+     "t": "“But Yeshurun grew fat and kicked; You grew fat and you grew thick, You are covered with fat; So he forsook Eloah who made him, And scorned the Rock of his deliverance."
+    },
+    {
+     "n": 16,
+     "t": "“They moved Him to jealousy with foreign matters, With abominations they provoked Him."
+    },
+    {
+     "n": 17,
+     "t": "“They slaughtered to demons – not Eloah – Mighty ones they did not know, New ones who came lately, Which your fathers did not fear."
+    },
+    {
+     "n": 18,
+     "t": "“You neglected the Rock who brought you forth, And forgot the Ĕl who fathered you."
+    },
+    {
+     "n": 19,
+     "t": "“And HWHY saw and despised, Because of the provocation of His sons and His daughters."
+    },
+    {
+     "n": 20,
+     "t": "“And He said, ‘Let Me hide My face from them, Let Me see what their end is, For they are a perverse generation, Children in whom there is no trusting."
+    }
+   ],
+   "page": 273,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "33": {
+   "verses": [
+    {
+     "n": 2,
+     "t": "“Let my instruction fall as rain, My speech drop down as dew, As fine rain on the tender plants, And as showers on the grass."
+    },
+    {
+     "n": 3,
+     "t": "“For I proclaim the Name of HWHY, Ascribe greatness to our Elohim."
+    },
+    {
+     "n": 4,
+     "t": "“The Rock! His work is perfect, For all His ways are right-ruling, An Ĕl of truth and without unrighteousness, righteous and straight is He."
+    },
+    {
+     "n": 5,
+     "t": "“A twisted and crooked generation has corrupted itself, Their blemish, they are not His children."
+    },
+    {
+     "n": 6,
+     "t": "“Do you do this to HWHY, O foolish and unwise people? Is He not your Father, who bought you, Who created you and established you?"
+    },
+    {
+     "n": 7,
+     "t": "“Remember the days of old, Consider the years of many generations. ask your father and let him show you, Your elders and let them say to you:"
+    },
+    {
+     "n": 8,
+     "t": "“When the Most High gave the nations their inheritance When He separated the sons of Aḏam, He set the boundaries of the peoples According to the number of the children of Yisra’ĕl."
+    },
+    {
+     "n": 9,
+     "t": "“For the portion of HWHY is His people, Ya‛aqoḇ His allotted inheritance."
+    },
+    {
+     "n": 10,
+     "t": "”He found him in a wilderness, And in a wasted, howling desert. He encompassed him, He made him understand, He watched over him as the apple of His eye. (See Zek.2:8)"
+    },
+    {
+     "n": 11,
+     "t": "“As an eagle stirs up its nest, Flutters over its young, Spreading out its wings taking them up, Bearing them on its wings."
+    },
+    {
+     "n": 12,
+     "t": "“HWHY alone led him, And there was no strange mighty one with him."
+    },
+    {
+     "n": 13,
+     "t": "”He made him ride in the heights of the earth, And he ate the fruit of the fields, And He made him to draw honey from the rock and oil from the flinty rock,"
+    },
+    {
+     "n": 14,
+     "t": "“Curds from the cattle, And milk of the flock, With fat of lambs, And rams of the breed of Bashan, And goats, with the choicest wheat; And you drank wine, the blood of the grapes."
+    },
+    {
+     "n": 15,
+     "t": "“But Yeshurun grew fat and kicked; You grew fat and you grew thick, You are covered with fat; So he forsook Eloah who made him, And scorned the Rock of his deliverance."
+    },
+    {
+     "n": 16,
+     "t": "“They moved Him to jealousy with foreign matters, With abominations they provoked Him."
+    },
+    {
+     "n": 17,
+     "t": "“They slaughtered to demons – not Eloah – Mighty ones they did not know, New ones who came lately, Which your fathers did not fear."
+    },
+    {
+     "n": 18,
+     "t": "“You neglected the Rock who brought you forth, And forgot the Ĕl who fathered you."
+    },
+    {
+     "n": 19,
+     "t": "“And HWHY saw and despised, Because of the provocation of His sons and His daughters."
+    },
+    {
+     "n": 20,
+     "t": "“And He said, ‘Let Me hide My face from them, Let Me see what their end is, For they are a perverse generation, Children in whom there is no trusting."
+    }
+   ],
+   "page": 273,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "34": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Mosheh went up from the desert plains of Mo’aḇ to Mount Neḇo, to the top of Pisgah, which is opposite Yeriḥo. And HWHY showed him all the land of Gil‛aḏ as far as Dan,"
+    },
+    {
+     "n": 2,
+     "t": "and all Naphtali and the land of Ephrayim and Menashsheh, all the land of Yahuḏah as far as the Western Sea,"
+    },
+    {
+     "n": 3,
+     "t": "and the Negeḇ and the plain of the Valley of Yeriḥo, the city of palm trees, as far as Tso‛ar."
+    },
+    {
+     "n": 4,
+     "t": "And HWHY said to him, “This is the land of which I swore to Aḇrahim, to Yitsḥaq and to Ya‛aqoḇ, saying, ‘To your seed I give it.’ I have let you look at it with your eyes, but you do not pass over there.”"
+    },
+    {
+     "n": 5,
+     "t": "And Mosheh the servant of HWHY died there in the land of Mo’aḇ, according to the mouth of HWHY."
+    },
+    {
+     "n": 6,
+     "t": "And He buried him in a valley in the land of Mo’aḇ, opposite Bĕyth Pe‛or and no one knows his burial place to this day."
+    },
+    {
+     "n": 7,
+     "t": "And Mosheh was one hundred and twenty years old when he died. His eyes were not dim nor his freshness gone."
+    },
+    {
+     "n": 8,
+     "t": "And the children of Yisra’ĕl wept for Mosheh in the desert plains of Mo’aḇ thirty days. And the days of weeping and mourning for Mosheh were completed."
+    },
+    {
+     "n": 9,
+     "t": "And Yahusha son of Nun was filled with the spirit of wisdom, for Mosheh had laid his hands on him. And the children of Yisra’ĕl listened to him and did as HWHY had commanded Mosheh."
+    },
+    {
+     "n": 10,
+     "t": "And since then no prophet has arisen in Yisra’ĕl like Mosheh, whom HWHY knew face to face,"
+    },
+    {
+     "n": 11,
+     "t": "for all the signs and wonders which HWHY sent him to do in the land of Mitsray im, before Pharaoh and before all his servants and in all his land,"
+    },
+    {
+     "n": 12,
+     "t": "and for all that strong hand and all the great fearsome deeds which Mosheh did before the eyes of all Yisra’ĕl. of the wild ox. With them he pushes the peoples to the ends of the earth. And they are the ten thousands of Ephrayim and they are the thousands of Menashsheh.”"
+    },
+    {
+     "n": 18,
+     "t": "And of Zeḇulun he said, “Rejoice, O Zeḇulun, in your going out and Yissasḵar in your tents!"
+    },
+    {
+     "n": 19,
+     "t": "“They call peoples to the mountain, there they bring offerings of righteousness, for they draw from the riches of the seas and treasures hidden in the sand.”"
+    },
+    {
+     "n": 20,
+     "t": "Of Gaḏ he said, “Blessed is he who enlarges Gaḏ. He dwells as a lion and shall tear off the arm, also the crown."
+    },
+    {
+     "n": 21,
+     "t": "“And he chose the best for himself, for there the portion of the lawgiver was hidden. And he came with the heads of the people. The righteousness of HWHY he did and His right-rulings with Yisra’ĕl.”"
+    },
+    {
+     "n": 22,
+     "t": "And of Dan he said, “Dan is a lion’s cub that leaps from Bashan.”"
+    },
+    {
+     "n": 23,
+     "t": "Of Naphtali he said, “O Naphtali, satisfied with pleasure and filled with the blessing of HWHY, possess the west and the south.”"
+    },
+    {
+     "n": 24,
+     "t": "And of Ashĕr he said, “Ashĕr is most blessed of sons. Let him be accepted by his brothers and dip his foot in oil."
+    },
+    {
+     "n": 25,
+     "t": "“Your sandals are iron and bronze and your strength as your days."
+    },
+    {
+     "n": 26,
+     "t": "“O Yeshurun, there is no one like Ĕl, riding the heavens to help you and on the clouds, in His excellency."
+    },
+    {
+     "n": 27,
+     "t": "“The Elohim of old is a refuge and beneath are everlasting arms. And He drives out the enemy from before you and says, ‘Destroy!’"
+    },
+    {
+     "n": 28,
+     "t": "“Thus Yisra’ĕl dwells in safety, the fountain of Ya‛aqoḇ alone, in a land of grain and new wine. His heavens also drop down dew."
+    },
+    {
+     "n": 29,
+     "t": "“Blessed are you, O Yisra’ĕl! Who is like you, a people saved by HWHY, the shield of your help and He who is the sword of your excellency! And your enemies are subdued for you and you tread down their high places.”"
+    }
+   ],
+   "page": 273,
+   "pdf": "TheBesorah-all.0001.pdf"
+  }
+ }
+}

@@ -1,0 +1,3903 @@
+{
+ "id": "bemidbar",
+ "hebrew": "BEMIḎBAR",
+ "english": "Numbers",
+ "section": "Torah",
+ "chapter_count": 36,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh in the Wilderness of Sinai, in the Tent of Meeting, on the first day of the second month, in the second year after they had come out of the land of Mitsrayim, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“Take a census of all the congregation of the children of Yisra’ĕl, by their clans, by their fathers’ houses, according to the number of names, every male, head by head,"
+    },
+    {
+     "n": 3,
+     "t": "from twenty years old and above, everyone going out to the army in Yisra’ĕl. Number them by their divisions, you and Aharon."
+    },
+    {
+     "n": 4,
+     "t": "“And a man from every tribe should be with you, each one the head of his father’s house."
+    },
+    {
+     "n": 5,
+     "t": "“And these are the names of the men who stand with you. From Re’uḇĕn: Elitsur, son of Sheḏĕy’ur."
+    },
+    {
+     "n": 6,
+     "t": "“From Shim‛on: Shelumi’ĕl, son of Tsurishaddai."
+    },
+    {
+     "n": 7,
+     "t": "“From Yahuḏah: Naḥshon, son of Amminaḏaḇ."
+    },
+    {
+     "n": 8,
+     "t": "“From Yissasḵar: Nethanĕ’l, son of Tsu‛ar."
+    },
+    {
+     "n": 9,
+     "t": "“From Zeḇulun: Eliyaḇ, son of Ḥĕlon."
+    },
+    {
+     "n": 10,
+     "t": "“From the sons of Yosĕph: From Ephrayim: Elishama, son of Ammihuḏ. From Menashsheh: Gamli’ĕl, son of Peḏahtsur."
+    },
+    {
+     "n": 11,
+     "t": "“From Binyamin: Aḇiḏan, son of Giḏ‛oni."
+    },
+    {
+     "n": 12,
+     "t": "“From Dan: Aḥi‛ezer, son of Ammishaddai."
+    },
+    {
+     "n": 13,
+     "t": "“From Ashĕr: Paḡ‛i’ĕl, son of Oḵran."
+    },
+    {
+     "n": 14,
+     "t": "“From Gaḏ: Elyasaph, son of Deu’ĕl."
+    },
+    {
+     "n": 15,
+     "t": "“From Naphtali: Aḥira, son of Ĕnan.”"
+    },
+    {
+     "n": 16,
+     "t": "These are the ones called from the congregation, leaders of their fathers’ tribes, heads of the thousands of Yisra’ĕl."
+    },
+    {
+     "n": 17,
+     "t": "And Mosheh and Aharon took these men who were called by name,"
+    },
+    {
+     "n": 18,
+     "t": "and they assembled all the congrega tion together on the first day of the second month. And they declared their ancestry by clans, by their fathers’ houses, according to the number of names, from twenty years old and above, each one head by head."
+    },
+    {
+     "n": 19,
+     "t": "As HWHY commanded Mosheh, so he registered them in the Wilderness of Sinai."
+    },
+    {
+     "n": 20,
+     "t": "And the children of Re’uḇĕn, Yisra’ĕl’s first-born, their genealogies by their clans, by their fathers’ house, according to the number of names, every male head by head, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 21,
+     "t": "those who were registered of the tribe of Re’uḇĕn were forty-six thousand five hundred."
+    },
+    {
+     "n": 22,
+     "t": "From the children of Shim‛on, their genealogies by their clans, by their fathers’ house, of those who were registered, according to the number of names, every male head by head, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 23,
+     "t": "those who were registered of the tribe of Shim‛on were fifty-nine thousand three hundred."
+    },
+    {
+     "n": 24,
+     "t": "From the children of Gaḏ, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 25,
+     "t": "those who were registered of the tribe of Gaḏ were forty-five thousand six hundred and fifty."
+    },
+    {
+     "n": 26,
+     "t": "From the children of Yahuḏah, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 27,
+     "t": "those who were registered of the tribe of Yahuḏah were seventy-four thousand six hundred."
+    },
+    {
+     "n": 28,
+     "t": "From the children of Yissasḵar, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 29,
+     "t": "those who were registered of the tribe of Yissasḵar were fifty-four thousand four hundred."
+    },
+    {
+     "n": 30,
+     "t": "From the children of Zeḇulun, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 31,
+     "t": "those who were registered of the tribe of Zeḇulun were fifty-seven thousand four hundred."
+    },
+    {
+     "n": 32,
+     "t": "From the sons of Yosĕph, the children of Ephrayim, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 33,
+     "t": "those who were registered of the tribe of Ephrayim were forty thousand five hundred."
+    },
+    {
+     "n": 34,
+     "t": "From the children of Menashsheh, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 35,
+     "t": "those who were registered of the tribe of Menashsheh were thirty-two thousand two hundred."
+    },
+    {
+     "n": 36,
+     "t": "From the children of Binyamin, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 37,
+     "t": "those who were registered of the tribe of Binyamin were thirty-five thousand four hundred."
+    },
+    {
+     "n": 38,
+     "t": "From the children of Dan, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 39,
+     "t": "those who were registered of the tribe of Dan were sixty-two thousand seven hundred."
+    },
+    {
+     "n": 40,
+     "t": "From the children of Ashĕr, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 41,
+     "t": "those who were registered of the tribe of Ashĕr were forty-one thousand five hundred."
+    },
+    {
+     "n": 42,
+     "t": "From the children of Naphtali, their genealogies by their clans, by their fathers’ house, according to the number of names, from twenty years old and above, everyone going out to the army,"
+    },
+    {
+     "n": 43,
+     "t": "those who were registered of the tribe of Naphtali were fifty-three thousand four hundred."
+    },
+    {
+     "n": 44,
+     "t": "These were those registered, whom Mosheh and Aharon registered, with the leaders of Yisra’ĕl, twelve men, each one for his father’s house."
+    },
+    {
+     "n": 45,
+     "t": "And all those that were registered of the children of Yisra’ĕl, by their fathers’ houses, from twenty years old and above, everyone going out to the army in Yisra’ĕl,"
+    },
+    {
+     "n": 46,
+     "t": "all those that were registered were six hundred and three thousand five hundred and fifty."
+    },
+    {
+     "n": 47,
+     "t": "But the Lĕwites were not registered among them by their fathers’ tribe,"
+    },
+    {
+     "n": 48,
+     "t": "because HWHY had spoken to Mosheh, saying,"
+    },
+    {
+     "n": 49,
+     "t": "“Only the tribe of Lĕwi you do not register, nor take a census of them among the children of Yisra’ĕl."
+    },
+    {
+     "n": 50,
+     "t": "“Instead, appoint the Lĕwites over the Dwelling Place of the Witness, over all its furnishings and over all that belongs to it. They bear the Dwelling Place and all its furnishings and they attend to it and camp around the Dwelling Place."
+    },
+    {
+     "n": 51,
+     "t": "“And when the Dwelling Place is to go forward, the Lĕwites take it down. And when the Dwelling Place is to be set up, the Lĕwites set it up. And the stranger who comes near is put to death."
+    },
+    {
+     "n": 52,
+     "t": "“And the children of Yisra’ĕl shall pitch their tents, everyone by his own camp, everyone by his own banner, according to their divisions,"
+    },
+    {
+     "n": 53,
+     "t": "but let the Lĕwites camp around the Dwelling Place of the Witness, so that there be no wrath on the congregation of the children of Yisra’ĕl. And the Lĕwites shall guard the duty of the Dwelling Place of the witness.”"
+    },
+    {
+     "n": 54,
+     "t": "And the children of Yisra’ĕl did according to all that HWHY commanded Mosheh, so they did."
+    }
+   ],
+   "page": 185,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh and to Aharon, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“The children of Yisra’ĕl are to camp, each one by his own banner, beside the sign of his father’s house. Let them camp around the Tent of Meeting at a distance.”"
+    },
+    {
+     "n": 3,
+     "t": "And on the east side, towards sunrise: those of the banner of the camp of Yahuḏah camp according to their divisions. And the leader of the children of Yahuḏah: Naḥshon, son of Amminaḏaḇ."
+    },
+    {
+     "n": 4,
+     "t": "And his army with their registered ones: seventy-four thousand six hundred."
+    },
+    {
+     "n": 5,
+     "t": "And those camping next to him is the tribe of Yissasḵar and the leader of the children of Yissasḵar: Nethanĕ’l, son of Tsu‛ar."
+    },
+    {
+     "n": 6,
+     "t": "And his army with its registered ones: fifty-four thousand four hundred."
+    },
+    {
+     "n": 7,
+     "t": "Then the tribe of Zeḇulun and the leader of the children of Zeḇulun: Eliyaḇ, son of Ḥĕlon."
+    },
+    {
+     "n": 8,
+     "t": "And his army with its registered ones: fifty-seven thousand four hundred."
+    },
+    {
+     "n": 9,
+     "t": "All the registered ones of the camp of Yahuḏah, according to their divisions: one hundred and eighty-six thousand four hundred. These depart first."
+    },
+    {
+     "n": 10,
+     "t": "On the south side: the banner of the camp of Re’uḇĕn according to their divisions and the leader of the children of Re’uḇĕn: Elitsur, son of Sheḏĕy’ur."
+    },
+    {
+     "n": 11,
+     "t": "And his army with its registered ones: forty-six thousand five hundred."
+    },
+    {
+     "n": 12,
+     "t": "“Now look, I Myself have taken the Lĕwites from among the children of Yisra’ĕl instead of every first-born who opens the womb among the children of Yisra’ĕl. And the Lĕwites shall be Mine,"
+    },
+    {
+     "n": 13,
+     "t": "because all the first-born are Mine. On the day that I struck all the first-born in the land of Mitsrayim, I set-apart to Myself all the first-born in Yisra’ĕl, both man and beast. They are Mine, I am HWHY.”"
+    },
+    {
+     "n": 14,
+     "t": "And HWHY spoke to Mosheh in the Wilderness of Sinai, saying,"
+    },
+    {
+     "n": 15,
+     "t": "“Register the children of Lĕwi by their fathers’ houses, by their clans. Register every male from a month old and above.”"
+    },
+    {
+     "n": 16,
+     "t": "So Mosheh registered them according to the Word of HWHY, as he had been commanded."
+    },
+    {
+     "n": 17,
+     "t": "And these were the sons of Lĕwi by their names: Gĕreshon and Qehath and Merari."
+    },
+    {
+     "n": 18,
+     "t": "And these are the names of the sons of Gĕreshon by their clans: Liḇni and Shim‛i."
+    },
+    {
+     "n": 19,
+     "t": "And the sons of Qehath by their clans: Amram and Yitshar, Ḥeḇron and Uzzi’ĕl."
+    },
+    {
+     "n": 20,
+     "t": "And the sons of Merari by their clans: Maḥli and Mushi. These are the clans of the Lĕwites by their fathers’ houses."
+    },
+    {
+     "n": 21,
+     "t": "From Gĕreshon came the clan of the Liḇnites and the clan of the Shim‛ites. These were the clans of the"
+    },
+    {
+     "n": 27,
+     "t": "And those who camp next to him: the tribe of Ashĕr and the leader of the children of Ashĕr: Paḡ‛i’ĕl, son of Oḵran."
+    },
+    {
+     "n": 28,
+     "t": "And his army with their registered ones: forty-one thousand five hundred."
+    },
+    {
+     "n": 29,
+     "t": "Then the tribe of Naphtali and the leader of the children of Naphtali: Aḥira, son of Ĕnan."
+    },
+    {
+     "n": 30,
+     "t": "And his army with their registered ones: fifty-three thousand four hundred."
+    },
+    {
+     "n": 31,
+     "t": "All the registered ones of the camp of Dan: one hundred and fifty-seven thousand six hundred. They depart last, with their banners."
+    },
+    {
+     "n": 32,
+     "t": "These were registered ones of the children of Yisra’ĕl by their fathers’ houses. All who were registered according to their divisions of the camps: six hundred and three thousand five hundred and fifty."
+    },
+    {
+     "n": 33,
+     "t": "But the Lĕwites were not registered among the children of Yisra’ĕl, as HWHY commanded Mosheh."
+    },
+    {
+     "n": 34,
+     "t": "And the children of Yisra’ĕl did according to all that HWHY commanded Mosheh. So they camped by their banners and so they departed, each one by his clan, according to their fathers’ houses."
+    }
+   ],
+   "page": 187,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And these are the generations of Aharon and Mosheh when HWHY spoke with Mosheh on Mount Sinai."
+    },
+    {
+     "n": 2,
+     "t": "And these are the names of the sons of Aharon: Naḏaḇ, the first-born and Aḇihu, El‛azar and Ithamar."
+    },
+    {
+     "n": 3,
+     "t": "These are the names of the sons of Aharon, the anointed priests, whom he ordained to act as priests."
+    },
+    {
+     "n": 4,
+     "t": "And Naḏaḇ and Aḇihu had died before HWHY when they brought strange fire before HWHY in the Wilderness of Sinai. And they had no children. So El‛azar and Ithamar acted as priests in the presence of Aharon their father."
+    },
+    {
+     "n": 5,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 6,
+     "t": "“Bring the tribe of Lĕwi near and set them before Aharon the priest and they shall serve him, Gĕreshonites."
+    }
+   ],
+   "page": 188,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh and to Aharon, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“Take a census of the sons of Qehath from among the children of Lĕwi, by their clans, by their fathers’ house,"
+    },
+    {
+     "n": 3,
+     "t": "from thirty years old and above, even to fifty years old, all who enter the service to do the work in the Tent of Meeting."
+    },
+    {
+     "n": 4,
+     "t": "“This is the service of the sons of Qehath in the Tent of Meeting, the most set-apart matters:"
+    },
+    {
+     "n": 5,
+     "t": "“At the breaking of camp, Aharon and his sons shall come and they shall take down the covering veil and cover the ark of the witness with it,"
+    },
+    {
+     "n": 6,
+     "t": "and shall put on it a covering of fine leather and spread over that an all-blue wrapper and shall insert its poles."
+    },
+    {
+     "n": 7,
+     "t": "“And on the table of showbread they shall spread a blue wrapper and shall put on it the dishes and the ladles and the bowls and the jars for pouring and the showbread on it."
+    },
+    {
+     "n": 8,
+     "t": "“And they shall spread over them a scarlet wrapper and cover the same with a covering of fine leather and shall insert its poles,"
+    },
+    {
+     "n": 9,
+     "t": "and shall take a blue wrapper and cover the lampstand of the light, with its lamps and its snuffers and its trays and all its oil vessels, by which they serve it."
+    },
+    {
+     "n": 10,
+     "t": "“And they shall put it with all its utensils in a covering of fine leather and put it on a bar."
+    },
+    {
+     "n": 11,
+     "t": "“And over the golden altar they shall spread a blue wrapper and cover it with a covering of fine leather and shall insert its poles,"
+    },
+    {
+     "n": 12,
+     "t": "and shall take all the utensils of service with which they serve in the set- apart place and shall put them in a blue wrapper, cover them with a covering of fine leather and put them on a bar,"
+    },
+    {
+     "n": 13,
+     "t": "and shall remove the ashes from the altar and spread a purple wrapper over it,"
+    },
+    {
+     "n": 14,
+     "t": "and shall put on it all its utensils by which they serve there: the fire holders, the forks and the shovels and the basins and all the utensils of the altar and shall spread on it a covering of fine leather and insert its poles."
+    },
+    {
+     "n": 15,
+     "t": "“And when Aharon and his sons have finished covering the set-apart objects and all the furnishings of the Set-apart Place at the breaking of camp, then the sons of Qehath shall come to lift them, but let them not touch that which is set- apart, lest they die. These matters are the burden of the sons of Qehath in the Tent of Meeting."
+    },
+    {
+     "n": 16,
+     "t": "“And the oversight of El‛azar, son of Aharon the priest, is the oil for the light and the sweet incense and the daily grain offering and the anointing oil and the oversight of all the Dwelling Place and all that is in it, with the set-apart place and its furnishings.”"
+    },
+    {
+     "n": 17,
+     "t": "And HWHY spoke to Mosheh and to Aharon, saying,"
+    },
+    {
+     "n": 18,
+     "t": "“Do not cut off the tribe of the clans of the Qehathites from among the Lĕwites,"
+    },
+    {
+     "n": 19,
+     "t": "but do this to them and they shall live and not die when they approach the most set-apart objects: Aharon and his sons shall go in and appoint each of them to his service and his burden."
+    },
+    {
+     "n": 20,
+     "t": "“They are not, however, to go in to watch while the set-apart objects are being covered, lest they die.”"
+    },
+    {
+     "n": 21,
+     "t": "And HWHY spoke to Mosheh,saying,"
+    },
+    {
+     "n": 22,
+     "t": "“Take a census also of the sons of Gĕreshon, by their fathers’ house, by their clans."
+    },
+    {
+     "n": 23,
+     "t": "“Register them, from thirty years old and above, even to fifty years old, all who enter to perform the service, to do the service in the Tent of Meeting."
+    },
+    {
+     "n": 24,
+     "t": "“This is the service of the clans of the Gĕreshonites, in serving and in bearing burdens:"
+    },
+    {
+     "n": 25,
+     "t": "“And they shall bear the curtains of the Dwelling Place and the Tent of Meeting with its covering, the covering of fine leather that is on it, the covering for the door of the Tent of Meeting,"
+    },
+    {
+     "n": 26,
+     "t": "and the screens of the courtyard and the covering for the door of the gate of the courtyard, which is around the Dwelling Place and altar and their cords, all the equipment for their service and all that is made for them – so shall they serve."
+    },
+    {
+     "n": 27,
+     "t": "“Aharon and his sons are to command all the service of the sons of the Gĕreshonites, all their burden and all their service. And you shall appoint to them all the duty of all their burden."
+    },
+    {
+     "n": 28,
+     "t": "“This is the service of the clans of the sons of Gĕreshon in the Tent of Meeting. And let their duties be under the hand of Ithamar, son of Aharon the priest."
+    },
+    {
+     "n": 29,
+     "t": "“As for the sons of Merari, register them by their clans and by their fathers’ house."
+    },
+    {
+     "n": 30,
+     "t": "“Register them, from thirty years old and above, even to fifty years old, all who enter the service to do the work of the Tent of Meeting."
+    },
+    {
+     "n": 31,
+     "t": "“And this is the duty of their burden, according to all their service for the Tent of Meeting: the boards of the Dwelling Place and its bars and its columns and its sockets,"
+    },
+    {
+     "n": 32,
+     "t": "and the columns around the courtyard with their sockets and their pegs and their cords, with all their equipment and all their service. And assign to each by name the equipment of the duty of their burden."
+    },
+    {
+     "n": 33,
+     "t": "“This is the service of the clans of the sons of Merari, as all their service for the Tent of Meeting, under the hand of Ithamar, son of Aharon the priest.”"
+    },
+    {
+     "n": 34,
+     "t": "So Mosheh and Aharon and the leaders of the congregation registered the sons of the Qehathites by their clans and by their fathers’ house,"
+    },
+    {
+     "n": 35,
+     "t": "from thirty years old and above, even to fifty years old, all who entered the service for work in the Tent of Meeting."
+    },
+    {
+     "n": 36,
+     "t": "And their registered ones, by their clans, were two thousand seven hundred and fifty."
+    },
+    {
+     "n": 37,
+     "t": "These were the registered ones of the clans of the Qehathites, all those serving in the Tent of Meeting, whom Mosheh and Aharon registered according to the command of HWHY by the hand of Mosheh."
+    },
+    {
+     "n": 38,
+     "t": "And those registered ones of the sons of Gĕreshon, by their clans and by their fathers’ house,"
+    },
+    {
+     "n": 39,
+     "t": "from thirty years old and above, even to fifty years old, all who entered the service for work in the Tent of Meeting,"
+    },
+    {
+     "n": 40,
+     "t": "the registered ones, by their clans, by their fathers’ house, were two thousand six hundred and thirty."
+    },
+    {
+     "n": 41,
+     "t": "These were the registered ones of the clans of the sons of Gĕreshon, of all who serve in the Tent of Meeting, whom Mosheh and Aharon registered according to the command of HWHY."
+    },
+    {
+     "n": 42,
+     "t": "And those of the clans of the sons of Merari who were registered, by their clans, by their fathers’ house,"
+    },
+    {
+     "n": 43,
+     "t": "from thirty years old and above, even to fifty years old, all who entered the service for work in the Tent of Meeting,"
+    },
+    {
+     "n": 44,
+     "t": "the registered ones, by their clans were three thousand two hundred."
+    },
+    {
+     "n": 45,
+     "t": "These were the registered ones of the clans of the sons of Merari, whom Mosheh and Aharon registered according to the command of HWHY by the hand of Mosheh."
+    },
+    {
+     "n": 46,
+     "t": "All the registered ones of the Lĕwites, whom Mosheh and Aharon and the leaders of Yisra’ĕl registered, by their clans and by their fathers’ houses,"
+    },
+    {
+     "n": 47,
+     "t": "from thirty years old and above, even to fifty years old, all who came to do the work of service and the work of bearing burdens in the Tent of Meeting,"
+    },
+    {
+     "n": 48,
+     "t": "their registered ones were eight thousand five hundred and eighty."
+    },
+    {
+     "n": 49,
+     "t": "According to the command of HWHY they were registered by the hand of Mosheh, each according to his service and according to his burden, thus were they registered by him, as HWHY commanded Mosheh."
+    }
+   ],
+   "page": 190,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 2,
+     "t": "“Command the children of Yisra’ĕl to send out of the camp every leper, and everyone who has a discharge and whoever becomes defiled for a being."
+    },
+    {
+     "n": 3,
+     "t": "“Send out both male and female, send them outside the camp, so that they do not defile their camps in the midst of which I dwell.”"
+    },
+    {
+     "n": 4,
+     "t": "And the children of Yisra’ĕl did so, to send them outside the camp. As HWHY had spoken to Mosheh, so the children of Yisra’ĕl did."
+    },
+    {
+     "n": 5,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 6,
+     "t": "“Speak to the children of Yisra’ĕl, ‘When a man or woman commits any sin that men commit in trespass against HWHY and that being is guilty,"
+    },
+    {
+     "n": 7,
+     "t": "then they shall confess their sin which they have done. And he shall restore his guilt in its principal, plus one-fifth of it and give it to whom he has been guilty."
+    },
+    {
+     "n": 8,
+     "t": "‘But if the man has no relative to restore the guilt to, the guilt which is restored goes to HWHY, for the priest, in addition to the ram of the atonement with which atonement is made for him."
+    },
+    {
+     "n": 9,
+     "t": "‘And every contribution of all the set- apart gifts of the children of Yisra’ĕl, which they bring to the priest, becomes his."
+    },
+    {
+     "n": 10,
+     "t": "‘And every man’s set-apart gifts becomes his, whatever any man gives the priest becomes his.’ ”"
+    },
+    {
+     "n": 11,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 12,
+     "t": "“Speak to the children of Yisra’ĕl and say to them, ‘When any man’s wife turns aside and has committed a trespass against him,"
+    },
+    {
+     "n": 13,
+     "t": "and a man has intercourse with her and it is hidden from the eyes of her husband and it is concealed that she has defiled herself and there was no witness against her, nor was she caught,"
+    },
+    {
+     "n": 14,
+     "t": "and a spirit of jealousy comes upon him and he becomes jealous of his wife who has defiled herself, or a spirit of jealousy comes upon him and he becomes jealous of his wife although she has not defiled herself,"
+    },
+    {
+     "n": 15,
+     "t": "then the man shall bring his wife to the priest. And he shall bring the offering for her, one-tenth of an ĕphah of barley flour. He is not to pour oil on it or put frankincense on it, because it is a grain offering of jealousy, an offering for remembering, for bringing crookedness to remembrance."
+    },
+    {
+     "n": 16,
+     "t": "‘And the priest shall bring her near and shall make her stand before HWHY."
+    },
+    {
+     "n": 17,
+     "t": "‘And the priest shall take set-apart water in an earthen vessel and take some of the dust that is on the floor of the Dwelling Place and put it into the water."
+    },
+    {
+     "n": 18,
+     "t": "‘And the priest shall make the woman stand before HWHY and shall uncover the woman’s head and put the offering for remembering in her hands, which is the grain offering of jealousy, while the priest holds in his hand the bitter water that brings a curse."
+    },
+    {
+     "n": 19,
+     "t": "‘And the priest shall make her swear and say to the woman, “If no man has lain with you and if you have not turned aside to uncleanness under your husband’s authority, be free from this bitter water that brings a curse."
+    },
+    {
+     "n": 20,
+     "t": "“But if you have turned aside under your husband’s authority and if you have defiled yourself and some man other than"
+    }
+   ],
+   "page": 192,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh, say"
+    },
+    {
+     "n": 2,
+     "t": "“Speak to the children of Yisra’ĕl and say to them, ‘When a man or woman does separate, by making a vow of a Nazirite, to be separate to HWHY,"
+    },
+    {
+     "n": 3,
+     "t": "he separates himself from wine and strong drink – he drinks neither vinegar of wine nor vinegar of strong drink, neither does he drink any grape juice, nor eat grapes or raisins."
+    },
+    {
+     "n": 4,
+     "t": "‘All the days of his separation he does not eat whatever is made of the grapevine, from seed to skin."
+    },
+    {
+     "n": 5,
+     "t": "‘All the days of the vow of his separation a razor does not come upon his head. Until the days are completed for which he does separate himself to HWHY, he is set-apart. He shall let the locks of the hair of his head grow long."
+    },
+    {
+     "n": 6,
+     "t": "‘All the days of his separation to HWHY he does not go near a dead body."
+    },
+    {
+     "n": 7,
+     "t": "‘He does not make himself unclean for his father, or for his mother, for his brother or his sister, when they die, because his separation to Elohim is on his head."
+    },
+    {
+     "n": 8,
+     "t": "‘All the days of his separation he is set-apart to HWHY."
+    },
+    {
+     "n": 9,
+     "t": "‘And when anyone dies beside him in an instant, suddenly and he has defiled the head of his separation, then he shall shave his head on the day of his cleansing – on the seventh day he shaves it."
+    },
+    {
+     "n": 10,
+     "t": "‘And on the eighth day he brings two turtledoves or two young pigeons to the priest, to the door of the Tent of Meeting,"
+    },
+    {
+     "n": 11,
+     "t": "and the priest shall prepare one as a sin offering and the other as a burnt offering and shall make atonement for him, because he sinned by reason of the dead body. And he shall set-apart his head on that day,"
+    },
+    {
+     "n": 12,
+     "t": "and shall separate to HWHY the days of his separation and shall bring a male lamb a year old, as a guilt offering. But the former days are not counted, because his separation was defiled. your husband has lain with you” –"
+    }
+   ],
+   "page": 193,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "7": {
+   "verses": [],
+   "page": 195,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 2,
+     "t": "“Speak to Aharon and say to him, ‘When you set up the lamps, let the seven lamps give light in front of the lampstand.’ ”"
+    },
+    {
+     "n": 3,
+     "t": "And Aharon did so. He set up the lamps to face toward the front of the lampstand, as HWHY commanded Mosheh."
+    },
+    {
+     "n": 4,
+     "t": "And this is the work of the lampstand: beaten work of gold, from its base to its blossoms it is beaten work. According to the pattern which HWHY had shown Mosheh, so he made the lampstand."
+    },
+    {
+     "n": 5,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 6,
+     "t": "“Take the Lĕwites from among the children of Yisra’ĕl and you shall cleanse them,"
+    },
+    {
+     "n": 7,
+     "t": "and do this to them to cleanse them: Sprinkle water of sin offering on them, and they shall shave all their body and shall wash their garments and cleanse themselves,"
+    },
+    {
+     "n": 8,
+     "t": "and shall take a young bull with its grain offering of fine flour mixed with oil, while you take another young bull as a sin offering."
+    },
+    {
+     "n": 9,
+     "t": "“And you shall bring the Lĕwites before the Tent of Meeting and you shall assemble all the congregation of the children of Yisra’ĕl."
+    },
+    {
+     "n": 10,
+     "t": "“And you shall bring the Lĕwites before HWHY and the children of Yisra’ĕl shall lay their hands on the Lĕwites,"
+    },
+    {
+     "n": 11,
+     "t": "and Aharon shall wave the Lĕwites before HWHY, a wave offering from the children of Yisra’ĕl – so shall they be for doing the service of HWHY."
+    },
+    {
+     "n": 12,
+     "t": "“And the Lĕwites shall lay their hands on the heads of the young bulls. And one shall be prepared as a sin offering and the other as a burnt offering lamb a year old, as a burnt offering;"
+    },
+    {
+     "n": 13,
+     "t": "“And you shall have the Lĕwites stand before Aharon and his sons and then wave them, a wave offering to HWHY."
+    },
+    {
+     "n": 14,
+     "t": "“Thus you shall separate the Lĕwites from among the children of Yisra’ĕl and the Lĕwites shall be Mine."
+    },
+    {
+     "n": 15,
+     "t": "“Then after that the Lĕwites shall go in to do service in the Tent of Meeting, when you have cleansed them and waved them as a wave offering."
+    },
+    {
+     "n": 16,
+     "t": "“For they are given ones, given to Me from among the children of Yisra’ĕl. I have taken them for Myself instead of all who open the womb, the first-born of all the children of Yisra’ĕl."
+    },
+    {
+     "n": 17,
+     "t": "“For all the first-born among the children of Yisra’ĕl are Mine, both man and beast. On the day that I smote all the first-born in the land of Mitsrayim I set them apart unto Myself."
+    },
+    {
+     "n": 18,
+     "t": "“And I have taken the Lĕwites instead of all the first-born of the children of Yisra’ĕl."
+    },
+    {
+     "n": 19,
+     "t": "“And I have given the Lĕwites as a gift to Aharon and his sons from among the children of Yisra’ĕl, to do the service of the children of Yisra’ĕl in the Tent of Meeting and to make atonement for the children of Yisra’ĕl, that there be no plague among the children of Yisra’ĕl when the children of Yisra’ĕl come near the set-apart place.”"
+    },
+    {
+     "n": 20,
+     "t": "Thus Mosheh and Aharon and all the congregation of the children of Yisra’ĕl did to the Lĕwites according to all that HWHY commanded Mosheh concerning the Lĕwites, so the children of Yisra’ĕl did to them."
+    },
+    {
+     "n": 21,
+     "t": "And the Lĕwites cleansed themselves and washed their garments and Aharon waved them, a wave offering before HWHY and Aharon made atonement for them to cleanse them."
+    },
+    {
+     "n": 22,
+     "t": "Then after that the Lĕwites went in to do their service in the Tent of Meeting before Aharon and his sons as HWHY commanded Mosheh concerning the Lĕwites, so they did to them."
+    },
+    {
+     "n": 23,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 24,
+     "t": "“This applies to the Lĕwites: From twenty-five years old and above let him come into active service in the service of the Tent of Meeting,"
+    },
+    {
+     "n": 25,
+     "t": "and at the age of fifty years they retire from active service of the service and serve no more,"
+    },
+    {
+     "n": 26,
+     "t": "but they shall attend with their brothers in the Tent of Meeting, to guard the duty, but shall do no service. Thus you shall do to the Lĕwites regarding their duties.”"
+    }
+   ],
+   "page": 197,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh in the Wilderness of Sinai, in the first month of the second year after they had come out of the land of Mitsrayim, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“Now, let the children of Yisra’ĕl perform the Passover at its appointed time."
+    },
+    {
+     "n": 3,
+     "t": "“On the fourteenth day of this month, between the evenings, perform it at its appointed time. According to all its laws and right-rulings you perform it.”"
+    },
+    {
+     "n": 4,
+     "t": "And Mosheh spoke to the children of Yisra’ĕl to perform the Passover."
+    },
+    {
+     "n": 5,
+     "t": "So they performed the Passover on the fourteenth day of the first month, between the evenings, in the Wilderness of Sinai. According to all that HWHY commanded Mosheh, so the children of Yisra’ĕl did."
+    },
+    {
+     "n": 6,
+     "t": "But there were men who were defiled for a being of a man, so that they were not able to perform the Passover on that day. So they came before Mosheh and Aharon that day,"
+    },
+    {
+     "n": 7,
+     "t": "and those men said to him, “We are defiled for the being of a man. Why are we withheld from bringing near the offering of HWHY at its appointed time among the children of Yisra’ĕl?”"
+    },
+    {
+     "n": 8,
+     "t": "And Mosheh said to them, “Wait, let me hear what HWHY commands concerning you.”"
+    },
+    {
+     "n": 9,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 10,
+     "t": "“Speak to the children of Yisra’ĕl, saying, ‘When any male of you or your generations is unclean for a being, or is far away on a journey, he shall still perform the Passover of HWHY."
+    },
+    {
+     "n": 11,
+     "t": "‘On the fourteenth day of the second month, between the evenings, they perform it – with unleavened bread and bitter herbs they eat it."
+    },
+    {
+     "n": 12,
+     "t": "‘They do not leave of it until morning and they do not break a bone of it. According to all the laws of the Passover they perform it."
+    },
+    {
+     "n": 13,
+     "t": "‘But the man who is clean and is not on a journey and has failed to perform the Passover, that same being shall be cut off from among his people, because he did not bring the offering of HWHY at its appointed time – that man bears his sin."
+    },
+    {
+     "n": 14,
+     "t": "‘And when a stranger sojourns among you, then he shall perform the Passover of HWHY. He shall do so according to the law of the Passover and according to its right-ruling. You have one law, both for the stranger and the native of the land.’ ”"
+    },
+    {
+     "n": 15,
+     "t": "And on the day that the Dwelling Place was raised up, the cloud covered the Dwelling Place, the Tent of the witness. From evening until morning it was above the Dwelling Place like the appearance of fire."
+    },
+    {
+     "n": 16,
+     "t": "Thus it was continually: the cloud covered it by day and the appearance of fire by night."
+    },
+    {
+     "n": 17,
+     "t": "And whenever the cloud was taken up from above the Tent, after that the children of Yisra’ĕl would depart. And in the place where the cloud dwelt, there the children of Yisra’ĕl would camp."
+    },
+    {
+     "n": 18,
+     "t": "At the command of HWHY the children of Yisra’ĕl departed and at the command of HWHY they camped. They remained camped as long as the cloud dwelt above the Dwelling Place."
+    },
+    {
+     "n": 19,
+     "t": "Even when the cloud lingered many days above the Dwelling Place, the children of Yisra’ĕl guarded the Charge of HWHY and did not depart."
+    },
+    {
+     "n": 20,
+     "t": "And so it was, when the cloud was above the Dwelling Place a few days: according to the command of HWHY they camped and according to the command of HWHY they would depart."
+    },
+    {
+     "n": 21,
+     "t": "And so it was, when the cloud dwelt only from evening until morning: when the cloud was taken up in the morning, then they departed. Whether by day or by night, whenever the cloud was taken up, they departed."
+    },
+    {
+     "n": 22,
+     "t": "Whether two days, or a month, or a year that the cloud lingered above the Dwelling Place to dwell upon it, the children of Yisra’ĕl camped and did not depart. But when it was taken up, they departed."
+    },
+    {
+     "n": 23,
+     "t": "At the command of HWHY they camped and at the command of HWHY they departed. They guarded the Charge of HWHY, at the command of HWHY by the hand of Mosheh."
+    }
+   ],
+   "page": 198,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 2,
+     "t": "“Make two silver trumpets for yourself, make them of beaten work. And you shall use them for calling the congregation and for breaking camp."
+    },
+    {
+     "n": 3,
+     "t": "“And when they blow both of them, all the congregation shall meet before you at the door of the Tent of Meeting."
+    },
+    {
+     "n": 4,
+     "t": "“And if they blow one, then the leaders, the heads of the thousands of Yisra’ĕl, shall gather to you."
+    },
+    {
+     "n": 5,
+     "t": "“And when you blow a shout, the camps that lie on the east side shall depart."
+    },
+    {
+     "n": 6,
+     "t": "“And when you blow a shout the second time, then the camps that lie on the south side shall depart – they blow a shout for them to depart."
+    },
+    {
+     "n": 7,
+     "t": "“And when the assembly is to be assembled, you blow, but do not shout."
+    },
+    {
+     "n": 8,
+     "t": "“And the sons of Aharon, the priests, blow with the trumpets. And it shall be to you for a law forever throughout your generations."
+    },
+    {
+     "n": 9,
+     "t": "“And when you go into battle in your land against the enemy that distresses you, then you shall shout with the trumpets and you shall be remembered before HWHY your Elohim and you shall be saved from your enemies."
+    },
+    {
+     "n": 10,
+     "t": "“And in the day of your gladness and in your appointed times and at the beginning of your months, you shall blow the trumpets over your burnt offerings and over your peace offerings. And they shall be a remembrance for you before your Elohim. I am HWHY your Elohim.”"
+    },
+    {
+     "n": 11,
+     "t": "And it came to be on the twentieth day of the second month, in the second year, that the cloud was taken up from above the Dwelling Place of the witness."
+    },
+    {
+     "n": 12,
+     "t": "And the children of Yisra’ĕl departed, setting out from the Wilderness of Sinai. And the cloud dwelt on it in the Wilderness of Paran."
+    },
+    {
+     "n": 13,
+     "t": "Thus they departed the first time, according to the command of HWHY by the hand of Mosheh."
+    },
+    {
+     "n": 14,
+     "t": "And the banner of the camp of the children of Yahuḏah departed first according to their divisions. And over their army was Naḥshon, son of Amminaḏaḇ."
+    },
+    {
+     "n": 15,
+     "t": "And over the army of the tribe of the children of Yissasḵar was Nethanĕ’l, son of Tsu‛ar."
+    },
+    {
+     "n": 16,
+     "t": "And over the army of the tribe of the children of Zeḇulun was Eliyaḇ, son of Ḥĕlon."
+    },
+    {
+     "n": 17,
+     "t": "And the Dwelling Place was taken down. And the sons of Gĕreshon and the sons of Merari departed, bearing the Dwelling Place."
+    },
+    {
+     "n": 18,
+     "t": "And the banner of the camp of Re’uḇĕn departed according to their divisions. And over their army was Elitsur, son of Sheḏĕy’ur."
+    },
+    {
+     "n": 19,
+     "t": "And over the army of the tribe of the children of Shim‛on was Shelumi’ĕl, son of Tsurishaddai."
+    },
+    {
+     "n": 20,
+     "t": "And over the army of the tribe of the children of Gaḏ was Elyasaph, the son of Deu’ĕl."
+    },
+    {
+     "n": 21,
+     "t": "And the Qehathites departed, bearing the set-apart objects, while the Dwelling Place was set up before they came."
+    },
+    {
+     "n": 22,
+     "t": "And the banner of the camp of the children of Ephrayim departed according to their divisions. And over their army was Elishama, son of Ammihuḏ."
+    },
+    {
+     "n": 23,
+     "t": "And over the army of the tribe of the children of Menashsheh was Gamli’ĕl, son of Peḏahtsur."
+    },
+    {
+     "n": 24,
+     "t": "And over the army of the tribe of the children of Binyamin was Aḇiḏan, son of Giḏ‛oni."
+    },
+    {
+     "n": 25,
+     "t": "Then the banner of the camp of the children of Dan, which formed the rear guard of all the camps, departed according to their divisions. And over their army was Aḥi‛ezer, son of Ammishaddai."
+    },
+    {
+     "n": 26,
+     "t": "And over the army of the tribe of the children of Ashĕr was Paḡ‛i’ĕl, the son of Oḵran."
+    },
+    {
+     "n": 27,
+     "t": "And over the army of the tribe of the children of Naphtali was Aḥira, the son of Ĕnan."
+    },
+    {
+     "n": 28,
+     "t": "Such was the order of setting out of the children of Yisra’ĕl, according to their divisions, when they departed."
+    },
+    {
+     "n": 29,
+     "t": "And Mosheh said to Ḥoḇaḇ, the son of Re‛uw’ĕl the Miḏyanite, Mosheh’s father-in-law, “We are setting out for the place of which HWHY said, ‘I give it to you.’ Come with us and we shall do good to you, for HWHY has spoken good concerning Yisra’ĕl.”"
+    },
+    {
+     "n": 30,
+     "t": "And he replied to him, “I am not going, but I am going to my own land and to my relatives.”"
+    },
+    {
+     "n": 31,
+     "t": "Then he said, “Please do not leave us, because you know how we are to camp in the wilderness and you shall be our eyes."
+    },
+    {
+     "n": 32,
+     "t": "“And it shall be, when you go with us, then it shall be that whatever good HWHY does to us, the same we shall do to you.”"
+    },
+    {
+     "n": 33,
+     "t": "So they set out from the mountain of HWHY on a journey of three days. And the ark of the covenant of HWHY went before them for the three days’ journey, to seek out a resting place for them."
+    },
+    {
+     "n": 34,
+     "t": "And the cloud of HWHY was above them by day when they went out from the camp."
+    },
+    {
+     "n": 35,
+     "t": "And it came to be, whenever the ark set out, that Mosheh said, “Rise up, O HWHY! And let Your enemies be scattered and let those who hate You flee before You.”"
+    },
+    {
+     "n": 36,
+     "t": "And when it rested, he said, “Return, O HWHY, to the countless thousands of Yisra’ĕl.”"
+    }
+   ],
+   "page": 199,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be, when the people were as complainers, it was evil in the ears of HWHY. And HWHY heard it and His displeasure burned. And the fire of HWHY burned among them and consumed those in the outskirts of the camp."
+    },
+    {
+     "n": 2,
+     "t": "And the people cried out to Mosheh and Mosheh prayed to HWHY and the fire died down."
+    },
+    {
+     "n": 3,
+     "t": "Then he called the name of the place Taḇ‛ĕrah, because the fire of HWHY had burned among them."
+    },
+    {
+     "n": 4,
+     "t": "And the mixed multitude who were in their midst lusted greatly, so the children of Yisra’ĕl also wept again and said, “Who is giving us meat to eat?"
+    },
+    {
+     "n": 5,
+     "t": "“We remember the fish which we ate without cost in Mitsrayim, the cucumbers and the melons and the leeks and the onions and the garlic,"
+    },
+    {
+     "n": 6,
+     "t": "but now our throat is dried up. There is naught to look at but this manna!”"
+    },
+    {
+     "n": 7,
+     "t": "Now the manna was like coriander seed and its appearance like the appearance of bdellium."
+    },
+    {
+     "n": 8,
+     "t": "The people went about and gathered it, ground it on millstones or beat it in the mortar and cooked it in a pot and made cakes of it. And its taste was as the taste of cakes baked with oil."
+    },
+    {
+     "n": 9,
+     "t": "And when the dew fell on the camp at night, the manna fell on it."
+    },
+    {
+     "n": 10,
+     "t": "And Mosheh heard the people weeping throughout their clans, each man at the door of his tent. And the displeasure of HWHY burned exceedingly. And in the eyes of Mosheh it was evil,"
+    },
+    {
+     "n": 11,
+     "t": "so Mosheh said to HWHY, “Why have You done evil to Your servant? And why have I not found favour in Your eyes, to put the burden of all these people on me?"
+    },
+    {
+     "n": 12,
+     "t": "“Was it I who conceived all these people? Was it I who brought them forth, that You should say to me, ‘Carry them in your bosom, as the foster father carries a nursing child,’ to the land which You swore to their fathers?"
+    },
+    {
+     "n": 13,
+     "t": "“Where am I to get meat to give to all these people? For they weep before me, saying, ‘Give us meat to eat.’"
+    },
+    {
+     "n": 14,
+     "t": "“I am unable to bear all these people alone, because the burden is too heavy for me."
+    },
+    {
+     "n": 15,
+     "t": "“And if You are doing this to me, please slay me altogether, if I have found favour in Your eyes and let me not see my evil!”"
+    },
+    {
+     "n": 16,
+     "t": "Then HWHY said to Mosheh, “Gather to Me seventy men of the elders of Yisra’ĕl, whom you know to be the elders of the people and officers over them. Bring them to the Tent of Meeting and let them stand there with you."
+    },
+    {
+     "n": 17,
+     "t": "“And I shall come down and speak with you there and shall take of the Spirit that is on you and put on them. And they shall bear the burden of the people with you, so that you do not bear it yourself alone."
+    },
+    {
+     "n": 18,
+     "t": "“And say to the people, ‘Set yourselves apart for tomorrow and you shall eat meat, because you have wept in the hearing of HWHY, saying, “Who is giving us meat to eat? For it was well with us in Mitsrayim.” And HWHY shall give you meat and you shall eat."
+    },
+    {
+     "n": 19,
+     "t": "‘You are going to eat, not one day, nor two days, nor five days, nor ten days, nor twenty days,"
+    },
+    {
+     "n": 20,
+     "t": "but for a month of days, until it comes out of your nostrils and becomes an abomination to you, because you have rejected HWHY who is among you and have wept before Him, saying, “Why did we come up out of Mitsrayim?”"
+    },
+    {
+     "n": 21,
+     "t": "And Mosheh said, “The people in whose midst I am are six hundred thousand men on foot and You, You have said, ‘I give them meat to eat for a month of days.’"
+    },
+    {
+     "n": 22,
+     "t": "“Could flocks and herds be slaughtered for them, to be sufficient for them? Or could all the fish of the sea be gathered together for them, to be sufficient for them?”"
+    },
+    {
+     "n": 23,
+     "t": "And HWHY said to Mosheh, “Is the arm of HWHY too short? Now see whether My word meets you or not!”"
+    },
+    {
+     "n": 24,
+     "t": "And Mosheh went out and spoke to the people the words of HWHY and he gathered the seventy men of the elders of the people and placed them around the Tent."
+    },
+    {
+     "n": 25,
+     "t": "And HWHY came down in the cloud and spoke to him and took of the Spirit that was upon him and placed the same upon the seventy elders. And it came to be, when the Spirit rested upon them, that they prophesied, but did not continue."
+    },
+    {
+     "n": 26,
+     "t": "However, two men had remained in the camp. The name of one was Eldaḏ and the name of the other Mĕyḏaḏ. And the Spirit rested upon them. Now they were among those listed, but did not go out to the Tent. And they prophesied in the camp."
+    },
+    {
+     "n": 27,
+     "t": "And a young man ran and informed Mosheh and said, “Eldaḏ and Mĕyḏaḏ are prophesying in the camp.”"
+    },
+    {
+     "n": 28,
+     "t": "And Yahusha son of Nun, Mosheh’s assistant from his youth, answered and said, “Mosheh my master, forbid them!”"
+    },
+    {
+     "n": 29,
+     "t": "Then Mosheh said to him, “Are you jealous for my sake? Oh, that all the people of HWHY were prophets, that HWHY would put His Spirit upon them!”"
+    },
+    {
+     "n": 30,
+     "t": "And Mosheh returned to the camp, both he and the elders of Yisra’ĕl."
+    },
+    {
+     "n": 31,
+     "t": "And a wind went forth from HWHY and it brought quail from the sea and let them fall beside the camp, about a day’s journey on this side and about a day’s journey on the other side, all around the camp and about two cubits above the surface of the ground."
+    },
+    {
+     "n": 32,
+     "t": "And the people were up all that day and all that night and all the next day and gathered the quail. He who has least gathered ten ḥomers. And they spread them out for themselves all around the camp."
+    },
+    {
+     "n": 33,
+     "t": "The meat was still between their teeth, before it was chewed and the wrath of HWHY burned against the people and HWHY smote the people with an exceeding great plague."
+    },
+    {
+     "n": 34,
+     "t": "Then he called the name of that place Qiḇroth Hatta’awah, because there they buried the people who had lusted."
+    },
+    {
+     "n": 35,
+     "t": "From Qiḇroth Hatta’awah the people set out for Ḥatsĕroth – and they were at Ḥatsĕroth."
+    }
+   ],
+   "page": 201,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Now Miryam and Aharon spoke against Mosheh because of the Kushite woman whom he had taken, for he had taken a Kushite woman."
+    },
+    {
+     "n": 2,
+     "t": "And they said, “Has HWHY spoken only through Mosheh? Has He not also spoken through us?”And HWHY heard it."
+    },
+    {
+     "n": 3,
+     "t": "And the man Mosheh was very humble, more than all men who were on the face of the earth."
+    },
+    {
+     "n": 4,
+     "t": "And suddenly HWHY said to Mosheh and Aharon and Miryam, “You three, come out to the Tent of Meeting!” So the three came out."
+    },
+    {
+     "n": 5,
+     "t": "And HWHY came down in the column of cloud and stood in the door of the Tent and called Aharon and Miryam. And they both went forward."
+    },
+    {
+     "n": 6,
+     "t": "And He said, “Hear now My words: If your prophet is of HWHY, I make Myself known to him in a vision and I speak to him in a dream."
+    },
+    {
+     "n": 7,
+     "t": "“Not so with My servant Mosheh, he is trustworthy in all My house."
+    },
+    {
+     "n": 8,
+     "t": "“I speak with him mouth to mouth and plainly and not in riddles. And he sees the form of HWHY. So why were you not afraid to speak against My servant Mosheh?”"
+    },
+    {
+     "n": 9,
+     "t": "And the displeasure of HWHY burned against them and He left."
+    },
+    {
+     "n": 10,
+     "t": "And the cloud turned away from above the Tent and look: Miryam was leprous, as white as snow! And Aharon turned toward Miryam and look: a leper!"
+    },
+    {
+     "n": 11,
+     "t": "And Aharon said to Mosheh, “Oh, my Master! Please do not hold against us the sin in which we have done foolishly and in which we have sinned."
+    },
+    {
+     "n": 12,
+     "t": "“Please do not let her be as one dead when coming out of its mother’s womb, with our flesh half consumed!”"
+    },
+    {
+     "n": 13,
+     "t": "And Mosheh cried out to HWHY, saying, “O Ĕl, please heal her, please!”"
+    },
+    {
+     "n": 14,
+     "t": "And HWHY said to Mosheh, “If her father had but spit in her face, would she not be ashamed seven days? Let her be shut out of the camp seven days and after that let her be readmitted.”"
+    },
+    {
+     "n": 15,
+     "t": "And Miryam was shut out of the camp seven days and the people did not set out until Miryam was readmitted."
+    },
+    {
+     "n": 16,
+     "t": "And afterward the people departed from Ḥatsĕroth and they camped in the Wilderness of Paran."
+    }
+   ],
+   "page": 202,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "13": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“Send men to spy out the land of Kena‛an, which I am giving to the children of Yisra’ĕl. Send one man from each tribe of their fathers, every one a leader among them.”"
+    },
+    {
+     "n": 3,
+     "t": "And by the command of HWHY Mosheh sent them from the Wilderness of Paran, all of them men who were heads of the children of Yisra’ĕl."
+    },
+    {
+     "n": 4,
+     "t": "And these were their names. From the tribe of Re’uḇĕn: Shammua, son of Zakkur."
+    },
+    {
+     "n": 5,
+     "t": "From the tribe of Shim‛on: Shaphat, son of Ḥori."
+    },
+    {
+     "n": 6,
+     "t": "From the tribe of Yahuḏah: Kalĕḇ, son of Yephunneh."
+    },
+    {
+     "n": 7,
+     "t": "From the tribe of Yissasḵar: Yiḡ’al, son of Yosĕph."
+    },
+    {
+     "n": 8,
+     "t": "From the tribe of Ephrayim: Hoshĕa, son of Nun."
+    },
+    {
+     "n": 9,
+     "t": "From the tribe of Binyamin: Palti, son of Raphu."
+    },
+    {
+     "n": 10,
+     "t": "From the tribe of Zeḇulun: Gaddi’ĕl, son of Soḏi."
+    },
+    {
+     "n": 11,
+     "t": "From the tribe of Yosĕph, from the tribe of Menashsheh: Gaddi, son of Susi."
+    },
+    {
+     "n": 12,
+     "t": "From the tribe of Dan: Ammi’ĕl, son of Gemalli."
+    },
+    {
+     "n": 13,
+     "t": "From the tribe of Ashĕr: Shĕthur, son of Miḵa’ĕl."
+    },
+    {
+     "n": 14,
+     "t": "From the tribe of Naphtali: Naḥbi, son of Wophsi."
+    },
+    {
+     "n": 15,
+     "t": "From the tribe of Gaḏ: Geu’ĕl, son of Maḵi."
+    },
+    {
+     "n": 16,
+     "t": "These are the names of the men whom Mosheh sent to spy out the land. And Mosheh called Hoshĕa the son of Nun, Yahusha."
+    },
+    {
+     "n": 17,
+     "t": "And Mosheh sent them to spy out the land of Kena‛an and said to them, “Go up here into the South and go up to the mountains,"
+    },
+    {
+     "n": 18,
+     "t": "and see what the land is like and the people who dwell in it, whether strong or weak, whether few or many,"
+    },
+    {
+     "n": 19,
+     "t": "and whether the land they dwell in is good or evil, whether the cities they inhabit are in camps or strongholds,"
+    },
+    {
+     "n": 20,
+     "t": "and whether the land is rich or poor and whether there are forests there or not. And you shall be strong and bring some of the fruit of the land.” Now the time was the season of the first-fruits of grapes."
+    },
+    {
+     "n": 21,
+     "t": "So they went up and spied out the land from the Wilderness of Tsin as far as Reḥoḇ, near the entrance of Ḥamath."
+    },
+    {
+     "n": 22,
+     "t": "And they went up through the South and came to Ḥeḇron. And Aḥiman, Shĕshai and Talmai, the descendants of Anaq, were there. Now Ḥeḇron had been built seven years before Tso‛an in Mitsrayim."
+    },
+    {
+     "n": 23,
+     "t": "And they came to the wadi Eshkol and cut down from there a branch with one cluster of grapes. And they bore it between two of them on a pole, also of the pomegranates and of the figs."
+    },
+    {
+     "n": 24,
+     "t": "That place was called the wadi Eshkol, because of the cluster which the men of Yisra’ĕl cut down from there."
+    },
+    {
+     "n": 25,
+     "t": "And they returned from spying out the land after forty days."
+    },
+    {
+     "n": 26,
+     "t": "And they went and came to Mosheh and Aharon and all the congregation of the children of Yisra’ĕl in the Wilderness of Paran, at Qaḏĕsh. And they brought back word to them and to all the congregation and showed them the fruit of the land."
+    },
+    {
+     "n": 27,
+     "t": "And they reported to him and said, “We went to the land where you sent us. And truly, it flows with milk and honey and this is its fruit."
+    },
+    {
+     "n": 28,
+     "t": "“But the people who dwell in the land are strong and the cities are walled, very great. And we saw the descendants of Anaq there too."
+    },
+    {
+     "n": 29,
+     "t": "“The Amalĕqites dwell in the land of the South, while the Ḥittites and the Yeḇusites and the Amorites dwell in the mountains. And the Kena‛anites dwell by the sea and along the banks of the Yardĕn.”"
+    },
+    {
+     "n": 30,
+     "t": "And Kalĕḇ silenced the people before Mosheh and said, “Let us go up at once and take possession, for we are certainly able to overcome it.”"
+    },
+    {
+     "n": 31,
+     "t": "But the men who had gone up with him said, “We are not able to go up against the people, for they are stronger than we.”"
+    },
+    {
+     "n": 32,
+     "t": "And they gave the children of Yisra’ĕl an evil report of the land which they had spied out, saying, “The land through which we have gone as spies is a land eating up its inhabitants and all the people whom we saw in it are men of great size."
+    },
+    {
+     "n": 33,
+     "t": "“And we saw there the Nephilim, sons of Anaq, of the Nephilim. And we were like grasshoppers in our own eyes and so we were in their eyes.”"
+    }
+   ],
+   "page": 203,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "14": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Then all the congregation lifted up their voices and cried and the peo ple wept that night."
+    },
+    {
+     "n": 2,
+     "t": "And all the children of Yisra’ĕl grumbled against Mosheh and against Aharon and all the congregation said to them, “If only we had died in the land of Mitsrayim! Or if only we had died in this wilderness!"
+    },
+    {
+     "n": 3,
+     "t": "“And why is HWHY bringing us to this land to fall by the sword, that our wives and children should become a prey? Would it not be better for us to turn back to Mitsrayim?”"
+    },
+    {
+     "n": 4,
+     "t": "And they said to each other, “Let us appoint a leader and let us turn back to Mitsrayim.”"
+    },
+    {
+     "n": 5,
+     "t": "Then Mosheh and Aharon fell on their faces before all the assembly of the congregation of the children of Yisra’ĕl."
+    },
+    {
+     "n": 6,
+     "t": "And Yahusha son of Nun and Kalĕḇ son of Yephunneh, who were among those who had spied out the land, tore their garments,"
+    },
+    {
+     "n": 7,
+     "t": "and they spoke to all the congregation of the children of Yisra’ĕl, saying, “The land we passed through to spy out is an exceedingly good land."
+    },
+    {
+     "n": 8,
+     "t": "“If HWHY has delighted in us, then He shall bring us into this land and give it to us, ‘a land which is flowing with milk and honey.’"
+    },
+    {
+     "n": 9,
+     "t": "“Only, do not rebel against HWHY, nor fear the people of the land, for they are our bread. Their defence has turned away from them and HWHY is with us. Do not fear them.”"
+    },
+    {
+     "n": 10,
+     "t": "But all the congregation said to stone them with stones. Then the esteem of HWHY appeared in the Tent of Meeting before all the children of Yisra’ĕl."
+    },
+    {
+     "n": 11,
+     "t": "And HWHY said to Mosheh, “How long shall I be scorned by these people? And how long shall I not be trusted by them, with all the signs which I have done in their midst?"
+    },
+    {
+     "n": 12,
+     "t": "“Let Me smite them with the pestilence and disinherit them and make of you a nation greater and mightier than they.”"
+    },
+    {
+     "n": 13,
+     "t": "And Mosheh said to HWHY, “Then the Mitsrites shall hear it, for by Your power You brought these people up from their midst,"
+    },
+    {
+     "n": 14,
+     "t": "and they shall say to the inhabitants of this land they have heard that You, HWHY, are in the midst of these people, that You, HWHY, are seen eye to eye and that Your cloud stands above them and You go before them in a column of cloud by day and in a column of fire by night."
+    },
+    {
+     "n": 15,
+     "t": "“Now if You shall kill these people as one man, then the nations which have heard of Your report shall speak, saying,"
+    },
+    {
+     "n": 16,
+     "t": "‘Because HWHY was not able to bring this people to the land which He swore to give them, therefore He killed them in the wilderness.’"
+    },
+    {
+     "n": 17,
+     "t": "“And now, I pray, let the power of HWHY be great, as You have spoken , saying,"
+    },
+    {
+     "n": 18,
+     "t": "‘HWHY is patient and of great kindness, forgiving crookedness and transgression, but by no means leaving unpunished; visiting the crookedness of the fathers on the children to the third and fourth generation.’"
+    },
+    {
+     "n": 19,
+     "t": "“Please forgive the crookedness of this people, according to the greatness of Your kindness, as You have forgiven this people, from Mitsrayim even until now.”"
+    },
+    {
+     "n": 20,
+     "t": "And HWHY said, “I shall forgive, according to your word,"
+    },
+    {
+     "n": 21,
+     "t": "but truly, as I live and all the earth is filled with the esteem of HWHY,"
+    },
+    {
+     "n": 22,
+     "t": "for none of these men who have seen My esteem and the signs which I did in Mitsrayim and in the wilderness and have tried Me now these ten times and have disobeyed My voice,"
+    },
+    {
+     "n": 23,
+     "t": "shall see the land of which I swore to their fathers, nor any of those who scorned Me see it."
+    },
+    {
+     "n": 24,
+     "t": "“But My servant Kalĕḇ, because he has a different spirit in him and has followed Me completely, I shall bring into the land where he went and his seed shall inherit it."
+    },
+    {
+     "n": 25,
+     "t": "“Since the Amalĕqites and the Kena‛anites are dwelling in the valley, turn back tomorrow and set out into the wilderness by the Way of the Sea of Reeds.”"
+    },
+    {
+     "n": 26,
+     "t": "And HWHY spoke to Mosheh and to Aharon, saying,"
+    },
+    {
+     "n": 27,
+     "t": "“How long shall this evil congregation have this grumbling against Me? I have heard the grumblings which the children of Yisra’ĕl are grumbling against Me."
+    },
+    {
+     "n": 28,
+     "t": "“Say to them, ‘As I live,’ declares HWHY, ‘as you have spoken in My hearing, so I do to you:"
+    },
+    {
+     "n": 29,
+     "t": "‘The carcasses of you who have grumbled against Me are going to fall in this wilderness, all of you who were registered, according to your entire number, from twenty years old and above."
+    },
+    {
+     "n": 30,
+     "t": "‘None of you except Kalĕḇ son of Yephunneh and Yahusha son of Nun, shall enter the land which I swore I would make you dwell in."
+    },
+    {
+     "n": 31,
+     "t": "‘But your little ones, whom you said would become a prey, I shall bring in and they shall know the land which you have rejected."
+    },
+    {
+     "n": 32,
+     "t": "‘But as for you, your carcasses are going to fall in this wilderness."
+    },
+    {
+     "n": 33,
+     "t": "‘And your sons shall be wanderers in the wilderness forty years and shall bear your whorings, until your carcasses are consumed in the wilderness."
+    },
+    {
+     "n": 34,
+     "t": "‘According to the number of the days in which you spied out the land, forty days – a day for a year, a day for a year – you are to bear your crookednesses forty years and you shall know My breaking off."
+    },
+    {
+     "n": 35,
+     "t": "‘I am HWHY, I have spoken, I shall do this to all this evil congregation who are meeting against Me: In this wilderness they are consumed and there they die.’ ”"
+    },
+    {
+     "n": 36,
+     "t": "And the men whom Mosheh sent to spy out the land, who returned and made all the congregation grumble against him by bringing an evil report of the land,"
+    },
+    {
+     "n": 37,
+     "t": "even those men who brought the evil report about the land, died by the plague before HWHY."
+    },
+    {
+     "n": 38,
+     "t": "Of those men who went to spy out the land, only Yahusha son of Nun and Kalĕḇ son of Yephunneh remained alive."
+    },
+    {
+     "n": 39,
+     "t": "And when Mosheh spoke these words to all the children of Yisra’ĕl, the people mourned greatly."
+    },
+    {
+     "n": 40,
+     "t": "And they rose up early in the morning and went up to the top of the mountain, saying, “See, we have indeed sinned, but we shall go up to the place which HWHY had spoken of!”"
+    },
+    {
+     "n": 41,
+     "t": "But Mosheh said, “Why do you now transgress the command of HWHY, since it does not prosper?"
+    },
+    {
+     "n": 42,
+     "t": "“Do not go up, lest you be smitten by your enemies, for HWHY is not in your midst."
+    },
+    {
+     "n": 43,
+     "t": "“Because the Amalĕqites and the Kena‛anites are there before you and you shall fall by the sword. Because you have turned away from HWHY, HWHY is not with you.”"
+    },
+    {
+     "n": 44,
+     "t": "But they presumed to go up to the mountaintop, but neither the ark of the covenant of HWHY nor Mosheh left the camp."
+    },
+    {
+     "n": 45,
+     "t": "So the Amalĕqites and the Kena‛anites who dwelt in that mountain came down and smote them and beat them down, even to Ḥormah."
+    }
+   ],
+   "page": 204,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "15": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“Speak to the children of Yisra’ĕl and say to them, ‘When you have come into the land of your dwellings, which I am giving you,"
+    },
+    {
+     "n": 3,
+     "t": "and you make an offering by fire to HWHY, a burnt offering or a slaughtering, to accomplish a vow or as a voluntary offering or in your appointed times, to make a sweet fragrance to HWHY, from the herd or the flock,"
+    },
+    {
+     "n": 4,
+     "t": "then he who brings near his offering to HWHY shall bring near a grain offering of one-tenth of an ĕphah of fine flour mixed with one-fourth of a hin of oil,"
+    },
+    {
+     "n": 5,
+     "t": "and one-fourth of a hin of wine as a drink offering you prepare with the burnt offering or the slaughtering, for each lamb."
+    },
+    {
+     "n": 6,
+     "t": "‘Or for a ram you prepare as a grain offering two-tenths of an ĕphah of fine flour mixed with one-third of a hin of oil,"
+    },
+    {
+     "n": 7,
+     "t": "and as a drink offering you bring onethird of a hin of wine as a sweet fragrance to HWHY."
+    },
+    {
+     "n": 8,
+     "t": "‘And when you prepare a young bull as a burnt offering, or as a slaughtering to accomplish a vow, or as a peace offering to HWHY,"
+    },
+    {
+     "n": 9,
+     "t": "then shall be brought with the young bull a grain offering of three-tenths of an ĕphah of fine flour mixed with half a hin of oil,"
+    },
+    {
+     "n": 10,
+     "t": "and bring as the drink offering half a hin of wine as an offering made by fire, a sweet fragrance to HWHY."
+    },
+    {
+     "n": 11,
+     "t": "‘This is what is done for each young bull, for each ram, or for each lamb or young goat."
+    },
+    {
+     "n": 12,
+     "t": "‘According to the number that you prepare, so you do for each one according to their number."
+    },
+    {
+     "n": 13,
+     "t": "‘Let all who are native do so with them, in bringing near an offering made by fire, a sweet fragrance to HWHY."
+    },
+    {
+     "n": 14,
+     "t": "‘And when a stranger sojourns with you, or whoever is among you throughout your generations and would make an offering made by fire, a sweet fragrance to HWHY, as you do, so he does."
+    },
+    {
+     "n": 15,
+     "t": "‘One law is for you of the assembly and for the stranger who sojourns with you – a law forever throughout your generations. As you are, so is the stranger before HWHY."
+    },
+    {
+     "n": 16,
+     "t": "‘One Torah and one right-ruling is for you and for the stranger who sojourns with you.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 18,
+     "t": "“Speak to the children of Yisra’ĕl and say to them, ‘When you come into the land to which I bring you,"
+    },
+    {
+     "n": 19,
+     "t": "then it shall be, when you eat of the bread of the land, that you present a contribution to HWHY."
+    },
+    {
+     "n": 20,
+     "t": "‘Present a cake of the first of your dough as a contribution – as a contribution of the threshing-floor you present it."
+    },
+    {
+     "n": 21,
+     "t": "‘Of the first of your dough you are to give to HWHY a contribution throughout your generations."
+    },
+    {
+     "n": 22,
+     "t": "‘And when you sin by mistake and do not do all these commands which HWHY has spoken to Mosheh,"
+    },
+    {
+     "n": 23,
+     "t": "all that HWHY has commanded you by the hand of Mosheh, from the day HWHY gave command and onward throughout your generations,"
+    },
+    {
+     "n": 24,
+     "t": "then it shall be, if it is done by mistake, without the knowledge of the congregation, that all the congregation shall prepare one young bull as a burnt offering, as a sweet fragrance to HWHY, with its grain offering and its drink offering, according to the right-ruling and one male goat as a sin offering."
+    },
+    {
+     "n": 25,
+     "t": "‘Then the priest shall make atonement for all the congregation of the children of Yisra’ĕl and it shall be forgiven them, for it was by mistake. And they shall bring their offering, an offering made by fire to HWHY and their sin offering before HWHY, for their mistake."
+    },
+    {
+     "n": 26,
+     "t": "‘And it shall be forgiven all the congregation of the children of Yisra’ĕl and the stranger who sojourns in their midst, because all the people did it by mistake."
+    },
+    {
+     "n": 27,
+     "t": "‘And if a being sins by mistake, then he shall bring a female goat a year old as a sin offering."
+    },
+    {
+     "n": 28,
+     "t": "‘And the priest shall make atonement for the being who strays by mistake, when he sins by mistake before HWHY, to make atonement for him and it shall be forgiven him."
+    },
+    {
+     "n": 29,
+     "t": "‘For him who does whatever by mistake there is one Torah, both for him who is native among the children of Yisra’ĕl and for the stranger who sojourns in their midst."
+    },
+    {
+     "n": 30,
+     "t": "‘But the being who does whatever defiantly, whether he is native or a stranger, he reviles HWHY and that being shall be cut off from among his people."
+    },
+    {
+     "n": 31,
+     "t": "‘Because he has despised the Word of HWHY and has broken His command, that being shall certainly be cut off, his crookedness is upon him.’ ”"
+    },
+    {
+     "n": 32,
+     "t": "And while the children of Yisra’ĕl were in the wilderness, they found a man gathering sticks on the Sabbath day."
+    },
+    {
+     "n": 33,
+     "t": "And those who found him gathering sticks brought him to Mosheh and to Aharon and to all the congregation."
+    },
+    {
+     "n": 34,
+     "t": "And they put him in under guard, because it had not been declared what should be done to him."
+    },
+    {
+     "n": 35,
+     "t": "And HWHY said to Mosheh, “The man shall certainly be put to death, all the congregation stoning him with stones outside the camp.”"
+    },
+    {
+     "n": 36,
+     "t": "And all the congregation brought him outside the camp and stoned him with stones, as HWHY commanded Mosheh and he died."
+    },
+    {
+     "n": 37,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 38,
+     "t": "“Speak to the children of Yisra’ĕl and you shall say to them to make tzitziyot on the corners of their garments throughout their generations and to put a blue cord in the tzitzit of the corners."
+    },
+    {
+     "n": 39,
+     "t": "“And it shall be to you for a tzitzit and you shall see it and shall remember all the commands of HWHY and shall do them and not search after your own heart and your own eyes after which you went whoring,"
+    },
+    {
+     "n": 40,
+     "t": "so that you remember and shall do all My commands and be set-apart unto your Elohim."
+    },
+    {
+     "n": 41,
+     "t": "“I am HWHY your Elohim, who brought you out of the land of Mitsrayim, to be your Elohim. I am HWHY your Elohim.”"
+    }
+   ],
+   "page": 206,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "16": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Qoraḥ, son of Yitshar, son of Qehath, son of Lĕwi, took both Dathan and Aḇiram the sons of Eliyaḇ and On, son of Peleth, sons of Re’uḇĕn,"
+    },
+    {
+     "n": 2,
+     "t": "and they rose up before Mosheh with some of the children of Yisra’ĕl, two hundred and fifty leaders of the congregation, called ones of the meeting, men of name."
+    },
+    {
+     "n": 3,
+     "t": "And they assembled against Mosheh and against Aharon and said to them, “Enough of you! For all the congregation is set-apart, all of them and HWHY is in their midst. Why then do you lift up yourselves above the assembly of HWHY?”"
+    },
+    {
+     "n": 4,
+     "t": "And when Mosheh heard, he fell on his face,"
+    },
+    {
+     "n": 5,
+     "t": "and spoke to Qoraḥ and all his company, saying, “Tomorrow morning one bring his fire holder before HWHY, two hundred and fifty fire holders and you and Aharon, each one with his fire holder.”"
+    },
+    {
+     "n": 6,
+     "t": "“Do this: Take fire holders, Qoraḥ and all your company,"
+    },
+    {
+     "n": 7,
+     "t": "and put fire in them and put incense in them before HWHY tomorrow. And it shall be that the one whom HWHY chooses is the set-apart one. Enough of you, sons of Lĕwi!”"
+    },
+    {
+     "n": 8,
+     "t": "And Mosheh said to Qoraḥ, “Hear now, you sons of Lĕwi:"
+    },
+    {
+     "n": 9,
+     "t": "“Is it little to you that the Elohim of Yisra’ĕl has separated you from the congregation of Yisra’ĕl, to bring you near to Himself, to perform the service of the Dwelling Place of HWHY and to stand before the congregation to serve them,"
+    },
+    {
+     "n": 10,
+     "t": "and that He has brought you near to Himself, you and all your brothers, the sons of Lĕwi, with you? Yet you seek the priesthood as well?"
+    },
+    {
+     "n": 11,
+     "t": "“Therefore you and all your company are set against HWHY. And Aharon, what is he that you grumble against him?”"
+    },
+    {
+     "n": 12,
+     "t": "And Mosheh sent to call Dathan and Aḇiram the sons of Eliyaḇ, but they said, “We are not coming up!"
+    },
+    {
+     "n": 13,
+     "t": "“Is it little that you have brought us up out of a land flowing with milk and honey, to kill us in the wilderness, that you would also seize total rule over us?"
+    },
+    {
+     "n": 14,
+     "t": "“Also, you have not brought us into a land flowing with milk and honey, nor given us inheritance of fields and vineyards. Would you bore out the eyes of these men? We are not coming up!”"
+    },
+    {
+     "n": 15,
+     "t": "And Mosheh became very displeased and said to HWHY, “Do not respect their offering. I have not taken one donkey from them, nor have I done harm to any of them.”"
+    },
+    {
+     "n": 16,
+     "t": "Then Mosheh said to Qoraḥ, “Tomorrow, you and all your company shall be there before HWHY, you and they and Aharon."
+    },
+    {
+     "n": 17,
+     "t": "“And take each one his fire holder and you shall put incense in it. And let each turned toward the Tent of Meeting. And see, the cloud covered it and the esteem of HWHY appeared."
+    }
+   ],
+   "page": 207,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "17": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“Speak to the children of Yisra’ĕl and take from them a rod from each father’s house, all their leaders according to their fathers’ houses, twelve rods. Write each one’s name on his rod,"
+    },
+    {
+     "n": 3,
+     "t": "and write Aharon’s name on the rod of Lĕwi, for there is one rod for the head of each father’s house."
+    },
+    {
+     "n": 4,
+     "t": "“You shall then place them in the Tent of Meeting before the Witness, where I meet with you."
+    },
+    {
+     "n": 5,
+     "t": "“And it shall be that the rod of the man whom I choose buds and I shall rid Myself of the grumblings of the children of Yisra’ĕl, which they grumble against you.”"
+    },
+    {
+     "n": 6,
+     "t": "And Mosheh spoke to the children of alive into the grave, then you shall know that these men have scorned HWHY.”"
+    },
+    {
+     "n": 7,
+     "t": "So Mosheh placed the rods before HWHY in the Tent of the witness."
+    },
+    {
+     "n": 8,
+     "t": "And it came to be on the next day that Mosheh went into the Tent of the witness and saw that the rod of Aharon, of the house of Lĕwi, had budded and brought forth buds and blossomed and bore ripe almonds."
+    },
+    {
+     "n": 9,
+     "t": "And Mosheh brought out all the rods from before HWHY to all the children of Yisra’ĕl. And they looked and each man took his rod."
+    },
+    {
+     "n": 10,
+     "t": "And HWHY said to Mosheh, “Bring Aharon’s rod back before the Witness, to be kept as a sign against the rebels, so that you put an end to their grumblings against Me, lest they die.”"
+    },
+    {
+     "n": 11,
+     "t": "And Mosheh did as HWHY had commanded him, so he did."
+    },
+    {
+     "n": 12,
+     "t": "And the children of Yisra’ĕl spoke to Mosheh, saying, “See, we shall die, we shall perish, we shall all perish!"
+    },
+    {
+     "n": 13,
+     "t": "“Anyone who comes near the Dwelling Place of HWHY dies. shall we be consumed – to die?”"
+    }
+   ],
+   "page": 209,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "18": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY said to Aharon, “You and your sons and your father’s house with you are to bear the crookedness against the set-apart place and you and your sons with you are to bear the crookedness against your priesthood."
+    },
+    {
+     "n": 2,
+     "t": "“But bring with you your brothers of the tribe of Lĕwi too, the tribe of your father to join you and serve you while you and your sons are with you before the Tent of the witness."
+    },
+    {
+     "n": 3,
+     "t": "“And they shall guard your charge and the duty of all the Tent, but they do not come near the furnishings of the set- apart place and the altar, lest they die, both they and you."
+    },
+    {
+     "n": 4,
+     "t": "“And they shall be joined with you and guard the duty to the Tent of Meeting, for all the service of the Tent, but a stranger does not come near you."
+    },
+    {
+     "n": 5,
+     "t": "“And you shall guard the duty of the set-apart place and the duty of the altar, so that there be no more wrath on the children of Yisra’ĕl."
+    },
+    {
+     "n": 6,
+     "t": "“And see, I Myself have taken your brothers the Lĕwites from the midst of the children of Yisra’ĕl – a gift to you, given by HWHY, to do the service of the Tent of Meeting."
+    },
+    {
+     "n": 7,
+     "t": "“But you and your sons with you are to guard your priesthood for all matters at the altar and behind the veil and you shall serve. I have given you the priesthood as a gift for service, but the stranger who comes near is put to death.”"
+    },
+    {
+     "n": 8,
+     "t": "And HWHY spoke to Aharon, “And see, I Myself have also given you the charge of My contributions, all the set- apart gifts of the children of Yisra’ĕl. I have given them to you for the anointing and to your sons, as a law forever."
+    },
+    {
+     "n": 9,
+     "t": "“This is yours of the most set-apart gifts, from the fire: all their offerings, all their grain offerings and all their sin offerings and all their guilt offerings which they render to Me, are most set- apart for you and your sons."
+    },
+    {
+     "n": 10,
+     "t": "“Eat it in the most set-apart place – every male eats it. It is set-apart to you."
+    },
+    {
+     "n": 11,
+     "t": "“This also is yours: the contribution of their gift, with all the wave offerings of the children of Yisra’ĕl. I have given them to you and your sons and daughters with you, as a law forever. Everyone who is clean in your house eats it."
+    },
+    {
+     "n": 12,
+     "t": "“All the best of the oil and all the best of the new wine and the grain – their firstfruits which they give to HWHY – I have given them to you."
+    },
+    {
+     "n": 13,
+     "t": "“The first-fruits of all that is in their land, which they bring to HWHY,are yours. Everyone who is clean in your house eats it."
+    },
+    {
+     "n": 14,
+     "t": "“All that is dedicated in Yisra’ĕl is yours."
+    },
+    {
+     "n": 15,
+     "t": "“Everyone opening a womb of all flesh, which they bring to HWHY, whether man or beast, is yours. But the first-born of man you shall certainly ransom and the first-born of the unclean beast you ransom."
+    },
+    {
+     "n": 16,
+     "t": "“And ransom their ransomed ones when one month old, according to your valuation, five sheqels of silver, according to the sheqel of the set-apart place, which is twenty gĕrahs."
+    },
+    {
+     "n": 17,
+     "t": "“But the first-born of a cow, or the first-born of a sheep, or the first-born of a goat you do not ransom, they are set- apart. Sprinkle their blood on the altar and burn their fat as an offering made by fire for a sweet fragrance to HWHY."
+    },
+    {
+     "n": 18,
+     "t": "“And their flesh is yours, as the wave breast and as the right thigh, it is yours."
+    },
+    {
+     "n": 19,
+     "t": "“All the contributions of the set-apart gifts, which the children of Yisra’ĕl present to HWHY, I have given to you and your sons and daughters with you as a law forever. It is a covenant of salt forever before HWHY with you and your seed with you.”"
+    },
+    {
+     "n": 20,
+     "t": "And HWHY said to Aharon, “You are not to have an inheritance in their land, nor have any portion in their midst. I am your portion and your inheritance among the children of Yisra’ĕl."
+    },
+    {
+     "n": 21,
+     "t": "“And see, I have given the children of Lĕwi all the tithes in Yisra’ĕl as an inheritance in return for the service which they are serving, the service of the Tent of Meeting."
+    },
+    {
+     "n": 22,
+     "t": "“And let the children of Yisra’ĕl no more come near the Tent of Meeting, lest they bear sin and die,"
+    },
+    {
+     "n": 23,
+     "t": "because the Lĕwites shall do the service of the Tent of Meeting, so they themselves bear their crookedness. A law forever, throughout your generations: that among the children of Yisra’ĕl they are to have no inheritance,"
+    },
+    {
+     "n": 24,
+     "t": "but the tithes of the children of Yisra’ĕl, which they present as a contribution to HWHY, I have given to the Lĕwites as an inheritance. That is why I have said to them, ‘Among the children of Yisra’ĕl they have no inheritance.’ ”"
+    },
+    {
+     "n": 25,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 26,
+     "t": "“Speak to the Lĕwites and say to them, ‘When you take from the children of Yisra’ĕl the tithes which I have given you from them as your inheritance, then you shall present a contribution of it to HWHY, a tenth of the tithe."
+    },
+    {
+     "n": 27,
+     "t": "‘And your contribution shall be reckoned to you as grain from the threshing-floor and as filling from the winepress."
+    },
+    {
+     "n": 28,
+     "t": "‘Thus you also present a contribution unto HWHY from all your tithes which you receive from the children of Yisra’ĕl. And you shall give from it the contribution to HWHY to Aharon the priest."
+    },
+    {
+     "n": 29,
+     "t": "‘From all your gifts you present every contribution due to HWHY, from all the best of them, the set-apart part of them.’"
+    },
+    {
+     "n": 30,
+     "t": "“And you shall say to them, ‘When you have presented the best of it, then the rest shall be reckoned to the Lĕwites as the yield of the threshing-floor and as the yield of the winepress."
+    },
+    {
+     "n": 31,
+     "t": "‘And you shall eat it in any place, you and your households, for it is your reward for your service in the Tent of Meeting,"
+    },
+    {
+     "n": 32,
+     "t": "and bear no sin because of it, when you have presented the best of it and do not profane the set-apart gifts of the children of Yisra’ĕl, lest you die.’ ”"
+    }
+   ],
+   "page": 210,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "19": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh and to Aharon, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“This is a law of the Torah which HWHY has commanded, saying, ‘Speak to the children of Yisra’ĕl, that they bring you a red heifer, a perfect one, in which there is no blemish and on which a yoke has never come."
+    },
+    {
+     "n": 3,
+     "t": "‘And you shall give it to El‛azar the priest and he shall bring it outside the camp and shall slaughter it before him."
+    },
+    {
+     "n": 4,
+     "t": "‘And El‛azar the priest shall take some of its blood with his finger and sprinkle some of its blood seven times toward the front of the Tent of Meeting."
+    },
+    {
+     "n": 5,
+     "t": "‘And the heifer shall be burned before his eyes – he burns its hide and its flesh and its blood and its dung."
+    },
+    {
+     "n": 6,
+     "t": "‘And the priest shall take cedar wood and hyssop and scarlet and throw them into the midst of the fire burning the heifer."
+    },
+    {
+     "n": 7,
+     "t": "‘The priest shall then wash his garments and shall bathe his body in water and afterward come into the camp, but the priest is unclean until evening."
+    },
+    {
+     "n": 8,
+     "t": "‘And he who is burning it washes his garments in water and shall bathe his body in water and is unclean until evening."
+    },
+    {
+     "n": 9,
+     "t": "‘And a clean man shall gather up the ashes of the heifer and shall place them outside the camp in a clean place. And they shall be kept for the congregation of the children of Yisra’ĕl for the water for uncleanness, it is for cleansing from sin."
+    },
+    {
+     "n": 10,
+     "t": "‘And he who gathers the ashes of the heifer shall wash his garments and is unclean until evening. And it shall be a law forever to the children of Yisra’ĕl and to the stranger who sojourns in their midst."
+    },
+    {
+     "n": 11,
+     "t": "‘He who touches the dead of any human being is unclean for seven days."
+    },
+    {
+     "n": 12,
+     "t": "‘He is to cleanse himself with the water on the third day and on the seventh day he is clean. But if he does not cleanse himself on the third day, then on the seventh day he is not clean."
+    },
+    {
+     "n": 13,
+     "t": "‘Anyone who touches the dead of a human being and does not cleanse himself, defiles the Dwelling Place of HWHY. And that being shall be cut off from Yisra’ĕl. He is unclean, for the water for uncleanness was not sprinkled on him, his uncleanness is still upon him."
+    },
+    {
+     "n": 14,
+     "t": "‘This is the Torah when a man dies in a tent: All who come into the tent and all who are in the tent are unclean for seven days,"
+    },
+    {
+     "n": 15,
+     "t": "and every open vessel which has no cover fastened on it, is unclean."
+    },
+    {
+     "n": 16,
+     "t": "‘Anyone in the open field who touches someone slain by a sword or who has died, or a bone of a man, or a grave, is unclean for seven days."
+    },
+    {
+     "n": 17,
+     "t": "‘And for the unclean being they shall take some of the ashes of the heifer burnt for cleansing from sin and running water shall be put on them in a vessel."
+    },
+    {
+     "n": 18,
+     "t": "‘And a clean man shall take hyssop and dip it in the water and shall sprinkle it on the tent and on all the vessels and on the beings who were there, or on the one who touched a bone, or the slain, or the dead, or a grave."
+    },
+    {
+     "n": 19,
+     "t": "‘And the clean one shall sprinkle the unclean on the third day and on the seventh day. And on the seventh day he shall cleanse himself and shall wash his garments and bathe in water and shall be clean in the evening."
+    },
+    {
+     "n": 20,
+     "t": "‘But the man who is unclean and does not cleanse himself, that being shall be cut off from among the assembly, because he has defiled the set-apart place of HWHY – water for uncleanness has not been sprinkled on him, he is unclean."
+    },
+    {
+     "n": 21,
+     "t": "‘And it shall be a law for them forever. And the one who sprinkles the water for uncleanness washes his garments. And the one who touches the water for uncleanness is unclean until evening."
+    },
+    {
+     "n": 22,
+     "t": "‘And whatever the unclean being touches is unclean. And the being who touches it is unclean until evening.’ ”"
+    }
+   ],
+   "page": 211,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "20": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And the children of Yisra’ĕl, all the congregation, came into the Wilderness of Tsin in the first month and the people stayed in Qaḏĕsh. And Miryam died there and was buried there."
+    },
+    {
+     "n": 2,
+     "t": "Now there was no water for the congregation and they assembled against Mosheh and against Aharon."
+    },
+    {
+     "n": 3,
+     "t": "And the people contended with Mosheh and spoke, saying, “If only we had died when our brothers died before HWHY!"
+    },
+    {
+     "n": 4,
+     "t": "“Why have you brought up the assem bly of HWHY into this wilderness, that we and our livestock should die here?"
+    },
+    {
+     "n": 5,
+     "t": "“And why have you brought us up out of Mitsrayim, to bring us to this evil place? – not a place of grain or figs or vines or pomegranates and there is no water to drink.”"
+    },
+    {
+     "n": 6,
+     "t": "Then Mosheh and Aharon went from the presence of the assembly to the door of the Tent of Meeting and they fell on their faces. And the esteem of HWHY appeared to them."
+    },
+    {
+     "n": 7,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 8,
+     "t": "“Take the rod and assemble the congregation, you and your brother Aharon. And you shall speak to the rock before their eyes and it shall give its water. And you shall bring water for them out of the rock and give drink to the congregation and their livestock.”"
+    },
+    {
+     "n": 9,
+     "t": "And Mosheh took the rod from before HWHY as He commanded him."
+    },
+    {
+     "n": 10,
+     "t": "And Mosheh and Aharon assembled the assembly before the rock. And he said to them, “Hear now, you rebels, shall we bring water for you out of this rock?”"
+    },
+    {
+     "n": 11,
+     "t": "Then Mosheh lifted his hand and struck the rock twice with his rod. And much water came out and the congregation and their livestock drank."
+    },
+    {
+     "n": 12,
+     "t": "But HWHY spoke to Mosheh and to Aharon, “Because you did not believe Me, to set Me apart in the eyes of the children of Yisra’ĕl, therefore you do not bring this assembly into the land which I have given them.”"
+    },
+    {
+     "n": 13,
+     "t": "These were the waters of Meriḇah, because the children of Yisra’ĕl contended with HWHY and He was set- apart among them."
+    },
+    {
+     "n": 14,
+     "t": "And Mosheh sent messengers from Qaḏĕsh to the sovereign of Eḏom. “This is what your brother Yisra’ĕl said, ‘You know all the hardship that has befallen us,"
+    },
+    {
+     "n": 15,
+     "t": "that our fathers went down to Mitsrayim and we dwelt in Mitsrayim a long time, and the Mitsrites did evil to us and our fathers."
+    },
+    {
+     "n": 16,
+     "t": "‘And we cried out to HWHY and He heard our voice and sent the Messenger and brought us up out of Mitsrayim. And see, we are in Qaḏĕsh, a city on the edge of your border."
+    },
+    {
+     "n": 17,
+     "t": "‘Please let us pass over, through your land. We shall not pass over through fields or vineyards, nor drink water from wells, we shall go along the sovereign’s highway. We shall not turn aside, right or left, until we have passed over your border.’ ”"
+    },
+    {
+     "n": 18,
+     "t": "But Eḏom said to him, “You do not pass over through me, lest I come out against you with the sword.”"
+    },
+    {
+     "n": 19,
+     "t": "And the children of Yisra’ĕl said to him, “We shall go by the highway and if I or my livestock drink any of your water, then I shall pay for it. Let me only pass over on foot, without a word.”"
+    },
+    {
+     "n": 20,
+     "t": "But he said, “You do not pass over.” And Eḏom came out against them with many men and with a strong hand."
+    },
+    {
+     "n": 21,
+     "t": "So when Eḏom refused to let Yisra’ĕl pass over through his border, Yisra’ĕl turned away from him."
+    },
+    {
+     "n": 22,
+     "t": "And the children of Yisra’ĕl, all the company, departed from Qaḏĕsh and came to Mount Hor."
+    },
+    {
+     "n": 23,
+     "t": "And HWHY spoke to Mosheh and to Aharon in Mount Hor near the border of the land of Eḏom, saying,"
+    },
+    {
+     "n": 24,
+     "t": "“Aharon is to be gathered to his people, for he is not to enter the land which I have given to the children of Yisra’ĕl, because you rebelled against My mouth at the water of Meriḇah."
+    },
+    {
+     "n": 25,
+     "t": "“Take Aharon and El‛azar his son and bring them up to Mount Hor,"
+    },
+    {
+     "n": 26,
+     "t": "and strip Aharon of his garments and put them on El‛azar his son, for Aharon is to be gathered to his people and die there.”"
+    },
+    {
+     "n": 27,
+     "t": "And Mosheh did as HWHY commanded and they went up to Mount Hor before the eyes of all the congregation."
+    },
+    {
+     "n": 28,
+     "t": "And Mosheh stripped Aharon of his garments and put them on El‛azar his son. And Aharon died there on the top of the mountain. And Mosheh and El‛azar came down from the mountain."
+    },
+    {
+     "n": 29,
+     "t": "And when all the congregation saw that Aharon was dead, all the house of Yisra’ĕl wept for Aharon, thirty days."
+    }
+   ],
+   "page": 212,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "21": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And the sovereign of Araḏ, the Kena‛anite, who dwelt in the South, heard that Yisra’ĕl was coming on the way to Atharim and he fought against Yisra’ĕl and took some of them captive."
+    },
+    {
+     "n": 2,
+     "t": "Then Yisra’ĕl made a vow to HWHY and said, “If You deliver this people into my hand indeed, then I shall put their cities under the ban.”"
+    },
+    {
+     "n": 3,
+     "t": "And HWHY listened to the voice of Yisra’ĕl and gave up the Kena‛anites and they put them and their cities under the ban. So the name of that place was called Ḥormah."
+    },
+    {
+     "n": 4,
+     "t": "And they departed from Mount Hor by the Way of the Sea of Reeds, to go around the land of Eḏom. But the being of the people grew impatient because of the way."
+    },
+    {
+     "n": 5,
+     "t": "And the people spoke against Elohim and against Mosheh, “Why have you brought us up out of Mitsrayim to die in the wilderness? For there is no food and no water and our being loathes this light bread.”"
+    },
+    {
+     "n": 6,
+     "t": "And HWHY sent fiery serpents among the people and they bit the people. And many of the people of Yisra’ĕl died."
+    },
+    {
+     "n": 7,
+     "t": "Then the people came to Mosheh and said, “We have sinned, for we have spoken against HWHY and against you. Pray to HWHY to take away the serpents from us.” So Mosheh prayed on behalf of the people."
+    },
+    {
+     "n": 8,
+     "t": "And HWHY said to Mosheh, “Make a fiery serpent and set it on a pole. And it shall be that everyone who is bitten, when he looks at it, shall live.”"
+    },
+    {
+     "n": 9,
+     "t": "So Mosheh made a bronze serpent and put it on a pole. And it came to be, if a serpent had bitten anyone, when he looked at the bronze serpent, he lived."
+    },
+    {
+     "n": 10,
+     "t": "And the children of Yisra’ĕl set out and camped in Oḇoth."
+    },
+    {
+     "n": 11,
+     "t": "And they departed from Oḇoth and camped at Iyĕ Ha-Aḇarim, in the wilderness which is east of Mo’aḇ, toward sunrise."
+    },
+    {
+     "n": 12,
+     "t": "From there they set out and camped at the wadi Zereḏ."
+    },
+    {
+     "n": 13,
+     "t": "From there they set out and camped on the other side of the Arnon, which is in the wilderness that extends from the border of the Amorites, for the Arnon is the border of Mo’aḇ, between Mo’aḇ and the Amorites."
+    },
+    {
+     "n": 14,
+     "t": "Therefore it is said in the Book of the Battles of HWHY, “Wahĕḇ in Suphah, the wadi Arnon,"
+    },
+    {
+     "n": 15,
+     "t": "and the slope of the wadi that turns aside to the dwelling of Ar and lies on the border of Mo’aḇ.”"
+    },
+    {
+     "n": 16,
+     "t": "And from there on to Be’ĕr, which is the well where HWHY said to Mosheh, “Gather the people and let Me give them water.”"
+    },
+    {
+     "n": 17,
+     "t": "Yisra’ĕl then sang this song: “Spring up, O well! Sing to it,"
+    },
+    {
+     "n": 18,
+     "t": "a well the leaders sank which the nobles of the people dug with their staves, by the Word of the Law-giver. Then from the wilderness on to Mattanah,"
+    },
+    {
+     "n": 19,
+     "t": "from Mattanah to Naḥali’ĕl, from Naḥali’ĕl to Bamoth,"
+    },
+    {
+     "n": 20,
+     "t": "and from Bamoth, in the valley that is in the country of Mo’aḇ, to the top of Pisgah which looks down on the wasteland."
+    },
+    {
+     "n": 21,
+     "t": "And Yisra’ĕl sent messengers to Siḥon sovereign of the Amorites, saying,"
+    },
+    {
+     "n": 22,
+     "t": "“Let me pass through your land. We shall not turn off into fields or vineyards, we shall not drink water from wells, but go by the sovereign’s highway until we have passed over your border.”"
+    },
+    {
+     "n": 23,
+     "t": "But Siḥon would not allow Yisra’ĕl to pass through his border. So Siḥon gathered all his people together and went out against Yisra’ĕl in the wilderness and he came to Yahats and fought against Yisra’ĕl."
+    },
+    {
+     "n": 24,
+     "t": "And Yisra’ĕl smote him with the edge of the sword and took possession of his land from the Arnon to the Yabboq, as far as the children of Ammon, for the border of the children of Ammon was strong."
+    },
+    {
+     "n": 25,
+     "t": "And Yisra’ĕl took all these cities and Yisra’ĕl dwelt in all the cities of the Amorites – in Ḥeshbon and in all its villages,"
+    },
+    {
+     "n": 26,
+     "t": "for Ḥeshbon was the city of Siḥon the sovereign of the Amorites, who had fought against the former sovereign of Mo’aḇ and had taken all his land from his hand as far as the Arnon."
+    },
+    {
+     "n": 27,
+     "t": "That is why those who speak in proverbs say, “Come to Ḥeshbon, let the city of Siḥon be built and established."
+    },
+    {
+     "n": 28,
+     "t": "“For fire went out from Ḥeshbon, a flame from the city of Siḥon. It consumed Ar of Mo’aḇ, the masters of the heights of the Arnon."
+    },
+    {
+     "n": 29,
+     "t": "“Woe to you, Mo’aḇ! You have perished, O people of Kemosh! He has given his sons as fugitives and his daughters into captivity, to Siḥon the sovereign of the Amorites."
+    },
+    {
+     "n": 30,
+     "t": "“Then we shot them – Ḥeshbon has perished as far as Diḇon. And we laid waste as far as Nophaḥ, which reaches to Mĕyḏeḇa.”"
+    },
+    {
+     "n": 31,
+     "t": "So Yisra’ĕl dwelt in the land of the Amorites."
+    },
+    {
+     "n": 32,
+     "t": "And Mosheh sent to spy out Ya‛zĕr. And they took its villages and drove out the Amorites who were there,"
+    },
+    {
+     "n": 33,
+     "t": "and turned and went up by the way to Bashan. And Oḡ sovereign of Bashan went out against them, he and all his people, to battle at Eḏre‛i."
+    },
+    {
+     "n": 34,
+     "t": "And HWHY said to Mosheh, “Do not fear him, for I have given him into your hand, with all his people and his land. And you shall do to him as you did to Siḥon sovereign of the Amorites, who dwelt at Ḥeshbon.”"
+    },
+    {
+     "n": 35,
+     "t": "And they smote him and his sons and all his people, until no remnant was left to him. And they took possession of his land."
+    }
+   ],
+   "page": 214,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "22": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And the children of Yisra’ĕl set out and camped in the desert plains of Mo’aḇ beyond the Yardĕn of Yeriḥo."
+    },
+    {
+     "n": 2,
+     "t": "And Balaq son of Tsippor saw all that Yisra’ĕl had done to the Amorites."
+    },
+    {
+     "n": 3,
+     "t": "And Mo’aḇ was exceedingly afraid of the people because they were many and Mo’aḇ was in dread because of the children of Yisra’ĕl."
+    },
+    {
+     "n": 4,
+     "t": "And Mo’aḇ said to the elders of Miḏyan, “Now this company is licking up all that is around us, as an ox licks up the grass of the field.” Now Balaq son of Tsippor was sovereign of the Mo’aḇites at that time,"
+    },
+    {
+     "n": 5,
+     "t": "and he sent messengers to Bil‛am son of Be‛or at Pethor, which is near the River in the land of the sons of his people, to call him, saying, “See, a people has come from Mitsrayim. See, they have covered the surface of the land and are settling next to me!"
+    },
+    {
+     "n": 6,
+     "t": "“And now, please come at once, curse this people for me, for they are too strong for me. It might be that I smite them and drive them out of the land, for I know that he whom you bless is blessed and he whom you curse is cursed.”"
+    },
+    {
+     "n": 7,
+     "t": "And the elders of Mo’aḇ and the elders of Miḏyan left with the fees for divination in their hand and they came to Bil‛am and spoke the words of Balaq to him."
+    },
+    {
+     "n": 8,
+     "t": "And he said to them, “Spend the night here and I shall bring back word to you, as HWHY speaks to me.” So the heads of Mo’aḇ stayed with Bil‛am."
+    },
+    {
+     "n": 9,
+     "t": "And Elohim came to Bil‛am and said, “Who are these men with you?”"
+    },
+    {
+     "n": 10,
+     "t": "And Bil‛am said to Elohim, “Balaq, son of Tsippor, sovereign of Mo’aḇ, has sent to me, saying,"
+    },
+    {
+     "n": 11,
+     "t": "‘See, a people has come out of Mitsrayim and cover the surface of the land. come now, curse them for me. It might be that I am able to fight against them and drive them out.’ ”"
+    },
+    {
+     "n": 12,
+     "t": "And Elohim said to Bil‛am, “Do not go with them. you do not curse the people, for they are blessed.”"
+    },
+    {
+     "n": 13,
+     "t": "And Bil‛am rose in the morning and said to the heads of Balaq, “Go back to your land, for HWHY has refused to allow me to go with you.”"
+    },
+    {
+     "n": 14,
+     "t": "And the heads of Mo’aḇ arose and went to Balaq and said, “Bil‛am refuses to come with us.”"
+    },
+    {
+     "n": 15,
+     "t": "Then Balaq again sent heads, more numerous and more esteemed than they."
+    },
+    {
+     "n": 16,
+     "t": "And they came to Bil‛am and said to him, “This is what Balaq son of Tsippor said: ‘Do not be withheld from coming to me, please,"
+    },
+    {
+     "n": 17,
+     "t": "for I esteem you very greatly and whatever you say to me, I do. Therefore please come, curse this people for me.’ ”"
+    },
+    {
+     "n": 18,
+     "t": "And Bil‛am answered and said to the servants of Balaq, “Though Balaq were to give me his house filled with silver and gold, I am unable to go beyond the Word of HWHY my Elohim, to do less or more."
+    },
+    {
+     "n": 19,
+     "t": "“And now, please, you also stay here tonight and let me find out what more HWHY says to me.”"
+    },
+    {
+     "n": 20,
+     "t": "And Elohim came to Bil‛am at night and said to him, “If the men come to call you, rise and go with them, but only the word which I speak to you that you do.”"
+    },
+    {
+     "n": 21,
+     "t": "And Bil‛am rose in the morning and saddled his donkey and went with the heads of Mo’aḇ."
+    },
+    {
+     "n": 22,
+     "t": "But the displeasure of Elohim burned because he went and the Messenger of HWHY stationed Himself in the way as an adversary against him. And he was riding on his donkey and his two servants were with him."
+    },
+    {
+     "n": 23,
+     "t": "And the donkey saw the Messenger of HWHY standing in the way with His drawn sword in His hand and the donkey turned aside out of the way and went into the field. So Bil‛am beat the donkey to turn her back onto the way."
+    },
+    {
+     "n": 24,
+     "t": "Then the Messenger of HWHY stood in a narrow passage between the vineyards, with a wall on this side and a wall on that side."
+    },
+    {
+     "n": 25,
+     "t": "And when the donkey saw the Messenger of HWHY, she pushed herself against the wall and crushed Bil‛am’s foot against the wall, so he beat her again."
+    },
+    {
+     "n": 26,
+     "t": "And the Messenger of HWHY went further and stood in a narrow place where there was no way to turn aside, right or left."
+    },
+    {
+     "n": 27,
+     "t": "And when the donkey saw the Messenger of HWHY, she lay down under Bil‛am. So Bil‛am’s displeasure burned and he beat the donkey with his staff."
+    },
+    {
+     "n": 28,
+     "t": "Then HWHY opened the mouth of the donkey and she said to Bil‛am, “What have I done to you, that you have beaten me these Three times?”"
+    },
+    {
+     "n": 29,
+     "t": "And Bil‛am said to the donkey, “Because you have mocked me. I wish there were a sword in my hand, for I would have killed you by now!”"
+    },
+    {
+     "n": 30,
+     "t": "And the donkey said to Bil‛am, “Am I not your donkey on which you have ridden, ever since I became yours, to this day? Was I ever known to do so to you?” And he said, “No.”"
+    },
+    {
+     "n": 31,
+     "t": "Then HWHY opened Bil‛am’s eyes and he saw the Messenger of HWHY standing in the way with His drawn sword in His hand. And he bowed his head and fell on his face."
+    },
+    {
+     "n": 32,
+     "t": "And the Messenger of HWHY said to him, “Why have you beaten your donkey these Three times? See, I have come out to stand against you, because your way is reckless before Me."
+    },
+    {
+     "n": 33,
+     "t": "“And the donkey saw Me and turned aside from Me these Three times. If she had not turned aside from Me, I certainly would have killed you by now and let her live.”"
+    },
+    {
+     "n": 34,
+     "t": "And Bil‛am said to the Messenger of HWHY, “I have sinned, for I did not know You stood in the way against me. And now, if evil is in Your eyes, let me turn back.”"
+    },
+    {
+     "n": 35,
+     "t": "And the Messenger of HWHY said to Bil‛am, “Go with the men, but only the word that I speak to you, that you speak.” Bil‛am then went with the heads of Balaq."
+    },
+    {
+     "n": 36,
+     "t": "And when Balaq heard that Bil‛am was coming, he went out to meet him at the city of Mo’aḇ, which is on the border at the Arnon, which was in the extremity of the border."
+    },
+    {
+     "n": 37,
+     "t": "And Balaq said to Bil‛am, “Did I not urgently send to you, calling for you? Why did you not come to me? Am I not able to esteem you?”"
+    },
+    {
+     "n": 38,
+     "t": "And Bil‛am said to Balaq, “See, I have come to you! Now, am I at all able to say somewhat? The word that Elohim puts in my mouth, that I speak.”"
+    },
+    {
+     "n": 39,
+     "t": "And Bil‛am went with Balaq and they came to Qiryath Ḥutsoth."
+    },
+    {
+     "n": 40,
+     "t": "And Balaq slaughtered cattle and sheep and he sent some to Bil‛am and to the heads who were with him."
+    },
+    {
+     "n": 41,
+     "t": "And it came to be the next day, that Balaq took Bil‛am and brought him up to the high places of Ba‛al and from there he saw the extremity of the camp."
+    }
+   ],
+   "page": 215,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "23": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Bil‛am said to Balaq, “Build seven altars for me here and prepare seven bulls and seven rams for me here.”"
+    },
+    {
+     "n": 2,
+     "t": "And Balaq did as Bil‛am had spoken and Balaq and Bil‛am offered a bull and a ram on each altar."
+    },
+    {
+     "n": 3,
+     "t": "Bil‛am then said to Balaq, “Stand by your burnt offering and let me go on. It might be that HWHY does come to meet me and whatever He shows me I shall declare to you.” And he went to a bare height."
+    },
+    {
+     "n": 4,
+     "t": "And Elohim came to Bil‛am and he said to Him, “I have prepared the seven altars and I have offered on each altar a bull and a ram.”"
+    },
+    {
+     "n": 5,
+     "t": "And HWHY put a word in the mouth of Bil‛am and said, “Return to Balaq and this is what you say.”"
+    },
+    {
+     "n": 6,
+     "t": "And he returned to him and saw him standing by his burnt offering, he and all the heads of Mo’aḇ."
+    },
+    {
+     "n": 7,
+     "t": "And he took up his proverb and said, “Balaq the sovereign of Mo’aḇ has brought me from Aram, from the mountains of the east. ‘Come, curse Ya‛aqoḇ for me and come, rage at Yisra’ĕl!’"
+    },
+    {
+     "n": 8,
+     "t": "“How do I curse whom Ĕl has not cursed? And how do I rage at whom HWHY has not raged?"
+    },
+    {
+     "n": 9,
+     "t": "“For from the top of the rocks I see him and from the hills I observe him. Look, a people dwelling alone, not reckoning itself among the nations."
+    },
+    {
+     "n": 10,
+     "t": "“Who shall count the dust of Ya‛aqoḇ and the number of one-fourth of Yisra’ĕl? Let me die the death of the upright and let my end be like his!”"
+    },
+    {
+     "n": 11,
+     "t": "And Balaq said to Bil‛am, “What have you done to me? I took you to curse my enemies and look, you have kept on blessing!”"
+    },
+    {
+     "n": 12,
+     "t": "And he answered and said, “Should I not take heed to speak what HWHY has put in my mouth?”"
+    },
+    {
+     "n": 13,
+     "t": "And Balaq said to him, “Please come with me to another place from where you see them. You only see the extremity but not all of them. Curse them for me from there.”"
+    },
+    {
+     "n": 14,
+     "t": "And he took him to the field of Tsophim, to the top of Pisgah and built seven altars and offered a bull and a ram on each altar."
+    },
+    {
+     "n": 15,
+     "t": "And he said to Balaq, “Stand here by your burnt offering while I meet over there.”"
+    },
+    {
+     "n": 16,
+     "t": "And HWHY came to Bil‛am and put a word in his mouth and said, “Go back to Balaq and say this.”"
+    },
+    {
+     "n": 17,
+     "t": "So he went to him and saw him standing by his burnt offering and the heads of Mo’aḇ with him. And Balaq asked him, “What did HWHY say?”"
+    },
+    {
+     "n": 18,
+     "t": "And he took up his proverb and said, “Rise up, Balaq and hear! Listen to me, son of Tsippor!"
+    },
+    {
+     "n": 19,
+     "t": "“Ĕl is not a man, to lie; nor a son of man, to repent! Has He said and would He not do it; or spoken and would not confirm it?"
+    },
+    {
+     "n": 20,
+     "t": "“See, I have received, to bless. And He has blessed and I do not reverse it."
+    },
+    {
+     "n": 21,
+     "t": "”He has not looked upon wickedness in Ya‛aqoḇ, nor has He seen trouble in Yisra’ĕl. HWHY his Elohim is with him and the shout of a Sovereign is in him."
+    },
+    {
+     "n": 22,
+     "t": "“Ĕl who brought them out of Mitsrayim, is for them like the horns of a wild ox."
+    },
+    {
+     "n": 23,
+     "t": "“For there is no sorcery against Ya‛aqoḇ, nor is there any divination against Yisra’ĕl. Now it is said to Ya‛aqoḇ and to Yisra’ĕl, ‘What has Ĕl done!’"
+    },
+    {
+     "n": 24,
+     "t": "“Look, a people rises like a lioness and lifts itself up like a lion; it lies not down until it devours the prey and drinks the blood of the slain.”"
+    },
+    {
+     "n": 25,
+     "t": "And Balaq said to Bil‛am, “Do not curse them at all, nor bless them at all!”"
+    },
+    {
+     "n": 26,
+     "t": "And Bil‛am answered and said to Balaq, “Have I not spoken to you, saying, ‘All that HWHY speaks, that I do’?”"
+    },
+    {
+     "n": 27,
+     "t": "And Balaq said to Bil‛am, “Please come, let me take you to another place. It might be right in the eyes of Elohim that you curse them for me from there.”"
+    },
+    {
+     "n": 28,
+     "t": "And Balaq took Bil‛am to the top of Pe‛or, that overlooks the wasteland."
+    },
+    {
+     "n": 29,
+     "t": "And Bil‛am said to Balaq, “Build seven alters for me here and prepare seven bulls and seven rams for me here.”"
+    },
+    {
+     "n": 30,
+     "t": "And Balaq did as Bil‛am had said and offered a bull and a ram on each altar."
+    }
+   ],
+   "page": 217,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "24": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And when Bil‛am saw that it pleased HWHY to bless Yisra’ĕl, he did not go as at other times, to seek to use sorcery, but he set his face toward the wilderness."
+    },
+    {
+     "n": 2,
+     "t": "And Bil‛am lifted up his eyes and saw Yisra’ĕl encamped according to their tribes. And the Spirit of Elohim came upon him."
+    },
+    {
+     "n": 3,
+     "t": "And he took up his proverb and said, “The saying of Bil‛am, son of Be‛or and the saying of the man whose eyes are opened,"
+    },
+    {
+     "n": 4,
+     "t": "the saying of him who hears the words of Ĕl, who sees the vision of the Almighty, who falls down, with eyes opened wide:"
+    },
+    {
+     "n": 5,
+     "t": "“How good are your tents, O Ya‛aqoḇ, your dwellings, O Yisra’ĕl!"
+    },
+    {
+     "n": 6,
+     "t": "“Like wadis that stretch out, like gardens by a river, like aloes planted by HWHY, like cedars beside waters."
+    },
+    {
+     "n": 7,
+     "t": "”He makes water flow from his buckets and his seed is in many waters. His sovereign is higher than Aḡaḡ and his reign is exalted."
+    },
+    {
+     "n": 8,
+     "t": "“Ĕl who brought him out of Mitsrayim is for them like the horns of a wild ox; he devours nations, his enemies; and he breaks their bones and with his arrows he smites."
+    },
+    {
+     "n": 9,
+     "t": "”He bowed down, he lay down like a lion. And, like a lion, who would rouse him? Blessed is he who blesses you and cursed is he who curses you.”"
+    },
+    {
+     "n": 10,
+     "t": "Then the displeasure of Balaq burned against Bil‛am and he struck his hands together. Balaq then said to Bil‛am, “I summoned you to curse my enemies and see, you have kept on blessing, these three times!"
+    },
+    {
+     "n": 11,
+     "t": "“And now flee to your place. I said I would greatly esteem you and see, HWHY has kept you back from esteem.”"
+    },
+    {
+     "n": 12,
+     "t": "And Bil‛am said to Balaq, “Did I not also speak to your messengers whom you sent to me, saying,"
+    },
+    {
+     "n": 13,
+     "t": "‘If Balaq should give me his house filled with silver and gold, I am unable to go beyond the Word of HWHY, to do either good or evil of my own heart. What HWHY speaks, that I speak’?"
+    },
+    {
+     "n": 14,
+     "t": "“And now, see, I am going to my people. Come, let me advise you what this people is going to do to your people in the latter days.”"
+    },
+    {
+     "n": 15,
+     "t": "And he took up his proverb and said, “The saying of Bil‛am, son of Be‛or and the saying of the man whose eyes are opened,"
+    },
+    {
+     "n": 16,
+     "t": "the saying of him who hears the words of Ĕl and knows the knowledge of the Most High, who sees the vision of the Almighty, who falls down, with eyes opened wide:"
+    },
+    {
+     "n": 17,
+     "t": "“I see Him, but not now; I observe Him, but not near. A Star shall come out of Ya‛aqoḇ and a Sceptre shall rise out of Yisra’ĕl and shall smite the corners of Mo’aḇ and shall destroy all the sons of Shĕth."
+    },
+    {
+     "n": 18,
+     "t": "“And Eḏom shall be a possession; and Sĕ‛ir shall be a possession – enemies – and Yisra’ĕl is doing mightily."
+    },
+    {
+     "n": 19,
+     "t": "“And out of Ya‛aqoḇ One shall rule and destroy the remnant from Ar.”"
+    },
+    {
+     "n": 20,
+     "t": "He then looked on Amalĕq and he took up his proverb and said, “Amalĕq was first among the nations, but his latter end is to perish forever.”"
+    },
+    {
+     "n": 21,
+     "t": "He then looked on the Qĕynites and he took up his proverb and said, “Firm is your dwelling place and your nest is set in the rock,"
+    },
+    {
+     "n": 22,
+     "t": "but Qayin is to be burned. Til when does Asshur keep you captive?”"
+    },
+    {
+     "n": 23,
+     "t": "And he took up his proverb and said, “Oh, who does live when Ĕl does this?"
+    },
+    {
+     "n": 24,
+     "t": "And ships shall come from the coast of Kittim and they shall afflict Asshur and afflict Ĕḇer and so shall Amalĕq and he also perishes.”"
+    },
+    {
+     "n": 25,
+     "t": "And Bil‛am arose and left and returned to his place. And Balaq also went his way."
+    }
+   ],
+   "page": 218,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "25": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Yasra’ĕl dwelt in Shittim and the people began to whore with the daughters of Mo’aḇ,"
+    },
+    {
+     "n": 2,
+     "t": "and they invited the people to the slaughterings of their mighty ones and the people ate and bowed down to their mighty ones."
+    },
+    {
+     "n": 3,
+     "t": "Thus Yisra’ĕl was joined to Ba‛al Pe‛or and the displeasure of HWHY burned against Yisra’ĕl."
+    },
+    {
+     "n": 4,
+     "t": "And HWHY said to Mosheh, “Take all the leaders of the people and hang them up before HWHY, before the sun, so that the burning displeasure of HWHY turns away from Yisra’ĕl.”"
+    },
+    {
+     "n": 5,
+     "t": "And Mosheh said to the judges of Yisra’ĕl, “Each one of you slay his men who were joined to Ba‛al Pe‛or.”"
+    },
+    {
+     "n": 6,
+     "t": "And see, one of the children of Yisra’ĕl came and brought to his brothers a Miḏyanite woman before the eyes of Mosheh and before the eyes of all the congregation of the children of Yisra’ĕl, who were weeping at the door of the Tent of Meeting."
+    },
+    {
+     "n": 7,
+     "t": "And when Pineḥas, son of El‛azar, son of Aharon the priest, saw it, he rose up from among the congregation and took a spear in his hand,"
+    },
+    {
+     "n": 8,
+     "t": "and he went after the man of Yisra’ĕl into the tent and thrust both of them through, the man of Yisra’ĕl and the woman through her belly. Thus the plague among the children of Yisra’ĕl came to a stop."
+    },
+    {
+     "n": 9,
+     "t": "And those who died in the plague were twenty-four thousand."
+    },
+    {
+     "n": 10,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 11,
+     "t": "“Pineḥas, son of El‛azar, son of Aharon the priest, has turned back My wrath from the children of Yisra’ĕl, because he was ardent with My ardour in their midst, so that I did not consume the children of Yisra’ĕl in My ardour."
+    },
+    {
+     "n": 12,
+     "t": "“Therefore say, ‘See, I am giving him My covenant of peace,"
+    },
+    {
+     "n": 13,
+     "t": "and it shall be to him and to his seed after him a covenant of an everlasting priesthood, because he was ardent for his Elohim and made atonement for the children of Yisra’ĕl.’ ”"
+    },
+    {
+     "n": 14,
+     "t": "And the name of the Yisra’ĕlite who was killed, who was killed with the Miḏyanite woman, was Zimri, son of Salu, a leader of a father’s house among the Shim‛onites."
+    },
+    {
+     "n": 15,
+     "t": "And the name of the Miḏyanite woman who was killed was Kozbi the daughter of Tsur. He was head of the people of a father’s house in Miḏyan."
+    },
+    {
+     "n": 16,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 17,
+     "t": "“Distress the Miḏyanites! And you shall smite them,"
+    },
+    {
+     "n": 18,
+     "t": "for they distressed you with their tricks with which they deceived you in the matter of Pe‛or and in the matter of Kozbi, the daughter of a leader of Miḏyan, their sister, who was killed in the day of the plague because of Pe‛or.”"
+    }
+   ],
+   "page": 219,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "26": {
+   "verses": [
+    {
+     "n": 3,
+     "t": "So Mosheh and El‛azar the priest spoke with them in the desert plains of Mo’aḇ by the Yardĕn of Yeriḥo, saying,"
+    },
+    {
+     "n": 4,
+     "t": "“Take a census of the people from twenty years old and above, as HWHY commanded Mosheh and the children of Yisra’ĕl who came out of the land of Mitsrayim.”"
+    },
+    {
+     "n": 5,
+     "t": "Re’uḇĕn, first-born of Yisra’ĕl, sons of Re’uḇĕn: of Ḥanoḵ, the clan of the Ḥanoḵites; of Pallu, the clan of the Palluites;"
+    },
+    {
+     "n": 6,
+     "t": "of Ḥetsron, the clan of the Ḥetsronites; of Karmi, the clan of the Karmites."
+    },
+    {
+     "n": 7,
+     "t": "These are the clans of the Re’uḇĕnites and their registered ones were forty- three thousand seven hundred and thirty."
+    },
+    {
+     "n": 8,
+     "t": "And the son of Pallu: Eliyaḇ."
+    },
+    {
+     "n": 9,
+     "t": "And the sons of Eliyaḇ: Nemu’ĕl and Dathan and Aḇiram. This Dathan and Aḇiram, were the called ones of the congregation, who contended against Mosheh and against Aharon in the company of Qoraḥ, when they contended against HWHY,"
+    },
+    {
+     "n": 10,
+     "t": "and the earth opened its mouth and swallowed them up together with Qoraḥ when that company died, when the fire consumed two hundred and fifty men. And they became a sign,"
+    },
+    {
+     "n": 11,
+     "t": "but the sons of Qoraḥ did not die."
+    },
+    {
+     "n": 12,
+     "t": "Sons of Shim‛on according to their clans: of Nemu’ĕl, the clan of the Nemu’ĕlites; of Yamin, the clan of the Yaminites; of Yaḵin, the clan of the Yaḵinites;"
+    },
+    {
+     "n": 13,
+     "t": "of Zeraḥ, the clan of the Zarḥites; of Sha’ul, the clan of the Sha’ulites."
+    },
+    {
+     "n": 14,
+     "t": "These are the clans of the Shim‛onites: twenty-two thousand two hundred."
+    },
+    {
+     "n": 15,
+     "t": "Sons of Gaḏ according to their clans: of Tsephon, the clan of the Tsephonites; of Ḥaggi, the clan of the Ḥaggites; of Shuni, the clan of the Shunites;"
+    },
+    {
+     "n": 16,
+     "t": "of Ozni, the clan of the Oznites; of Ĕri, the clan of the Ĕrites;"
+    },
+    {
+     "n": 17,
+     "t": "of Aroḏ, the clan of the Aroḏites; of Arĕli, the clan of the Arĕlites."
+    },
+    {
+     "n": 18,
+     "t": "These are the clans of the sons of Gaḏ according to their registered ones: forty thousand five hundred."
+    },
+    {
+     "n": 19,
+     "t": "Sons of Yahuḏah: Ĕr and Onan. And Ĕr and Onan died in the land of Kena‛an."
+    },
+    {
+     "n": 20,
+     "t": "And sons of Yahuḏah according to their clans: of Shĕlah, the clan of the Shĕlanites; of Perets, the clan of the Partsites; of Zeraḥ, the clan of the Zarḥites."
+    },
+    {
+     "n": 21,
+     "t": "And sons of Perets: of Ḥetsron, the clan of the Ḥetsronites; of Ḥamul, the clan of the Ḥamulites."
+    },
+    {
+     "n": 22,
+     "t": "These are the clans of Yahuḏah according to their registered ones: seventy-six thousand five hundred."
+    },
+    {
+     "n": 23,
+     "t": "Sons of Yissasḵar according to their clans: of Tola, the clan of the Tolaites; of Puwwah, the clan of the Punites;"
+    },
+    {
+     "n": 24,
+     "t": "of Yashuḇ, the clan of the Yashuḇites; of Shimron, the clan of the Shimronites."
+    },
+    {
+     "n": 25,
+     "t": "These are the clans of Yissasḵar according to their registered ones: sixtyfour thousand three hundred."
+    },
+    {
+     "n": 26,
+     "t": "Sons of Zeḇulun according to their clans: of Sereḏ, the clan of the Sardites; of Ĕlon, the clan of the Ĕlonites; of Yaḥle’ĕl, the clan of the Yaḥle’ĕlites."
+    },
+    {
+     "n": 27,
+     "t": "These are the clans of the Zeḇulunites according to their registered ones: sixty thousand five hundred."
+    },
+    {
+     "n": 28,
+     "t": "Sons of Yosĕph according to their clans, by Menashsheh and Ephrayim:"
+    },
+    {
+     "n": 29,
+     "t": "Sons of Menashsheh: of Maḵir, the clan of the Maḵirites. And Maḵir brought forth Gil‛aḏ; of Gil‛aḏ, the clan of the Gil‛aḏites."
+    },
+    {
+     "n": 30,
+     "t": "These are sons of Gil‛aḏ: of Iyezer, the clan of the Iyezerites; of Ḥĕleq, the clan of the Ḥĕleqites;"
+    },
+    {
+     "n": 31,
+     "t": "of Asri’ĕl, the clan of the Asri’ĕlites; of Sheḵem, the clan of the Sheḵemites;"
+    },
+    {
+     "n": 32,
+     "t": "of Shemiḏa, the clan of the Shemiḏaites; of Ḥĕpher, the clan of the Ḥĕpherites."
+    },
+    {
+     "n": 33,
+     "t": "And Tselophḥaḏ son of Ḥĕpher had no sons, but daughters. And the names of the daughters of Tselophḥaḏ: Maḥlah and No‛ah, Ḥoḡlah, Milkah and Tirtsah."
+    },
+    {
+     "n": 34,
+     "t": "These are the clans of Menashsheh and their registered ones: fifty-two thousand seven hundred. of Shillĕm, the clan of the Shillĕmites."
+    },
+    {
+     "n": 35,
+     "t": "These are the sons of Ephrayim according to their clans: of Shuthelaḥ, the clan of the Shuthalḥites; of Beḵer, the clan of the Baḵrites; of Taḥan, the clan of the Taḥanites."
+    },
+    {
+     "n": 36,
+     "t": "And these are sons of Shuthelaḥ: of Ĕran, the clan of the Ĕranites."
+    },
+    {
+     "n": 37,
+     "t": "These are the clans of the sons of Ephrayim according to their registered ones: thirty-two thousand five hundred. These are the sons of Yosĕph according to their clans."
+    },
+    {
+     "n": 38,
+     "t": "Sons of Binyamin according to their clans: of Bela, the clan of the Belaites; of Ashbĕl, the clan of the Ashbĕlites; of Aḥiram, the clan of the Aḥiramites;"
+    },
+    {
+     "n": 39,
+     "t": "of Shephupham, the clan of the Shephuphamites; of Ḥupham, the clan of the Ḥuphamites."
+    },
+    {
+     "n": 40,
+     "t": "And sons of Bela were Ard and Na‛aman: of Ard, the clan of the Ardites; of Na‛aman, the clan of the Na‛amites."
+    },
+    {
+     "n": 41,
+     "t": "These are sons of Binyamin according to their clans and their registered ones: forty-five thousand six hundred."
+    },
+    {
+     "n": 42,
+     "t": "These are sons of Dan according to their clans: of Shuḥam, the clan of the Shuḥamites. These are the clans of Dan according to their clans."
+    },
+    {
+     "n": 43,
+     "t": "All the clans of the Shuḥamites, according to their registered ones: sixtyfour thousand four hundred."
+    },
+    {
+     "n": 44,
+     "t": "Sons of Ashĕr according to their clans: of Yimna, the clan of the Yimnahites; of Yishwi, the clan of the Yishwites; of Beri‛ah, the clan of the Beri‛ites."
+    },
+    {
+     "n": 45,
+     "t": "Of the sons of Beri‛ah: of Ḥeḇer, the clan of the Ḥeḇerites; of Malki’ĕl, the clan of the Malki’ĕlites."
+    },
+    {
+     "n": 46,
+     "t": "And the name of the daughter of Ashĕr was Seraḥ."
+    },
+    {
+     "n": 47,
+     "t": "These are the clans of the sons of Ashĕr according to their registered ones: fiftythree thousand four hundred."
+    },
+    {
+     "n": 48,
+     "t": "Sons of Naphtali according to their clans: of Yaḥtse’ĕl, the clan of the Yaḥtse’ĕlites; of Guni, the clan of the Gunites;"
+    },
+    {
+     "n": 49,
+     "t": "of Yĕtser, the clan of the Yĕtserites; inheritance to pass to his daughter."
+    }
+   ],
+   "page": 220,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "27": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Then came the daughters of Tselophḥaḏ, son of Ḥĕpher, son of Gil‛aḏ, son of Maḵir, son of Menashsheh, from the clans of Menashsheh, son of Yosĕph. And these were the names of his daughters: Maḥlah, No‛ah and Ḥoḡlah and Milkah and Tirtsah."
+    },
+    {
+     "n": 2,
+     "t": "And they stood before Mosheh and before El‛azar the priest and before the leaders and all the congregation, by the doorway of the Tent of Meeting, saying,"
+    },
+    {
+     "n": 3,
+     "t": "“Our father died in the wilderness, yet he was not in the company of those who were met together against HWHY, in company with Qoraḥ, but he died in his own sin. And he had no sons."
+    },
+    {
+     "n": 4,
+     "t": "“Why should the name of our father be removed from among his clan because he had no son? Give us a possession among the brothers of our father.”"
+    },
+    {
+     "n": 5,
+     "t": "Mosheh then brought their case before HWHY."
+    },
+    {
+     "n": 6,
+     "t": "And HWHY spoke to Mosheh,"
+    },
+    {
+     "n": 7,
+     "t": "“The daughters of Tselophḥaḏ speak what is right. You should certainly give them a possession of inheritance among their father’s brothers and cause the inheritance of their father to pass to them."
+    },
+    {
+     "n": 8,
+     "t": "“And speak to the children of Yisra’ĕl, saying, ‘When a man dies and has no son, then you shall cause his children of Yisra’ĕl with him, all the congregation.”"
+    }
+   ],
+   "page": 222,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "28": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“Command the children of Yisra’ĕl and you shall say to them, ‘Take heed to bring My offering, My food for My offerings made by fire as a sweet fragrance to Me, at their appointed time. ’"
+    },
+    {
+     "n": 3,
+     "t": "“And you shall say to them, ‘This is the offering made by fire which you bring to HWHY: two male lambs a year old, perfect ones, daily, a continual burnt offering."
+    },
+    {
+     "n": 4,
+     "t": "‘The one lamb you prepare in the morning and the other lamb you prepare between the evenings,"
+    },
+    {
+     "n": 5,
+     "t": "with one-tenth of an ĕphah of fine flour as a grain offering mixed with one- fourth of a hin of pressed oil,"
+    },
+    {
+     "n": 6,
+     "t": "a continual burnt offering which was offered at Mount Sinai for a sweet fragrance, an offering made by fire to HWHY,"
+    },
+    {
+     "n": 7,
+     "t": "and its drink offering, one-fourth of a hin for each lamb. Pour out the drink to HWHY as an offering in the set-apart place."
+    },
+    {
+     "n": 8,
+     "t": "‘And the other lamb you prepare between the evenings. As the morning grain offering and its drink offering, you prepare it as an offering made by fire, a sweet fragrance to HWHY."
+    },
+    {
+     "n": 9,
+     "t": "‘And on the Sabbath day two lambs a year old, perfect ones and two-tenths of an ĕphah of fine flour as a grain offering, mixed with oil, with its drink offering,"
+    },
+    {
+     "n": 10,
+     "t": "the burnt offering for every Sabbath, besides the continual burnt offering with its drink offering."
+    },
+    {
+     "n": 11,
+     "t": "‘And on the beginnings of your months you bring near a burnt offering to HWHY: two young bulls and one ram and seven lambs a year old, perfect ones;"
+    },
+    {
+     "n": 12,
+     "t": "three-tenths of an ĕphah of fine flour as a grain offering, mixed with oil, for each bull; two-tenths of an ĕphah of fine flour as a grain offering, mixed with oil, for the one ram;"
+    },
+    {
+     "n": 13,
+     "t": "and one-tenth of an ĕphah of fine flour, mixed with oil, as a grain offering for each lamb, as a burnt offering of sweet fragrance, an offering made by fire to HWHY."
+    },
+    {
+     "n": 14,
+     "t": "‘And their drink offering is half a hin of wine for a bull and one-third of a hin for a ram and one-fourth of a hin for a lamb. This is the burnt offering for each month throughout the months of the year,"
+    },
+    {
+     "n": 15,
+     "t": "and one male goat as a sin offering to HWHY is prepared, besides the continual burnt offering and its drink offering."
+    },
+    {
+     "n": 16,
+     "t": "‘And in the first month, on the fourteenth day, is the Passover of HWHY,"
+    },
+    {
+     "n": 17,
+     "t": "and on the fifteenth day of this month is a festival. For seven days unleavened bread is eaten."
+    },
+    {
+     "n": 18,
+     "t": "‘On the first day is a set-apart gathering, you do no servile work."
+    },
+    {
+     "n": 19,
+     "t": "‘And you shall bring near an offering made by fire as a burnt offering to HWHY: two young bulls and one ram and seven lambs a year old, perfect ones they are for you,"
+    },
+    {
+     "n": 20,
+     "t": "and their grain offering, fine flour mixed with oil. Prepare three-tenths of an ĕphah for a bull and two-tenths for a ram."
+    },
+    {
+     "n": 21,
+     "t": "‘Prepare one-tenth of an ĕphah for each of the seven lambs,"
+    },
+    {
+     "n": 22,
+     "t": "and one goat as a sin offering, to make atonement for you."
+    },
+    {
+     "n": 23,
+     "t": "‘Prepare these besides the burnt offering of the morning, which is for a continual burnt offering."
+    },
+    {
+     "n": 24,
+     "t": "‘According to these you are to prepare the food of the offering made by fire daily for seven days, as a sweet fragrance to HWHY. It is prepared besides the continual burnt offering and its drink offering."
+    },
+    {
+     "n": 25,
+     "t": "‘And on the seventh day you have a set-apart gathering, you do no servile work."
+    },
+    {
+     "n": 26,
+     "t": "‘And on the day of the first-fruits, when you bring a new grain offering to HWHY at your Festival of weeks, you have a set-apart gathering, you do no servile work."
+    },
+    {
+     "n": 27,
+     "t": "‘And you shall bring near a burnt offering as a sweet fragrance to HWHY: two young bulls, one ram and seven lambs a year old,"
+    },
+    {
+     "n": 28,
+     "t": "with their grain offering of fine flour mixed with oil: three-tenths of an ĕphah for each bull, two-tenths for the one ram,"
+    },
+    {
+     "n": 29,
+     "t": "one-tenth for each of the seven lambs,"
+    },
+    {
+     "n": 30,
+     "t": "one male goat to make atonement for you,"
+    },
+    {
+     "n": 31,
+     "t": "perfect ones they are for you. Prepare them with their drink offerings, besides the continual burnt offering with its grain offering."
+    }
+   ],
+   "page": 223,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "29": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "‘And in the seventh month, on the first day of the month, you have a set-apart gathering, you do no servile work, it is a day of blowing the trumpets for you."
+    },
+    {
+     "n": 2,
+     "t": "‘And you shall prepare a burnt offering as a sweet fragrance to HWHY: one young bull, one ram, seven lambs a year old, perfect ones,"
+    },
+    {
+     "n": 3,
+     "t": "and their grain offering: fine flour mixed with oil, three-tenths of an ĕphah for the bull, two-tenths for the ram,"
+    },
+    {
+     "n": 4,
+     "t": "and one-tenth for each of the seven lambs,"
+    },
+    {
+     "n": 5,
+     "t": "and one male goat as a sin offering, to make atonement for you,"
+    },
+    {
+     "n": 6,
+     "t": "besides the burnt offering with its grain offering for the New Moon, the continual burnt offering with its grain offering and their drink offerings, according to their right-ruling, as a sweet fragrance, an offering made by fire to HWHY."
+    },
+    {
+     "n": 7,
+     "t": "‘And on the tenth day of this seventh month you have a set-apart gathering and you shall afflict your beings, you do no work."
+    },
+    {
+     "n": 8,
+     "t": "‘And you shall bring near a burnt offering to HWHY, a sweet fragrance: one young bull, one ram, seven lambs a year old, perfect ones they are for you,"
+    },
+    {
+     "n": 9,
+     "t": "and their grain offering: fine flour mixed with oil, three-tenths of an ĕphah for the bull, two-tenths for the one ram,"
+    },
+    {
+     "n": 10,
+     "t": "one-tenth for each of the seven lambs,"
+    },
+    {
+     "n": 11,
+     "t": "one male goat as a sin offering, besides the sin offering for atonement, the continual burnt offering with its grain offering and their drink offerings."
+    },
+    {
+     "n": 12,
+     "t": "‘And on the fifteenth day of the seventh month you have a set-apart gathering, you do no servile work. And you shall observe a festival to HWHY seven days,"
+    },
+    {
+     "n": 13,
+     "t": "and you shall bring near a burnt offering, an offering made by fire, a sweet fragrance to HWHY: thirteen young bulls, two rams, fourteen lambs a year old, perfect ones they are,"
+    },
+    {
+     "n": 14,
+     "t": "and their grain offering: fine flour mixed with oil, three-tenths of an ĕphah for each of the thirteen bulls, two-tenths for each of the two rams,"
+    },
+    {
+     "n": 15,
+     "t": "and one-tenth for each of the fourteen lambs,"
+    },
+    {
+     "n": 16,
+     "t": "and one male goat as a sin offering, besides the continual burnt offering, its grain offering and its drink offering."
+    },
+    {
+     "n": 17,
+     "t": "‘Then on the second day: twelve young bulls, two rams, fourteen lambs a year old, perfect ones,"
+    },
+    {
+     "n": 18,
+     "t": "and their grain offering and their drink offerings for the bulls, for the rams and for the lambs, by their number, according to the right-ruling,"
+    },
+    {
+     "n": 19,
+     "t": "and one male goat as a sin offering, besides the continual burnt offering with its grain offering and their drink offerings."
+    },
+    {
+     "n": 20,
+     "t": "‘And on the third day eleven bulls, two rams, fourteen lambs a year old, perfect ones,"
+    },
+    {
+     "n": 21,
+     "t": "and their grain offering and their drink offerings for the bulls, for the rams and for the lambs, by their number, according to the right-ruling,"
+    },
+    {
+     "n": 22,
+     "t": "and one goat as a sin offering, besides the continual burnt offering, its grain offering and its drink offering."
+    },
+    {
+     "n": 23,
+     "t": "‘Then on the fourth day: ten bulls, two rams, fourteen lambs a year old, perfect ones,"
+    },
+    {
+     "n": 24,
+     "t": "and their grain offering and their drink offerings for the bulls, for the rams and for the lambs, by their number, according to the right-ruling,"
+    },
+    {
+     "n": 25,
+     "t": "and one male goat as a sin offering, besides the continual burnt offering, its grain offering and its drink offering."
+    },
+    {
+     "n": 26,
+     "t": "‘Then on the fifth day: nine bulls, two rams, fourteen lambs a year old, perfect ones,"
+    },
+    {
+     "n": 27,
+     "t": "and their grain offering and their drink offerings for the bulls, for the rams and for the lambs, by their number, according to the right-ruling,"
+    },
+    {
+     "n": 28,
+     "t": "and one goat as a sin offering, besides the continual burnt offering, its grain offering and its drink offering."
+    },
+    {
+     "n": 29,
+     "t": "‘Then on the sixth day: eight bulls, two rams, fourteen lambs a year old, perfect ones,"
+    },
+    {
+     "n": 30,
+     "t": "and their grain offering and their drink offerings for the bulls, for the rams and for the lambs, by their number, according to the right-ruling,"
+    },
+    {
+     "n": 31,
+     "t": "and one goat as a sin offering, besides the continual burnt offering, its grain offering and its drink offering."
+    },
+    {
+     "n": 32,
+     "t": "‘Then on the seventh day: seven bulls, two rams, fourteen lambs a year old, perfect ones,"
+    },
+    {
+     "n": 33,
+     "t": "and their grain offering and their drink offerings for the bulls, for the rams and for the lambs, by their number, according to the right-ruling,"
+    },
+    {
+     "n": 34,
+     "t": "and one goat as a sin offering, besides the continual burnt offering, its grain offering and its drink offering."
+    },
+    {
+     "n": 35,
+     "t": "‘On the eighth day you have an assembly, you do no servile work,"
+    },
+    {
+     "n": 36,
+     "t": "and you shall bring near a burnt offering, an offering made by fire, a sweet fragrance to HWHY: one bull, one ram, seven lambs a year old, perfect ones,"
+    },
+    {
+     "n": 37,
+     "t": "their grain offering and their drink offerings for the bull, for the ram and for the lambs, by their number, according to the right-ruling,"
+    },
+    {
+     "n": 38,
+     "t": "and one goat as a sin offering, besides the continual burnt offering, its grain offering and its drink offering."
+    },
+    {
+     "n": 39,
+     "t": "‘These you prepare to HWHY at your appointed times, besides your vowed offerings and your voluntary offerings, as your burnt offerings and your grain offerings, as your drink offerings and your peace offerings.’ ”"
+    },
+    {
+     "n": 40,
+     "t": "And Mosheh spoke to the children of Yisra’ĕl according to all HWHY had commanded Mosheh."
+    }
+   ],
+   "page": 224,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "30": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Mosheh spoke to the heads of the tribes concerning the children of Yisra’ĕl, saying, “This is the word which HWHY has commanded:"
+    },
+    {
+     "n": 2,
+     "t": "“When a man vows a vow to HWHY, or swears an oath to bind himself by some agreement, he does not break his word, he does according to all that comes out of his mouth."
+    },
+    {
+     "n": 3,
+     "t": "“Or if a woman vows a vow to HWHY and binds herself by some agreement while in her father’s house in her youth,"
+    },
+    {
+     "n": 4,
+     "t": "and her father hears her vow and the agreement by which she has bound herself and her father has kept silent towards her, then all her vows shall stand and every agreement with which she has bound herself stands."
+    },
+    {
+     "n": 5,
+     "t": "“But if her father forbids her on the day that he hears, then none of her vows nor her agreements by which she has bound herself stand. And HWHY pardons her, because her father has forbidden her."
+    },
+    {
+     "n": 6,
+     "t": "“But if she at all belongs to a husband, while bound by her vows or by a rash utterance from her lips by which she bound herself,"
+    },
+    {
+     "n": 7,
+     "t": "and her husband hears it and he has kept silent towards her on the day that he hears, then her vows shall stand and her agreements by which she bound herself do stand."
+    },
+    {
+     "n": 8,
+     "t": "“But if her husband forbids her on the day that he hears it, then he has nullified her vow which she vowed and the rash utterance of her lips by which she bound herself and HWHY pardons her."
+    },
+    {
+     "n": 9,
+     "t": "“But any vow of a widow or a divorced woman, by which she has bound herself, stands against her."
+    },
+    {
+     "n": 10,
+     "t": "“And if she vowed in her husband’s house, or bound herself by an agreement with an oath,"
+    },
+    {
+     "n": 11,
+     "t": "and her husband heard it and has kept silent towards her and did not forbid her, then all her vows shall stand and every agreement by which she bound herself stands."
+    },
+    {
+     "n": 12,
+     "t": "“But if her husband clearly nullified them on the day he heard them, then whatever came from her lips concerning her vows or concerning the agreement binding her, it does not stand – her husband has nullified them and HWHY pardons her."
+    },
+    {
+     "n": 13,
+     "t": "“Every vow and every binding oath to afflict her being, let her husband confirm it, or let her husband nullify it."
+    },
+    {
+     "n": 14,
+     "t": "“But if her husband is altogether silent at her from day to day, then he confirms all her vows or all the agreements that bind her – he confirms them, because he kept silent towards her on the day that he heard."
+    },
+    {
+     "n": 15,
+     "t": "“But if he nullifies them after he has heard, then he shall bear her crookedness.”"
+    },
+    {
+     "n": 16,
+     "t": "These are the laws which HWHY commanded Mosheh, between a man and his wife and between a father and his daughter in her youth in her father’s house."
+    }
+   ],
+   "page": 225,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "31": {
+   "verses": [],
+   "page": 227,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "32": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And the children of Re’uḇĕn and the children of Gaḏ had much live stock, a large number. And they saw the land of Ya‛zĕr and the land of Gil‛aḏ and saw that the place was a place for livestock."
+    },
+    {
+     "n": 2,
+     "t": "So the children of Gaḏ and the children of Re’uḇĕn came and spoke to Mosheh and to El‛azar the priest and to the leaders of the congregation, saying,"
+    },
+    {
+     "n": 3,
+     "t": "“Ataroth and Diḇon and Ya‛zĕr and Nimrah and Ḥeshbon and El‛alĕh and Seḇam and Neḇo and Be‛on,"
+    },
+    {
+     "n": 4,
+     "t": "the land which HWHY had smitten before the congregation of Yisra’ĕl, is a land for livestock and your servants have livestock.”"
+    },
+    {
+     "n": 5,
+     "t": "And they said, “If we have found favour in your eyes, let this land be given to your servants as a possession and do not let us pass over the Yardĕn.”"
+    },
+    {
+     "n": 6,
+     "t": "And Mosheh said to the children of Gaḏ and to the children of Re’uḇĕn, “Are your brothers to go into the battle while you yourselves sit here?"
+    },
+    {
+     "n": 7,
+     "t": "“Now why do you discourage the heart of the children of Yisra’ĕl from passing over into the land which HWHY has given them?"
+    },
+    {
+     "n": 8,
+     "t": "“Thus your fathers did when I sent them away from Qaḏĕsh Barnĕa to see the land."
+    },
+    {
+     "n": 9,
+     "t": "“For when they went up to the wadi Eshkol and saw the land, they discouraged the heart of the children of Yisra’ĕl, so that they did not go into the land which HWHY had given them."
+    },
+    {
+     "n": 10,
+     "t": "“Then the displeasure of HWHY burned on that day and He swore an oath, saying,"
+    },
+    {
+     "n": 11,
+     "t": "‘Not one of the men who came up from Mitsrayim, from twenty years old and above, is to see the land of which I swore to Aḇrahim, Yitsḥaq and Ya‛aqoḇ, because they did not follow Me completely,"
+    },
+    {
+     "n": 12,
+     "t": "except Kalĕḇ son of Yephunneh, the Qenizzite and Yahusha son of Nun, for they have followed HWHY completely.’"
+    },
+    {
+     "n": 13,
+     "t": "“So the displeasure of HWHY burned against Yisra’ĕl and He made them wander in the wilderness forty years, until all the generation that had done evil in the eyes of HWHY was destroyed."
+    },
+    {
+     "n": 14,
+     "t": "“And see, you have risen in your father’s place, an increase of men, sinners, to add still more the burning displeasure of HWHY against Yisra’ĕl."
+    },
+    {
+     "n": 15,
+     "t": "“For if you turn away from following Him, He shall once again leave them in the wilderness and you shall destroy all these people.”"
+    },
+    {
+     "n": 16,
+     "t": "Then they came near to him and said, “Let us build sheep-enclosures here for our livestock and cities for our little ones,"
+    },
+    {
+     "n": 17,
+     "t": "but let us ourselves be armed, hastening before the children of Yisra’ĕl until we have brought them to their place. And our little ones shall dwell in the walled cities because of the inhabitants of the land."
+    },
+    {
+     "n": 18,
+     "t": "“We shall not return to our homes until every one of the children of Yisra’ĕl has received his inheritance."
+    },
+    {
+     "n": 19,
+     "t": "“For we shall not inherit with them on the other side of the Yardĕn and beyond, because our inheritance has fallen to us on this eastern side of the Yardĕn.”"
+    },
+    {
+     "n": 20,
+     "t": "And Mosheh said to them, “If you make this promise: if you arm yourselves before HWHY for battle,"
+    },
+    {
+     "n": 21,
+     "t": "and all your armed ones pass over the Yardĕn before HWHY until He has driven out His enemies from before Him,"
+    },
+    {
+     "n": 22,
+     "t": "and the land has been subdued before HWHY, then afterward you shall return and be guiltless before HWHY and before Yisra’ĕl. And this land shall be your possession before HWHY."
+    },
+    {
+     "n": 23,
+     "t": "“But if you do not do so, then see, you shall sin against HWHY and know: your sin is going to find you out."
+    },
+    {
+     "n": 24,
+     "t": "“Build cities for your little ones and enclosures for your sheep and do what you have promised.”"
+    },
+    {
+     "n": 25,
+     "t": "And the children of Gaḏ and the children of Re’uḇĕn spoke to Mosheh, saying, “Your servants are going to do as my master commands."
+    },
+    {
+     "n": 26,
+     "t": "“Our little ones, our wives, our flocks and all our livestock are going to be there in the cities of Gil‛aḏ,"
+    },
+    {
+     "n": 27,
+     "t": "but your servants are passing over, every armed one of the army, before HWHY, to battle, as my master says.”"
+    },
+    {
+     "n": 28,
+     "t": "And Mosheh gave command concern ing them to El‛azar the priest, to Yahusha son of Nun and to the heads of the fathers of the tribes of the children of Yisra’ĕl."
+    },
+    {
+     "n": 29,
+     "t": "And Mosheh said to them, “If the children of Gaḏ and the children of Re’uḇĕn pass over the Yardĕn with you, every man armed for battle before HWHY and the land has been subdued before you, then you shall give them the land of Gil‛aḏ as a possession."
+    },
+    {
+     "n": 30,
+     "t": "“But if they do not pass over armed with you, they shall have possessions among you in the land of Kena‛an.”"
+    },
+    {
+     "n": 31,
+     "t": "Then the children of Gaḏ and the children of Re’uḇĕn answered, saying, “As HWHY has said to your servants, so we do."
+    },
+    {
+     "n": 32,
+     "t": "“We ourselves are passing over armed before HWHY into the land of Kena‛an, but the possession of our inheritance remains with us beyond the Yardĕn.”"
+    },
+    {
+     "n": 33,
+     "t": "So Mosheh gave to the children of Gaḏ, to the children of Re’uḇĕn and to half the tribe of Menashsheh, son of Yosĕph, the reign of Siḥon sovereign of the Amorites and the reign of Oḡ sovereign of Bashan, the land with its cities within the borders, the cities of the land round about."
+    },
+    {
+     "n": 34,
+     "t": "And the children of Gaḏ built Diḇon and Ataroth and Aro‛ĕr,"
+    },
+    {
+     "n": 35,
+     "t": "and Atroth, Shophan and Ya‛zĕr and Yoḡbehah,"
+    },
+    {
+     "n": 36,
+     "t": "and Bĕyth Nimrah and Bĕyth Haran, walled cities and enclosures for sheep."
+    },
+    {
+     "n": 37,
+     "t": "And the children of Re’uḇĕn built Ḥeshbon and El‛alĕh and Qiryathayim,"
+    },
+    {
+     "n": 38,
+     "t": "Neḇo and Ba‛al Me‛on – the names being changed – and Shiḇmah. And they gave other names to the cities which they built."
+    },
+    {
+     "n": 39,
+     "t": "And the sons of Maḵir son of Menashsheh went to Gil‛aḏ and took it and dispossessed the Amorites who were in it."
+    },
+    {
+     "n": 40,
+     "t": "So Mosheh gave Gil‛aḏ to Maḵir, son of Menashsheh and he dwelt in it."
+    },
+    {
+     "n": 41,
+     "t": "And Ya’ir son of Menashsheh went and took its small towns and called them Ḥawoth Ya’ir."
+    },
+    {
+     "n": 42,
+     "t": "And Noḇaḥ went and took Qenath and its villages and he called it Noḇaḥ, after his own name."
+    }
+   ],
+   "page": 228,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "33": {
+   "verses": [
+    {
+     "n": 2,
+     "t": "And Mosheh wrote down the starting points of their departures at the command of HWHY and these are their departures according to their starting points:"
+    },
+    {
+     "n": 3,
+     "t": "So they departed from Ra‛meses in the first month, on the fifteenth day of the first month, on the morrow of the Passover the children of Yisra’ĕl went out with boldness before the eyes of all the Mitsrites,"
+    },
+    {
+     "n": 4,
+     "t": "and the Mitsrites were burying all their first-born, whom HWHY had smitten among them. Also on their mighty ones HWHY had executed judgments."
+    },
+    {
+     "n": 5,
+     "t": "Then the children of Yisra’ĕl departed from Ra‛meses and camped at Sukkoth."
+    },
+    {
+     "n": 6,
+     "t": "And they departed from Sukkoth and camped at Ĕtham, which is on the edge of the wilderness."
+    },
+    {
+     "n": 7,
+     "t": "And they departed from Ĕtham and turned back to Pi Haḥiroth, which is east of Ba‛al Tsephon. And they camped near Miḡdol."
+    },
+    {
+     "n": 8,
+     "t": "And they departed from before Haḥiroth and passed over through the midst of the sea into the wilderness, went three days’ journey in the Wilderness of Ĕtham and camped at Marah."
+    },
+    {
+     "n": 9,
+     "t": "And they departed from Marah and came to Ĕlim. And at Ĕlim were twelve springs of water and seventy palm trees, so they camped there."
+    },
+    {
+     "n": 10,
+     "t": "And they departed from Ĕlim and camped by the Sea of Reeds."
+    },
+    {
+     "n": 11,
+     "t": "And they departed from the Sea of Reeds and camped in the Wilderness of Sin."
+    },
+    {
+     "n": 12,
+     "t": "And they departed from the Wilderness of sin and camped at Dophqah."
+    },
+    {
+     "n": 13,
+     "t": "And they departed from Dophqah and camped at Alush."
+    },
+    {
+     "n": 14,
+     "t": "And they departed from Alush and camped at Rephiḏim and there was no water for the people to drink."
+    },
+    {
+     "n": 15,
+     "t": "And they departed from Rephiḏim and camped in the Wilderness of Sinai."
+    },
+    {
+     "n": 16,
+     "t": "And they departed from the"
+    }
+   ],
+   "page": 230,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "34": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And HWHY spoke to Mosheh, saying,"
+    },
+    {
+     "n": 2,
+     "t": "“Command the children of Yisra’ĕl and say to them, ‘When you come into the land of Kena‛an, this is the land which falls to you as an inheritance, the land of Kena‛an to its boundaries:"
+    },
+    {
+     "n": 3,
+     "t": "‘Then your southern border shall be from the Wilderness of Tsin along the border of Eḏom and your southern border shall be eastward from the end of the Salt Sea."
+    },
+    {
+     "n": 4,
+     "t": "‘Then your border shall turn from the southern side of the Ascent of Aqrabbim, continue to Tsin and be on the south of Qaḏĕsh Barnĕa and it shall go on to Ḥatsar Addar and continue to Atsmon."
+    },
+    {
+     "n": 5,
+     "t": "‘And the border shall turn from Atsmon to the wadi of Mitsrayim and it shall end at the Sea."
+    },
+    {
+     "n": 6,
+     "t": "‘As for the western border, you shall have the Great Sea for a border, this is your western border."
+    },
+    {
+     "n": 7,
+     "t": "‘And this is your northern border: From the Great Sea you mark out your borderline to Mount Hor,"
+    },
+    {
+     "n": 8,
+     "t": "from Mount Hor you mark out your border to the entrance of Ḥamath and the edge of the border shall be toward Tseḏaḏ,"
+    },
+    {
+     "n": 9,
+     "t": "and the border shall proceed to Ziphron and it shall end at Ḥatsar Ĕnan. This is your northern border."
+    },
+    {
+     "n": 10,
+     "t": "‘And you shall mark out your eastern border from Ḥatsar Ĕnan to Shepham,"
+    },
+    {
+     "n": 11,
+     "t": "and the border shall go down from Shepham to Riḇlah on the east side of Ayin and the border shall go down and reach to the eastern side of the Sea of"
+    }
+   ],
+   "page": 231,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "35": {
+   "verses": [
+    {
+     "n": 2,
+     "t": "“Command the children of Yisra’ĕl and say to them, ‘When you come into the land of Kena‛an, this is the land which falls to you as an inheritance, the land of Kena‛an to its boundaries:"
+    },
+    {
+     "n": 3,
+     "t": "‘Then your southern border shall be from the Wilderness of Tsin along the border of Eḏom and your southern border shall be eastward from the end of the Salt Sea."
+    },
+    {
+     "n": 4,
+     "t": "‘Then your border shall turn from the southern side of the Ascent of Aqrabbim, continue to Tsin and be on the south of Qaḏĕsh Barnĕa and it shall go on to Ḥatsar Addar and continue to Atsmon."
+    },
+    {
+     "n": 5,
+     "t": "‘And the border shall turn from Atsmon to the wadi of Mitsrayim and it shall end at the Sea."
+    },
+    {
+     "n": 6,
+     "t": "‘As for the western border, you shall have the Great Sea for a border, this is your western border."
+    },
+    {
+     "n": 7,
+     "t": "‘And this is your northern border: From the Great Sea you mark out your borderline to Mount Hor,"
+    },
+    {
+     "n": 8,
+     "t": "from Mount Hor you mark out your border to the entrance of Ḥamath and the edge of the border shall be toward Tseḏaḏ,"
+    },
+    {
+     "n": 9,
+     "t": "and the border shall proceed to Ziphron and it shall end at Ḥatsar Ĕnan. This is your northern border."
+    },
+    {
+     "n": 10,
+     "t": "‘And you shall mark out your eastern border from Ḥatsar Ĕnan to Shepham,"
+    },
+    {
+     "n": 11,
+     "t": "and the border shall go down from Shepham to Riḇlah on the east side of Ayin and the border shall go down and reach to the eastern side of the Sea of"
+    }
+   ],
+   "page": 231,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "36": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And the heads of the fathers of the clans of the children of Gil‛aḏ, son of Maḵir, son of Menashsheh, of the clans of the sons of Yosĕph, came near and spoke before Mosheh and before the leaders, the heads of the fathers of the children of Yisra’ĕl,"
+    },
+    {
+     "n": 2,
+     "t": "and said, “HWHY commanded my master to give the land as an inheritance by lot to the children of Yisra’ĕl and my master was commanded by HWHY to give the inheritance of our brother Tselophḥaḏ to his daughters."
+    },
+    {
+     "n": 3,
+     "t": "“Now if they are married to any of the sons of the other tribes of the children of Yisra’ĕl, then their inheritance shall be taken from the inheritance of our fathers, and shall be added to the inheritance of the tribe into which they marry and taken from the lot of our inheritance."
+    },
+    {
+     "n": 4,
+     "t": "“And if the Jubilee of the children of Yisra’ĕl takes place, then their inheritance shall be added to the inheritance of the tribe into which they marry and their inheritance taken away from the inheritance of the tribe of our fathers.”"
+    },
+    {
+     "n": 5,
+     "t": "And Mosheh commanded the children of Yisra’ĕl according to the Word of HWHY, saying, “What the tribe of the sons of Yosĕph speaks is right."
+    },
+    {
+     "n": 6,
+     "t": "“This is the word which HWHY has commanded, for the daughters of Tselophḥaḏ, saying, ‘Let them marry who is good in their eyes, but let them marry only within the clan of their father’s tribe.’"
+    },
+    {
+     "n": 7,
+     "t": "“And the inheritance of the children of Yisra’ĕl is not to change hands from tribe to tribe, for every one of the children of Yisra’ĕl is to cling to the inheritance of the tribe of his fathers."
+    },
+    {
+     "n": 8,
+     "t": "“And every daughter possessing an inheritance in any tribe of the children of Yisra’ĕl is to be the wife of one of the clan of her father’s tribe, so that the children of Yisra’ĕl possess each the inheritance of his fathers."
+    },
+    {
+     "n": 9,
+     "t": "“Thus the inheritance is not to change hands from one tribe to another, but every tribe of the children of Yisra’ĕl is to cling to its own inheritance.”"
+    },
+    {
+     "n": 10,
+     "t": "As HWHY commanded Mosheh, so did the daughters of Tselophḥaḏ."
+    },
+    {
+     "n": 11,
+     "t": "For Maḥlah, Tirtsah and Ḥoḡlah and Milkah and No‛ah, the daughters of Tselophḥaḏ, were married to the sons of their father’s brothers."
+    },
+    {
+     "n": 12,
+     "t": "And they were married into the clans of the children of Menashsheh, the son of Yosĕph and their inheritance remained in the tribe of their father’s clan."
+    },
+    {
+     "n": 13,
+     "t": "These are the commands and the right-rulings which HWHY commanded the children of Yisra’ĕl by the hand of Mosheh in the desert plains of Mo’aḇ by the Yardĕn of Yeriḥo. BEMIḎBAR 36"
+    }
+   ],
+   "page": 231,
+   "pdf": "TheBesorah-all.0001.pdf"
+  }
+ }
+}

@@ -1,0 +1,969 @@
+{
+ "id": "apoc-judith",
+ "hebrew": "YEHUDITH",
+ "english": "Judith",
+ "section": "Apocrypha",
+ "chapter_count": 16,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "7": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "13": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "14": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "15": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  },
+  "16": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "In the twelfth year of the reign of Nebuchadnezzar, who ruled over the Assyrians in the great city of Nineveh, in the days of Arphaxad, who ruled over the Medes in Ecbatana --"
+    },
+    {
+     "n": 2,
+     "t": "he is the king who built walls about Ecbatana with hewn stones three cubits thick and six cubits long; he made the walls seventy cubits high and fifty cubits wide;"
+    },
+    {
+     "n": 3,
+     "t": "at the gates he built towers a hundred cubits high and sixty cubits wide at the foundations;"
+    },
+    {
+     "n": 4,
+     "t": "and he made its gates, which were seventy cubits high and forty cubits wide, so that his armies could march out in force and his infantry form their ranks --"
+    },
+    {
+     "n": 5,
+     "t": "it was in those days that King Nebuchadnezzar made war against King Arphaxad in the great plain which is on the borders of Ragae."
+    },
+    {
+     "n": 6,
+     "t": "He was joined by all the people of the hill country and all those who lived along the Euphrates and the Tigris and the Hydaspes and in the plain where Arioch ruled the Elymaeans. Many nations joined the forces of the Chaldeans."
+    },
+    {
+     "n": 7,
+     "t": "Then Nebuchadnezzar king of the Assyrians sent to all who lived in Persia and to all who lived in the west, those who lived in Cilicia and Damascus and Lebanon and Antilebanon and all who lived along the seacoast,"
+    },
+    {
+     "n": 8,
+     "t": "and those among the nations of Carmel and Gilead, and Upper Galilee and the great Plain of Esdraelon,"
+    },
+    {
+     "n": 9,
+     "t": "and all who were in Samaria and its surrounding towns, and beyond the Jordan as far as Jerusalem and Bethany and Chelous and Kadesh and the river of Egypt, and Tahpanhes and Raamses and the whole land of Goshen,"
+    },
+    {
+     "n": 10,
+     "t": "even beyond Tanis and Memphis, and all who lived in Egypt as far as the borders of Ethiopia."
+    },
+    {
+     "n": 11,
+     "t": "But all who lived in the whole region disregarded the orders of Nebuchadnezzar king of the Assyrians, and refused to join him in the war; for they were not afraid of him, but looked upon him as only one man, and they sent back his messengers empty-handed and shamefaced."
+    },
+    {
+     "n": 12,
+     "t": "Then Nebuchadnezzar was very angry with this whole region, and swore by his throne and kingdom that he would surely take revenge on the whole territory of Cilicia and Damascus and Syria, that he would kill them by the sword, and also all the inhabitants of the land of Moab, and the people of Ammon, and all Judea, and every one in Egypt, as far as the coasts of the two seas."
+    },
+    {
+     "n": 13,
+     "t": "In the seventeenth year he led his forces against King Arphaxad, and defeated him in battle, and overthrew the whole army of Arphaxad, and all his cavalry and all his chariots."
+    },
+    {
+     "n": 14,
+     "t": "Thus he took possession of his cities, and came to Ecbatana, captured its towers, plundered its markets, and turned its beauty into shame."
+    },
+    {
+     "n": 15,
+     "t": "He captured Arphaxad in the mountains of Ragae and struck him down with hunting spears; and he utterly destroyed him, to this day."
+    },
+    {
+     "n": 16,
+     "t": "Then he returned with them to Nineveh, he and all his combined forces, a vast body of troops; and there he and his forces rested and feasted for one hundred and twenty days. Jdt.2"
+    },
+    {
+     "n": 17,
+     "t": "He collected a vast number of camels and asses and mules for transport, and innumerable sheep and oxen and goats for provision;"
+    },
+    {
+     "n": 18,
+     "t": "also plenty of food for every man, and a huge amount of gold and silver from the royal palace."
+    },
+    {
+     "n": 19,
+     "t": "So he set out with his whole army, to go ahead of King Nebuchadnezzar and to cover the whole face of the earth to the west with their chariots and horsemen and picked troops of infantry."
+    },
+    {
+     "n": 20,
+     "t": "Along with them went a mixed crowd like a swarm of locusts, like the dust of the earth -- a multitude that could not be counted."
+    },
+    {
+     "n": 21,
+     "t": "They marched for three days from Nineveh to the plain of Bectileth, and camped opposite Bectileth near the mountain which is to the north of Upper Cilicia."
+    },
+    {
+     "n": 22,
+     "t": "From there Holofernes took his whole army, his infantry, cavalry, and chariots, and went up into the hill country"
+    },
+    {
+     "n": 23,
+     "t": "and ravaged Put and Lud, and plundered all the people of Rassis and the Ishmaelites who lived along the desert, south of the country of the Chelleans."
+    },
+    {
+     "n": 24,
+     "t": "Then he followed the Euphrates and passed through Mesopotamia and destroyed all the hilltop cities along the brook Abron, as far as the sea."
+    },
+    {
+     "n": 25,
+     "t": "He also seized the territory of Cilicia, and killed every one who resisted him, and came to the southern borders of Japheth, fronting toward Arabia."
+    },
+    {
+     "n": 26,
+     "t": "He surrounded all the Midianit es, and burned their tents and plundered their sheepfolds."
+    },
+    {
+     "n": 27,
+     "t": "Then he went down into the plain of Damascus during the wheat harvest, and burned all their fields and destroyed their flocks and herds and sacked their cities and ravaged their lands and put to death all their young men with the edge of the sword."
+    },
+    {
+     "n": 28,
+     "t": "So fear and terror of him fell upon all the people who lived along the seacoast, at Sidon and Tyre, and those who lived in Sur and Ocina and all who lived in Jamnia. Those who lived in Azotus and Ascalon feared him exceedingly. Jdt.3"
+    },
+    {
+     "n": 29,
+     "t": "Then great and general lamentation arose throughout the assembly, and they cried out to the Lord God with a loud voice."
+    },
+    {
+     "n": 30,
+     "t": "And Uzziah said to them, \"Have courage, my brothers! Let us hold out for five more days; by that time the Lord our God will restore to us his mercy, for he will not forsake us utterly."
+    },
+    {
+     "n": 31,
+     "t": "But if these days pass by, and no help comes for us, I will do what you say.\""
+    },
+    {
+     "n": 32,
+     "t": "Then he dismissed the people to their various posts, and they went up on the walls and towers of their city. The women and children he sent home. And they were greatly depressed in the city. Jdt.8"
+    },
+    {
+     "n": 33,
+     "t": "Stand at the city gate tonight, and I will go out with my maid; and within the days after which you have promised to surrender the city to our enemies, the Lord will deliver Israel by my hand."
+    },
+    {
+     "n": 34,
+     "t": "Only, do not try to find out what I plan; for I will not tell you until I have finished what I am about to do.\""
+    },
+    {
+     "n": 35,
+     "t": "Uzziah and the rulers said to her, \"Go in peace, and may the Lord God go before you, to take revenge upon our enemies.\""
+    },
+    {
+     "n": 36,
+     "t": "So they returned from the tent and went to their posts. Jdt.9"
+    }
+   ],
+   "page": 345,
+   "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf"
+  }
+ }
+}

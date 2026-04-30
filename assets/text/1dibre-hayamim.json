@@ -1,0 +1,3318 @@
+{
+ "id": "1dibre-hayamim",
+ "hebrew": "1 DIḆRĔ HAYAMIM",
+ "english": "1 Chronicles",
+ "section": "Kethubim",
+ "chapter_count": 29,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "CHRONICLES (1 ANNALS)"
+    },
+    {
+     "n": 2,
+     "t": "Qĕnan, Mahalal’ĕl, Yereḏ,"
+    },
+    {
+     "n": 3,
+     "t": "Ḥanoḵ, Methushelaḥ, Lemeḵ,"
+    },
+    {
+     "n": 4,
+     "t": "Noaḥ, Shĕm, Ḥam and Yepheth."
+    },
+    {
+     "n": 5,
+     "t": "The sons of Yepheth: Gomer and Maḡoḡ and Maḏai and Yawan and Tuḇal and Mesheḵ and Tiras."
+    },
+    {
+     "n": 6,
+     "t": "And the sons of Gomer: Ashkenaz and Diphath and Toḡarmah."
+    },
+    {
+     "n": 7,
+     "t": "And the sons of Yawan: Elishah and Tarshishah, Kittim and Roḏanim."
+    },
+    {
+     "n": 8,
+     "t": "The sons of Ḥam: Kush and Mitsrayim, Put and Kena‛an."
+    },
+    {
+     "n": 9,
+     "t": "And the sons of Kush: Seḇa and Ḥawilah and Saḇta and Ra‛mah and Saḇteḵa. And the sons of Ra‛mah: Sheḇa and Deḏan."
+    },
+    {
+     "n": 10,
+     "t": "And Kush brought forth Nimroḏ; he began to be a mighty one on the earth."
+    },
+    {
+     "n": 11,
+     "t": "And Mitsrayim brought forth the Luḏim and the Anamim and the Lehaḇim and the Naphtuḥim,"
+    },
+    {
+     "n": 12,
+     "t": "and the Pathrusim and the Kasluḥim from whom came the Philistines and the Kaphtorim."
+    },
+    {
+     "n": 13,
+     "t": "And Kena‛an brought forth Tsiḏon, his first-born and Ḥĕth,"
+    },
+    {
+     "n": 14,
+     "t": "and the Yeḇusite and the Amorite and the Girgashite,"
+    },
+    {
+     "n": 15,
+     "t": "and the Ḥiwwite and the Arqite and the Sinite,"
+    },
+    {
+     "n": 16,
+     "t": "and the Arwaḏite and the Tsemarite and the Ḥamathite."
+    },
+    {
+     "n": 17,
+     "t": "The sons of Shĕm: Ĕylam and Asshur and Arpaḵshaḏ and Luḏ and Aram and Uts, Ḥul and Gether and Mesheḵ."
+    },
+    {
+     "n": 18,
+     "t": "And Arpaḵshaḏ brought forth Shelaḥ and Shelaḥ brought forth Ĕḇer."
+    },
+    {
+     "n": 19,
+     "t": "To Ĕḇer were born two sons: the name of one was Peleḡ, for in his days the earth was divided and his brother’s name was Yoqtan."
+    },
+    {
+     "n": 20,
+     "t": "And Yoqtan brought forth Almoḏaḏ and Sheleph and Ḥatsarmaweth and Yeraḥ,"
+    },
+    {
+     "n": 21,
+     "t": "and Haḏoram and Uzal and Diqlah,"
+    },
+    {
+     "n": 22,
+     "t": "and Ĕyḇal and Aḇima’ĕl and Sheḇa,"
+    },
+    {
+     "n": 23,
+     "t": "and Ophir and Ḥawilah and Yoḇaḇ. All these were the sons of Yoqtan."
+    },
+    {
+     "n": 24,
+     "t": "Shĕm, Arpaḵshaḏ, Shĕlah,"
+    },
+    {
+     "n": 25,
+     "t": "Ĕḇer, Peleḡ, Re‛u,"
+    },
+    {
+     "n": 26,
+     "t": "Seruḡ, Naḥor, Teraḥ,"
+    },
+    {
+     "n": 27,
+     "t": "and Aḇram, that is Aḇrahim."
+    },
+    {
+     "n": 28,
+     "t": "The sons of Aḇraham: Yitsḥaq and Yishma‛ĕl."
+    },
+    {
+     "n": 29,
+     "t": "These are their genealogies: The first- born of Yishma‛ĕl was Neḇayoth and Qĕḏar and Aḏbe’ĕl and Miḇsam,"
+    },
+    {
+     "n": 30,
+     "t": "Mishma and Dumah and Massa, Haḏaḏ and Tĕma,"
+    },
+    {
+     "n": 31,
+     "t": "Yetur, Naphish and Qĕḏemah. These were the sons of Yishma‛ĕl."
+    },
+    {
+     "n": 32,
+     "t": "And the sons born to Qeturah, Aḇraham’s concubine: Zimran and Yoqshan and Meḏan and Miḏyan and Yishbaq and Shuwaḥ. The sons of Yoqshan: Sheḇa and Deḏan."
+    },
+    {
+     "n": 33,
+     "t": "And the sons of Miḏyan: Ĕphah and Ĕpher and Ḥanoḵ and Aḇiḏa and Elda‛ah. All these were the children of Qeturah."
+    },
+    {
+     "n": 34,
+     "t": "And Aḇrahim brought forth Yitsḥaq. The sons of Yitsḥaq: Ĕsaw and Yisra’ĕl."
+    },
+    {
+     "n": 35,
+     "t": "The sons of Ĕsaw: Eliphaz, Re‛uw’ĕl and Ye‛ush and Ya‛lam and Qoraḥ."
+    },
+    {
+     "n": 36,
+     "t": "And the sons of Eliphaz: Tĕman and Omar, Tsephi and Gatam and Qenaz and Timna and Amalĕq."
+    },
+    {
+     "n": 37,
+     "t": "The sons of Re‛uw’ĕl: Naḥath, Zeraḥ, Shammah and Mizzah."
+    },
+    {
+     "n": 38,
+     "t": "And the sons of Sĕ‛ir: Lotan and Shoḇal and Tsiḇ‛on and Anah and Dishon and Ĕtser and Dishan."
+    },
+    {
+     "n": 39,
+     "t": "And the sons of Lotan: Ḥori and Homam; Lotan’s sister was Timna."
+    },
+    {
+     "n": 40,
+     "t": "The sons of Shoḇal: Alyan and Manaḥath and Ĕyḇal, Shephi and Onam. daughter of Shuwa, the Kena‛anitess. And Ĕr, the first-born of Yahuḏah, was evil in the eyes of HWHY and He slew him."
+    },
+    {
+     "n": 41,
+     "t": "The son of Anah was Dishon. The sons of Dishon: Ḥamran and Eshban and Yithran and Keran."
+    },
+    {
+     "n": 42,
+     "t": "The sons of Ĕtser: Bilhan and Za‛awan and Ya‛aqan. The sons of Dishan: Uts and Aran."
+    },
+    {
+     "n": 43,
+     "t": "And these were the sovereigns who reigned in the land of Eḏom before any sovereign reigned over the children of Yisra’ĕl: Bela son of Be‛or and the name of his city was Dinhaḇah."
+    },
+    {
+     "n": 44,
+     "t": "And when Bela died, Yoḇaḇ son of Zeraḥ of Botsrah reigned in his place."
+    },
+    {
+     "n": 45,
+     "t": "And Yoḇaḇ died and Ḥusham of the land of the Tĕmanites reigned in his place."
+    },
+    {
+     "n": 46,
+     "t": "And when Ḥusham died, Haḏaḏ son of Beḏaḏ, who smote Miḏyan in the field of Mo’aḇ, reigned in his place. The name of his city was Awith."
+    },
+    {
+     "n": 47,
+     "t": "And Haḏaḏ died and Samlah of Masrĕqah reigned in his place."
+    },
+    {
+     "n": 48,
+     "t": "And Samlah died and Sha’ul of Reḥoḇoth-by-the-River reigned in his place."
+    },
+    {
+     "n": 49,
+     "t": "And Sha’ul died and Ba‛al-Ḥanan son of Aḵbor reigned in his place."
+    },
+    {
+     "n": 50,
+     "t": "And Ba‛al-Ḥanan died and Haḏaḏ reigned in his place. And the name of his city was Pai. And his wife’s name was Mehĕtab’ĕl the daughter of Matrĕḏ, the daughter of Mĕyzahaḇ."
+    },
+    {
+     "n": 51,
+     "t": "And Haḏaḏ died. And the chiefs of Eḏom were Chief Timnah, Chief Alyah, Chief Yethĕth,"
+    },
+    {
+     "n": 52,
+     "t": "Chief Oholiḇamah, Chief Ĕlah, Chief Pinon,"
+    },
+    {
+     "n": 53,
+     "t": "Chief Qenaz, Chief Tĕman, Chief Miḇtsar,"
+    },
+    {
+     "n": 54,
+     "t": "Chief Maḡdi’ĕl and Chief Iram. These were the chiefs of Eḏom."
+    }
+   ],
+   "page": 235,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "These were the sons of Yisra’ĕl: Re’uḇĕn, Shim‛on, Lĕwi and Yahuḏah, Yissasḵar and Zeḇulun,"
+    },
+    {
+     "n": 2,
+     "t": "Dan, Yosĕph and Binyamin, Naphtali, Gaḏ and Ashĕr."
+    },
+    {
+     "n": 3,
+     "t": "The sons of Yahuḏah: Ĕr and Onan and Shĕlah, the three born to him by the 937"
+    }
+   ],
+   "page": 236,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And these were the sons of Dawiḏ who were born to him in Ḥeḇron: The first-born was Amnon, by Aḥino‛am the Yizre‛ĕlitess; the second, Dani’ĕl, by Aḇiḡayil the Karmelitess;"
+    },
+    {
+     "n": 2,
+     "t": "the third, Aḇshalom son of Ma‛aḵah, the daughter of Talmai, sovereign of Geshur; the fourth, Aḏoniyah son of Ḥaggith;"
+    },
+    {
+     "n": 3,
+     "t": "the fifth, Shephatyah, by Aḇital; the sixth, Yithre‛am, by his wife Eḡlah."
+    },
+    {
+     "n": 4,
+     "t": "Six were born to him in Ḥeḇron. And he reigned there seven years and six months and in Yerushalayim he reigned thirty-three years."
+    },
+    {
+     "n": 5,
+     "t": "And these were born to him in Yerushalayim: Shim‛a and Shoḇaḇ and Nathan and Shelomoh – four by Bathshua the daughter of Ammi’ĕl."
+    },
+    {
+     "n": 6,
+     "t": "Yiḇḥar also and Elishama and Eliphelet,"
+    },
+    {
+     "n": 7,
+     "t": "and Noḡah and Nepheḡ and Yaphiya,"
+    },
+    {
+     "n": 8,
+     "t": "and Elishama and Elyaḏa and Eliphelet, nine,"
+    },
+    {
+     "n": 9,
+     "t": "all the sons of Dawiḏ, besides the sons of the concubines and Tamar their sister."
+    },
+    {
+     "n": 10,
+     "t": "And Shelomoh’s son was Reḥaḇ‛am, Aḇiyah his son, Asa his son, Yehoshaphat his son,"
+    },
+    {
+     "n": 11,
+     "t": "Yoram his son, Aḥazyahu his son, Yo’ash his son,"
+    },
+    {
+     "n": 12,
+     "t": "Amatsyahu his son, Azaryah his son, Yotham his son,"
+    },
+    {
+     "n": 13,
+     "t": "Aḥaz his son, Ḥizqiyahu his son, Menashsheh his son,"
+    },
+    {
+     "n": 14,
+     "t": "Amon his son, Yoshiyahu his son."
+    },
+    {
+     "n": 15,
+     "t": "And the sons of Yoshiyahu: Yoḥanan the first-born, the second Yehoyaqim, the third Tsiḏqiyahu, the fourth Shallum."
+    },
+    {
+     "n": 16,
+     "t": "And the sons of Yehoyaqim: Yeḵonyah his son and Tsiḏqiyah his son."
+    },
+    {
+     "n": 17,
+     "t": "And the sons of Yeḵonyah the captive: She’alti’ĕl his son,"
+    },
+    {
+     "n": 18,
+     "t": "and Malkiram and Peḏayah and Shenatstsar, Yeqamyah, Hoshama and Neḏaḇyah."
+    },
+    {
+     "n": 19,
+     "t": "And the sons of Peḏayah: Zerubbaḇel and Shim‛i. The sons of Zerubbaḇel: Meshullam and Ḥananyah and Shelomith their sister,"
+    },
+    {
+     "n": 20,
+     "t": "and Ḥashuḇah and Ohel and Bereḵyah and Ḥasaḏyah, Yushaḇ-Ḥeseḏ, five."
+    },
+    {
+     "n": 21,
+     "t": "And the sons of Ḥananyah: Pelatyah and Yeshayah, the sons of Rephayah, the sons of Arnan, the sons of Oḇaḏyah, the sons of Sheḵanyah."
+    },
+    {
+     "n": 22,
+     "t": "And the son of Sheḵanyah: Shemayah. The sons of Shemayah: Ḥattush and Yiḡ’al and Bariyaḥ and Ne‛aryah and Shaphat, six."
+    },
+    {
+     "n": 23,
+     "t": "And the sons of Ne‛aryah: Elyo‛ĕynai and Ḥizqiyah and Azriqam, three."
+    },
+    {
+     "n": 24,
+     "t": "And the sons of Elyo‛ĕynai: Hoḏawyah and Elyashiḇ and Pelayah and Aqquḇ and Yoḥanan and Delayah and Anani, seven."
+    }
+   ],
+   "page": 237,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The sons of Yahuḏah: Perets, Ḥetsron and Karmi and Ḥur and Shoḇal."
+    },
+    {
+     "n": 2,
+     "t": "And Re’ayah son of Shoḇal brought forth Yaḥath and Yaḥath brought forth Aḥumai and Lahaḏ. These were the clans of the Tsor‛athites."
+    },
+    {
+     "n": 3,
+     "t": "And these were of the father of Ĕytam: Yizre‛ĕl and Yishma and Yiḏbash. And the name of their sister was Hatselelponi;"
+    },
+    {
+     "n": 4,
+     "t": "and Penu’ĕl was the father of Geḏor and Ĕzer was the father of Ḥushah. These were the sons of Ḥur, the first- born of Ephrathah the father of Bĕyth Leḥem."
+    },
+    {
+     "n": 5,
+     "t": "And Ashḥur the father of Teqowa had two wives, Ḥelah and Na‛arah."
+    },
+    {
+     "n": 6,
+     "t": "And Na‛arah bore him Ahuzzam and Ḥĕpher and Tĕmeni and Ha’aḥashtari. These were the sons of Na‛arah."
+    },
+    {
+     "n": 7,
+     "t": "And the sons of Ḥelah: Tsereth and Tsoḥar and Ethnan;"
+    },
+    {
+     "n": 8,
+     "t": "and Qots brought forth Anuḇ and Tsoḇĕḇah and the clans of Aḥarḥĕl son of Harum."
+    },
+    {
+     "n": 9,
+     "t": "And Yaḇĕts was more esteemed than his brothers and his mother called his name Yaḇĕts, saying, “Because I bore him in pain.” 939"
+    },
+    {
+     "n": 10,
+     "t": "And Yaḇĕts called on the Elohim of Yisra’ĕl saying, “Oh, that You would bless me indeed and enlarge my border and that Your hand would be with me and that You would keep me from evil, not to be my pain!” And Elohim gave him what he asked."
+    },
+    {
+     "n": 11,
+     "t": "And Keluḇ the brother of Shuḥah brought forth Meḥir, who was the father of Eshton."
+    },
+    {
+     "n": 12,
+     "t": "And Eshton brought forth BĕythRapha and Pasĕaḥ and Teḥinnah the father of Ir-Naḥash. These were the men of Rĕḵah."
+    },
+    {
+     "n": 13,
+     "t": "And the sons of Qenaz: Othni’ĕl and Serayah. And sons of Othni’ĕl: Ḥathath,"
+    },
+    {
+     "n": 14,
+     "t": "and Me‛onothai, who brought forth Ophrah. And Serayah brought forth Yo’aḇ the father of Gĕ-Ḥarashim, for they were craftsmen."
+    },
+    {
+     "n": 15,
+     "t": "And the sons of Kalĕḇ the son of Yephunneh: Iru, Ĕlah and Na‛am. And the son of Ĕlah was Qenaz."
+    },
+    {
+     "n": 16,
+     "t": "And the sons of Yehallel’ĕl: Ziph and Ziphah, Tireya and Asar’ĕl."
+    },
+    {
+     "n": 17,
+     "t": "And the sons of Ezrah: Yether and Mereḏ and Ĕpher and Yalon. And she bore Miryam and Shammai and Yishbaḥ the father of Eshtemoa."
+    },
+    {
+     "n": 18,
+     "t": "And his wife Yehuḏiyah bore Yereḏ the father of Geḏor and Ḥeḇer the father of Soḵo and Yequthi’ĕl the father of Zanowaḥ. And these were the sons of Bithyah the daughter of Pharaoh, whom Mereḏ took."
+    },
+    {
+     "n": 19,
+     "t": "And the sons of Hoḏiyah’s wife, the sister of Naḥam, were the fathers of Qe‛ilah the Garmite and of Eshtemoa the Ma‛aḵathite."
+    },
+    {
+     "n": 20,
+     "t": "And the sons of Shimon: Amnon and Rinnah, Ben-Ḥanan and Tulon. And the sons of Yishi: Zoḥĕth and Ben-Zoḥĕth."
+    },
+    {
+     "n": 21,
+     "t": "The sons of Shĕlah the son of Yahuḏah: Ĕr the father of Lĕḵah and La‛dah the father of Marĕshah and the clans of the house of the linen workers of the house of Ashbĕa;"
+    },
+    {
+     "n": 22,
+     "t": "and Yoqim and the men of Kozĕḇa and Yo’ash and Saraph who ruled in Mo’aḇ and Yashuḇi-Leḥem. But the records were ancient."
+    },
+    {
+     "n": 23,
+     "t": "These were the potters and those who dwell at Neta‛im and Geḏĕrah; there they dwelt with the sovereign for his work."
+    },
+    {
+     "n": 24,
+     "t": "The sons of Shim‛on: Nemu’ĕl and Yamin, Yariḇ, Zeraḥ, Sha’ul,"
+    },
+    {
+     "n": 25,
+     "t": "Shallum his son, Miḇsam his son, Mishma his son."
+    },
+    {
+     "n": 26,
+     "t": "And the sons of Mishma: Ḥammu’ĕl his son, Zakkur his son, Shim‛i his son."
+    },
+    {
+     "n": 27,
+     "t": "And Shim‛i had sixteen sons and six daughters, but his brothers did not have many children, nor did any of their clans increase as much as the children of Yahuḏah."
+    },
+    {
+     "n": 28,
+     "t": "And they dwelt at Be’ĕrsheḇa and Molaḏah and Ḥatsar Shu‛al,"
+    },
+    {
+     "n": 29,
+     "t": "and at Bilhah and at Etsem and at Tolaḏ,"
+    },
+    {
+     "n": 30,
+     "t": "and at Bethu’ĕl and at Ḥormah and at Tsiqlaḡ,"
+    },
+    {
+     "n": 31,
+     "t": "and at Bĕyth Markaḇoth and at Ḥatsar Susim and at Bĕyth Bir‛i and at Sha‛arayim. These were their cities until the reign of Dawiḏ."
+    },
+    {
+     "n": 32,
+     "t": "And their villages were Ĕytam and Ayin and Rimmon and Toḵen and Ashan, five cities,"
+    },
+    {
+     "n": 33,
+     "t": "and all the villages that were around these cities as far as Ba‛al. These were their dwelling places and they kept their genealogy."
+    },
+    {
+     "n": 34,
+     "t": "And Meshoḇaḇ and Yamlĕḵ and Yoshah son of Amatsyah;"
+    },
+    {
+     "n": 35,
+     "t": "and Yo’ĕl and Yĕhu son of Yoshiḇyah, son of Serayah, son of Asi’ĕl;"
+    },
+    {
+     "n": 36,
+     "t": "and Elyo‛ĕynai and Ya‛aqoḇah and Yeshoḥayah and Asayah and Aḏi’ĕl and Yesimi’ĕl and Benayah;"
+    },
+    {
+     "n": 37,
+     "t": "and Ziza son of Shiphi, son of Allon, son of Yeḏayah, son of Shimri, son of Shemayah."
+    },
+    {
+     "n": 38,
+     "t": "These mentioned by name were leaders in their clans and their father’s house increased greatly."
+    },
+    {
+     "n": 39,
+     "t": "And they went to the entrance of Geḏor, as far as the east side of the valley, to look for pasture for their flocks,"
+    },
+    {
+     "n": 40,
+     "t": "and they found rich, good pasture, and the land was broad, undisturbed and safe, for some Ḥamites had dwelt there formerly."
+    },
+    {
+     "n": 41,
+     "t": "And these written by name came in the days of Ḥizqiyahu sovereign of Yahuḏah and smote their tents and the homes that were found there and put them under the ban, as it is to this day and dwelt in their place, because there was pasture for their flocks there."
+    },
+    {
+     "n": 42,
+     "t": "And some of them, five hundred men of the sons of Shim‛on, went to Mount Sĕ‛ir, having as their chiefs Pelatyah and Ne‛aryah and Rephayah and Uzzi’ĕl, the sons of Yishi."
+    },
+    {
+     "n": 43,
+     "t": "And they smote the rest of the Amalĕqites who had escaped and dwelt there to this day."
+    }
+   ],
+   "page": 238,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "As for the sons of Re’uḇĕn the first born of Yisra’ĕl – he was the first born, but because he profaned his father’s bed, his birthright was given to the sons of Yosĕph, son of Yisra’ĕl, so that the genealogy is not listed according to the birthright,"
+    },
+    {
+     "n": 2,
+     "t": "for Yahuḏah prevailed over his brothers and from him came a ruler, although the birthright was Yosĕph’s –"
+    },
+    {
+     "n": 3,
+     "t": "the sons of Re’uḇĕn the first-born of Yisra’ĕl: Ḥanoḵ and Pallu, Ḥetsron and Karmi."
+    },
+    {
+     "n": 4,
+     "t": "The sons of Yo’ĕl: Shemayah his son, Goḡ his son, Shim‛i his son,"
+    },
+    {
+     "n": 5,
+     "t": "Miḵah his son, Re’ayah his son, Ba‛al his son,"
+    },
+    {
+     "n": 6,
+     "t": "and Be’ĕrah his son, whom Tiglath Pileser sovereign of Ashshur took into exile. He was leader of the Re’uḇĕnites."
+    },
+    {
+     "n": 7,
+     "t": "And his brothers by their clans, when the genealogy of their generations was registered: the chief, Ye‛i’ĕl and Zeḵaryahu,"
+    },
+    {
+     "n": 8,
+     "t": "and Bela son of Azaz, son of Shema, son of Yo’ĕl, who dwelt in Aro‛ĕr, as far as Neḇo and Ba‛al Me‛on."
+    },
+    {
+     "n": 9,
+     "t": "And he dwelt eastward as far as the entrance of the wilderness from the River Euphrates, because their livestock had increased in the land of Gil‛aḏ."
+    },
+    {
+     "n": 10,
+     "t": "And in the days of Sha’ul they fought against the Haḡrites, who fell by their hand. And they dwelt in their tents over all the eastern part of Gil‛aḏ."
+    },
+    {
+     "n": 11,
+     "t": "And the children of Gaḏ dwelt next to them in the land of Bashan as far as Salḵah:"
+    },
+    {
+     "n": 12,
+     "t": "Yo’ĕl was the chief, Shapham the next, then Ya‛anai and Shaphat in Bashan;"
+    },
+    {
+     "n": 13,
+     "t": "and their brothers of their father’s house: Miḵa’ĕl and Meshullam and Sheḇa and Yorai and Yakan and Ziya and Ĕḇer, seven."
+    },
+    {
+     "n": 14,
+     "t": "These were the children of Aḇiḥayil son of Ḥuri, son of Yarowaḥ, son of Gil‛aḏ, son of Miḵa’ĕl, son of Yeshishai, son of Yaḥdo, son of Buz;"
+    },
+    {
+     "n": 15,
+     "t": "Aḥi son of Aḇdi’ĕl, son of Guni, was chief of their father’s house."
+    },
+    {
+     "n": 16,
+     "t": "And they dwelt in Gil‛aḏ, in Bashan and in its villages and in all the open lands of Sharon within their borders."
+    },
+    {
+     "n": 17,
+     "t": "All these were registered by genealo gies in the days of Yotham sovereign of Yahuḏah and in the days of Yaroḇ‛am sovereign of Yisra’ĕl."
+    },
+    {
+     "n": 18,
+     "t": "The sons of Re’uḇĕn and the Gaḏites and half the tribe of Menashsheh had fortyfour thousand seven hundred and sixty brave men, men able to bear shield and sword, to shoot with the bow and skilled in battle, going out to the army."
+    },
+    {
+     "n": 19,
+     "t": "And they fought against the Haḡrites and Yetur and Naphish and Noḏaḇ."
+    },
+    {
+     "n": 20,
+     "t": "And they were helped against them and the Haḡrites were given into their hand and all who were with them. For they cried out to Elohim in the battle and He answered their prayer, because they put their trust in Him."
+    },
+    {
+     "n": 21,
+     "t": "And they took away their livestock: fifty thousand camels and two hundred and fifty thousand of their sheep and two thousand of their donkeys, also one hundred thousand of their men,"
+    },
+    {
+     "n": 22,
+     "t": "for many fell dead, because the battle was of Elohim. And they dwelt in their place until the exile."
+    },
+    {
+     "n": 23,
+     "t": "And the children of the half-tribe of Menashsheh dwelt in the land. They increased from Bashan to Ba‛al Ḥermon, that is, to Senir, or Mount Ḥermon. 941"
+    },
+    {
+     "n": 24,
+     "t": "And these were the heads of their fathers’ houses: Ĕpher and Yishi and Eli’ĕl and Azri’ĕl and Yirmeyah, Hoḏawyah and Yaḥdi’ĕl – mighty brave men, men of name and heads of their fathers’ houses."
+    },
+    {
+     "n": 25,
+     "t": "But they trespassed against the Elohim of their fathers and whored after the mighty ones of the peoples of the land, whom Elohim had destroyed before them."
+    },
+    {
+     "n": 26,
+     "t": "So the Elohim of Yisra’ĕl stirred up the spirit of Pul sovereign of Ashshur, even the spirit of Tiglath-Pileser sovereign of Ashshur. And he took the Re’uḇĕnites and the Gaḏites and the half-tribe of Menashsheh into exile and brought them to Ḥalaḥ and Ḥaḇor and Hara and the river of Gozan, unto this day."
+    }
+   ],
+   "page": 240,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The sons of Lĕwi: Gĕreshom, Qehath and Merari."
+    },
+    {
+     "n": 2,
+     "t": "And the sons of Qehath: Amram, Yitshar and Ḥeḇron and Uzzi’ĕl."
+    },
+    {
+     "n": 3,
+     "t": "And the children of Amram: Aharon and Mosheh and Miryam. And the sons of Aharon: Naḏaḇ and Aḇihu, El‛azar and Ithamar."
+    },
+    {
+     "n": 4,
+     "t": "El‛azar brought forth Pineḥas, Pineḥas brought forth Aḇishua;"
+    },
+    {
+     "n": 5,
+     "t": "and Aḇishua brought forth Buqqi and Buqqi brought forth Uzzi;"
+    },
+    {
+     "n": 6,
+     "t": "and Uzzi brought forth Zeraḥyah and Zeraḥyah brought forth Merayoth;"
+    },
+    {
+     "n": 7,
+     "t": "Merayoth brought forth Amaryah and Amaryah brought forth Aḥituḇ;"
+    },
+    {
+     "n": 8,
+     "t": "and Aḥituḇ brought forth Tsaḏoq and Tsaḏoq brought forth Aḥima‛ats;"
+    },
+    {
+     "n": 9,
+     "t": "and Aḥima‛ats brought forth Azaryah and Azaryah brought forth Yoḥanan;"
+    },
+    {
+     "n": 10,
+     "t": "and Yoḥanan brought forth Azaryah – it was he who served as priest in the House that Shelomoh built in Yerushalayim;"
+    },
+    {
+     "n": 11,
+     "t": "and Azaryah brought forth Amaryah and Amaryah brought forth Aḥituḇ;"
+    },
+    {
+     "n": 12,
+     "t": "and Aḥituḇ brought forth Tsaḏoq and Tsaḏoq brought forth Shallum;"
+    },
+    {
+     "n": 13,
+     "t": "and Shallum brought forth Ḥilqiyah and Ḥilqiyah brought forth Azaryah;"
+    },
+    {
+     "n": 14,
+     "t": "and Azaryah brought forth Serayah and Serayah brought forth Yehotsaḏaq."
+    },
+    {
+     "n": 15,
+     "t": "And Yehotsaḏaq went away when HWHY sent Yahuḏah and Yerushalayim into exile by the hand of Neḇuḵaḏnetstsar."
+    },
+    {
+     "n": 16,
+     "t": "The sons of Lĕwi: Gĕreshom, Qehath and Merari."
+    },
+    {
+     "n": 17,
+     "t": "And these are the names of the sons of Gĕreshom: Liḇni and Shim‛i."
+    },
+    {
+     "n": 18,
+     "t": "And the sons of Qehath: Amram and Yitshar and Ḥeḇron and Uzzi’ĕl."
+    },
+    {
+     "n": 19,
+     "t": "The sons of Merari: Maḥli and Mushi. And these are the clans of the Lĕwites according to their fathers:"
+    },
+    {
+     "n": 20,
+     "t": "Of Gĕreshom were Liḇni his son, Yaḥath his son, Zimmah his son,"
+    },
+    {
+     "n": 21,
+     "t": "Yo’aḥ his son, Iddo his son, Zeraḥ his son, Ye’atherai his son."
+    },
+    {
+     "n": 22,
+     "t": "The sons of Qehath: Amminaḏaḇ his son, Qoraḥ his son, Assir his son,"
+    },
+    {
+     "n": 23,
+     "t": "Elqanah his son, Eḇyasaph his son, Assir his son,"
+    },
+    {
+     "n": 24,
+     "t": "Taḥath his son, Uri’ĕl his son, Uzziyah his son and Sha’ul his son."
+    },
+    {
+     "n": 25,
+     "t": "And the sons of Elqanah: Amasai and Aḥimoth."
+    },
+    {
+     "n": 26,
+     "t": "Elqanah – the sons of Elqanah: Tsophai his son and Naḥath his son,"
+    },
+    {
+     "n": 27,
+     "t": "Eliyaḇ his son, Yeroḥam his son, Elqanah his son."
+    },
+    {
+     "n": 28,
+     "t": "And the sons of Shemu’ĕl: Yo’Ãl the first-born and Aḇiyah the second."
+    },
+    {
+     "n": 29,
+     "t": "The sons of Merari: Maḥli, Liḇni his son, Shim‛i his son, Uzzah his son,"
+    },
+    {
+     "n": 30,
+     "t": "Shim‛a his son, Ḥaggiyah his son and Asayah his son."
+    },
+    {
+     "n": 31,
+     "t": "And these are the men whom Dawiḏ appointed over the service of song in the House of HWHY, after the ark came to rest."
+    },
+    {
+     "n": 32,
+     "t": "And they were rendering service in song before the dwelling place of the Tent of Meeting, until Shelomoh had built the House of HWHY in Yerushalayim and they performed their duties according to their ruling."
+    },
+    {
+     "n": 33,
+     "t": "And these are the ones who stood with their sons: Of the sons of the Qehathites were Hĕman the singer, son of Yo’ĕl, son of Shemu’ĕl,"
+    },
+    {
+     "n": 34,
+     "t": "son of Elqanah, son of Yeroḥam, son of Eli’ĕl, son of Towaḥ,"
+    },
+    {
+     "n": 35,
+     "t": "son of Tsuph, son of Elqanah, son of Maḥath, son of Amasai,"
+    },
+    {
+     "n": 36,
+     "t": "son of Elqanah, son of Yo’ĕl, son of Azaryah, son of Tsephanyah,"
+    },
+    {
+     "n": 37,
+     "t": "son of Taḥath, son of Assir, son of Eḇyasaph, son of Qoraḥ,"
+    },
+    {
+     "n": 38,
+     "t": "son of Yitshar, son of Qehath, son of Lĕwi, son of Yisra’ĕl."
+    },
+    {
+     "n": 39,
+     "t": "And his brother Asaph, who stood at his right hand, was Asaph son of Bereḵyahu, son of Shim‛a,"
+    },
+    {
+     "n": 40,
+     "t": "son of Miḵa’ĕl, son of Ba‛asĕyah, son of Malkiyah,"
+    },
+    {
+     "n": 41,
+     "t": "son of Ethni, son of Zeraḥ, son of Aḏayah,"
+    },
+    {
+     "n": 42,
+     "t": "son of Ĕythan, son of Zimmah, son of Shim‛i,"
+    },
+    {
+     "n": 43,
+     "t": "son of Yaḥath, son of Gĕreshom, son of Lĕwi."
+    },
+    {
+     "n": 44,
+     "t": "And their brothers, the sons of Merari, on the left hand, were Ĕythan son of Qishi, son of Aḇdi, son of Malluḵ,"
+    },
+    {
+     "n": 45,
+     "t": "son of Ḥashaḇyah, son of Amatsyah, son of Ḥilqiyah,"
+    },
+    {
+     "n": 46,
+     "t": "son of Amtsi, son of Bani, son of Shemer,"
+    },
+    {
+     "n": 47,
+     "t": "son of Maḥli, son of Mushi, son of Merari, son of Lĕwi."
+    },
+    {
+     "n": 48,
+     "t": "And their brothers, the Lĕwites, were appointed to every kind of service of the Dwelling Place of the House of Elohim."
+    },
+    {
+     "n": 49,
+     "t": "But Aharon and his sons offered on the altar of burnt offering and on the altar of incense, for all the work of the Most set-apart Place and to make atonement for Yisra’ĕl, according to all that Mosheh the servant of Elohim had commanded."
+    },
+    {
+     "n": 50,
+     "t": "And these are the sons of Aharon: El‛azar his son, Pineḥas his son, Aḇishua his son,"
+    },
+    {
+     "n": 51,
+     "t": "Buqqi his son, Uzzi his son, Zeraḥyah his son,"
+    },
+    {
+     "n": 52,
+     "t": "Merayoth his son, Amaryah his son, Aḥituḇ his son,"
+    },
+    {
+     "n": 53,
+     "t": "Tsaḏoq his son, Aḥima‛ats his son."
+    },
+    {
+     "n": 54,
+     "t": "And these were their dwelling places throughout their settlements within their borders, of the sons of Aharon, of the clan of the Qehathites, for the lot was theirs."
+    },
+    {
+     "n": 55,
+     "t": "And they gave them Ḥeḇron in the land of Yahuḏah, with its surrounding open lands."
+    },
+    {
+     "n": 56,
+     "t": "But the fields of the city and its villages they gave to Kalĕḇ son of Yephunneh."
+    },
+    {
+     "n": 57,
+     "t": "And to the sons of Aharon they gave the cities of refuge: Ḥeḇron and Liḇnah with its open lands and Yattir and Eshtemoa with its open lands,"
+    },
+    {
+     "n": 58,
+     "t": "and Ḥilĕn with its open lands, Deḇir with its open lands,"
+    },
+    {
+     "n": 59,
+     "t": "and Ashan with its open lands and Bĕyth Shemesh with its open lands."
+    },
+    {
+     "n": 60,
+     "t": "And from the tribe of Binyamin: Geḇa with its open lands and Alemeth with its open lands and Anathoth with its open lands. All their cities among their clans were thirteen."
+    },
+    {
+     "n": 61,
+     "t": "And to the rest of the clan of the tribe of the Qehathites by lot ten cities from half the tribe of Menashsheh."
+    },
+    {
+     "n": 62,
+     "t": "And to the sons of Gĕreshom, throughout their clans, thirteen cities from the tribe of Yissasḵar and from the tribe of Ashĕr and from the tribe of Naphtali and from the tribe of Menashsheh in Bashan."
+    },
+    {
+     "n": 63,
+     "t": "To the sons of Merari, throughout their clans, by lot twelve cities from the tribe of Re’uḇĕn and from the tribe of Gaḏ and from the tribe of Zeḇulun."
+    },
+    {
+     "n": 64,
+     "t": "So the children of Yisra’ĕl gave cities with their open lands to the Lĕwites."
+    },
+    {
+     "n": 65,
+     "t": "And they gave by lot from the tribe of the children of Yahuḏah and from the tribe of the children of Shim‛on and from the tribe of the children of Binyamin these cities which are mentioned by name."
+    },
+    {
+     "n": 66,
+     "t": "And some of the clans of the sons of Qehath had cities of their borders from the tribe of Ephrayim."
+    },
+    {
+     "n": 67,
+     "t": "And they gave them the cities of 943"
+    },
+    {
+     "n": 68,
+     "t": "and Yoqme‛am with its open lands and Bĕyth Ḥoron with its open lands,"
+    },
+    {
+     "n": 69,
+     "t": "and Ayalon with its open lands and Gath Rimmon with its open lands."
+    },
+    {
+     "n": 70,
+     "t": "And from the half-tribe of Menashsheh: Anĕr with its open lands and Bil‛am with its open lands, for the rest of the clan of the sons of Qehath."
+    },
+    {
+     "n": 71,
+     "t": "From the clan of the half-tribe of Menashsheh the sons of Gĕreshom: Golan in Bashan with its open lands and Ashtaroth with its open lands."
+    },
+    {
+     "n": 72,
+     "t": "And from the tribe of Yissasḵar: Qeḏesh with its open lands, Daḇerath with its open lands,"
+    },
+    {
+     "n": 73,
+     "t": "Ramoth with its open lands and Anĕm with its open lands."
+    },
+    {
+     "n": 74,
+     "t": "And from the tribe of Ashĕr: Mashal with its open lands and Aḇdon with its open lands,"
+    },
+    {
+     "n": 75,
+     "t": "and Ḥuqoq with its open lands and Reḥoḇ with its open lands."
+    },
+    {
+     "n": 76,
+     "t": "And from the tribe of Naphtali: Qeḏesh in Galil with its open lands and Ḥammon with its open lands and Qiryathayim with its open lands."
+    },
+    {
+     "n": 77,
+     "t": "From the tribe of Zeḇulun the rest of the children of Merari: Rimmon with its open lands and Taḇor with its open lands."
+    },
+    {
+     "n": 78,
+     "t": "And from beyond the Yardĕn of Yeriḥo, on the east side of the Yardĕn, from the tribe of Re’uḇĕn: Betser in the wilderness with its open lands and Yahtsah with its open lands,"
+    },
+    {
+     "n": 79,
+     "t": "Qeḏĕmoth with its open lands and Mĕpha‛ath with its open lands."
+    },
+    {
+     "n": 80,
+     "t": "And from the tribe of Gaḏ: Ramoth in Gil‛aḏ with its open lands and Maḥanayim with its open lands,"
+    },
+    {
+     "n": 81,
+     "t": "and Ḥeshbon with its open lands and Ya‛zĕr with its open lands."
+    }
+   ],
+   "page": 241,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "7": {
+   "verses": [],
+   "page": 244,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "DIḆRE haYAMIM 8"
+    }
+   ],
+   "page": 245,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 5,
+     "t": "And of the Shilonites: Asayah the first-born and his sons."
+    },
+    {
+     "n": 6,
+     "t": "And of the sons of Zeraḥ: Ye‛u’ĕl and their brothers, six hundred and ninety."
+    },
+    {
+     "n": 7,
+     "t": "And of the sons of Binyamin: Sallu son of Meshullam, son of Hoḏawyah, son of Hasenu’ah;"
+    },
+    {
+     "n": 8,
+     "t": "and Yiḇneyah son of Yeroḥam; and Ĕlah son of Uzzi, son of Miḵri; and Meshullam son of Shephatyah, son of Re‛uw’ĕl, son of Yiḇniyah;"
+    },
+    {
+     "n": 9,
+     "t": "and their brothers, according to their generations, nine hundred and fifty-six. All these men were heads of a father’s house in their fathers’ houses."
+    },
+    {
+     "n": 10,
+     "t": "And of the priests: Yeḏayah and Yehoyariḇ and Yaḵin;"
+    },
+    {
+     "n": 11,
+     "t": "and Azaryah son of Ḥilqiyah, son of Meshullam, son of Tsaḏoq, son of Merayoth, son of Aḥituḇ, the officer over the House of Elohim;"
+    },
+    {
+     "n": 12,
+     "t": "and Aḏayah son of Yeroḥam, son of Pashḥur, son of Malkiyah; and Ma‛asai son of Aḏi’ĕl, son of Yaḥzĕrah, son of Meshullam, son of Meshillĕmith, son of Immĕr;"
+    },
+    {
+     "n": 13,
+     "t": "and their brothers, heads of their fathers’ houses, one thousand seven hundred and sixty, able men for the work of the service of the House of Elohim."
+    },
+    {
+     "n": 14,
+     "t": "And of the Lĕwites: Shemayah son of Ḥashshuḇ, son of Azriqam, son of Ḥashaḇyah, of the sons of Merari;"
+    },
+    {
+     "n": 15,
+     "t": "and Baqbaqqar, Ḥeresh and Galal and Mattanyah son of Miḵa, son of Ziḵri, son of Asaph;"
+    },
+    {
+     "n": 16,
+     "t": "and Oḇaḏyah son of Shemayah, son of Galal, son of Yeḏuthun; and Bereḵyah son of Asa, son of Elqanah, who dwelt in the villages of the Netophathites."
+    },
+    {
+     "n": 17,
+     "t": "And the gatekeepers: Shallum and Aqquḇ and Talmon and Aḥiman and their brothers – Shallum the chief."
+    },
+    {
+     "n": 18,
+     "t": "And up til then they were gatekeepers for the camps of the children of Lĕwi at the Sovereign’s Gate on the east."
+    },
+    {
+     "n": 19,
+     "t": "And Shallum son of Qorĕ, son of Eḇyasaph, son of Qoraḥ and his brothers, from his father’s house, the Qorḥites, were over the work of the service, guards of the thresholds of the Tent. And their fathers had been guards of the entrance to the camp of HWHY."
+    },
+    {
+     "n": 20,
+     "t": "And Pineḥas son of El‛azar was leader over them in time past. HWHY was with him."
+    },
+    {
+     "n": 21,
+     "t": "Zeḵaryah son of Meshelemyah was gatekeeper at the entrance of the Tent of Meeting."
+    },
+    {
+     "n": 22,
+     "t": "All those chosen as gatekeepers at the thresholds were two hundred and twelve. They were registered by genealogy, in their villages. Dawiḏ and Shemu’ĕl the seer had appointed them to their office of trust."
+    },
+    {
+     "n": 23,
+     "t": "So they and their sons were over the gates of the House of HWHY, the House of the Tent, by watches."
+    },
+    {
+     "n": 24,
+     "t": "The gatekeepers were on the four sides: the east, west, north and south."
+    },
+    {
+     "n": 25,
+     "t": "And their brothers in their villages had to come with them from time to time for seven days."
+    },
+    {
+     "n": 26,
+     "t": "For the four chief gatekeepers were in an office of trust. They were Lĕwites and they were over the rooms and treasuries of the House of Elohim."
+    },
+    {
+     "n": 27,
+     "t": "And they spent the night all around the House of Elohim because they had the duty and they were to open it morning by morning."
+    },
+    {
+     "n": 28,
+     "t": "And some of them were over the vessels of service, for they brought them in and took them out by count."
+    },
+    {
+     "n": 29,
+     "t": "And some of them were appointed over the vessels, even over all the vessels of the set-apart place and over the fine flour and the wine and the oil and the incense and the spices."
+    },
+    {
+     "n": 30,
+     "t": "And some of the sons of the priests blended the compound of spices."
+    },
+    {
+     "n": 31,
+     "t": "And Mattithyah of the Lĕwites, the first-born of Shallum the Qorḥite, was entrusted with the making of the flat cakes."
+    },
+    {
+     "n": 32,
+     "t": "And some of their brothers of the sons of the Qehathites were over the showbread, to prepare every Sabbath."
+    },
+    {
+     "n": 33,
+     "t": "And these were the singers, heads of the fathers’ houses of the Lĕwites, in the rooms and were exempted from other duties, for they were employed in that 947"
+    },
+    {
+     "n": 34,
+     "t": "These heads of the fathers’ houses of the Lĕwites were heads throughout their generations. They dwelt at Yerushalayim."
+    },
+    {
+     "n": 35,
+     "t": "And Ye‛i’ĕl the father of Giḇ‛on, whose wife’s name was Ma‛aḵah, dwelt at Giḇ‛on."
+    },
+    {
+     "n": 36,
+     "t": "And his first-born son was Aḇdon, then Tsur and Qish and Ba‛al and Nĕr and Naḏaḇ,"
+    },
+    {
+     "n": 37,
+     "t": "and Geḏor and Aḥyo and Zeḵaryah and Miqloth."
+    },
+    {
+     "n": 38,
+     "t": "And Miqloth brought forth Shim‛am. And they too dwelt alongside their relatives in Yerushalayim, with their brothers."
+    },
+    {
+     "n": 39,
+     "t": "And Nĕr brought forth Qish and Qish brought forth Sha’ul and Sha’ul brought forth Yehonathan and Malkishua and Aḇinaḏaḇ and Esh-Ba‛al."
+    },
+    {
+     "n": 40,
+     "t": "And the son of Yehonathan was Meriḇ-Ba‛al and Meriḇ-Ba‛al brought forth Miḵah."
+    },
+    {
+     "n": 41,
+     "t": "And the sons of Miḵah: Pithon and Meleḵ and Taḥrĕa,"
+    },
+    {
+     "n": 42,
+     "t": "and Aḥaz, who brought forth Yarah; and Yarah brought forth Alemeth and Azmaweth and Zimri. And Zimri brought forth Motsa;"
+    },
+    {
+     "n": 43,
+     "t": "and Motsa brought forth Bin‛a and Rephayah was his son, El‛asah his son, Atsĕl his son."
+    },
+    {
+     "n": 44,
+     "t": "And Atsĕl had six sons whose names were these: Azriqam, Boḵeru and Yishma‛ĕl and She‛aryah and Oḇaḏyah and Ḥanan. These were the sons of Atsĕl."
+    }
+   ],
+   "page": 246,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And the Philistines fought against Yisra’ĕl. And the men of Yisra’ĕl fled from before the Philistines and fell slain on Mount Gilboa."
+    },
+    {
+     "n": 2,
+     "t": "And the Philistines pursued Sha’ul and his sons and the Philistines smote Yonathan and Aḇinaḏaḇ and Malkishua, sons of Sha’ul."
+    },
+    {
+     "n": 3,
+     "t": "And the battle was heavy on Sha’ul. And the archers hit him and he was wounded by the archers."
+    },
+    {
+     "n": 4,
+     "t": "And Sha’ul said to his armour-bearer, “Draw your sword and thrust me through with it, lest these uncircumcised ones come and abuse me.” But his armour-bearer would not, for he was much afraid, so Sha’ul took a sword and fell on it."
+    },
+    {
+     "n": 5,
+     "t": "And when his armour-bearer saw that Sha’ul was dead, he also fell on his sword and died."
+    },
+    {
+     "n": 6,
+     "t": "Thus Sha’ul and his three sons died and all his house – they died together."
+    },
+    {
+     "n": 7,
+     "t": "And when all the men of Yisra’ĕl who were in the valley saw that they had fled and that Sha’ul and his sons were dead, they forsook their cities and fled and the Philistines came and dwelt in them."
+    },
+    {
+     "n": 8,
+     "t": "And the next day it came to be, when the Philistines came to strip the slain, that they found Sha’ul and his sons fallen on Mount Gilboa."
+    },
+    {
+     "n": 9,
+     "t": "And they stripped him and took his head and his armour and sent word throughout the land of the Philistines to proclaim the news among their idols and among the people,"
+    },
+    {
+     "n": 10,
+     "t": "and put his armour in the house of their mighty ones and fastened his head in the house of Daḡon."
+    },
+    {
+     "n": 11,
+     "t": "And all Yaḇĕsh Gil‛aḏ heard of all that the Philistines had done to Sha’ul,"
+    },
+    {
+     "n": 12,
+     "t": "and all the brave men arose and took the body of Sha’ul and the bodies of his sons. And they brought them to Yaḇĕsh and buried their bones under the tamarisk tree at Yaḇĕsh and fasted seven days."
+    },
+    {
+     "n": 13,
+     "t": "Thus Sha’ul died for his trespass which he had trespassed against HWHY, because he did not guard the Word of HWHY and also for asking a medium for to make inquiry,"
+    },
+    {
+     "n": 14,
+     "t": "and did not inquire of HWHY. So He put him to death and turned the reign over to Dawiḏ son of Yishai."
+    }
+   ],
+   "page": 247,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 2,
+     "t": "“Also, in time past, even when Sha’ul was sovereign, you were the one who led Yisra’ĕl out and brought them in. And HWHY your Elohim said to you, ‘Shepherd My people Yisra’ĕl and be ruler over My people Yisra’ĕl.’ ”"
+    },
+    {
+     "n": 3,
+     "t": "So all the elders of Yisra’ĕl came to the sovereign at Ḥeḇron and Dawiḏ made a covenant with them at Ḥeḇron before HWHY. And they anointed Dawiḏ sovereign over Yisra’ĕl, according to the Word of HWHY by Shemu’ĕl."
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ and all Yisra’ĕl went to Yerushalayim, which is Yeḇus, where the Yeḇusites were, the inhabitants of the land."
+    },
+    {
+     "n": 5,
+     "t": "And the inhabitants of Yeḇus said to Dawiḏ, “You do not come in here.” But Dawiḏ captured the stronghold of Tsiyon, the City of Dawiḏ."
+    },
+    {
+     "n": 6,
+     "t": "And Dawiḏ said, “Whoever smites the Yeḇusites first becomes chief and commander.” And Yo’aḇ son of Tseruyah went up first and became chief."
+    },
+    {
+     "n": 7,
+     "t": "And Dawiḏ dwelt in the stronghold, so they called it the City of Dawiḏ."
+    },
+    {
+     "n": 8,
+     "t": "And he built the city around it, from Millo round about and Yo’aḇ revived the rest of the city."
+    },
+    {
+     "n": 9,
+     "t": "And Dawiḏ went on and became great and HWHY of hosts was with him."
+    },
+    {
+     "n": 10,
+     "t": "And these were the heads of the mighty men whom Dawiḏ had, who strengthened themselves with him in his reign, with all Yisra’ĕl, to set him up to reign over Yisraĕl, according to the Word of HWHY."
+    },
+    {
+     "n": 11,
+     "t": "And this is the number of the mighty men whom Dawiḏ had: Yashoḇ‛am son of a Ḥaḵmonite, chief of the thirty. He had lifted up his spear against three hundred, slain at one time."
+    },
+    {
+     "n": 12,
+     "t": "And after him was El‛azar son of Doḏo, the Aḥoḥite, who was one of the three mighty men."
+    },
+    {
+     "n": 13,
+     "t": "He was with Dawiḏ at Pasdammim and the Philistines were gathered there for battle and a portion of the field was filled with barley and the people had fled before the Philistines."
+    },
+    {
+     "n": 14,
+     "t": "But they took their stand in the midst of that field and delivered it and smote the Philistines. Thus HWHY saved them by a great deliverance."
+    },
+    {
+     "n": 15,
+     "t": "And three of the thirty chiefs went down to the rock to Dawiḏ, into the cave of Aḏullam, while the army of the Philistines encamped in the Valley of Repha’im."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ was then in the stronghold and the watch-post of the Philistines was then in Bĕyth Leḥem."
+    },
+    {
+     "n": 17,
+     "t": "And Dawiḏ longed and said, “Oh, that someone would give me a drink of water from the well of Bĕyth Leḥem, which is by the gate!”"
+    },
+    {
+     "n": 18,
+     "t": "And the three broke through the camp of the Philistines and drew water from the well of Bĕyth Leḥem that was by the gate and took it and brought it to Dawiḏ. But Dawiḏ would not drink it, but poured it out to HWHY."
+    },
+    {
+     "n": 19,
+     "t": "And he said, “Far be it from me, O my Elohim, that I should do this! Should I drink the blood of these men who have risked their lives? For at the risk of their lives they brought it.” And he would not drink it. This is what the three mighty men did."
+    },
+    {
+     "n": 20,
+     "t": "And Aḇishai the brother of Yo’aḇ was chief of another three. And he had lifted up his spear against three hundred men, who were slain and won a name among the three."
+    },
+    {
+     "n": 21,
+     "t": "Of the three he was more esteemed than the other two men, so he became their head. However he did not come to the first three."
+    },
+    {
+     "n": 22,
+     "t": "Benayah was the son of Yehoyaḏa, the son of a brave man from Qaḇtse’ĕl, who had done many deeds. He smote two lionlike Mo’aḇites. He also went down and smote a lion in the midst of a pit on a snowy day."
+    },
+    {
+     "n": 23,
+     "t": "And he smote a Mitsrite, a man of great height, five cubits tall. And in the Mitsrite’s hand was a spear like a weaver’s beam and he went down to him with a staff and wrenched the spear out of the Mitsrite’s hand and slew him with his own spear. 949"
+    },
+    {
+     "n": 24,
+     "t": "This is what Benayahu son of Yehoyaḏa did and won a name among the three mighty men."
+    },
+    {
+     "n": 25,
+     "t": "See, he was more esteemed than the thirty, but he did not come to the first three. And Dawiḏ set him over his court."
+    },
+    {
+     "n": 26,
+     "t": "And the mighty men of the armies were Asah’ĕl the brother of Yo’aḇ, Elḥanan son of Doḏo of Bĕyth Leḥem,"
+    },
+    {
+     "n": 27,
+     "t": "Shammoth the Harorite, Ḥĕlets the Pelonite,"
+    },
+    {
+     "n": 28,
+     "t": "Ira son of Iqqĕsh the Teqowite, Aḇi‛ezer the Anathothite,"
+    },
+    {
+     "n": 29,
+     "t": "Sibbeḵai the Ḥushathite, Ilai the Aḥoḥite,"
+    },
+    {
+     "n": 30,
+     "t": "Maharai the Netophathite, Ḥĕleḏ son of Ba‛anah the Netophathite,"
+    },
+    {
+     "n": 31,
+     "t": "Ithai son of Riḇai of Giḇ‛ah, of the children of Binyamin, Benayah the Pirathonite,"
+    },
+    {
+     "n": 32,
+     "t": "Ḥurai of the wadis of Ga‛ash, Aḇi’ĕl the Arbathite,"
+    },
+    {
+     "n": 33,
+     "t": "Azmaweth the Baḥarumite, Elyaḥba the Sha‛albonite,"
+    },
+    {
+     "n": 34,
+     "t": "the sons of Hashĕm the Gizonite, Yonathan son of Shaḡĕ the Hararite,"
+    },
+    {
+     "n": 35,
+     "t": "Aḥyam son of Saḵar the Hararite, Eliphal son of Ur,"
+    },
+    {
+     "n": 36,
+     "t": "Ḥĕpher the Mekĕrathite, Aḥiyah the Pelonite,"
+    },
+    {
+     "n": 37,
+     "t": "Ḥetsro the Karmelite, Na‛arai son of Ezbai,"
+    },
+    {
+     "n": 38,
+     "t": "Yo’ĕl the brother of Nathan, Miḇḥar son of Haḡri,"
+    },
+    {
+     "n": 39,
+     "t": "Tseleq the Ammonite, Naḥarai the Bĕrothite (the armour-bearer of Yo’aḇ son of Tseruyah),"
+    },
+    {
+     "n": 40,
+     "t": "Ira the Yithrite, Garĕḇ the Yithrite,"
+    },
+    {
+     "n": 41,
+     "t": "Uriyah the Ḥittite, Zaḇaḏ son of Aḥlai,"
+    },
+    {
+     "n": 42,
+     "t": "Aḏina son of Shiza the Re’uḇĕnite, the head of the Re’uḇĕnites and thirty with him,"
+    },
+    {
+     "n": 43,
+     "t": "Ḥanan son of Ma‛aḵah and Yoshaphat the Mithnite,"
+    },
+    {
+     "n": 44,
+     "t": "Uzziya the Ashterathite, Shama and Ye‛i’ĕl the sons of Ḥotham the Aro‛ĕrite,"
+    },
+    {
+     "n": 45,
+     "t": "Yeḏiya’ĕl son of Shimri and Yoḥa his brother, the Titsite,"
+    },
+    {
+     "n": 46,
+     "t": "Eli’ĕl the Maḥawite and Yeriḇai and Yoshawyah the sons of Elna‛am, Yithmah the Mo’aḇite,"
+    },
+    {
+     "n": 47,
+     "t": "Eli’ĕl and Oḇĕḏ and Ya‛asi’ĕl of Metsoḇayah."
+    }
+   ],
+   "page": 248,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Now these are they who came to Dawiḏ at Tsiqlaḡ while he was still in hiding from Sha’ul son of Qish. And they were among the mighty men, helping the battle,"
+    },
+    {
+     "n": 2,
+     "t": "armed with bows, using both the right hand and the left, with stones and with arrows, with bows, of the brothers of Sha’ul, of Binyamin."
+    },
+    {
+     "n": 3,
+     "t": "The chief was Aḥi‛ezer and Yo’ash, the sons of Shema‛ah the Giḇ‛athite; and Yezaw’ĕl and Pelet, the sons of Azmaweth; and Beraḵah and Yĕhu the Anathothite;"
+    },
+    {
+     "n": 4,
+     "t": "and Yishmayah the Giḇ‛onite, a mighty man among the thirty and over the thirty; and Yirmeyah and Yaḥazi’ĕl and Yoḥanan and Yozaḇaḏ the Geḏĕrathite;"
+    },
+    {
+     "n": 5,
+     "t": "Eluzai and Yerimoth and Be‛alyah and Shemaryahu and Shephatyahu the Ḥaruphite;"
+    },
+    {
+     "n": 6,
+     "t": "Elqanah and Yishshiyahu and Azar’ĕl and Yow‛ezer and Yashoḇ‛am the Qorḥites;"
+    },
+    {
+     "n": 7,
+     "t": "and Yo’ĕlah and Zeḇaḏyah, the sons of Yeroḥam of Geḏor."
+    },
+    {
+     "n": 8,
+     "t": "And some Gaḏites separated themselves to Dawiḏ at the stronghold in the wilderness, mighty brave men, men trained for battle, who could handle shield and spear, whose faces were like the faces of lions and were as swift as gazelles on the mountains:"
+    },
+    {
+     "n": 9,
+     "t": "Ĕzer the chief, Oḇaḏyah the second, Eliyaḇ the third,"
+    },
+    {
+     "n": 10,
+     "t": "Mishmannah the fourth, Yirmeyah the fifth,"
+    },
+    {
+     "n": 11,
+     "t": "Attai the sixth, Eli’ĕl the seventh,"
+    },
+    {
+     "n": 12,
+     "t": "Yoḥanan the eighth, Elzaḇaḏ the ninth,"
+    },
+    {
+     "n": 13,
+     "t": "Yirmeyahu the tenth, Maḵbannai the eleventh."
+    },
+    {
+     "n": 14,
+     "t": "These were from the sons of Gaḏ, chiefs of the army. The least was over a hundred and the greatest was over a thousand."
+    },
+    {
+     "n": 15,
+     "t": "These were the ones who passed over the Yardĕn in the first month, when it was overflowing all its banks and put to flight all those in the valleys, to the east and to the west."
+    },
+    {
+     "n": 16,
+     "t": "And some of the children of Binyamin and Yahuḏah came to Dawiḏ at the stronghold."
+    },
+    {
+     "n": 17,
+     "t": "And Dawiḏ went out to face them and answered and said to them, “If you have come peaceably to me to help me, my heart shall be united with you; but if to betray me to my enemies – there is no violence in my hands – let the Elohim of our fathers see and reprove.”"
+    },
+    {
+     "n": 18,
+     "t": "Then the Spirit came upon Amasai, chief of the officers, “Yours, O Dawiḏ! And with you, O son of Yishai! Peace, peace to you and peace to your helpers! For your Elohim shall help you.” And Dawiḏ received them and put them among the chiefs of the raiding band."
+    },
+    {
+     "n": 19,
+     "t": "And some from Menashsheh went over to Dawiḏ when he was going with the Philistines to battle against Sha’ul. But they did not help them, for the princes of the Philistines took advice and sent him away, saying, “He might go over to his master Sha’ul with our heads!”"
+    },
+    {
+     "n": 20,
+     "t": "When he went to Tsiqlaḡ, those of Menashsheh who went over to him were Aḏnah and Yozaḇaḏ and Yeḏiya’ĕl and Miḵa’ĕl and Yozaḇaḏ and Elihu and Tsillethai, chiefs of the thousands who were from Menashsheh."
+    },
+    {
+     "n": 21,
+     "t": "And they helped Dawiḏ against the raiding bands, for they were all mighty brave men and they were commanders in the army."
+    },
+    {
+     "n": 22,
+     "t": "For at that time they came to Dawiḏ day by day to help him, until it was a great army, like an army of Elohim."
+    },
+    {
+     "n": 23,
+     "t": "And these were the numbers of the chiefs of those that were armed for battle and came to Dawiḏ at Ḥeḇron to turn over the reign of Sha’ul to him, according to the Word of HWHY:"
+    },
+    {
+     "n": 24,
+     "t": "Of the children of Yahuḏah bearing shield and spear, six thousand eight hundred armed for battle;"
+    },
+    {
+     "n": 25,
+     "t": "of the children of Shim‛on, mighty brave men for the army, seven thousand one hundred;"
+    },
+    {
+     "n": 26,
+     "t": "of the children of Lĕwi four thousand six hundred;"
+    },
+    {
+     "n": 27,
+     "t": "and Yehoyaḏa, the leader of the Aharonites and with him three thousand seven hundred;"
+    },
+    {
+     "n": 28,
+     "t": "and Tsaḏoq, a young man, a mighty brave man and from his father’s house twenty-two commanders;"
+    },
+    {
+     "n": 29,
+     "t": "and the children of Binyamin, relatives of Sha’ul, three thousand – until then the greatest part of them guarded the charge of the house of Sha’ul;"
+    },
+    {
+     "n": 30,
+     "t": "and the children of Ephrayim twenty thousand eight hundred, mighty brave ones, men of name throughout their father’s house;"
+    },
+    {
+     "n": 31,
+     "t": "and the half-tribe of Menashsheh eighteen thousand, who were designated by name to come and set up Dawiḏ to reign;"
+    },
+    {
+     "n": 32,
+     "t": "and the children of Yissasḵar who had understanding of the times, to know what Yisra’ĕl should do, their chiefs were two hundred. And all their brothers were at their command;"
+    },
+    {
+     "n": 33,
+     "t": "of Zeḇulun there were fifty thousand going out to the army, arranging battle with all weapons of battle, giving support with undivided heart;"
+    },
+    {
+     "n": 34,
+     "t": "and of Naphtali one thousand commanders and with them thirty-seven thousand with shield and spear;"
+    },
+    {
+     "n": 35,
+     "t": "and of the Danites, arranging battle, twenty-eight thousand six hundred;"
+    },
+    {
+     "n": 36,
+     "t": "and of Ashĕr, going out to the army, arranging battle, forty thousand;"
+    },
+    {
+     "n": 37,
+     "t": "and of the Re’uḇĕnites and the Gaḏites and the half-tribe of Menashsheh, from beyond the Yardĕn, one hundred and twenty thousand armed for battle with every kind of weapon of battle."
+    },
+    {
+     "n": 38,
+     "t": "All these men of battle, keeping rank,"
+    }
+   ],
+   "page": 249,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "13": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Dawiḏ consulted with the commanders of thousands and hundreds and with every leader."
+    },
+    {
+     "n": 2,
+     "t": "And Dawiḏ said to all the assembly of Yisra’ĕl, “If it seems good to you and if it is of HWHY our Elohim, let us send out to our brothers everywhere who are left in all the land of Yisra’ĕl and with them to the priests and Lĕwites who are in their cities of their open lands and let them be gathered to us;"
+    },
+    {
+     "n": 3,
+     "t": "and let us bring the ark of our Elohim back to us, for we sought Him not since the days of Sha’ul.”"
+    },
+    {
+     "n": 4,
+     "t": "And all the assembly agreed to do so, for the matter was right in the eyes of all the people."
+    },
+    {
+     "n": 5,
+     "t": "So Dawiḏ assembled all Yisra’ĕl, from Shiḥor in Mitsrayim to as far as the entrance of Ḥamath, to bring the ark of Elohim from Qiryath Ye‛arim."
+    },
+    {
+     "n": 6,
+     "t": "And Dawiḏ and all Yisra’ĕl went up to Ba‛alah, to Qiryath Ye‛arim of Yahuḏah, to bring up from there the ark of Elohim, HWHY, who dwells between the keruḥim, where the Name is called on."
+    },
+    {
+     "n": 7,
+     "t": "And they placed the ark of Elohim on a new wagon from the house of Aḇinaḏaḇ and Uzza and Aḥyo were leading the wagon."
+    },
+    {
+     "n": 8,
+     "t": "And Dawiḏ and all Yisra’ĕl were playing before Elohim with all their might and with songs and with lyres and with harps and with tambourines and with cymbals and with trumpets."
+    },
+    {
+     "n": 9,
+     "t": "And when they came to the threshing- floor of Kiḏon, Uzza put out his hand to hold the ark, for the oxen stumbled."
+    },
+    {
+     "n": 10,
+     "t": "Then the wrath of HWHY burned against Uzza and He smote him because he put his hand to the ark. And he died there before Elohim."
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ was displeased because HWHY had broken out against Uzza, therefore that place is called Perets Uzza, until this day."
+    },
+    {
+     "n": 12,
+     "t": "And Dawiḏ was afraid of Elohim that day, saying, “How shall I bring the ark of Elohim to me?”"
+    },
+    {
+     "n": 13,
+     "t": "So Dawiḏ did not take the ark with him into the City of Dawiḏ, but took it aside into the house of Oḇĕḏ-Eḏom the Gittite."
+    },
+    {
+     "n": 14,
+     "t": "And the ark of Elohim remained with the household of Oḇĕḏ-Eḏom in his house three months. And HWHY blessed the house of Oḇĕḏ-Eḏom and all that he had."
+    }
+   ],
+   "page": 250,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "14": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Ḥiram sovereign of Tsor sent messengers to Dawiḏ and cedar trees, with stonemasons and carpenters, to build him a house."
+    },
+    {
+     "n": 2,
+     "t": "And Dawiḏ knew that HWHY had established him as sovereign over Yisra’ĕl, for his reign was highly exalted for the sake of His people Yisra’ĕl."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ took more wives in Yerushalayim and Dawiḏ brought forth more sons and daughters."
+    },
+    {
+     "n": 4,
+     "t": "And these are the names of his children whom he had in Yerushalayim: Shammua and Shoḇaḇ, Nathan and Shelomoh,"
+    },
+    {
+     "n": 5,
+     "t": "Yiḇḥar, Elishua and Elpelet,"
+    },
+    {
+     "n": 6,
+     "t": "Noḡah, Nepheḡ and Yaphiya,"
+    },
+    {
+     "n": 7,
+     "t": "Elishama, Be‛elyaḏa and Eliphelet."
+    },
+    {
+     "n": 8,
+     "t": "And when the Philistines heard that Dawiḏ had been anointed sovereign over all Yisra’ĕl, all the Philistines went up to seek Dawiḏ. And Dawiḏ heard and went out against them."
+    },
+    {
+     "n": 9,
+     "t": "And the Philistines came and made a raid on the Valley of Repha’im."
+    },
+    {
+     "n": 10,
+     "t": "And Dawiḏ inquired of Elohim, saying, “Do I go up against the Philistines? And shall You give them into my hand?” And HWHY said to him, “Go up and I shall give them into your hand.”"
+    },
+    {
+     "n": 11,
+     "t": "And they went up to Ba‛al Peratsim and Dawiḏ smote them there. Then Dawiḏ said, “Elohim has broken through my enemies by my hand like a breakthrough of water.” So they called the name of that place Ba‛al Peratsim."
+    },
+    {
+     "n": 12,
+     "t": "And they left their mighty ones there, so Dawiḏ commanded and they were burned with fire."
+    },
+    {
+     "n": 13,
+     "t": "And the Philistines once again made a raid on the valley."
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ again inquired of Elohim and Elohim said to him, “Do not go up after them. Go around them and come upon them in front of the mulberry trees."
+    },
+    {
+     "n": 15,
+     "t": "“And it shall be, when you hear a sound of stepping in the tops of the mulberry trees, then go out to battle, for Elohim shall go out before you to smite the camp of the Philistines.”"
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ did as Elohim commanded him and they drove back the army of the Philistines from Giḇ‛on as far as Gezer."
+    },
+    {
+     "n": 17,
+     "t": "And the name of Dawiḏ went out into all lands and HWHY put the dread of him upon all nations."
+    }
+   ],
+   "page": 251,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "15": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And he built houses for himself in the City of Dawiḏ. And he prepared a place for the ark of Elohim and pitched a tent for it."
+    },
+    {
+     "n": 2,
+     "t": "Then Dawiḏ said, “No one is to lift the ark of Elohim but the Lĕwites, for HWHY has chosen them to lift the ark of Elohim and to serve Him forever.”"
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ assembled all Yisra’ĕl at Yerushalayim, to bring up the ark of HWHY to its place, which he had prepared for it."
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ gathered the children of Aharon and the Lĕwites;"
+    },
+    {
+     "n": 5,
+     "t": "of the sons of Qehath: Uri’ĕl the chief and one hundred and twenty of his brothers;"
+    },
+    {
+     "n": 6,
+     "t": "of the sons of Merari: Asayah the chief and two hundred and twenty of his brothers;"
+    },
+    {
+     "n": 7,
+     "t": "of the sons of Gĕreshom: Yo’ĕl the chief and one hundred and thirty of his brothers;"
+    },
+    {
+     "n": 8,
+     "t": "of the sons of Elitsaphan: Shemayah the chief and two hundred of his brothers;"
+    },
+    {
+     "n": 9,
+     "t": "of the sons of Ḥeḇron: Eli’ĕl the chief and eighty of his brothers;"
+    },
+    {
+     "n": 10,
+     "t": "of the sons of Uzzi’ĕl: Amminaḏaḇ the chief and one hundred and twelve of his brothers."
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ called for Tsaḏoq and Eḇyathar the priests and for the Lĕwites, for Uri’ĕl, Asayah and Yo’ĕl, Shemayah and Eli’ĕl and Amminaḏaḇ,"
+    },
+    {
+     "n": 12,
+     "t": "and said to them, “You are the heads of the fathers’ houses of the Lĕwites. Set yourselves apart, you and your brothers, then you shall bring up the ark of HWHY Elohim of Yisra’ĕl to the place I have prepared for it."
+    },
+    {
+     "n": 13,
+     "t": "“Because you did not do it the first time, HWHY our Elohim broke out against us, because we did not ask Him about the right-ruling.”"
+    },
+    {
+     "n": 14,
+     "t": "So the priests and the Lĕwites set themselves apart, to bring up the ark of HWHY Elohim of Yisra’ĕl."
+    },
+    {
+     "n": 15,
+     "t": "And the children of the Lĕwites bore the ark of Elohim on their shoulders, by its poles, as Mosheh had commanded according to the Word of HWHY."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ spoke to the leaders of the Lĕwites to appoint their brothers the singers with instruments of song, harps and lyres and cymbals, to lift up the voice with joy."
+    },
+    {
+     "n": 17,
+     "t": "And the Lĕwites appointed Hĕman son of Yo’ĕl and of his brothers, Asaph son of Bereḵyahu; and of their brothers, the sons of Merari, Ĕythan son of Qushayahu;"
+    },
+    {
+     "n": 18,
+     "t": "and with them their brothers of the second rank: Zeḵaryahu, Bĕn and Ya‛azi’ĕl and Shemiramoth and Yeḥi’ĕl 953"
+    },
+    {
+     "n": 19,
+     "t": "and the singers Hĕman, Asaph and Ĕythan, were to sound the cymbals of bronze;"
+    },
+    {
+     "n": 20,
+     "t": "and Zeḵaryah and Azi’ĕl and Shemiramoth and Yeḥi’ĕl and Unni and Eliyaḇ and Ma‛asĕyahu and Benayahu, with harps according to Alamoth;"
+    },
+    {
+     "n": 21,
+     "t": "and Mattithyahu and Eliphelĕhu and Miqnĕyahu and Oḇĕḏ-Eḏom and Ye‛i’ĕl and Azazyahu, to lead with lyres on the Sheminith;"
+    },
+    {
+     "n": 22,
+     "t": "and Kenanyahu, leader of the Lĕwites, in the song, because he was skilled;"
+    },
+    {
+     "n": 23,
+     "t": "and Bereḵyah and Elqanah were doorkeepers for the ark;"
+    },
+    {
+     "n": 24,
+     "t": "and Sheḇanyahu and Yoshaphat and Nethanĕ’l and Amasai and Zeḵaryahu and Benayahu and Eli‛ezer, the priests, were to blow the trumpets before the ark of Elohim. And Oḇĕḏ-Eḏom and Yeḥiyah, were doorkeepers for the ark."
+    },
+    {
+     "n": 25,
+     "t": "And it was Dawiḏ and the elders of Yisra’ĕl and the commanders over thousands, who went to bring up the ark of the covenant of HWHY from the house of OḇĕḏEḏom with joy."
+    },
+    {
+     "n": 26,
+     "t": "And it came to be, when Elohim helped the Lĕwites who bore the ark of the covenant of HWHY, that they offered seven bulls and seven rams."
+    },
+    {
+     "n": 27,
+     "t": "And Dawiḏ was dressed in a robe of fine linen, as were all the Lĕwites who bore the ark, the singers and Kenanyah the leader of the service with the singers. And Dawiḏ wore a linen shoulder garment."
+    },
+    {
+     "n": 28,
+     "t": "So all Yisra’ĕl brought up the ark of the covenant of HWHY with shouting and with the sound of the horn, with trumpets and with cymbals, sounding with harps and lyres."
+    },
+    {
+     "n": 29,
+     "t": "And it came to be, as the ark of the covenant of HWHY came to the City of Dawiḏ, that Miḵal the daughter of Sha’ul, looking through a window, saw Sovereign Dawiḏ dancing and playing. And she despised him in her heart."
+    }
+   ],
+   "page": 252,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "16": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And they brought the ark of Elohim and set it in the midst of the Tent that Dawiḏ had pitched for it. And they brought burnt offerings and peace offerings before Elohim."
+    },
+    {
+     "n": 2,
+     "t": "And when Dawiḏ had made an end of offering the burnt offerings and the peace offerings, he blessed the people in the Name of HWHY,"
+    },
+    {
+     "n": 3,
+     "t": "and gave a portion to everyone of Yisra’ĕl, both man and woman, to everyone a loaf of bread, a measure and a cake of raisins."
+    },
+    {
+     "n": 4,
+     "t": "And he appointed some of the Lĕwites to serve before the ark of HWHY, to bring to remembrance and to thank and to praise HWHY Elohim of Yisra’ĕl:"
+    },
+    {
+     "n": 5,
+     "t": "Asaph the chief and his second Zeḵaryah, Ye‛i’ĕl and Shemiramoth and Yeḥi’ĕl and Mattithyah and Eliyaḇ and Benayahu and Oḇĕḏ-Eḏom and Ye‛i’ĕl, with harps and lyres, but Asaph was sounding with cymbals;"
+    },
+    {
+     "n": 6,
+     "t": "and Benayahu and Yaḥazi’ĕl the priests continually blew the trumpets before the ark of the covenant of Elohim."
+    },
+    {
+     "n": 7,
+     "t": "And on that day Dawiḏ first gave thanks to HWHY by the hand of Asaph and his brothers:"
+    },
+    {
+     "n": 8,
+     "t": "Give thanks to HWHY, Call upon His Name, Make known His deeds Among the peoples!"
+    },
+    {
+     "n": 9,
+     "t": "Sing to Him, Sing praise to Him, Speak of all His wonders!"
+    },
+    {
+     "n": 10,
+     "t": "Boast in His set-apart Name, Let the hearts of those seeking HWHY rejoice!"
+    },
+    {
+     "n": 11,
+     "t": "Seek HWHY and His strength, Seek His face continually!"
+    },
+    {
+     "n": 12,
+     "t": "Remember His wonders Which He has done, His signs and the right-rulings of His mouth,"
+    },
+    {
+     "n": 13,
+     "t": "O seed of Yisra’ĕl, His servant; O children of Ya‛aqoḇ, His chosen ones!"
+    },
+    {
+     "n": 14,
+     "t": "He is HWHY our Elohim, His right-rulings are in all the earth."
+    },
+    {
+     "n": 15,
+     "t": "Remember His covenant forever, The Word He commanded for a thousand generations,"
+    },
+    {
+     "n": 16,
+     "t": "Which He made with Aḇrahim, And His oath to Yitsḥaq,"
+    },
+    {
+     "n": 17,
+     "t": "And He established it to Ya‛aqoḇ for a law, To Yisra’ĕl as an everlasting covenant,"
+    },
+    {
+     "n": 18,
+     "t": "Saying, “To you I give the land of Kena‛an, The portion of your inheritance,”"
+    },
+    {
+     "n": 19,
+     "t": "When you were but few in number, Few indeed and sojourners in it."
+    },
+    {
+     "n": 20,
+     "t": "And they went up and down, From one nation to another, And from one reign to another people."
+    },
+    {
+     "n": 21,
+     "t": "He allowed no one to oppress them, And He reproved sovereigns for their sakes, saying:"
+    },
+    {
+     "n": 22,
+     "t": "“Do not touch My anointed ones, And do My prophets no evil.”"
+    },
+    {
+     "n": 23,
+     "t": "Sing to HWHY, all the earth; Proclaim His deliverance from day to day."
+    },
+    {
+     "n": 24,
+     "t": "Declare His esteem among the nations, His wonders among all peoples."
+    },
+    {
+     "n": 25,
+     "t": "For great is HWHY and greatly to be praised; And He is to be feared above all mighty ones."
+    },
+    {
+     "n": 26,
+     "t": "For all the mighty ones of the peoples are matters of naught, But HWHY made the heavens."
+    },
+    {
+     "n": 27,
+     "t": "Excellency and splendour are before Him, Strength and gladness are in His place."
+    },
+    {
+     "n": 28,
+     "t": "Ascribe to HWHY, O clans of the peoples, Ascribe to HWHY esteem and strength."
+    },
+    {
+     "n": 29,
+     "t": "Ascribe to HWHY the esteem of His Name; Bring an offering and come before Him; Bow yourself to HWHY In the splendour of set-apartness!"
+    },
+    {
+     "n": 30,
+     "t": "Tremble before Him, all the earth. The world also is firmly established, immovable."
+    },
+    {
+     "n": 31,
+     "t": "Let the heavens rejoice and let the earth be glad; And let them say among the nations, “HWHY shall reign.”"
+    },
+    {
+     "n": 32,
+     "t": "Let the sea roar and all that fills it; Let the field rejoice and all that is in it."
+    },
+    {
+     "n": 33,
+     "t": "Let the trees of the forest then sing before HWHY, For He shall come to judge the earth."
+    },
+    {
+     "n": 34,
+     "t": "Give thanks to HWHY, for He is good, His kindness is everlasting!"
+    },
+    {
+     "n": 35,
+     "t": "And say, “Save us, O Elohim of our deliverance; And gather us together, And deliver us from the gentiles, To give thanks to Your set-apart Name, And boast in Your praise.”"
+    },
+    {
+     "n": 36,
+     "t": "Blessed be HWHY Elohim of Yisra’ĕl From everlasting to everlasting! And all the people said, “Amĕn!” and praised HWHY."
+    },
+    {
+     "n": 37,
+     "t": "So he left Asaph and his brothers there before the ark of the covenant of HWHY to perform regular service before the ark, as each day required;"
+    },
+    {
+     "n": 38,
+     "t": "also, Oḇĕḏ-Eḏom with his sixty-eight brothers, including Oḇĕḏ-Eḏom son of Yeḏuthun and Ḥosah, to be gatekeepers;"
+    },
+    {
+     "n": 39,
+     "t": "and Tsaḏoq the priest and his brothers the priests, before the Dwelling Place of HWHY at the high place that was at Giḇ‛on,"
+    },
+    {
+     "n": 40,
+     "t": "to offer burnt offerings to HWHY on the altar of burnt offering regularly morning and evening and to do according to all that is written in the Torah of HWHY which He 955"
+    },
+    {
+     "n": 41,
+     "t": "and with them Hĕman and Yeḏuthun and the rest who were chosen, who were designated by name, to give thanks to HWHY, because His kindness is everlasting;"
+    },
+    {
+     "n": 42,
+     "t": "and with them Hĕman and Yeḏuthun, to sound aloud with trumpets and cymbals and instruments for the songs of Elohim and the sons of Yeḏuthun for the gate."
+    },
+    {
+     "n": 43,
+     "t": "And all the people went, each one to his house and Dawiḏ returned to bless his house."
+    }
+   ],
+   "page": 253,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "17": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be, when Dawiḏ was dwelling in his house, that Dawiḏ said to Nathan the prophet, “See, I am dwelling in a house of cedar, but the ark of the covenant of HWHY is under curtains.”"
+    },
+    {
+     "n": 2,
+     "t": "And Nathan said to Dawiḏ, “Do all that is in your heart, for Elohim is with you.”"
+    },
+    {
+     "n": 3,
+     "t": "And it came to be that night that the Word of Elohim came to Nathan, saying,"
+    },
+    {
+     "n": 4,
+     "t": "“Go and you shall say to My servant Dawiḏ, ‘Thus said HWHY, “You do not build Me a house to dwell in."
+    },
+    {
+     "n": 5,
+     "t": "“For I have not dwelt in a house since the time that I brought up Yisra’ĕl, even to this day, but have gone from tent to tent and from one Dwelling Place to another."
+    },
+    {
+     "n": 6,
+     "t": "“Wherever I have moved about with all Yisra’ĕl, have I ever spoken a word to any of the rulers of Yisra’ĕl, whom I commanded to shepherd My people, saying, ‘Why have you not built Me a house of cedar?’ ” ’"
+    },
+    {
+     "n": 7,
+     "t": "“And now, say this to My servant Dawiḏ, ‘Thus said HWHY of hosts, “I took you from the sheepfold, from following the sheep, to be ruler over My people Yisra’ĕl."
+    },
+    {
+     "n": 8,
+     "t": "“And I have been with you wherever you have gone and have cut off all your enemies from before you and have made you a name like the name of the great men who are on the earth."
+    },
+    {
+     "n": 9,
+     "t": "“And I shall prepare a place for My people Yisra’ĕl and plant them and they shall dwell in a place of their own and move no more, nor shall the sons of wickedness oppress them any more, as at the first,"
+    },
+    {
+     "n": 10,
+     "t": "since the time that I commanded rulers to be over My people Yisra’ĕl and I have humbled all your enemies. And I declared to you that HWHY does build you a house."
+    },
+    {
+     "n": 11,
+     "t": "“And it shall be, when your days are filled to go to be with your fathers, that I shall raise up your seed after you, who is of your sons. And I shall establish his reign."
+    },
+    {
+     "n": 12,
+     "t": "”He does build Me a house and I shall establish his throne forever."
+    },
+    {
+     "n": 13,
+     "t": "“I am to be his Father and he is to be My son. And My kindness I do not turn away from him, as I took it from him who was before you."
+    },
+    {
+     "n": 14,
+     "t": "“And I shall establish him in My house and in My reign forever and let his throne be established forever.” ’ ”"
+    },
+    {
+     "n": 15,
+     "t": "According to all these words and according to all this vision, so did Nathan speak to Dawiḏ."
+    },
+    {
+     "n": 16,
+     "t": "And Sovereign Dawiḏ came in and sat before HWHY and said, “Who am I, O HWHY Elohim? And what is my house, that You have brought me this far?"
+    },
+    {
+     "n": 17,
+     "t": "“And this was a small matter in Your eyes, O Elohim, but You have spoken of Your servant’s house for a great while to come and have looked upon me as though I were an exalted man, O HWHY Elohim."
+    },
+    {
+     "n": 18,
+     "t": "“What more could Dawiḏ add to You for the esteem of Your servant? For You know Your servant."
+    },
+    {
+     "n": 19,
+     "t": "“O HWHY, for Your servant’s sake and according to Your own heart, You have done all this greatness, in making known all these great matters."
+    },
+    {
+     "n": 20,
+     "t": "“O HWHY, there is none like You, nor is there any Elohim besides You, according to all that we have heard with our ears."
+    },
+    {
+     "n": 21,
+     "t": "“And who is like Your people Yisra’ĕl, the one nation on the earth whom Elohim went to redeem for Himself as a people; to make for Yourself a great and awesome Name, by driving out nations from before Your people whom You redeemed from Mitsrayim?"
+    },
+    {
+     "n": 22,
+     "t": "“For You appointed Your people Yisra’ĕl to be Your own people forever. And You, HWHY, have become their Elohim."
+    },
+    {
+     "n": 23,
+     "t": "“And now, O HWHY, the word which You have spoken concerning Your servant and concerning his house, let it stand fast forever and do as You have said."
+    },
+    {
+     "n": 24,
+     "t": "“So let it stand fast and Your Name be great forever, saying, ‘HWHY of hosts, Elohim of Yisra’ĕl, is Elohim to Yisra’ĕl. Let the house of Your servant Dawiḏ be established before You.’"
+    },
+    {
+     "n": 25,
+     "t": "“For You, O my Elohim, have revealed to Your servant to build a house for him. Therefore Your servant has found courage to pray before You."
+    },
+    {
+     "n": 26,
+     "t": "“And now, HWHY, You are Elohim and have promised this goodness to Your servant."
+    },
+    {
+     "n": 27,
+     "t": "“And now, You have been pleased to bless the house of Your servant to be before You forever. For You have blessed it, O HWHY and it is blessed forever.”"
+    }
+   ],
+   "page": 255,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "18": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And after this it came to be that Dawiḏ smote the Philistines and humbled them and took Gath and its towns from the hand of the Philistines."
+    },
+    {
+     "n": 2,
+     "t": "And he smote the Mo’aḇites and the Mo’aḇites became Dawiḏ’s servants and brought presents."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ smote Haḏaḏezer sovereign of Tsoḇah as far as Ḥamath, as he went to establish his power by the River Euphrates."
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ took from him one thousand chariots and seven thousand horsemen and twenty thousand foot soldiers. And Dawiḏ also hamstrung all the chariot horses, but left of them for one hundred chariots."
+    },
+    {
+     "n": 5,
+     "t": "And when Aram of Damascus came to help Haḏaḏezer sovereign of Tsoḇah, Dawiḏ smote twenty-two thousand of Aram,"
+    },
+    {
+     "n": 6,
+     "t": "and Dawiḏ stationed men in Aram of Damascus and the Arameans became Dawiḏ’s servants and brought presents. And HWHY saved Dawiḏ wherever he went."
+    },
+    {
+     "n": 7,
+     "t": "And Dawiḏ took the shields of gold that were on the servants of Haḏaḏezer and brought them to Yerushalayim."
+    },
+    {
+     "n": 8,
+     "t": "And from Tiḇḥath and from Kun, cities of Haḏaḏezer, Dawiḏ brought a large amount of bronze, with which Shelomoh made the bronze Sea and the columns and the vessels of bronze."
+    },
+    {
+     "n": 9,
+     "t": "And when To‛u sovereign of Ḥamath heard that Dawiḏ had smitten all the army of Haḏaḏezer sovereign of Tsoḇah,"
+    },
+    {
+     "n": 10,
+     "t": "he sent Haḏoram his son to Sovereign Dawiḏ, to ask peace of him and bless him, because he had fought against Haḏaḏezer and smote him – because Haḏaḏezer had been fighting against To‛u – with all kinds of objects of gold and silver and bronze."
+    },
+    {
+     "n": 11,
+     "t": "Sovereign Dawiḏ also set these apart to HWHY, along with the silver and gold that he had brought from all these nations, from Eḏom and from Mo’aḇ and from the children of Ammon and from the Philistines and from Amalĕq."
+    },
+    {
+     "n": 12,
+     "t": "And Aḇishai son of Tseruyah smote eighteen thousand Eḏomites in the Valley of Salt,"
+    },
+    {
+     "n": 13,
+     "t": "and he put watch-posts in Eḏom and all the Eḏomites became Dawiḏ’s servants. And HWHY saved Dawiḏ wherever he went."
+    },
+    {
+     "n": 14,
+     "t": "So Dawiḏ reigned over all Yisra’ĕl and he was doing right-ruling and righteousness to all his people."
+    },
+    {
+     "n": 15,
+     "t": "And Yo’aḇ son of Tseruyah was over the army and Yehoshaphat son of Aḥiluḏ was recorder,"
+    },
+    {
+     "n": 16,
+     "t": "and Tsaḏoq son of Aḥituḇ and Aḇimeleḵ son of Eḇyathar were the priests and Shawsha was the scribe,"
+    },
+    {
+     "n": 17,
+     "t": "and Benayahu son of Yehoyaḏa was"
+    }
+   ],
+   "page": 256,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "19": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Later, it came to be that Naḥash, sovereign of the children of Ammon, died and his son reigned in his place."
+    },
+    {
+     "n": 2,
+     "t": "And Dawiḏ said, “Let me show kindness to Ḥanun son of Naḥash, because his father showed kindness to me.” So Dawiḏ sent messengers to comfort him concerning his father. And the servants of Dawiḏ came to Ḥanun in the land of the children of Ammon to comfort him."
+    },
+    {
+     "n": 3,
+     "t": "The chiefs of the children of Ammon said to Ḥanun, “Is Dawiḏ esteeming your father, in your eyes, because he has sent comforters to you? Have his servants not come to you to search and to overthrow and to spy out the land?”"
+    },
+    {
+     "n": 4,
+     "t": "So Ḥanun took Dawiḏ’s servants and shaved them and cut off their garments in the middle, at their buttocks and sent them away."
+    },
+    {
+     "n": 5,
+     "t": "And when some went and informed Dawiḏ about the men, he sent to meet them, because the men were greatly ashamed. And the sovereign said, “Remain at Yeriḥo until your beards have grown, then return.”"
+    },
+    {
+     "n": 6,
+     "t": "And when the children of Ammon saw that they had made themselves a stench to Dawiḏ, Ḥanun and the children of Ammon sent a thousand talents of silver to hire chariots and horsemen from Aram-Naharayim and from Aram- Ma‛aḵah and from Tsoḇah."
+    },
+    {
+     "n": 7,
+     "t": "So they hired thirty-two thousand chariots, with the sovereign of Ma‛aḵah and his people, who came and encamped before Mĕyḏeḇa. And the children of Ammon had gathered from their cities and came to battle."
+    },
+    {
+     "n": 8,
+     "t": "When Dawiḏ heard, he sent Yo’aḇ and the entire army of the mighty men,"
+    },
+    {
+     "n": 9,
+     "t": "and the children of Ammon came out and put themselves in battle array before the gate of the city and the sovereigns who had come were by themselves in the field."
+    },
+    {
+     "n": 10,
+     "t": "And when Yo’aḇ saw that the battle had been set against him before and behind, he chose some of the choice ones of Yisra’ĕl and put them in battle array to meet Aram."
+    },
+    {
+     "n": 11,
+     "t": "And the rest of the people he put under the command of Aḇishai his brother and they set themselves in battle array to meet the children of Ammon."
+    },
+    {
+     "n": 12,
+     "t": "And he said, “If Aram is too strong for me, then you shall help me; but if the children of Ammon are too strong for you, then I shall help you."
+    },
+    {
+     "n": 13,
+     "t": "“Be strong and let us show strength for our people and the cities of our Elohim and let HWHY do what is good in His eyes.”"
+    },
+    {
+     "n": 14,
+     "t": "And Yo’aḇ drew near and the people with him, to battle against Aram and they fled before him."
+    },
+    {
+     "n": 15,
+     "t": "And when the children of Ammon saw that the Arameans were fleeing, they also fled before Aḇishai his brother and went into the city. And Yo’aḇ came to Yerushalayim."
+    },
+    {
+     "n": 16,
+     "t": "And when Aram saw that they had been smitten before Yisra’ĕl, they sent messengers and brought the Arameans who were beyond the River and Shophaḵ the commander of Haḏaḏezer’s army went before them."
+    },
+    {
+     "n": 17,
+     "t": "And it was reported to Dawiḏ and he gathered all Yisra’ĕl and passed over the Yardĕn and came upon them and set up in battle array against them. And Dawiḏ set up in battle array against Aram and they fought with him."
+    },
+    {
+     "n": 18,
+     "t": "And Aram fled before Yisra’ĕl and Dawiḏ slew seven thousand charioteers and forty thousand foot soldiers of the Arameans and smote Shophaḵ the commander of the army."
+    },
+    {
+     "n": 19,
+     "t": "And the servants of Haḏaḏezer saw that they were smitten by Yisra’ĕl and they made peace with Dawiḏ and became his servants. And the Arameans would not help the children of Ammon any more."
+    }
+   ],
+   "page": 256,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "20": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be at the turn of the year, at the time sovereigns go out to battle, that Yo’aḇ led out the power of the army and destroyed the land of the children of Ammon and came and besieged Rabbah. But Dawiḏ remained at Yerushalayim. And Yo’aḇ smote Rabbah and overthrew it."
+    },
+    {
+     "n": 2,
+     "t": "And Dawiḏ took their sovereign’s crown from his head and found it weighed a talent of gold and there were precious stones in it. And it was set on Dawiḏ’s head. And he also brought out the spoil of the city, a very great amount."
+    },
+    {
+     "n": 3,
+     "t": "And he brought out the people who were in it and put them to work with saws and with iron picks and with axes. And thus Dawiḏ did to all the cities of the children of Ammon. Then Dawiḏ and all the people returned to Yerushalayim."
+    },
+    {
+     "n": 4,
+     "t": "And afterward it came to be that fighting broke out at Gezer with the Philistines. Then Sibbeḵai the Ḥushathite smote Sippai of the sons of the giant and they were humbled."
+    },
+    {
+     "n": 5,
+     "t": "And there was fighting again with the Philistines and Elḥanan son of Ya’ir smote Laḥmi the brother of Golyath the Gittite, the shaft of whose spear was like a weaver’s beam."
+    },
+    {
+     "n": 6,
+     "t": "And there was fighting again at Gath, where there was a man of great size, with twenty-four fingers and toes, six and six and he too was born to the giant."
+    },
+    {
+     "n": 7,
+     "t": "And he reproached Yisra’ĕl and Yehonathan son of Shim‛a, Dawiḏ’s brother, smote him."
+    },
+    {
+     "n": 8,
+     "t": "These were born to the giant in Gath and they fell by the hand of Dawiḏ and by the hand of his servants."
+    }
+   ],
+   "page": 257,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "21": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Satan stood up against Yisra’ĕl and moved Dawiḏ to number Yisra’ĕl."
+    },
+    {
+     "n": 2,
+     "t": "And Dawiḏ said to Yo’aḇ and to the rulers of the people, “Go, number Yisra’ĕl from Be’ĕrsheḇa to Dan and bring the number of them to me so that I know it.”"
+    },
+    {
+     "n": 3,
+     "t": "And Yo’aḇ answered, “HWHY does add to His people a hundred times more than they are. But, my master the sovereign, are they not all my master’s servants? Why does my master seek to do this? Why should he be a cause of guilt in Yisra’ĕl?”"
+    },
+    {
+     "n": 4,
+     "t": "But the sovereign’s word prevailed against Yo’aḇ. And Yo’aḇ left and went throughout all Yisra’ĕl and came to Yerushalayim."
+    },
+    {
+     "n": 5,
+     "t": "And Yo’aḇ gave the sum of the number of the people to Dawiḏ. And all Yisra’ĕl had one million one hundred thousand men who drew the sword and Yahuḏah had four hundred and seventy thousand men who drew the sword."
+    },
+    {
+     "n": 6,
+     "t": "But he did not number Lĕwi and Binyamin among them, for the sovereign’s word was loathsome to Yo’aḇ."
+    },
+    {
+     "n": 7,
+     "t": "And it was evil in the eyes of Elohim, concerning this matter and He smote Yisra’ĕl."
+    },
+    {
+     "n": 8,
+     "t": "Then Dawiḏ said to Elohim, “I have sinned greatly, because I have done this matter. But now, I pray, take away the crookedness of Your servant, for I have done very foolishly.”"
+    },
+    {
+     "n": 9,
+     "t": "And HWHY spoke to Gaḏ, Dawiḏ’s seer, saying,"
+    },
+    {
+     "n": 10,
+     "t": "“Go and you shall speak to Dawiḏ, saying, ‘Thus said HWHY, “I hold three options before you – choose one of them for yourself and I do it to you.” ’ ”"
+    },
+    {
+     "n": 11,
+     "t": "So Gaḏ came to Dawiḏ and said, “Thus said HWHY, ‘Choose for yourself"
+    },
+    {
+     "n": 12,
+     "t": "either three years of scarcity of food, or three months to be defeated by your foes with the sword of your enemies overtaking you, or else for three days the sword of HWHY, even the plague in the land, with the messenger of HWHY destroying throughout all the borders of Yisra’ĕl.’ Now consider what answer I am to return to Him who sent me.”"
+    },
+    {
+     "n": 13,
+     "t": "And Dawiḏ said to Gaḏ, “I am in great trouble. Please let me fall into the hand of HWHY, for His compassion is very great, but do not let me fall 959"
+    },
+    {
+     "n": 14,
+     "t": "And HWHY sent a plague upon Yisra’ĕl and seventy thousand men of Yisra’ĕl fell."
+    },
+    {
+     "n": 15,
+     "t": "And Elohim sent a messenger to Yerushalayim to destroy it. And as he was destroying, HWHY saw and relented about the evil and said to the messenger who was destroying, “Enough! Now stop your hand.” And the messenger of HWHY was standing by the threshing-floor of Ornan the Yeḇusite."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ lifted his eyes and saw the messenger of HWHY standing between earth and the heavens, having in his hand a drawn sword stretched out over Yerushalayim. And Dawiḏ and the elders, wrapped in sackcloth, fell on their faces."
+    },
+    {
+     "n": 17,
+     "t": "And Dawiḏ said to Elohim, “Was it not I who commanded the people to be numbered? I am the one who has sinned and done evil indeed. But these, the sheep, what have they done? Let Your hand, I pray, O HWHY my Elohim, be against me and my father’s house, but not against Your people, to be plagued.”"
+    },
+    {
+     "n": 18,
+     "t": "And the messenger of HWHY commanded Gaḏ to say to Dawiḏ that Dawiḏ should go up to raise an altar to HWHY on the threshing-floor of Ornan the Yeḇusite."
+    },
+    {
+     "n": 19,
+     "t": "So Dawiḏ went up at the word of Gaḏ, which he had spoken in the Name of HWHY."
+    },
+    {
+     "n": 20,
+     "t": "And Ornan turned and saw the messenger. And his four sons with him hid themselves and Ornan was threshing wheat."
+    },
+    {
+     "n": 21,
+     "t": "And Dawiḏ came to Ornan and Ornan looked and saw Dawiḏ and he went out from the threshing-floor and bowed down to Dawiḏ with his face to the ground."
+    },
+    {
+     "n": 22,
+     "t": "And Dawiḏ said to Ornan, “Give me the site of the threshing-floor, so that I build an altar to HWHY on it. Give it to me at the complete price, so that the plague is restrained from the people.”"
+    },
+    {
+     "n": 23,
+     "t": "And Ornan said to Dawiḏ, “Take it for yourself and let my master the sovereign do what is good in his eyes. See, I shall give you the cattle for burnt offerings, the threshing implements for wood and the wheat for the grain offering. I give it all.”"
+    },
+    {
+     "n": 24,
+     "t": "And Sovereign Dawiḏ said to Ornan, “No, but I shall certainly buy it at the complete price, for I do not take what is yours for HWHY, nor offer a burnt offering without cost.”"
+    },
+    {
+     "n": 25,
+     "t": "And Dawiḏ gave Ornan six hundred sheqels of gold by weight for the place."
+    },
+    {
+     "n": 26,
+     "t": "And Dawiḏ built there an altar to HWHY and offered burnt offerings and peace offerings and called on HWHY. And He answered him from the heavens by fire on the altar of burnt offering."
+    },
+    {
+     "n": 27,
+     "t": "Then HWHY commanded the messenger and he returned his sword to its sheath."
+    },
+    {
+     "n": 28,
+     "t": "At that time, when Dawiḏ saw that HWHY had answered him on the threshing-floor of Ornan the Yeḇusite, he slaughtered there,"
+    },
+    {
+     "n": 29,
+     "t": "for the Dwelling Place of HWHY and the altar of the burnt offering, which Mosheh had made in the wilderness, were at that time at the high place in Giḇ‛on."
+    },
+    {
+     "n": 30,
+     "t": "But Dawiḏ was unable to go before it to inquire of Elohim, for he was afraid of the sword of the messenger of HWHY."
+    }
+   ],
+   "page": 258,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "22": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Dawiḏ then said, “This is the House of HWHY Elohim and this is the altar of burnt offering for Yisra’ĕl.”"
+    },
+    {
+     "n": 2,
+     "t": "And Dawiḏ commanded to gather the foreigners who were in the land of Yisra’ĕl. And he appointed stonemasons to cut hewn stones to build the House of Elohim."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ prepared large quantities of iron for the nails of the doors of the gates and for the clamps and more bronze than could be weighed,"
+    },
+    {
+     "n": 4,
+     "t": "and cedar trees beyond number, for the Tsiḏonians and those from Tsor brought much cedar wood to Dawiḏ."
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said, “Shelomoh my son is young and tender and the house that is to be built for HWHY is to be exceedingly great, for a splendid Name, to all the lands. Please, let me make preparation for it.” So Dawiḏ made extensive preparations before his death."
+    },
+    {
+     "n": 6,
+     "t": "He also called for his son Shelomoh and commanded him to build a house for HWHY Elohim of Yisra’ĕl."
+    },
+    {
+     "n": 7,
+     "t": "And Dawiḏ said to Shelomoh, “My son, as for me, it has been in my heart to build a house to the Name of HWHY my Elohim,"
+    },
+    {
+     "n": 8,
+     "t": "but the Word of HWHY came to me, saying, ‘You have shed much blood and have fought great battles. you do not build a house for My Name, because you have shed much blood on the earth in My presence."
+    },
+    {
+     "n": 9,
+     "t": "‘See, a son is to be born to you, who is a man of rest. And I shall give him rest from all his enemies all around, for Shelomoh is his name and peace and rest I give to Yisra’ĕl in his days."
+    },
+    {
+     "n": 10,
+     "t": "‘He does build a house for My Name. He is to be My son and I am to be his Father and I shall establish the throne of his reign over Yisra’ĕl forever.’"
+    },
+    {
+     "n": 11,
+     "t": "“Now, my son, HWHY be with you, then you shall prosper and build the House of HWHY your Elohim, as He has said to you."
+    },
+    {
+     "n": 12,
+     "t": "“Only, let HWHY give you wisdom and understanding and command you concerning Yisra’ĕl, so that you guard the Torah of HWHY your Elohim,"
+    },
+    {
+     "n": 13,
+     "t": "then you shall prosper, if you guard to do the laws and right-rulings with which HWHY commanded Mosheh concerning Yisra’ĕl. Be strong and brave, do not fear nor be discouraged."
+    },
+    {
+     "n": 14,
+     "t": "“See, in my affliction I have prepared for the House of HWHY one hundred thousand talents of gold and one million talents of silver and bronze and iron beyond measure, for it is plenty. And I have prepared timber and stone and you shall add to them."
+    },
+    {
+     "n": 15,
+     "t": "“And with you there are many workmen: hewers and workers of stone and timber and all types of skilled men for every kind of work."
+    },
+    {
+     "n": 16,
+     "t": "“Of gold and silver and bronze and iron there is no limit. Rise up and do and HWHY is with you.”"
+    },
+    {
+     "n": 17,
+     "t": "And Dawiḏ commanded all the rulers of Yisra’ĕl to help Shelomoh his son, saying,"
+    },
+    {
+     "n": 18,
+     "t": "“Is not HWHY your Elohim with you? And has He not given you rest all around? For He has given the inhabitants of the land into my hand and the land has been subdued before HWHY and before His people."
+    },
+    {
+     "n": 19,
+     "t": "“Now, give your heart and your being to seek HWHY your Elohim. Rise up and build the set-apart place of HWHY Elohim, to bring the ark of the covenant of HWHY and the set-apart vessels of Elohim into the house that is to be built for the Name of HWHY.”"
+    }
+   ],
+   "page": 259,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "23": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Dawiḏ was old and satisfied with days and he made his son Shelomoh to reign over Yisra’ĕl,"
+    },
+    {
+     "n": 2,
+     "t": "and he gathered all the rulers of Yisra’ĕl with the priests and the Lĕwites."
+    },
+    {
+     "n": 3,
+     "t": "And the Lĕwites were numbered from the age of thirty years and above. And their number, head by head, was thirty- eight thousand males."
+    },
+    {
+     "n": 4,
+     "t": "Of these, twenty-four thousand were to oversee the work of the House of HWHY and six thousand were officers and judges."
+    },
+    {
+     "n": 5,
+     "t": "Four thousand were gatekeepers and four thousand to give praise to HWHY, “which I made for giving praise.”"
+    },
+    {
+     "n": 6,
+     "t": "And Dawiḏ divided them into divisions, of the sons of Lĕwi: of Gĕreshon, Qehath and Merari."
+    },
+    {
+     "n": 7,
+     "t": "Of the Gĕreshonites: La‛dan and Shim‛i."
+    },
+    {
+     "n": 8,
+     "t": "The sons of La‛dan: Yeḥi’ĕl the head, then Zĕtham and Yo’ĕl, three."
+    },
+    {
+     "n": 9,
+     "t": "The sons of Shim‛i: Shelomith and Ḥazi’ĕl and Haran, three. These were the heads of the fathers’ houses of La‛dan."
+    },
+    {
+     "n": 10,
+     "t": "And the sons of Shim‛i: Yaḥath, Zina 961"
+    },
+    {
+     "n": 11,
+     "t": "And Yaḥath was the head and Zizah the second. But Ye‛ush and Beri‛ah did not have many sons, so they were reckoned as one father’s house."
+    },
+    {
+     "n": 12,
+     "t": "The sons of Qehath: Amram, Yitshar, Ḥeḇron and Uzzi’ĕl, four."
+    },
+    {
+     "n": 13,
+     "t": "The sons of Amram: Aharon and Mosheh. And Aharon was set-apart, he and his sons forever, that he should set- apart the most set-apart, to burn incense before HWHY, to serve Him and to give the blessing in His Name forever."
+    },
+    {
+     "n": 14,
+     "t": "Now Mosheh, the man of Elohim, his sons were named after the tribe of Lĕwi."
+    },
+    {
+     "n": 15,
+     "t": "The sons of Mosheh: Gĕreshom and Eli‛ezer."
+    },
+    {
+     "n": 16,
+     "t": "The sons of Gĕreshom: Sheḇu’ĕl was the head."
+    },
+    {
+     "n": 17,
+     "t": "And the sons of Eli‛ezer: Reḥaḇyah was the head. And Eli‛ezer had no other sons, but the sons of Reḥaḇyah were very many."
+    },
+    {
+     "n": 18,
+     "t": "The sons of Yitshar: Shelomith was the head."
+    },
+    {
+     "n": 19,
+     "t": "The sons of Ḥeḇron: Yeriyahu was the head, Amaryah the second, Yaḥazi’ĕl the third and Yeqam‛am the fourth."
+    },
+    {
+     "n": 20,
+     "t": "The sons of Uzzi’ĕl: Miḵah was the head and Yishshiyah the second."
+    },
+    {
+     "n": 21,
+     "t": "The sons of Merari: Maḥli and Mushi. The sons of Maḥli: El‛azar and Qish."
+    },
+    {
+     "n": 22,
+     "t": "And El‛azar died and had no sons, but only daughters. And their brothers, the sons of Qish, took them."
+    },
+    {
+     "n": 23,
+     "t": "The sons of Mushi: Maḥli, Ĕḏer and Yerĕmoth, three."
+    },
+    {
+     "n": 24,
+     "t": "These were the sons of Lĕwi by their fathers’ houses, the heads of the fathers’ houses as they were counted head by head by the number of their names, who did the work for the service of the House of HWHY, from the age of twenty years and above."
+    },
+    {
+     "n": 25,
+     "t": "For Dawiḏ said, “HWHY Elohim of Yisra’ĕl has given rest to His people and He dwells in Yerushalayim forever,”"
+    },
+    {
+     "n": 26,
+     "t": "and also of the Lĕwites, “They shall no longer bear the Dwelling Place, or any of the vessels for its service.”"
+    },
+    {
+     "n": 27,
+     "t": "For by the last words of Dawiḏ the Lĕwites were numbered from twenty years old and above,"
+    },
+    {
+     "n": 28,
+     "t": "because their duty was to help the sons of Aharon in the service of the House of HWHY, in the courtyards and in the rooms, in the cleansing of all that was set-apart and the work of the service of the House of Elohim,"
+    },
+    {
+     "n": 29,
+     "t": "both with the showbread and the fine flour for the grain offering and with the unleavened cakes and what is baked on the griddle and with what is mixed and with all kinds of measures and sizes;"
+    },
+    {
+     "n": 30,
+     "t": "and to stand every morning to thank and praise HWHY and so at evening;"
+    },
+    {
+     "n": 31,
+     "t": "and for all the burnt offerings to HWHY on the Sabbaths and on the New Moons and on the appointed times, by number according to the right-ruling upon them, continually before HWHY;"
+    },
+    {
+     "n": 32,
+     "t": "and that they should guard the duty of the Tent of Meeting, the duty of the set-apart place and the duty of the sons of Aharon their brothers in the service of the House of HWHY."
+    }
+   ],
+   "page": 260,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "24": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And the divisions of the sons of Aharon: The sons of Aharon were Naḏaḇ and Aḇihu, El‛azar and Ithamar."
+    },
+    {
+     "n": 2,
+     "t": "But Naḏaḇ and Aḇihu died before their father and had no children, so El‛azar and Ithamar served as priests."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ, with Tsaḏoq of the sons of El‛azar and Aḥimeleḵ of the sons of Ithamar, divided them according to their offices in their service."
+    },
+    {
+     "n": 4,
+     "t": "And there were more leaders found of the sons of El‛azar than of the sons of Ithamar. So they divided the sons of El‛azar into sixteen heads of their fathers’ houses and the sons of Ithamar into eight heads of their fathers’ houses."
+    },
+    {
+     "n": 5,
+     "t": "And they were divided by lot, one group as another, for there were officials of the set-apart place and officials of Elohim, from the sons of El‛azar and from the sons of Ithamar."
+    },
+    {
+     "n": 6,
+     "t": "The scribe, Shemayah son of Nethanĕ’l, a Lĕwite, wrote them down before the sovereign and the rulers, and Tsaḏoq the priest and Aḥimeleḵ son of Eḇyathar and the heads of the fathers’ houses of the priests and Lĕwites, one father’s house taken for El‛azar and one for Ithamar."
+    },
+    {
+     "n": 7,
+     "t": "And the first lot came forth to Yehoyariḇ, the second to Yeḏayah,"
+    },
+    {
+     "n": 8,
+     "t": "the third to Ḥarim, the fourth to Se‛orim,"
+    },
+    {
+     "n": 9,
+     "t": "the fifth to Malkiyah, the sixth to Miyamin,"
+    },
+    {
+     "n": 10,
+     "t": "the seventh to Haqqots, the eighth to Aḇiyah,"
+    },
+    {
+     "n": 11,
+     "t": "the ninth to Yĕshua, the tenth to Sheḵanyahu,"
+    },
+    {
+     "n": 12,
+     "t": "the eleventh to Elyashiḇ, the twelfth to Yaqim,"
+    },
+    {
+     "n": 13,
+     "t": "the thirteenth to Ḥuppah, the fourteenth to Yesheḇ’aḇ,"
+    },
+    {
+     "n": 14,
+     "t": "the fifteenth to Bilgah, the sixteenth to Immĕr,"
+    },
+    {
+     "n": 15,
+     "t": "the seventeenth to Ḥĕzir, the eighteenth to Happitstsĕts,"
+    },
+    {
+     "n": 16,
+     "t": "the nineteenth to Pethaḥyah, the twentieth to Yeḥezqĕl,"
+    },
+    {
+     "n": 17,
+     "t": "the twenty-first to Yaḵin, the twentysecond to Gamul,"
+    },
+    {
+     "n": 18,
+     "t": "the twenty-third to Delayahu, the twenty-fourth to Ma‛azyahu."
+    },
+    {
+     "n": 19,
+     "t": "These were their offices in their service for coming into the House of HWHY according to their right-ruling by the hand of Aharon their father, as HWHY Elohim of Yisra’ĕl had commanded him."
+    },
+    {
+     "n": 20,
+     "t": "And the rest of the sons of Lĕwi: of the sons of Amram, Shuḇa’ĕl; of the sons of Shuḇa’ĕl, Yeḥdeyahu."
+    },
+    {
+     "n": 21,
+     "t": "Concerning Reḥaḇyahu, of the sons of Reḥaḇyahu, the head was Yishshiyah."
+    },
+    {
+     "n": 22,
+     "t": "Of the Yitsharites, Shelomoth; of the sons of Shelomoth, Yaḥath."
+    },
+    {
+     "n": 23,
+     "t": "Of the sons of ÀeÄron, Yeriyahu was the head, Amaryahu the second, Yaḥazi’ĕl the third and Yeqam‛am the fourth."
+    },
+    {
+     "n": 24,
+     "t": "Of the sons of Uzzi’ĕl, Miḵah; of the sons of Miḵah, Shamir."
+    },
+    {
+     "n": 25,
+     "t": "The brother of Miḵah, Yishshiyah; of the sons of Yishshiyah, Zeḵaryahu."
+    },
+    {
+     "n": 26,
+     "t": "The sons of Merari: Maḥli and Mushi; the son of Ya‛aziyahu, Beno."
+    },
+    {
+     "n": 27,
+     "t": "The sons of Merari by Ya‛aziyahu: Beno and Shoham and Zakkur and Iḇri."
+    },
+    {
+     "n": 28,
+     "t": "Of Maḥli: El‛azar, who had no sons."
+    },
+    {
+     "n": 29,
+     "t": "Of Qish: the son of Qish, Yeraḥme’ĕl."
+    },
+    {
+     "n": 30,
+     "t": "And the sons of Mushi: Maḥli, Ĕḏer and Yerimoth. These were the sons of the Lĕwites according to their fathers’ houses."
+    },
+    {
+     "n": 31,
+     "t": "These also cast lots, they too, as their brothers the sons of Aharon, in the presence of Sovereign Dawiḏ and Tsaḏoq and Aḥimeleḵ and the heads of the fathers’ houses of the priests and Lĕwites – the head of the fathers, as well as his younger brothers."
+    }
+   ],
+   "page": 261,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "25": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Dawiḏ and the commanders of the army separated for the service some of the sons of Asaph and of Hĕman and of Yeḏuthun, who should prophesy with lyres, with harps and with cymbals. And the number of the workmen according to their service was:"
+    },
+    {
+     "n": 2,
+     "t": "Of the sons of Asaph: Zakkur and Yosĕph, Nethanyah and Ashar’ĕlah, the sons of Asaph at the hands of Asaph,who prophesied at the hands of the sovereign."
+    },
+    {
+     "n": 3,
+     "t": "Of Yeḏuthun, the sons of Yeḏuthun: Geḏalyahu and Tseri and Yeshayahu, Ḥashaḇyahu and Mattithyahu, six, under the hands of their father Yeḏuthun, who prophesied with a lyre to give thanks and to praise HWHY."
+    },
+    {
+     "n": 4,
+     "t": "Of Hĕman, the sons of Hĕman: Buqqiyahu, Mattanyahu, Uzzi’ĕl, Sheḇu’ĕl, Yerimoth, Ḥananyah, Ḥanani, Eliyathah, Giddalti and Romamti-Ezer, Yoshbeqashah, Mallothi, Hothir, Maḥaziyoth."
+    },
+    {
+     "n": 5,
+     "t": "All these were the sons of Hĕman the sovereign’s seer in the words of Elohim, to exalt his horn. For Elohim gave Hĕman fourteen sons and three daughters."
+    },
+    {
+     "n": 6,
+     "t": "All these were at the hands of their father for song in the House of HWHY, with cymbals, harps and lyres, for the 963"
+    },
+    {
+     "n": 7,
+     "t": "And the number of them, with their brothers who were taught in the songs of HWHY, all who were skilled, was two hundred and eighty-eight."
+    },
+    {
+     "n": 8,
+     "t": "And they cast lots for their duty, the small as well as the great, the teacher with the student."
+    },
+    {
+     "n": 9,
+     "t": "And the first lot for Asaph came forth for Yosĕph; Geḏalyahu the second, he and his brothers and sons, twelve;"
+    },
+    {
+     "n": 10,
+     "t": "the third Zakkur, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 11,
+     "t": "the fourth Yitsri, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 12,
+     "t": "the fifth Nethanyahu, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 13,
+     "t": "the sixth Buqqiyahu, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 14,
+     "t": "the seventh Yesar’ĕlah, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 15,
+     "t": "the eighth Yeshayahu, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 16,
+     "t": "the ninth Mattanyahu, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 17,
+     "t": "the tenth Shim‛i, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 18,
+     "t": "the eleventh Azar’ĕl, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 19,
+     "t": "the twelfth Ḥashaḇyah, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 20,
+     "t": "the thirteenth Shuḇa’ĕl, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 21,
+     "t": "the fourteenth Mattithyahu, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 22,
+     "t": "the fifteenth Yerĕmoth, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 23,
+     "t": "the sixteenth Ḥananyahu, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 24,
+     "t": "the seventeenth Yoshbeqashah, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 25,
+     "t": "the eighteenth Ḥanani, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 26,
+     "t": "the nineteenth Mallothi, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 27,
+     "t": "the twentieth Eliyathah, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 28,
+     "t": "the twenty-first Hothir, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 29,
+     "t": "the twenty-second Giddalti, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 30,
+     "t": "the twenty-third Maḥaziyoth, his sons and his brothers, twelve;"
+    },
+    {
+     "n": 31,
+     "t": "the twenty-fourth Romamti-Ezer, his sons and his brothers, twelve."
+    }
+   ],
+   "page": 262,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "26": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "For the divisions of the gatekeepers: Of the Qorḥites, Meshelemyahu son of Qorĕ, of the sons of Asaph."
+    },
+    {
+     "n": 2,
+     "t": "And the sons of Meshelemyahu: Zeḵaryahu the first-born, Yeḏiya’ĕl the second, Zeḇaḏyahu the third, Yathni’ĕl the fourth,"
+    },
+    {
+     "n": 3,
+     "t": "Ĕylam the fifth, Yehoḥanan the sixth, Elyo‛ĕynai the seventh."
+    },
+    {
+     "n": 4,
+     "t": "And the sons of Oḇĕḏ-Eḏom: Shemayah the first-born, Yehozaḇaḏ the second, Yo’aḥ the third, Saḵar the fourth, Nethanĕ’l the fifth,"
+    },
+    {
+     "n": 5,
+     "t": "Ammi’ĕl the sixth, Yissasḵar the seventh, Pe‛ullethai the eighth, for Elohim blessed him."
+    },
+    {
+     "n": 6,
+     "t": "Also to Shemayah his son were sons born who ruled their fathers’ houses, because they were able mighty men."
+    },
+    {
+     "n": 7,
+     "t": "The sons of Shemayah: Othni and Repha’ĕl and Oḇĕḏ, Elzaḇaḏ, whose brothers Elihu and Semaḵyahu were able men."
+    },
+    {
+     "n": 8,
+     "t": "All these were of the sons of Oḇĕḏ Eḏom, they and their sons and their brothers, able men with strength for the work: sixty-two of Oḇĕḏ-Eḏom."
+    },
+    {
+     "n": 9,
+     "t": "And Meshelemyahu had sons and brothers, eighteen able men."
+    },
+    {
+     "n": 10,
+     "t": "Also Ḥosah, of the children of Merari, had sons: Shimri the head (although he was not the first-born, his father made him the head),"
+    },
+    {
+     "n": 11,
+     "t": "Ḥilqiyahu the second, Teḇalyahu the third, Zeḵaryahu the fourth. All the sons and brothers of Ḥosah were thirteen."
+    },
+    {
+     "n": 12,
+     "t": "These divisions of the gatekeepers, among the chief men, had duties like their brothers, to serve in the House of HWHY."
+    },
+    {
+     "n": 13,
+     "t": "And they cast lots for each gate, the small as well as the great, according to 964"
+    },
+    {
+     "n": 14,
+     "t": "And the lot to the east fell to Shelemyahu. Then they cast lots for his son Zeḵaryahu, a wise counsellor and his lot came out to the north;"
+    },
+    {
+     "n": 15,
+     "t": "to Oḇĕḏ-Eḏom to the south and to his sons the storehouse;"
+    },
+    {
+     "n": 16,
+     "t": "to Shuppim and Ḥosah to the west, with the Shalleḵeth Gate on the ascending highway; guard corresponding with guard."
+    },
+    {
+     "n": 17,
+     "t": "On the east were six Lĕwites, on the north four each day, on the south four each day and for the storehouse two by two."
+    },
+    {
+     "n": 18,
+     "t": "As for the Parbar on the west, there were four on the highway and two at the Parbar."
+    },
+    {
+     "n": 19,
+     "t": "These were the divisions of the gatekeepers among the sons of Qoraḥ and among the sons of Merari."
+    },
+    {
+     "n": 20,
+     "t": "Of the Lĕwites, Aḥiyah was over the treasuries of the House of Elohim and over the treasuries of the set-apart gifts."
+    },
+    {
+     "n": 21,
+     "t": "The sons of La‛dan, the sons of the Gĕreshonites of La‛dan, heads of their fathers’ houses, of La‛dan the Gĕreshonite: Yeḥi’ĕli."
+    },
+    {
+     "n": 22,
+     "t": "The sons of Yeḥi’ĕli, Zĕtham and Yo’ĕl his brother, were over the treasuries of the House of HWHY."
+    },
+    {
+     "n": 23,
+     "t": "Of the Amramites, the Yitsharites, the Ḥeḇronites and the Uzzi’ĕlites,"
+    },
+    {
+     "n": 24,
+     "t": "even Sheḇu’ĕl son of Gĕreshom, son of Mosheh, was overseer of the treasuries."
+    },
+    {
+     "n": 25,
+     "t": "And his brothers by Eli‛ezer were Reḥaḇyahu his son and Yeshayahu his son and Yoram his son and Ziḵri his son and Shelomoth his son."
+    },
+    {
+     "n": 26,
+     "t": "This Shelomoth and his brothers were over all the treasuries of the set-apart gifts which Sovereign Dawiḏ and the heads of fathers’ houses, the commanders over thousands and hundreds and the commanders of the army, had set-apart."
+    },
+    {
+     "n": 27,
+     "t": "Some of the booty won in battles they set-apart to maintain the House of HWHY."
+    },
+    {
+     "n": 28,
+     "t": "And all that Shemu’ĕl the seer and Sha’ul son of Qish and Aḇnĕr son of Nĕr and Yo’aḇ son of Tseruyah had set-apart, all who were setting apart, were under the hand of Shelomith and his brothers."
+    },
+    {
+     "n": 29,
+     "t": "Of the Yitsharites, Kenanyahu and his sons were for the outward duties as officials and judges over Yisra’ĕl."
+    },
+    {
+     "n": 30,
+     "t": "Of the Ḥeḇronites, Ḥashaḇyahu and his brothers, one thousand seven hundred able men, had the oversight of Yisra’ĕl beyond the Yardĕn westward, for all the work of HWHY and in the service of the sovereign."
+    },
+    {
+     "n": 31,
+     "t": "Of the Ḥeḇronites, Yeriyah was head of the Ḥeḇronites according to his genealogy of the fathers. In the fortieth year of the reign of Dawiḏ they were sought and there were found among them able men at Ya‛zĕr of Gil‛aḏ."
+    },
+    {
+     "n": 32,
+     "t": "And his brothers were two thousand seven hundred able men, heads of fathers’ houses, whom Sovereign Dawiḏ made officials over the Re’uḇĕnites and the Gaḏites and the half-tribe of Menashsheh, in all matters of Elohim and matters of the sovereign."
+    }
+   ],
+   "page": 263,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "27": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And the children of Yisra’ĕl, according to their number, the heads of fathers’ houses and the commanders of thousands and hundreds and their officers, served the sovereign in all matters of the divisions which came in and went out month by month through- out all the months of the year, each division having twenty-four thousand."
+    },
+    {
+     "n": 2,
+     "t": "Over the first division for the first month was Yashoḇ‛am son of Zaḇdi’ĕl and in his division were twenty-four thousand;"
+    },
+    {
+     "n": 3,
+     "t": "of the sons of Perets and the chief of all the commanders of the army for the first month."
+    },
+    {
+     "n": 4,
+     "t": "And over the division of the second month was Doḏai an Aḥoḥite and of his division Miqloth also was the leader and in his division were twenty-four thousand."
+    },
+    {
+     "n": 5,
+     "t": "The third commander of the army 965"
+    },
+    {
+     "n": 6,
+     "t": "This was the Benayahu who was mighty among the thirty and was over the thirty and in his division was Ammizaḇaḏ his son."
+    },
+    {
+     "n": 7,
+     "t": "The fourth for the fourth month was Asah’ĕl the brother of Yo’aḇ and Zeḇaḏyah his son after him and in his division were twenty-four thousand."
+    },
+    {
+     "n": 8,
+     "t": "The fifth for the fifth month was Shamhuth the Yizraḥite and in his division were twenty-four thousand."
+    },
+    {
+     "n": 9,
+     "t": "The sixth for the sixth month was Ira son of Iqqĕsh the Teqowite and in his division were twenty-four thousand."
+    },
+    {
+     "n": 10,
+     "t": "The seventh for the seventh month was Ḥĕlets the Pelonite, of the children of Ephrayim and in his division were twenty-four thousand."
+    },
+    {
+     "n": 11,
+     "t": "The eighth for the eighth month was Sibbeḵai the Ḥushathite, of the Zarḥites and in his division were twenty-four thousand."
+    },
+    {
+     "n": 12,
+     "t": "The ninth for the ninth month was Aḇi‛ezer the Anathothite, of the Binyamites and in his division were twenty-four thousand."
+    },
+    {
+     "n": 13,
+     "t": "The tenth for the tenth month was Maharai the Netophathite, of the Zarḥites and in his division were twenty- four thousand."
+    },
+    {
+     "n": 14,
+     "t": "The eleventh for the eleventh month was Benayah the Pirathonite, of the children of Ephrayim and in his division were twenty-four thousand."
+    },
+    {
+     "n": 15,
+     "t": "The twelfth for the twelfth month was Ḥeldai the Netophathite, of Othni’ĕl and in his division were twenty-four thousand."
+    },
+    {
+     "n": 16,
+     "t": "And over the tribes of Yisra’ĕl: the chief officer over Re’uḇĕn: Eli‛ezer son of Ziḵri; over Shim‛on: Shephatyahu son of Ma‛aḵah;"
+    },
+    {
+     "n": 17,
+     "t": "Lĕwi: Ḥashaḇyah son of Qemu’ĕl; over Aharon: Tsaḏoq;"
+    },
+    {
+     "n": 18,
+     "t": "Yahuḏah: Elihu, one of Dawiḏ’s brothers; Yissasḵar: Omri son of Miḵa’ĕl; the sovereign’s sons."
+    }
+   ],
+   "page": 264,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "28": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Dawiḏ assembled at Yerushalayim all the rulers of Yisra’ĕl: the rulers of the tribes and the commanders of the divisions who served the sovereign, the commanders over thousands and commanders over hundreds and the heads over all the property and possessions of the sovereign and of his sons, with the officials, the mighty men and all the mighty brave men."
+    },
+    {
+     "n": 2,
+     "t": "Then Sovereign Dawiḏ rose to his feet and said, “Hear me, my brothers and my people: I had it in my heart to build a house of rest for the ark of the covenant of HWHY and for the footstool of our Elohim and had made preparations to build it."
+    },
+    {
+     "n": 3,
+     "t": "“But Elohim said to me, ‘You do not build a house for My Name, because you have been a man of battle and have shed blood.’"
+    },
+    {
+     "n": 4,
+     "t": "“Yet HWHY Elohim of Yisra’ĕl chose me above all the house of my father to be sovereign over Yisra’ĕl forever, for He has chosen Yahuḏah to be the ruler. And of the house of Yahuḏah, the house of my father and among the sons of my father, He was pleased with me to make me reign over all Yisra’ĕl."
+    },
+    {
+     "n": 5,
+     "t": "“And of all my sons – for HWHY has given me many sons – He has chosen my son Shelomoh to sit on the throne of the reign of HWHY over Yisra’ĕl,"
+    },
+    {
+     "n": 6,
+     "t": "and said to me, ‘Shelomoh your son is the one to build My house and My courtyards, for I have chosen him to be My son and I Myself am a Father to him."
+    },
+    {
+     "n": 7,
+     "t": "‘And I shall establish his reign forever, if he is strong to do My commands and My right-rulings, as it is this day.’"
+    },
+    {
+     "n": 8,
+     "t": "“And now, before the eyes of all Yisra’ĕl, the assembly of HWHY and in the hearing of our Elohim, guard and seek all the commands of HWHY your Elohim, so that you possess this good land and leave it as an inheritance for your children after you forever."
+    },
+    {
+     "n": 9,
+     "t": "“As for you, my son Shelomoh, know the Elohim of your father and serve Him with a perfect heart and with a pleasing life, for HWHY searches all hearts and understands all the intent of the thoughts. If you do seek Him, He is found by you; but if you forsake Him, He rejects you forever."
+    },
+    {
+     "n": 10,
+     "t": "“See, now, for HWHY has chosen you to build a house for the set-apart place. Be strong and do it.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ gave his son Shelomoh the plans for the porch and its houses and its treasuries and its upper rooms and its inner rooms and the place of atonement;"
+    },
+    {
+     "n": 12,
+     "t": "and the plans for all that he had by the Spirit, of the courtyards of the House of HWHY and of all the rooms all around and of the treasuries of the House of Elohim and of the treasuries for the set- apart gifts;"
+    },
+    {
+     "n": 13,
+     "t": "and for the divisions of the priests and the Lĕwites and for all the work of the service of the House of HWHy and for all the vessels of service in the House of HWHY;"
+    },
+    {
+     "n": 14,
+     "t": "even gold by weight for utensils of gold, for all utensils used in every kind of service; for silver for all utensils of silver by weight, for all utensils used in every kind of service;"
+    },
+    {
+     "n": 15,
+     "t": "and by weight for the lampstands of gold and their lamps of gold, by weight for each lampstand and its lamps; and for the lampstands of silver by weight, for the lampstand and its lamps, according to the use of each lampstand;"
+    },
+    {
+     "n": 16,
+     "t": "and by weight gold for the tables of the showbread, for each table and silver for the tables of silver;"
+    },
+    {
+     "n": 17,
+     "t": "and clean gold for the forks and the"
+    }
+   ],
+   "page": 266,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "29": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And Dawiḏ the sovereign said to all the assembly, “My son Shelomoh, the one whom Elohim has chosen, is young and tender. And the work is great, because the palace is not for man but for HWHY Elohim."
+    },
+    {
+     "n": 2,
+     "t": "“And with all my power I have pre pared for the House of my Elohim: the gold for the gold and the silver for the silver and the bronze for the bronze, the iron for the iron and the wood for the wood, shoham stones and settings and fair stones of various colours and all kinds of precious stones and marble slabs – in large quantities."
+    },
+    {
+     "n": 3,
+     "t": "“And also, because I delighted in the House of my Elohim, I have treasure of gold and silver; I give for the House of my Elohim even more than all that I have prepared for the Set-apart House:"
+    },
+    {
+     "n": 4,
+     "t": "three thousand talents of gold, of the gold of Ophir and seven thousand talents of refined silver, to overlay the walls of the houses;"
+    },
+    {
+     "n": 5,
+     "t": "the gold for the gold and the silver for the silver and for all kinds of work to be done by the hands of craftsmen. Who then is moved to fill his hand today for HWHY?”"
+    },
+    {
+     "n": 6,
+     "t": "And the leaders of the fathers’ houses and the leaders of the tribes of Yisra’ĕl and the commanders of thousands and of hundreds, with the heads over the sovereign’s work, volunteered"
+    },
+    {
+     "n": 7,
+     "t": "and gave for the work of the House of Elohim five thousand talents and ten thousand darics of gold and ten thousand talents of silver and eighteen thousand talents of bronze and one hundred thousand talents of iron."
+    },
+    {
+     "n": 8,
+     "t": "And those with whom were found precious stones gave them to the treasury of the House of HWHY, into the hand of Yeḥi’ĕl the Gĕreshonite."
+    },
+    {
+     "n": 9,
+     "t": "And the people rejoiced, for they had given voluntarily, because with a perfect heart they had given voluntarily to HWHY. And Dawiḏ the sovereign also rejoiced greatly."
+    },
+    {
+     "n": 10,
+     "t": "And Dawiḏ blessed HWHY before all the assembly. And Dawiḏ said, “Blessed are You, HWHY Elohim of Yisra’ĕl, our Father, forever and ever."
+    },
+    {
+     "n": 11,
+     "t": "“Yours, O HWHY, is the greatness, the power and the comeliness, the preeminence and the excellency, because of all that is in the heavens and in the earth. Yours is the reign, O HWHY and You are exalted as head above all."
+    },
+    {
+     "n": 12,
+     "t": "“And the riches and the esteem come from Your presence and You rule over all. And in Your hand is power and might and it is in Your hand to make great and to give strength to all."
+    },
+    {
+     "n": 13,
+     "t": "“And now, our Elohim, we thank You and praise Your comely Name."
+    },
+    {
+     "n": 14,
+     "t": "“But who am I and who are my people, that we should be able to give so voluntarily as this? For all comes from You and we have given to You out of Your hand."
+    },
+    {
+     "n": 15,
+     "t": "“For we are sojourners and pilgrims before You, as were all our fathers; our days on earth are as a shadow and without permanence."
+    },
+    {
+     "n": 16,
+     "t": "“O HWHY our Elohim, all this store that we have prepared to build You a house for Your set-apart Name is from Your hand and all is of You."
+    },
+    {
+     "n": 17,
+     "t": "“And I know, my Elohim, that You are trying the heart and desire uprightness. As for me, in the uprightness of my heart I have voluntarily given all these. And now with joy I have seen Your people, who are present here to give voluntarily to You."
+    },
+    {
+     "n": 18,
+     "t": "“O HWHY Elohim of Aḇrahim, Yitsḥaq and Yisra’ĕl, our fathers, guard this forever in the intent of the thoughts of the heart of Your people and prepare their heart toward You."
+    },
+    {
+     "n": 19,
+     "t": "“And give my son Shelomoh a perfect heart to guard Your commands and Your witnesses and Your laws, to do all and to build the palace for which I have prepared.”"
+    },
+    {
+     "n": 20,
+     "t": "And Dawiḏ said to all the assembly, “Now bless HWHY your Elohim.” And all the assembly blessed HWHY Elohim of their fathers and bowed their heads and did obeisance to HWHY and the sovereign."
+    },
+    {
+     "n": 21,
+     "t": "And they made offerings to HWHY and offered burnt offerings to HWHY on the next day: a thousand bulls, a thousand rams, a thousand lambs, with their drink offerings and slaughterings in large numbers for all Yisra’ĕl."
+    },
+    {
+     "n": 22,
+     "t": "And they ate and drank before HWHY with great joy on that day. And they set up Shelomoh son of Dawiḏ to reign the second time, and anointed him before HWHY to be leader and Tsaḏoq to be priest."
+    },
+    {
+     "n": 23,
+     "t": "And Shelomoh sat on the throne of HWHY as sovereign instead of Dawiḏ his father and prospered; and all Yisra’ĕl obeyed him."
+    },
+    {
+     "n": 24,
+     "t": "And all the rulers and the mighty men and also all the sons of Sovereign Dawiḏ, submitted themselves to Shelomoh the sovereign."
+    },
+    {
+     "n": 25,
+     "t": "And HWHY exalted Shelomoh exceedingly in the eyes of all Yisra’ĕl and put upon him such royal splendour as had not been on any sovereign before him in Yisra’ĕl."
+    },
+    {
+     "n": 26,
+     "t": "Thus Dawiḏ son of Yishai reigned over all Yisra’ĕl."
+    },
+    {
+     "n": 27,
+     "t": "And the days that he reigned over Yisra’ĕl was forty years. He reigned seven years in Ḥeḇron and he reigned thirty-three years in Yerushalayim."
+    },
+    {
+     "n": 28,
+     "t": "And he died in a good old age, satisfied with days, riches and esteem. And Shelomoh his son reigned in his place."
+    },
+    {
+     "n": 29,
+     "t": "And the acts of Sovereign Dawiḏ, first and last, see, they are written in the book of Shemu’ĕl the seer, in the book of Nathan the prophet and in the book of Gaḏ the seer,"
+    },
+    {
+     "n": 30,
+     "t": "with all his reign and his might and the times that passed over him and over Yisra’ĕl and over all the reigns of the lands."
+    }
+   ],
+   "page": 266,
+   "pdf": "TheBesorah-all.0002.pdf"
+  }
+ }
+}

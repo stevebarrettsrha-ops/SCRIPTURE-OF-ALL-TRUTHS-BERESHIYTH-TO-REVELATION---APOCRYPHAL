@@ -1,0 +1,2241 @@
+{
+ "id": "2shemuel",
+ "hebrew": "2 SHEMU'ĔL",
+ "english": "2 Samuel",
+ "section": "Nebi'im",
+ "chapter_count": 24,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "7": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "13": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "14": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "15": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "16": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "17": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "18": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "19": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "20": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "21": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "22": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "23": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  },
+  "24": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "And it came to be after the death of Sha’ul, when Dawiḏ had returned from smiting the Amalĕqites, that Dawiḏ remained two days in Tsiqlaḡ."
+    },
+    {
+     "n": 2,
+     "t": "And it came to be on the third day, that see, a man came out of the camp from Sha’ul with his garments torn and dust on his head. And it came to be, when he came to Dawiḏ, that he fell to the ground and did obeisance."
+    },
+    {
+     "n": 3,
+     "t": "And Dawiḏ said to him, “From where do you come?” And he said to him, “I have escaped from the camp of Yisra’ĕl.”"
+    },
+    {
+     "n": 4,
+     "t": "And Dawiḏ said to him, “What was the matter? Please inform me.” And he said, “The people have fled from the battle and also many of the people have fallen and are dead, and Sha’ul and Yehonathan his son are dead too.”"
+    },
+    {
+     "n": 5,
+     "t": "And Dawiḏ said to the young man who informed him, “How do you know that Sha’ul and Yehonathan his son are dead?”"
+    },
+    {
+     "n": 6,
+     "t": "And the young man who informed him said, “By chance I was on Mount Gilboa and saw Sha’ul leaning on his spear. And see, the chariots and horsemen followed hard after him."
+    },
+    {
+     "n": 7,
+     "t": "“And when he looked behind him, he saw me and called to me and I answered, ‘Here I am.’"
+    },
+    {
+     "n": 8,
+     "t": "“And he said to me, ‘Who are you?’ So I answered him, ‘I am an Amalĕqite.’"
+    },
+    {
+     "n": 9,
+     "t": "“And he said to me, ‘Please stand over me and put me to death, for agony has seized me, but my life is still in me.’"
+    },
+    {
+     "n": 10,
+     "t": "“So I stood beside him and put him to death, for I knew he would not live after he had fallen. And I took the diadem that was on his head and the bracelet that was on his arm and have brought them here to my master.”"
+    },
+    {
+     "n": 11,
+     "t": "And Dawiḏ took hold of his own garments and tore them and also all the men who were with him."
+    },
+    {
+     "n": 12,
+     "t": "And they mourned and wept and fasted until evening for Sha’ul and for Yehonathan his son and for the people of HWHY and for the house of Yisra’ĕl, because they had fallen by the sword."
+    },
+    {
+     "n": 13,
+     "t": "Then Dawiḏ asked the young man who informed him, “Where are you from?” And he answered, “I am the son of a sojourner, an Amalĕqite.”"
+    },
+    {
+     "n": 14,
+     "t": "And Dawiḏ said to him, “How was it you were not afraid to stretch out your hand to destroy the anointed of HWHY?”"
+    },
+    {
+     "n": 15,
+     "t": "And Dawiḏ called one of the young men and said, “Draw near and fall on Him!” And he smote him so that he died."
+    },
+    {
+     "n": 16,
+     "t": "And Dawiḏ said to him, “Your blood is on your own head, for your own mouth has witnessed against you, saying, ‘I myself have put to death the anointed of HWHY.’ ”"
+    },
+    {
+     "n": 17,
+     "t": "Then Dawiḏ lamented with this lamentation over Sha’ul and over Yehonathan his son,"
+    },
+    {
+     "n": 18,
+     "t": "and he ordered “The Bow” to be taught to the children of Yahuḏah. See, it is written in the Book of Yashar:"
+    },
+    {
+     "n": 19,
+     "t": "“The splendour of Yisra’ĕl Is slain on your high places! How the mighty have fallen!"
+    },
+    {
+     "n": 20,
+     "t": "“Declare it not in Gath, Proclaim it not in the streets of Ashqelon, Lest the daughters of the Philistines rejoice, Lest the daughters of the uncircumcised exult."
+    },
+    {
+     "n": 21,
+     "t": "“Mountains of Gilboa! No dew or rain be upon you, Nor fields of offerings. For there the shield of the mighty 373"
+    },
+    {
+     "n": 22,
+     "t": "“From the blood of the slain, From the fat of the mighty, The bow of Yehonathan did not turn back, And the sword of Sha’ul did not return empty."
+    },
+    {
+     "n": 23,
+     "t": "“Sha’ul and Yehonathan were beloved And pleasant in their lives, And in their death they were not parted. They were swifter than eagles, They were stronger than lions."
+    },
+    {
+     "n": 24,
+     "t": "“Daughters of Yisra’ĕl – weep over Sha’ul, Who wrapped you in scarlet, with finery; Who decked your robes with ornaments of gold."
+    },
+    {
+     "n": 25,
+     "t": "“How the mighty have fallen In the midst of the battle! Yehonathan was slain in your high places."
+    },
+    {
+     "n": 26,
+     "t": "“I am distressed for you, my brother Yehonathan. You have been very pleasant to me. Your love to me was wondrous, Surpassing the love of women."
+    },
+    {
+     "n": 27,
+     "t": "“How the mighty have fallen, And the weapons of battle perish!”"
+    },
+    {
+     "n": 28,
+     "t": "Yo’aḇ then blew a ram’s horn and all the people halted and pursued Yisra’ĕl no further, nor did they fight any more."
+    },
+    {
+     "n": 29,
+     "t": "And Aḇnĕr and his men went on all that night through the desert plain and passed over the Yardĕn and went through all Bithron. And they came to Maḥanayim."
+    },
+    {
+     "n": 30,
+     "t": "And Yo’aḇ turned back from pursuing Aḇnĕr. And when he had gathered all the people together, there were missing of Dawiḏ’s servants nineteen men and Asah’ĕl."
+    },
+    {
+     "n": 31,
+     "t": "But the servants of Dawiḏ had smitten, of Binyamin and Aḇnĕr’s men, three hundred and sixty men who died."
+    },
+    {
+     "n": 32,
+     "t": "And they brought Asah’ĕl and buried him in his father’s tomb, which was in Bĕyth Leḥem. And Yo’aḇ and his men went all night and they came to Ḥeḇron at daybreak."
+    },
+    {
+     "n": 33,
+     "t": "And the sovereign sang a lament over Aḇnĕr and said, “Should Aḇnĕr die as a fool dies?"
+    },
+    {
+     "n": 34,
+     "t": "“Your hands were not bound nor your feet put into shackles. As one falls before sons of evil, so you fell.” And all the people wept over him again."
+    },
+    {
+     "n": 35,
+     "t": "And all the people came to cause Dawiḏ to eat food while it was still day, but Dawiḏ swore, saying, “Elohim do so to me and more also, if I taste bread or whatever else til the sun goes down!”"
+    },
+    {
+     "n": 36,
+     "t": "And all the people took note of it and it was good in their eyes, since whatever the sovereign did was good in the eyes of all the people."
+    },
+    {
+     "n": 37,
+     "t": "And all the people and all Yisra’ĕl knew that day that it had not been the sovereign’s intent to kill Aḇnĕr son of Nĕr."
+    },
+    {
+     "n": 38,
+     "t": "The sovereign also said to his servants, “Do you not know that a prince and a great one has fallen in Yisra’ĕl today?"
+    },
+    {
+     "n": 39,
+     "t": "“And I am weak today, though anointed sovereign. And these men, the sons of Tseruyah, are too harsh for me. Let HWHY repay the evil-doer according to his evil.”"
+    }
+   ],
+   "page": 372,
+   "pdf": "TheBesorah-all.0001.pdf"
+  }
+ }
+}

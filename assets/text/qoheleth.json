@@ -1,0 +1,933 @@
+{
+ "id": "qoheleth",
+ "hebrew": "QOHELETH",
+ "english": "Ecclesiastes",
+ "section": "Kethubim",
+ "chapter_count": 12,
+ "chapters": {
+  "1": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "The words of Qoheleth, son of Dawiḏ, sovereign in Yerushalayim."
+    },
+    {
+     "n": 2,
+     "t": "“Futility! Futility!” says Qoheleth. “Futility, futility, all is futile!”"
+    },
+    {
+     "n": 3,
+     "t": "What does man gain from all his labour in which he toils under the sun?"
+    },
+    {
+     "n": 4,
+     "t": "A generation passes away and a generation comes, but the earth stands forever."
+    },
+    {
+     "n": 5,
+     "t": "The sun also rises and the sun sets and hurries back to the place where it arose."
+    },
+    {
+     "n": 6,
+     "t": "Going to the south and turning round to the north, turning, turning and on its rounds the wind returns."
+    },
+    {
+     "n": 7,
+     "t": "All the rivers run into the sea, yet the sea never overflows. To the place from which the rivers come, there they return again."
+    },
+    {
+     "n": 8,
+     "t": "All matters are wearisome, no one is able to speak of it. The eye is not satisfied with seeing, nor the ear filled with hearing."
+    },
+    {
+     "n": 9,
+     "t": "What has been is what shall be, what has been done is what shall be done and there is no new matter under the sun."
+    },
+    {
+     "n": 10,
+     "t": "Is there a matter of which it is said, “See, this is new”? It was here already, long ago."
+    },
+    {
+     "n": 11,
+     "t": "There is no remembrance of former ones, nor is there any remembrance of those that are to come by those who come later on."
+    },
+    {
+     "n": 12,
+     "t": "I, Qoheleth, was sovereign over Yisra’ĕl in Yerushalayim."
+    },
+    {
+     "n": 13,
+     "t": "And I set my heart to seek and search out by wisdom concerning all that has been done under the heavens; this evil task Elohim has given to the sons of man, to be humbled by it."
+    },
+    {
+     "n": 14,
+     "t": "I have seen all the works that are done under the sun. And see, all was futile and feeding on wind."
+    },
+    {
+     "n": 15,
+     "t": "The crooked could not be straightened and what is lacking could not be counted."
+    },
+    {
+     "n": 16,
+     "t": "So I spoke to my heart, saying, “See, I have attained greatness and have gained more wisdom than all who were before me in Yerushalayim. And my heart has seen much wisdom and knowledge.”"
+    },
+    {
+     "n": 17,
+     "t": "And I set my heart to know wisdom – and to know madness and folly. I know that this too is feeding on wind."
+    },
+    {
+     "n": 18,
+     "t": "For in much wisdom is much grief and he who increases knowledge increases suffering."
+    }
+   ],
+   "page": 188,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "2": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "I said in my heart, “Come now, let me try you with rejoicing and find out what is good.” But see, that too was futile."
+    },
+    {
+     "n": 2,
+     "t": "I said of laughter, “It is madness,”and of rejoicing, “What does it do?”"
+    },
+    {
+     "n": 3,
+     "t": "I searched in my heart how to stimulate my body with wine, while guiding my heart with wisdom and how to lay hold on folly, until I could see what was good for the sons of men to do under the heavens all the days of their lives."
+    },
+    {
+     "n": 4,
+     "t": "I made my works great, I built myself houses, I planted vineyards for myself."
+    },
+    {
+     "n": 5,
+     "t": "I made gardens and parks for myself and I planted all kinds of fruit trees in them."
+    },
+    {
+     "n": 6,
+     "t": "I made pools of water for myself, to water from them a plantation of growing trees."
+    },
+    {
+     "n": 7,
+     "t": "I bought male and female servants and I came to have sons of the house- hold. Also, I had greater possessions of herds and flocks than all who were before me in Yerushalayim."
+    },
+    {
+     "n": 8,
+     "t": "I also gathered for myself silver and gold and the treasures of sovereigns and of the provinces. I provided male and female singers for myself and the pleasures of men – a woman and women."
+    },
+    {
+     "n": 9,
+     "t": "Thus I became great and increased more than all who were before me in Yerushalayim. Also my wisdom remained with me."
+    },
+    {
+     "n": 10,
+     "t": "And all that my eyes desired I did not keep from them. I did not withhold my heart from any pleasure, for my heart rejoiced in all my labour. And this was my portion from all my labour."
+    },
+    {
+     "n": 11,
+     "t": "But when I looked on all the works that my hands had done and on the labour in which I had toiled, see, all was futile and feeding on wind and there was no gain under the sun."
+    },
+    {
+     "n": 12,
+     "t": "And I turned myself to look at wisdom and madness and folly. For what would the man do who comes after the sovereign except what already has been done?"
+    },
+    {
+     "n": 13,
+     "t": "Then I saw that wisdom is better than folly, as light is better than darkness."
+    },
+    {
+     "n": 14,
+     "t": "The wise one’s eyes are in his head, but the fool walks in darkness. And I also knew that one event befalls them all."
+    },
+    {
+     "n": 15,
+     "t": "And I said in my heart, “As the event of the fool, even so it befalls me and why was I then more wise?” Then I said in my heart, “This also is futile.”"
+    },
+    {
+     "n": 16,
+     "t": "For there is no more lasting remembrance of the wise than of the fool, since in the days to come all is forgotten. And how does a wise man die? With the fool!"
+    },
+    {
+     "n": 17,
+     "t": "And I hated life because the work that was done under the sun was evil on me, for all is futile and feeding on wind."
+    },
+    {
+     "n": 18,
+     "t": "And I hated all my labour in which I had toiled under the sun, because I leave it to a man who would come after me."
+    },
+    {
+     "n": 19,
+     "t": "And who knows whether he is wise or foolish? Yet he shall rule over all my labour in which I toiled and in which I have shown myself wise under the sun. That too is futile."
+    },
+    {
+     "n": 20,
+     "t": "So I turned my heart and despaired of all the labour in which I had toiled under the sun."
+    },
+    {
+     "n": 21,
+     "t": "For a man might labour with wisdom, knowledge and skill; yet he leaves his heritage to a man who has not laboured for it. That too is futile and a great evil."
+    },
+    {
+     "n": 22,
+     "t": "For what does a man get for all his labour and strain of his heart with which he has toiled under the sun?"
+    },
+    {
+     "n": 23,
+     "t": "For all his days are sufferings and his work grievous; even in the night his heart takes no rest. That too is futile."
+    },
+    {
+     "n": 24,
+     "t": "A man could do no better but to eat and drink and enjoy himself in his labour! That too, I saw, was from the hand of Elohim."
+    },
+    {
+     "n": 25,
+     "t": "For who eats or who finds enjoyment without Him?"
+    },
+    {
+     "n": 26,
+     "t": "For He gives wisdom and knowledge and joy to a man who is good in His eyes. But to the sinner He gives the task of gathering and collecting, to give to him who is good before Elohim. That too is futile and feeding on wind."
+    }
+   ],
+   "page": 188,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "3": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "For every matter there is an appointed time, even a time for every pursuit under the heavens:"
+    },
+    {
+     "n": 2,
+     "t": "A time to be born and a time to die; a time to plant and a time to uproot;"
+    },
+    {
+     "n": 3,
+     "t": "a time to slay and a time to heal; a time to break down and a time to build up;"
+    },
+    {
+     "n": 4,
+     "t": "a time to weep and a time to laugh; a time to mourn and a time to dance;"
+    },
+    {
+     "n": 5,
+     "t": "a time to throw away stones and a time to gather stones; a time to embrace and a time to refrain from embracing;"
+    },
+    {
+     "n": 6,
+     "t": "a time to seek and a time to lose; a time to keep and a time to throw away;"
+    },
+    {
+     "n": 7,
+     "t": "a time to tear and a time to sew; a time to be silent and a time to speak;"
+    },
+    {
+     "n": 8,
+     "t": "a time to love and a time to hate; a time for battle and a time for peace."
+    },
+    {
+     "n": 9,
+     "t": "What does the worker gain from his toil?"
+    }
+   ],
+   "page": 189,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "4": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Then I looked again at all the oppression that is done under the sun: And see! The tears of the oppressed, but they have no comforter; and power on the side of their oppressors, but they have no comforter."
+    },
+    {
+     "n": 2,
+     "t": "Therefore I commended the dead who were already dead, more than the living who are still alive."
+    },
+    {
+     "n": 3,
+     "t": "And better than both is he who has never existed, who has not seen the evil work that is done under the sun."
+    },
+    {
+     "n": 4,
+     "t": "And I saw that all the toil and skill of the work bring envy between man and his neighbour. That too is futile and feeding on wind."
+    },
+    {
+     "n": 5,
+     "t": "The fool folds his hands and consumes his own flesh."
+    },
+    {
+     "n": 6,
+     "t": "Better is a hand filled with rest than both hands filled with toil and feeding on wind."
+    },
+    {
+     "n": 7,
+     "t": "Then I looked again at futility under the sun:"
+    },
+    {
+     "n": 8,
+     "t": "There is one, without a second, who has neither son nor brother. And there is no end to all his labours. His eye also is not satisfied with riches. “And for whom am I toiling and depriving myself of good?” That too is futility and an evil task."
+    },
+    {
+     "n": 9,
+     "t": "Two are better than one, because they have a good reward for their labour."
+    },
+    {
+     "n": 10,
+     "t": "For if they fall, one lifts his companion up. But woe to him who is alone when he falls, for he has no one to help him up."
+    },
+    {
+     "n": 11,
+     "t": "Also, if two lie down together, they keep warm; but how does one keep warm by himself?"
+    },
+    {
+     "n": 12,
+     "t": "Although one might be overpowered, two withstand him. And a threefold cord is not readily broken."
+    },
+    {
+     "n": 13,
+     "t": "A poor and wise youth is better than an old and foolish sovereign who no longer knows how to take warning."
+    },
+    {
+     "n": 14,
+     "t": "For he comes out of prison to be sovereign, although in his reign he was born poor."
+    },
+    {
+     "n": 15,
+     "t": "Whatever is has already been and what shall be has been before. But Elohim seeks out what has been pursued."
+    },
+    {
+     "n": 16,
+     "t": "Then again I saw under the sun: In the place of right-ruling, wrongness was there. And in the place of righteousness, wrongness was there."
+    },
+    {
+     "n": 17,
+     "t": "I said in my heart, “Elohim judges the righteous and the wrong, for there is a time for every matter and for every work.”"
+    },
+    {
+     "n": 18,
+     "t": "I said in my heart, “Concerning the matter of the sons of men, Elohim selects them, so as to see that they themselves are beasts.”"
+    },
+    {
+     "n": 19,
+     "t": "For the event of the sons of men is also the event of beasts – one event befalls them: as one dies, so dies the other. Indeed, they all have one breath – man has no advantage over beasts.For all is futile."
+    },
+    {
+     "n": 20,
+     "t": "All are going to one place – all came from the dust and all return to dust."
+    },
+    {
+     "n": 21,
+     "t": "Who knows the spirit of the sons of men, which goes upward and the spirit of the beast, which goes down to the earth?"
+    },
+    {
+     "n": 22,
+     "t": "So I saw that man could do no better but to rejoice in his own works, for that is his portion. For who would bring him to see what shall be after him?"
+    }
+   ],
+   "page": 190,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "5": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Guard your steps when you go to the House of Elohim. And draw near to listen rather than to give the slaughtering of fools, for they do not know that they do evil."
+    },
+    {
+     "n": 2,
+     "t": "Do not be hasty with your mouth and let not your heart hurry to bring forth a word before Elohim. For Elohim is in the heavens and you on earth, therefore let your words be few."
+    },
+    {
+     "n": 3,
+     "t": "For a dream comes through the greatness of the task and a fool’s voice is known by his many words."
+    },
+    {
+     "n": 4,
+     "t": "When you make a vow to Elohim, do not delay to pay it, for He takes no pleasure in fools. Pay that which you have vowed."
+    },
+    {
+     "n": 5,
+     "t": "It is better not to vow than to vow and not pay."
+    },
+    {
+     "n": 6,
+     "t": "Do not allow your mouth to cause your flesh to sin, nor say before the messenger of Elohim that it was a mistake. Why should Elohim be wroth at your voice and destroy the work of your hands?"
+    },
+    {
+     "n": 7,
+     "t": "For in much dreaming and many words there is futility. But fear Elohim."
+    },
+    {
+     "n": 8,
+     "t": "If you see the oppression of the poor and denial of right-ruling and righteousness in a province, do not be astonished at the matter. For a higher than the high is guarding and there are higher ones over them."
+    },
+    {
+     "n": 9,
+     "t": "And the increase of the land is for all. The sovereign himself is served from the field."
+    },
+    {
+     "n": 10,
+     "t": "He who loves silver is not satisfied with silver; nor he who loves wealth and increase. That too is futile."
+    },
+    {
+     "n": 11,
+     "t": "With the increase of goods, there is an increase of those consuming them. What advantage then is there to their owners, but to look on?"
+    },
+    {
+     "n": 12,
+     "t": "Sweet is the sleep of a labourer whether he eats little or much, but the plenty of the rich does not let him sleep."
+    },
+    {
+     "n": 13,
+     "t": "There is a sickly evil I have seen under the sun: riches kept for their owner, for his evil."
+    },
+    {
+     "n": 14,
+     "t": "But those riches perish through evil use. And he brings forth a son and there is naught in his hand."
+    },
+    {
+     "n": 15,
+     "t": "As he came naked from his mother’s womb, so he returns, to go as he came. And from his labour which goes into his hand he takes none whatsoever."
+    },
+    {
+     "n": 16,
+     "t": "And this too is a grievous evil – exactly as he came, so he goes. And what gain has he since he toiled for the wind?"
+    },
+    {
+     "n": 17,
+     "t": "All his days he also eats in darkness and with much sorrow and sickness and wrath."
+    },
+    {
+     "n": 18,
+     "t": "See what I have seen: It is good and pleasant for one to eat and drink and to enjoy the good of all his labour in which he toils under the sun all the days of his life which Elohim gives him, for it is his portion."
+    },
+    {
+     "n": 19,
+     "t": "Further, when Elohim has given any man riches and wealth and permitted him to enjoy them and to receive his portion and rejoice in his labour, this is a gift of Elohim."
+    },
+    {
+     "n": 20,
+     "t": "Though it not be much, let him remember the days of his life, because Elohim bears witness by the gladness of his heart."
+    }
+   ],
+   "page": 190,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "6": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "There is an evil which I have seen under the sun and it is great among men:"
+    },
+    {
+     "n": 2,
+     "t": "A man to whom Elohim has given riches and wealth and esteem, so that his being lacks none at all of what he desires, but Elohim does not permit him to eat of it and a foreigner consumes it. This is futile and it is an evil disease."
+    },
+    {
+     "n": 3,
+     "t": "If a man brings forth a hundred children and lives many years, so that the days of his years are many, but his being is not satisfied with goodness, or indeed he has no burial, I say that a premature birth is better than he,"
+    },
+    {
+     "n": 4,
+     "t": "for it comes in futility and goes away in darkness and in darkness its name is covered;"
+    },
+    {
+     "n": 5,
+     "t": "even the sun it has not seen – it has more rest than that man."
+    },
+    {
+     "n": 6,
+     "t": "And though he lives a thousand years twice over, yet he shall not see goodness. Do not all go to one place?"
+    },
+    {
+     "n": 7,
+     "t": "All the labour of man is for his mouth and yet the appetite is not satisfied."
+    },
+    {
+     "n": 8,
+     "t": "For what advantage has the wise over the fool? What advantage does the poor have who knows how to walk before the living?"
+    },
+    {
+     "n": 9,
+     "t": "What the eyes see is better than what the desire goes after. That too is futile and feeding on wind."
+    },
+    {
+     "n": 10,
+     "t": "Whatever shall be, has already been named and it is known that he is son of Aḏam. And he is unable to contend with Him who is mightier than he."
+    },
+    {
+     "n": 11,
+     "t": "The more words, the more futility – what is to man the advantage?"
+    },
+    {
+     "n": 12,
+     "t": "For who knows what is good for man in life, all the days of his futile life, which he passes like a shadow? For who declares to man what shall be after him, under the sun?"
+    }
+   ],
+   "page": 191,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "7": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "A good name is better than precious oil and the day of death than the day of one’s birth."
+    },
+    {
+     "n": 2,
+     "t": "It is better to go to the house of mourning than to go to the house of feasting, for that is the end of all men. And the living take it to heart."
+    },
+    {
+     "n": 3,
+     "t": "Sorrow is better than laughter, for by the sadness of the face the heart becomes better."
+    },
+    {
+     "n": 4,
+     "t": "The heart of the wise is in the house of mourning, but the heart of fools is in the house of rejoicing."
+    },
+    {
+     "n": 5,
+     "t": "It is better to hear the rebuke of the wise than for man to hear the song of fools."
+    },
+    {
+     "n": 6,
+     "t": "For as the crackling of thorns under a pot, so is the laughter of a fool. That too is futile."
+    },
+    {
+     "n": 7,
+     "t": "For oppression makes a wise one mad and a bribe destroys the heart."
+    },
+    {
+     "n": 8,
+     "t": "The end of a matter is better than its beginning. The patient in spirit is better than the proud in spirit."
+    },
+    {
+     "n": 9,
+     "t": "Do not be hasty in your spirit to be vexed, for vexation rests in the bosom of fools."
+    },
+    {
+     "n": 10,
+     "t": "Do not say, “Why were the former days better than these?” For it is not wise of you to have asked about this."
+    },
+    {
+     "n": 11,
+     "t": "Wisdom is good with an inheritance and an advantage to those who see the sun."
+    },
+    {
+     "n": 12,
+     "t": "For wisdom protects as silver protects, but the advantage of knowledge is that wisdom gives life to those who have it."
+    },
+    {
+     "n": 13,
+     "t": "See the work of Elohim: For who is able to make straight what He has made crooked?"
+    },
+    {
+     "n": 14,
+     "t": "Be glad in the day of prosperity, but in the evil day take note that Elohim has also appointed the one as well as the other, so that man should not uncover whatever shall be after him."
+    },
+    {
+     "n": 15,
+     "t": "I have seen it all in my days of futility: There is a righteous one perishing in his righteousness and there is a wrong one living long in his evil."
+    },
+    {
+     "n": 16,
+     "t": "Do not be overrighteous, neither be overwise – why destroy yourself?"
+    },
+    {
+     "n": 17,
+     "t": "Do not be wrong overmuch and do not be a fool – why die before your time?"
+    },
+    {
+     "n": 18,
+     "t": "It is good that you should take hold of this and also not withhold your hand from the other. For he who fears Elohim comes forth with all of them."
+    },
+    {
+     "n": 19,
+     "t": "Wisdom makes the wise strong, more than ten rulers that are in the city."
+    },
+    {
+     "n": 20,
+     "t": "For there is not a righteous man on earth who does good and does not sin."
+    },
+    {
+     "n": 21,
+     "t": "Also do not take to heart all the words they speak, lest you hear your servant cursing you."
+    },
+    {
+     "n": 22,
+     "t": "For you know in your heart that many times you have cursed others."
+    },
+    {
+     "n": 23,
+     "t": "All this I have proved by wisdom. I said, “I am wise,” but it was far from me."
+    },
+    {
+     "n": 24,
+     "t": "That which is, is far off and exceedingly deep – who does find it?"
+    },
+    {
+     "n": 25,
+     "t": "I have turned round, even my heart, to know and to search and to seek out wisdom and a conclusion, to know the wrongness of folly, even of foolishness and madness."
+    },
+    {
+     "n": 26,
+     "t": "And I found more bitter than death, the woman whose heart is snares and nets, whose hands are shackles. He who pleases Elohim escapes from her, but the sinner is captured by her."
+    },
+    {
+     "n": 27,
+     "t": "“See, this I have found,” says Qoheleth, “Counting one by one, to find a conclusion,"
+    },
+    {
+     "n": 28,
+     "t": "which my being still seeks but have not found: I have found one man among a thousand, but a woman among all these I have not found."
+    },
+    {
+     "n": 29,
+     "t": "Truly, this only I have found: that Elohim made man straight, but they have sought out many devices.”"
+    }
+   ],
+   "page": 192,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "8": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Who is like a wise one? And who knows the meaning of a matter? A man’s wisdom makes his face shine and the hardness of his face is changed."
+    },
+    {
+     "n": 2,
+     "t": "I say, “Guard the sovereign’s command because of the oath before Elohim."
+    },
+    {
+     "n": 3,
+     "t": "Do not be in a hurry to go from his presence. Do not take a stand in an evil matter, for he does whatever he pleases.”"
+    },
+    {
+     "n": 4,
+     "t": "Where the word of a sovereign is, there is power. And who says to him, “What are you doing?”"
+    },
+    {
+     "n": 5,
+     "t": "He who guards the command knows no evil matter. And the heart of the wise discerns both time and right-ruling,"
+    },
+    {
+     "n": 6,
+     "t": "Because for every matter there is a time and right-ruling, though the trouble of man is heavy upon him."
+    },
+    {
+     "n": 7,
+     "t": "For he does not know what shall be; so who declares to him when it shall be?"
+    },
+    {
+     "n": 8,
+     "t": "No one has power over the spirit to retain the spirit and no one has power in the day of death. There is no discharge in battle and wrongness does not release those who are given to it."
+    },
+    {
+     "n": 9,
+     "t": "All this I have seen; I applied my heart to every work that is done under the sun: There is a time in which a man rules over a man for his evil."
+    },
+    {
+     "n": 10,
+     "t": "And so I saw the wrong ones buried and they came and went from the place of set-apartness and they were forgotten in the city where they had so done. That too is futile."
+    },
+    {
+     "n": 11,
+     "t": "Because the sentence against an evil deed is not executed speedily, therefore the heart of the sons of men is filled in them to do evil."
+    },
+    {
+     "n": 12,
+     "t": "Although a sinner is doing evil a hundred times and his life is prolonged, yet I know that there is good to those who fear Elohim, who fear before Him."
+    },
+    {
+     "n": 13,
+     "t": "But it shall not be well with the wrong one, nor would he prolong his days as a shadow, because he does not fear before Elohim."
+    },
+    {
+     "n": 14,
+     "t": "There is a futility which has been done on earth, that there are righteous ones who get according to the deeds of the wrong. And there are wrong ones who get according to the deeds of the righteous. I said that this too is futile."
+    },
+    {
+     "n": 15,
+     "t": "Therefore I praised enjoyment, because there is no good to man except to eat and to drink and to rejoice – and it remains with him in his labour for the days of his life which Elohim has given him under the sun."
+    },
+    {
+     "n": 16,
+     "t": "When I gave my heart to know wisdom and to see the task which has been done on earth, even though one sees no sleep day or night,"
+    },
+    {
+     "n": 17,
+     "t": "then I saw all the work of Elohim, that man is unable to find out the work that has been done under the sun. For though a man labours to seek, yet he does not find it. And even though a wise one claims to know, he is unable to find it."
+    }
+   ],
+   "page": 193,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "9": {
+   "verses": [
+    {
+     "n": 2,
+     "t": "It is the same for all: One event to the righteous and to the wrong; to the good and to the clean and to the unclean; and to the one slaughtering and to the one not slaughtering. As is the good one, so is the sinner; the one swearing as the one fearing an oath."
+    },
+    {
+     "n": 3,
+     "t": "This is an evil in all that is done under the sun: there is one event to all. Truly the hearts of the sons of men are filled with evil and madness is in their hearts while they live and then – to the dead!"
+    },
+    {
+     "n": 4,
+     "t": "But for him who is joined to all the living there is trust, for a living dog is better than a dead lion."
+    },
+    {
+     "n": 5,
+     "t": "For the living know that they shall die, but the dead know naught, nor do they have any more reward, for their remembrance is forgotten."
+    },
+    {
+     "n": 6,
+     "t": "Also their love and their hatred and their envy have now perished; and they no longer have a share in all that is done under the sun."
+    },
+    {
+     "n": 7,
+     "t": "Go, eat your bread with joy and drink your wine with a glad heart; for Elohim has already approved your works."
+    },
+    {
+     "n": 8,
+     "t": "Let your garments be white at all times and let your head lack no oil."
+    },
+    {
+     "n": 9,
+     "t": "See life with the wife whom you love all the days of your futile life which He has given you under the sun, all your days of futility. For that is your share in life and in your toil which you have laboured under the sun."
+    },
+    {
+     "n": 10,
+     "t": "All that your hand finds to do, do it with your might; for there is no work or planning or knowledge or wisdom in the grave where you are going."
+    },
+    {
+     "n": 11,
+     "t": "I again saw under the sun that the race is not to the swift, nor the battle to the mighty, nor even bread to the wise, nor even riches to men of understanding, nor even favour to men of knowledge – for time and chance meets with them all."
+    },
+    {
+     "n": 12,
+     "t": "For even man does not know his time. Like fish taken in an evil net and like birds caught in a snare, so the sons of men are snared in an evil time, when it come down on them suddenly."
+    },
+    {
+     "n": 13,
+     "t": "Also this I saw as wisdom under the sun and it is great to me:"
+    },
+    {
+     "n": 14,
+     "t": "A little city and few men in it and a great sovereign came against it and besieged it and built huge siege-works against it."
+    },
+    {
+     "n": 15,
+     "t": "And there was found in it a poor wise man and by his wisdom he delivered the city, yet no one remembered that poor man."
+    },
+    {
+     "n": 16,
+     "t": "And I said, “Wisdom is better than might. But the wisdom of the poor man is despised and his words are not heard.”"
+    },
+    {
+     "n": 17,
+     "t": "The words of the wise, spoken calmly, should be heard rather than the shout of a ruler of fools."
+    },
+    {
+     "n": 18,
+     "t": "Wisdom is better than weapons of conflict, but one sinner destroys much good."
+    }
+   ],
+   "page": 194,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "10": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Dead flies make the perfumer’s ointment stink, ferment; a little folly outweighs wisdom, esteem."
+    },
+    {
+     "n": 2,
+     "t": "A wise man’s heart is at his right hand, but a fool’s heart at his left."
+    },
+    {
+     "n": 3,
+     "t": "And also, when a fool walks along the way, his heart fails and he shows everyone that he is a fool."
+    },
+    {
+     "n": 4,
+     "t": "If the spirit of the ruler rises against you, do not leave your post, for calmness lays to rest great faults."
+    },
+    {
+     "n": 5,
+     "t": "There is an evil I have seen under the sun, as a mistake coming from the ruler:"
+    },
+    {
+     "n": 6,
+     "t": "Folly is set in many high positions, while the rich sit in a humble place."
+    },
+    {
+     "n": 7,
+     "t": "I have seen servants on horses – and rulers walking on the ground like servants."
+    },
+    {
+     "n": 8,
+     "t": "He who digs a pit falls into it and whoever breaks through a wall is bitten by a snake."
+    },
+    {
+     "n": 9,
+     "t": "He who quarries stones is hurt by them. He who splits wood is endangered by it."
+    },
+    {
+     "n": 10,
+     "t": "If an iron tool is blunt and one does not sharpen the edge, then he needs more strength and wisdom is advantageous to make right."
+    },
+    {
+     "n": 11,
+     "t": "If the snake bites without enchantment, then ‘the master of the tongue’ is no better!"
+    },
+    {
+     "n": 12,
+     "t": "Words of a wise man’s mouth show favour, but the lips of a fool swallow him up;"
+    },
+    {
+     "n": 13,
+     "t": "the beginning of the words of his mouth is foolishness and the end of his talk is wicked madness."
+    },
+    {
+     "n": 14,
+     "t": "And a fool increases words; a man knows not what shall come to be; and who declares to him what shall be after him?"
+    },
+    {
+     "n": 15,
+     "t": "The labour of fools wearies them, because not one knows how to go to the city!"
+    },
+    {
+     "n": 16,
+     "t": "Woe to you, O land, when your sovereign is a youth and your rulers feast in the morning!"
+    },
+    {
+     "n": 17,
+     "t": "Blessed are you, O land, when your sovereign is the son of nobles and your rulers feast in due season – for strength and not for drunkenness!"
+    },
+    {
+     "n": 18,
+     "t": "Because of laziness the framework tumbles and through idleness of hands the house leaks."
+    },
+    {
+     "n": 19,
+     "t": "A feast is made for laughter and wine gladdens life; and the silver answers all."
+    },
+    {
+     "n": 20,
+     "t": "Do not curse the sovereign, even in your thought; do not curse the rich, even in your bedroom; for a bird of the heavens conveys the voice and a bird in flight makes the matter known."
+    }
+   ],
+   "page": 194,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "11": {
+   "verses": [
+    {
+     "n": 1,
+     "t": "Send out your bread on the face of the waters, for after many days you shall find it."
+    },
+    {
+     "n": 2,
+     "t": "Give a portion to seven and also to eight, for you do not know what evil might be on the earth."
+    },
+    {
+     "n": 3,
+     "t": "If the clouds are filled with rain, they empty themselves upon the earth. And if a tree falls to the south or the north, in the place where the tree falls, there it is."
+    },
+    {
+     "n": 4,
+     "t": "He who watches the wind does not sow and he who looks at the clouds does not reap."
+    },
+    {
+     "n": 5,
+     "t": "As you do not know what is the way of the wind, or how the bones grow in the womb of her who is with child, so you do not know the works of Elohim who makes all."
+    },
+    {
+     "n": 6,
+     "t": "Sow your seed in the morning and until evening do not let your hand rest; since you do not know which prosper, this or that, or whether both alike are good."
+    },
+    {
+     "n": 7,
+     "t": "Sweet also is the light and good for the eyes to see the sun;"
+    },
+    {
+     "n": 8,
+     "t": "But if a man lives many years, let him rejoice in them all. But let him remember the days of darkness, for they are many. All that is coming is futility."
+    },
+    {
+     "n": 9,
+     "t": "Rejoice, O young man, in your youth and let your heart gladden you in the days of your youth. And walk in the ways of your heart and in the sight of your eyes, but know that for all these Elohim brings you into right-ruling."
+    },
+    {
+     "n": 10,
+     "t": "Therefore remove vexation from your heart and put away evil from your flesh, for youth and dawn of life are futility."
+    },
+    {
+     "n": 12,
+     "t": "remember also your Creator in the days of your youth, before the evil days come and the years draw near when you say, “I have no pleasure in them”:"
+    }
+   ],
+   "page": 195,
+   "pdf": "TheBesorah-all.0002.pdf"
+  },
+  "12": {
+   "verses": [
+    {
+     "n": 2,
+     "t": "Give a portion to seven and also to eight, for you do not know what evil might be on the earth."
+    },
+    {
+     "n": 3,
+     "t": "If the clouds are filled with rain, they empty themselves upon the earth. And if a tree falls to the south or the north, in the place where the tree falls, there it is."
+    },
+    {
+     "n": 4,
+     "t": "He who watches the wind does not sow and he who looks at the clouds does not reap."
+    },
+    {
+     "n": 5,
+     "t": "As you do not know what is the way of the wind, or how the bones grow in the womb of her who is with child, so you do not know the works of Elohim who makes all."
+    },
+    {
+     "n": 6,
+     "t": "Sow your seed in the morning and until evening do not let your hand rest; since you do not know which prosper, this or that, or whether both alike are good."
+    },
+    {
+     "n": 7,
+     "t": "Sweet also is the light and good for the eyes to see the sun;"
+    },
+    {
+     "n": 8,
+     "t": "But if a man lives many years, let him rejoice in them all. But let him remember the days of darkness, for they are many. All that is coming is futility."
+    },
+    {
+     "n": 9,
+     "t": "Rejoice, O young man, in your youth and let your heart gladden you in the days of your youth. And walk in the ways of your heart and in the sight of your eyes, but know that for all these Elohim brings you into right-ruling."
+    },
+    {
+     "n": 10,
+     "t": "Therefore remove vexation from your heart and put away evil from your flesh, for youth and dawn of life are futility."
+    },
+    {
+     "n": 12,
+     "t": "remember also your Creator in the days of your youth, before the evil days come and the years draw near when you say, “I have no pleasure in them”:"
+    },
+    {
+     "n": 13,
+     "t": "Let us hear the conclusion of the entire matter: Fear Elohim and guard His commands, for this applies to all mankind!"
+    },
+    {
+     "n": 14,
+     "t": "For Elohim shall bring every work into right-ruling, including all that is hidden, whether good or whether evil. QOHELETH 12"
+    }
+   ],
+   "page": 195,
+   "pdf": "TheBesorah-all.0002.pdf"
+  }
+ }
+}

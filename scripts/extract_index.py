@@ -244,19 +244,27 @@ def build_jasher():
         return total
 
     chapters = {}
+    # Detect contents page(s) — many roman numerals listed in close succession with no verses.
+    # Skip the first ~8 pages (Jasher's table of contents) when scanning for chapter starts.
+    SKIP_PRE = 6
     for i, page in enumerate(r.pages):
+        if i < SKIP_PRE:
+            continue
         txt = page.extract_text() or ''
-        # Roman numerals on their own line at top of page
-        for m in re.finditer(r'(?:^|\n)\s*([IVXLC]+)\s*(?:\n|$)', txt):
+        # A real chapter heading is a Roman numeral on its own line followed by a verse-1 marker
+        # within a short window.
+        for m in re.finditer(r'(?:^|\n)\s*([IVXLC]+)\s*\n', txt):
             r_str = m.group(1)
-            # Validate: must be a real roman numeral 1-91
             try:
                 ch = roman_to_int(r_str)
-                if 1 <= ch <= 91 and str(ch) not in chapters:
-                    # Make sure the conversion round-trips
-                    chapters[str(ch)] = {"pdf": fname, "page": i + 1, "printed": i + 1}
             except Exception:
-                pass
+                continue
+            if not (1 <= ch <= 91): continue
+            if str(ch) in chapters: continue
+            # Confirm a verse-1 marker follows within ~80 chars
+            tail = txt[m.end(): m.end() + 200]
+            if re.search(r'^\s*1\s+[A-Z“"\']', tail):
+                chapters[str(ch)] = {"pdf": fname, "page": i + 1, "printed": i + 1}
     # Interpolate
     if chapters:
         anchors = sorted((int(k), v["page"]) for k, v in chapters.items())
