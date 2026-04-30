@@ -15,6 +15,7 @@ Output format per book:
 }
 """
 from pypdf import PdfReader
+import pdfplumber
 import re, json, os
 
 ROOT      = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,6 +30,75 @@ def get_pdf(name):
     if name not in _pdf_cache:
         _pdf_cache[name] = PdfReader(os.path.join(PDF_DIR, name))
     return _pdf_cache[name]
+
+
+# ---- Column-aware extraction (for the Besorah PDFs which use 2-column psalms) ----
+_plumber_cache = {}
+def get_plumber(name):
+    if name not in _plumber_cache:
+        _plumber_cache[name] = pdfplumber.open(os.path.join(PDF_DIR, name))
+    return _plumber_cache[name]
+
+
+def _group_lines(words, line_tol=3):
+    """Group adjacent words (sorted by top, then x0) into lines."""
+    if not words:
+        return []
+    lines, current, last_top = [], [], None
+    for w in words:
+        if last_top is None or abs(w['top'] - last_top) <= line_tol:
+            current.append(w)
+        else:
+            lines.append(' '.join(x['text'] for x in current))
+            current = [w]
+        last_top = w['top']
+    if current:
+        lines.append(' '.join(x['text'] for x in current))
+    return lines
+
+
+def extract_page_text(pdf_filename, page_num):
+    """Column-aware text extraction. Auto-detects single vs two-column pages
+    and returns text in proper reading order (col 1 then col 2 for two-column).
+
+    Page-header words (book name banners that span both columns) are
+    detected by being either (a) wide enough that they span the column
+    gutter, or (b) high on the page above the first body row, and emitted
+    once at the start instead of being shoved into one column."""
+    pdf = get_plumber(pdf_filename)
+    if not (1 <= page_num <= len(pdf.pages)):
+        return ''
+    page = pdf.pages[page_num - 1]
+    words = page.extract_words(use_text_flow=False, keep_blank_chars=False)
+    if not words:
+        return ''
+    width = page.width
+    mid = width / 2
+
+    # Header detection: top region of the page that contains words spanning
+    # the column gutter (book title banner). Find the lowest y of any
+    # gutter-spanning word and treat everything at-or-above as header.
+    header_y = 0
+    for w in words:
+        spans_gutter = w['x0'] < mid - 5 and w['x1'] > mid + 5
+        if spans_gutter and w['top'] < page.height * 0.15:
+            header_y = max(header_y, w['bottom'])
+
+    header = [w for w in words if w['top'] < header_y - 0.5]
+    body   = [w for w in words if w['top'] >= header_y - 0.5]
+
+    left  = [w for w in body if w['x0'] + (w['x1'] - w['x0']) / 2 < mid]
+    right = [w for w in body if w['x0'] + (w['x1'] - w['x0']) / 2 >= mid]
+
+    # Single-column: if either side is very thin, treat as one column.
+    if len(body) and (len(right) < 0.20 * len(body) or len(left) < 0.20 * len(body)):
+        body.sort(key=lambda w: (round(w['top']), w['x0']))
+        return '\n'.join(_group_lines(body))
+
+    header.sort(key=lambda w: (round(w['top']), w['x0']))
+    left.sort(key=lambda w: (round(w['top']), w['x0']))
+    right.sort(key=lambda w: (round(w['top']), w['x0']))
+    return '\n'.join(_group_lines(header) + _group_lines(left) + _group_lines(right))
 
 
 # Character class shortcuts:
@@ -55,8 +125,13 @@ def strip_besorah_page(raw):
         if not first:
             lines.pop(0)
             continue
-        # Page-only number like "43"
-        if re.match(r'^\d+\s*$', first):
+        # Page-only number like "43" — must be > 200 (printed page numbers) so a
+        # standalone verse-number drop cap like "1" or "2" isn't dropped here.
+        m = re.match(r'^(\d+)\s*$', first)
+        if m and int(m.group(1)) > 200:
+            lines.pop(0); drops += 1; continue
+        # Lower page numbers (1..200) are dropped only if they appear at the very top.
+        if drops == 0 and m:
             lines.pop(0); drops += 1; continue
         # "44    BERĔSHITH 2", "278Yahusha 2", "3361 SHEMU'ĔL 1"
         # Restrict to short lines (book names are at most ~25 chars) to avoid eating verse 1.
@@ -83,18 +158,11 @@ def strip_besorah_page(raw):
 def parse_besorah_chapter(book, chapter, start_pg, end_pg):
     """Extract verses for one chapter of the Besorah."""
     pdf_file = book['chapters'][str(chapter)]['pdf']
-    r1 = get_pdf("TheBesorah-all.0001.pdf")
-    r2 = get_pdf("TheBesorah-all.0002.pdf")
-
-    def get_text(pdf_filename, page):
-        r = r1 if pdf_filename == "TheBesorah-all.0001.pdf" else r2
-        if 1 <= page <= len(r.pages):
-            return r.pages[page - 1].extract_text() or ""
-        return ""
 
     parts = []
     for pg in range(start_pg, end_pg + 1):
-        cleaned = strip_besorah_page(get_text(pdf_file, pg))
+        # Use column-aware extraction so 2-column Tehillim pages don't interleave verses
+        cleaned = strip_besorah_page(extract_page_text(pdf_file, pg))
         parts.append(cleaned)
     full = "\n".join(parts)
 

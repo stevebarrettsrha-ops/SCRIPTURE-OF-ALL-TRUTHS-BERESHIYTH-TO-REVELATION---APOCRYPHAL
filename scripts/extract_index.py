@@ -104,13 +104,15 @@ def printed_to_pdf(printed_page):
     return ("TheBesorah-all.0002.pdf", printed_page - 700)
 
 def build_besorah_index():
-    pdf1 = PdfReader(os.path.join(PDF_DIR, "TheBesorah-all.0001.pdf"))
-    pdf2 = PdfReader(os.path.join(PDF_DIR, "TheBesorah-all.0002.pdf"))
+    # Use column-aware extraction so 2-column psalms pages produce correct chapter detection.
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from extract_text import extract_page_text
 
     def get_text(printed):
         if printed <= 700:
-            return pdf1.pages[printed - 1].extract_text() or ""
-        return pdf2.pages[printed - 701].extract_text() or ""
+            return extract_page_text("TheBesorah-all.0001.pdf", printed)
+        return extract_page_text("TheBesorah-all.0002.pdf", printed - 700)
 
     books = []
     for idx, entry in enumerate(BESORAH_BOOKS):
@@ -129,16 +131,29 @@ def build_besorah_index():
         heb_norm = normalize(match_name)
         heb_norm_nospace = heb_norm.replace(" ", "")
 
+        # Walk pages in order. On each page (column-aware text), find ALL
+        # chapter-heading patterns: `\n<num>\n<Capital>` (chapter num on its own
+        # line followed by verse-1 text). The first occurrence on a page wins
+        # for that chapter. We process pages sequentially so chapter N's anchor
+        # is locked before chapter N+1 is searched for.
         for p in range(start, end + 1):
             txt = get_text(p)
-            # take first 200 chars to look at header
+            # Page-header chapter mark, e.g. "722TEHILLIM 4 …" — detects pages
+            # where the first chapter on the page is the continuation header.
             head = normalize(txt[:200])
-            # Match chapter number that appears near book name
-            # Try: BOOKNAME <num>
-            m = re.search(rf'{re.escape(heb_norm)}\s+(\d+)', head)
-            if not m:
-                m = re.search(rf'{re.escape(heb_norm_nospace)}\s*(\d+)', head)
-            if m:
+            for pat in (rf'{re.escape(heb_norm)}\s+(\d+)',
+                        rf'{re.escape(heb_norm_nospace)}\s*(\d+)'):
+                m = re.search(pat, head)
+                if m:
+                    ch = int(m.group(1))
+                    if 1 <= ch <= ch_count and ch not in ch_pages:
+                        ch_pages[ch] = p
+                    break
+
+            # Body chapter starts: a digit on its own line followed by capital.
+            # Skip the header region we already scanned to avoid double-counting.
+            body = txt[200:]
+            for m in re.finditer(r'(?:^|\n)\s*(\d+)\s*\n\s*(?=[A-ZÀ-￿"“‘\'])', body):
                 ch = int(m.group(1))
                 if 1 <= ch <= ch_count and ch not in ch_pages:
                     ch_pages[ch] = p
