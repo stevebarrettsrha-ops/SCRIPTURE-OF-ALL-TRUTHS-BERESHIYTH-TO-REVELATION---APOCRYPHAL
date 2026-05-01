@@ -119,9 +119,10 @@ fetch('assets/index.json')
           .replace(/&/g, '&amp;')
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');
-        // Un-escape the divine-name span tag
+        // Un-escape the divine-name span tag (quotes are NOT escaped above,
+        // so they stay literal in the output)
         return esc.replace(
-          /&lt;span class=&quot;dn&quot;&gt;([\s\S]*?)&lt;\/span&gt;/g,
+          /&lt;span class="dn"&gt;([\s\S]*?)&lt;\/span&gt;/g,
           '<span class="dn">$1</span>'
         );
       }
