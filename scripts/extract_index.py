@@ -318,6 +318,77 @@ def build_jasher():
         "chapters": chapters,
     }]
 
+def build_adam_eve():
+    """First and Second Book of Adam and Eve.
+
+    44.pdf — First Book, 79 chapters with `Chapter <Roman>` headings.
+    78.pdf — Second Book, 22 chapters with `CHAP. <Roman>.` headings.
+    """
+    def roman_to_int(s):
+        vals = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
+        total, prev = 0, 0
+        for c in reversed(s.upper()):
+            v = vals.get(c, 0)
+            if v < prev: total -= v
+            else: total += v; prev = v
+        return total
+
+    def to_roman(n):
+        vals = [(100,'C'),(90,'XC'),(50,'L'),(40,'XL'),(10,'X'),(9,'IX'),(5,'V'),(4,'IV'),(1,'I')]
+        out = ''
+        for v, s in vals:
+            while n >= v:
+                out += s; n -= v
+        return out
+
+    def map_book(fname, pattern, total):
+        r = PdfReader(os.path.join(PDF_DIR, fname))
+        chapters = {}
+        # Skip TOC pages (first ~5)
+        SKIP_PRE = 5
+        for i, page in enumerate(r.pages):
+            if i < SKIP_PRE:
+                continue
+            txt = page.extract_text() or ''
+            for m in re.finditer(pattern, txt):
+                rom = m.group(1)
+                ch = roman_to_int(rom)
+                if not (1 <= ch <= total): continue
+                if str(ch) in chapters: continue
+                # Confirm a verse-1 marker follows nearby
+                tail = txt[m.end(): m.end() + 200]
+                if re.search(r'(?:^|\n)\s*1\s+[A-Z“"\']', tail) or re.search(r'^\s*\w', tail):
+                    chapters[str(ch)] = {"pdf": fname, "page": i + 1, "printed": i + 1}
+        # Interpolate
+        if chapters:
+            anchors = sorted((int(k), v["page"]) for k, v in chapters.items())
+            for ch in range(1, total + 1):
+                if str(ch) in chapters: continue
+                prev = max((c for c, _ in anchors if c < ch), default=None)
+                nxt  = min((c for c, _ in anchors if c > ch), default=None)
+                if prev and nxt:
+                    p1 = next(p for c, p in anchors if c == prev)
+                    p2 = next(p for c, p in anchors if c == nxt)
+                    interp = p1 + round((p2 - p1) * (ch - prev) / (nxt - prev))
+                elif prev:
+                    interp = next(pp for c, pp in anchors if c == prev)
+                else:
+                    interp = next(pp for c, pp in anchors if c == nxt)
+                chapters[str(ch)] = {"pdf": fname, "page": interp, "printed": interp}
+        return chapters
+
+    book1 = map_book('44.pdf', r'Chapter\s+([IVXLC]+)', 79)
+    book2 = map_book('78.pdf', r'CHAP\.\s+([IVXLC]+)\.', 22)
+    print(f'adam-eve-1: {len(book1)}/79 chapters mapped')
+    print(f'adam-eve-2: {len(book2)}/22 chapters mapped')
+    return [
+        {"id": "adam-eve-1", "hebrew": "ADAM WAḤAWWAH 1", "english": "First Book of Adam and Eve",
+         "section": "Apocryphal", "chapter_count": 79, "chapters": book1},
+        {"id": "adam-eve-2", "hebrew": "ADAM WAḤAWWAH 2", "english": "Second Book of Adam and Eve",
+         "section": "Apocryphal", "chapter_count": 22, "chapters": book2},
+    ]
+
+
 def build_testaments():
     """THE TESTAMENTS OF THE TWELVE PATRIARCHS - 46 pages.
     Each testament is a single book."""
@@ -448,6 +519,7 @@ if __name__ == '__main__':
     all_books.extend(build_besorah_index())
     all_books.extend(build_enoch())
     all_books.extend(build_jasher())
+    all_books.extend(build_adam_eve())
     all_books.extend(build_testaments())
     all_books.extend(build_apocrypha())
 
