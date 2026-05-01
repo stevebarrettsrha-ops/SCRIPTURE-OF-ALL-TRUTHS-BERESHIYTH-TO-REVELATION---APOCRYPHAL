@@ -16,7 +16,7 @@
 </header>
 
 <main>
-  <input type="search" id="search" placeholder="Search for a sepher (Hebrew or English name)…" autocomplete="off">
+  <input type="search" id="search" placeholder="Search for a book (Hebrew or English name)…" autocomplete="off">
   <div id="content">
     <p class="note">Loading the canon…</p>
   </div>
@@ -24,13 +24,13 @@
 
 <script>
 const SECTIONS = [
-  { key: "Torah",       label: "Torah — Instruction of Mosheh" },
+  { key: "Torah",       label: "Torah — Teaching" },
   { key: "Nebi'im",     label: "Nebi'im — Prophets" },
   { key: "Kethubim",    label: "Kethubim — Writings" },
-  { key: "Messianic",   label: "Berith Ḥadashah — Renewed Covenant" },
-  { key: "Apocryphal",  label: "Sepharim Ḥitsoniyim — Apocryphal Books" },
-  { key: "Patriarchs",  label: "Tsava'oth — Testaments of the Twelve Patriarchs" },
-  { key: "Apocrypha",   label: "Sepharim Ḥitsoniyim — Ethiopic & Eastern Apocrypha" },
+  { key: "Messianic",   label: "Messianic Writings" },
+  { key: "Apocryphal",  label: "Apocryphal Books" },
+  { key: "Patriarchs",  label: "Testaments of the Twelve Patriarchs" },
+  { key: "Apocrypha",   label: "Ethiopic & Eastern Apocrypha" },
 ];
 
 function renderBooks(data, filter) {
@@ -67,7 +67,7 @@ function renderBooks(data, filter) {
   if (root.children.length === 0) {
     const p = document.createElement('p');
     p.className = 'note';
-    p.textContent = 'No sepharim match your search.';
+    p.textContent = 'No books match your search.';
     root.appendChild(p);
   }
 }
