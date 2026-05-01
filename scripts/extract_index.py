@@ -94,8 +94,14 @@ BESORAH_BOOKS = [
 ]
 
 def normalize(s):
-    """Strip accents and make uppercase for matching."""
-    return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').upper()
+    """Strip accents, normalize curly quotes/dashes to ASCII, uppercase."""
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    # Normalize Unicode punctuation that varies between source and our table
+    for src, dst in [('‘', "'"), ('’', "'"), ('“', '"'), ('”', '"'),
+                     ('—', '-'), ('–', '-')]:
+        s = s.replace(src, dst)
+    return s.upper()
 
 def printed_to_pdf(printed_page):
     """0001.pdf covers printed pages 1-700; 0002.pdf covers 701-1344."""
@@ -104,13 +110,15 @@ def printed_to_pdf(printed_page):
     return ("TheBesorah-all.0002.pdf", printed_page - 700)
 
 def build_besorah_index():
-    pdf1 = PdfReader(os.path.join(PDF_DIR, "TheBesorah-all.0001.pdf"))
-    pdf2 = PdfReader(os.path.join(PDF_DIR, "TheBesorah-all.0002.pdf"))
+    # Use column-aware extraction so 2-column psalms pages produce correct chapter detection.
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from extract_text import extract_page_text
 
     def get_text(printed):
         if printed <= 700:
-            return pdf1.pages[printed - 1].extract_text() or ""
-        return pdf2.pages[printed - 701].extract_text() or ""
+            return extract_page_text("TheBesorah-all.0001.pdf", printed)
+        return extract_page_text("TheBesorah-all.0002.pdf", printed - 700)
 
     books = []
     for idx, entry in enumerate(BESORAH_BOOKS):
@@ -129,16 +137,33 @@ def build_besorah_index():
         heb_norm = normalize(match_name)
         heb_norm_nospace = heb_norm.replace(" ", "")
 
+        # Walk pages in order, looking for actual chapter starts in the body
+        # (digit alone on a line followed by a capital — the Besorah's drop-cap
+        # convention). The running page header (e.g. "TEHILLIM 51") is NOT
+        # reliable, because the Besorah's running head sometimes references a
+        # psalm that begins on a later page.
+        # We DO use the running header for the FIRST chapter of each book, since
+        # the header on the first page reliably says "<book> 1".
+        first_page_txt = get_text(start)
+        first_head = normalize(first_page_txt[:200])
+        for pat in (rf'{re.escape(heb_norm)}\s+(\d+)',
+                    rf'{re.escape(heb_norm_nospace)}\s*(\d+)'):
+            m = re.search(pat, first_head)
+            if m:
+                ch = int(m.group(1))
+                if 1 <= ch <= ch_count and ch not in ch_pages:
+                    ch_pages[ch] = start
+                break
+
         for p in range(start, end + 1):
             txt = get_text(p)
-            # take first 200 chars to look at header
-            head = normalize(txt[:200])
-            # Match chapter number that appears near book name
-            # Try: BOOKNAME <num>
-            m = re.search(rf'{re.escape(heb_norm)}\s+(\d+)', head)
-            if not m:
-                m = re.search(rf'{re.escape(heb_norm_nospace)}\s*(\d+)', head)
-            if m:
+            # Body chapter starts: a digit on its own line followed by a capital.
+            # Exclude only the FIRST LINE (which is the running header like
+            # "TEHILLIM 51" or "653 DANI'EL 2") so a chapter heading on row 2 is
+            # still detected.
+            first_nl = txt.find('\n')
+            body = txt[first_nl + 1:] if first_nl != -1 else txt
+            for m in re.finditer(r'(?:^|\n)\s*(\d+)\s*\n\s*(?=[A-ZÀ-￿"“‘\'])', body):
                 ch = int(m.group(1))
                 if 1 <= ch <= ch_count and ch not in ch_pages:
                     ch_pages[ch] = p
