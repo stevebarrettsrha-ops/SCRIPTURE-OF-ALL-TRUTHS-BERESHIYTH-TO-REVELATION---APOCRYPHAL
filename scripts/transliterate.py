@@ -37,6 +37,9 @@ DIVINE = [
     ("Messiah",           "Mashiach"),
     ("Elohim",            "Aluahim"),
     ("God",               "Aluahim"),
+    ("Yisra’ĕl",          "Yasharal"),   # curly apostrophe (U+2019)
+    ("Yisra'ĕl",          "Yasharal"),   # straight apostrophe (U+0027)
+    ("Yisrael",           "Yasharal"),
     ("Israel",            "Yasharal"),
     ("Ĕl",                "Al"),
     ("El",                "Al"),
@@ -180,7 +183,11 @@ def case_match(replacement, source):
 
 def build_replacements(divine, *groups):
     """Produce a list of (pattern, replacement_callable) tuples,
-    sorted by pattern length descending so longer phrases win."""
+    sorted by pattern length descending so longer phrases win.
+
+    Special rule type "prefix" matches the source as a word PREFIX
+    followed by another letter (used to fold compound names like
+    Ĕliyahu / Eliab / Eldad → Aliyahu / Aliab / Aldad)."""
     rules = []
     # Divine names get wrapped in <span class="dn">
     for src, dst in divine:
@@ -190,11 +197,20 @@ def build_replacements(divine, *groups):
             rules.append(('plain', src, dst))
     # Sort by source length descending so multi-word and longer names match first
     rules.sort(key=lambda r: -len(r[1]))
+    # Prefix rules — applied LAST so longer named matches (Elohim, Ĕliyahu mappings
+    # etc.) get first crack. Match Word-start "El"/"Ĕl" followed by another letter.
+    PREFIX_RULES = [("Ĕl", "Al"), ("El", "Al")]
+    for src, dst in PREFIX_RULES:
+        rules.append(('prefix', src, dst))
     compiled = []
     for kind, src, dst in rules:
-        # Word-boundary regex; case-insensitive so we can match different cases
-        # then fix the case in the replacer.
-        pat = re.compile(rf"\b{re.escape(src)}(?='s\b|s\b|\b)", re.IGNORECASE)
+        if kind == 'prefix':
+            # Word start followed by another letter (compound names only).
+            pat = re.compile(rf"\b{re.escape(src)}(?=[A-Za-zÀ-ɏḀ-ỿ])", re.IGNORECASE)
+        else:
+            # Word-boundary regex; case-insensitive so we can match different cases
+            # then fix the case in the replacer.
+            pat = re.compile(rf"\b{re.escape(src)}(?='s\b|s\b|\b)", re.IGNORECASE)
         compiled.append((kind, pat, src, dst))
     return compiled
 
@@ -229,6 +245,11 @@ def transliterate(text, rules):
             # Wrap divine names with sentinel-protected span
             if kind == 'divine':
                 return SENTINEL + '<span class="dn">' + final + '</span>' + SENTINEL
+            elif kind == 'prefix':
+                # Just substitute the prefix — preserve the rest of the word
+                # (the regex is zero-width-lookahead for the next letter, so
+                # the matched text is only the prefix itself).
+                return SENTINEL + final + SENTINEL
             else:
                 return SENTINEL + final + SENTINEL
         # Apply only outside SENTINEL regions
