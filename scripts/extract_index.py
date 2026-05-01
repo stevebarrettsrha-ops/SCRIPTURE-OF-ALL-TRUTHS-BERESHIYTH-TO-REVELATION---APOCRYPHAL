@@ -382,9 +382,9 @@ def build_adam_eve():
     print(f'adam-eve-1: {len(book1)}/79 chapters mapped')
     print(f'adam-eve-2: {len(book2)}/22 chapters mapped')
     return [
-        {"id": "adam-eve-1", "hebrew": "ADAM WAḤAWWAH 1", "english": "First Book of Adam and Eve",
+        {"id": "adam-eve-1", "hebrew": "ADAM AND HAWWAH 1", "english": "First Book of Adam and Eve",
          "section": "Apocryphal", "chapter_count": 79, "chapters": book1},
-        {"id": "adam-eve-2", "hebrew": "ADAM WAḤAWWAH 2", "english": "Second Book of Adam and Eve",
+        {"id": "adam-eve-2", "hebrew": "ADAM AND HAWWAH 2", "english": "Second Book of Adam and Eve",
          "section": "Apocryphal", "chapter_count": 22, "chapters": book2},
     ]
 
