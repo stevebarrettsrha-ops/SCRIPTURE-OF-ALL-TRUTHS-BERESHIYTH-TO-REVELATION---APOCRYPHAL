@@ -38,6 +38,8 @@ DIVINE = [
     ("Elohim",            "Aluahim"),
     ("God",               "Aluahim"),
     ("Israel",            "Yasharal"),
+    ("Ĕl",                "Al"),
+    ("El",                "Al"),
 ]
 
 # Patriarchs & matriarchs
