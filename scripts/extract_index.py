@@ -476,10 +476,17 @@ def build_apocrypha():
         # Detect chapter starts within range
         chapters = {}
         if ch_count > 1:
+            # Per-book heading pattern: 1Clements uses "1Clem N:M", Hermas uses
+            # bare "N:M" (with verse 1 = "N:1"), the rest use "Chapter N".
+            if bid == '1clements':
+                ch_pat = re.compile(r'1Clem\s+(\d+)\s*:\s*1\b')
+            elif bid == 'hermas':
+                ch_pat = re.compile(r'(?:^|\n|\s)(\d+)\s*:\s*1\s+[A-Z]')
+            else:
+                ch_pat = re.compile(r'(?:Chapter|CHAPTER)\s+(\d+)')
             for p in range(start, end + 1):
                 txt = r.pages[p - 1].extract_text() or ''
-                # Look for "Chapter <N>" or "[N]" verse-1 markers
-                for m in re.finditer(r'(?:Chapter|CHAPTER)\s+(\d+)', txt):
+                for m in ch_pat.finditer(txt):
                     ch = int(m.group(1))
                     if 1 <= ch <= ch_count and str(ch) not in chapters:
                         chapters[str(ch)] = {"pdf": fname, "page": p, "printed": p - OFFSET}

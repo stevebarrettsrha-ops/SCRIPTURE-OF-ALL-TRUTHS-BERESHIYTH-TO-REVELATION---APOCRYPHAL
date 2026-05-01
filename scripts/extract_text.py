@@ -431,6 +431,56 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
             parts.append(strip_apoc_page(r.pages[pg - 1].extract_text() or ''))
     full = '\n'.join(parts)
 
+    bid = book['id']
+
+    # ---- 1 Clements: verse markers like "1Clem 1:5\n<text>"
+    if bid == 'apoc-1clements':
+        # Find this chapter's start (first occurrence of "1Clem <chapter>:")
+        m = re.search(rf'1Clem\s+{chapter}\s*:\s*\d+', full)
+        if m:
+            full = full[m.start():]
+        n = re.search(rf'1Clem\s+{chapter+1}\s*:\s*\d+', full)
+        if n:
+            full = full[:n.start()]
+        verse_pat = re.compile(rf'1Clem\s+{chapter}\s*:\s*(\d+)\s*')
+        matches = list(verse_pat.finditer(full))
+        verses = []
+        for i, mm in enumerate(matches):
+            try: vn = int(mm.group(1))
+            except: continue
+            if vn < 1 or vn > 100: continue
+            end = matches[i+1].start() if i+1 < len(matches) else len(full)
+            text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
+            if text:
+                verses.append({"n": vn, "t": text})
+        return verses or [{"n": 1, "t": re.sub(r'\s+', ' ', full).strip()}]
+
+    # ---- Shepherd of Hermas: verse markers "1:5", "2:10", etc.
+    if bid == 'apoc-hermas':
+        # Trim to this chapter only by matching "<chapter>:<n>" markers
+        # Find first marker for this chapter
+        pat = re.compile(rf'(?:^|\n|\s){chapter}\s*:\s*(\d+)\s')
+        # Limit to this chapter range
+        m = pat.search(full)
+        if m:
+            full = full[m.start():]
+        nxt = re.search(rf'(?:^|\n|\s){chapter+1}\s*:\s*1\s', full)
+        if nxt:
+            full = full[:nxt.start()]
+        verse_pat = re.compile(rf'(?:^|\n|\s){chapter}\s*:\s*(\d+)\s')
+        matches = list(verse_pat.finditer(full))
+        verses = []
+        for i, mm in enumerate(matches):
+            try: vn = int(mm.group(1))
+            except: continue
+            if vn < 1 or vn > 100: continue
+            end = matches[i+1].start() if i+1 < len(matches) else len(full)
+            text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
+            if text:
+                verses.append({"n": vn, "t": text})
+        return verses or [{"n": 1, "t": re.sub(r'\s+', ' ', full).strip()}]
+
+    # ---- Standard apocrypha: "Chapter <N>" + bracketed verse markers
     m = re.search(rf'Chapter\s+{chapter}\b', full)
     if m:
         full = full[m.end():]
@@ -439,7 +489,8 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
         full = full[:n.start()]
 
     # Bracketed verse markers: [1], [2], …
-    verse_pat = re.compile(r'\[(\d+)\]\s+')
+    # Sirach uses ranges like [1-14], [15-26]; expand to start verse only.
+    verse_pat = re.compile(r'\[(\d+)(?:\s*-\s*\d+)?\]\s*')
     matches = list(verse_pat.finditer(full))
     verses = []
     if matches:
