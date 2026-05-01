@@ -3,11 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pereq — The Besorah</title>
+<title>Chapter — The Besorah</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+  /* Pin the footer to the bottom of the viewport on short chapters */
+  body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
+  .chapter-bar { flex: 0 0 auto; }
+  .chapter-main { flex: 1 1 auto; }
+  .chapter-footer { flex: 0 0 auto; }
+</style>
 </head>
 <body>
 
@@ -19,10 +26,10 @@
     <span id="bar-ch" style="margin-left:0.6rem; color: var(--ink-dim);"></span>
   </div>
   <div class="controls">
-    <a id="prev" href="#">&larr; Qodem</a>
-    <a id="book-toc" href="#">Peraqim</a>
+    <a id="prev" href="#">&larr; Prev</a>
+    <a id="book-toc" href="#">Chapters</a>
     <a id="pdf-link" href="#" target="_blank" title="Open original PDF page">PDF</a>
-    <a id="next" href="#">Aḥar &rarr;</a>
+    <a id="next" href="#">Next &rarr;</a>
   </div>
 </div>
 
@@ -32,14 +39,14 @@
     <h2 class="chapter-page-sub" id="page-eng"></h2>
     <div class="chapter-num" id="ch-num"></div>
     <div id="verses" class="verses"></div>
-    <p class="note" id="loading">Loading pereq…</p>
+    <p class="note" id="loading">Loading chapter…</p>
   </div>
 </main>
 
 <footer class="chapter-footer">
   <div class="controls">
-    <a id="prev2" href="#">&larr; Pereq qodem</a>
-    <a id="next2" href="#">Pereq aḥar &rarr;</a>
+    <a id="prev2" href="#">&larr; Previous chapter</a>
+    <a id="next2" href="#">Next chapter &rarr;</a>
   </div>
 </footer>
 
@@ -52,21 +59,21 @@ fetch('assets/index.json')
   .then(r => r.json())
   .then(idx => {
     const book = idx.books.find(b => b.id === bookId);
-    if (!book) throw new Error('Sepher not found');
+    if (!book) throw new Error('Book not found');
     return fetch(`assets/text/${book.id}.json`)
       .then(r => r.json())
       .then(text => ({book, text}));
   })
   .then(({book, text}) => {
     const ch = text.chapters[String(chapter)];
-    if (!ch) throw new Error('Pereq not found');
+    if (!ch) throw new Error('Chapter not found');
 
     // Header / title
     document.title = `${book.hebrew}${book.chapter_count > 1 ? ' ' + chapter : ''} — The Besorah`;
     document.getElementById('bar-heb').textContent = book.hebrew;
     document.getElementById('bar-eng').textContent = `(${book.english})`;
     if (book.chapter_count > 1) {
-      document.getElementById('bar-ch').textContent = `Pereq ${chapter}`;
+      document.getElementById('bar-ch').textContent = `Chapter ${chapter}`;
     }
     document.getElementById('page-heb').textContent = book.hebrew;
     document.getElementById('page-eng').textContent = book.english;
@@ -102,24 +109,36 @@ fetch('assets/index.json')
     out.innerHTML = '';
     const verses = ch.verses || [];
     if (verses.length === 0) {
-      out.innerHTML = `<p class="note">No text extracted for this pereq. <a href="SCRIPTURE/${ch.pdf}#page=${ch.page}" target="_blank">Open the PDF page</a>.</p>`;
+      out.innerHTML = `<p class="note">No text extracted for this chapter. <a href="SCRIPTURE/${ch.pdf}#page=${ch.page}" target="_blank">Open the PDF page</a>.</p>`;
     } else {
+      // Verse text may contain <span class="dn">…</span> for divine names.
+      // Escape any other angle brackets and only un-escape that one element.
+      function renderVerseText(raw) {
+        // Escape everything first
+        const esc = raw
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+        // Un-escape the divine-name span tag
+        return esc.replace(
+          /&lt;span class=&quot;dn&quot;&gt;([\s\S]*?)&lt;\/span&gt;/g,
+          '<span class="dn">$1</span>'
+        );
+      }
+
       // Long-form chapters (Patriarchs, single-verse books) get single-block prose
       const isProse = verses.length === 1 && verses[0].t.length > 600;
       if (isProse) {
         const para = document.createElement('p');
         para.className = 'prose';
-        para.textContent = verses[0].t;
+        para.innerHTML = renderVerseText(verses[0].t);
         out.appendChild(para);
       } else {
         for (const v of verses) {
           const p = document.createElement('p');
           p.className = 'verse';
-          const num = document.createElement('sup');
-          num.className = 'verse-n';
-          num.textContent = v.n;
-          p.appendChild(num);
-          p.appendChild(document.createTextNode(' ' + v.t));
+          p.innerHTML =
+            `<sup class="verse-n">${v.n}</sup> ` + renderVerseText(v.t);
           out.appendChild(p);
         }
       }
@@ -129,7 +148,7 @@ fetch('assets/index.json')
   .catch(err => {
     console.error(err);
     document.getElementById('loading').textContent =
-      'Failed to load pereq. Make sure you opened this site through a local web server (e.g. `python3 -m http.server`).';
+      'Failed to load chapter. Make sure you opened this site through a local web server (e.g. `python3 -m http.server`).';
   });
 </script>
 </body>

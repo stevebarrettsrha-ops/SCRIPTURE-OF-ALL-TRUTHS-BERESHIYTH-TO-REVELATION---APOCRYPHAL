@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sepher — The Besorah</title>
+<title>Book — The Besorah</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <header class="site-header">
   <h1 id="page-title">THE BESORAH</h1>
   <div class="sub" id="page-section"></div>
-  <nav><a href="index.html">&larr; All Sepharim</a></nav>
+  <nav><a href="index.html">&larr; All Books</a></nav>
 </header>
 
 <main>
@@ -33,10 +33,11 @@ fetch('assets/index.json')
   .then(data => {
     const book = data.books.find(b => b.id === bookId);
     if (!book) {
-      document.getElementById('chapter-list').innerHTML = '<p class="note">Sepher not found.</p>';
+      document.getElementById('chapter-list').innerHTML = '<p class="note">Book not found.</p>';
       return;
     }
     document.title = `${book.hebrew} (${book.english}) — The Besorah`;
+
     document.getElementById('page-title').textContent = book.hebrew;
     document.getElementById('page-section').textContent = book.section.toUpperCase();
     document.getElementById('book-heb').textContent = book.hebrew;
@@ -52,14 +53,14 @@ fetch('assets/index.json')
       a.style.margin = '2rem auto';
       a.style.fontSize = '1.1rem';
       a.style.padding = '1rem';
-      a.textContent = `Qera ${book.hebrew} →`;
+      a.textContent = `Read ${book.hebrew} →`;
       list.appendChild(a);
     } else {
       const heading = document.createElement('p');
       heading.style.textAlign = 'center';
       heading.style.color = 'var(--ink-dim)';
       heading.style.marginTop = '1rem';
-      heading.textContent = `${book.chapter_count} peraqim`;
+      heading.textContent = `${book.chapter_count} chapters`;
       list.appendChild(heading);
 
       const grid = document.createElement('div');
