@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scripture of All Truths — Bereshith to Revelation, with the Apocrypha</title>
+<title>The Besorah — Bereshith to Ḥazon, with the Apocrypha</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -11,12 +11,12 @@
 </head>
 <body>
 <header class="site-header">
-  <h1>SCRIPTURE OF ALL TRUTHS</h1>
-  <div class="sub">Bereshith &mdash; to &mdash; Revelation &mdash; with the Apocrypha</div>
+  <h1>THE BESORAH</h1>
+  <div class="sub">Bereshith &mdash; to &mdash; Ḥazon &mdash; with the Apocrypha</div>
 </header>
 
 <main>
-  <input type="search" id="search" placeholder="Search for a book (Hebrew or English name)…" autocomplete="off">
+  <input type="search" id="search" placeholder="Search for a sepher (Hebrew or English name)…" autocomplete="off">
   <div id="content">
     <p class="note">Loading the canon…</p>
   </div>
@@ -24,13 +24,13 @@
 
 <script>
 const SECTIONS = [
-  { key: "Torah",       label: "Torah — Teaching" },
+  { key: "Torah",       label: "Torah — Instruction of Mosheh" },
   { key: "Nebi'im",     label: "Nebi'im — Prophets" },
   { key: "Kethubim",    label: "Kethubim — Writings" },
-  { key: "Messianic",   label: "Messianic Writings" },
-  { key: "Apocryphal",  label: "Apocryphal Books" },
-  { key: "Patriarchs",  label: "Testaments of the Twelve Patriarchs" },
-  { key: "Apocrypha",   label: "Ethiopic & Eastern Apocrypha" },
+  { key: "Messianic",   label: "Berith Ḥadashah — Renewed Covenant" },
+  { key: "Apocryphal",  label: "Sepharim Ḥitsoniyim — Apocryphal Books" },
+  { key: "Patriarchs",  label: "Tsava'oth — Testaments of the Twelve Patriarchs" },
+  { key: "Apocrypha",   label: "Sepharim Ḥitsoniyim — Ethiopic & Eastern Apocrypha" },
 ];
 
 function renderBooks(data, filter) {
@@ -67,7 +67,7 @@ function renderBooks(data, filter) {
   if (root.children.length === 0) {
     const p = document.createElement('p');
     p.className = 'note';
-    p.textContent = 'No books match your search.';
+    p.textContent = 'No sepharim match your search.';
     root.appendChild(p);
   }
 }
