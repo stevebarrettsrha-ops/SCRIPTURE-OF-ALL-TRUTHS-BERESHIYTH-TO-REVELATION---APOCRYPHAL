@@ -147,14 +147,17 @@ def strip_besorah_page(raw):
         # Lower page numbers (1..200) are dropped only if they appear at the very top.
         if drops == 0 and m:
             lines.pop(0); drops += 1; continue
-        # "44    BERĔSHITH 2", "278Yahusha 2", "3361 SHEMU'ĔL 1"
-        # Restrict to short lines (book names are at most ~25 chars) to avoid eating verse 1.
-        if len(first) <= 30 and re.match(rf"^\d+\s*[{UPPER}][{LETTER}'\s\-]*?(?:\s+\d+){{0,2}}\s*$", first):
+        # "44    BERĔSHITH 2", "278Yahusha 2", "3361 SHEMU'ĔL 1",
+        # "989 2 DIḆRE haYAMIM 22" — running header with leading page number,
+        # optional book-prefix digit ("1 ", "2 "), book name, optional chapter.
+        if len(first) <= 35 and re.match(
+            rf"^\d+\s+(?:\d\s+)?[{UPPER}][{LETTER}'\s\-]*?(?:\s+\d+){{0,2}}\s*$", first):
             lines.pop(0); drops += 1; continue
-        # "BERĔSHITH", "BERĔSHITH 2", "BERĔSHITH 43 92" — Hebrew name optionally
-        # followed by chapter number and/or page number (running header on
-        # even/odd pages takes both forms).
-        if re.match(rf"^[{UPPER}][{UPPER}'\s\-]+(?:\s+\d+){{0,2}}\s*$", first):
+        # "BERĔSHITH", "BERĔSHITH 2", "BERĔSHITH 43 92", "2 DIḆRE haYAMIM 22 989"
+        # — Hebrew name optionally preceded by a book-prefix digit and followed
+        # by chapter and/or page numbers.
+        if len(first) <= 35 and re.match(
+            rf"^(?:\d\s+)?[{UPPER}][{LETTER}'\s\-]+(?:\s+\d+){{0,2}}\s*$", first):
             lines.pop(0); drops += 1; continue
         # "GENESIS — 1 MOSHEH" — English name + em-dash + ordinal + Hebrew name
         if re.match(r"^[A-Z][A-Z\s]+\s*[—–\-]\s*\d+\s*[A-Z][A-Za-z]*\s*$", first):
