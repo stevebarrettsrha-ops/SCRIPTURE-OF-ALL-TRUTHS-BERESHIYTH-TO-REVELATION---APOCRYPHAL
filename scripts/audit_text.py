@@ -18,6 +18,11 @@ TEXT_DIR = os.path.join(ROOT, "assets", "text")
 PDF_DIR = os.path.join(ROOT, "SCRIPTURE")
 REPORT = os.path.join(ROOT, "scripts", "audit-report.md")
 
+# Use the same column-aware reader as the extractor so the audit doesn't
+# report false positives caused by pypdf's column-jumbled raw text.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from extract_text import extract_page_text as _column_aware_text
+
 
 def normalize(s):
     s = unicodedata.normalize('NFD', s)
@@ -41,19 +46,29 @@ def page_text(pdf_filename, page):
 
 
 def text_in_pdf(needle_text, pdf_filename, start_page, end_page):
+    """Match a verse against BOTH raw pypdf text and column-aware text.
+
+    Column-aware text preserves the visual reading order, so it's the
+    authoritative reference for 2-column layouts (e.g. Tehillim, where
+    pypdf scrambles columns). Raw pypdf text is also checked because
+    the column-aware reader can occasionally place a stray word slightly
+    out of position relative to the verse boundary.
+    """
     raw = ''
+    col_aware = ''
     for p in range(start_page, end_page + 1):
         raw += '\n' + page_text(pdf_filename, p)
+        col_aware += '\n' + _column_aware_text(pdf_filename, p)
     raw_norm = normalize(raw)
+    col_norm = normalize(col_aware)
     words = normalize(needle_text).split()
     if len(words) < 4:
-        # Short verse — match whole thing
         n = ' '.join(words)
-        return bool(n) and n in raw_norm
+        return bool(n) and (n in raw_norm or n in col_norm)
     # Sliding 8-word window
     for start in range(0, max(1, len(words) - 4), 4):
         win = ' '.join(words[start:start + 8])
-        if win and win in raw_norm:
+        if win and (win in raw_norm or win in col_norm):
             return True
     return False
 
