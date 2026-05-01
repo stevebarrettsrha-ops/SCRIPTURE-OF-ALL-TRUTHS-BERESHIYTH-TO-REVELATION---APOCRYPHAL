@@ -82,12 +82,41 @@ def extract_page_text(pdf_filename, page_num):
     Page-header words (book name banners that span both columns) are
     detected by being either (a) wide enough that they span the column
     gutter, or (b) high on the page above the first body row, and emitted
-    once at the start instead of being shoved into one column."""
+    once at the start instead of being shoved into one column.
+
+    Footnote text (8-pt commentary at the bottom of the Besorah pages —
+    `Elohim: The ending "im" is really "YM"...`) is filtered out via
+    font-size: only chars at the body size (≈10 pt) are kept."""
     pdf = get_plumber(pdf_filename)
     if not (1 <= page_num <= len(pdf.pages)):
         return ''
     page = pdf.pages[page_num - 1]
-    words = page.extract_words(use_text_flow=False, keep_blank_chars=False)
+
+    # Determine the dominant body font size on this page so we can find the
+    # baseline of the body block. Anything below the body (and at a smaller
+    # font size) is a footnote and gets dropped — but inline verse-number
+    # superscripts (also small font, but interleaved with body text) survive.
+    chars = page.chars
+    if chars:
+        from collections import Counter
+        size_counts = Counter(round(c['size']) for c in chars)
+        body_size = size_counts.most_common(1)[0][0]
+        body_chars = [c for c in chars if abs(c['size'] - body_size) <= 0.7]
+        if body_chars:
+            body_bottom = max(c['bottom'] for c in body_chars)
+            # Drop only the chars that are BELOW body and small-font: footnotes.
+            keep_chars = [c for c in chars
+                          if not (c['size'] < body_size - 0.7 and c['top'] >= body_bottom - 1)]
+        else:
+            keep_chars = chars
+        try:
+            from pdfplumber.utils import extract_words as _extract_words
+            words = _extract_words(keep_chars, use_text_flow=False, keep_blank_chars=False)
+        except Exception:
+            words = page.extract_words(use_text_flow=False, keep_blank_chars=False)
+    else:
+        words = page.extract_words(use_text_flow=False, keep_blank_chars=False)
+
     if not words:
         return ''
     width = page.width
