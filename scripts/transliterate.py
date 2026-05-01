@@ -41,7 +41,7 @@ DIVINE = [
 
 # Patriarchs & matriarchs
 PEOPLE_PATRIARCHS = [
-    ("Adam",       "Aḏam"),
+    ("Adam",       "Adawm"),
     ("Eve",        "Ḥawwah"),
     ("Cain",       "Qayin"),
     ("Abel",       "Heḇel"),
