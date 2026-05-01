@@ -437,6 +437,10 @@ def strip_apoc_page(raw):
     txt = raw
     txt = re.sub(r'The Apocrypha:\s*Including Books from the\s*Ethiopic Bible\s*', '', txt)
     txt = re.sub(r'Joseph B\. Lumpkin\s*', '', txt)
+    # Strip the apocrypha PDF's inline chapter labels — `Wis.8`, `Jdt.9`,
+    # `Sir.51`, `Tob.14`, `Bar.6`, `Bel.1`, `IMac.16`, etc. — that mark
+    # the next chapter and otherwise bleed into the prior chapter's text.
+    txt = re.sub(r'\b(?:Wis|Jdt|Sir|Tob|Bar|Bel|IMac|IIMac|IIIMac|IVMac|Esd|Mac)\.\s*\d+\b', '', txt)
     txt = '\n'.join(l for l in txt.split('\n') if not re.match(r'^\s*\d+\s*$', l.strip()))
     return txt
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter — Scripture of All Truths</title>
+<title>Pereq — The Besorah</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -19,10 +19,10 @@
     <span id="bar-ch" style="margin-left:0.6rem; color: var(--ink-dim);"></span>
   </div>
   <div class="controls">
-    <a id="prev" href="#">&larr; Prev</a>
-    <a id="book-toc" href="#">Chapters</a>
+    <a id="prev" href="#">&larr; Qodem</a>
+    <a id="book-toc" href="#">Peraqim</a>
     <a id="pdf-link" href="#" target="_blank" title="Open original PDF page">PDF</a>
-    <a id="next" href="#">Next &rarr;</a>
+    <a id="next" href="#">Aḥar &rarr;</a>
   </div>
 </div>
 
@@ -32,14 +32,14 @@
     <h2 class="chapter-page-sub" id="page-eng"></h2>
     <div class="chapter-num" id="ch-num"></div>
     <div id="verses" class="verses"></div>
-    <p class="note" id="loading">Loading chapter…</p>
+    <p class="note" id="loading">Loading pereq…</p>
   </div>
 </main>
 
 <footer class="chapter-footer">
   <div class="controls">
-    <a id="prev2" href="#">&larr; Previous chapter</a>
-    <a id="next2" href="#">Next chapter &rarr;</a>
+    <a id="prev2" href="#">&larr; Pereq qodem</a>
+    <a id="next2" href="#">Pereq aḥar &rarr;</a>
   </div>
 </footer>
 
@@ -52,21 +52,21 @@ fetch('assets/index.json')
   .then(r => r.json())
   .then(idx => {
     const book = idx.books.find(b => b.id === bookId);
-    if (!book) throw new Error('Book not found');
+    if (!book) throw new Error('Sepher not found');
     return fetch(`assets/text/${book.id}.json`)
       .then(r => r.json())
       .then(text => ({book, text}));
   })
   .then(({book, text}) => {
     const ch = text.chapters[String(chapter)];
-    if (!ch) throw new Error('Chapter not found');
+    if (!ch) throw new Error('Pereq not found');
 
     // Header / title
-    document.title = `${book.hebrew}${book.chapter_count > 1 ? ' ' + chapter : ''} — Scripture of All Truths`;
+    document.title = `${book.hebrew}${book.chapter_count > 1 ? ' ' + chapter : ''} — The Besorah`;
     document.getElementById('bar-heb').textContent = book.hebrew;
     document.getElementById('bar-eng').textContent = `(${book.english})`;
     if (book.chapter_count > 1) {
-      document.getElementById('bar-ch').textContent = `Chapter ${chapter}`;
+      document.getElementById('bar-ch').textContent = `Pereq ${chapter}`;
     }
     document.getElementById('page-heb').textContent = book.hebrew;
     document.getElementById('page-eng').textContent = book.english;
@@ -102,7 +102,7 @@ fetch('assets/index.json')
     out.innerHTML = '';
     const verses = ch.verses || [];
     if (verses.length === 0) {
-      out.innerHTML = `<p class="note">No text extracted for this chapter. <a href="SCRIPTURE/${ch.pdf}#page=${ch.page}" target="_blank">Open the PDF page</a>.</p>`;
+      out.innerHTML = `<p class="note">No text extracted for this pereq. <a href="SCRIPTURE/${ch.pdf}#page=${ch.page}" target="_blank">Open the PDF page</a>.</p>`;
     } else {
       // Long-form chapters (Patriarchs, single-verse books) get single-block prose
       const isProse = verses.length === 1 && verses[0].t.length > 600;
@@ -129,7 +129,7 @@ fetch('assets/index.json')
   .catch(err => {
     console.error(err);
     document.getElementById('loading').textContent =
-      'Failed to load chapter. Make sure you opened this site through a local web server (e.g. `python3 -m http.server`).';
+      'Failed to load pereq. Make sure you opened this site through a local web server (e.g. `python3 -m http.server`).';
   });
 </script>
 </body>
