@@ -40,21 +40,39 @@ def get_plumber(name):
     return _plumber_cache[name]
 
 
-def _group_lines(words, line_tol=3):
-    """Group adjacent words (sorted by top, then x0) into lines."""
+def _group_lines(words, line_tol=5):
+    """Group words into lines, then sort each line left-to-right.
+
+    Step 1: assign each word to a line whose representative `top` is within
+    `line_tol` (5 px). This handles the palaeo-Hebrew Tetragrammaton (HWHY)
+    sitting ~2 px above the regular baseline: it joins its actual line
+    instead of being lifted to its own row.
+
+    Step 2: sort each line's words by x0 so the visual reading order is
+    preserved.
+
+    Step 3: sort lines by the line's mean `top`."""
     if not words:
         return []
-    lines, current, last_top = [], [], None
-    for w in words:
-        if last_top is None or abs(w['top'] - last_top) <= line_tol:
-            current.append(w)
-        else:
-            lines.append(' '.join(x['text'] for x in current))
-            current = [w]
-        last_top = w['top']
-    if current:
-        lines.append(' '.join(x['text'] for x in current))
-    return lines
+    # First pass: build lines by walking words sorted by top
+    by_top = sorted(words, key=lambda w: w['top'])
+    line_buckets = []   # list of {anchor_top, words[]}
+    for w in by_top:
+        placed = False
+        for b in line_buckets:
+            if abs(w['top'] - b['anchor_top']) <= line_tol:
+                b['words'].append(w)
+                # Update anchor to running mean for stability
+                b['anchor_top'] = sum(x['top'] for x in b['words']) / len(b['words'])
+                placed = True
+                break
+        if not placed:
+            line_buckets.append({'anchor_top': w['top'], 'words': [w]})
+    # Sort buckets top-to-bottom
+    line_buckets.sort(key=lambda b: b['anchor_top'])
+    # Within each line, sort by x0 and join
+    return [' '.join(x['text'] for x in sorted(b['words'], key=lambda x: x['x0']))
+            for b in line_buckets]
 
 
 def extract_page_text(pdf_filename, page_num):
@@ -92,12 +110,8 @@ def extract_page_text(pdf_filename, page_num):
 
     # Single-column: if either side is very thin, treat as one column.
     if len(body) and (len(right) < 0.20 * len(body) or len(left) < 0.20 * len(body)):
-        body.sort(key=lambda w: (round(w['top']), w['x0']))
         return '\n'.join(_group_lines(body))
 
-    header.sort(key=lambda w: (round(w['top']), w['x0']))
-    left.sort(key=lambda w: (round(w['top']), w['x0']))
-    right.sort(key=lambda w: (round(w['top']), w['x0']))
     return '\n'.join(_group_lines(header) + _group_lines(left) + _group_lines(right))
 
 
@@ -135,10 +149,12 @@ def strip_besorah_page(raw):
             lines.pop(0); drops += 1; continue
         # "44    BERĔSHITH 2", "278Yahusha 2", "3361 SHEMU'ĔL 1"
         # Restrict to short lines (book names are at most ~25 chars) to avoid eating verse 1.
-        if len(first) <= 25 and re.match(rf"^\d+\s*[{UPPER}][{LETTER}'\s\-]*?(?:\s+\d+)?\s*$", first):
+        if len(first) <= 30 and re.match(rf"^\d+\s*[{UPPER}][{LETTER}'\s\-]*?(?:\s+\d+){{0,2}}\s*$", first):
             lines.pop(0); drops += 1; continue
-        # "BERĔSHITH" or "BERĔSHITH 2" — Hebrew name (all uppercase) optionally with chapter number
-        if re.match(rf"^[{UPPER}][{UPPER}'\s\-]+(?:\s+\d+)?\s*$", first):
+        # "BERĔSHITH", "BERĔSHITH 2", "BERĔSHITH 43 92" — Hebrew name optionally
+        # followed by chapter number and/or page number (running header on
+        # even/odd pages takes both forms).
+        if re.match(rf"^[{UPPER}][{UPPER}'\s\-]+(?:\s+\d+){{0,2}}\s*$", first):
             lines.pop(0); drops += 1; continue
         # "GENESIS — 1 MOSHEH" — English name + em-dash + ordinal + Hebrew name
         if re.match(r"^[A-Z][A-Z\s]+\s*[—–\-]\s*\d+\s*[A-Z][A-Za-z]*\s*$", first):
