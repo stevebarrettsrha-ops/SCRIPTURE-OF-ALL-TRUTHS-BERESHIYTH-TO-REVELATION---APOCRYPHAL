@@ -35,6 +35,7 @@ DIVINE = [
     ("Jesus",             "Yahusha"),
     ("Christ",            "Mashiach"),
     ("Messiah",           "Mashiach"),
+    ("Elohim",            "Aluahim"),
     ("God",               "Aluahim"),
     ("Israel",            "Yasharal"),
 ]
