@@ -40,8 +40,12 @@ def get_plumber(name):
     return _plumber_cache[name]
 
 
-def _group_lines(words, line_tol=3):
-    """Group adjacent words (sorted by top, then x0) into lines."""
+def _group_lines(words, line_tol=4):
+    """Group adjacent words (sorted by top, then x0) into lines.
+
+    Tolerance is 4 px so the palaeo-Hebrew Tetragrammaton (HWHY) — which
+    sits ~2 px above the regular baseline — groups with its surrounding
+    text rather than starting a new line."""
     if not words:
         return []
     lines, current, last_top = [], [], None
@@ -92,12 +96,12 @@ def extract_page_text(pdf_filename, page_num):
 
     # Single-column: if either side is very thin, treat as one column.
     if len(body) and (len(right) < 0.20 * len(body) or len(left) < 0.20 * len(body)):
-        body.sort(key=lambda w: (round(w['top']), w['x0']))
+        body.sort(key=lambda w: (w["top"] // 8, w['x0']))
         return '\n'.join(_group_lines(body))
 
-    header.sort(key=lambda w: (round(w['top']), w['x0']))
-    left.sort(key=lambda w: (round(w['top']), w['x0']))
-    right.sort(key=lambda w: (round(w['top']), w['x0']))
+    header.sort(key=lambda w: (w["top"] // 8, w['x0']))
+    left.sort(key=lambda w: (w["top"] // 8, w['x0']))
+    right.sort(key=lambda w: (w["top"] // 8, w['x0']))
     return '\n'.join(_group_lines(header) + _group_lines(left) + _group_lines(right))
 
 
