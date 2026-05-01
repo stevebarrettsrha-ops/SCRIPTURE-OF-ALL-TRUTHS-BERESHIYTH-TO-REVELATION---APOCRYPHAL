@@ -7553,6 +7553,529 @@
       }
     },
     {
+      "id": "adam-eve-1",
+      "hebrew": "ADAM WAḤAWWAH 1",
+      "english": "First Book of Adam and Eve",
+      "section": "Apocryphal",
+      "chapter_count": 79,
+      "chapters": {
+        "1": {
+          "pdf": "44.pdf",
+          "page": 6,
+          "printed": 6
+        },
+        "2": {
+          "pdf": "44.pdf",
+          "page": 7,
+          "printed": 7
+        },
+        "3": {
+          "pdf": "44.pdf",
+          "page": 7,
+          "printed": 7
+        },
+        "4": {
+          "pdf": "44.pdf",
+          "page": 8,
+          "printed": 8
+        },
+        "5": {
+          "pdf": "44.pdf",
+          "page": 9,
+          "printed": 9
+        },
+        "6": {
+          "pdf": "44.pdf",
+          "page": 10,
+          "printed": 10
+        },
+        "7": {
+          "pdf": "44.pdf",
+          "page": 10,
+          "printed": 10
+        },
+        "8": {
+          "pdf": "44.pdf",
+          "page": 11,
+          "printed": 11
+        },
+        "9": {
+          "pdf": "44.pdf",
+          "page": 11,
+          "printed": 11
+        },
+        "10": {
+          "pdf": "44.pdf",
+          "page": 12,
+          "printed": 12
+        },
+        "11": {
+          "pdf": "44.pdf",
+          "page": 12,
+          "printed": 12
+        },
+        "12": {
+          "pdf": "44.pdf",
+          "page": 13,
+          "printed": 13
+        },
+        "13": {
+          "pdf": "44.pdf",
+          "page": 14,
+          "printed": 14
+        },
+        "14": {
+          "pdf": "44.pdf",
+          "page": 15,
+          "printed": 15
+        },
+        "15": {
+          "pdf": "44.pdf",
+          "page": 15,
+          "printed": 15
+        },
+        "16": {
+          "pdf": "44.pdf",
+          "page": 15,
+          "printed": 15
+        },
+        "17": {
+          "pdf": "44.pdf",
+          "page": 16,
+          "printed": 16
+        },
+        "18": {
+          "pdf": "44.pdf",
+          "page": 17,
+          "printed": 17
+        },
+        "19": {
+          "pdf": "44.pdf",
+          "page": 17,
+          "printed": 17
+        },
+        "20": {
+          "pdf": "44.pdf",
+          "page": 17,
+          "printed": 17
+        },
+        "21": {
+          "pdf": "44.pdf",
+          "page": 18,
+          "printed": 18
+        },
+        "22": {
+          "pdf": "44.pdf",
+          "page": 18,
+          "printed": 18
+        },
+        "23": {
+          "pdf": "44.pdf",
+          "page": 19,
+          "printed": 19
+        },
+        "24": {
+          "pdf": "44.pdf",
+          "page": 19,
+          "printed": 19
+        },
+        "25": {
+          "pdf": "44.pdf",
+          "page": 20,
+          "printed": 20
+        },
+        "26": {
+          "pdf": "44.pdf",
+          "page": 20,
+          "printed": 20
+        },
+        "27": {
+          "pdf": "44.pdf",
+          "page": 22,
+          "printed": 22
+        },
+        "28": {
+          "pdf": "44.pdf",
+          "page": 23,
+          "printed": 23
+        },
+        "29": {
+          "pdf": "44.pdf",
+          "page": 23,
+          "printed": 23
+        },
+        "30": {
+          "pdf": "44.pdf",
+          "page": 24,
+          "printed": 24
+        },
+        "31": {
+          "pdf": "44.pdf",
+          "page": 25,
+          "printed": 25
+        },
+        "32": {
+          "pdf": "44.pdf",
+          "page": 25,
+          "printed": 25
+        },
+        "33": {
+          "pdf": "44.pdf",
+          "page": 26,
+          "printed": 26
+        },
+        "34": {
+          "pdf": "44.pdf",
+          "page": 27,
+          "printed": 27
+        },
+        "35": {
+          "pdf": "44.pdf",
+          "page": 29,
+          "printed": 29
+        },
+        "36": {
+          "pdf": "44.pdf",
+          "page": 29,
+          "printed": 29
+        },
+        "37": {
+          "pdf": "44.pdf",
+          "page": 29,
+          "printed": 29
+        },
+        "38": {
+          "pdf": "44.pdf",
+          "page": 30,
+          "printed": 30
+        },
+        "39": {
+          "pdf": "44.pdf",
+          "page": 30,
+          "printed": 30
+        },
+        "40": {
+          "pdf": "44.pdf",
+          "page": 31,
+          "printed": 31
+        },
+        "41": {
+          "pdf": "44.pdf",
+          "page": 31,
+          "printed": 31
+        },
+        "42": {
+          "pdf": "44.pdf",
+          "page": 32,
+          "printed": 32
+        },
+        "43": {
+          "pdf": "44.pdf",
+          "page": 32,
+          "printed": 32
+        },
+        "44": {
+          "pdf": "44.pdf",
+          "page": 33,
+          "printed": 33
+        },
+        "45": {
+          "pdf": "44.pdf",
+          "page": 34,
+          "printed": 34
+        },
+        "46": {
+          "pdf": "44.pdf",
+          "page": 35,
+          "printed": 35
+        },
+        "50": {
+          "pdf": "44.pdf",
+          "page": 36,
+          "printed": 36
+        },
+        "47": {
+          "pdf": "44.pdf",
+          "page": 36,
+          "printed": 36
+        },
+        "48": {
+          "pdf": "44.pdf",
+          "page": 36,
+          "printed": 36
+        },
+        "49": {
+          "pdf": "44.pdf",
+          "page": 37,
+          "printed": 37
+        },
+        "51": {
+          "pdf": "44.pdf",
+          "page": 39,
+          "printed": 39
+        },
+        "52": {
+          "pdf": "44.pdf",
+          "page": 39,
+          "printed": 39
+        },
+        "53": {
+          "pdf": "44.pdf",
+          "page": 40,
+          "printed": 40
+        },
+        "54": {
+          "pdf": "44.pdf",
+          "page": 41,
+          "printed": 41
+        },
+        "55": {
+          "pdf": "44.pdf",
+          "page": 42,
+          "printed": 42
+        },
+        "56": {
+          "pdf": "44.pdf",
+          "page": 43,
+          "printed": 43
+        },
+        "57": {
+          "pdf": "44.pdf",
+          "page": 43,
+          "printed": 43
+        },
+        "58": {
+          "pdf": "44.pdf",
+          "page": 44,
+          "printed": 44
+        },
+        "59": {
+          "pdf": "44.pdf",
+          "page": 45,
+          "printed": 45
+        },
+        "60": {
+          "pdf": "44.pdf",
+          "page": 45,
+          "printed": 45
+        },
+        "61": {
+          "pdf": "44.pdf",
+          "page": 47,
+          "printed": 47
+        },
+        "62": {
+          "pdf": "44.pdf",
+          "page": 48,
+          "printed": 48
+        },
+        "63": {
+          "pdf": "44.pdf",
+          "page": 49,
+          "printed": 49
+        },
+        "64": {
+          "pdf": "44.pdf",
+          "page": 50,
+          "printed": 50
+        },
+        "65": {
+          "pdf": "44.pdf",
+          "page": 50,
+          "printed": 50
+        },
+        "66": {
+          "pdf": "44.pdf",
+          "page": 51,
+          "printed": 51
+        },
+        "67": {
+          "pdf": "44.pdf",
+          "page": 52,
+          "printed": 52
+        },
+        "68": {
+          "pdf": "44.pdf",
+          "page": 53,
+          "printed": 53
+        },
+        "69": {
+          "pdf": "44.pdf",
+          "page": 54,
+          "printed": 54
+        },
+        "70": {
+          "pdf": "44.pdf",
+          "page": 55,
+          "printed": 55
+        },
+        "71": {
+          "pdf": "44.pdf",
+          "page": 56,
+          "printed": 56
+        },
+        "72": {
+          "pdf": "44.pdf",
+          "page": 57,
+          "printed": 57
+        },
+        "73": {
+          "pdf": "44.pdf",
+          "page": 59,
+          "printed": 59
+        },
+        "74": {
+          "pdf": "44.pdf",
+          "page": 59,
+          "printed": 59
+        },
+        "75": {
+          "pdf": "44.pdf",
+          "page": 60,
+          "printed": 60
+        },
+        "76": {
+          "pdf": "44.pdf",
+          "page": 61,
+          "printed": 61
+        },
+        "77": {
+          "pdf": "44.pdf",
+          "page": 62,
+          "printed": 62
+        },
+        "78": {
+          "pdf": "44.pdf",
+          "page": 62,
+          "printed": 62
+        },
+        "79": {
+          "pdf": "44.pdf",
+          "page": 64,
+          "printed": 64
+        }
+      }
+    },
+    {
+      "id": "adam-eve-2",
+      "hebrew": "ADAM WAḤAWWAH 2",
+      "english": "Second Book of Adam and Eve",
+      "section": "Apocryphal",
+      "chapter_count": 22,
+      "chapters": {
+        "1": {
+          "pdf": "78.pdf",
+          "page": 6,
+          "printed": 6
+        },
+        "2": {
+          "pdf": "78.pdf",
+          "page": 7,
+          "printed": 7
+        },
+        "4": {
+          "pdf": "78.pdf",
+          "page": 9,
+          "printed": 9
+        },
+        "5": {
+          "pdf": "78.pdf",
+          "page": 10,
+          "printed": 10
+        },
+        "6": {
+          "pdf": "78.pdf",
+          "page": 11,
+          "printed": 11
+        },
+        "7": {
+          "pdf": "78.pdf",
+          "page": 12,
+          "printed": 12
+        },
+        "9": {
+          "pdf": "78.pdf",
+          "page": 14,
+          "printed": 14
+        },
+        "10": {
+          "pdf": "78.pdf",
+          "page": 15,
+          "printed": 15
+        },
+        "11": {
+          "pdf": "78.pdf",
+          "page": 16,
+          "printed": 16
+        },
+        "12": {
+          "pdf": "78.pdf",
+          "page": 17,
+          "printed": 17
+        },
+        "13": {
+          "pdf": "78.pdf",
+          "page": 18,
+          "printed": 18
+        },
+        "14": {
+          "pdf": "78.pdf",
+          "page": 19,
+          "printed": 19
+        },
+        "15": {
+          "pdf": "78.pdf",
+          "page": 20,
+          "printed": 20
+        },
+        "16": {
+          "pdf": "78.pdf",
+          "page": 21,
+          "printed": 21
+        },
+        "17": {
+          "pdf": "78.pdf",
+          "page": 22,
+          "printed": 22
+        },
+        "18": {
+          "pdf": "78.pdf",
+          "page": 25,
+          "printed": 25
+        },
+        "19": {
+          "pdf": "78.pdf",
+          "page": 26,
+          "printed": 26
+        },
+        "20": {
+          "pdf": "78.pdf",
+          "page": 27,
+          "printed": 27
+        },
+        "21": {
+          "pdf": "78.pdf",
+          "page": 30,
+          "printed": 30
+        },
+        "22": {
+          "pdf": "78.pdf",
+          "page": 31,
+          "printed": 31
+        },
+        "3": {
+          "pdf": "78.pdf",
+          "page": 8,
+          "printed": 8
+        },
+        "8": {
+          "pdf": "78.pdf",
+          "page": 13,
+          "printed": 13
+        }
+      }
+    },
+    {
       "id": "testament-reuben",
       "hebrew": "TESTAMENT OF RE'UḆĔN",
       "english": "Testament of Reuben",

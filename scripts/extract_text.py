@@ -310,6 +310,90 @@ def parse_jasher_chapter(book, chapter, start_pg, end_pg):
     return verses
 
 
+# ---------------------------- ADAM & EVE FORMAT ----------------------------
+
+def parse_adam_eve_chapter(book, chapter, start_pg, end_pg):
+    """First / Second Book of Adam and Eve.
+    First book uses `Chapter <Roman>`; second uses `CHAP. <Roman>.`."""
+    fname = book['chapters'][str(chapter)]['pdf']
+    r = get_pdf(fname)
+
+    def to_roman(n):
+        vals = [(100,'C'),(90,'XC'),(50,'L'),(40,'XL'),(10,'X'),(9,'IX'),(5,'V'),(4,'IV'),(1,'I')]
+        out = ''
+        for v, s in vals:
+            while n >= v:
+                out += s; n -= v
+        return out
+
+    parts = []
+    for pg in range(start_pg, end_pg + 1):
+        if 1 <= pg <= len(r.pages):
+            parts.append(r.pages[pg - 1].extract_text() or '')
+    full = '\n'.join(parts)
+
+    rom_this = to_roman(chapter)
+    rom_next = to_roman(chapter + 1)
+    if fname == '78.pdf':
+        # second book uses "CHAP. I."
+        this_pat = rf'CHAP\.\s+{rom_this}\.'
+        next_pat = rf'CHAP\.\s+{rom_next}\.'
+    else:
+        this_pat = rf'Chapter\s+{rom_this}\b'
+        next_pat = rf'Chapter\s+{rom_next}\b'
+
+    m = re.search(this_pat, full)
+    if m:
+        full = full[m.end():]
+        # Skip leading whitespace/newlines, then a chapter subtitle line
+        # (e.g. "The grief stricken family. Cain marries Luluwa and they move
+        # away.") that follows the chapter heading and precedes verse 1.
+        full = full.lstrip('\n\r ')
+        first_break = full.find('\n')
+        if 0 < first_break < 200:
+            first_line = full[:first_break].strip()
+            # Only skip if the line is a descriptive subtitle (no verse marker
+            # and not the start of verse 1 text).
+            if not re.match(r'^\s*1\s', first_line) and first_line.endswith('.'):
+                full = full[first_break + 1:]
+
+    n = re.search(next_pat, full)
+    if n:
+        full = full[:n.start()]
+
+    # Clean header noise
+    full = re.sub(r'http\S+', '', full)
+    full = re.sub(r'(?i)blackmask', '', full)
+
+    # Parse verses
+    verse_pat = re.compile(r'(?:^|\n)\s*(\d+)\s+(?=[A-Za-z“"\'])')
+    matches = list(verse_pat.finditer(full))
+    verses = []
+    expected = 1
+    # If the first verse marker is "2" (no leading "1"), the chapter's first
+    # paragraph is unnumbered verse 1. Capture it from the start of `full`.
+    if matches and int(matches[0].group(1)) == 2:
+        v1_text = re.sub(r'\s+', ' ', full[:matches[0].start()]).strip()
+        if v1_text:
+            verses.append({"n": 1, "t": v1_text})
+            expected = 2
+    for i, mm in enumerate(matches):
+        try: vn = int(mm.group(1))
+        except: continue
+        if vn < 1 or vn > 200: continue
+        if vn < expected or vn > expected + 5: continue
+        end = matches[i+1].start() if i+1 < len(matches) else len(full)
+        text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
+        if text:
+            verses.append({"n": vn, "t": text})
+            expected = vn + 1
+
+    if not verses:
+        text = re.sub(r'\s+', ' ', full).strip()
+        if text: verses = [{"n": 1, "t": text}]
+    return verses
+
+
 # ---------------------------- TESTAMENTS FORMAT ----------------------------
 
 def parse_testament(book, start_pg, end_pg):
@@ -347,6 +431,56 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
             parts.append(strip_apoc_page(r.pages[pg - 1].extract_text() or ''))
     full = '\n'.join(parts)
 
+    bid = book['id']
+
+    # ---- 1 Clements: verse markers like "1Clem 1:5\n<text>"
+    if bid == 'apoc-1clements':
+        # Find this chapter's start (first occurrence of "1Clem <chapter>:")
+        m = re.search(rf'1Clem\s+{chapter}\s*:\s*\d+', full)
+        if m:
+            full = full[m.start():]
+        n = re.search(rf'1Clem\s+{chapter+1}\s*:\s*\d+', full)
+        if n:
+            full = full[:n.start()]
+        verse_pat = re.compile(rf'1Clem\s+{chapter}\s*:\s*(\d+)\s*')
+        matches = list(verse_pat.finditer(full))
+        verses = []
+        for i, mm in enumerate(matches):
+            try: vn = int(mm.group(1))
+            except: continue
+            if vn < 1 or vn > 100: continue
+            end = matches[i+1].start() if i+1 < len(matches) else len(full)
+            text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
+            if text:
+                verses.append({"n": vn, "t": text})
+        return verses or [{"n": 1, "t": re.sub(r'\s+', ' ', full).strip()}]
+
+    # ---- Shepherd of Hermas: verse markers "1:5", "2:10", etc.
+    if bid == 'apoc-hermas':
+        # Trim to this chapter only by matching "<chapter>:<n>" markers
+        # Find first marker for this chapter
+        pat = re.compile(rf'(?:^|\n|\s){chapter}\s*:\s*(\d+)\s')
+        # Limit to this chapter range
+        m = pat.search(full)
+        if m:
+            full = full[m.start():]
+        nxt = re.search(rf'(?:^|\n|\s){chapter+1}\s*:\s*1\s', full)
+        if nxt:
+            full = full[:nxt.start()]
+        verse_pat = re.compile(rf'(?:^|\n|\s){chapter}\s*:\s*(\d+)\s')
+        matches = list(verse_pat.finditer(full))
+        verses = []
+        for i, mm in enumerate(matches):
+            try: vn = int(mm.group(1))
+            except: continue
+            if vn < 1 or vn > 100: continue
+            end = matches[i+1].start() if i+1 < len(matches) else len(full)
+            text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
+            if text:
+                verses.append({"n": vn, "t": text})
+        return verses or [{"n": 1, "t": re.sub(r'\s+', ' ', full).strip()}]
+
+    # ---- Standard apocrypha: "Chapter <N>" + bracketed verse markers
     m = re.search(rf'Chapter\s+{chapter}\b', full)
     if m:
         full = full[m.end():]
@@ -355,7 +489,8 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
         full = full[:n.start()]
 
     # Bracketed verse markers: [1], [2], …
-    verse_pat = re.compile(r'\[(\d+)\]\s+')
+    # Sirach uses ranges like [1-14], [15-26]; expand to start verse only.
+    verse_pat = re.compile(r'\[(\d+)(?:\s*-\s*\d+)?\]\s*')
     matches = list(verse_pat.finditer(full))
     verses = []
     if matches:
@@ -440,6 +575,8 @@ def build():
                     verses = parse_besorah_chapter(book, ch, start_pg, end_pg)
                 elif bid == "chanok":
                     verses = parse_enoch_chapter(book, ch, start_pg, end_pg)
+                elif bid in ("adam-eve-1", "adam-eve-2"):
+                    verses = parse_adam_eve_chapter(book, ch, start_pg, end_pg)
                 elif bid == "yashar":
                     verses = parse_jasher_chapter(book, ch, start_pg, end_pg)
                 elif section == "Patriarchs":
