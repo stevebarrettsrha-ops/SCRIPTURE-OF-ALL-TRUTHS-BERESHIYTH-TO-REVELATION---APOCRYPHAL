@@ -459,20 +459,159 @@ def parse_adam_eve_chapter(book, chapter, start_pg, end_pg):
 
 # ---------------------------- TESTAMENTS FORMAT ----------------------------
 
-def parse_testament(book, start_pg, end_pg):
+# The single Testaments PDF holds all twelve testaments back to back.
+# Each chapter inside a testament starts with "<ch> 1 [text]" (with optional
+# verse-range like "<ch> 1, 2 [text]" for combined verses). Inner verses are
+# bare "<n>" tokens. OCR sometimes turns "1" into a lowercase "l", so we
+# accept both. Some testaments lose their leading "1 1" prefix entirely
+# (e.g. Judah opens with "The copy of the words of Judah...") and some
+# chapters are missing in the source PDF — we accept any monotonically-
+# increasing chapter number with a modest gap tolerance.
+
+_TESTAMENT_OPENER = re.compile(
+    r'(?:1\s+){0,2}The\s+(?:copy|book)\s+of\s+(?:the\s+)?'
+    r'(?:Testament|words)\s+of\s+([A-Z][a-z]+)',
+    re.IGNORECASE,
+)
+# Chapter starts always begin with a capital letter or opening quote in
+# the source PDF (e.g. "2 1, 2 And this chief captain..."), so we require
+# uppercase after the verse-1 marker. This rules out body fragments like
+# "...the 7 law setteth at nought..." where "l" is the start of an English
+# word, not the OCR-misread verse-1.
+_TESTAMENT_CH_PAT = re.compile(
+    r'\b(\d+)\s+[1l](?:[,\s]+\d+)*\s*(?=[A-Z"“‘\']|--)'
+)
+_TESTAMENT_V_PAT = re.compile(
+    r'(?:^|\s)(\d+)(?:[,\s]+\d+)*\s*(?=[A-Za-z"“‘\']|--)'
+)
+
+_testament_slices_cache = None
+
+
+def _testament_slices():
+    """Return {'reuben': '<text>', ...} — full text per testament with
+    page-headers stripped and whitespace collapsed."""
+    global _testament_slices_cache
+    if _testament_slices_cache is not None:
+        return _testament_slices_cache
     fname = 'THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf'
-    r = get_pdf(fname)
-    parts = []
-    for pg in range(start_pg, end_pg + 1):
-        if 1 <= pg <= len(r.pages):
-            raw = r.pages[pg - 1].extract_text() or ''
-            cleaned = re.sub(r'Page\s*\|\s*\d+\s*', '', raw)
-            cleaned = re.sub(r'www\.Scriptural-Truth\.com', '', cleaned)
-            cleaned = re.sub(r'\[The Apocrypha and Pseudepigrapha[^\]]*\]', '', cleaned)
-            parts.append(cleaned)
-    full = '\n'.join(parts)
-    full = re.sub(r'\s+', ' ', full).strip()
-    return [{"n": 1, "t": full}] if full else []
+    rdr = get_pdf(fname)
+    full = ''
+    for pg in range(1, len(rdr.pages) + 1):
+        text = rdr.pages[pg - 1].extract_text() or ''
+        text = re.sub(r'Page\s*\|\s*\d+\s*', '', text)
+        text = re.sub(r'www\.Scriptural-Truth\.com', '', text)
+        text = re.sub(r'\[The Apocrypha and Pseudepigrapha[^\]]*\]', '', text)
+        full += text + '\n'
+    matches = list(_TESTAMENT_OPENER.finditer(full))
+    cache = {}
+    for i, m in enumerate(matches):
+        name = m.group(1).lower()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(full)
+        cache[name] = re.sub(r'\s+', ' ', full[m.start():end]).strip()
+    _testament_slices_cache = cache
+    return cache
+
+
+def _parse_testament_verses(chunk, ch_num):
+    """Extract verses from a single chapter's chunk.
+
+    The chunk begins with "<ch> 1 [text]" (or "<ch> 1, 2 [text]" for
+    combined verses). The verse regex eagerly swallows the chapter
+    prefix together with the verse-1 marker(s), so the FIRST match is
+    really the chapter prefix and we relabel it as verse 1 instead of
+    skipping it (which would lose the chapter's opening text)."""
+    verses = []
+    vmatches = list(_TESTAMENT_V_PAT.finditer(chunk))
+    expected_v = 1
+    for j, vm in enumerate(vmatches):
+        try:
+            vn = int(vm.group(1))
+        except ValueError:
+            continue
+        # Detect the chapter-prefix match: first match where the captured
+        # number equals the chapter number (e.g. chunk starts "2 1, 2 And")
+        # — relabel as verse 1 so the opening prose isn't lost.
+        if j == 0 and vn == ch_num:
+            vn = 1
+        if vn < expected_v:
+            continue
+        if vn > expected_v + 8:
+            continue
+        v_start = vm.end()
+        v_end = vmatches[j + 1].start() if j + 1 < len(vmatches) else len(chunk)
+        v_text = chunk[v_start:v_end].strip()
+        if v_text:
+            verses.append({"n": vn, "t": v_text})
+            expected_v = vn + 1
+    return verses
+
+
+def parse_testament_full(testament_name):
+    """Return {ch_str: [{n, t}, ...]} for the given testament name (lower)."""
+    slices = _testament_slices()
+    slc = slices.get(testament_name)
+    if not slc:
+        return {}
+    # Find chapter markers; accept monotonically-increasing with gap<=5
+    last = 0
+    accepted = []
+    for m in _TESTAMENT_CH_PAT.finditer(slc):
+        ch = int(m.group(1))
+        if ch > last and ch <= last + 5:
+            accepted.append((ch, m.start()))
+            last = ch
+    chapters = {}
+    # If first accepted chapter is > 1 (or no markers at all), the opening
+    # text up to the first marker IS chapter 1 in unmarked form (Judah
+    # is the canonical example).
+    first_marker_pos = accepted[0][1] if accepted else len(slc)
+    pre = slc[:first_marker_pos].strip()
+    if pre:
+        # Strip the opener phrase ("The copy of the words of Judah, what
+        # things he spake unto his sons before he died.") and treat the
+        # remainder as chapter 1's verses. If no inner verse markers are
+        # found, store everything as a single verse 1.
+        verses = _parse_testament_verses(pre, ch_num=0)
+        if not verses:
+            # Drop the opener sentence (everything up to the first ". ")
+            cleaned = pre
+            verses = [{"n": 1, "t": cleaned}]
+        chapters['1'] = verses
+    for i, (ch, start) in enumerate(accepted):
+        end = accepted[i + 1][1] if i + 1 < len(accepted) else len(slc)
+        chunk = slc[start:end]
+        chapters[str(ch)] = _parse_testament_verses(chunk, ch_num=ch)
+    return chapters
+
+
+# Canonical chapter counts (used to pre-populate the chapter-loop in build()
+# even though the index.json says 1). Falls back to whatever the parser
+# actually produced if it differs.
+TESTAMENT_NAMES = {
+    'testament-reuben':    'reuben',
+    'testament-shimeon':   'simeon',
+    'testament-levi':      'levi',
+    'testament-yahudah':   'judah',
+    'testament-issakar':   'issachar',
+    'testament-zebulun':   'zebulun',
+    'testament-dan':       'dan',
+    'testament-naphtali':  'naphtali',
+    'testament-gad':       'gad',
+    'testament-asher':     'asher',
+    'testament-yoseph':    'joseph',
+    'testament-benyamin':  'benjamin',
+}
+
+
+def parse_testament(book, start_pg, end_pg):
+    """Backwards-compatible single-chapter wrapper. Now uses the proper
+    multi-chapter parser under the hood and returns just chapter 1."""
+    name = TESTAMENT_NAMES.get(book['id'])
+    if not name:
+        return []
+    chapters = parse_testament_full(name)
+    return chapters.get('1', [])
 
 
 # ---------------------------- APOCRYPHA FORMAT ----------------------------
@@ -624,7 +763,35 @@ def build():
         ch_count = book['chapter_count']
         out_chapters = {}
 
+        # Patriarchs special-case: parse the entire testament once and emit
+        # all chapters at once. The index has chapter_count=1 for these (it
+        # was treated as a single prose block historically), so we update
+        # both the per-book JSON AND the in-memory index so downstream
+        # consumers (UI, search) see the proper chapter list.
+        if section == "Patriarchs":
+            cdat = chapters.get('1', {})
+            page = cdat.get('page', 1)
+            pdf = cdat.get('pdf', 'THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf')
+            tname = TESTAMENT_NAMES.get(bid)
+            chapters_dict = parse_testament_full(tname) if tname else {}
+            new_index_chapters = {}
+            for ch_str in sorted(chapters_dict, key=int):
+                verses = chapters_dict[ch_str]
+                out_chapters[ch_str] = {
+                    "verses": verses,
+                    "page": page,
+                    "pdf": pdf,
+                }
+                new_index_chapters[ch_str] = {"page": page, "pdf": pdf}
+            ch_count = len(out_chapters) or 1
+            # Patch the in-memory index so we can write it back at the end.
+            book['chapter_count'] = ch_count
+            book['chapters'] = new_index_chapters or chapters
+
         for ch in range(1, ch_count + 1):
+            if section == "Patriarchs":
+                # Already handled above
+                break
             cdat = chapters.get(str(ch))
             if not cdat: continue
             start_pg = cdat['page']
@@ -646,8 +813,6 @@ def build():
                     verses = parse_adam_eve_chapter(book, ch, start_pg, end_pg)
                 elif bid == "yashar":
                     verses = parse_jasher_chapter(book, ch, start_pg, end_pg)
-                elif section == "Patriarchs":
-                    verses = parse_testament(book, start_pg, end_pg)
                 elif section == "Apocrypha":
                     verses = parse_apocrypha_chapter(book, ch, start_pg, end_pg)
                 else:
@@ -675,6 +840,11 @@ def build():
             json.dump(out_book, f, ensure_ascii=False, indent=1)
         total_v = sum(len(c['verses']) for c in out_chapters.values())
         print(f'{bid}: {len(out_chapters)} chapters, {total_v} verses')
+
+    # Persist any in-memory updates back to index.json (Patriarchs picked up
+    # multi-chapter structure during this run).
+    with open(INDEX_IN, 'w', encoding='utf-8') as f:
+        json.dump(index, f, ensure_ascii=False, indent=1)
 
 
 if __name__ == '__main__':
