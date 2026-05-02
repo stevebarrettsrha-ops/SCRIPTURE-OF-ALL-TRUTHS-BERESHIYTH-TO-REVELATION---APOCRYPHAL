@@ -33,6 +33,9 @@ DIVINE = [
     ("Holy Spirit",       "Ruach haQodesh"),
     ("Holy Ghost",        "Ruach haQodesh"),
     ("Jesus",             "Yahusha"),
+    # Paleo-Hebrew render of יהושע — letters O-S-w-h-y in the Besorah PDF
+    # are paleo glyphs for ע-ש-ו-ה-י (read right-to-left = Yahusha).
+    ("OSwhy",             "Yahusha"),
     ("Christ",            "Mashiach"),
     ("Messiah",           "Mashiach"),
     ("Elohim",            "Aluahim"),
