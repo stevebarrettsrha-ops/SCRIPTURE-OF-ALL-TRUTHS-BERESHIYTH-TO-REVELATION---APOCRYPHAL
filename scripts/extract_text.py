@@ -194,6 +194,21 @@ def strip_besorah_page(raw):
         break
     body = '\n'.join(lines)
 
+    # In-body running-header strip. The Besorah typeset bleeds the page
+    # banner ("BERĔSHITH 3", "1 SHEMU'ĔL 5") into the middle of a column
+    # whenever text wraps from one column to the next. Those lines have:
+    #   - no lowercase letters (so they never match real verse text),
+    #   - optional leading book-prefix digit,
+    #   - the Hebrew book name in caps (with diacritics),
+    #   - optional trailing chapter and/or page number.
+    # Without this, "BERĔSHITH 3" mid-verse gets misread as verse-3 marker,
+    # which truncates the prior verse and skips the real verse 2.
+    body = re.sub(
+        rf"(?m)^[ \t]*(?:\d[ \t]+)?[{UPPER}][{UPPER}'\s\-]{{2,}}(?:[ \t]+\d+){{0,3}}[ \t]*$",
+        "",
+        body,
+    )
+
     # Strip footnote tail: scan after the last verse marker
     verse_positions = [m.start() for m in re.finditer(rf'(?:^|\s|\n)(\d+)(?=[{UPPER}"“‘\'])', body)]
     scan_from = verse_positions[-1] if verse_positions else 0
