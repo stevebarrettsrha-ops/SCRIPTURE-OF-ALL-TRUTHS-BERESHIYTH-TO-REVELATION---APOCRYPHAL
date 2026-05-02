@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/besorah-marks.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -17,6 +18,7 @@
 
 <main>
   <input type="search" id="search" placeholder="Search for a book (Hebrew or English name)…" autocomplete="off">
+  <div id="reading-state"></div>
   <div id="content">
     <p class="note">Loading the canon…</p>
   </div>
@@ -72,10 +74,93 @@ function renderBooks(data, filter) {
   }
 }
 
+function chapterUrl(bookId, ch) {
+  return `chapter.html?id=${encodeURIComponent(bookId)}&ch=${ch}`;
+}
+
+function renderReadingState(data) {
+  const root = document.getElementById('reading-state');
+  root.innerHTML = '';
+  const last = BesorahMarks.getLastRead();
+  const marks = BesorahMarks.getBookmarks();
+
+  if (last) {
+    const card = document.createElement('a');
+    card.className = 'continue-card';
+    card.href = chapterUrl(last.bookId, last.chapter);
+    const chSuffix = last.chapterCount > 1 ? ` ${last.chapter}` : '';
+    card.innerHTML =
+      '<span class="continue-label">Continue reading</span>' +
+      `<span class="continue-target"><span class="heb">${last.hebrew}${chSuffix}</span>` +
+      `<span class="eng">${last.english}</span></span>`;
+    root.appendChild(card);
+  }
+
+  if (marks.length) {
+    const section = document.createElement('section');
+    section.className = 'section bookmarks-section';
+    const head = document.createElement('div');
+    head.className = 'bookmarks-head';
+    head.innerHTML =
+      `<h2>My Bookmarks <span class="count">(${marks.length})</span></h2>` +
+      '<div class="bookmarks-tools">' +
+      '<button id="bm-export" type="button">Export</button>' +
+      '<label class="bm-import-label">Import' +
+      '<input id="bm-import" type="file" accept="application/json" hidden></label>' +
+      '<button id="bm-clear" type="button">Clear</button>' +
+      '</div>';
+    section.appendChild(head);
+
+    const grid = document.createElement('div');
+    grid.className = 'book-grid';
+    for (const m of marks) {
+      const a = document.createElement('a');
+      a.className = 'book-link bookmark-item';
+      a.href = chapterUrl(m.bookId, m.chapter);
+      const chSuffix = m.chapterCount > 1 ? ` ${m.chapter}` : '';
+      a.innerHTML =
+        `<span class="heb">${m.hebrew}${chSuffix}</span>` +
+        `<span class="eng">${m.english}</span>` +
+        `<button class="bm-remove" type="button" title="Remove" ` +
+        `data-id="${m.bookId}" data-ch="${m.chapter}">×</button>`;
+      grid.appendChild(a);
+    }
+    section.appendChild(grid);
+    root.appendChild(section);
+
+    section.querySelectorAll('.bm-remove').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        e.stopPropagation();
+        BesorahMarks.removeBookmark(btn.dataset.id, parseInt(btn.dataset.ch, 10));
+        renderReadingState(data);
+      });
+    });
+    document.getElementById('bm-export').addEventListener('click', () => {
+      BesorahMarks.exportToFile();
+    });
+    document.getElementById('bm-clear').addEventListener('click', () => {
+      if (confirm('Remove all bookmarks and reset Continue Reading?')) {
+        BesorahMarks.clearAll();
+        renderReadingState(data);
+      }
+    });
+    document.getElementById('bm-import').addEventListener('change', e => {
+      const f = e.target.files[0];
+      if (!f) return;
+      BesorahMarks.importFromFile(f, err => {
+        if (err) alert('Could not read that bookmark file.');
+        else renderReadingState(data);
+      });
+    });
+  }
+}
+
 fetch('assets/index.json')
   .then(r => r.json())
   .then(data => {
     window.__data = data;
+    renderReadingState(data);
     renderBooks(data, '');
     document.getElementById('search').addEventListener('input', e => {
       renderBooks(data, e.target.value);

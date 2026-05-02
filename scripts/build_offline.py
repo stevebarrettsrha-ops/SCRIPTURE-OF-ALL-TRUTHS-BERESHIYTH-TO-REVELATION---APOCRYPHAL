@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = ROOT / "assets" / "index.json"
 TEXT_DIR = ROOT / "assets" / "text"
 STYLE_PATH = ROOT / "assets" / "style.css"
+MARKS_JS_PATH = ROOT / "assets" / "besorah-marks.js"
 OUTPUT = ROOT / "besorah-offline.html"
 
 
@@ -74,6 +75,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
   </header>
   <main>
     <input type="search" id="search" placeholder="Search for a book (Hebrew or English name)…" autocomplete="off">
+    <div id="reading-state"></div>
     <div id="content"></div>
   </main>
 </div>
@@ -107,6 +109,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
       <a id="prev" href="#">&larr; Prev</a>
       <a id="book-toc" href="#">Chapters</a>
       <a id="pdf-link" href="#" target="_blank" title="Open original PDF page">PDF</a>
+      <button id="bookmark-btn" class="btn" type="button" title="Bookmark this chapter" aria-pressed="false">☆</button>
       <a id="next" href="#">Next &rarr;</a>
     </div>
   </div>
@@ -131,6 +134,11 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 <script id="index-data" type="application/json">__INDEX_JSON__</script>
 <script id="text-data" type="application/json">__TEXT_JSON__</script>
 
+<!-- ============ MARKS LIBRARY ============ -->
+<script>
+__MARKS_JS__
+</script>
+
 <script>
 (function () {
   const SECTIONS = [
@@ -145,6 +153,90 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 
   const INDEX = JSON.parse(document.getElementById('index-data').textContent);
   const TEXT  = JSON.parse(document.getElementById('text-data').textContent);
+
+  // Hash-router URL builder for the offline single-file edition.
+  function chapterUrl(bookId, ch) {
+    return `#/book/${encodeURIComponent(bookId)}/${ch}`;
+  }
+
+  // ---------- READING STATE (Continue / Bookmarks) ----------
+  function renderReadingState() {
+    const root = document.getElementById('reading-state');
+    root.innerHTML = '';
+    const last = BesorahMarks.getLastRead();
+    const marks = BesorahMarks.getBookmarks();
+
+    if (last) {
+      const card = document.createElement('a');
+      card.className = 'continue-card';
+      card.href = chapterUrl(last.bookId, last.chapter);
+      const chSuffix = last.chapterCount > 1 ? ' ' + last.chapter : '';
+      card.innerHTML =
+        '<span class="continue-label">Continue reading</span>' +
+        `<span class="continue-target"><span class="heb">${last.hebrew}${chSuffix}</span>` +
+        `<span class="eng">${last.english}</span></span>`;
+      root.appendChild(card);
+    }
+
+    if (marks.length) {
+      const section = document.createElement('section');
+      section.className = 'section bookmarks-section';
+      const head = document.createElement('div');
+      head.className = 'bookmarks-head';
+      head.innerHTML =
+        `<h2>My Bookmarks <span class="count">(${marks.length})</span></h2>` +
+        '<div class="bookmarks-tools">' +
+        '<button id="bm-export" type="button">Export</button>' +
+        '<label class="bm-import-label">Import' +
+        '<input id="bm-import" type="file" accept="application/json" hidden></label>' +
+        '<button id="bm-clear" type="button">Clear</button>' +
+        '</div>';
+      section.appendChild(head);
+
+      const grid = document.createElement('div');
+      grid.className = 'book-grid';
+      for (const m of marks) {
+        const a = document.createElement('a');
+        a.className = 'book-link bookmark-item';
+        a.href = chapterUrl(m.bookId, m.chapter);
+        const chSuffix = m.chapterCount > 1 ? ' ' + m.chapter : '';
+        a.innerHTML =
+          `<span class="heb">${m.hebrew}${chSuffix}</span>` +
+          `<span class="eng">${m.english}</span>` +
+          `<button class="bm-remove" type="button" title="Remove" ` +
+          `data-id="${m.bookId}" data-ch="${m.chapter}">×</button>`;
+        grid.appendChild(a);
+      }
+      section.appendChild(grid);
+      root.appendChild(section);
+
+      section.querySelectorAll('.bm-remove').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+          e.stopPropagation();
+          BesorahMarks.removeBookmark(btn.dataset.id, parseInt(btn.dataset.ch, 10));
+          renderReadingState();
+        });
+      });
+      document.getElementById('bm-export').addEventListener('click', () => {
+        BesorahMarks.exportToFile();
+      });
+      document.getElementById('bm-clear').addEventListener('click', () => {
+        if (confirm('Remove all bookmarks and reset Continue Reading?')) {
+          BesorahMarks.clearAll();
+          renderReadingState();
+        }
+      });
+      document.getElementById('bm-import').addEventListener('change', e => {
+        const f = e.target.files[0];
+        if (!f) return;
+        BesorahMarks.importFromFile(f, err => {
+          if (err) alert('Could not read that bookmark file.');
+          else renderReadingState();
+        });
+      });
+    }
+  }
 
   // ---------- ROUTING ----------
   // hash forms:
@@ -161,6 +253,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
     const h = location.hash || '#/';
     const m = h.match(/^#\/book\/([^/]+)(?:\/(\d+))?\/?$/);
     if (!m) {
+      renderReadingState();
       renderIndex(document.getElementById('search').value);
       show('view-index');
       return;
@@ -317,6 +410,12 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
     setLink('next2', nextHref, chapter >= book.chapter_count);
     document.getElementById('book-toc').href = `#/book/${book.id}`;
 
+    // Bookmark + last-read tracking (localStorage; nothing leaves the device)
+    BesorahMarks.recordLastRead(book, chapter);
+    BesorahMarks.wireBookmarkButton(
+      document.getElementById('bookmark-btn'), book, chapter
+    );
+
     verseBox.innerHTML = '';
     const verses = ch.verses || [];
     if (verses.length === 0) {
@@ -357,6 +456,7 @@ def main():
     index = load_index()
     text = load_all_text()
     style = load_style()
+    marks_js = MARKS_JS_PATH.read_text(encoding="utf-8")
 
     index_json = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
     text_json = json.dumps(text, ensure_ascii=False, separators=(",", ":"))
@@ -366,12 +466,15 @@ def main():
     # Escape its closing slash to keep the parser happy.
     index_json = index_json.replace("</", "<\\/")
     text_json = text_json.replace("</", "<\\/")
+    # Same protection for the inlined marks library (regular <script>).
+    marks_js_safe = marks_js.replace("</", "<\\/")
 
     html = (
         HTML_TEMPLATE
         .replace("__STYLE__", style)
         .replace("__INDEX_JSON__", index_json)
         .replace("__TEXT_JSON__", text_json)
+        .replace("__MARKS_JS__", marks_js_safe)
     )
 
     OUTPUT.write_text(html, encoding="utf-8")
