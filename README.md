@@ -26,6 +26,7 @@ SCRIPTURE/
 scripts/
   extract_index.py    # Builds assets/index.json by scanning the PDFs
   extract_text.py     # Builds assets/text/*.json by extracting verse text
+  transliterate.py    # Applies CLAUDE.md Hebrew-roots transliteration rules
   fix_broken_words.py # Repairs words split by PDF line breaks (e.g. "moun tains" -> "mountains")
   build_offline.py    # Bundles everything into besorah-offline.html
 ```
@@ -90,6 +91,7 @@ pip install pypdf pdfplumber english-words
 python3 scripts/extract_index.py       # writes scripts/index.json
 cp scripts/index.json assets/index.json
 python3 scripts/extract_text.py        # writes assets/text/*.json (one file per book)
+python3 scripts/transliterate.py       # applies CLAUDE.md Hebrew-roots transliterations
 python3 scripts/fix_broken_words.py    # repairs words split across PDF line breaks
 python3 scripts/build_offline.py       # rebuilds besorah-offline.html
 ```
