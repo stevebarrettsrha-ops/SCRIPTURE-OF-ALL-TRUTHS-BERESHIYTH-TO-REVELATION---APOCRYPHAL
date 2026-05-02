@@ -137,7 +137,21 @@ def _proper_noun_trap(a, joined):
     return joined.lower() not in WORDS
 
 
+# Inline citation marker artifacts in 1 Clement: the chapter prefix "1Clem"
+# was sometimes OCR'd as "lClem" (lowercase L instead of digit 1) and/or
+# split across a column edge as "1C lem" / "lC lem". Normalise to "1Clem".
+CITATION_PAT = re.compile(r'\b[1lI][Cc]\s*lem\s+(\d+\s*:\s*\d+)')
+
+
 def fix_text_segment(seg, stats):
+    # Pass 0: 1Clem citation-marker normalisation.
+    def _cite(m):
+        out = f"1Clem {m.group(1)}"
+        if out != m.group(0):
+            stats["citation"] = stats.get("citation", 0) + 1
+        return out
+    seg = CITATION_PAT.sub(_cite, seg)
+
     # Pass 1: hyphen-line-breaks. Safe-ish, but still gated by dictionary
     # AND corpus attestation so we don't fuse legitimate hyphenated
     # compounds (e.g. "in-law") or weird obscure web2 matches.
@@ -146,7 +160,11 @@ def fix_text_segment(seg, stats):
         if _refuse(a, b):
             return m.group(0)
         joined = a + b
-        if is_english(joined) and CORPUS_FREQ.get(joined.lower(), 0) >= 2:
+        if not is_english(joined):
+            return m.group(0)
+        # Allow merge if the joined form is a direct dictionary entry
+        # (common word) OR is well-attested elsewhere in the corpus.
+        if joined.lower() in WORDS or CORPUS_FREQ.get(joined.lower(), 0) >= 2:
             stats["hyphen"] += 1
             return joined
         return m.group(0)
@@ -164,17 +182,37 @@ def fix_text_segment(seg, stats):
             a, sep, b = tokens[i], tokens[i + 1], tokens[i + 2]
             if (a.isalpha() and b.isalpha() and sep == " "
                     and not _refuse(a, b)):
+                # Refuse if `b` starts with uppercase: that almost always
+                # means `b` is a proper noun (e.g. "saw Ali", "outran Kĕpha",
+                # "woman Izeḇel"), and gluing it onto the prior word loses
+                # the name. Legitimate broken-word fragments have `b`
+                # lowercase ("moun tains", "Pervers ity").
+                if b[0].isupper():
+                    i += 1
+                    continue
                 joined = a + b
                 if not _proper_noun_trap(a, joined):
                     a_ok = is_english(a)
                     b_ok = is_english(b)
                     j_ok = is_english(joined)
-                    # Require corpus attestation: the joined form must
-                    # appear at least 2x elsewhere as a single token,
-                    # which weeds out obscure dictionary matches
-                    # (e.g. web2's 'sawali').
-                    well_attested = CORPUS_FREQ.get(joined.lower(), 0) >= 2
-                    if j_ok and well_attested and not (a_ok and b_ok):
+                    # Allow the merge when the joined form is plausibly
+                    # English AND at least one fragment alone is not.
+                    # Confidence tiers (any one sufficient):
+                    #   * Direct dictionary hit on the joined form.
+                    #   * Joined form well-attested elsewhere in the
+                    #     corpus (>=2 standalone instances).
+                    #   * Either fragment is a corpus-rare token
+                    #     (frequency <= 2). Real words like "one",
+                    #     "head", "art" appear hundreds+ of times in
+                    #     the corpus, while broken fragments like
+                    #     "messeng", "ndments", "ju" appear only at
+                    #     their broken site — strong artefact signal.
+                    direct = joined.lower() in WORDS
+                    attested = CORPUS_FREQ.get(joined.lower(), 0) >= 2
+                    rare_fragment = (CORPUS_FREQ.get(a.lower(), 0) <= 2
+                                     or CORPUS_FREQ.get(b.lower(), 0) <= 2)
+                    if (j_ok and (direct or attested or rare_fragment)
+                            and not (a_ok and b_ok)):
                         stats["soft"] += 1
                         stats["examples"].setdefault(f"{a} {b}", joined)
                         # Replace three tokens with the joined word and continue
@@ -245,6 +283,8 @@ def main():
     print(f"Files updated:        {changed_files} / {len(files)}")
     print(f"Hyphen breaks fixed:  {stats['hyphen']}")
     print(f"Soft-wraps merged:    {stats['soft']}")
+    if stats.get("citation"):
+        print(f"Citation markers:     {stats['citation']}")
     if stats["examples"]:
         print("Sample soft-wrap merges:")
         # Sort by joined-form length (longest first) for visibility
