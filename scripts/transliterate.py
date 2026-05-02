@@ -39,6 +39,7 @@ DIVINE = [
     ("God",               "Aluahim"),
     ("Yisra’ĕl",          "Yasharal"),   # curly apostrophe (U+2019)
     ("Yisra'ĕl",          "Yasharal"),   # straight apostrophe (U+0027)
+    ("Yisraĕl",           "Yasharal"),   # no apostrophe
     ("Yisrael",           "Yasharal"),
     ("Israel",            "Yasharal"),
     ("Ĕl",                "Al"),
@@ -103,6 +104,15 @@ PLACES = [
     ("Jordan",     "Yarden"),
     ("Midian",     "Miḏyan"),
     ("Zion",       "Tsiyon"),
+    # Israel-as-people (non-divine): Israelite/Israelites and the various
+    # half-transliterated variants the prefix-rule "El→Al" leaves behind
+    # when the Yisra'el rule misses ("Yisra'el" + "ites" -> "Yisra'Alites").
+    # Listed before bare "Israel" wins, since the engine sorts by length.
+    ("Israelite",       "Yasharalite"),
+    ("Yisra’Alite",     "Yasharalite"),
+    ("Yisra'Alite",     "Yasharalite"),
+    ("Yisraĕlite",      "Yasharalite"),
+    ("Yisraelite",      "Yasharalite"),
 ]
 
 # Theological / liturgical terms (case-sensitive — only lowercase forms unless
@@ -140,6 +150,13 @@ TERMS = [
     ("souls",        "nepheshoth"),
     ("soul",         "nephesh"),
     ("spirits",      "ruchot"),
+    ("spirit",       "ruach"),
+    # Hebrew "ruach" is the same word for "wind" — Bereshith 1:2's
+    # "Ruach of Aluahim hovered" and 8:1's "wind to pass over the earth"
+    # share the same root, so the English split into spirit/wind collapses
+    # back into ruach / ruchot in a Hebrew-roots edition.
+    ("winds",        "ruchot"),
+    ("wind",         "ruach"),
     ("heavens",      "shamayim"),
     ("heaven",       "shamayim"),
     ("blessed",      "baruk"),
@@ -150,12 +167,13 @@ TERMS = [
     ("Tabernacles",  "Sukkot"),
     ("Praise Yah",   "HalleluYah"),
     ("Sheol",        "Sheol"),
-    # Less specific singletons that could overlap with English fragments —
-    # leave OFF by default to avoid over-aggressive replacement:
-    # ("spirit", "ruach"),  # would match too aggressively in proverbs/wisdom
-    # ("peace",  "shalom"),
-    # ("grace",  "chen"),
-    # ("favour", "chen"),
+    # Hebrew "shalom" covers wholeness/well-being/completeness, broader
+    # than English "peace"; collapse them.
+    ("peace",        "shalom"),
+    # Hebrew "chen" covers grace/favour. Both English spellings map here.
+    ("grace",        "chen"),
+    ("favour",       "chen"),
+    ("favor",        "chen"),
 ]
 
 
@@ -262,6 +280,26 @@ def transliterate(text, rules):
     return text.replace(SENTINEL, '')
 
 
+# Repair pass for corpora where an earlier transliteration run wrapped
+# the "Ĕl" inside "Yisra'Ĕl" before the longer "Yisra'Ĕl→Yasharal" rule
+# could fire, leaving stranded fragments like:
+#     Yisra’<span class="dn">Al</span>
+# The pattern can't be undone by the normal rule engine (the matched
+# text is now split across markup), so we patch it post-hoc.
+_STRANDED_YISRA = re.compile(
+    r'Yisra[\'’]?<span class="dn">Al</span>(?:ite(s?))?'
+)
+def repair_stranded_yisra(text):
+    def _r(m):
+        suffix = m.group(1)  # None | '' | 's'
+        if m.group(0).endswith('ites'):
+            return 'Yasharalites'
+        if m.group(0).endswith('ite'):
+            return 'Yasharalite'
+        return '<span class="dn">Yasharal</span>'
+    return _STRANDED_YISRA.sub(_r, text)
+
+
 def main():
     rules = build_replacements(DIVINE, PEOPLE_PATRIARCHS, PEOPLE_LEADERS,
                                PEOPLE_TRIBES, PLACES, TERMS)
@@ -274,6 +312,7 @@ def main():
         for ch_str, cdat in book.get('chapters', {}).items():
             for v in cdat.get('verses', []):
                 new_t = transliterate(v['t'], rules)
+                new_t = repair_stranded_yisra(new_t)
                 if new_t != v['t']:
                     v['t'] = new_t
                     changed += 1

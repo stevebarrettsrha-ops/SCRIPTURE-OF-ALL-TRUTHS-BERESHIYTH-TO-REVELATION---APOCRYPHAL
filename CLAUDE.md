@@ -189,7 +189,7 @@ You are working on a Hebrew-roots scripture project called **The Besorah**. All 
 |---|---|---|
 | heaven, heavens | shamayim | shah-mah-yeem |
 | spirit, wind | ruach | roo-akh |
-| spirits (plural) | ruchot | roo-khot |
+| spirits, winds (plural) | ruchot | roo-khot |
 | soul | nephesh | neh-fesh |
 | souls (plural) | nepheshoth | neh-feh-shoht |
 | angel, messenger | mal'ak | mal-ahk |
