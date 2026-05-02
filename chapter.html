@@ -56,6 +56,7 @@
 const params  = new URLSearchParams(location.search);
 const bookId  = params.get('id');
 const chapter = parseInt(params.get('ch'), 10) || 1;
+const verseAnchor = parseInt(params.get('v'), 10) || null;
 
 fetch('assets/index.json')
   .then(r => r.json())
@@ -111,6 +112,13 @@ fetch('assets/index.json')
     BesorahMarks.wireBookmarkButton(
       document.getElementById('bookmark-btn'), book, chapter
     );
+    // Wire after verses are rendered (below — defer to next tick).
+    queueMicrotask(() => {
+      BesorahMarks.wireVerseClicks(
+        document.getElementById('verses'), book, chapter
+      );
+      BesorahMarks.scrollToVerse(verseAnchor);
+    });
 
     // Render verses
     const out = document.getElementById('verses');
@@ -146,6 +154,8 @@ fetch('assets/index.json')
         for (const v of verses) {
           const p = document.createElement('p');
           p.className = 'verse';
+          p.id = `v-${v.n}`;
+          p.dataset.v = v.n;
           p.innerHTML =
             `<sup class="verse-n">${v.n}</sup> ` + renderVerseText(v.t);
           out.appendChild(p);

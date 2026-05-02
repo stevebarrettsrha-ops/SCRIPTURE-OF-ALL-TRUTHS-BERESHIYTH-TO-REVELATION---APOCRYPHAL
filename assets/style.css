@@ -255,6 +255,45 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   letter-spacing: 0.04em;
   font-weight: 600;
 }
+
+/* Verse number — clickable to bookmark */
+.verse-n { user-select: none; transition: color 120ms; }
+.verse-n:hover { color: var(--link-hover); }
+
+/* Bookmarked verse — gold left rule + filled marker on the verse number */
+.verse.bookmarked {
+  border-left: 3px solid var(--gold);
+  padding-left: 0.6rem;
+  margin-left: -0.9rem;
+  background: rgba(212,175,55,0.06);
+  border-radius: 0 3px 3px 0;
+}
+.verse.bookmarked .verse-n {
+  color: var(--gold);
+}
+.verse.bookmarked .verse-n::after {
+  content: "★";
+  font-size: 0.7em;
+  margin-left: 0.15em;
+  vertical-align: super;
+  color: var(--gold);
+}
+
+/* Briefly flash a verse when arrived at via #verseN deep-link */
+.verse.flash {
+  animation: verseFlash 1.6s ease-out 1;
+}
+@keyframes verseFlash {
+  0%   { background: rgba(212,175,55,0.45); }
+  100% { background: transparent; }
+}
+.verse.bookmarked.flash {
+  animation: verseFlashMarked 1.6s ease-out 1;
+}
+@keyframes verseFlashMarked {
+  0%   { background: rgba(212,175,55,0.55); }
+  100% { background: rgba(212,175,55,0.06); }
+}
 .prose {
   font-size: 1.05rem;
   line-height: 1.75;
@@ -422,6 +461,11 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   border-color: var(--gold);
 }
 .bookmark-item { position: relative; padding-right: 2rem; }
+.bookmark-item.bm-verse .heb::before {
+  content: "★ ";
+  color: var(--gold);
+  font-size: 0.85em;
+}
 .bookmark-item .bm-remove {
   position: absolute;
   top: 50%;

@@ -74,8 +74,10 @@ function renderBooks(data, filter) {
   }
 }
 
-function chapterUrl(bookId, ch) {
-  return `chapter.html?id=${encodeURIComponent(bookId)}&ch=${ch}`;
+function chapterUrl(bookId, ch, verse) {
+  let url = `chapter.html?id=${encodeURIComponent(bookId)}&ch=${ch}`;
+  if (verse != null) url += `&v=${verse}`;
+  return url;
 }
 
 function renderReadingState(data) {
@@ -94,6 +96,13 @@ function renderReadingState(data) {
       `<span class="continue-target"><span class="heb">${last.hebrew}${chSuffix}</span>` +
       `<span class="eng">${last.english}</span></span>`;
     root.appendChild(card);
+  }
+
+  function refLabel(m) {
+    const ch = m.chapterCount > 1 ? ' ' + m.chapter : '';
+    return m.verse != null
+      ? `${m.hebrew}${ch}:${m.verse}`
+      : `${m.hebrew}${ch}`;
   }
 
   if (marks.length) {
@@ -115,14 +124,14 @@ function renderReadingState(data) {
     grid.className = 'book-grid';
     for (const m of marks) {
       const a = document.createElement('a');
-      a.className = 'book-link bookmark-item';
-      a.href = chapterUrl(m.bookId, m.chapter);
-      const chSuffix = m.chapterCount > 1 ? ` ${m.chapter}` : '';
+      a.className = 'book-link bookmark-item' + (m.verse != null ? ' bm-verse' : '');
+      a.href = chapterUrl(m.bookId, m.chapter, m.verse);
+      const verseAttr = m.verse != null ? ` data-v="${m.verse}"` : '';
       a.innerHTML =
-        `<span class="heb">${m.hebrew}${chSuffix}</span>` +
+        `<span class="heb">${refLabel(m)}</span>` +
         `<span class="eng">${m.english}</span>` +
         `<button class="bm-remove" type="button" title="Remove" ` +
-        `data-id="${m.bookId}" data-ch="${m.chapter}">×</button>`;
+        `data-id="${m.bookId}" data-ch="${m.chapter}"${verseAttr}>×</button>`;
       grid.appendChild(a);
     }
     section.appendChild(grid);
@@ -132,7 +141,8 @@ function renderReadingState(data) {
       btn.addEventListener('click', e => {
         e.preventDefault();
         e.stopPropagation();
-        BesorahMarks.removeBookmark(btn.dataset.id, parseInt(btn.dataset.ch, 10));
+        const v = btn.dataset.v ? parseInt(btn.dataset.v, 10) : undefined;
+        BesorahMarks.removeBookmark(btn.dataset.id, parseInt(btn.dataset.ch, 10), v);
         renderReadingState(data);
       });
     });

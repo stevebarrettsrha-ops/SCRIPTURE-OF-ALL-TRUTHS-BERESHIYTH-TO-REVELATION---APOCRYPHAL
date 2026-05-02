@@ -18,8 +18,8 @@
     catch (e) { /* quota / private mode — silently ignore */ }
   }
 
-  function makeEntry(book, chapter) {
-    return {
+  function makeEntry(book, chapter, verse) {
+    var entry = {
       bookId: book.id,
       hebrew: book.hebrew,
       english: book.english,
@@ -27,6 +27,8 @@
       chapterCount: book.chapter_count,
       ts: Date.now()
     };
+    if (verse != null) entry.verse = verse;
+    return entry;
   }
 
   function recordLastRead(book, chapter) {
@@ -42,26 +44,45 @@
     return Array.isArray(arr) ? arr : [];
   }
 
-  function isBookmarked(bookId, chapter) {
+  // Equality on (bookId, chapter, verse). `verse` may be undefined for
+  // chapter-level bookmarks, which are distinct from any verse-level
+  // bookmark in the same chapter.
+  function sameMark(m, bookId, chapter, verse) {
+    return m.bookId === bookId
+        && m.chapter === chapter
+        && (m.verse == null ? verse == null : m.verse === verse);
+  }
+
+  function isBookmarked(bookId, chapter, verse) {
     return getBookmarks().some(function (m) {
-      return m.bookId === bookId && m.chapter === chapter;
+      return sameMark(m, bookId, chapter, verse);
     });
   }
 
-  function addBookmark(book, chapter) {
+  function addBookmark(book, chapter, verse) {
     var arr = getBookmarks().filter(function (m) {
-      return !(m.bookId === book.id && m.chapter === chapter);
+      return !sameMark(m, book.id, chapter, verse);
     });
-    arr.unshift(makeEntry(book, chapter));
+    arr.unshift(makeEntry(book, chapter, verse));
     if (arr.length > MAX_MARKS) arr.length = MAX_MARKS;
     safeSet(MARKS_KEY, arr);
   }
 
-  function removeBookmark(bookId, chapter) {
+  function removeBookmark(bookId, chapter, verse) {
     var arr = getBookmarks().filter(function (m) {
-      return !(m.bookId === bookId && m.chapter === chapter);
+      return !sameMark(m, bookId, chapter, verse);
     });
     safeSet(MARKS_KEY, arr);
+  }
+
+  function bookmarkedVersesIn(bookId, chapter) {
+    var out = {};
+    getBookmarks().forEach(function (m) {
+      if (m.bookId === bookId && m.chapter === chapter && m.verse != null) {
+        out[m.verse] = true;
+      }
+    });
+    return out;
   }
 
   function clearAll() {
@@ -88,6 +109,45 @@
         addBookmark(book, chapter);
         paintButton(btn, true);
       }
+    });
+  }
+
+  // Wire all <p class="verse" id="v-N"> elements rendered for a chapter:
+  // clicking the verse number toggles a verse-level bookmark and applies
+  // the .bookmarked class for visual feedback.
+  function wireVerseClicks(versesContainer, book, chapter) {
+    if (!versesContainer) return;
+    var marked = bookmarkedVersesIn(book.id, chapter);
+    versesContainer.querySelectorAll("p.verse[data-v]").forEach(function (p) {
+      var n = parseInt(p.getAttribute("data-v"), 10);
+      if (marked[n]) p.classList.add("bookmarked");
+      var num = p.querySelector(".verse-n");
+      if (!num) return;
+      num.style.cursor = "pointer";
+      num.title = "Bookmark verse " + n;
+      num.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (isBookmarked(book.id, chapter, n)) {
+          removeBookmark(book.id, chapter, n);
+          p.classList.remove("bookmarked");
+        } else {
+          addBookmark(book, chapter, n);
+          p.classList.add("bookmarked");
+        }
+      });
+    });
+  }
+
+  // Scroll to a specific verse element after render and briefly flash it.
+  function scrollToVerse(verse) {
+    if (verse == null) return;
+    var el = document.getElementById("v-" + verse);
+    if (!el) return;
+    // Defer to next frame so layout has settled.
+    requestAnimationFrame(function () {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.classList.add("flash");
+      setTimeout(function () { el.classList.remove("flash"); }, 1800);
     });
   }
 
@@ -138,8 +198,11 @@
     isBookmarked: isBookmarked,
     addBookmark: addBookmark,
     removeBookmark: removeBookmark,
+    bookmarkedVersesIn: bookmarkedVersesIn,
     clearAll: clearAll,
     wireBookmarkButton: wireBookmarkButton,
+    wireVerseClicks: wireVerseClicks,
+    scrollToVerse: scrollToVerse,
     chapterHref: chapterHref,
     exportToFile: exportToFile,
     importFromFile: importFromFile

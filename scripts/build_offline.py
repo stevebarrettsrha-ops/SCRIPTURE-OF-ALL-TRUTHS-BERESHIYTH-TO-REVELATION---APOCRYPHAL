@@ -155,8 +155,16 @@ __MARKS_JS__
   const TEXT  = JSON.parse(document.getElementById('text-data').textContent);
 
   // Hash-router URL builder for the offline single-file edition.
-  function chapterUrl(bookId, ch) {
-    return `#/book/${encodeURIComponent(bookId)}/${ch}`;
+  function chapterUrl(bookId, ch, verse) {
+    var base = `#/book/${encodeURIComponent(bookId)}/${ch}`;
+    return verse != null ? base + `/v/${verse}` : base;
+  }
+
+  function refLabel(m) {
+    var ch = m.chapterCount > 1 ? ' ' + m.chapter : '';
+    return m.verse != null
+      ? `${m.hebrew}${ch}:${m.verse}`
+      : `${m.hebrew}${ch}`;
   }
 
   // ---------- READING STATE (Continue / Bookmarks) ----------
@@ -197,14 +205,14 @@ __MARKS_JS__
       grid.className = 'book-grid';
       for (const m of marks) {
         const a = document.createElement('a');
-        a.className = 'book-link bookmark-item';
-        a.href = chapterUrl(m.bookId, m.chapter);
-        const chSuffix = m.chapterCount > 1 ? ' ' + m.chapter : '';
+        a.className = 'book-link bookmark-item' + (m.verse != null ? ' bm-verse' : '');
+        a.href = chapterUrl(m.bookId, m.chapter, m.verse);
+        const verseAttr = m.verse != null ? ` data-v="${m.verse}"` : '';
         a.innerHTML =
-          `<span class="heb">${m.hebrew}${chSuffix}</span>` +
+          `<span class="heb">${refLabel(m)}</span>` +
           `<span class="eng">${m.english}</span>` +
           `<button class="bm-remove" type="button" title="Remove" ` +
-          `data-id="${m.bookId}" data-ch="${m.chapter}">×</button>`;
+          `data-id="${m.bookId}" data-ch="${m.chapter}"${verseAttr}>×</button>`;
         grid.appendChild(a);
       }
       section.appendChild(grid);
@@ -214,7 +222,8 @@ __MARKS_JS__
         btn.addEventListener('click', e => {
           e.preventDefault();
           e.stopPropagation();
-          BesorahMarks.removeBookmark(btn.dataset.id, parseInt(btn.dataset.ch, 10));
+          const v = btn.dataset.v ? parseInt(btn.dataset.v, 10) : undefined;
+          BesorahMarks.removeBookmark(btn.dataset.id, parseInt(btn.dataset.ch, 10), v);
           renderReadingState();
         });
       });
@@ -251,7 +260,12 @@ __MARKS_JS__
 
   function route() {
     const h = location.hash || '#/';
-    const m = h.match(/^#\/book\/([^/]+)(?:\/(\d+))?\/?$/);
+    // Forms:
+    //   #/                       -> index
+    //   #/book/<id>              -> book chapters
+    //   #/book/<id>/<ch>         -> chapter view
+    //   #/book/<id>/<ch>/v/<n>   -> chapter view, scrolled to verse n
+    const m = h.match(/^#\/book\/([^/]+)(?:\/(\d+)(?:\/v\/(\d+))?)?\/?$/);
     if (!m) {
       renderReadingState();
       renderIndex(document.getElementById('search').value);
@@ -260,8 +274,9 @@ __MARKS_JS__
     }
     const bookId = decodeURIComponent(m[1]);
     const ch = m[2] ? parseInt(m[2], 10) : null;
+    const verse = m[3] ? parseInt(m[3], 10) : null;
     if (ch) {
-      renderChapter(bookId, ch);
+      renderChapter(bookId, ch, verse);
       show('view-chapter');
     } else {
       renderBook(bookId);
@@ -376,7 +391,7 @@ __MARKS_JS__
     }
   }
 
-  function renderChapter(bookId, chapter) {
+  function renderChapter(bookId, chapter, verseAnchor) {
     const book = INDEX.books.find(b => b.id === bookId);
     const text = TEXT[bookId];
     const verseBox = document.getElementById('verses');
@@ -433,9 +448,13 @@ __MARKS_JS__
       for (const v of verses) {
         const p = document.createElement('p');
         p.className = 'verse';
+        p.id = `v-${v.n}`;
+        p.dataset.v = v.n;
         p.innerHTML = `<sup class="verse-n">${v.n}</sup> ` + renderVerseText(v.t);
         verseBox.appendChild(p);
       }
+      BesorahMarks.wireVerseClicks(verseBox, book, chapter);
+      BesorahMarks.scrollToVerse(verseAnchor);
     }
   }
 
