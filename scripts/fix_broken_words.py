@@ -39,6 +39,7 @@ WORDS = get_english_words_set(["web2"], lower=True)
 # Hand-augment with high-frequency inflections / common forms that web2 misses.
 WORDS |= {
     "mountains", "shamayim", "yahuah", "yahusha", "aluahim",
+    "theophilos",  # Greek dedicatee in Luke / Acts ("Theo philos" -> "Theophilos")
 }
 
 # Stoplist of short common words (prepositions, articles, auxiliaries,

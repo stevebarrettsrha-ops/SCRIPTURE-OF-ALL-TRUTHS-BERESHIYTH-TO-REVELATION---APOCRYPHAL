@@ -374,8 +374,8 @@ __MARKS_JS__
   function renderVerseText(raw) {
     const esc = raw.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     return esc.replace(
-      /&lt;span class="dn"&gt;([\s\S]*?)&lt;\/span&gt;/g,
-      '<span class="dn">$1</span>'
+      /&lt;span class="(dn|hwhy)"&gt;([\s\S]*?)&lt;\/span&gt;/g,
+      '<span class="$1">$2</span>'
     );
   }
 
