@@ -140,6 +140,7 @@ TERMS = [
     ("souls",        "nepheshoth"),
     ("soul",         "nephesh"),
     ("spirits",      "ruchot"),
+    ("spirit",       "ruach"),
     ("heavens",      "shamayim"),
     ("heaven",       "shamayim"),
     ("blessed",      "baruk"),
@@ -152,7 +153,6 @@ TERMS = [
     ("Sheol",        "Sheol"),
     # Less specific singletons that could overlap with English fragments —
     # leave OFF by default to avoid over-aggressive replacement:
-    # ("spirit", "ruach"),  # would match too aggressively in proverbs/wisdom
     # ("peace",  "shalom"),
     # ("grace",  "chen"),
     # ("favour", "chen"),
