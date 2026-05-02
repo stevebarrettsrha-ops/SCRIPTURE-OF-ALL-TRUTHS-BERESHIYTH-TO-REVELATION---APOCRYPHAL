@@ -141,6 +141,12 @@ TERMS = [
     ("soul",         "nephesh"),
     ("spirits",      "ruchot"),
     ("spirit",       "ruach"),
+    # Hebrew "ruach" is the same word for "wind" — Bereshith 1:2's
+    # "Ruach of Aluahim hovered" and 8:1's "wind to pass over the earth"
+    # share the same root, so the English split into spirit/wind collapses
+    # back into ruach / ruchot in a Hebrew-roots edition.
+    ("winds",        "ruchot"),
+    ("wind",         "ruach"),
     ("heavens",      "shamayim"),
     ("heaven",       "shamayim"),
     ("blessed",      "baruk"),
@@ -151,11 +157,13 @@ TERMS = [
     ("Tabernacles",  "Sukkot"),
     ("Praise Yah",   "HalleluYah"),
     ("Sheol",        "Sheol"),
-    # Less specific singletons that could overlap with English fragments —
-    # leave OFF by default to avoid over-aggressive replacement:
-    # ("peace",  "shalom"),
-    # ("grace",  "chen"),
-    # ("favour", "chen"),
+    # Hebrew "shalom" covers wholeness/well-being/completeness, broader
+    # than English "peace"; collapse them.
+    ("peace",        "shalom"),
+    # Hebrew "chen" covers grace/favour. Both English spellings map here.
+    ("grace",        "chen"),
+    ("favour",       "chen"),
+    ("favor",        "chen"),
 ]
 
 
