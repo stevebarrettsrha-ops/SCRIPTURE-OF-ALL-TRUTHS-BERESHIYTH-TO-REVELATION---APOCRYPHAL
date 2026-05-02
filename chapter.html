@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/besorah-marks.js"></script>
 <style>
   /* Pin the footer to the bottom of the viewport on short chapters */
   body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
@@ -29,6 +30,7 @@
     <a id="prev" href="#">&larr; Prev</a>
     <a id="book-toc" href="#">Chapters</a>
     <a id="pdf-link" href="#" target="_blank" title="Open original PDF page">PDF</a>
+    <button id="bookmark-btn" class="btn" type="button" title="Bookmark this chapter" aria-pressed="false">☆</button>
     <a id="next" href="#">Next &rarr;</a>
   </div>
 </div>
@@ -54,6 +56,7 @@
 const params  = new URLSearchParams(location.search);
 const bookId  = params.get('id');
 const chapter = parseInt(params.get('ch'), 10) || 1;
+const verseAnchor = parseInt(params.get('v'), 10) || null;
 
 fetch('assets/index.json')
   .then(r => r.json())
@@ -104,6 +107,19 @@ fetch('assets/index.json')
     setLink('next2', nextHref, chapter >= book.chapter_count);
     document.getElementById('book-toc').href = `book.html?id=${book.id}`;
 
+    // Bookmark + last-read tracking (localStorage; nothing leaves the device)
+    BesorahMarks.recordLastRead(book, chapter);
+    BesorahMarks.wireBookmarkButton(
+      document.getElementById('bookmark-btn'), book, chapter
+    );
+    // Wire after verses are rendered (below — defer to next tick).
+    queueMicrotask(() => {
+      BesorahMarks.wireVerseClicks(
+        document.getElementById('verses'), book, chapter
+      );
+      BesorahMarks.scrollToVerse(verseAnchor);
+    });
+
     // Render verses
     const out = document.getElementById('verses');
     out.innerHTML = '';
@@ -138,6 +154,8 @@ fetch('assets/index.json')
         for (const v of verses) {
           const p = document.createElement('p');
           p.className = 'verse';
+          p.id = `v-${v.n}`;
+          p.dataset.v = v.n;
           p.innerHTML =
             `<sup class="verse-n">${v.n}</sup> ` + renderVerseText(v.t);
           out.appendChild(p);

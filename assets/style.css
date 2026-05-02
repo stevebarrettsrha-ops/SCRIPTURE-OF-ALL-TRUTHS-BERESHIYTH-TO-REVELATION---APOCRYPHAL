@@ -255,6 +255,45 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   letter-spacing: 0.04em;
   font-weight: 600;
 }
+
+/* Verse number — clickable to bookmark */
+.verse-n { user-select: none; transition: color 120ms; }
+.verse-n:hover { color: var(--link-hover); }
+
+/* Bookmarked verse — gold left rule + filled marker on the verse number */
+.verse.bookmarked {
+  border-left: 3px solid var(--gold);
+  padding-left: 0.6rem;
+  margin-left: -0.9rem;
+  background: rgba(212,175,55,0.06);
+  border-radius: 0 3px 3px 0;
+}
+.verse.bookmarked .verse-n {
+  color: var(--gold);
+}
+.verse.bookmarked .verse-n::after {
+  content: "★";
+  font-size: 0.7em;
+  margin-left: 0.15em;
+  vertical-align: super;
+  color: var(--gold);
+}
+
+/* Briefly flash a verse when arrived at via #verseN deep-link */
+.verse.flash {
+  animation: verseFlash 1.6s ease-out 1;
+}
+@keyframes verseFlash {
+  0%   { background: rgba(212,175,55,0.45); }
+  100% { background: transparent; }
+}
+.verse.bookmarked.flash {
+  animation: verseFlashMarked 1.6s ease-out 1;
+}
+@keyframes verseFlashMarked {
+  0%   { background: rgba(212,175,55,0.55); }
+  100% { background: rgba(212,175,55,0.06); }
+}
 .prose {
   font-size: 1.05rem;
   line-height: 1.75;
@@ -317,4 +356,131 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   .pdf-frame { height: calc(100vh - 150px); }
   .chapter-bar { padding: 0.5rem; font-size: 0.9rem; }
   .book-title .heb { font-size: 1.6rem; }
+}
+
+/* Bookmark star button on the chapter bar */
+#bookmark-btn {
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--link);
+  padding: 0.2rem 0.55rem;
+  font-size: 1.05rem;
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 1;
+}
+#bookmark-btn:hover {
+  background: var(--gold);
+  color: #1a1410;
+  border-color: var(--gold);
+}
+#bookmark-btn.on { color: var(--gold); }
+#bookmark-btn.on:hover { color: #1a1410; }
+
+/* Continue-reading card on the index page */
+.continue-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 1rem auto 0;
+  padding: 0.8rem 1.1rem;
+  background: linear-gradient(180deg, #2c211a 0%, #1f1812 100%);
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  color: var(--link);
+}
+.continue-card:hover {
+  border-color: var(--gold);
+  text-decoration: none;
+  color: var(--link-hover);
+}
+.continue-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+}
+.continue-target { display: flex; flex-direction: column; align-items: flex-end; }
+.continue-target .heb {
+  color: var(--gold);
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+}
+.continue-target .eng {
+  color: var(--ink-dim);
+  font-style: italic;
+  font-size: 0.78rem;
+}
+
+/* Bookmarks panel on the index page */
+.bookmarks-section { margin-top: 1.6rem; }
+.bookmarks-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+.bookmarks-head h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 0;
+  padding: 0;
+}
+.bookmarks-head .count {
+  color: var(--ink-dim);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.bookmarks-tools { display: flex; gap: 0.4rem; align-items: center; }
+.bookmarks-tools button,
+.bookmarks-tools .bm-import-label {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--link);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.78rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.bookmarks-tools button:hover,
+.bookmarks-tools .bm-import-label:hover {
+  background: var(--gold);
+  color: #1a1410;
+  border-color: var(--gold);
+}
+.bookmark-item { position: relative; padding-right: 2rem; }
+.bookmark-item.bm-verse .heb::before {
+  content: "★ ";
+  color: var(--gold);
+  font-size: 0.85em;
+}
+.bookmark-item .bm-remove {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  color: var(--ink-dim);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.15rem 0.35rem;
+  border-radius: 3px;
+}
+.bookmark-item .bm-remove:hover {
+  background: rgba(212,175,55,0.15);
+  color: var(--gold);
 }
