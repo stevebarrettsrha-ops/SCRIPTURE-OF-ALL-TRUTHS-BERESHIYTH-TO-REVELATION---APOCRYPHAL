@@ -86,6 +86,13 @@ PEOPLE_LEADERS = [
     ("Jeremiah", "Yirmeyahu"),
     ("Daniel",   "Daniyal"),
     ("Jochebed", "Yokeḇeḏ"),
+    # John the apostle / baptist — the source PDF uses "Yoḥanan", which
+    # CLAUDE.md prescribes be normalised to "Yahuchanon" (the spelling
+    # used for the four Yahuchanon books in the index).
+    ("Yoḥanan",  "Yahuchanon"),
+    ("Yochanan", "Yahuchanon"),
+    ("Yohanan",  "Yahuchanon"),
+    ("John",     "Yahuchanon"),
 ]
 
 PEOPLE_TRIBES = [
