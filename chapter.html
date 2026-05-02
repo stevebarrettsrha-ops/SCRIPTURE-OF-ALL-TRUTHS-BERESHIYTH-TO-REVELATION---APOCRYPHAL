@@ -127,19 +127,18 @@ fetch('assets/index.json')
     if (verses.length === 0) {
       out.innerHTML = `<p class="note">No text extracted for this chapter. <a href="SCRIPTURE/${ch.pdf}#page=${ch.page}" target="_blank">Open the PDF page</a>.</p>`;
     } else {
-      // Verse text may contain <span class="dn">…</span> for divine names.
-      // Escape any other angle brackets and only un-escape that one element.
+      // Verse text may contain <span class="dn">…</span> for divine names
+      // and <span class="hwhy">HWHY</span> for the paleo-Hebrew
+      // tetragrammaton. Escape every other angle bracket and only
+      // un-escape these two whitelisted elements.
       function renderVerseText(raw) {
-        // Escape everything first
         const esc = raw
           .replace(/&/g, '&amp;')
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');
-        // Un-escape the divine-name span tag (quotes are NOT escaped above,
-        // so they stay literal in the output)
         return esc.replace(
-          /&lt;span class="dn"&gt;([\s\S]*?)&lt;\/span&gt;/g,
-          '<span class="dn">$1</span>'
+          /&lt;span class="(dn|hwhy)"&gt;([\s\S]*?)&lt;\/span&gt;/g,
+          '<span class="$1">$2</span>'
         );
       }
 

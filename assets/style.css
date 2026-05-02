@@ -255,6 +255,14 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   letter-spacing: 0.04em;
   font-weight: 600;
 }
+/* Paleo-Hebrew tetragrammaton (HWHY) — annotated alongside its
+   transliteration as "(YAHUAH) HWHY". Same colour as divine names
+   but no small-caps so the four letters stay distinct. */
+.hwhy {
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
 
 /* Verse number — clickable to bookmark */
 .verse-n { user-select: none; transition: color 120ms; }

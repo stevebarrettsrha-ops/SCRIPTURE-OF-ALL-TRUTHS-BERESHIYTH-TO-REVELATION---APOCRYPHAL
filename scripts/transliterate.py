@@ -303,6 +303,19 @@ def repair_stranded_yisra(text):
     return _STRANDED_YISRA.sub(_r, text)
 
 
+# Annotate every paleo-Hebrew tetragrammaton "HWHY" with the spoken form
+# "(YAHUAH)" placed in front, so readers see both the source render and
+# the transliteration. The inner "HWHY" gets wrapped in a class="hwhy"
+# span purely as an idempotency marker — re-runs see the marker and skip
+# already-annotated occurrences.
+_HWHY_PAT = re.compile(r'(?<!"hwhy">)\bHWHY\b')
+def annotate_hwhy(text):
+    return _HWHY_PAT.sub(
+        '(<span class="dn">YAHUAH</span>) <span class="hwhy">HWHY</span>',
+        text,
+    )
+
+
 def main():
     rules = build_replacements(DIVINE, PEOPLE_PATRIARCHS, PEOPLE_LEADERS,
                                PEOPLE_TRIBES, PLACES, TERMS)
@@ -316,6 +329,7 @@ def main():
             for v in cdat.get('verses', []):
                 new_t = transliterate(v['t'], rules)
                 new_t = repair_stranded_yisra(new_t)
+                new_t = annotate_hwhy(new_t)
                 if new_t != v['t']:
                     v['t'] = new_t
                     changed += 1
