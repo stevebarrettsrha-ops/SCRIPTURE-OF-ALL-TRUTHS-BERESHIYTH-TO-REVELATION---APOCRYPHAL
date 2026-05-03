@@ -137,9 +137,27 @@ def extract_page_text(pdf_filename, page_num):
     left  = [w for w in body if w['x0'] + (w['x1'] - w['x0']) / 2 < mid]
     right = [w for w in body if w['x0'] + (w['x1'] - w['x0']) / 2 >= mid]
 
-    # Single-column: if either side is very thin, treat as one column.
-    if len(body) and (len(right) < 0.20 * len(body) or len(left) < 0.20 * len(body)):
-        return '\n'.join(_group_lines(body))
+    # Single- vs two-column decision. The Besorah uses two narrow columns
+    # throughout, but on end-of-book pages one column may be near-empty
+    # (e.g. Hazon p.619 has 322 words left + 15 right where the right
+    # column holds only the last verse 21; 1 Kepha p.590 has 129 words
+    # left + 0 right). A pure 20% threshold mistook those pages for
+    # single-column, merged the columns, and dropped the header banner.
+    # Trust the geometry instead: if the columns are clearly disjoint
+    # (right side starts well past where the left side ends), keep
+    # two-column even when one side is empty. Only fall back to
+    # single-column when words actually span the full width — and even
+    # then keep the header at the top.
+    if len(body):
+        left_max_x1 = max((w['x1'] for w in left), default=0) if left else 0
+        right_min_x0 = min((w['x0'] for w in right), default=width) if right else width
+        # Geometric gap = column boundary clearly separates left from right.
+        # Empty side counts as gap_clean (it's just an empty column).
+        gap_clean = (not right) or (not left) or right_min_x0 >= left_max_x1 - 5
+        if not gap_clean and (
+            len(right) < 0.20 * len(body) or len(left) < 0.20 * len(body)
+        ):
+            return '\n'.join(_group_lines(header) + _group_lines(body))
 
     return '\n'.join(_group_lines(header) + _group_lines(left) + _group_lines(right))
 
@@ -222,10 +240,45 @@ def parse_besorah_chapter(book, chapter, start_pg, end_pg):
     """Extract verses for one chapter of the Besorah."""
     pdf_file = book['chapters'][str(chapter)]['pdf']
 
+    # Identify the book by either its Hebrew or English banner string so we
+    # can stop pulling in pages once they no longer belong to this book.
+    # Beyond the canonical text in PDF 0002, the Besorah includes appendix
+    # essays ("TEN WORDS TO LOVE AND LIVE BY", "Rise and Shine!", "The Way",
+    # etc.) that don't carry a book banner — we used to read those into the
+    # last chapter's last verse and produce phantom verse markers.
+    #
+    # Apostrophe normalisation matters here: BESORAH_BOOKS uses straight
+    # apostrophes in names like "1 SHEMU'ĔL" but the PDF prints the curly
+    # form "1 SHEMU’ĔL". Strip both so the comparison succeeds.
+    def _norm_for_match(s):
+        return re.sub(r"['’ʼ‘`]", '', s).upper()
+
+    book_tokens = set()
+    for src in (book.get('hebrew', ''), book.get('english', '')):
+        for tok in re.findall(r"[A-Z][A-Za-z'’À-ɏḀ-ỿ]{2,}", src):
+            book_tokens.add(_norm_for_match(tok))
+
+    def page_belongs_to_book(raw):
+        # The first 2-3 non-empty lines of a Besorah page hold the running
+        # banner ("1320 BERĔSHITH 5" or similar). If none of the book's
+        # uppercase tokens appear in that banner region, the page is an
+        # appendix — stop reading.
+        if not book_tokens:
+            return True   # unknown — be permissive
+        head = _norm_for_match('\n'.join(raw.split('\n')[:3]))
+        return any(tok in head for tok in book_tokens)
+
     parts = []
     for pg in range(start_pg, end_pg + 1):
         # Use column-aware extraction so 2-column Tehillim pages don't interleave verses
-        cleaned = strip_besorah_page(extract_page_text(pdf_file, pg))
+        raw = extract_page_text(pdf_file, pg)
+        # Bail at the first page past start_pg whose banner doesn't mention
+        # this book (only check past start_pg so a page that opens with a
+        # different running header still gets scanned for the chapter
+        # itself).
+        if pg > start_pg and not page_belongs_to_book(raw):
+            break
+        cleaned = strip_besorah_page(raw)
         parts.append(cleaned)
     full = "\n".join(parts)
 
