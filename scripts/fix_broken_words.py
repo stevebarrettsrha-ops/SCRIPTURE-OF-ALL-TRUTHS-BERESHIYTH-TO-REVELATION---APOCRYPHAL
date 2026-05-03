@@ -236,6 +236,135 @@ def fix_text(text, stats):
     return "".join(out)
 
 
+# Pass 3: re-split confirmed PDF-glue artefacts where two adjacent words
+# in the source got read as one token by pdfplumber (no space between).
+# A generic splitter trips over real English compounds like "became",
+# "anymore", "befell", "menservants", "firstborn" — so we use a hand-
+# curated list of artefacts found by surveying the corpus. Add new
+# entries here as they are discovered.
+GLUE_ARTIFACTS = {
+    # Conjunction / preposition glue
+    "amongthe":      "among the",
+    "andbe":         "and be",
+    "andtherefore":  "and therefore",
+    "asenemies":     "as enemies",
+    "becausethey":   "because they",
+    "fearand":       "fear and",
+    "headshall":     "head shall",
+    "hungerand":     "hunger and",
+    "keephas":       "keep has",
+    "receivedhis":   "received his",
+    "thefour":       "the four",
+    # Numeric (PDF dropped the hyphen at line breaks)
+    "twentyone":     "twenty-one",
+    "twentytwo":     "twenty-two",
+    "twentythree":   "twenty-three",
+    "twentyfour":    "twenty-four",
+    "twentyfive":    "twenty-five",
+    "twentysix":     "twenty-six",
+    "twentyseven":   "twenty-seven",
+    "twentyeight":   "twenty-eight",
+    "twentynine":    "twenty-nine",
+    "twentysecond":  "twenty-second",
+    "thirtyone":     "thirty-one",
+    "thirtytwo":     "thirty-two",
+    "thirtythree":   "thirty-three",
+    "thirtyfour":    "thirty-four",
+    "thirtyfive":    "thirty-five",
+    "thirtysix":     "thirty-six",
+    "thirtyseven":   "thirty-seven",
+    "thirtyeight":   "thirty-eight",
+    "thirtynine":    "thirty-nine",
+    "thirtysecond":  "thirty-second",
+    "fortyone":      "forty-one",
+    "fortytwo":      "forty-two",
+    "fortythree":    "forty-three",
+    "fortyfour":     "forty-four",
+    "fortyfive":     "forty-five",
+    "fortysix":      "forty-six",
+    "fortyseven":    "forty-seven",
+    "fortyeight":    "forty-eight",
+    "fortynine":     "forty-nine",
+    "fiftyone":      "fifty-one",
+    "fiftytwo":      "fifty-two",
+    "fiftythree":    "fifty-three",
+    "fiftyfour":     "fifty-four",
+    "fiftyfive":     "fifty-five",
+    "fiftysix":      "fifty-six",
+    "fiftyseven":    "fifty-seven",
+    "fiftyeight":    "fifty-eight",
+    "fiftynine":     "fifty-nine",
+    "sixtyone":      "sixty-one",
+    "sixtytwo":      "sixty-two",
+    "sixtythree":    "sixty-three",
+    "sixtyfour":     "sixty-four",
+    "sixtyfive":     "sixty-five",
+    "sixtysix":      "sixty-six",
+    "sixtyseven":    "sixty-seven",
+    "sixtyeight":    "sixty-eight",
+    "sixtynine":     "sixty-nine",
+    "seventyone":    "seventy-one",
+    "seventytwo":    "seventy-two",
+    "seventythree":  "seventy-three",
+    "seventyfour":   "seventy-four",
+    "seventyfive":   "seventy-five",
+    "seventysix":    "seventy-six",
+    "seventyseven":  "seventy-seven",
+    "seventyeight":  "seventy-eight",
+    "seventynine":   "seventy-nine",
+    "eightyone":     "eighty-one",
+    "eightytwo":     "eighty-two",
+    "eightythree":   "eighty-three",
+    "eightyfour":    "eighty-four",
+    "eightyfive":    "eighty-five",
+    "eightysix":     "eighty-six",
+    "eightyseven":   "eighty-seven",
+    "eightyeight":   "eighty-eight",
+    "eightynine":    "eighty-nine",
+    "ninetyone":     "ninety-one",
+    "ninetytwo":     "ninety-two",
+    "ninetythree":   "ninety-three",
+    "ninetyfour":    "ninety-four",
+    "ninetyfive":    "ninety-five",
+    "ninetysix":     "ninety-six",
+    "ninetyseven":   "ninety-seven",
+    "ninetyeight":   "ninety-eight",
+    "ninetynine":    "ninety-nine",
+    "onethird":      "one-third",
+    "twothirds":     "two-thirds",
+}
+
+
+def _match_case(replacement, source):
+    """Apply source's leading-letter capitalisation to the replacement."""
+    if not source:
+        return replacement
+    if source[0].isupper():
+        return replacement[0].upper() + replacement[1:]
+    return replacement
+
+
+def unjoin_glued_words(text, stats):
+    """Replace confirmed PDF-glue artefacts with their split form."""
+    def _r(m):
+        tok = m.group(0)
+        repl = GLUE_ARTIFACTS.get(tok.lower())
+        if repl is None:
+            return tok
+        stats["unjoined"] = stats.get("unjoined", 0) + 1
+        stats["unjoin_examples"].setdefault(tok, repl)
+        return _match_case(repl, tok)
+
+    out = []
+    for kind, seg in split_protected(text):
+        if kind == "tag":
+            out.append(seg)
+        else:
+            # Match any token (case-insensitive against keys).
+            out.append(re.sub(r"\b[A-Za-z]+\b", _r, seg))
+    return "".join(out)
+
+
 def build_corpus_freq(books_data):
     """Count how often each lowercase word appears as a single token in the
     corpus. Used as a sanity check: a candidate merge is only allowed if
@@ -266,13 +395,15 @@ def main():
     global CORPUS_FREQ
     CORPUS_FREQ = build_corpus_freq(books_data)
 
-    stats = {"hyphen": 0, "soft": 0, "examples": {}}
+    stats = {"hyphen": 0, "soft": 0, "unjoined": 0,
+             "examples": {}, "unjoin_examples": {}}
     changed_files = 0
     for fp, book in zip(files, books_data):
         changed = False
         for ch in book.get("chapters", {}).values():
             for v in ch.get("verses", []):
                 fixed = fix_text(v["t"], stats)
+                fixed = unjoin_glued_words(fixed, stats)
                 if fixed != v["t"]:
                     v["t"] = fixed
                     changed = True
@@ -284,14 +415,18 @@ def main():
     print(f"Files updated:        {changed_files} / {len(files)}")
     print(f"Hyphen breaks fixed:  {stats['hyphen']}")
     print(f"Soft-wraps merged:    {stats['soft']}")
+    print(f"Glued tokens split:   {stats['unjoined']}")
     if stats.get("citation"):
         print(f"Citation markers:     {stats['citation']}")
     if stats["examples"]:
         print("Sample soft-wrap merges:")
-        # Sort by joined-form length (longest first) for visibility
-        items = sorted(stats["examples"].items(), key=lambda kv: -len(kv[1]))[:30]
+        items = sorted(stats["examples"].items(), key=lambda kv: -len(kv[1]))[:20]
         for orig, joined in items:
             print(f"  {orig!r:30} -> {joined!r}")
+    if stats["unjoin_examples"]:
+        print("Sample glued-token splits:")
+        for orig, split in sorted(stats["unjoin_examples"].items())[:20]:
+            print(f"  {orig!r:30} -> {split!r}")
 
 
 if __name__ == "__main__":
