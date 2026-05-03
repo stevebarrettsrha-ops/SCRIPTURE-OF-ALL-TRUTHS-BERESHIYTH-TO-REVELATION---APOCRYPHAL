@@ -17,6 +17,144 @@ import json, os, re, glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEXT_DIR = os.path.join(ROOT, "assets", "text")
 
+# Optional English wordlist used by the post-passes (-el → -al and Yi/Ye → Yah)
+# to skip genuine English words (Yet/Yes/Year/Wheel/Steel etc.). If the
+# wordlist isn't installed, the post-passes simply rely on a smaller
+# hand-curated stoplist below.
+try:
+    from english_words import get_english_words_set
+    ENGLISH_WORDS = get_english_words_set(["web2"], lower=True)
+except ImportError:
+    ENGLISH_WORDS = set()
+
+
+# English words beginning with "El"/"el" (or "Ĕl") that the prefix rule
+# (Ĕl→Al / El→Al) must NOT convert. The prefix rule fires on "Eliyahu",
+# "Elohim", "Elam" etc., but should leave English words like "Elect",
+# "Elder", "Else", "Element" intact.
+EL_PREFIX_EXCEPTIONS = {
+    "elect", "elects", "elected", "electing", "election", "elections",
+    "elective", "electoral", "elector", "electors",
+    "electric", "electrical", "electricity",
+    "electron", "electronic", "electronics",
+    "elder", "elders", "elderly", "eldest",
+    "else", "elsewhere",
+    "elephant", "elephants",
+    "element", "elements", "elemental", "elementary",
+    "eleven", "eleventh",
+    "eligible", "eligibility",
+    "eliminate", "eliminated", "eliminating", "elimination",
+    "eloquence", "eloquent", "eloquently",
+    "elaborate", "elaborated", "elaborately",
+    "elated", "elastic", "elapsed",
+    "elder's", "elders'",
+}
+
+# Common English words ending in "-el"/"-EL" that the suffix post-pass must
+# NOT touch (so "Wheel" doesn't become "Wheal", "Rebel" stays "Rebel").
+# This is the exclusive list — note we deliberately don't consult the
+# generic English wordlist because it contains many proper-noun names
+# (Michael, Rachel, Uriel, Gabriel, Raphael, …) that the user DOES want
+# transliterated. Add new English words here if any slip through.
+EL_SUFFIX_EXCEPTIONS = {
+    "feel", "feels", "feeling", "feels", "feelings", "felt",
+    "wheel", "wheels", "wheeled",
+    "steel", "steels",
+    "level", "levels", "leveled", "leveling",
+    "rebel", "rebels", "rebelled", "rebelling", "rebellion", "rebellious",
+    "panel", "panels",
+    "model", "models", "modeled", "modeling",
+    "travel", "travels", "traveled", "traveling", "traveler", "travellers",
+    "angel", "angels", "angelic",       # English fallback (corpus uses mal'ak)
+    "compel", "compels", "compelled",
+    "expel", "expels", "expelled", "expelling",
+    "chapel",
+    "cancel", "cancels", "canceled", "canceling", "cancellation",
+    "cruel", "cruelly", "cruelty",
+    "fuel", "fuels",
+    "duel", "duels",
+    "gospel", "gospels",
+    "mussel", "mussels",
+    "parallel",
+    "navel",
+    "jewel", "jewels",
+    "vowel", "vowels",
+    "tunnel", "tunnels",
+    "channel", "channels",
+    "kennel", "kennels",
+    "barrel", "barrels",
+    "shovel", "shovels",
+    "shrivel", "shrivels", "shriveled", "shriveling",
+    "snivel", "swivel",
+    "novel", "novels",
+    "bowel", "bowels",
+    "towel", "towels",
+    "dowel", "dowels",
+    "vessel", "vessels",
+    "chisel", "chisels",
+    "easel", "easels",
+    "hostel", "hostels",
+    "libel", "libels",
+    "pretzel", "pretzels",
+    "camel", "camels",
+    "scalpel", "scalpels",
+    "shekel", "shekels",                # currency — appears as common noun
+    "marvel", "marvels", "marvelled",
+    "tassel", "tassels",
+    "satchel", "satchels",
+    "kestrel", "kestrels",
+    "mongrel", "mongrels",
+    "scoundrel", "scoundrels",
+    "squirrel", "squirrels",
+    "decimal",                          # ends in -al but also misc.
+    "swivel", "swivels",
+    "drivel",
+    "yodel", "yodels",
+    "label", "labels", "labeled", "labeling",
+    "bagel", "bagels",
+    "morel", "morels",
+    "hovel", "hovels",
+    "parcel", "parcels", "parceled",
+    "snorkel", "snorkels",
+    "tinsel",
+    "trowel", "trowels",
+    "cudgel", "cudgels",
+    "schmozzle", "schnitzel",
+    "personnel",
+    "spaniel", "spaniels",
+    "carousel", "carousels",
+    "pixel", "pixels",
+    "foosbal",                          # quirky
+    "betel",                            # betel nut
+    "carmelite",                        # NB: "Carmel" stays, "Carmelite" stays via length
+    "bushel", "bushels",                # biblical measure but English noun
+}
+
+# Common English words starting with "Yi" or "Ye" — these stay unchanged.
+# "Yet", "Yes", "Yea", "Year(s)", "Yellow", etc. show up frequently in
+# the corpus as ordinary prose, not as Hebrew names. (Drop the generic
+# English wordlist check that previously protected these — web2 also
+# contains obscure entries like "yether" which IS a biblical name and
+# should transliterate; the user's directive applies broadly.)
+YI_YE_EXCEPTIONS = {
+    "yet", "yes", "yea", "year", "years", "yearly", "yearling", "yearlings",
+    "yearn", "yearns", "yearned", "yearning",
+    "yellow", "yellows", "yellowed", "yellowing", "yellowish",
+    "yeast", "yeasts", "yeasty",
+    "yell", "yells", "yelled", "yelling",
+    "yesterday", "yet's",
+    "yew", "yews",
+    "yelp", "yelps", "yelped", "yelping",
+    "yeoman", "yeomen",
+    "yield", "yields", "yielded", "yielding",
+    "yip", "yips", "yipe",
+    "yen", "yens",                      # currency
+    "yes-no", "yes's",
+    "yeah", "yeahs",
+    "yiddish", "yenta", "yentas",
+    "yeti", "yetis",
+}
+
 
 # ----------------------------------------------------------------------
 # Mapping tables (CLAUDE.md)
@@ -93,6 +231,53 @@ PEOPLE_LEADERS = [
     ("Yochanan", "Yahuchanon"),
     ("Yohanan",  "Yahuchanon"),
     ("John",     "Yahuchanon"),
+]
+
+# Biblical proper nouns that begin with "J" — collapse to the Hebrew "Y"
+# form per the user's directive ("any name with J should be Y"). English
+# words that happen to begin with J (Just, Joy, Judge, Jealousy, Jubilant,
+# Joke, Journal, ...) are deliberately NOT in this list and stay as-is.
+PEOPLE_J_NAMES = [
+    ("Jared",       "Yared"),
+    ("Josiah",      "Yoshiyahu"),
+    ("Jashub",      "Yashub"),
+    ("Jeconiah",    "Yekanyah"),
+    ("Jericho",     "Yeriḥo"),
+    ("Jubilees",    "Yobelim"),
+    ("Jubilee",     "Yobel"),
+    ("Jason",       "Yason"),
+    ("Judas",       "Yahudah"),
+    ("Jews",        "Yahuḏim"),
+    ("Jewish",      "Yahuḏite"),
+    ("Jew",         "Yahuḏi"),
+    ("Jehiel",      "Yeḥiel"),
+    ("Joram",       "Yoram"),
+    ("Jonah",       "Yonah"),
+    ("Joel",        "Yoal"),
+    ("Job",         "Iyob"),
+    ("Jobab",       "Yobab"),
+    ("Janus",       "Yanus"),
+    ("Jania",       "Yania"),
+    ("Janeas",      "Yaneas"),
+    ("Javan",       "Yawan"),
+    ("Jair",        "Yair"),
+    ("Jaazer",      "Yaazer"),
+    ("Jokshan",     "Yokshan"),
+    ("Joakim",      "Yoaqim"),
+    ("Jabin",       "Yabin"),
+    ("Jephunneh",   "Yephunneh"),
+    ("Japhia",      "Yaphia"),
+    ("Jezebel",     "Izeḇel"),
+    ("Jephtha",     "Yiphtaḥ"),
+    ("Jephthah",    "Yiphtaḥ"),
+    ("Joash",       "Yo'ash"),
+    ("Jehoiakim",   "Yehoyaqim"),
+    ("Jehoshaphat", "Yehoshaphat"),
+    ("Jehu",        "Yehu"),
+    ("Jonadab",     "Yonadab"),
+    ("Jonathan",    "Yehonathan"),
+    ("Judea",       "Yahuḏah"),
+    ("Jabuk",       "Yabuk"),
 ]
 
 PEOPLE_TRIBES = [
@@ -233,12 +418,21 @@ def build_replacements(divine, *groups):
     compiled = []
     for kind, src, dst in rules:
         if kind == 'prefix':
-            # Word start followed by another letter (compound names only).
-            pat = re.compile(rf"\b{re.escape(src)}(?=[A-Za-zÀ-ɏḀ-ỿ])", re.IGNORECASE)
+            # Capture the FULL word so the replacer can check it against the
+            # English-words exception list (Elect, Elder, Else, Element, …).
+            pat = re.compile(rf"\b{re.escape(src)}([A-Za-zÀ-ɏḀ-ỿ]+)", re.IGNORECASE)
         else:
-            # Word-boundary regex; case-insensitive so we can match different cases
-            # then fix the case in the replacer.
-            pat = re.compile(rf"\b{re.escape(src)}(?='s\b|s\b|\b)", re.IGNORECASE)
+            # The bare "Ĕl"/"El" divine rule must NOT match when it appears as
+            # the suffix of a compound name like "Shemu'ĕl" or "Yisra'ĕl" —
+            # otherwise the engine wraps that suffix as "<span class=dn>Al</span>"
+            # and we end up with "Shemu'<span class=dn>Al</span>" stranded
+            # markup. Specifically anchor to a negative lookbehind for any
+            # kind of apostrophe.
+            apos_guard = r"(?<!['’])" if src in ("Ĕl", "El") else ""
+            pat = re.compile(
+                rf"{apos_guard}\b{re.escape(src)}(?='s\b|s\b|\b)",
+                re.IGNORECASE,
+            )
         compiled.append((kind, pat, src, dst))
     return compiled
 
@@ -255,11 +449,22 @@ def transliterate(text, rules):
     # check via sentinel char.
     SENTINEL = "\x00"
     for kind, pat, src, dst in rules:
-        def repl(m):
+        def repl(m, kind=kind, src=src, dst=dst):
             matched = m.group(0)
-            replaced_word = case_match(dst, matched.replace("'s", "").rstrip("s") if matched.endswith("'s") else
-                                            matched.rstrip("s") if matched.lower().endswith("s") and not src.endswith("s") and src.lower() + "s" == matched.lower() else
-                                            matched)
+
+            # Prefix rule: the regex captures the FULL word (prefix + rest).
+            # Check against the English-word exception list before converting,
+            # so "Elect", "Elder", "Else", "Element" stay unchanged while
+            # "Eliyahu", "Elohim", "Elam" still flip to "Aliyahu" / "Aluahim"
+            # / "Alam".
+            if kind == 'prefix':
+                if matched.lower() in EL_PREFIX_EXCEPTIONS:
+                    return matched
+                prefix_part = matched[:len(src)]
+                rest = matched[len(src):]
+                new_prefix = case_match(dst, prefix_part)
+                return SENTINEL + new_prefix + rest + SENTINEL
+
             # Possessive
             if matched.endswith("'s"):
                 final = case_match(dst, matched[:-2]) + "'s"
@@ -273,11 +478,6 @@ def transliterate(text, rules):
             # Wrap divine names with sentinel-protected span
             if kind == 'divine':
                 return SENTINEL + '<span class="dn">' + final + '</span>' + SENTINEL
-            elif kind == 'prefix':
-                # Just substitute the prefix — preserve the rest of the word
-                # (the regex is zero-width-lookahead for the next letter, so
-                # the matched text is only the prefix itself).
-                return SENTINEL + final + SENTINEL
             else:
                 return SENTINEL + final + SENTINEL
         # Apply only outside SENTINEL regions
@@ -323,9 +523,67 @@ def annotate_hwhy(text):
     )
 
 
+# Post-pass: convert "-el" suffix to "-al" on Hebrew proper nouns. The user's
+# directive is general ("Names that end in el should be al"), so this fires
+# on any Title Case word ending in -el / -EL that isn't a known English word.
+# The regex skips contents of <span> tags by anchoring to word characters
+# only — markup can't accidentally end in "el" since "</span>" doesn't
+# satisfy \w endings.
+# The character class includes plain "e/E" plus the diacritic forms "ĕ/Ĕ"
+# (U+0115 / U+0114) so that "Shemu’ĕl", "Yehezq’ĕl" etc. match alongside
+# "Uriel", "Michael". Any letter case ("EL", "El", "eL", "el", "ĕl", "Ĕl",
+# "ĚL", "ĕL") is supported, with the new suffix ("AL"/"Al"/"aL"/"al")
+# derived per-character from the source case.
+_EL_SUFFIX_PAT = re.compile(
+    r"\b[A-ZĀ-ɏḀ-ỿ][A-Za-zÀ-ɏḀ-ỿ'’]+[EeĔĕ][Ll]\b"
+)
+def el_suffix_to_al(text):
+    def _r(m):
+        word = m.group(0)
+        wl = word.lower()
+        if wl in EL_SUFFIX_EXCEPTIONS:
+            return word
+        e_char = word[-2]
+        l_char = word[-1]
+        new_a = "A" if e_char.isupper() else "a"
+        new_l = "L" if l_char.isupper() else "l"
+        return word[:-2] + new_a + new_l
+    # Iterate to a fixed point — compound names like "Yehallel'ĕl" contain
+    # multiple "-el" segments separated by apostrophes; each pass strips the
+    # outermost match, so we keep going until no further change.
+    prev = None
+    while text != prev:
+        prev = text
+        text = _EL_SUFFIX_PAT.sub(_r, text)
+    return text
+
+
+# Post-pass: convert "Yi"/"Ye" prefix on proper nouns to "Yah" (or "YAH"
+# if the source is all-caps). Skips English words (Yet/Yes/Year/Yellow/…).
+# Example: Yerushalayim → Yahrushalayim, Yitsḥaq → Yahtsḥaq.
+_YI_YE_PAT = re.compile(
+    r"\bY[eEiI][a-zA-ZÀ-ɏḀ-ỿ'’]+\b"
+)
+def yi_ye_to_yah(text):
+    def _r(m):
+        word = m.group(0)
+        wl = word.lower()
+        # Only consult the curated stoplist — the generic English wordlist
+        # contains obscure entries like "yether" that the user wants
+        # transliterated as the biblical name (Yahther).
+        if wl in YI_YE_EXCEPTIONS:
+            return word
+        first  = word[0]   # Y or y
+        second = word[1]   # e/E/i/I
+        rest   = word[2:]
+        ah = "AH" if second.isupper() else "ah"
+        return first + ah + rest
+    return _YI_YE_PAT.sub(_r, text)
+
+
 def main():
     rules = build_replacements(DIVINE, PEOPLE_PATRIARCHS, PEOPLE_LEADERS,
-                               PEOPLE_TRIBES, PLACES, TERMS)
+                               PEOPLE_J_NAMES, PEOPLE_TRIBES, PLACES, TERMS)
     files = sorted(glob.glob(os.path.join(TEXT_DIR, "*.json")))
     total_verses = 0
     for f in files:
@@ -336,6 +594,11 @@ def main():
             for v in cdat.get('verses', []):
                 new_t = transliterate(v['t'], rules)
                 new_t = repair_stranded_yisra(new_t)
+                # Apply user-directed normalisations BEFORE HWHY annotation
+                # so the Yi/Ye → Yah pass doesn't see the "(YAHUAH)" prefix
+                # text it would also accidentally transform.
+                new_t = yi_ye_to_yah(new_t)
+                new_t = el_suffix_to_al(new_t)
                 new_t = annotate_hwhy(new_t)
                 if new_t != v['t']:
                     v['t'] = new_t
