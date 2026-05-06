@@ -236,7 +236,7 @@ def strip_besorah_page(raw):
     return body
 
 
-def parse_besorah_chapter(book, chapter, start_pg, end_pg):
+def parse_besorah_chapter(book, chapter, start_pg, end_pg, continuation=None):
     """Extract verses for one chapter of the Besorah."""
     pdf_file = book['chapters'][str(chapter)]['pdf']
 
@@ -251,22 +251,39 @@ def parse_besorah_chapter(book, chapter, start_pg, end_pg):
     # apostrophes in names like "1 SHEMU'ĔL" but the PDF prints the curly
     # form "1 SHEMU’ĔL". Strip both so the comparison succeeds.
     def _norm_for_match(s):
-        return re.sub(r"['’ʼ‘`]", '', s).upper()
+        return re.sub(r"['’ʼʾ‛‘`]", '', s).upper()
 
     book_tokens = set()
     for src in (book.get('hebrew', ''), book.get('english', '')):
         for tok in re.findall(r"[A-Z][A-Za-z'’À-ɏḀ-ỿ]{2,}", src):
             book_tokens.add(_norm_for_match(tok))
 
+    # Bootstrap extra tokens from the start page's header so that books whose
+    # PDF running header differs from the index name are still recognised.
+    # E.g. the PDF prints "YOHANAN" but the index stores "YAHUCHANON".
+    # We scan the first few non-empty lines of the column-aware extraction
+    # (where the book banner reliably appears) and add any 4+ char
+    # all-caps tokens we find.
+    _boot_raw = extract_page_text(pdf_file, start_pg)
+    _boot_head = _norm_for_match(' '.join(
+        [l for l in _boot_raw.split('\n') if l.strip()][:4]
+    ))
+    for _tok in re.findall(r'[A-Z\xc0-\u024f\u1e00-\u1eff][A-Z\xc0-\u024f\u1e00-\u1eff]{3,}', _boot_head):
+        book_tokens.add(_tok)
+
     def page_belongs_to_book(raw):
-        # The first 2-3 non-empty lines of a Besorah page hold the running
-        # banner ("1320 BERĔSHITH 5" or similar). If none of the book's
-        # uppercase tokens appear in that banner region, the page is an
-        # appendix — stop reading.
+        # Check if the running banner for this book appears anywhere on the
+        # page. In a 2-column PDF layout the right-column banner (e.g.
+        # "BERESHITH 11") appears after all left-column lines in the
+        # column-aware extraction output, so checking only the first 3 lines
+        # misses it and incorrectly drops the continuation page.
+        # Appendix pages ("TEN WORDS TO LOVE AND LIVE BY", etc.) never
+        # contain the current book's specific tokens, so scanning the full
+        # page text is safe.
         if not book_tokens:
-            return True   # unknown — be permissive
-        head = _norm_for_match('\n'.join(raw.split('\n')[:3]))
-        return any(tok in head for tok in book_tokens)
+            return True   # unknown -- be permissive
+        full_norm = _norm_for_match(raw)
+        return any(tok in full_norm for tok in book_tokens)
 
     parts = []
     for pg in range(start_pg, end_pg + 1):
@@ -280,6 +297,14 @@ def parse_besorah_chapter(book, chapter, start_pg, end_pg):
             break
         cleaned = strip_besorah_page(raw)
         parts.append(cleaned)
+    # Cross-volume: include pages from the next PDF up to the next-chapter
+    # boundary so chapters spanning two volumes get their full content.
+    if continuation:
+        cont_pdf_file, cont_end_pg = continuation
+        for _pg in range(1, cont_end_pg + 1):
+            _raw = extract_page_text(cont_pdf_file, _pg)
+            parts.append(strip_besorah_page(_raw))
+
     full = "\n".join(parts)
 
     # Locate THIS chapter start: a chapter-number marker followed by space + capitalized text
@@ -859,7 +884,13 @@ def build():
                 end_pg = min(end_pg, start_pg + 12)
             try:
                 if section in ("Torah", "Nebi'im", "Kethubim", "Messianic"):
-                    verses = parse_besorah_chapter(book, ch, start_pg, end_pg)
+                    # If the next chapter is in a different PDF, the current
+                    # chapter may cross volumes. Pass the continuation info so
+                    # parse_besorah_chapter can include those extra pages.
+                    _cont = None
+                    if next_ch and next_ch['pdf'] != cdat['pdf']:
+                        _cont = (next_ch['pdf'], next_ch['page'])
+                    verses = parse_besorah_chapter(book, ch, start_pg, end_pg, continuation=_cont)
                 elif bid == "chanok":
                     verses = parse_enoch_chapter(book, ch, start_pg, end_pg)
                 elif bid in ("adam-eve-1", "adam-eve-2"):
