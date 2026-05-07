@@ -195,10 +195,11 @@ def strip_besorah_page(raw):
         if drops == 0 and m:
             lines.pop(0); drops += 1; continue
         # "44    BERĔSHITH 2", "278Yahusha 2", "3361 SHEMU'ĔL 1",
-        # "989 2 DIḆRE haYAMIM 22" — running header with leading page number,
-        # optional book-prefix digit ("1 ", "2 "), book name, optional chapter.
-        if len(first) <= 35 and re.match(
-            rf"^\d+\s+(?:\d\s+)?[{UPPER}][{LETTER}'\s\-]*?(?:\s+\d+){{0,2}}\s*$", first):
+        # "989 2 DIḆRE haYAMIM 22", "381 2nd Shemu'el 9" — running header with
+        # leading page number, optional book-prefix digit or ordinal ("1 ", "2 ",
+        # "2nd "), book name, optional chapter.
+        if len(first) <= 40 and re.match(
+            rf"^\d+\s+(?:\d+[a-z]*\s+)?[{UPPER}][{LETTER}'\s\-]*?(?:\s+\d+){{0,2}}\s*$", first):
             lines.pop(0); drops += 1; continue
         # "BERĔSHITH", "BERĔSHITH 2", "BERĔSHITH 43 92", "2 DIḆRE haYAMIM 22 989"
         # — Hebrew name optionally preceded by a book-prefix digit and followed
@@ -311,9 +312,14 @@ def parse_besorah_chapter(book, chapter, start_pg, end_pg, continuation=None):
     # (verse 1 is denoted by the chapter number itself in the Besorah typesetting).
     # Use \b to avoid matching mid-number like "31" containing "1".
     chap_start_pat = re.compile(rf'(?:^|\n|\s){chapter}\s+(?=[{UPPER}"“‘\'])')
-    next_chap_pat  = re.compile(rf'(?:^|\n|\s){chapter+1}\s+(?=[{UPPER}"“‘\'])')
+    next_chap_pat  = re.compile(rf'(?:^|\n|\s){chapter+1}\s+(?=[{LETTER}"“‘\'])')
 
     m = chap_start_pat.search(full)
+    if not m:
+        # Fallback: allow lowercase first letter (e.g. "10 ask HWHY...")
+        chap_start_pat_lc = re.compile(rf'(?:^|\n|\s){chapter}\s+(?=[{LETTER}"“‘\'])'
+        )
+        m = chap_start_pat_lc.search(full)
     if m:
         full = full[m.end():]
         full = "1 " + full   # synthesize verse 1 marker
@@ -321,9 +327,16 @@ def parse_besorah_chapter(book, chapter, start_pg, end_pg, continuation=None):
     if n:
         full = full[:n.start()]
 
+    # Collapse letter-spaced text: PDF sometimes renders "10" as "1 0" when a
+    # block is typeset with tracking. Apply AFTER chapter boundary clipping so
+    # in-body running headers (e.g. "381 2 SHEMU'EL 9") are already excluded
+    # and can't be corrupted into "3812 SHEMUEL 9" which confuses next_chap_pat.
+    full = re.sub(r'(\d) (\d)', r'\1\2', full)
+    full = re.sub(r'(\d) (\d)', r'\1\2', full)  # second pass for 3-digit numbers
+
     # Verses: number followed (with optional space) by a letter or quote
     # Allow lowercase too (e.g. "15and let them be...") since some verses begin with lowercase.
-    verse_pat = re.compile(rf'(?:^|(?<=\s))(\d+)\s*(?=[{LETTER}"“‘\'])')
+    verse_pat = re.compile(rf'(?:^|(?<=\s))(\d+)\s*(?=[{LETTER}"“‘\'(])')
     matches = list(verse_pat.finditer(full))
 
     verses = []
@@ -875,7 +888,11 @@ def build():
             start_pg = cdat['page']
             next_ch = chapters.get(str(ch + 1))
             if next_ch and next_ch['pdf'] == cdat['pdf']:
-                end_pg = max(start_pg, next_ch['page'])
+                # Always read at least start_pg+1 so that a chapter whose
+                # content overflows onto the page after the next chapter's
+                # header (both sharing the same indexed start page) still
+                # gets its trailing verses captured.
+                end_pg = max(start_pg + 1, next_ch['page'])
             else:
                 # Last chapter of this book: end at next book's start page in same PDF
                 nxt = next_anchor_after(cdat['pdf'], start_pg)
