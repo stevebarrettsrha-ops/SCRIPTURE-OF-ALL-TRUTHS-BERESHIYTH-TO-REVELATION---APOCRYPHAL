@@ -767,16 +767,86 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
     setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
   }
 
+  function isNonEmptyString(s) {
+    return typeof s === "string" && s.length > 0;
+  }
+  function isPosInt(n) {
+    return typeof n === "number" && isFinite(n) && n > 0 && Math.floor(n) === n;
+  }
+
+  // Validate and normalize a single bookmark / last-read entry coming
+  // from an imported file. Returns a trustworthy entry, or null if the
+  // entry is missing the fields the UI depends on. Unknown fields are
+  // dropped; missing-but-recoverable fields are back-filled so a partial
+  // export still renders rather than showing "undefined".
+  function normalizeEntry(e) {
+    if (!e || typeof e !== "object") return null;
+    if (!isNonEmptyString(e.bookId)) return null;
+    if (!isPosInt(e.chapter)) return null;
+    var out = {
+      bookId: e.bookId,
+      hebrew: isNonEmptyString(e.hebrew) ? e.hebrew : e.bookId,
+      english: isNonEmptyString(e.english) ? e.english : "",
+      chapter: e.chapter,
+      chapterCount: isPosInt(e.chapterCount) ? e.chapterCount : 1,
+      ts: isPosInt(e.ts) ? e.ts : Date.now()
+    };
+    if (e.verse != null) {
+      if (!isPosInt(e.verse)) return null;  // a malformed verse ref is unsafe to trust
+      out.verse = e.verse;
+    }
+    return out;
+  }
+
+  // Import bookmarks/last-read from a previously exported file. Every
+  // record is validated and normalized before it touches storage:
+  // malformed entries are dropped, duplicates collapsed, and the list is
+  // capped at MAX_MARKS. onDone(err) reports a non-null error when the
+  // file is not JSON, not an object, or contains nothing usable.
   function importFromFile(file, onDone) {
     var reader = new FileReader();
+    reader.onerror = function () {
+      if (onDone) onDone(reader.error || new Error("Could not read file."));
+    };
     reader.onload = function () {
+      var parsed;
       try {
-        var parsed = JSON.parse(reader.result);
-        if (parsed.bookmarks) safeSet(MARKS_KEY, parsed.bookmarks);
-        if (parsed.lastRead) safeSet(LAST_KEY, parsed.lastRead);
-        if (onDone) onDone(null);
+        parsed = JSON.parse(reader.result);
       } catch (e) {
         if (onDone) onDone(e);
+        return;
+      }
+      if (!parsed || typeof parsed !== "object") {
+        if (onDone) onDone(new Error("Unrecognized bookmark file."));
+        return;
+      }
+
+      var sawData = false;
+      if (Array.isArray(parsed.bookmarks)) {
+        var clean = [];
+        var seen = {};
+        parsed.bookmarks.forEach(function (m) {
+          var n = normalizeEntry(m);
+          if (!n) return;
+          var key = n.bookId + "|" + n.chapter + "|" + (n.verse == null ? "" : n.verse);
+          if (seen[key]) return;        // collapse duplicates
+          seen[key] = true;
+          clean.push(n);
+        });
+        if (clean.length > MAX_MARKS) clean.length = MAX_MARKS;
+        safeSet(MARKS_KEY, clean);
+        sawData = true;
+      }
+      if (parsed.lastRead != null) {
+        var last = normalizeEntry(parsed.lastRead);
+        if (last) {
+          safeSet(LAST_KEY, last);
+          sawData = true;
+        }
+      }
+
+      if (onDone) {
+        onDone(sawData ? null : new Error("No valid bookmarks found in file."));
       }
     };
     reader.readAsText(file);
