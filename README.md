@@ -10,7 +10,7 @@ navigation.
 ## Structure
 
 ```
-index.html            # Book table of contents (102 books grouped by section)
+index.html            # Book table of contents (104 books grouped by section)
 book.html             # Chapter index for a single book (?id=<bookid>)
 chapter.html          # Renders verses for a chapter (?id=<bookid>&ch=<n>)
 besorah-offline.html  # Standalone single-file reader (open with file://)
@@ -37,12 +37,13 @@ scripts/
 - **Nebi'im** (22 books) — Yahusha through Mal'aki
 - **Kethubim** (12 books) — Tehillim, Mishle, Iyob, … 2 Dibre haYamim
 - **Messianic Writings** (27 books) — Mattithyahu through Ḥazon (Revelation)
-- **Apocryphal Books** (2) — Ḥanok (Enoch), Yashar (Jasher)
+- **Apocryphal Books** (4) — Ḥanok (Enoch), Yashar (Jasher), First & Second
+  Book of Adam and Eve
 - **Testaments of the Twelve Patriarchs** (12)
 - **Ethiopic & Eastern Apocrypha** (22) — 1–4 Maccabees, Tobit, Judith, Sirach,
   Wisdom, Baruch, Jubilees, 1 Enoch, 1 Clements, Shepherd of Hermas, …
 
-Total: **102 books**.
+Total: **104 books**.
 
 ## Running locally
 
