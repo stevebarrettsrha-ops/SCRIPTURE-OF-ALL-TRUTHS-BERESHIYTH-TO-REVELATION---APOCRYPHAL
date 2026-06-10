@@ -68,7 +68,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 
 <!-- ============ INDEX VIEW ============ -->
 <div id="view-index" class="view active">
-  <div class="offline-banner">OFFLINE EDITION — all 102 books bundled in this single file</div>
+  <div class="offline-banner">OFFLINE EDITION — all 104 books bundled in this single file</div>
   <header class="site-header">
     <h1>THE BESORAH</h1>
     <div class="sub">Bereshith &mdash; to &mdash; Ḥazon &mdash; with the Apocrypha</div>
