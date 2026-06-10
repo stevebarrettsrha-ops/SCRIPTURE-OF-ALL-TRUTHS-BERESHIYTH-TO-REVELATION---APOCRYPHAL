@@ -94,5 +94,16 @@ cp scripts/index.json assets/index.json
 python3 scripts/extract_text.py        # writes assets/text/*.json (one file per book)
 python3 scripts/transliterate.py       # applies CLAUDE.md Hebrew-roots transliterations
 python3 scripts/fix_broken_words.py    # repairs words split across PDF line breaks
+python3 scripts/verify_transliteration.py  # checks divine names are wrapped & no Hebrew "disappeared"
 python3 scripts/build_offline.py       # rebuilds besorah-offline.html
+```
+
+`verify_transliteration.py` cross-checks the rendered text against the
+CLAUDE.md mapping tables (imported from `transliterate.py`): it fails if a
+divine name is left unwrapped, an anglicised source name survives, or markup
+is corrupted. Run it after any text change; `--fix` wraps the safe misses.
+
+```bash
+python3 scripts/verify_transliteration.py        # report (exit 1 on any issue)
+python3 scripts/verify_transliteration.py --fix  # wrap unambiguous divine names
 ```

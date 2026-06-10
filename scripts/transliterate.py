@@ -595,6 +595,27 @@ def yi_ye_to_yah(text):
     return _YI_YE_PAT.sub(_r, text)
 
 
+# Post-pass: wrap unambiguous divine names that reached the text already in
+# their Hebrew form (e.g. the source Besorah PDF, or an editorial study-note,
+# writes "Yahuah"/"Mashiach" directly rather than the anglicised "LORD"/
+# "Messiah" the rules key on). These four are ALWAYS the Most High / the
+# Messiah / the set-apart nation, so a bare occurrence is always a styling
+# miss and is safe to wrap. "Yahusha" is deliberately excluded — it doubles
+# as Joshua (a man) and must not be auto-wrapped as a divine name.
+UNAMBIGUOUS_DIVINE = ["Yahuah", "Aluahim", "Mashiach", "Yasharal"]
+_BARE_DIVINE_PAT = re.compile(r"\b(" + "|".join(UNAMBIGUOUS_DIVINE) + r")\b")
+def wrap_bare_divine(text):
+    # Split on existing dn/hwhy spans (the capturing group keeps them) and
+    # only rewrite the segments BETWEEN them, so an already-wrapped name is
+    # never double-wrapped. Possessive 's / punctuation stay outside the span.
+    parts = re.split(r'(<span class="(?:dn|hwhy)">.*?</span>)', text)
+    for i in range(0, len(parts), 2):
+        parts[i] = _BARE_DIVINE_PAT.sub(
+            lambda m: '<span class="dn">' + m.group(1) + '</span>', parts[i]
+        )
+    return ''.join(parts)
+
+
 def main():
     rules = build_replacements(DIVINE, PEOPLE_PATRIARCHS, PEOPLE_LEADERS,
                                PEOPLE_J_NAMES, PEOPLE_TRIBES, PLACES, TERMS)
@@ -614,6 +635,9 @@ def main():
                 new_t = yi_ye_to_yah(new_t)
                 new_t = el_suffix_to_al(new_t)
                 new_t = annotate_hwhy(new_t)
+                # Last: catch any unambiguous divine name still sitting in the
+                # text unwrapped (already-Hebrew source, study-notes, etc.).
+                new_t = wrap_bare_divine(new_t)
                 if new_t != v['t']:
                     v['t'] = new_t
                     changed += 1
