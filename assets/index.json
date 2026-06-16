@@ -6544,547 +6544,107 @@
    "hebrew": "ḤANOḴ",
    "english": "Enoch",
    "section": "Apocryphal",
-   "chapter_count": 108,
+   "chapter_count": 25,
    "chapters": {
     "1": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 12,
-     "printed": 12
+     "page": 12
     },
     "2": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 14,
-     "printed": 14
+     "page": 12
     },
     "3": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 16,
-     "printed": 16
+     "page": 12
     },
     "4": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 18,
-     "printed": 18
+     "page": 12
     },
     "5": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 23,
-     "printed": 23
+     "page": 12
     },
     "6": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 27,
-     "printed": 27
+     "page": 12
     },
     "7": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "8": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "9": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "10": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "11": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "12": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "13": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "14": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "15": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "16": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "17": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "18": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "19": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "20": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "21": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "22": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "23": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "24": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "25": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "26": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "27": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "28": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "29": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "30": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "31": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "32": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "33": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "34": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "35": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "36": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "37": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "38": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "39": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "40": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "41": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "42": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "43": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "44": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "45": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "46": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "47": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "48": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "49": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "50": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "51": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "52": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "53": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "54": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "55": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "56": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "57": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "58": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "59": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "60": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "61": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "62": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "63": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "64": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "65": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "66": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "67": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "68": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "69": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "70": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "71": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "72": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "73": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "74": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "75": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "76": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "77": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "78": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "79": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "80": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "81": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "82": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "83": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "84": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "85": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "86": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "87": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "88": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "89": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "90": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "91": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "92": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "93": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "94": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "95": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "96": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "97": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "98": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "99": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "100": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "101": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "102": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "103": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "104": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "105": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "106": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "107": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "108": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     }
    }
   },
@@ -7982,32 +7542,32 @@
    "chapter_count": 7,
    "chapters": {
     "1": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "2": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "3": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "4": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "5": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "6": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "7": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     }
    }
   },
@@ -8019,40 +7579,40 @@
    "chapter_count": 9,
    "chapters": {
     "1": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "2": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "3": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "4": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "5": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "6": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "7": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "8": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "9": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     }
    }
   },
@@ -8064,80 +7624,80 @@
    "chapter_count": 19,
    "chapters": {
     "1": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "2": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "3": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "4": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "5": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "6": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "7": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "8": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "9": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "10": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "11": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "12": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "13": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "14": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "15": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "16": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "17": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "18": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "19": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     }
    }
   },
@@ -8149,106 +7709,106 @@
    "chapter_count": 26,
    "chapters": {
     "1": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "2": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "3": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "4": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "5": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "6": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "7": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "8": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "9": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "10": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "11": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "12": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "13": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "14": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "15": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "16": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "17": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "18": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "19": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "20": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "21": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "22": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "23": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "24": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "26": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "25": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
+    },
+    "26": {
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
      "page": 13
     }
@@ -8262,32 +7822,32 @@
    "chapter_count": 7,
    "chapters": {
     "1": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "2": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "3": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "4": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "5": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "6": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "7": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     }
    }
   },
@@ -8299,42 +7859,42 @@
    "chapter_count": 10,
    "chapters": {
     "1": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     },
     "2": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     },
     "3": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     },
     "4": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "6": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "8": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "9": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "10": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     },
     "5": {
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
      "page": 22
     },
+    "6": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
     "7": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
+    "8": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
+    "9": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
+    "10": {
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
      "page": 22
     }
@@ -8348,32 +7908,32 @@
    "chapter_count": 7,
    "chapters": {
     "1": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "2": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "3": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "4": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "5": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "6": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "7": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     }
    }
   },
@@ -8385,40 +7945,40 @@
    "chapter_count": 9,
    "chapters": {
     "1": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "2": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "3": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "4": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "5": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "6": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "7": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "8": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "9": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     }
    }
   },
@@ -8430,34 +7990,34 @@
    "chapter_count": 8,
    "chapters": {
     "1": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
     },
     "2": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
     },
     "3": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "5": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "6": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "7": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "8": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
     },
     "4": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
+    },
+    "5": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
+    },
+    "6": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
+    },
+    "7": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
+    },
+    "8": {
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
      "page": 31
     }
@@ -8471,36 +8031,36 @@
    "chapter_count": 8,
    "chapters": {
     "1": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "2": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "3": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "4": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "5": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "6": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "7": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "8": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     }
    }
   },
@@ -8512,84 +8072,84 @@
    "chapter_count": 20,
    "chapters": {
     "1": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "2": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "3": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "4": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "5": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "6": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "7": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "8": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "9": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "10": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "11": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "12": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "13": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "14": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "15": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "16": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "17": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "18": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "19": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "20": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     }
    }
   },
@@ -8601,52 +8161,52 @@
    "chapter_count": 12,
    "chapters": {
     "1": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "2": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "3": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "4": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "5": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "6": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "7": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "8": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "9": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "10": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "11": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "12": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     }
    }
   },
