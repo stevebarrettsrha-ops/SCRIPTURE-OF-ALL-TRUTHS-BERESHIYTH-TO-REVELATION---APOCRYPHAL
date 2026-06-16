@@ -92,6 +92,9 @@ pip install pypdf pdfplumber english-words
 python3 scripts/extract_index.py       # writes scripts/index.json
 cp scripts/index.json assets/index.json
 python3 scripts/extract_text.py        # writes assets/text/*.json (one file per book)
+python3 scripts/reextract_apoc3.py     # re-extracts 1 Clements, Shepherd of Hermas
+                                       #   and Additions to Esther (marker-based;
+                                       #   also syncs their index.json chapter maps)
 python3 scripts/transliterate.py       # applies CLAUDE.md Hebrew-roots transliterations
 python3 scripts/fix_broken_words.py    # repairs words split across PDF line breaks
 python3 scripts/verify_transliteration.py  # checks divine names are wrapped & no Hebrew "disappeared"

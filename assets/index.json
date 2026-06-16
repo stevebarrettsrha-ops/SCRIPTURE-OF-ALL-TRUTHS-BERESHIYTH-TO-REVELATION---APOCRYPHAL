@@ -8247,7 +8247,7 @@
    "hebrew": "TESTAMENT OF YAHUDAH",
    "english": "Testament of Judah",
    "section": "Patriarchs",
-   "chapter_count": 25,
+   "chapter_count": 26,
    "chapters": {
     "1": {
      "page": 13,
@@ -8348,6 +8348,10 @@
     "26": {
      "page": 13,
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+    },
+    "25": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     }
    }
   },
@@ -8393,7 +8397,7 @@
    "hebrew": "TESTAMENT OF ZEḆULUN",
    "english": "Testament of Zebulun",
    "section": "Patriarchs",
-   "chapter_count": 8,
+   "chapter_count": 10,
    "chapters": {
     "1": {
      "page": 22,
@@ -8426,6 +8430,14 @@
     "10": {
      "page": 22,
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+    },
+    "5": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
+    "7": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     }
    }
   },
@@ -8516,7 +8528,7 @@
    "hebrew": "TESTAMENT OF GAD",
    "english": "Testament of Gad",
    "section": "Patriarchs",
-   "chapter_count": 7,
+   "chapter_count": 8,
    "chapters": {
     "1": {
      "page": 31,
@@ -8545,6 +8557,10 @@
     "8": {
      "page": 31,
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+    },
+    "4": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
     }
    }
   },
@@ -9662,37 +9678,35 @@
    "hebrew": "TOSEPHOTH ESTĔR",
    "english": "Additions to Esther",
    "section": "Apocrypha",
-   "chapter_count": 6,
+   "chapter_count": 7,
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 322,
-     "printed": 320
+     "page": 322
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 322,
-     "printed": 320
+     "page": 322
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 322,
-     "printed": 320
+     "page": 323
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 322,
-     "printed": 320
+     "page": 324
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 322,
-     "printed": 320
+     "page": 325
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 322,
-     "printed": 320
+     "page": 326
+    },
+    "7": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 328
     }
    }
   },
@@ -10709,328 +10723,263 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 584,
-     "printed": 582
+     "page": 584
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 585,
-     "printed": 583
+     "page": 585
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 586,
-     "printed": 584
+     "page": 586
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 586,
-     "printed": 584
+     "page": 586
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 587,
-     "printed": 585
+     "page": 587
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 588,
-     "printed": 586
+     "page": 588
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 589,
-     "printed": 587
+     "page": 589
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 589,
-     "printed": 587
+     "page": 589
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 590,
-     "printed": 588
-    },
-    "12": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 592,
-     "printed": 590
-    },
-    "13": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 593,
-     "printed": 591
-    },
-    "14": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 593,
-     "printed": 591
-    },
-    "16": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 595,
-     "printed": 593
-    },
-    "17": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 597,
-     "printed": 595
-    },
-    "18": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 597,
-     "printed": 595
-    },
-    "19": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 599,
-     "printed": 597
-    },
-    "20": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 599,
-     "printed": 597
-    },
-    "21": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 600,
-     "printed": 598
-    },
-    "22": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 601,
-     "printed": 599
-    },
-    "23": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 602,
-     "printed": 600
-    },
-    "24": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 603,
-     "printed": 601
-    },
-    "25": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 603,
-     "printed": 601
-    },
-    "26": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 604,
-     "printed": 602
-    },
-    "27": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 604,
-     "printed": 602
-    },
-    "28": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 605,
-     "printed": 603
-    },
-    "29": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 606,
-     "printed": 604
-    },
-    "30": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 606,
-     "printed": 604
-    },
-    "31": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 607,
-     "printed": 605
-    },
-    "32": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 607,
-     "printed": 605
-    },
-    "33": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 608,
-     "printed": 606
-    },
-    "34": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 609,
-     "printed": 607
-    },
-    "35": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 610,
-     "printed": 608
-    },
-    "36": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 611,
-     "printed": 609
-    },
-    "37": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 612,
-     "printed": 610
-    },
-    "38": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 612,
-     "printed": 610
-    },
-    "39": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 613,
-     "printed": 611
-    },
-    "40": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 614,
-     "printed": 612
-    },
-    "41": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 615,
-     "printed": 613
-    },
-    "42": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 615,
-     "printed": 613
-    },
-    "43": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 616,
-     "printed": 614
-    },
-    "44": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 616,
-     "printed": 614
-    },
-    "45": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 617,
-     "printed": 615
-    },
-    "46": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 618,
-     "printed": 616
-    },
-    "47": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 619,
-     "printed": 617
-    },
-    "48": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 620,
-     "printed": 618
-    },
-    "49": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 620,
-     "printed": 618
-    },
-    "50": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 621,
-     "printed": 619
-    },
-    "51": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 622,
-     "printed": 620
-    },
-    "52": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 623,
-     "printed": 621
-    },
-    "53": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 623,
-     "printed": 621
-    },
-    "54": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 624,
-     "printed": 622
-    },
-    "55": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 624,
-     "printed": 622
-    },
-    "56": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 625,
-     "printed": 623
-    },
-    "57": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 626,
-     "printed": 624
-    },
-    "58": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 627,
-     "printed": 625
-    },
-    "59": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 628,
-     "printed": 626
-    },
-    "60": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 629,
-     "printed": 627
-    },
-    "61": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 629,
-     "printed": 627
-    },
-    "62": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 630,
-     "printed": 628
-    },
-    "63": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 630,
-     "printed": 628
-    },
-    "64": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 631,
-     "printed": 629
-    },
-    "65": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 631,
-     "printed": 629
+     "page": 590
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 591,
-     "printed": 589
+     "page": 591
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 591,
-     "printed": 589
+     "page": 591
+    },
+    "12": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 592
+    },
+    "13": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 593
+    },
+    "14": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 593
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 594,
-     "printed": 592
+     "page": 594
+    },
+    "16": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 595
+    },
+    "17": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 597
+    },
+    "18": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 597
+    },
+    "19": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 599
+    },
+    "20": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 599
+    },
+    "21": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 600
+    },
+    "22": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 601
+    },
+    "23": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 602
+    },
+    "24": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 603
+    },
+    "25": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 603
+    },
+    "26": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 604
+    },
+    "27": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 604
+    },
+    "28": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 605
+    },
+    "29": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 605
+    },
+    "30": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 606
+    },
+    "31": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 607
+    },
+    "32": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 607
+    },
+    "33": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 608
+    },
+    "34": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 609
+    },
+    "35": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 610
+    },
+    "36": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 611
+    },
+    "37": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 612
+    },
+    "38": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 612
+    },
+    "39": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 613
+    },
+    "40": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 614
+    },
+    "41": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 614
+    },
+    "42": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 615
+    },
+    "43": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 616
+    },
+    "44": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 616
+    },
+    "45": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 617
+    },
+    "46": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 618
+    },
+    "47": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 619
+    },
+    "48": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 620
+    },
+    "49": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 620
+    },
+    "50": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 621
+    },
+    "51": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 622
+    },
+    "52": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 622
+    },
+    "53": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 623
+    },
+    "54": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 624
+    },
+    "55": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 624
+    },
+    "56": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 625
+    },
+    "57": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 626
+    },
+    "58": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 627
+    },
+    "59": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 628
+    },
+    "60": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 628
+    },
+    "61": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 629
+    },
+    "62": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 630
+    },
+    "63": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 630
+    },
+    "64": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 631
+    },
+    "65": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 631
     }
    }
   },
@@ -11039,482 +10988,463 @@
    "hebrew": "HOSHEPHARD",
    "english": "Shepherd of Hermas",
    "section": "Apocrypha",
-   "chapter_count": 95,
+   "chapter_count": 114,
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 632,
-     "printed": 630
+     "page": 632
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 633,
-     "printed": 631
-    },
-    "4": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 633
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 633,
-     "printed": 631
+     "page": 634
+    },
+    "4": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 634
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 635
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 635
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 636
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 637
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 637
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 638
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 640
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 640
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 641
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 642
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 643
     },
     "16": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 644
     },
     "17": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 645
     },
     "18": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 646
     },
     "19": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 647
     },
     "20": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 647
     },
     "21": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 648
     },
     "22": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 648
     },
     "23": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 649
     },
     "24": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 650
     },
     "25": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 651
     },
     "26": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 652
     },
     "27": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 652
     },
     "28": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 653
     },
     "29": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 654
     },
     "30": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 655
     },
     "31": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 656
     },
     "32": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 657
     },
     "33": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 657
     },
     "34": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 658
     },
     "35": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 659
     },
     "36": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 660
     },
     "37": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 661
     },
     "38": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 662
     },
     "39": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 664
     },
     "40": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 665
     },
     "41": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 666
     },
     "42": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 666
     },
     "43": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 667
     },
     "44": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 670
     },
     "45": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 670
     },
     "46": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 671
     },
     "47": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 671
     },
     "48": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 672
     },
     "49": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 673
     },
     "50": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 674
     },
     "51": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 675
     },
     "52": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 677
     },
     "53": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 677
     },
     "54": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 678
     },
     "55": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 679
     },
     "56": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 680
     },
     "57": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 681
     },
     "58": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 682
     },
     "59": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 683
     },
     "60": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 683
     },
     "61": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 684
     },
     "62": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 685
     },
     "63": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 686
     },
     "64": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 687
     },
     "65": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 687
     },
     "66": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 688
     },
     "67": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 690
     },
     "68": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 691
     },
     "69": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 692
     },
     "70": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 693
     },
     "71": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 694
     },
     "72": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 694
     },
     "73": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 695
     },
     "74": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 696
     },
     "75": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 697
     },
     "76": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 697
     },
     "77": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 698
     },
     "78": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 699
     },
     "79": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 700
     },
     "80": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 701
     },
     "81": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 701
     },
     "82": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 702
     },
     "83": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 703
     },
     "84": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 704
     },
     "85": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 705
     },
     "86": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 706
     },
     "87": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 707
     },
     "88": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 708
     },
     "89": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 709
     },
     "90": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 710
     },
     "91": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 711
     },
     "92": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 712
     },
     "93": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 713
     },
     "94": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 714
     },
     "95": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 634,
-     "printed": 632
+     "page": 714
+    },
+    "96": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 715
+    },
+    "97": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 716
+    },
+    "98": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 716
+    },
+    "99": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 717
+    },
+    "100": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 717
+    },
+    "101": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 718
+    },
+    "102": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 718
+    },
+    "103": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 719
+    },
+    "104": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 720
+    },
+    "105": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 720
+    },
+    "106": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 721
+    },
+    "107": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 722
+    },
+    "108": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 722
+    },
+    "109": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 723
+    },
+    "110": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 724
+    },
+    "111": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 724
+    },
+    "112": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 725
+    },
+    "113": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 725
+    },
+    "114": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 726
     }
    }
   }

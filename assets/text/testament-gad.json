@@ -3,7 +3,7 @@
  "hebrew": "TESTAMENT OF GAD",
  "english": "Testament of Gad",
  "section": "Patriarchs",
- "chapter_count": 7,
+ "chapter_count": 8,
  "chapters": {
   "1": {
    "verses": [
@@ -240,6 +240,11 @@
      "t": "me near to my fathers. And he drew up his feet, and fell asleep in shalom. And after five years they carried him up to Hebron, and laid him with his fathers."
     }
    ],
+   "page": 31,
+   "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+  },
+  "4": {
+   "verses": [],
    "page": 31,
    "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
   }
