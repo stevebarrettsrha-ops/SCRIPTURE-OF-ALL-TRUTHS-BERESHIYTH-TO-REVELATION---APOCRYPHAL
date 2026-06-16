@@ -6544,547 +6544,107 @@
    "hebrew": "ḤANOḴ",
    "english": "Enoch",
    "section": "Apocryphal",
-   "chapter_count": 108,
+   "chapter_count": 25,
    "chapters": {
     "1": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 12,
-     "printed": 12
+     "page": 12
     },
     "2": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 14,
-     "printed": 14
+     "page": 12
     },
     "3": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 16,
-     "printed": 16
+     "page": 12
     },
     "4": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 18,
-     "printed": 18
+     "page": 12
     },
     "5": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 23,
-     "printed": 23
+     "page": 12
     },
     "6": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 27,
-     "printed": 27
+     "page": 12
     },
     "7": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "8": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "9": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "10": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "11": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "12": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "13": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "14": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "15": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "16": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "17": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "18": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "19": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "20": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "21": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "22": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "23": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "24": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     },
     "25": {
      "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "26": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "27": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "28": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "29": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "30": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "31": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "32": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "33": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "34": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "35": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "36": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "37": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "38": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "39": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "40": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "41": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "42": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "43": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "44": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "45": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "46": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "47": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "48": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "49": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "50": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "51": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "52": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "53": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "54": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "55": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "56": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "57": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "58": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "59": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "60": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "61": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "62": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "63": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "64": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "65": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "66": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "67": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "68": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "69": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "70": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "71": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "72": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "73": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "74": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "75": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "76": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "77": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "78": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "79": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "80": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "81": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "82": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "83": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "84": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "85": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "86": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "87": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "88": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "89": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "90": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "91": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "92": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "93": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "94": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "95": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "96": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "97": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "98": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "99": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "100": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "101": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "102": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "103": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "104": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "105": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "106": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "107": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "108": {
-     "pdf": "The Complete Book of Enoch, Standard English Version - Jay Winter.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 12
     }
    }
   },
@@ -7561,398 +7121,319 @@
    "chapters": {
     "1": {
      "pdf": "44.pdf",
-     "page": 6,
-     "printed": 6
+     "page": 6
     },
     "2": {
      "pdf": "44.pdf",
-     "page": 7,
-     "printed": 7
+     "page": 7
     },
     "3": {
      "pdf": "44.pdf",
-     "page": 7,
-     "printed": 7
+     "page": 7
     },
     "4": {
      "pdf": "44.pdf",
-     "page": 8,
-     "printed": 8
+     "page": 8
     },
     "5": {
      "pdf": "44.pdf",
-     "page": 9,
-     "printed": 9
+     "page": 9
     },
     "6": {
      "pdf": "44.pdf",
-     "page": 10,
-     "printed": 10
+     "page": 10
     },
     "7": {
      "pdf": "44.pdf",
-     "page": 10,
-     "printed": 10
+     "page": 10
     },
     "8": {
      "pdf": "44.pdf",
-     "page": 11,
-     "printed": 11
+     "page": 11
     },
     "9": {
      "pdf": "44.pdf",
-     "page": 11,
-     "printed": 11
+     "page": 11
     },
     "10": {
      "pdf": "44.pdf",
-     "page": 12,
-     "printed": 12
+     "page": 12
     },
     "11": {
      "pdf": "44.pdf",
-     "page": 12,
-     "printed": 12
+     "page": 12
     },
     "12": {
      "pdf": "44.pdf",
-     "page": 13,
-     "printed": 13
+     "page": 13
     },
     "13": {
      "pdf": "44.pdf",
-     "page": 14,
-     "printed": 14
+     "page": 14
     },
     "14": {
      "pdf": "44.pdf",
-     "page": 15,
-     "printed": 15
+     "page": 15
     },
     "15": {
      "pdf": "44.pdf",
-     "page": 15,
-     "printed": 15
+     "page": 15
     },
     "16": {
      "pdf": "44.pdf",
-     "page": 15,
-     "printed": 15
+     "page": 15
     },
     "17": {
      "pdf": "44.pdf",
-     "page": 16,
-     "printed": 16
+     "page": 16
     },
     "18": {
      "pdf": "44.pdf",
-     "page": 17,
-     "printed": 17
+     "page": 17
     },
     "19": {
      "pdf": "44.pdf",
-     "page": 17,
-     "printed": 17
+     "page": 17
     },
     "20": {
      "pdf": "44.pdf",
-     "page": 17,
-     "printed": 17
+     "page": 17
     },
     "21": {
      "pdf": "44.pdf",
-     "page": 18,
-     "printed": 18
+     "page": 18
     },
     "22": {
      "pdf": "44.pdf",
-     "page": 18,
-     "printed": 18
+     "page": 18
     },
     "23": {
      "pdf": "44.pdf",
-     "page": 19,
-     "printed": 19
+     "page": 19
     },
     "24": {
      "pdf": "44.pdf",
-     "page": 19,
-     "printed": 19
+     "page": 19
     },
     "25": {
      "pdf": "44.pdf",
-     "page": 20,
-     "printed": 20
+     "page": 20
     },
     "26": {
      "pdf": "44.pdf",
-     "page": 20,
-     "printed": 20
+     "page": 20
     },
     "27": {
      "pdf": "44.pdf",
-     "page": 22,
-     "printed": 22
+     "page": 22
     },
     "28": {
      "pdf": "44.pdf",
-     "page": 23,
-     "printed": 23
+     "page": 23
     },
     "29": {
      "pdf": "44.pdf",
-     "page": 23,
-     "printed": 23
+     "page": 23
     },
     "30": {
      "pdf": "44.pdf",
-     "page": 24,
-     "printed": 24
+     "page": 24
     },
     "31": {
      "pdf": "44.pdf",
-     "page": 25,
-     "printed": 25
+     "page": 25
     },
     "32": {
      "pdf": "44.pdf",
-     "page": 25,
-     "printed": 25
+     "page": 25
     },
     "33": {
      "pdf": "44.pdf",
-     "page": 26,
-     "printed": 26
+     "page": 26
     },
     "34": {
      "pdf": "44.pdf",
-     "page": 27,
-     "printed": 27
+     "page": 27
     },
     "35": {
      "pdf": "44.pdf",
-     "page": 29,
-     "printed": 29
+     "page": 29
     },
     "36": {
      "pdf": "44.pdf",
-     "page": 29,
-     "printed": 29
+     "page": 29
     },
     "37": {
      "pdf": "44.pdf",
-     "page": 29,
-     "printed": 29
+     "page": 29
     },
     "38": {
      "pdf": "44.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 30
     },
     "39": {
      "pdf": "44.pdf",
-     "page": 30,
-     "printed": 30
+     "page": 30
     },
     "40": {
      "pdf": "44.pdf",
-     "page": 31,
-     "printed": 31
+     "page": 31
     },
     "41": {
      "pdf": "44.pdf",
-     "page": 31,
-     "printed": 31
+     "page": 31
     },
     "42": {
      "pdf": "44.pdf",
-     "page": 32,
-     "printed": 32
+     "page": 32
     },
     "43": {
      "pdf": "44.pdf",
-     "page": 32,
-     "printed": 32
+     "page": 32
     },
     "44": {
      "pdf": "44.pdf",
-     "page": 33,
-     "printed": 33
+     "page": 33
     },
     "45": {
      "pdf": "44.pdf",
-     "page": 34,
-     "printed": 34
+     "page": 34
     },
     "46": {
      "pdf": "44.pdf",
-     "page": 35,
-     "printed": 35
-    },
-    "50": {
-     "pdf": "44.pdf",
-     "page": 36,
-     "printed": 36
+     "page": 35
     },
     "47": {
      "pdf": "44.pdf",
-     "page": 36,
-     "printed": 36
+     "page": 36
     },
     "48": {
      "pdf": "44.pdf",
-     "page": 36,
-     "printed": 36
+     "page": 36
     },
     "49": {
      "pdf": "44.pdf",
-     "page": 37,
-     "printed": 37
+     "page": 37
+    },
+    "50": {
+     "pdf": "44.pdf",
+     "page": 38
     },
     "51": {
      "pdf": "44.pdf",
-     "page": 39,
-     "printed": 39
+     "page": 39
     },
     "52": {
      "pdf": "44.pdf",
-     "page": 39,
-     "printed": 39
+     "page": 39
     },
     "53": {
      "pdf": "44.pdf",
-     "page": 40,
-     "printed": 40
+     "page": 40
     },
     "54": {
      "pdf": "44.pdf",
-     "page": 41,
-     "printed": 41
+     "page": 41
     },
     "55": {
      "pdf": "44.pdf",
-     "page": 42,
-     "printed": 42
+     "page": 42
     },
     "56": {
      "pdf": "44.pdf",
-     "page": 43,
-     "printed": 43
+     "page": 43
     },
     "57": {
      "pdf": "44.pdf",
-     "page": 43,
-     "printed": 43
+     "page": 43
     },
     "58": {
      "pdf": "44.pdf",
-     "page": 44,
-     "printed": 44
+     "page": 44
     },
     "59": {
      "pdf": "44.pdf",
-     "page": 45,
-     "printed": 45
+     "page": 45
     },
     "60": {
      "pdf": "44.pdf",
-     "page": 45,
-     "printed": 45
+     "page": 45
     },
     "61": {
      "pdf": "44.pdf",
-     "page": 47,
-     "printed": 47
+     "page": 47
     },
     "62": {
      "pdf": "44.pdf",
-     "page": 48,
-     "printed": 48
+     "page": 48
     },
     "63": {
      "pdf": "44.pdf",
-     "page": 49,
-     "printed": 49
+     "page": 49
     },
     "64": {
      "pdf": "44.pdf",
-     "page": 50,
-     "printed": 50
+     "page": 50
     },
     "65": {
      "pdf": "44.pdf",
-     "page": 50,
-     "printed": 50
+     "page": 50
     },
     "66": {
      "pdf": "44.pdf",
-     "page": 51,
-     "printed": 51
+     "page": 51
     },
     "67": {
      "pdf": "44.pdf",
-     "page": 52,
-     "printed": 52
+     "page": 52
     },
     "68": {
      "pdf": "44.pdf",
-     "page": 53,
-     "printed": 53
+     "page": 53
     },
     "69": {
      "pdf": "44.pdf",
-     "page": 54,
-     "printed": 54
+     "page": 54
     },
     "70": {
      "pdf": "44.pdf",
-     "page": 55,
-     "printed": 55
+     "page": 55
     },
     "71": {
      "pdf": "44.pdf",
-     "page": 56,
-     "printed": 56
+     "page": 56
     },
     "72": {
      "pdf": "44.pdf",
-     "page": 57,
-     "printed": 57
+     "page": 57
     },
     "73": {
      "pdf": "44.pdf",
-     "page": 59,
-     "printed": 59
+     "page": 59
     },
     "74": {
      "pdf": "44.pdf",
-     "page": 59,
-     "printed": 59
+     "page": 59
     },
     "75": {
      "pdf": "44.pdf",
-     "page": 60,
-     "printed": 60
+     "page": 60
     },
     "76": {
      "pdf": "44.pdf",
-     "page": 61,
-     "printed": 61
+     "page": 61
     },
     "77": {
      "pdf": "44.pdf",
-     "page": 62,
-     "printed": 62
+     "page": 62
     },
     "78": {
      "pdf": "44.pdf",
-     "page": 62,
-     "printed": 62
+     "page": 62
     },
     "79": {
      "pdf": "44.pdf",
-     "page": 64,
-     "printed": 64
+     "page": 64
     }
    }
   },
@@ -7965,113 +7446,91 @@
    "chapters": {
     "1": {
      "pdf": "78.pdf",
-     "page": 6,
-     "printed": 6
+     "page": 6
     },
     "2": {
      "pdf": "78.pdf",
-     "page": 7,
-     "printed": 7
-    },
-    "4": {
-     "pdf": "78.pdf",
-     "page": 9,
-     "printed": 9
-    },
-    "5": {
-     "pdf": "78.pdf",
-     "page": 10,
-     "printed": 10
-    },
-    "6": {
-     "pdf": "78.pdf",
-     "page": 11,
-     "printed": 11
-    },
-    "7": {
-     "pdf": "78.pdf",
-     "page": 12,
-     "printed": 12
-    },
-    "9": {
-     "pdf": "78.pdf",
-     "page": 14,
-     "printed": 14
-    },
-    "10": {
-     "pdf": "78.pdf",
-     "page": 15,
-     "printed": 15
-    },
-    "11": {
-     "pdf": "78.pdf",
-     "page": 16,
-     "printed": 16
-    },
-    "12": {
-     "pdf": "78.pdf",
-     "page": 17,
-     "printed": 17
-    },
-    "13": {
-     "pdf": "78.pdf",
-     "page": 18,
-     "printed": 18
-    },
-    "14": {
-     "pdf": "78.pdf",
-     "page": 19,
-     "printed": 19
-    },
-    "15": {
-     "pdf": "78.pdf",
-     "page": 20,
-     "printed": 20
-    },
-    "16": {
-     "pdf": "78.pdf",
-     "page": 21,
-     "printed": 21
-    },
-    "17": {
-     "pdf": "78.pdf",
-     "page": 22,
-     "printed": 22
-    },
-    "18": {
-     "pdf": "78.pdf",
-     "page": 25,
-     "printed": 25
-    },
-    "19": {
-     "pdf": "78.pdf",
-     "page": 26,
-     "printed": 26
-    },
-    "20": {
-     "pdf": "78.pdf",
-     "page": 27,
-     "printed": 27
-    },
-    "21": {
-     "pdf": "78.pdf",
-     "page": 30,
-     "printed": 30
-    },
-    "22": {
-     "pdf": "78.pdf",
-     "page": 31,
-     "printed": 31
+     "page": 7
     },
     "3": {
      "pdf": "78.pdf",
-     "page": 8,
-     "printed": 8
+     "page": 8
+    },
+    "4": {
+     "pdf": "78.pdf",
+     "page": 9
+    },
+    "5": {
+     "pdf": "78.pdf",
+     "page": 10
+    },
+    "6": {
+     "pdf": "78.pdf",
+     "page": 11
+    },
+    "7": {
+     "pdf": "78.pdf",
+     "page": 12
     },
     "8": {
      "pdf": "78.pdf",
-     "page": 13,
-     "printed": 13
+     "page": 12
+    },
+    "9": {
+     "pdf": "78.pdf",
+     "page": 14
+    },
+    "10": {
+     "pdf": "78.pdf",
+     "page": 15
+    },
+    "11": {
+     "pdf": "78.pdf",
+     "page": 16
+    },
+    "12": {
+     "pdf": "78.pdf",
+     "page": 17
+    },
+    "13": {
+     "pdf": "78.pdf",
+     "page": 18
+    },
+    "14": {
+     "pdf": "78.pdf",
+     "page": 19
+    },
+    "15": {
+     "pdf": "78.pdf",
+     "page": 20
+    },
+    "16": {
+     "pdf": "78.pdf",
+     "page": 21
+    },
+    "17": {
+     "pdf": "78.pdf",
+     "page": 22
+    },
+    "18": {
+     "pdf": "78.pdf",
+     "page": 25
+    },
+    "19": {
+     "pdf": "78.pdf",
+     "page": 26
+    },
+    "20": {
+     "pdf": "78.pdf",
+     "page": 27
+    },
+    "21": {
+     "pdf": "78.pdf",
+     "page": 30
+    },
+    "22": {
+     "pdf": "78.pdf",
+     "page": 31
     }
    }
   },
@@ -8083,32 +7542,32 @@
    "chapter_count": 7,
    "chapters": {
     "1": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "2": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "3": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "4": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "5": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "6": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     },
     "7": {
-     "page": 1,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 1
     }
    }
   },
@@ -8120,40 +7579,40 @@
    "chapter_count": 9,
    "chapters": {
     "1": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "2": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "3": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "4": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "5": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "6": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "7": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "8": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     },
     "9": {
-     "page": 4,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 4
     }
    }
   },
@@ -8165,80 +7624,80 @@
    "chapter_count": 19,
    "chapters": {
     "1": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "2": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "3": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "4": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "5": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "6": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "7": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "8": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "9": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "10": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "11": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "12": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "13": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "14": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "15": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "16": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "17": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "18": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     },
     "19": {
-     "page": 6,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 6
     }
    }
   },
@@ -8250,106 +7709,106 @@
    "chapter_count": 26,
    "chapters": {
     "1": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "2": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "3": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "4": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "5": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "6": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "7": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "8": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "9": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "10": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "11": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "12": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "13": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "14": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "15": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "16": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "17": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "18": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "19": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "20": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "21": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "22": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "23": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "24": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "26": {
-     "page": 13,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     },
     "25": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
+    },
+    "26": {
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
      "page": 13
     }
@@ -8363,32 +7822,32 @@
    "chapter_count": 7,
    "chapters": {
     "1": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "2": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "3": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "4": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "5": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "6": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     },
     "7": {
-     "page": 20,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 20
     }
    }
   },
@@ -8400,42 +7859,42 @@
    "chapter_count": 10,
    "chapters": {
     "1": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     },
     "2": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     },
     "3": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     },
     "4": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "6": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "8": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "9": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "10": {
-     "page": 22,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     },
     "5": {
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
      "page": 22
     },
+    "6": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
     "7": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
+    "8": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
+    "9": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
+    "10": {
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
      "page": 22
     }
@@ -8449,32 +7908,32 @@
    "chapter_count": 7,
    "chapters": {
     "1": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "2": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "3": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "4": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "5": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "6": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     },
     "7": {
-     "page": 25,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 25
     }
    }
   },
@@ -8486,40 +7945,40 @@
    "chapter_count": 9,
    "chapters": {
     "1": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "2": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "3": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "4": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "5": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "6": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "7": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "8": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     },
     "9": {
-     "page": 28,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 28
     }
    }
   },
@@ -8531,34 +7990,34 @@
    "chapter_count": 8,
    "chapters": {
     "1": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
     },
     "2": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
     },
     "3": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "5": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "6": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "7": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
-    },
-    "8": {
-     "page": 31,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
     },
     "4": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
+    },
+    "5": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
+    },
+    "6": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
+    },
+    "7": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
+    },
+    "8": {
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
      "page": 31
     }
@@ -8572,36 +8031,36 @@
    "chapter_count": 8,
    "chapters": {
     "1": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "2": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "3": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "4": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "5": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "6": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "7": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     },
     "8": {
-     "page": 33,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 33
     }
    }
   },
@@ -8613,84 +8072,84 @@
    "chapter_count": 20,
    "chapters": {
     "1": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "2": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "3": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "4": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "5": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "6": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "7": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "8": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "9": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "10": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "11": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "12": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "13": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "14": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "15": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "16": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "17": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "18": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "19": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     },
     "20": {
-     "page": 36,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 36
     }
    }
   },
@@ -8702,52 +8161,52 @@
    "chapter_count": 12,
    "chapters": {
     "1": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "2": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "3": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "4": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "5": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "6": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "7": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "8": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "9": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "10": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "11": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     },
     "12": {
-     "page": 42,
-     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 42
     }
    }
   },
@@ -8760,48 +8219,39 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 14,
-     "printed": 12
+     "page": 14
     }
    }
   },
@@ -8814,83 +8264,67 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     },
     "16": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 36,
-     "printed": 34
+     "page": 36
     }
    }
   },
@@ -8903,83 +8337,67 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     },
     "16": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 82,
-     "printed": 80
+     "page": 82
     }
    }
   },
@@ -8992,78 +8410,63 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 131,
-     "printed": 129
+     "page": 131
     }
    }
   },
@@ -9076,38 +8479,31 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 166,
-     "printed": 164
+     "page": 166
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 166,
-     "printed": 164
+     "page": 166
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 166,
-     "printed": 164
+     "page": 166
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 166,
-     "printed": 164
+     "page": 166
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 166,
-     "printed": 164
+     "page": 166
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 166,
-     "printed": 164
+     "page": 166
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 166,
-     "printed": 164
+     "page": 166
     }
    }
   },
@@ -9120,93 +8516,75 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "16": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "17": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     },
     "18": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 182,
-     "printed": 180
+     "page": 182
     }
    }
   },
@@ -9243,37 +8621,27 @@
    "hebrew": "BARUḴ",
    "english": "Baruch",
    "section": "Apocrypha",
-   "chapter_count": 6,
+   "chapter_count": 5,
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 214,
-     "printed": 212
+     "page": 214
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 214,
-     "printed": 212
+     "page": 214
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 214,
-     "printed": 212
+     "page": 214
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 214,
-     "printed": 212
+     "page": 214
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 214,
-     "printed": 212
-    },
-    "6": {
-     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 214,
-     "printed": 212
+     "page": 214
     }
    }
   },
@@ -9310,262 +8678,215 @@
    "hebrew": "BEN SIRA",
    "english": "Wisdom of Sirach",
    "section": "Apocrypha",
-   "chapter_count": 51,
+   "chapter_count": 52,
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "16": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "17": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "18": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "19": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "20": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "21": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "22": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "23": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "24": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "25": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "26": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "27": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "28": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "29": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "30": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "31": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "32": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "33": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "34": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "35": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "36": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "37": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "38": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "39": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "40": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "41": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "42": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "43": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "44": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "45": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "46": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "47": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "48": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "49": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "50": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
     },
     "51": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 226,
-     "printed": 224
+     "page": 226
+    },
+    "52": {
+     "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
+     "page": 226
     }
    }
   },
@@ -9578,98 +8899,79 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "16": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "17": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "18": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     },
     "19": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 297,
-     "printed": 295
+     "page": 297
     }
    }
   },
@@ -9719,73 +9021,59 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 329,
-     "printed": 327
+     "page": 329
     }
    }
   },
@@ -9798,83 +9086,67 @@
    "chapters": {
     "1": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "2": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "3": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "4": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "5": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "6": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "7": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "8": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "9": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "10": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "11": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "12": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "13": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "14": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "15": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     },
     "16": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
-     "page": 345,
-     "printed": 343
+     "page": 345
     }
    }
   },
