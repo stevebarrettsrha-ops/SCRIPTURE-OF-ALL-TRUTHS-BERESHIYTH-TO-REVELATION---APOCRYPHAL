@@ -3,7 +3,7 @@
  "hebrew": "TESTAMENT OF ZEḆULUN",
  "english": "Testament of Zebulun",
  "section": "Patriarchs",
- "chapter_count": 8,
+ "chapter_count": 10,
  "chapters": {
   "1": {
    "verses": [
@@ -278,6 +278,16 @@
      "t": "said these things he fell asleep, at a good old age. And his sons laid him in a wooden coffin. And afterwards they carried him up and buried him in Hebron, with his fathers."
     }
    ],
+   "page": 22,
+   "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+  },
+  "5": {
+   "verses": [],
+   "page": 22,
+   "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+  },
+  "7": {
+   "verses": [],
    "page": 22,
    "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
   }

@@ -3,7 +3,7 @@
  "hebrew": "TESTAMENT OF YAHUDAH",
  "english": "Testament of Judah",
  "section": "Patriarchs",
- "chapter_count": 25,
+ "chapter_count": 26,
  "chapters": {
   "1": {
    "verses": [
@@ -724,6 +724,11 @@
      "t": "And the harts of Ya'aqoḇ shall run in joyfulness, And the eagles of <span class=\"dn\">Yasharal</span> shall fly in gladness; And all the people shall glorify <span class=\"dn\">Yahuah</span> for ever."
     }
    ],
+   "page": 13,
+   "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+  },
+  "25": {
+   "verses": [],
    "page": 13,
    "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
   }

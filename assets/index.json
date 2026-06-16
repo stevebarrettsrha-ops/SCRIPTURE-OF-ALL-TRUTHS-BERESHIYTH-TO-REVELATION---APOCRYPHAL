@@ -8247,7 +8247,7 @@
    "hebrew": "TESTAMENT OF YAHUDAH",
    "english": "Testament of Judah",
    "section": "Patriarchs",
-   "chapter_count": 25,
+   "chapter_count": 26,
    "chapters": {
     "1": {
      "page": 13,
@@ -8348,6 +8348,10 @@
     "26": {
      "page": 13,
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+    },
+    "25": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 13
     }
    }
   },
@@ -8393,7 +8397,7 @@
    "hebrew": "TESTAMENT OF ZEḆULUN",
    "english": "Testament of Zebulun",
    "section": "Patriarchs",
-   "chapter_count": 8,
+   "chapter_count": 10,
    "chapters": {
     "1": {
      "page": 22,
@@ -8426,6 +8430,14 @@
     "10": {
      "page": 22,
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+    },
+    "5": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
+    },
+    "7": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 22
     }
    }
   },
@@ -8516,7 +8528,7 @@
    "hebrew": "TESTAMENT OF GAD",
    "english": "Testament of Gad",
    "section": "Patriarchs",
-   "chapter_count": 7,
+   "chapter_count": 8,
    "chapters": {
     "1": {
      "page": 31,
@@ -8545,6 +8557,10 @@
     "8": {
      "page": 31,
      "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf"
+    },
+    "4": {
+     "pdf": "THE TESTAMENTS OF THE TWELVE PATRIARCHS.pdf",
+     "page": 31
     }
    }
   },
