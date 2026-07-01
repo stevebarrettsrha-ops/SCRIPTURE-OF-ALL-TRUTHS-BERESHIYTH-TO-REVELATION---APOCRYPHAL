@@ -1,5 +1,17 @@
 # Text Spacing & Transliteration Audit — Findings and Action Plan
 
+**STATUS: EXECUTED 2026-07-01.** All spacing defects fixed (162 word
+merges, 189 punctuation-gap fixes, 6 one-offs); apocrypha residue
+transliterated (150 replacements: Kena'anite(s)/Kena'anitish, Heḇrew(s));
+12 split words that had escaped transliteration merged directly to corpus
+forms (ruchot, naḇi, mitsvot, mishpat/mishpatim, qahal, Yahrushalayim).
+Per owner decision, all existing corpus transliteration conventions were
+left untouched (Yahrushalayim, set-apart, kindness, etc. — Part 1D).
+Exceptions kept verbatim from source PDFs: Yeshayahu 64:1 ' ? –' glyph
+placeholder; spaced ellipses; 'Christian' in editorial notes. Verified:
+verify_transliteration.py PASS; verify_text.py per-book results identical
+pre/post fix; whitespace scans all zero; 47,838 verse count unchanged.
+
 Date: 2026-07-01
 Scope: all 104 book JSON files in `assets/text/`, `assets/index.json`,
 source PDFs in `SCRIPTURE/`, and the CLAUDE.md transliteration guide.
