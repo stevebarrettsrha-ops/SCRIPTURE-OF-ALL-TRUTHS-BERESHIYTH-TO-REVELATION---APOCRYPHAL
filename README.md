@@ -60,9 +60,20 @@ it works the same offline as online, including inside `besorah-offline.html`.
   still toggles a bookmark, as before).
 - A **speed slider** and **voice picker** let you tune the narration; your
   choices are remembered on your device (`localStorage`) and never leave it.
+- The player defaults to the **best-sounding voice** your device offers
+  (preferring "natural"/"neural"/enhanced voices) until you pick another.
 
-Voice quality depends on the voices your operating system provides. If a chapter
-has no extractable text, the player hides itself for that chapter.
+**Pronunciation.** Generic device voices don't know the Hebrew-roots names, so
+the player feeds the speech engine a **phonetic respelling** — the text on
+screen is never changed, only what is spoken. A curated lexicon (drawn from the
+pronunciation guides in `CLAUDE.md`) handles the sacred vocabulary
+(<span title="Yah-oo-wah">Yahuah</span>, Yahusha, Aluahim, Yasharal, …), and any
+word carrying Hebrew diacritics is flattened phonetically (ḇ→v, ḥ/ḵ→kh, the ayin
+mark dropped, q→k). To refine a pronunciation, edit the `PRON` map near the top
+of `assets/besorah-tts.js` (then rerun `build_offline.py`).
+
+Voice quality still depends on the voices your operating system provides. If a
+chapter has no extractable text, the player hides itself for that chapter.
 
 ## Running locally
 
