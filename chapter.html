@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/besorah-marks.js"></script>
+<script src="assets/besorah-tts.js"></script>
 <style>
   /* Pin the footer to the bottom of the viewport on short chapters */
   body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
@@ -33,6 +34,7 @@
     <button id="bookmark-btn" class="btn" type="button" title="Bookmark this chapter" aria-pressed="false">☆</button>
     <a id="next" href="#">Next &rarr;</a>
   </div>
+  <div class="tts-bar" id="tts-bar"></div>
 </div>
 
 <main class="chapter-main">
@@ -112,11 +114,15 @@ fetch('assets/index.json')
     BesorahMarks.wireBookmarkButton(
       document.getElementById('bookmark-btn'), book, chapter
     );
+    // Read-aloud player (built once; re-pointed at this chapter's verses).
+    BesorahTTS.init(document.getElementById('tts-bar'));
+
     // Wire after verses are rendered (below — defer to next tick).
     queueMicrotask(() => {
       BesorahMarks.wireVerseClicks(
         document.getElementById('verses'), book, chapter
       );
+      BesorahTTS.bind(document.getElementById('verses'));
       BesorahMarks.scrollToVerse(verseAnchor);
     });
 

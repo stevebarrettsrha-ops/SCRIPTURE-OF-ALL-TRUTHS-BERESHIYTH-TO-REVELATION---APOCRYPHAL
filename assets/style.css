@@ -386,6 +386,79 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 #bookmark-btn.on { color: var(--gold); }
 #bookmark-btn.on:hover { color: #1a1410; }
 
+/* ============ Read-aloud (text-to-speech) player ============ */
+/* Sits as its own full-width row inside the sticky .chapter-bar. */
+.tts-bar {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rule);
+}
+.tts-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--link);
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.tts-btn:hover:not(:disabled) {
+  background: var(--gold);
+  color: #1a1410;
+  border-color: var(--gold);
+}
+.tts-btn:disabled { opacity: 0.4; cursor: default; }
+.tts-play .tts-ico { font-size: 0.8rem; }
+.tts-rate {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--ink-dim);
+  font-size: 0.8rem;
+}
+.tts-rate-input { width: 90px; accent-color: var(--gold); cursor: pointer; }
+.tts-rate-val { min-width: 2.4em; color: var(--ink); }
+.tts-voice {
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.4rem;
+  max-width: 220px;
+}
+.tts-voice:focus { outline: none; border-color: var(--gold); }
+
+/* Verses become click-to-read-from-here once the player is bound */
+.tts-readable .verse,
+.tts-readable .prose { cursor: pointer; }
+
+/* Currently-spoken verse / prose block */
+.verse.tts-speaking,
+.prose.tts-speaking {
+  background: rgba(212,175,55,0.14);
+  box-shadow: -0.6rem 0 0 rgba(212,175,55,0.14),
+               0.6rem 0 0 rgba(212,175,55,0.14);
+  border-radius: 3px;
+}
+.verse.tts-speaking .verse-n { color: var(--link-hover); }
+
+@media (max-width: 600px) {
+  .tts-voice { max-width: 150px; }
+  .tts-rate-input { width: 70px; }
+}
+
 /* Continue-reading card on the index page */
 .continue-card {
   display: flex;

@@ -19,6 +19,7 @@ INDEX_PATH = ROOT / "assets" / "index.json"
 TEXT_DIR = ROOT / "assets" / "text"
 STYLE_PATH = ROOT / "assets" / "style.css"
 MARKS_JS_PATH = ROOT / "assets" / "besorah-marks.js"
+TTS_JS_PATH = ROOT / "assets" / "besorah-tts.js"
 OUTPUT = ROOT / "besorah-offline.html"
 
 
@@ -112,6 +113,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
       <button id="bookmark-btn" class="btn" type="button" title="Bookmark this chapter" aria-pressed="false">☆</button>
       <a id="next" href="#">Next &rarr;</a>
     </div>
+    <div class="tts-bar" id="tts-bar"></div>
   </div>
   <main class="chapter-main">
     <div class="chapter-page" id="chapter-page">
@@ -137,6 +139,11 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 <!-- ============ MARKS LIBRARY ============ -->
 <script>
 __MARKS_JS__
+</script>
+
+<!-- ============ READ-ALOUD (TTS) LIBRARY ============ -->
+<script>
+__TTS_JS__
 </script>
 
 <script>
@@ -430,12 +437,15 @@ __MARKS_JS__
     BesorahMarks.wireBookmarkButton(
       document.getElementById('bookmark-btn'), book, chapter
     );
+    // Read-aloud player (built once; re-pointed at this chapter's verses).
+    BesorahTTS.init(document.getElementById('tts-bar'));
 
     verseBox.innerHTML = '';
     const verses = ch.verses || [];
     if (verses.length === 0) {
       verseBox.innerHTML =
         `<p class="note">No text extracted for this chapter. <a href="SCRIPTURE/${ch.pdf}#page=${ch.page}" target="_blank">Open the PDF page</a>.</p>`;
+      BesorahTTS.bind(verseBox);
       return;
     }
     const isProse = verses.length === 1 && verses[0].t.length > 600;
@@ -456,6 +466,7 @@ __MARKS_JS__
       BesorahMarks.wireVerseClicks(verseBox, book, chapter);
       BesorahMarks.scrollToVerse(verseAnchor);
     }
+    BesorahTTS.bind(verseBox);
   }
 
   // ---------- INIT ----------
@@ -476,6 +487,7 @@ def main():
     text = load_all_text()
     style = load_style()
     marks_js = MARKS_JS_PATH.read_text(encoding="utf-8")
+    tts_js = TTS_JS_PATH.read_text(encoding="utf-8")
 
     index_json = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
     text_json = json.dumps(text, ensure_ascii=False, separators=(",", ":"))
@@ -485,8 +497,9 @@ def main():
     # Escape its closing slash to keep the parser happy.
     index_json = index_json.replace("</", "<\\/")
     text_json = text_json.replace("</", "<\\/")
-    # Same protection for the inlined marks library (regular <script>).
+    # Same protection for the inlined libraries (regular <script>).
     marks_js_safe = marks_js.replace("</", "<\\/")
+    tts_js_safe = tts_js.replace("</", "<\\/")
 
     html = (
         HTML_TEMPLATE
@@ -494,6 +507,7 @@ def main():
         .replace("__INDEX_JSON__", index_json)
         .replace("__TEXT_JSON__", text_json)
         .replace("__MARKS_JS__", marks_js_safe)
+        .replace("__TTS_JS__", tts_js_safe)
     )
 
     OUTPUT.write_text(html, encoding="utf-8")
