@@ -1006,13 +1006,20 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
   }
 
   // ---- text helpers ---------------------------------------------------
-  // Verse text without its leading verse number, and with the divine-name
-  // spans flattened to their transliterated text (which is exactly what we
-  // want spoken: "Yahusha", "Aluahim", …).
+  // Spoken text for a verse / prose element. Drops:
+  //   .verse-n  — the leading verse number (not read aloud)
+  //   .hwhy     — the paleo-Hebrew tetragrammaton glyph "HWHY", which is
+  //               only ever shown as "(YAHUAH) HWHY"; the Name is already
+  //               spoken from the neighbouring .dn span, so the glyph would
+  //               just be read out as the gibberish letters "H-W-H-Y".
+  // Divine-name (.dn) spans are kept and flattened to their transliterated
+  // text, which is exactly what we want spoken ("Yahusha", "Aluahim", …).
   function elText(el) {
     var clone = el.cloneNode(true);
-    var n = clone.querySelector(".verse-n");
-    if (n) n.parentNode.removeChild(n);
+    var drop = clone.querySelectorAll(".verse-n, .hwhy");
+    for (var i = 0; i < drop.length; i++) {
+      drop[i].parentNode.removeChild(drop[i]);
+    }
     return (clone.textContent || "").replace(/\s+/g, " ").trim();
   }
 
@@ -1382,7 +1389,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
     if (!versesEl) return segs;
     var prose = versesEl.querySelector(".prose");
     if (prose) {
-      var chunks = chunkText(speakable(prose.textContent));
+      var chunks = chunkText(speakable(elText(prose)));
       if (chunks.length) segs.push({ el: prose, chunks: chunks });
       return segs;
     }
