@@ -19,6 +19,8 @@ start.command         # One-click launcher (macOS)
 start.sh              # One-click launcher (Linux)
 assets/
   style.css           # Site theme
+  besorah-marks.js    # Bookmark + last-read tracking (localStorage)
+  besorah-tts.js      # Read-aloud player (browser Web Speech API; offline)
   index.json          # Book → chapter → PDF page mapping
   text/<bookid>.json  # Extracted verses per book (generated)
 SCRIPTURE/
@@ -44,6 +46,23 @@ scripts/
   Wisdom, Baruch, Jubilees, 1 Enoch, 1 Clements, Shepherd of Hermas, …
 
 Total: **104 books**.
+
+## Reading features
+
+Each chapter page includes a **🔊 Read aloud** player. It uses the browser's
+built-in speech engine (the Web Speech API) and the voices already installed on
+your device, so it needs **no internet, no account, and no external service** —
+it works the same offline as online, including inside `besorah-offline.html`.
+
+- **Read / Pause / Stop** the current chapter.
+- Each verse is **highlighted and scrolled to** as it is spoken.
+- **Click any verse to start reading from there** (clicking the verse *number*
+  still toggles a bookmark, as before).
+- A **speed slider** and **voice picker** let you tune the narration; your
+  choices are remembered on your device (`localStorage`) and never leave it.
+
+Voice quality depends on the voices your operating system provides. If a chapter
+has no extractable text, the player hides itself for that chapter.
 
 ## Running locally
 
