@@ -175,8 +175,12 @@
     "yo'ĕl": "Yo'Al",
     "yo'el": "Yo'Al",
     "yoal": "Yo'Al",
-    // qodesh -> qadash, the form the canon settles on
-    "qodesh haqodashim": "Qadash haQadashim",
+    // Qodash for the place, Qadash for the verb — the two senses of the
+    // same root, kept apart. These carry forward the spellings already in
+    // the text so a swept book and a freshly extracted one agree.
+    "qadash haqadashim": "Qodash haQodashim",
+    "qodesh haqodashim": "Qodash haQodashim",
+    "qodesh": "Qodash",
     "ruach haqodesh": "Ruach HaQadash",
     // the long form of the theophoric -yahu
     "oḇadyah": "Oḇadyahu",
@@ -212,10 +216,10 @@
     // English kept alongside in brackets, so the reading is never lost.
     // The Set Apart Ruach keeps His own name: Ruach HaQadash.
     "set-apart ruach": "Ruach HaQadash",
-    "most set-apart place": "Qadash haQadashim (Most Set Apart Place)",
-    "holy of holies": "Qadash haQadashim (Most Set Apart Place)",
-    "set-apart place": "Qodesh (Set Apart Place)",
-    "holy place": "Qodesh (Set Apart Place)",
+    "most set-apart place": "Qodash haQodashim (Most Set Apart Place)",
+    "holy of holies": "Qodash haQodashim (Most Set Apart Place)",
+    "set-apart place": "Qodash (Set Apart Place)",
+    "holy place": "Qodash (Set Apart Place)",
     "set-apart ones": "qadashiyms (Set Apart Ones)",
     "holy ones": "qadashiyms (Set Apart Ones)",
     "set-apart one": "qadash (Set Apart One)",
@@ -404,12 +408,13 @@
   };
 
   // Names that carry their own capitalisation. Case is normally inherited
-  // from the source word, which would turn "the set-apart Ruach" into
-  // "Ruach HaQodesh"; these are written out exactly as listed instead.
+  // word by word from the source, which would turn "the set-apart Ruach"
+  // into "Ruach HAQADASH" and "Qodash haQodashim" into "Qodash
+  // HaQodashim"; these are written out exactly as listed instead.
   var LOCKED_CASE = {
     "Ruach HaQadash": 1,
-    "Qadash haQadashim (Most Set Apart Place)": 1,
-    "Qodesh (Set Apart Place)": 1,
+    "Qodash haQodashim (Most Set Apart Place)": 1,
+    "Qodash (Set Apart Place)": 1,
     "Holy Sepulcher": 1,
     "Holy Sepulchre": 1
   };

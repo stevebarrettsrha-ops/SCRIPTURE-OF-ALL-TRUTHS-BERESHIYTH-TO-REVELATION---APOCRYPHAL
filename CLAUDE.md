@@ -231,7 +231,9 @@ carry a small a and are unchanged.
 | salvation | yasha | yeh-shoo-ah |
 | temple | heykal | hey-kahl |
 | grave, underworld | Sheol | sheh-ohl |
-| holy, set-apart | qadash | kah-dahsh |
+| holy, set-apart (the verb, and the adjective) | qadash | kah-dahsh |
+| set-apart place (the noun) | Qodash | koh-dahsh |
+| most set-apart place | Qodash haQodashim | koh-dahsh hah-koh-dah-sheem |
 | holy ones | qadashiyms | kah-dah-sheems |
 | hypocrite | chaneph | khah-nef |
 | Sabbath | Shabbath | Shah-baht |

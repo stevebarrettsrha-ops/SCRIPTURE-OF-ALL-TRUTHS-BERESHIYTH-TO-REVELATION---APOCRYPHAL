@@ -44,19 +44,23 @@ came in untouched.
 
 ---
 
-## 2. Qodesh — the Hebrew, with the English in brackets
+## 2. Qadash and Qodash — the Hebrew, with the English in brackets
 
 Your call 0. The canon's own word is **qadash**, its plural
 **qadashiyms** (CLAUDE.md). Both now stand in all 104 books, with the
 English kept alongside in brackets so no reading is ever lost.
 
+The root carries two senses and they are kept apart: **Qodash when it is
+a place, Qadash when it is the verb** — and the adjective that comes off
+the verb.
+
 | Was | Now | Count |
 |---|---|---:|
 | holy, set-apart, sacred, hallowed, sanctified, consecrated | **qadash (Set Apart)** | 965 |
-| holy place, set-apart place | **Qodesh (Set Apart Place)** | 271 |
+| holy place, set-apart place | **Qodash (Set Apart Place)** | 271 |
 | holy ones, set-apart ones, saints | **qadashiyms (Set Apart Ones)** | 145 |
 | Holy One, Set-apart One, saint | **qadash (Set Apart One)** | 79 |
-| holy of holies, Most Set-apart Place | **Qadash haQadashim (Most Set Apart Place)** | 21 |
+| holy of holies, Most Set-apart Place | **Qodash haQodashim (Most Set Apart Place)** | 21 |
 | Holy Spirit, Set-apart Ruach | **Ruach HaQadash** | 134 |
 
 Yashayahu 6:3 now reads:
@@ -216,7 +220,7 @@ same verse. Both are now "Sheol", which flattens that distinction.
 The `HOUSE` table in `assets/words.js`, with `LOCKED_CASE` beside it for
 the names that carry their own capitalisation (`Ruach HaQadash` would
 otherwise inherit a capital from "Set-apart **R**uach" and come out
-"Ruach HaQodesh").
+"Ruach HAQADASH").
 
 It is applied twice — by `scripts/sweep_text.py --fix` to the stored text,
 and by `BesorahWords.repair()` to every verse on its way to the screen, so

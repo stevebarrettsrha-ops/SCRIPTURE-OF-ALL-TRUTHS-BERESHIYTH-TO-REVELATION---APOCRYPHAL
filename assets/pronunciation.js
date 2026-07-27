@@ -52,6 +52,7 @@
     "ruach": "roo-akh",
     "ruchot": "roo-khoht",
     "qodesh": "koh-desh",
+    "qodash": "koh-dahsh",
     "haqodesh": "hah koh-desh",
     "haqodashim": "hah koh-dah-sheem",
     "haqadashim": "hah kah-dah-sheem",

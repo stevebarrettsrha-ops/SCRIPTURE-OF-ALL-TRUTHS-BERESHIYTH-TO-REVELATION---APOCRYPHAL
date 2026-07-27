@@ -243,8 +243,20 @@ Two patterns run through it. **The first vowel is an a, not an e:**
 | Bemiḏbar | Bamiḏbar |
 | Deḇarim | Daḇarim |
 | neḇi'im, Nebi'im | naḇi'im, Nabi'im |
-| Qodesh haQodashim | Qadash haQadashim |
 | Ruach haQodesh | Ruach HaQadash |
+
+**Qodash for the place, Qadash for the verb.** The two senses of the one
+root are kept apart, so a reader can tell at a glance whether a verse is
+naming a place or doing something:
+
+| Sense | Reads | Count |
+|---|---|---:|
+| the place | **Qodash (Set Apart Place)** | 271 |
+| the place, innermost | **Qodash haQodashim (Most Set Apart Place)** | 21 |
+| the verb, and the adjective from it | **qadash (Set Apart)** | 965 |
+| the ones set apart | **qadashiyms (Set Apart Ones)** | 145 |
+| the One | **qadash (Set Apart One)** | 79 |
+| the Ruach | **Ruach HaQadash** | 134 |
 
 **And the theophoric ending is Al** (אֵל), the singular root behind
 Aluahim, capitalised because it is the Name inside the name:
@@ -282,10 +294,10 @@ brackets so no reading is lost:
 | Was | Now | Count |
 |---|---|---:|
 | holy, sacred, hallowed, sanctified, consecrated, set-apart | qadash (Set Apart) | 965 |
-| holy place | Qodesh (Set Apart Place) | 271 |
+| holy place | Qodash (Set Apart Place) | 271 |
 | holy ones, saints | qadashiyms (Set Apart Ones) | 145 |
 | Holy One, saint | qadash (Set Apart One) | 79 |
-| holy of holies | Qadash haQadashim (Most Set Apart Place) | 21 |
+| holy of holies | Qodash haQodashim (Most Set Apart Place) | 21 |
 | Holy Spirit, Set-apart Ruach | Ruach HaQadash | 134 |
 
 Yashayahu 6:3 reads *"Qadash (Set Apart), qadash (Set Apart), qadash (Set
@@ -317,7 +329,7 @@ The rest, each one what the main books already say in the parallel place:
 Capitalisation is inherited word by word, so "Holy One" becomes "Qadash
 (Set Apart One)" rather than losing its capital; names that carry their own
 capitalisation are listed in `LOCKED_CASE` so "Set-apart Ruach" resolves to
-"Ruach HaQadash" and not "Ruach HaQodesh".
+"Ruach HaQadash" and not "Ruach HAQADASH".
 
 Four things are deliberately left alone: the **Church of the Holy
 Sepulcher**, a building with a name; the **verb** "divine" (Mikah 3:11,
