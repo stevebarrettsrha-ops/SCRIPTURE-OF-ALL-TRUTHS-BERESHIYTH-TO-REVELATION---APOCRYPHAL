@@ -72,6 +72,8 @@
   // ---- text helpers ---------------------------------------------------
   // Spoken text for a verse / prose element. Drops:
   //   .verse-n  — the leading verse number (not read aloud)
+  //   .fn       — a footnote carried over from the source edition, which
+  //               belongs on the page but not in the reading.
   //   .hwhy     — the paleo-Hebrew tetragrammaton glyph "HWHY", which is
   //               only ever shown as "(YAHUAH) HWHY"; the Name is already
   //               spoken from the neighbouring .dn span, so the glyph would
@@ -80,7 +82,7 @@
   // text, which is exactly what we want spoken ("Yahusha", "Aluahim", …).
   function elText(el) {
     var clone = el.cloneNode(true);
-    var drop = clone.querySelectorAll(".verse-n, .hwhy");
+    var drop = clone.querySelectorAll(".verse-n, .hwhy, .fn");
     for (var i = 0; i < drop.length; i++) {
       drop[i].parentNode.removeChild(drop[i]);
     }
@@ -110,119 +112,13 @@
   }
 
   // ---- pronunciation --------------------------------------------------
-  // Generic device voices mangle the Hebrew-roots transliterations and the
-  // diacritics. We DON'T touch what's on screen — only the string handed to
-  // the speech engine is respelled phonetically. Two layers:
-  //   1) PRON: a curated respelling lexicon (keyed by a diacritic- and
-  //      apostrophe-stripped, lower-cased form of the word) drawn from the
-  //      pronunciation guides in CLAUDE.md. This is the authority.
-  //   2) respellHebrew(): a fallback that phonetically flattens any word
-  //      carrying Hebrew diacritics (ḇ→v, ḥ/ḵ→kh, ĕ→e, ayin dropped, q→k).
-  // Casing is irrelevant to speech, so keys/values are lower-case.
-  var PRON = {
-    // Divine names & core sacred terms
-    "yahuah": "yahoowah", "yah": "yah", "yahu": "yahoo",
-    "yahusha": "yahooshua", "yahushua": "yahooshua",
-    "mashiach": "masheeakh", "hamashiach": "ha masheeakh",
-    "aluahim": "alooaheem", "aluah": "alooah",
-    "yasharal": "yahsharal", "yasharalite": "yahsharalite",
-    "yasharalites": "yahsharalites",
-    "ruach": "rooakh", "ruchot": "rookhoat",
-    "qodesh": "koadesh", "haqodesh": "ha koadesh",
-    "halleluyah": "halelooyah",
-    // People (patriarchs, prophets, kings)
-    "abraham": "avraham", "abram": "avram", "hagar": "hagar",
-    "yaaqob": "yaakov", "yitshaq": "yeetskhak", "noah": "noakh",
-    "hanok": "khanok", "methushelah": "methooshelakh", "lemek": "lemek",
-    "yoseph": "yosef", "yishmael": "yishmahel", "esaw": "aysaw",
-    "mosheh": "mosheh", "aharon": "aharone", "dawid": "daweed",
-    "shelomoh": "shelomo", "shemuel": "shemooel", "eliyahu": "eleeyahoo",
-    "yashayahu": "yeshayahoo", "yirmeyahu": "yeermeyahoo",
-    "yahuchanon": "yahookhanon", "yahudah": "yahoodah",
-    "mattithyahu": "mateethyahoo", "ibrim": "eevreem",
-    "binyamin": "binyameen", "shimon": "sheemone", "lewi": "lehvee",
-    "ephrayim": "efrayeem", "menashsheh": "menahsheh", "reuben": "reuven",
-    "shaul": "shahool",
-    // Places
-    "yerushalayim": "yerooshalayeem", "mitsrayim": "meetsrayeem",
-    "mitsrites": "meetsrites", "mitsrite": "meetsrite",
-    "kenaan": "kenahan", "yarden": "yarden", "midyan": "meedyan",
-    "tsiyon": "tseeyone", "sinai": "sinai",
-    // Theological & liturgical terms
-    "shamayim": "shamayeem", "nephesh": "nefesh", "nepheshoth": "nefeshoat",
-    "malak": "malak", "malakim": "malakeem",
-    "kohen": "kohen", "kohanim": "kohaneem", "kehunnah": "kehoonah",
-    "kohenic": "kohenik", "gadol": "gadole",
-    "berith": "bereeth", "berithot": "bereetoat",
-    "shalom": "shalome", "mizbeach": "meezbeakh", "mizbeachot": "meezbeakhoat",
-    "mishpat": "meeshpat", "mishpatim": "meeshpateem",
-    "qahal": "kahal", "qahalim": "kahaleem",
-    "mitsvah": "meetsvah", "mitsvot": "meetsvoat",
-    "eduth": "edooth", "eduyot": "edooyoat",
-    "berakah": "berakah", "berakoth": "berakoat",
-    "baruk": "barook", "barak": "barak",
-    "chesed": "khesed", "kippur": "keepoor", "chen": "khen",
-    "yeshua": "yeshooah", "heykal": "haykal", "sheol": "sheole",
-    "qadash": "kadash", "qadashiyms": "kadasheems", "chaneph": "khanef",
-    "shabbath": "shabbat", "torah": "torah", "pesach": "pesakh",
-    "sukkot": "sookoat", "nabi": "navee", "nebiim": "neveeeem",
-    "nebuah": "nevooah", "naba": "nava", "iyob": "eeyobe",
-    "qoheleth": "koheleth", "qayin": "kah-yin", "hebel": "hevel",
-    "mishle": "meeshlay", "tehillim": "teheeleem", "ekah": "aykah"
-  };
-
-  // Ayin / glottal-stop marks vary across the source PDFs: straight and
-  // curly apostrophes, the reversed-9 mark (’ vs ‛), modifier letters, and
-  // the Hebrew geresh. Treat them all as one droppable "ayin". Separate
-  // global (replace) and non-global (test) copies — a shared /g regex is
-  // stateful across .test() calls.
-  var AYIN_G = /[‘’‚‛ʻʼʹ׳'`´]/g;
-  var AYIN_T = /[‘’‚‛ʻʼʹ׳'`´]/;
-  var COMBINING_G = /[̀-ͯ]/g;
-
-  function nfd(w) { return w.normalize ? w.normalize("NFD") : w; }
-  function hasDiacritic(w) { return /[̀-ͯ]/.test(nfd(w)); }
-
-  // Lookup key: strip combining diacritics + every ayin variant, lower-case.
-  function pronKey(w) {
-    return nfd(w).replace(COMBINING_G, "")
-                 .replace(AYIN_G, "")
-                 .toLowerCase();
-  }
-
-  // Phonetic fallback for any diacritic-bearing word not in PRON.
-  function respellHebrew(w) {
-    return (w.normalize ? w.normalize("NFC") : w)
-      .replace(/ḇ/g, "v").replace(/Ḇ/g, "V")
-      .replace(/ḥ/g, "kh").replace(/Ḥ/g, "Kh")
-      .replace(/ḵ/g, "kh").replace(/Ḵ/g, "Kh")
-      .replace(/ḏ/g, "d").replace(/Ḏ/g, "D")
-      .replace(/ḡ/g, "g").replace(/Ḡ/g, "G")
-      .replace(/ṭ/g, "t").replace(/Ṭ/g, "T")
-      .replace(/ĕ/g, "e").replace(/Ĕ/g, "E")
-      .replace(AYIN_G, "")
-      .replace(/q/g, "k").replace(/Q/g, "K");
-  }
-
-  // Word run = letters (incl. accented / Hebrew-Latin) plus ayin marks.
-  var WORD_RE = /[A-Za-zÀ-ɏḀ-ỿ‘’‚‛ʻʼʹ׳'`´]+/g;
-
-  function transformWord(w) {
-    var key = pronKey(w);
-    if (PRON.hasOwnProperty(key)) return PRON[key];
-    // Possessive: "Aluahim's" -> lexicon("aluahim") + "s"
-    if (key.charAt(key.length - 1) === "s" &&
-        PRON.hasOwnProperty(key.slice(0, -1))) {
-      return PRON[key.slice(0, -1)] + "s";
-    }
-    if (hasDiacritic(w)) return respellHebrew(w);
-    if (AYIN_T.test(w)) return w.replace(AYIN_G, "");   // ayin / contraction
-    return w;
-  }
-
-  // Turn on-screen text into a phonetic string for the speech engine.
+  // The lexicon and its rules live in assets/pronunciation.js so they can
+  // be edited (and audited by scripts/sweep_text.py) without touching the
+  // player. If that file is not loaded the player still speaks — it just
+  // hands the engine the text as printed.
   function speakable(text) {
-    return String(text || "").replace(WORD_RE, transformWord);
+    var pron = global.BesorahPron;
+    return pron ? pron.speakable(text) : String(text || "");
   }
 
   // ---- voices ---------------------------------------------------------

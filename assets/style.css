@@ -264,6 +264,20 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   font-weight: 600;
 }
 
+/* A footnote carried over from the source edition of an apocryphal book —
+   printed there behind an asterisk, shown here as what it is. */
+.fn {
+  display: block;
+  margin-top: 0.35rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid var(--rule);
+  color: var(--ink-dim);
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+.fn .dn { font-size: inherit; }
+
 /* Verse number — clickable to bookmark */
 .verse-n { user-select: none; transition: color 120ms; }
 .verse-n:hover { color: var(--link-hover); }

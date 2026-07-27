@@ -42,18 +42,22 @@
   // everything, then let just those two back in — same rule the chapter
   // pages use.
   function renderVerseText(raw) {
-    var esc = String(raw)
+    // Word forms are corrected on the way to the screen (assets/words.js).
+    var fixed = global.BesorahWords ? global.BesorahWords.repair(raw) : raw;
+    var esc = String(fixed)
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;");
-    return esc.replace(
-      /&lt;span class="(dn|hwhy)"&gt;([\s\S]*?)&lt;\/span&gt;/g,
-      '<span class="$1">$2</span>'
-    );
+    // Un-escape only the whitelisted tags, opening and closing handled
+    // separately so a footnote containing a divine name still renders.
+    return esc
+      .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+      .replace(/&lt;\/span&gt;/g, "</span>");
   }
 
   function plain(raw) {
-    return String(raw).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    var fixed = global.BesorahWords ? global.BesorahWords.repair(raw) : raw;
+    return String(fixed).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
   }
 
   function chapterLabel(book, chapter) {

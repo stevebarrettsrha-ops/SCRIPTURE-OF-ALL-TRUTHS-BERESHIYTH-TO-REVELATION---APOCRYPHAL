@@ -23,12 +23,15 @@ assets/
   besorah-marks.js    # Bookmarks, marked text + last-read (localStorage)
   besorah-tts.js      # Read-aloud player (browser Web Speech API; offline)
   besorah-home.js     # The home page panels (shared with the offline edition)
+  pronunciation.js    # How the Hebrew-roots vocabulary is spoken
+  words.js            # How a word must appear on the page
   daily-bread.json    # Rotating pool of 98 daily portions + reflections
   index.json          # Book → chapter → PDF page mapping
   text/<bookid>.json  # Extracted verses per book (generated)
 SCRIPTURE/
   *.pdf               # Original source PDFs (do not edit)
 scripts/
+  sweep_text.py       # Audits/repairs every book (markers, word forms, markup)
   extract_index.py    # Builds assets/index.json by scanning the PDFs
   extract_text.py     # Builds assets/text/*.json by extracting verse text
   transliterate.py    # Applies CLAUDE.md Hebrew-roots transliteration rules
@@ -96,17 +99,82 @@ it works the same offline as online, including inside `besorah-offline.html`.
 - The player defaults to the **best-sounding voice** your device offers
   (preferring "natural"/"neural"/enhanced voices) until you pick another.
 
-**Pronunciation.** Generic device voices don't know the Hebrew-roots names, so
-the player feeds the speech engine a **phonetic respelling** — the text on
-screen is never changed, only what is spoken. A curated lexicon (drawn from the
-pronunciation guides in `CLAUDE.md`) handles the sacred vocabulary
-(<span title="Yah-oo-wah">Yahuah</span>, Yahusha, Aluahim, Yasharal, …), and any
-word carrying Hebrew diacritics is flattened phonetically (ḇ→v, ḥ/ḵ→kh, the ayin
-mark dropped, q→k). To refine a pronunciation, edit the `PRON` map near the top
-of `assets/besorah-tts.js` (then rerun `build_offline.py`).
+**Pronunciation** lives in `assets/pronunciation.js`. Generic device voices have
+no idea what to do with "Ya'aqoḇ" or "Yahrushalayim", so the player feeds the
+speech engine a **phonetic respelling** — the text on screen is never changed,
+only what is spoken. Three layers, in order:
+
+1. a **lexicon** of 430+ respellings covering the vocabulary that actually
+   occurs in these books, written as hyphenated syllables ("yah-oo-wah",
+   "meez-beh-akh") because every engine treats a hyphen as a syllable break;
+2. **affix rules** so possessives, Hebrew plurals and the welded "ha-" article
+   resolve through their stem (`mizbe'achot`, `Aluahim's`, `haMashiach`);
+3. **orthographic rules** for the long tail — ḇ→v, ḥ/ḵ→kh, ĕ→e, q→k, the ayin
+   mark dropped, and the characteristic endings (-yahu, -im, -oth) spelled the
+   way an English voice reads them.
+
+Together they cover **93% of every set-apart word spoken across the canon**;
+`python3 scripts/sweep_text.py` reports that figure and names the most common
+words still falling through to the rules, so the lexicon can be extended where
+it matters. To refine one pronunciation, edit its line in
+`assets/pronunciation.js` and rerun `build_offline.py`.
 
 Voice quality still depends on the voices your operating system provides. If a
 chapter has no extractable text, the player hides itself for that chapter.
+
+## Keeping the text clean
+
+The canon is extracted from typeset PDFs, and extraction leaves scars: a word
+split across a column break ("command ments"), a word welded to its neighbour
+("becausethey"), or a verse number the typesetter printed inline — `[19]`, which
+the scanner reads as `[19J` — sitting in the middle of a sentence.
+
+`assets/words.js` is the single place where the correct form of a word is
+recorded (`JOINS`, `SPLITS`, `TYPOS`), and `scripts/sweep_text.py` reads those
+same tables so the data and the site can never disagree:
+
+```bash
+python3 scripts/sweep_text.py            # audit all 104 books (exit 1 on issues)
+python3 scripts/sweep_text.py --fix      # repair, then report every change
+python3 scripts/sweep_text.py --verbose  # list each issue individually
+node scripts/check_render.js             # render all 47,937 verses, fail on anything visible
+python3 scripts/check_words_parity.py    # prove words.js and the sweeper agree
+```
+
+`check_render.js` is the exhaustive check: it runs every verse through the
+same repair and escaping the chapter page uses, then fails on a stray
+bracket, asterisk, minus sign, verse marker, unescaped tag, scanner quote
+scar, doubled space or empty render. `check_words_parity.py` runs both
+implementations of the rules — the browser's and the sweeper's — over every
+verse and fails if they ever differ, which is what keeps the page and the
+data in step.
+
+The apocryphal books add a fourth kind of scar, because they were set from
+scholarly editions rather than from the Besorah plates. The Torah, the
+Prophets, the Writings and the Messianic books contain **no** brackets, no
+asterisks and no minus signs at all; those books arrived with 417 brackets,
+131 minus signs and 48 asterisks between them. `words.js` names each one:
+
+| Glyph | What it was | What is done |
+|---|---|---|
+| `[ ]` `{ }` | a translator's insertion, often left unbalanced because the pair straddles a verse | the words stay, the brackets go |
+| `−` | a minus sign standing in for a hyphen (`hard−hearted`) or a dash (`Ḥanoḵ−for he had shown`) | hyphen inside a compound, em dash before a function word |
+| `*` `**` | a footnote mark | the mark goes; a note behind it is kept and shown as a footnote |
+| `/'` `/,` `./I` | a closing quote the scanner broke apart (`"Yea, lady/' I said"`) | the quote is restored — a slash between two words, `language/lip`, is a real alternative and is left alone |
+| `[4S]` `[SO]` | a verse number whose digits were read as letters | un-mangled, then promoted into a real verse |
+
+The sweep checks every verse of every book for inline verse markers, word
+forms, stray glyphs, markup that isn't the whitelisted `<span class="dn">` /
+`<span class="hwhy">` / `<span class="fn">`, chapter counts against
+`index.json`, verse numbering, empty text and stray whitespace. Inline markers are promoted into **real verses**
+when the numbering allows it (this is how Azaryah 1:18–28 and Sirach 15:13–26
+were recovered), and `words.js` runs again at render time, so a book
+re-extracted from its PDF is still shown correctly.
+
+Entries are added by hand on purpose: no dictionary pass can tell "showbread"
+(one word, correct) from "goodlooking" (two words, welded), and joining a pair
+whose halves are both ordinary English would wreck a sentence like "dealt with
+in precisely the same fashion".
 
 ## Running locally
 
@@ -162,6 +230,7 @@ python3 scripts/reextract_apoc3.py     # re-extracts 1 Clements, Shepherd of Her
 python3 scripts/transliterate.py       # applies CLAUDE.md Hebrew-roots transliterations
 python3 scripts/fix_broken_words.py    # repairs words split across PDF line breaks
 python3 scripts/verify_transliteration.py  # checks divine names are wrapped & no Hebrew "disappeared"
+python3 scripts/sweep_text.py --fix    # verse markers, word forms, markup, whitespace
 python3 scripts/build_offline.py       # rebuilds besorah-offline.html
 ```
 
