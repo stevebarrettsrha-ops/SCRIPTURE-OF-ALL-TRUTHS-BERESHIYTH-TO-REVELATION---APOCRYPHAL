@@ -579,8 +579,33 @@
   var WORD_RE =
     /[A-Za-zÀ-ɏḀ-ỿ‘’‚‛ʻʼʹ׳'`´]+/g;
 
+  // ---- 6. punctuation ------------------------------------------------
+  // Voices differ wildly in what they read out: some announce "slash",
+  // "dash", "asterisk", "quote", even "comma" and "full stop". None of it
+  // belongs in a reading, so every mark is taken out of the string handed
+  // to the engine.
+  //
+  // The pauses survive, because they do not come from the marks. The
+  // player has already cut the passage into sentence-sized utterances
+  // (see chunkText in besorah-tts.js), and the gap between two utterances
+  // is what a listener hears as the end of a sentence.
+  //
+  // A hyphen becomes a space rather than vanishing: it is what separates
+  // the syllables of a respelling ("yah-oo-wah"), and a space keeps that
+  // separation without any voice announcing "dash".
+  var HYPHENS = /[-‐‑‒–—―−]/g;
+  var DROP_MARKS = /["'`´“”‘’«»‹›„‚(){}\[\]<>|\\\/_~^*%#@$&+=§¶†‡•·…,.;:!?¡¿]/g;
+
+  function stripMarks(text) {
+    return String(text || "")
+      .replace(HYPHENS, " ")
+      .replace(DROP_MARKS, " ")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+  }
+
   function speakable(text) {
-    return String(text || "").replace(WORD_RE, wordFor);
+    return stripMarks(String(text || "").replace(WORD_RE, wordFor));
   }
 
   global.BesorahPron = {

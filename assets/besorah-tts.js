@@ -424,21 +424,18 @@
     return segs;
   }
 
-  // Click a verse (not its number — that toggles a bookmark) to start
-  // reading from there. Ignore clicks made while selecting text.
-  function wireClickToRead(versesEl) {
-    if (!versesEl) return;
-    versesEl.addEventListener("click", function (e) {
-      var target = e.target;
-      if (target.closest && target.closest(".verse-n")) return;
-      var sel = global.getSelection && global.getSelection();
-      if (sel && String(sel).length > 0) return;
-      var el = target.closest ? target.closest("p.verse, p.prose") : null;
-      if (!el) return;
-      for (var i = 0; i < segments.length; i++) {
-        if (segments[i].el === el) { playFrom(i); return; }
+  // Reading from a chosen verse. The chapter page no longer starts the
+  // player the moment a verse is touched — a touch opens a small menu
+  // (see besorah-marks.js) and this is what its "Start Reader" calls.
+  function readFrom(el) {
+    if (!supported || !el) return;
+    for (var i = 0; i < segments.length; i++) {
+      if (segments[i].el === el || segments[i].el.contains(el)) {
+        playFrom(i);
+        return true;
       }
-    });
+    }
+    return false;
   }
 
   // ---- the "choose your reader" panel ---------------------------------
@@ -548,7 +545,6 @@
     if (!supported) return;
     stop();                       // cancel anything from the previous chapter
     segments = collectSegments(versesEl);
-    wireClickToRead(versesEl);
     if (versesEl) versesEl.classList.add("tts-readable");
     setPlayButton("stopped");
     // Hide the whole bar when a chapter has no speakable text.
@@ -560,6 +556,7 @@
     init: init,
     bind: bind,
     stop: stop,
+    readFrom: readFrom,
     readerPicker: readerPicker,
     speakSample: speakSample
   };

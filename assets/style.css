@@ -688,6 +688,12 @@ main.home { max-width: 1100px; padding-top: 1.25rem; }
   margin: 0 0 0.4rem;
   max-width: 62ch;
 }
+.daily-depth {
+  margin: 0.9rem 0 0;
+  color: var(--ink-dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
 .daily-actions {
   display: flex;
   align-items: center;
@@ -881,6 +887,9 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
   position: absolute;
   z-index: 50;
   display: flex;
+  flex-wrap: wrap;
+  max-width: min(92vw, 340px);
+  justify-content: center;
   gap: 0.25rem;
   padding: 0.25rem;
   background: var(--panel);
