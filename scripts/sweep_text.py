@@ -72,6 +72,7 @@ JOINS = js_table(WORDS_JS, "JOINS")
 SPLITS = js_table(WORDS_JS, "SPLITS")
 TYPOS = js_table(WORDS_JS, "TYPOS")
 HOUSE = js_table(WORDS_JS, "HOUSE")
+LOCKED_CASE = js_table(WORDS_JS, "LOCKED_CASE")
 LEXICON = js_table(PRON_JS, "LEXICON")
 
 
@@ -91,7 +92,10 @@ HOUSE_RE = _alt(list(HOUSE))
 
 def apply_case(sample, replacement):
     """Mirror of applyCase in words.js — capitalisation word by word, so
-    "Holy One" becomes "Set-apart One" and not "Set-apart one"."""
+    "Holy One" becomes "Set-apart One" and not "Set-apart one". Names in
+    LOCKED_CASE carry their own capitalisation and are left as written."""
+    if replacement in LOCKED_CASE:
+        return replacement
     frm = re.split(r"\s+", sample)
     to = re.split(r"\s+", replacement)
     if len(frm) == len(to):

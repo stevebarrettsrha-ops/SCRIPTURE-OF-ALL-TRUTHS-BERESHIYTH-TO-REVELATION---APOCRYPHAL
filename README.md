@@ -227,36 +227,64 @@ asterisks and no minus signs at all; those books arrived with 417 brackets,
 
 The Torah, the Prophets, the Writings and the Messianic writings contain no
 "holy", no "glory", no "sacred", no "saints", no "sanctify", no "ungodly",
-no "cross", no "hell" — not one occurrence between them. They say set-apart,
-esteem, set-apart ones, wicked, stake, Sheol. The apocryphal books were set
-from other editions and arrived carrying the church words, so the `HOUSE`
-table in `words.js` brings them into line — **1,421 replacements in 36
-books**, every one of them what the main books already say in the parallel
-place:
+no "cross", no "hell" — not one occurrence between them. The apocryphal
+books were set from other editions and arrived carrying the church words,
+so the `HOUSE` table in `words.js` brings all 104 books into one style.
+
+The canon's own word for what is set apart is **qadash**, its plural
+**qadashiyms**, and both now stand everywhere with the English alongside in
+brackets so no reading is lost:
+
+| Was | Now | Count |
+|---|---|---:|
+| holy, sacred, hallowed, sanctified, consecrated, set-apart | qadash (Set Apart) | 965 |
+| holy place | Qodesh (Set Apart Place) | 271 |
+| holy ones, saints | qadashiyms (Set Apart Ones) | 145 |
+| Holy One, saint | qadash (Set Apart One) | 79 |
+| holy of holies | Qodesh haQodashim (Most Set Apart Place) | 21 |
+| Holy Spirit, Set-apart Ruach | Ruach haQodesh | 134 |
+
+Yeshayahu 6:3 reads *"Qadash (Set Apart), qadash (Set Apart), qadash (Set
+Apart) is (YAHUAH) HWHY of hosts"*. The bracket is for the eye: the reader
+strips exactly these glosses before speaking, so it says **kah-dahsh**, not
+"qadash Set Apart", while every other parenthesis in the canon still speaks.
+
+The rest, each one what the main books already say in the parallel place:
 
 | Was | Now | Where the main books say it |
 |---|---|---|
-| holy, holiness, sacred, hallowed | set-apart, set-apartness | Yeshayahu 6:3, Mattithyahu 6:9 |
-| holy ones, saints | set-apart ones | Romans 1:7, Ḥazon 13:7 |
-| sanctify, consecrate | set apart | Shemoth 19:10, 1 Corinthians 6:11 |
 | glory, glorify, glorious | esteem, esteemed | Romans 3:23, Yahuchanon 17:1 |
 | glory in, glorying | boast in, boasting | 1 Corinthians 1:31 |
 | ungodly, godless, impious | wicked | Romans 5:6, Yahudah 1:15 |
+| unholy | profane | the canon's own opposite of qadash |
+| godly | chasid (Faithful) | chasid (חָסִיד), faithful, devoted |
 | godliness, piety, devout | reverence, reverent | 1 Timothy 2:2, Titus 2:12 |
-| cross | stake | Mattithyahu 16:24, Philippians 2:8 |
-| hell | Sheol | the verses gloss it themselves — "hell (Sheol)" |
+| majesty | Greatness | Ibrim 8:1, "the throne of the Greatness" |
+| majestic | splendid | Yeshayahu 4:2, "splendid and esteemed" |
+| honour (verb) | respect | Shemoth 20:12, 1 Kepha 2:17 |
+| honour (noun), honourable | esteem, esteemed | Ibrim 5:4, Mishle 3:9 |
+| dishonour | disrespect | Romans 1:24, 2:23 |
+| divinity, deity, godhead | Aluahim | אֱלֹהִים, with Al and Aluah its roots |
 | divine (adjective), Godlike | Mighty-like | 2 Kepha 1:3 |
+| cross | stake | Mattithyahu 16:24, Philippians 2:8 |
+| crucified, crucify | impaled, impale | "impaled" 48 times, "crucified" never |
+| hell | Sheol | the verses gloss it themselves — "hell (Sheol)" |
 
-Capitalisation is inherited word by word, so "Holy One" becomes "Set-apart
-One" rather than "Set-apart one". Two things are deliberately left alone:
-the **Church of the Holy Sepulcher**, a building with a name, and the **verb**
-"divine" (Mikah 3:11, "her neḇi'im divine for a price"), which is why the
-adjective is listed by its collocations instead.
+Capitalisation is inherited word by word, so "Holy One" becomes "Qadash
+(Set Apart One)" rather than losing its capital; names that carry their own
+capitalisation are listed in `LOCKED_CASE` so "Set-apart Ruach" resolves to
+"Ruach haQodesh" and not "Ruach HaQodesh".
+
+Four things are deliberately left alone: the **Church of the Holy
+Sepulcher**, a building with a name; the **verb** "divine" (Mikah 3:11,
+"her neḇi'im divine for a price"), which is why the adjective is listed by
+its collocations; **"set-apartness"**, which has no single Hebrew noun in
+this canon; and the **verb** "set … apart" (Shemoth 19:10), which stays
+English because only the adjective and noun take the Hebrew.
 
 **[docs/house-style-report.md](docs/house-style-report.md)** has the full
-account: the counts, the verse evidence for every rendering, and four open
-questions left for the reader to decide (majesty, honour, divinity/deity,
-and whether "godly" should follow "pious" to "reverent").
+account: every rendering with its verse evidence, the counts, what survives
+a search of all 47,937 verses and why each survivor is correct.
 
 The sweep checks every verse of every book for inline verse markers, word
 forms, stray glyphs, markup that isn't the whitelisted `<span class="dn">` /

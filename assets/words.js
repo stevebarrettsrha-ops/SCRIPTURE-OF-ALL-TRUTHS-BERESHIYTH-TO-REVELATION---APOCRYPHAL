@@ -137,57 +137,66 @@
   // Torah, the Prophets, the Writings and the Messianic writings contain
   // no "holy", no "sacred", no "saints", no "sanctify", no "glory", no
   // "cross", no "hell", no "ungodly" — not one occurrence between them.
-  // They use set-apart, set-apart ones, esteem, stake, Sheol, wicked. The
-  // apocryphal books were set from other editions and arrived carrying the
-  // church words, so this table brings them into line, and every entry is
-  // what the main books already say in the parallel place.
+  // They use esteem, stake, Sheol, wicked, and — for what is set apart —
+  // qadash and qadashiyms, the canon's own words, with the English kept
+  // alongside in brackets so no reading is lost. The apocryphal books were
+  // set from other editions and arrived carrying the church words, so this
+  // table brings all 104 into one style, and every entry is what the main
+  // books already say in the parallel place. The reasoning, verse by
+  // verse, is in docs/house-style-report.md.
   //
   // Longer keys are matched first, so "holy of holies" and "holy ones"
   // resolve before the bare word. Capitalisation is inherited word by
-  // word, so "Holy One" becomes "Set-apart One".
+  // word, so "Holy One" keeps its capital; the names that carry their own
+  // capitalisation are listed in LOCKED_CASE below.
   var HOUSE = {
-    // --- qodesh: the Latin-rooted words for what is set apart ----------
-    // "holy" appears 0 times in the Torah, the Prophets, the Writings and
-    // the Messianic writings, which use "set-apart" 747 times.
-    "holy of holies": "Most Set-apart Place",
+    // --- qodesh: the Hebrew, with the English in brackets --------------
+    // The canon's word for what is set apart is qadash, and its plural
+    // qadashiyms (CLAUDE.md). Both now stand in all 104 books with the
+    // English kept alongside in brackets, so the reading is never lost.
+    // The Holy Spirit keeps its own name: CLAUDE.md gives Ruach haQodesh.
+    "set-apart ruach": "Ruach haQodesh",
+    "most set-apart place": "Qodesh haQodashim (Most Set Apart Place)",
+    "holy of holies": "Qodesh haQodashim (Most Set Apart Place)",
+    "set-apart place": "Qodesh (Set Apart Place)",
+    "holy place": "Qodesh (Set Apart Place)",
+    "set-apart ones": "qadashiyms (Set Apart Ones)",
+    "holy ones": "qadashiyms (Set Apart Ones)",
+    "set-apart one": "qadash (Set Apart One)",
+    "holy one": "qadash (Set Apart One)",
+    "most holy": "most qadash (Set Apart)",
     // The church in Yerushalayim is a building with a name; it keeps it.
     "holy sepulcher": "Holy Sepulcher",
     "holy sepulchre": "Holy Sepulchre",
-    "most holy": "most set-apart",
-    "holy ones": "set-apart ones",
-    "holy one": "set-apart one",
-    "holy place": "set-apart place",
+    "set-apart": "qadash (Set Apart)",
+    "holy": "qadash (Set Apart)",
     "holiness": "set-apartness",
-    "holy": "set-apart",
-    // sanctify → set apart          (Shemoth 19:10, 1 Corinthians 6:11)
+    // sanctify / consecrate / hallow / sacred are all the same qadash
     "sanctification": "set-apartness",
-    "sanctified": "set-apart",
+    "sanctified": "qadash (Set Apart)",
     "sanctifies": "sets apart",
     "sanctifying": "setting apart",
     "sanctify": "set apart",
-    // consecrate → set apart        (the same qadash)
     "consecration": "setting apart",
-    "consecrated": "set-apart",
+    "consecrated": "qadash (Set Apart)",
     "consecrates": "sets apart",
     "consecrate": "set apart",
-    // hallowed → set-apart          (Mattithyahu 6:9, Luke 11:2)
-    "hallowed": "set-apart",
+    "hallowed": "qadash (Set Apart)",
     "hallows": "sets apart",
     "hallow": "set apart",
-    // sacred → set-apart            (no "sacred" anywhere in the canon)
-    "sacred": "set-apart",
-    // saints → set-apart ones       (Romans 1:7, Ephesians 1:1, Ḥazon 13:7)
-    "saints": "set-apart ones",
-    "saintly": "set-apart",
-    "sainted": "set-apart",
-    "saint": "set-apart one",
+    "sacred": "qadash (Set Apart)",
+    "saints": "qadashiyms (Set Apart Ones)",
+    "saintly": "qadash (Set Apart)",
+    "sainted": "qadash (Set Apart)",
+    "saint": "qadash (Set Apart One)",
 
-    // --- eusebeia: reverence, not "godliness" --------------------------
-    // The Messianic writings render it "reverence" nine times over
-    // (1 Timothy 2:2, 4:7, 4:8, 6:6, 6:11; 2 Kepha 1:3, 1:6, 3:11;
-    // Titus 1:1) and "reverently" in Titus 2:12.
+    // --- chasid: faithful, devoted -------------------------------------
+    // chasid (חָסִיד) is the word behind "godly" — faithful, devoted.
+    "godly": "chasid (Faithful)",
+    // eusebeia is reverence, as the Messianic writings render it nine
+    // times over (1 Timothy 2:2, 4:7, 4:8, 6:6, 6:11; 2 Kepha 1:3, 1:6,
+    // 3:11; Titus 1:1).
     "godliness": "reverence",
-    "godly": "set-apart",
     "piety": "reverence",
     "pious": "reverent",
     "piously": "reverently",
@@ -195,24 +204,20 @@
     "devout": "reverent",
 
     // --- asebeia: wicked, not "ungodly" --------------------------------
-    // Romans 5:6 and 4:5, 1 Kepha 4:18, 2 Kepha 2:5 and Yahudah 1:15 all
-    // read "wicked"; Romans 1:18 and 11:26 and Titus 2:12 "wickedness".
+    // Romans 5:6 and 4:5, 1 Kepha 4:18, 2 Kepha 2:5, Yahudah 1:15.
     "ungodliness": "wickedness",
     "ungodly": "wicked",
     "godlessness": "wickedness",
+    "godlessly": "wickedly",
     "godless": "wicked",
     "impieties": "wickedness",
     "impiety": "wickedness",
     "impiously": "wickedly",
     "impious": "wicked",
-    "godlessly": "wickedly",
 
     // --- doxa: esteem, not "glory" -------------------------------------
-    // "glory" appears 0 times in the main books, which use "esteem" 383
-    // times (Romans 3:23, Yeshayahu 6:3, Tehillim 19:1, Yahuchanon 1:14)
-    // and "esteem" as the verb (Yahuchanon 17:1 "Esteem Your Son").
-    // "glory in" is boasting, not esteem — the main books say "boast"
-    // (1 Corinthians 1:31, Yehezqel 35:13).
+    // "esteem" 383 times in the main books, "glory" never (Romans 3:23,
+    // Yahuchanon 17:1 "Esteem Your Son").
     "glories in": "boasts in",
     "glorying": "boasting",
     "gloried": "boasted",
@@ -225,12 +230,74 @@
     "glorify": "esteem",
     "glory": "esteem",
 
+    // --- majesty: the Greatness ----------------------------------------
+    // Ibrim 8:1, "the throne of the Greatness".
+    "majesty": "Greatness",
+    // The adjective follows Yeshayahu 4:2, "splendid and esteemed".
+    "majestically": "splendidly",
+    "majestic": "splendid",
+
+    // --- honour: by context --------------------------------------------
+    // The main books answer this word three ways, and which one depends
+    // on the sentence: Shemoth 20:12 and 1 Kepha 2:17 "Respect" for the
+    // verb, Ibrim 5:4 "esteem" for the noun. Every verb form in these
+    // books was read before being listed here.
+    // Romans 1:24 and 2:23 answer the opposite word with "disrespect".
+    "dishonorable": "disrespectful",
+    "dishonourable": "disrespectful",
+    "dishonoring": "disrespecting",
+    "dishonouring": "disrespecting",
+    "dishonored": "disrespected",
+    "dishonoured": "disrespected",
+    "dishonors": "disrespects",
+    "dishonours": "disrespects",
+    "dishonor": "disrespect",
+    "dishonour": "disrespect",
+    "honorably": "worthily",
+    "honourably": "worthily",
+    "honorable": "esteemed",
+    "honourable": "esteemed",
+    "honored officers": "esteemed officers",
+    "honored princes": "esteemed princes",
+    "honored people": "esteemed people",
+    "honored name": "esteemed name",
+    "honoured name": "esteemed name",
+    "honors his": "respects his",
+    "honors us": "respects us",
+    "to honor": "to respect",
+    "to honour": "to respect",
+    "us honor": "us respect",
+    "us honour": "us respect",
+    "should honor": "should respect",
+    "should honour": "should respect",
+    "will honor": "will respect",
+    "will honour": "will respect",
+    "not honor": "not respect",
+    "not honour": "not respect",
+    "they honor": "they respect",
+    "they honour": "they respect",
+    "honoring": "respecting",
+    "honouring": "respecting",
+    "honored": "respected",
+    "honoured": "respected",
+    "honors": "esteem",
+    "honours": "esteem",
+    "honor": "esteem",
+    "honour": "esteem",
+
+    // --- divinity, deity, godhead: Aluahim -----------------------------
+    // Aluahim (אֱלֹהִים) is the word, with Al and Aluah its singular
+    // roots. Wrapped as a divine name, the way the canon carries it.
+    "divinity": "<span class=\"dn\">Aluahim</span>",
+    "deity": "<span class=\"dn\">Aluahim</span>",
+    "godhead": "<span class=\"dn\">Aluahim</span>",
+
     // --- divine → Mighty-like ------------------------------------------
     // 2 Kepha 1:3-4 reads "His Mighty-like power" and "partakers of the
     // Mighty-like nature". The main books use "divine" only as the verb
     // for divination (Mikah 3:11, Yeḥezqel 13:9), so the adjective is
     // listed by its collocations and the verb is left untouched.
-    "divine ruach": "Mighty-like ruach",
+    "divine ruach": "Mighty-like Ruach",
     "divine justice": "Mighty-like justice",
     "divine law": "Mighty-like law",
     "divine laws": "Mighty-like laws",
@@ -254,22 +321,41 @@
     "divine hand": "Mighty-like hand",
     "divine knowledge": "Mighty-like knowledge",
     "divine and": "Mighty-like and",
-    // Standing alone at the end of a clause.
     "was divine": "was Mighty-like",
     "truly divine": "truly Mighty-like",
     "and divine": "and Mighty-like",
     "be divine": "be Mighty-like",
     "godlike": "Mighty-like",
 
+    // The opposite of qadash. The main books say profane, 108 times.
+    "unholy": "profane",
+
     // --- the stake, not the cross --------------------------------------
     // Mattithyahu 16:24, 1 Corinthians 1:18, Philippians 2:8, Galatians
-    // 6:14 — "stake" 37 times, "cross" never.
+    // 6:14 — "stake" 37 times, "cross" never. What was done on it the
+    // main books call impaling, 56 times, and never crucifixion.
     "cross": "stake",
+    // "crosses" is the river-crossing verb everywhere but here.
+    "crosses, wild beasts": "stakes, wild beasts",
+    "crucifixion": "impaling",
+    "crucified": "impaled",
+    "crucifies": "impales",
+    "crucify": "impale",
 
     // --- Sheol, not hell -----------------------------------------------
-    // Four of these verses gloss it themselves — "hell (Sheol)" — and
-    // CLAUDE.md gives grave/underworld as Sheol.
+    // Four of these verses gloss it themselves — "hell (Sheol)".
     "hell": "Sheol"
+  };
+
+  // Names that carry their own capitalisation. Case is normally inherited
+  // from the source word, which would turn "the set-apart Ruach" into
+  // "Ruach HaQodesh"; these are written out exactly as listed instead.
+  var LOCKED_CASE = {
+    "Ruach haQodesh": 1,
+    "Qodesh haQodashim (Most Set Apart Place)": 1,
+    "Qodesh (Set Apart Place)": 1,
+    "Holy Sepulcher": 1,
+    "Holy Sepulchre": 1
   };
 
   // --- 5. inline verse markers ----------------------------------------
@@ -383,6 +469,7 @@
   // not "Set-apart one".
   function applyCase(sample, replacement) {
     if (!sample) return replacement;
+    if (LOCKED_CASE[replacement]) return replacement;
     var from = sample.split(/\s+/), to = replacement.split(/\s+/);
     if (from.length === to.length) {
       var out = [];
