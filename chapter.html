@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/words.js"></script>
+<script src="assets/pronunciation.js"></script>
 <script src="assets/besorah-marks.js"></script>
 <script src="assets/besorah-tts.js"></script>
 <style>
@@ -146,7 +148,10 @@ fetch('assets/index.json')
       // tetragrammaton. Escape every other angle bracket and only
       // un-escape these two whitelisted elements.
       function renderVerseText(raw) {
-        const esc = raw
+        // Word forms are corrected on the way to the screen (assets/words.js)
+        // so a re-extracted book still reads correctly.
+        const fixed = window.BesorahWords ? BesorahWords.repair(raw) : raw;
+        const esc = fixed
           .replace(/&/g, '&amp;')
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');

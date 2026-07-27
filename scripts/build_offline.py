@@ -22,6 +22,8 @@ STYLE_PATH = ROOT / "assets" / "style.css"
 MARKS_JS_PATH = ROOT / "assets" / "besorah-marks.js"
 TTS_JS_PATH = ROOT / "assets" / "besorah-tts.js"
 HOME_JS_PATH = ROOT / "assets" / "besorah-home.js"
+WORDS_JS_PATH = ROOT / "assets" / "words.js"
+PRON_JS_PATH = ROOT / "assets" / "pronunciation.js"
 DAILY_PATH = ROOT / "assets" / "daily-bread.json"
 OUTPUT = ROOT / "besorah-offline.html"
 
@@ -174,6 +176,14 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 <script id="index-data" type="application/json">__INDEX_JSON__</script>
 <script id="text-data" type="application/json">__TEXT_JSON__</script>
 <script id="daily-data" type="application/json">__DAILY_JSON__</script>
+
+<!-- ============ WORD FORMS + PRONUNCIATION ============ -->
+<script>
+__WORDS_JS__
+</script>
+<script>
+__PRON_JS__
+</script>
 
 <!-- ============ MARKS LIBRARY ============ -->
 <script>
@@ -357,7 +367,9 @@ __HOME_JS__
 
   // ---------- CHAPTER ----------
   function renderVerseText(raw) {
-    const esc = raw.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // Word forms are corrected on the way to the screen (assets/words.js).
+    const fixed = window.BesorahWords ? BesorahWords.repair(raw) : raw;
+    const esc = fixed.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     return esc.replace(
       /&lt;span class="(dn|hwhy)"&gt;([\s\S]*?)&lt;\/span&gt;/g,
       '<span class="$1">$2</span>'
@@ -474,6 +486,8 @@ def main():
     marks_js = MARKS_JS_PATH.read_text(encoding="utf-8")
     tts_js = TTS_JS_PATH.read_text(encoding="utf-8")
     home_js = HOME_JS_PATH.read_text(encoding="utf-8")
+    words_js = WORDS_JS_PATH.read_text(encoding="utf-8")
+    pron_js = PRON_JS_PATH.read_text(encoding="utf-8")
 
     index_json = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
     text_json = json.dumps(text, ensure_ascii=False, separators=(",", ":"))
@@ -491,6 +505,8 @@ def main():
     marks_js_safe = escape_script_close(marks_js)
     tts_js_safe = escape_script_close(tts_js)
     home_js_safe = escape_script_close(home_js)
+    words_js_safe = escape_script_close(words_js)
+    pron_js_safe = escape_script_close(pron_js)
 
     html = (
         HTML_TEMPLATE
@@ -501,6 +517,8 @@ def main():
         .replace("__MARKS_JS__", marks_js_safe)
         .replace("__TTS_JS__", tts_js_safe)
         .replace("__HOME_JS__", home_js_safe)
+        .replace("__WORDS_JS__", words_js_safe)
+        .replace("__PRON_JS__", pron_js_safe)
     )
 
     OUTPUT.write_text(html, encoding="utf-8")

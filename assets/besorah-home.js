@@ -42,7 +42,9 @@
   // everything, then let just those two back in — same rule the chapter
   // pages use.
   function renderVerseText(raw) {
-    var esc = String(raw)
+    // Word forms are corrected on the way to the screen (assets/words.js).
+    var fixed = global.BesorahWords ? global.BesorahWords.repair(raw) : raw;
+    var esc = String(fixed)
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;");
@@ -53,7 +55,8 @@
   }
 
   function plain(raw) {
-    return String(raw).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    var fixed = global.BesorahWords ? global.BesorahWords.repair(raw) : raw;
+    return String(fixed).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
   }
 
   function chapterLabel(book, chapter) {
