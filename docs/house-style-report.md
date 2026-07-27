@@ -1,170 +1,225 @@
-# The church words in the apocryphal books — a report
+# The church words — what they are now, and why
 
-**What was asked:** fix "ungodly", "ungodliness", "sanctify", "sacred",
-"saints" and "hallowed" the way the main books already correct them — or
-find a better non-pagan rendering — and report.
+**Round one** asked for "ungodly", "ungodliness", "sanctify", "sacred",
+"saints" and "hallowed" to be corrected the way the main books already
+correct them — or better, and reported. That report ended with four
+judgement calls left open.
 
-**What was found:** the problem is bigger and simpler than those six words.
-Every Latin- and Greek-rooted church word is confined to the apocryphal,
+**Round two** answered all four, and went further:
+
+> 0. qadash and qadashiyms should be in all 104 books, but put the English
+>    (Set Apart / Set Apart Ones) in bracket.
+> 1. godly can be rendered to Chasid — chasid (חָסִיד), faithful, pious, devoted.
+> 2. Majesty to the Greatness.
+> 3. honour (130) — likewise: esteem / Respect / appreciation by context.
+> 4. divinity, deity, godhead → Aluahim (אֱלֹהִים), with Al (אֵל) and
+>    Aluah (אֱלוֹהַ) its singular roots.
+
+All of it is applied, across every one of the 104 books. This is the record.
+
+---
+
+## 1. Where the problem was
+
+Every Latin- and Greek-rooted church word was confined to the apocryphal,
 patriarchal and Ethiopic books. The Torah, the Prophets, the Writings and
-the Messianic writings contain **not one** of them:
+the Messianic writings contained **not one** of them:
 
 | Word | Main books | Apocryphal books |
 |---|---:|---:|
 | holy, holiness | 0 | 505 |
 | glory, glorify, glorious | 0 | 478 |
 | ungodly, godless, impious (+ nouns) | 0 | 186 |
+| divine (adj.), divinity, deity, godhead | 0 | 68 |
+| godly, godliness, pious, piety, devout | 0 | 63 |
 | sanctify, consecrate, hallow | 0 | 60 |
-| divine (adjective), divinity, deity, godhead | 0 | 68 |
 | sacred | 0 | 31 |
 | saints | 0 | 24 |
-| godly, godliness, pious, piety, devout | 0 | 63 |
 | hell | 0 | 18 |
-| cross | 0 | 6 |
+| cross, crucified | 0 | 7 |
 
 The main books were transliterated; the apocryphal books were set from other
-editions (Charles, the RSV apocrypha, the Adam and Hawwah translations) and
-came in untouched. So the correction is not a matter of taste: **for every
-one of these words the main books already say something else, in the
-parallel place.** That is what has been applied.
+editions (Charles, the RSV apocrypha, the Aḏam and Ḥawwah translations) and
+came in untouched.
 
 ---
 
-## What each word became, and on whose authority
+## 2. Qodesh — the Hebrew, with the English in brackets
 
-Every rendering below is what the Torah, the Prophets, the Writings or the
-Messianic writings already say. The verse cited is the evidence.
+Your call 0. The canon's own word is **qadash**, its plural
+**qadashiyms** (CLAUDE.md). Both now stand in all 104 books, with the
+English kept alongside in brackets so no reading is ever lost.
 
-### Qodesh — what is set apart
+| Was | Now | Count |
+|---|---|---:|
+| holy, set-apart, sacred, hallowed, sanctified, consecrated | **qadash (Set Apart)** | 965 |
+| holy place, set-apart place | **Qodesh (Set Apart Place)** | 271 |
+| holy ones, set-apart ones, saints | **qadashiyms (Set Apart Ones)** | 145 |
+| Holy One, Set-apart One, saint | **qadash (Set Apart One)** | 79 |
+| holy of holies, Most Set-apart Place | **Qodesh haQodashim (Most Set Apart Place)** | 21 |
+| Holy Spirit, Set-apart Ruach | **Ruach haQodesh** | 134 |
 
-The main books use **set-apart** 747 times and **set-apartness** 25 times.
+Yeshayahu 6:3 now reads:
 
-| Was | Now | Evidence |
-|---|---|---|
-| holy, Holy | set-apart, Set-apart | 747 uses; Yeshayahu 6:3 "Set-apart, set-apart, set-apart is Yahuah" |
-| holy ones, Holy One | set-apart ones, Set-apart One | Romans 1:7, Ephesians 1:1, Ḥazon 13:7, Dani'al 7:18 |
-| holy place, holy of holies | set-apart place, Most Set-apart Place | 1 Melakim 6:16 "the Most Set-apart Place" |
-| holiness | set-apartness | 1 Corinthians 1:30, 1 Thessalonians 4:3 |
-| sanctify, sanctified, sanctification | set apart, set-apart, set-apartness | Shemoth 19:10 "set them apart"; 1 Corinthians 6:11 "you were set-apart"; Ibrim 13:12 |
-| consecrate, consecrated | set apart, set-apart | the same qadash |
-| hallowed | set-apart | Mattithyahu 6:9 / Luke 11:2 "let Your Name be set-apart" |
-| sacred | set-apart | no "sacred" exists anywhere in the canon |
-| saints, saintly | set-apart ones, set-apart | Romans 1:7 "called, set-apart ones" |
+> And one cried to another and said, "Qadash (Set Apart), qadash (Set
+> Apart), qadash (Set Apart) is (YAHUAH) HWHY of hosts; all the earth is
+> filled with His esteem!"
 
-### Eusebeia — reverence, not "godliness"
+Mattithyahu 6:9: *"let Your Name be qadash (Set Apart)"*.
 
-The Messianic writings render it **reverence** nine times over.
+Three things were deliberately **not** swept into the bracketed form:
 
-| Was | Now | Evidence |
-|---|---|---|
-| godliness | reverence | 1 Timothy 2:2, 4:7, 4:8, 6:6, 6:11; 2 Kepha 1:3, 1:6, 3:11; Titus 1:1 |
-| piety, pious, piously | reverence, reverent, reverently | Titus 2:12 "live sensibly, righteously and reverently" |
-| devout | reverent | the same eusebēs |
-| **godly** | **set-apart** | ← *your instruction.* The main books would say "reverent" here, the same word as "pious". Both readings are defensible; see the open question below. |
+* **The Ruach haQodesh keeps His own name.** CLAUDE.md gives it, and the
+  canon already used it 39 times; the other 95 came in as "Set-apart
+  Ruach" and now match.
+* **"set-apartness"** (76 uses) stays as it is. There is no single Hebrew
+  noun the canon uses for it, and *qadash-ness* would be a coinage.
+* **The verb "set … apart"** stays English — Shemoth 19:10 "set them
+  apart". Only the adjective and the noun take the Hebrew.
 
-### Asebeia — wicked, not "ungodly"
+### The gloss is for the eye, not the ear
 
-| Was | Now | Evidence |
-|---|---|---|
-| ungodly, godless, impious | wicked | Romans 5:6 "Mashiach died for the wicked"; Romans 4:5; 1 Kepha 4:18; 2 Kepha 2:5; Yahudah 1:15 |
-| ungodliness, godlessness, impiety | wickedness | Romans 1:18, 11:26; Titus 2:12; 2 Timothy 2:16 |
-
-### Doxa — esteem, not "glory"
-
-The main books use **esteem** 383 times and "glory" never.
-
-| Was | Now | Evidence |
-|---|---|---|
-| glory | esteem | Romans 3:23 "fall short of the esteem of Aluahim"; Tehillim 19:1; Yahuchanon 1:14 |
-| glorify, glorified | esteem, esteemed | Yahuchanon 17:1 "Esteem Your Son"; 12:28 |
-| glorious | esteemed | Yeshayahu 4:2 "splendid and esteemed" |
-| glory in, glorying, gloried | boast in, boasting, boasted | 1 Corinthians 1:31 "he who boasts, let him boast in Yahuah" — *kauchaomai*, a different word from doxa |
-
-### The rest
-
-| Was | Now | Evidence |
-|---|---|---|
-| cross | stake | Mattithyahu 16:24, 1 Corinthians 1:18, Philippians 2:8, Galatians 6:14 — "stake" 37 times, "cross" never |
-| hell | Sheol | four of these verses gloss it themselves, "hell (Sheol)"; CLAUDE.md gives grave/underworld as Sheol |
-| divine (adjective), Godlike | Mighty-like | 2 Kepha 1:3 "His Mighty-like power"; 1:4 "the Mighty-like nature" |
-
-**1,421 replacements in 36 books.** Not one word of these families is left
-anywhere in the canon, with a single deliberate exception.
+The bracket appears on every occurrence, as you asked. Spoken aloud that
+would be *"qadash Set Apart"* a thousand times over, so the reader
+silences it: `BesorahPron.speakable` strips exactly these brackets and no
+others. It says **kah-dahsh**, **kah-dah-sheems**, **koh-desh hah-koh-dah-sheem**.
+Every other parenthesis in the canon is part of the reading and is left
+alone — "(YAHUAH)" still speaks.
 
 ---
 
-## The one exception
+## 3. Chasid — faithful, devoted
 
-**The Church of the Holy Sepulcher** (Adam and Hawwah 1 42:13, an editorial
+Your call 1. **godly → chasid (Faithful)**, 17 uses.
+
+The neighbouring words keep the Messianic writings' own rendering, which is
+**reverence** — 1 Timothy 2:2, 4:7, 4:8, 6:6, 6:11; 2 Kepha 1:3, 1:6, 3:11;
+Titus 1:1.
+
+| Was | Now |
+|---|---|
+| godly | chasid (Faithful) |
+| godliness | reverence |
+| piety, pious, piously | reverence, reverent, reverently |
+| devout, devoutly | reverent, reverently |
+
+---
+
+## 4. The Greatness
+
+Your call 2. **majesty → Greatness**, on the authority of Ibrim 8:1, "the
+throne of the Greatness". All 30 uses were read first: every one is
+possessive or titular ("His majesty", "the majesty of Aluahim"), so a
+single rule was safe.
+
+The adjective follows Yeshayahu 4:2, "splendid and esteemed":
+**majestic → splendid**, **majestically → splendidly**.
+
+---
+
+## 5. Honour, by context
+
+Your call 3. This one could not be a single rule, so every one of the 214
+occurrences was read before being listed. The main books answer the word
+three ways and which one depends on the sentence.
+
+| Sense | Now | Authority |
+|---|---|---|
+| the verb, what you owe a person | **respect** | Shemoth 20:12, 1 Kepha 2:17 "Respect" |
+| the noun, what a person is held in | **esteem** | Ibrim 5:4, Mishle 3:9 |
+| the adjective | **esteemed** | Yeshayahu 4:2 |
+| the adverb | **worthily** | — |
+| the opposite | **disrespect** | Romans 1:24, 2:23 |
+
+So "to honour your father" is *to respect*, "honoured princes" are
+*esteemed princes*, and "dishonoured the name of the house of her father"
+is *disrespected*. The verb forms are listed by their collocations
+("to honor", "should honor", "they honour", "honors his" …) precisely so
+the noun cannot be caught by accident.
+
+---
+
+## 6. Aluahim — divinity, deity, godhead
+
+Your call 4. All 19 uses now read **<span class="dn">Aluahim</span>**,
+carried as a divine name the way the rest of the canon carries it (5,999
+times). Al and Aluah stand behind it as the singular roots.
+
+The adjective is a different word and keeps the rendering the Messianic
+writings give it — 2 Kepha 1:3 "His Mighty-like power", 1:4 "the
+Mighty-like nature": **divine (adj.), Godlike → Mighty-like**, 52 uses,
+listed by collocation.
+
+**The verb "divine" is untouched.** The main books use it four times and
+always for divination — Mikah 3:11 "her neḇi'im divine for a price",
+Yeḥezqel 13:9 and 21:29, 1 Shemu'ĕl 28:8, Bereshith 44:5 "with which he
+indeed divines". Those are correct, and the collocation lists are what
+keeps them safe.
+
+---
+
+## 7. The rest of the sweep
+
+| Was | Now | Count | Authority |
+|---|---|---:|---|
+| glory, glorify, glorious | esteem, esteemed | 1,105 | Romans 3:23, Yahuchanon 17:1; "esteem" 383× in the main books, "glory" never |
+| glory in, glorying, gloried | boast in, boasting, boasted | — | 1 Corinthians 1:31 — *kauchaomai*, a different word |
+| ungodly, godless, impious | wicked | 636 | Romans 5:6, 4:5; 1 Kepha 4:18; Yahudah 1:15 |
+| ungodliness, impiety | wickedness | — | Romans 1:18, 11:26; Titus 2:12 |
+| unholy | profane | 123 | the canon's own opposite of qadash, 108× |
+| cross | stake | 48 | Mattithyahu 16:24, Philippians 2:8 — "stake" 37×, "cross" never |
+| crucified, crucify, crucifixion | impaled, impale, impaling | 64 | "impaled" 48× in the main books, "crucified" never |
+| hell | Sheol | 26 | four verses gloss it themselves, "hell (Sheol)"; CLAUDE.md |
+
+---
+
+## 8. The one exception
+
+**The Church of the Holy Sepulcher** (Aḏam and Ḥawwah 1 42:13, an editorial
 footnote) keeps its name. It is a building in Yerushalayim, not a
 description, and renaming it would be a factual error rather than a
-transliteration. It is listed in `words.js` as its own entry so the reason is
-recorded next to it.
+transliteration. It is listed in `words.js` as its own entry so the reason
+is recorded next to it. It is the only "Holy" left in the canon.
 
 ---
 
-## Where "divine" was left alone
+## 9. What is left, and why
 
-The main books use "divine" four times — all of them the **verb**, meaning
-divination: Mikah 3:11 "her neḇi'im divine for a price", Yeḥezqel 13:9 and
-21:29, 1 Shemu'ĕl 28:8. Those are correct and untouched. Only the adjective
-was changed, and it is listed by its collocations ("divine power", "divine
-Ruach", "divine law" …) precisely so the verb cannot be caught by accident.
+A search of all 47,937 verses finds these and nothing else:
 
----
+* `holy` — 1, the Holy Sepulcher above.
+* `divin` — 43, every one the divination verb or its nouns.
+* `sacred` — 1, inside "**massac**red".
+* `glor` — 4, inside "vain**glor**y", which is boasting, not doxa.
+* `cross` — 18, all "a**cross**", "**cross**ed", "**cross**ing" a river.
+* `hell` — 5, "**Hell**enists", "**Chell**eans".
+* `piou` — 3, inside "co**piou**s".
 
-## Open questions for you
-
-Four judgement calls I did **not** make on my own. Each is one line in
-`assets/words.js` if you want it changed.
-
-**1. "godly" — set-apart, or reverent?**
-You asked for set-apart, and that is what it does. But the main books render
-this word (*eusebēs*) as **reverent** — the same word they use for "pious",
-which I have just mapped that way. As it stands, "godly" and "pious" now come
-out differently in the same book. Say the word and "godly" becomes "reverent"
-too.
-
-**2. "majesty" (30 uses) — no single house rendering.**
-The main books answer it three different ways depending on the sentence:
-Ibrim 8:1 "the throne of the Greatness", Tehillim 93:1 "He shall put on
-excellency", Ibrim 1:3 "the brightness of the esteem". A blanket rule would
-flatten a distinction the main books keep, so it is untouched.
-
-**3. "honour / honor" (130 uses) — likewise.**
-Ibrim 5:4 "esteem", 1 Kepha 2:17 and Shemoth 20:12 "Respect", Mishle 3:9
-"Esteem", Romans 12:10 "appreciation". Context decides; a table cannot.
-
-**4. "divinity", "deity", "godhead" (19 uses).**
-The main books have no precedent — the words never occur. "Mighty-likeness"
-would follow from "Mighty-like", but it is a coinage, so I would rather you
-chose it than find it done.
-
-Two smaller ones: **"Gentiles"** is capitalised 146 times in the apocryphal
-books where the main books write **"gentiles"** lowercase 278 times — purely
-cosmetic, and the case-inheriting rule cannot force a capital down, so it
-needs its own line if you want it. And in **Ḥanoḵ 9:40** and **1 Ḥanoḵ 51:1**
-the source distinguished "Sheol" from "hell" in the same verse; both are now
-"Sheol", which flattens that distinction.
+Not one word of these families survives as a church word.
 
 ---
 
-## Why not go further into Hebrew?
+## 10. Two smaller notes
 
-`CLAUDE.md` offers *qadash* for set-apart and *qadashiyms* for the set-apart
-ones. Neither appears anywhere in these 104 books — the canon's own choice is
-the English calque **set-apart**, used 747 times, which carries the sense of
-qodesh without borrowing a Latin or Greek word. Replacing 825 established
-uses with a transliteration would be a change to the whole canon rather than
-a repair to the apocrypha, so it is left for you to decide. The same holds
-for *rasha* (wicked) and *yirah* (reverence).
+**Capitalised "Gentiles"** — 146 times in the apocryphal books where the
+main books write lowercase "gentiles" 278 times. Purely cosmetic, and the
+case-inheriting rule cannot force a capital *down*, so it still needs its
+own line if you want it.
+
+**Ḥanoḵ 9:40 and 1 Ḥanoḵ 51:1** distinguished "Sheol" from "hell" in the
+same verse. Both are now "Sheol", which flattens that distinction.
 
 ---
 
 ## Where this lives
 
-The `HOUSE` table in `assets/words.js`. It is applied twice — by
-`scripts/sweep_text.py --fix` to the stored text, and by
-`BesorahWords.repair()` to every verse on its way to the screen, so a book
-re-extracted from its PDF is still shown correctly.
-`scripts/check_words_parity.py` proves the two agree on all 47,937 verses.
+The `HOUSE` table in `assets/words.js`, with `LOCKED_CASE` beside it for
+the names that carry their own capitalisation (`Ruach haQodesh` would
+otherwise inherit a capital from "Set-apart **R**uach" and come out
+"Ruach HaQodesh").
+
+It is applied twice — by `scripts/sweep_text.py --fix` to the stored text,
+and by `BesorahWords.repair()` to every verse on its way to the screen, so
+a book re-extracted from its PDF is still shown correctly.
+`scripts/check_words_parity.py` proves the two agree on all 47,937 verses;
+`scripts/check_render.js` proves nothing reaches a reader that should not.

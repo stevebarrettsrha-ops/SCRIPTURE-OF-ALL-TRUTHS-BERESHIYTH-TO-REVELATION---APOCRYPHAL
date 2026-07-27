@@ -53,7 +53,11 @@
     "ruchot": "roo-khoht",
     "qodesh": "koh-desh",
     "haqodesh": "hah koh-desh",
+    "haqodashim": "hah koh-dah-sheem",
+    "qodashim": "koh-dah-sheem",
     "qadosh": "kah-dohsh",
+    "chasid": "khah-seed",
+    "chasidim": "khah-see-deem",
     "halleluyah": "hah-leh-loo-yah",
     "besorah": "beh-soh-rah",
     "amen": "ah-mayn",
@@ -604,8 +608,17 @@
       .trim();
   }
 
+  // The bracketed gloss is for the eye, not the ear. words.js writes the
+  // Hebrew with its English alongside — "qadash (Set Apart)" — so a reader
+  // meeting the word for the first time is never lost. Spoken aloud that
+  // would be "qadash Set Apart" a thousand times over, so the gloss is
+  // silenced here. Only these exact brackets go; every other parenthesis
+  // in the canon is part of the reading and is left alone.
+  var GLOSS = /\s*\((?:Most Set Apart Place|Set Apart Ones|Set Apart One|Set Apart Place|Set Apart|Faithful|Sheol)\)/g;
+
   function speakable(text) {
-    return stripMarks(String(text || "").replace(WORD_RE, wordFor));
+    var s = String(text || "").replace(GLOSS, "");
+    return stripMarks(s.replace(WORD_RE, wordFor));
   }
 
   global.BesorahPron = {
