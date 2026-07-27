@@ -327,8 +327,9 @@
     popup.className = "mark-pop";
     popup.setAttribute("hidden", "");
     popup.innerHTML =
-      '<button type="button" class="mark-pop-btn" data-act="mark">✎ Mark text</button>' +
-      '<button type="button" class="mark-pop-btn danger" data-act="unmark">✕ Remove mark</button>';
+      '<button type="button" class="mark-pop-btn" data-act="mark">✎ Mark Text</button>' +
+      '<button type="button" class="mark-pop-btn danger" data-act="unmark">✕ Remove Mark</button>' +
+      '<button type="button" class="mark-pop-btn" data-act="read">▶ Start Reader</button>';
     document.body.appendChild(popup);
     return popup;
   }
@@ -336,14 +337,17 @@
   function hidePopup() {
     if (popup) popup.setAttribute("hidden", "");
     pendingId = null;
+    pendingEl = null;
   }
 
-  function showPopup(rect, act) {
+  // `acts` is the list of buttons to offer, in order — e.g. ["mark", "read"].
+  function showPopup(rect, acts) {
     var pop = ensurePopup();
-    pop.querySelector('[data-act="mark"]').style.display =
-      act === "mark" ? "" : "none";
-    pop.querySelector('[data-act="unmark"]').style.display =
-      act === "unmark" ? "" : "none";
+    var all = ["mark", "unmark", "read"];
+    for (var i = 0; i < all.length; i++) {
+      pop.querySelector('[data-act="' + all[i] + '"]').style.display =
+        acts.indexOf(all[i]) === -1 ? "none" : "";
+    }
     pop.removeAttribute("hidden");
     var top = rect.top + (global.pageYOffset || 0) - pop.offsetHeight - 8;
     var left = rect.left + (global.pageXOffset || 0) +
@@ -368,6 +372,7 @@
   var ctx = null;        // {container, book, chapter, onChange} — current chapter
   var pending = null;    // {el, verse, start, end, fullText} — live selection
   var pendingId = null;  // id of the highlight the bubble offers to remove
+  var pendingEl = null;  // the verse the menu was opened on
 
   function markChanged() {
     hidePopup();
@@ -377,6 +382,15 @@
     } catch (e) { /* very old browsers — the callback already ran */ }
   }
 
+  // Anchor the menu where the reader touched, so it opens under the thumb
+  // rather than at the top of a long verse.
+  function rectOfClick(e, host) {
+    var x = e.clientX, y = e.clientY;
+    if (!x && !y) return host.getBoundingClientRect();
+    return { top: y - 6, bottom: y + 6, left: x - 40, right: x + 40, width: 80,
+             height: 12 };
+  }
+
   function hostOf(node) {
     var el = node && (node.nodeType === 1 ? node : node.parentElement);
     return el && el.closest ? el.closest("p.verse, p.prose") : null;
@@ -384,12 +398,15 @@
 
   function evaluateSelection() {
     if (!ctx) return;
-    // A tap on an existing highlight also produces a mouseup with an empty
-    // selection; leave that bubble ("remove mark") standing.
-    if (pendingId) return;
     var container = ctx.container;
     var sel = global.getSelection && global.getSelection();
-    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return hidePopup();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) {
+      // A tap on a verse also produces a mouseup with an empty selection;
+      // it has already opened the verse menu, which must stay up. With no
+      // menu open, an empty selection simply closes the bubble.
+      if (pendingId || pendingEl) return;
+      return hidePopup();
+    }
     var range = sel.getRangeAt(0);
     var host = hostOf(range.startContainer);
     if (!host || !container.contains(host) || host !== hostOf(range.endContainer)) {
@@ -407,7 +424,8 @@
     var v = host.dataset && host.dataset.v ? parseInt(host.dataset.v, 10) : null;
     pending = { el: host, verse: v, start: start, end: end, fullText: full };
     pendingId = null;
-    showPopup(range.getBoundingClientRect(), "mark");
+    pendingEl = host;
+    showPopup(range.getBoundingClientRect(), ["mark", "read"]);
   }
 
   function wirePopupOnce() {
@@ -427,6 +445,12 @@
         if (sel && sel.removeAllRanges) sel.removeAllRanges();
         pending = null;
         markChanged();
+      } else if (btn.dataset.act === "read") {
+        var el = pendingEl;
+        hidePopup();
+        var sel2 = global.getSelection && global.getSelection();
+        if (sel2 && sel2.removeAllRanges) sel2.removeAllRanges();
+        if (el && ctx && typeof ctx.onRead === "function") ctx.onRead(el);
       } else if (btn.dataset.act === "unmark" && pendingId) {
         var gone = getTextMarks().filter(function (m) { return m.id === pendingId; })[0];
         removeTextMark(pendingId);
@@ -445,13 +469,19 @@
     });
   }
 
-  function wireTextMarks(container, book, chapter, onChange) {
+  // opts: { onChange, onRead } — onRead(verseElement) is what the menu's
+  // "Start Reader" calls, so this module never has to know about the
+  // read-aloud player.
+  function wireTextMarks(container, book, chapter, opts) {
     if (!container) return;
+    if (typeof opts === "function") opts = { onChange: opts };
+    opts = opts || {};
     ctx = {
       container: container,
       book: book,
       chapter: chapter,
-      onChange: onChange
+      onChange: opts.onChange,
+      onRead: opts.onRead
     };
     pending = null;
     pendingId = null;
@@ -469,18 +499,37 @@
       if (e.shiftKey || e.key === "Shift") later();
     });
 
-    // A click on an existing highlight offers to remove it (and is kept
-    // from reaching the read-aloud click handler on the same container).
+    // Touching a verse opens a small menu rather than doing anything at
+    // once: the reader chooses to mark it or to start the reader there.
+    // On an existing highlight the first option becomes "Remove Mark".
     container.addEventListener("click", function (e) {
-      var mk = e.target.closest ? e.target.closest("mark.tmark") : null;
-      if (!mk) return;
       var sel = global.getSelection && global.getSelection();
       if (sel && String(sel).length > 0) return;   // mid-selection, not a tap
+      if (e.target.closest && e.target.closest(".verse-n")) return;  // bookmark
+      var host = hostOf(e.target);
+      if (!host || !container.contains(host)) return;
       e.preventDefault();
       e.stopImmediatePropagation();
+
+      var mk = e.target.closest ? e.target.closest("mark.tmark") : null;
       pending = null;
-      pendingId = mk.getAttribute("data-mid");
-      showPopup(mk.getBoundingClientRect(), "unmark");
+      pendingEl = host;
+      if (mk) {
+        pendingId = mk.getAttribute("data-mid");
+        showPopup(mk.getBoundingClientRect(), ["unmark", "read"]);
+      } else {
+        pendingId = null;
+        // No selection: "Mark Text" keeps the whole verse.
+        var full = plainTextOf(host);
+        var s0 = 0, e0 = full.length;
+        while (s0 < e0 && /\s/.test(full.charAt(s0))) s0++;
+        while (e0 > s0 && /\s/.test(full.charAt(e0 - 1))) e0--;
+        var v = host.dataset && host.dataset.v
+          ? parseInt(host.dataset.v, 10) : null;
+        pending = { el: host, verse: v, start: s0, end: e0, fullText: full,
+                    whole: true };
+        showPopup(rectOfClick(e, host), ["mark", "read"]);
+      }
     });
   }
 

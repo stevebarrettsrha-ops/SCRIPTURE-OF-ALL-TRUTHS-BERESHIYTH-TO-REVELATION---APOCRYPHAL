@@ -52,8 +52,9 @@
     <div class="chapter-num" id="ch-num"></div>
     <div id="verses" class="verses"></div>
     <p class="note" id="loading">Loading chapter…</p>
-    <p class="note mark-hint">Select any words to mark them — everything you mark
-      is gathered on the <a href="index.html">home page</a>.</p>
+    <p class="note mark-hint">Touch any verse to mark it or start the reader
+      there. Select words first to mark just those — everything you mark is
+      gathered on the <a href="index.html">home page</a>.</p>
   </div>
 </main>
 
@@ -135,7 +136,9 @@ fetch('assets/index.json')
       // Marked text: paint saved highlights and let a fresh selection be
       // marked. Wired before the read-aloud player so tapping a highlight
       // offers to remove it instead of starting playback.
-      BesorahMarks.wireTextMarks(versesEl, book, chapter);
+      BesorahMarks.wireTextMarks(versesEl, book, chapter, {
+        onRead: el => BesorahTTS.readFrom(el)
+      });
       BesorahTTS.bind(versesEl);
       if (markAnchor) BesorahMarks.scrollToTextMark(markAnchor);
       else BesorahMarks.scrollToVerse(verseAnchor);

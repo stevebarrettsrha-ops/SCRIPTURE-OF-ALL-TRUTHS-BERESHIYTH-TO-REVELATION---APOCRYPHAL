@@ -22,6 +22,7 @@ STYLE_PATH = ROOT / "assets" / "style.css"
 MARKS_JS_PATH = ROOT / "assets" / "besorah-marks.js"
 TTS_JS_PATH = ROOT / "assets" / "besorah-tts.js"
 HOME_JS_PATH = ROOT / "assets" / "besorah-home.js"
+DAILY_JS_PATH = ROOT / "assets" / "DailyBread.js"
 WORDS_JS_PATH = ROOT / "assets" / "words.js"
 PRON_JS_PATH = ROOT / "assets" / "pronunciation.js"
 DAILY_PATH = ROOT / "assets" / "daily-bread.json"
@@ -161,8 +162,9 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
       <div class="chapter-num" id="ch-num"></div>
       <div id="verses" class="verses"></div>
       <p class="note" id="loading" style="display:none;">Loading chapter…</p>
-      <p class="note mark-hint">Select any words to mark them — everything you
-        mark is gathered on the <a href="#/">home page</a>.</p>
+      <p class="note mark-hint">Touch any verse to mark it or start the reader
+        there. Select words first to mark just those — everything you mark is
+        gathered on the <a href="#/">home page</a>.</p>
     </div>
   </main>
   <footer class="chapter-footer">
@@ -194,6 +196,11 @@ __MARKS_JS__
 <!-- ============ READ-ALOUD (TTS) LIBRARY ============ -->
 <script>
 __TTS_JS__
+</script>
+
+<!-- ============ DAILY BREAD POOL ============ -->
+<script>
+__DAILY_JS__
 </script>
 
 <!-- ============ HOME PAGE ============ -->
@@ -460,7 +467,9 @@ __HOME_JS__
     // Marked text: paint saved highlights and let a fresh selection be
     // marked. Wired before the read-aloud player so tapping a highlight
     // offers to remove it instead of starting playback there.
-    BesorahMarks.wireTextMarks(verseBox, book, chapter);
+    BesorahMarks.wireTextMarks(verseBox, book, chapter, {
+      onRead: el => BesorahTTS.readFrom(el)
+    });
     BesorahTTS.bind(verseBox);
     if (markAnchor) BesorahMarks.scrollToTextMark(markAnchor);
     else BesorahMarks.scrollToVerse(verseAnchor);
@@ -488,6 +497,7 @@ def main():
     marks_js = MARKS_JS_PATH.read_text(encoding="utf-8")
     tts_js = TTS_JS_PATH.read_text(encoding="utf-8")
     home_js = HOME_JS_PATH.read_text(encoding="utf-8")
+    daily_js = DAILY_JS_PATH.read_text(encoding="utf-8")
     words_js = WORDS_JS_PATH.read_text(encoding="utf-8")
     pron_js = PRON_JS_PATH.read_text(encoding="utf-8")
 
@@ -507,6 +517,7 @@ def main():
     marks_js_safe = escape_script_close(marks_js)
     tts_js_safe = escape_script_close(tts_js)
     home_js_safe = escape_script_close(home_js)
+    daily_js_safe = escape_script_close(daily_js)
     words_js_safe = escape_script_close(words_js)
     pron_js_safe = escape_script_close(pron_js)
 
@@ -519,6 +530,7 @@ def main():
         .replace("__MARKS_JS__", marks_js_safe)
         .replace("__TTS_JS__", tts_js_safe)
         .replace("__HOME_JS__", home_js_safe)
+        .replace("__DAILY_JS__", daily_js_safe)
         .replace("__WORDS_JS__", words_js_safe)
         .replace("__PRON_JS__", pron_js_safe)
     )

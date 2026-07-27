@@ -111,7 +111,17 @@
   // ==================================================================
   //  DAILY BREAD
   // ==================================================================
+  // Today's portion comes from assets/DailyBread.js, which holds every
+  // verse in the canon that stands on its own as encouragement — enough
+  // for years of reading before any one of them comes round again. The
+  // older curated list is kept as a fallback for a page that has not
+  // loaded DailyBread.js.
   function todaysPortion(now) {
+    var db = global.BesorahDailyBread;
+    if (db && db.size) {
+      var p = db.forDay(dayNumber(now));
+      if (p) return p;
+    }
     var pool = ctx.pool || [];
     if (!pool.length) return null;
     var n = dayNumber(now) % pool.length;
@@ -145,9 +155,17 @@
       '<div class="daily-actions">' +
         '<div class="tts-bar" id="daily-tts"></div>' +
         '<a class="card-more" id="daily-open">Open the whole chapter &rarr;</a>' +
-      "</div>";
+      "</div>" +
+      '<p class="daily-depth"></p>';
     root.appendChild(body);
     body.querySelector(".daily-reflection").textContent = entry.reflection;
+    var db = global.BesorahDailyBread;
+    if (db && db.size) {
+      var years = (db.size / 365.25).toFixed(1);
+      body.querySelector(".daily-depth").textContent =
+        "A different portion every day — " + db.size + " of them, drawn from " +
+        "every book, so none comes round again for " + years + " years.";
+    }
     var open = el("daily-open");
     open.href = ctx.chapterUrl(book.id, entry.chapter, entry.from);
 
