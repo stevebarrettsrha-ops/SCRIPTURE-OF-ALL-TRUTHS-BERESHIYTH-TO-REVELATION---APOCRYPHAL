@@ -1,0 +1,495 @@
+{
+  "_comment": "Daily Bread — the rotating pool of uplifting passages served on the home page. One entry is chosen per calendar day (index = days-since-epoch % pool length), so everyone opening the reader on the same day receives the same portion. Verse text is NOT stored here: it is read at run time from assets/text/<book>.json so the wording always matches the canon.",
+  "pool": [
+    {
+      "book": "tehillim", "chapter": 23, "from": 1, "to": 4,
+      "theme": "Yahuah is my shepherd",
+      "reflection": "A shepherd is measured by what his sheep lack — and with Yahuah leading you, the answer is nothing. Even the valley is a path He walks with you, not a place He leaves you."
+    },
+    {
+      "book": "tehillim", "chapter": 27, "from": 1, "to": 1,
+      "theme": "Light and deliverance",
+      "reflection": "Fear asks who is against you. Dawiḏ answers with who is for you. Name the thing you dread today, then set the Name of Yahuah beside it and see which one is larger."
+    },
+    {
+      "book": "tehillim", "chapter": 91, "from": 1, "to": 2,
+      "theme": "The secret place",
+      "reflection": "Shelter is not somewhere you visit in a storm; it is somewhere you dwell. Abide there before the wind rises, and the shadow of the Almighty will already be over you."
+    },
+    {
+      "book": "tehillim", "chapter": 121, "from": 1, "to": 4,
+      "theme": "He does not slumber",
+      "reflection": "You will sleep tonight. The One guarding you will not. Lay down the watch you were never strong enough to keep, and let the Maker of the shamayim keep it instead."
+    },
+    {
+      "book": "tehillim", "chapter": 46, "from": 1, "to": 2,
+      "theme": "A help soon found",
+      "reflection": "Aluahim is not a distant refuge you must travel to reach — He is a help *soon found*. Mountains may fall into the sea today; your footing does not depend on them."
+    },
+    {
+      "book": "tehillim", "chapter": 34, "from": 17, "to": 19,
+      "theme": "Near to the broken-hearted",
+      "reflection": "Scripture never promises the righteous a life without trouble; it promises deliverance out of them all. Yahuah draws near precisely where the ruach is crushed."
+    },
+    {
+      "book": "tehillim", "chapter": 37, "from": 3, "to": 5,
+      "theme": "Commit your way",
+      "reflection": "Four verbs to carry through the day: trust, do good, delight, commit. Roll the weight of your plans onto Yahuah — He does it, and He does it well."
+    },
+    {
+      "book": "tehillim", "chapter": 55, "from": 22, "to": 22,
+      "theme": "Cast your burden",
+      "reflection": "A burden carried is not the same as a burden cast. Hand it over once, deliberately, this morning — and each time your hands reach back for it, hand it over again."
+    },
+    {
+      "book": "tehillim", "chapter": 103, "from": 1, "to": 5,
+      "theme": "Do not forget His dealings",
+      "reflection": "Gratitude is a discipline of memory. Before you count today's troubles, count the crookednesses forgiven, the healing given, the life redeemed — and let your youth be renewed."
+    },
+    {
+      "book": "tehillim", "chapter": 119, "from": 105, "to": 105,
+      "theme": "A lamp to my feet",
+      "reflection": "The Word lights the next step, not the whole road. That is enough. Walk the lit step, and the following one will be lit when you reach it."
+    },
+    {
+      "book": "tehillim", "chapter": 145, "from": 18, "to": 19,
+      "theme": "Near to all who call",
+      "reflection": "Nearness is not earned by eloquence but by truth. Call plainly, call honestly — He is near to all who call upon Him in truth."
+    },
+    {
+      "book": "tehillim", "chapter": 118, "from": 24, "to": 24,
+      "theme": "This is the day",
+      "reflection": "Not tomorrow, when the matter is settled. Not yesterday, when it was simpler. *This* day is the one Yahuah has made — rejoice in the one you have been given."
+    },
+    {
+      "book": "tehillim", "chapter": 30, "from": 5, "to": 5,
+      "theme": "Joy comes in the morning",
+      "reflection": "Weeping is given a night; joy is given a life. If this is your night, hold on — mornings in Yahuah's hands have never failed to arrive."
+    },
+    {
+      "book": "tehillim", "chapter": 42, "from": 11, "to": 11,
+      "theme": "Speak to your own being",
+      "reflection": "Notice that the psalmist does not merely listen to his heart — he speaks to it. When your being is restless, preach expectancy to it: wait for Aluahim."
+    },
+    {
+      "book": "tehillim", "chapter": 51, "from": 10, "to": 12,
+      "theme": "Create in me a clean heart",
+      "reflection": "Dawiḏ does not ask to be improved but to be created anew. Ask for the same today: a clean heart, a steadfast ruach, and the joy of deliverance restored."
+    },
+    {
+      "book": "tehillim", "chapter": 63, "from": 1, "to": 4,
+      "theme": "Better than life",
+      "reflection": "Thirst is not a failure of faith; it is the beginning of seeking. Bring the dry land you are standing in to Him — His kindness is better than the life you are trying to protect."
+    },
+    {
+      "book": "tehillim", "chapter": 73, "from": 26, "to": 26,
+      "theme": "The rock of my heart",
+      "reflection": "Flesh fails; hearts waste away. The honest psalmist admits it and then names what does not fail: Aluahim, portion and rock, forever."
+    },
+    {
+      "book": "tehillim", "chapter": 84, "from": 11, "to": 11,
+      "theme": "He withholds no good matter",
+      "reflection": "A sun to grow you, a shield to guard you. If a good thing has not come, it is not because Yahuah is withholding — walk blamelessly and trust His timing."
+    },
+    {
+      "book": "tehillim", "chapter": 100, "from": 1, "to": 5,
+      "theme": "Enter His gates with thanksgiving",
+      "reflection": "Thanksgiving is the gate, praise is the courtyard. However heavy the day, you know the way in: He made us, we are His, and His kindness is everlasting."
+    },
+    {
+      "book": "tehillim", "chapter": 107, "from": 1, "to": 1,
+      "theme": "His kindness is everlasting",
+      "reflection": "One short verse, two unshakable facts: He is good, and His kindness does not run out. Let that be the first sentence you say today and the last."
+    },
+    {
+      "book": "tehillim", "chapter": 138, "from": 8, "to": 8,
+      "theme": "He perfects what concerns you",
+      "reflection": "You are not an unfinished work left on the bench. Yahuah does not forsake the works of His hands — and you are one of them."
+    },
+    {
+      "book": "tehillim", "chapter": 139, "from": 13, "to": 14,
+      "theme": "Awesomely and wondrously made",
+      "reflection": "Before anyone had an opinion about you, you were known and covered in the womb. Let the Maker's verdict outweigh every other voice today."
+    },
+    {
+      "book": "tehillim", "chapter": 143, "from": 8, "to": 8,
+      "theme": "Let me hear Your kindness in the morning",
+      "reflection": "A good prayer for the first waking minute: kindness to hear, a way to walk, a being lifted up. Ask before the day asks anything of you."
+    },
+    {
+      "book": "tehillim", "chapter": 147, "from": 3, "to": 3,
+      "theme": "He binds up their wounds",
+      "reflection": "The same One who counts and names the stars stoops to bandage broken hearts. Nothing about your grief is too small for His attention."
+    },
+    {
+      "book": "tehillim", "chapter": 16, "from": 11, "to": 11,
+      "theme": "The path of life",
+      "reflection": "Joy is not found at the end of the path but in His presence along it. Draw near, and satisfaction arrives before the destination does."
+    },
+    {
+      "book": "tehillim", "chapter": 19, "from": 14, "to": 14,
+      "theme": "Words and meditation",
+      "reflection": "Two things you can offer today that cost nothing: what you say and what you dwell on. Let both be pleasing before your rock and redeemer."
+    },
+    {
+      "book": "tehillim", "chapter": 32, "from": 8, "to": 8,
+      "theme": "He counsels with His eye on you",
+      "reflection": "Guidance is promised to those who stay near enough to be looked at. Keep within sight of His eye and the way you should go will be shown."
+    },
+    {
+      "book": "tehillim", "chapter": 33, "from": 20, "to": 22,
+      "theme": "Our help and our shield",
+      "reflection": "Waiting is not wasted time — it is trust with a clock attached. Put your trust in His set-apart Name and let His kindness be upon you as you wait."
+    },
+    {
+      "book": "tehillim", "chapter": 40, "from": 1, "to": 3,
+      "theme": "He set my feet upon a rock",
+      "reflection": "He heard, He drew up, He set, He established, He put a new song. Five acts of rescue — and the song at the end is for the people still in the pit."
+    },
+    {
+      "book": "tehillim", "chapter": 62, "from": 5, "to": 8,
+      "theme": "Rest in Aluahim alone",
+      "reflection": "Pour out your heart before Him — not a tidied version of it. He is a refuge for us, and refuges are for people who arrive undone."
+    },
+    {
+      "book": "tehillim", "chapter": 86, "from": 5, "to": 5,
+      "theme": "Ready to forgive",
+      "reflection": "He is not reluctant, not weary of you, not keeping score. Ready to forgive, and great in kindness to all who call — including today's caller."
+    },
+    {
+      "book": "tehillim", "chapter": 94, "from": 19, "to": 19,
+      "theme": "When anxiety was great",
+      "reflection": "Anxiety is not answered here with argument but with comfort. Sit long enough in His presence for the comforts to reach the place the worry lives."
+    },
+    {
+      "book": "tehillim", "chapter": 116, "from": 1, "to": 2,
+      "theme": "He inclined His ear",
+      "reflection": "Love grows from being heard. He bent down to listen — so you will keep calling, all your days, to the One who never treats your voice as an interruption."
+    },
+    {
+      "book": "tehillim", "chapter": 130, "from": 5, "to": 7,
+      "theme": "More than those watching for morning",
+      "reflection": "Watchmen do not doubt the sunrise; they simply wait for it. Wait for Yahuah with that kind of certainty — with Him there is kindness and much redemption."
+    },
+    {
+      "book": "mishle", "chapter": 3, "from": 5, "to": 6,
+      "theme": "He makes your paths straight",
+      "reflection": "Your own understanding is a poor thing to lean on and a fine thing to use. Know Him in all your ways, and the straightening is His work, not yours."
+    },
+    {
+      "book": "mishle", "chapter": 4, "from": 23, "to": 23,
+      "theme": "Watch over your heart",
+      "reflection": "Everything downstream — words, choices, habits — runs from this one spring. Guard what you let into it today with the diligence you would give a well."
+    },
+    {
+      "book": "mishle", "chapter": 16, "from": 3, "to": 3,
+      "theme": "Commit your works",
+      "reflection": "Commit the work, not just the outcome. Plans handed over to Yahuah before they are begun are the ones that stand when they are finished."
+    },
+    {
+      "book": "mishle", "chapter": 16, "from": 9, "to": 9,
+      "theme": "He establishes his steps",
+      "reflection": "Plan freely; hold loosely. The heart drafts the route, but every step that actually holds weight was established by Yahuah."
+    },
+    {
+      "book": "mishle", "chapter": 18, "from": 10, "to": 10,
+      "theme": "A strong tower",
+      "reflection": "The tower does not come to you — the righteous *run into it*. Safety today is a matter of which direction you run when the trouble starts."
+    },
+    {
+      "book": "mishle", "chapter": 2, "from": 6, "to": 8,
+      "theme": "Wisdom out of His mouth",
+      "reflection": "Wisdom is not extracted from experience alone; it is given. Ask for it, and He guards the path of the one who walks in it."
+    },
+    {
+      "book": "mishle", "chapter": 11, "from": 25, "to": 25,
+      "theme": "He who waters is watered",
+      "reflection": "Generosity is not subtraction. Pour into someone today who cannot repay you, and watch how the giving returns by a road you did not build."
+    },
+    {
+      "book": "mishle", "chapter": 15, "from": 1, "to": 1,
+      "theme": "A soft answer",
+      "reflection": "You cannot always choose what is said to you; you can always choose the volume of your reply. One soft answer today may end a quarrel that a hard one would have fed for a year."
+    },
+    {
+      "book": "mishle", "chapter": 17, "from": 22, "to": 22,
+      "theme": "A rejoicing heart heals",
+      "reflection": "Joy is medicine, not decoration. Guard it as you would any other treatment you could not afford to skip."
+    },
+    {
+      "book": "mishle", "chapter": 19, "from": 21, "to": 21,
+      "theme": "His counsel stands",
+      "reflection": "Many plans, one counsel. When your plans are overturned today, consider that something steadier than your planning is holding."
+    },
+    {
+      "book": "mishle", "chapter": 22, "from": 6, "to": 6,
+      "theme": "Train up a child",
+      "reflection": "What is planted early is not lost — it waits. Sow the way of Yahuah into the young around you and trust the harvest to a season you may not see."
+    },
+    {
+      "book": "mishle", "chapter": 27, "from": 17, "to": 17,
+      "theme": "Iron sharpens iron",
+      "reflection": "Sharpening requires contact and friction. Do not avoid the friend honest enough to make you flinch — that is the one keeping your edge."
+    },
+    {
+      "book": "mishle", "chapter": 28, "from": 13, "to": 13,
+      "theme": "Confess and forsake",
+      "reflection": "Hiding costs more than confessing ever will. Bring it into the light today — compassion is waiting on the other side of honesty."
+    },
+    {
+      "book": "mishle", "chapter": 12, "from": 25, "to": 25,
+      "theme": "A good word makes him glad",
+      "reflection": "Someone near you is carrying anxiety you cannot see. A single good word is within your power and may lift a weight you were never told about."
+    },
+    {
+      "book": "mishle", "chapter": 10, "from": 22, "to": 22,
+      "theme": "The berakah adds no pain",
+      "reflection": "Test what you are chasing against this verse. What Yahuah gives enriches without a hidden invoice of sorrow attached."
+    },
+    {
+      "book": "mishle", "chapter": 13, "from": 12, "to": 12,
+      "theme": "A longing come true",
+      "reflection": "Scripture does not pretend that delay is painless. Name the long hope honestly before Yahuah — He knows it is a tree of life you are waiting for."
+    },
+    {
+      "book": "mishle", "chapter": 14, "from": 29, "to": 29,
+      "theme": "Patience is understanding",
+      "reflection": "Slowness to anger is not weakness; it is the visible shape of understanding. Give today's provocation an extra breath before you answer it."
+    },
+    {
+      "book": "mishle", "chapter": 21, "from": 21, "to": 21,
+      "theme": "Pursue righteousness and kindness",
+      "reflection": "Chase these two and you catch three: life, righteousness and esteem. Most pursuits give less than they promised; this one gives more."
+    },
+    {
+      "book": "mishle", "chapter": 31, "from": 25, "to": 26,
+      "theme": "She rejoices at time to come",
+      "reflection": "Strength and splendour are worn, not hoarded. Face the unknown of tomorrow with the Torah of kindness on your tongue and you can afford to laugh at it."
+    },
+    {
+      "book": "yeshayahu", "chapter": 40, "from": 28, "to": 31,
+      "theme": "They shall mount up with wings",
+      "reflection": "The Everlasting does not grow faint — and He gives that same strength away. Wait on Yahuah today and let renewal come from a source that never tires."
+    },
+    {
+      "book": "yeshayahu", "chapter": 41, "from": 10, "to": 10,
+      "theme": "I am with you",
+      "reflection": "Four promises against one fear: I am with you, I am your Aluahim, I strengthen you, I uphold you. Read them slowly enough to believe them."
+    },
+    {
+      "book": "yeshayahu", "chapter": 43, "from": 1, "to": 2,
+      "theme": "I have called you by your name",
+      "reflection": "Not *if* you pass through the waters, but *when*. He does not promise dry ground; He promises company in the river and safety in the fire."
+    },
+    {
+      "book": "yeshayahu", "chapter": 26, "from": 3, "to": 4,
+      "theme": "Perfect shalom",
+      "reflection": "Shalom is guarded by what the mind stays on. Keep yours on Yahuah, the everlasting rock, and peace becomes a keeping rather than a striving."
+    },
+    {
+      "book": "yeshayahu", "chapter": 30, "from": 21, "to": 21,
+      "theme": "This is the way",
+      "reflection": "The voice comes from behind — it is heard by those already walking. Take the next honest step and expect direction to meet you in motion."
+    },
+    {
+      "book": "yeshayahu", "chapter": 55, "from": 8, "to": 9,
+      "theme": "Higher ways",
+      "reflection": "When His answer does not match your reasoning, that is not evidence of neglect. Heaven's distance from earth is the measure of how much more He sees."
+    },
+    {
+      "book": "yeshayahu", "chapter": 58, "from": 11, "to": 11,
+      "theme": "A watered garden",
+      "reflection": "Guidance, satisfaction, strengthened bones — and then you become a spring for others. Yahuah waters people who intend to water someone else."
+    },
+    {
+      "book": "yeshayahu", "chapter": 54, "from": 10, "to": 10,
+      "theme": "My kindness shall not depart",
+      "reflection": "Mountains are the picture of permanence, and they are the thing said to move first. His kindness and His berith outlast the landscape."
+    },
+    {
+      "book": "yirmeyahu", "chapter": 29, "from": 11, "to": 13,
+      "theme": "Plans of shalom",
+      "reflection": "This was spoken to exiles, not to people whose circumstances had already improved. Seek Him with all your heart from exactly where you are, and you will be found by the One with a future for you."
+    },
+    {
+      "book": "yirmeyahu", "chapter": 17, "from": 7, "to": 8,
+      "theme": "A tree planted by the waters",
+      "reflection": "The drought still comes; the tree simply is not anxious in it. Roots reaching for the river are what make the difference between surviving heat and fearing it."
+    },
+    {
+      "book": "yirmeyahu", "chapter": 31, "from": 3, "to": 3,
+      "theme": "An everlasting love",
+      "reflection": "You are not being dragged; you are being drawn — with kindness, by a love with no beginning to point to and no end to fear."
+    },
+    {
+      "book": "ekah", "chapter": 3, "from": 22, "to": 24,
+      "theme": "New every morning",
+      "reflection": "Written by a man who had watched everything he loved fall. If his compassions were new that morning, they are new on yours: Yahuah is my portion."
+    },
+    {
+      "book": "debarim", "chapter": 31, "from": 6, "to": 6,
+      "theme": "He does not forsake you",
+      "reflection": "Courage here is not a feeling to manufacture but a conclusion to draw. He goes with you — so be strong on the strength of His going."
+    },
+    {
+      "book": "yahusha", "chapter": 1, "from": 8, "to": 9,
+      "theme": "Be strong and courageous",
+      "reflection": "Meditation by day and night, and then courage wherever you go. The Torah you keep in your mouth becomes the steadiness you carry in your feet."
+    },
+    {
+      "book": "shemoth", "chapter": 14, "from": 14, "to": 14,
+      "theme": "He fights for you",
+      "reflection": "Some battles are won by effort, and some by stillness. Ask which kind today is before you spend yourself on a fight Yahuah has claimed."
+    },
+    {
+      "book": "bemidbar", "chapter": 6, "from": 24, "to": 26,
+      "theme": "The berakah of the kohanim",
+      "reflection": "The oldest blessing spoken over Yasharal is still in force. Receive it this morning as spoken over you: kept, favoured, and given shalom."
+    },
+    {
+      "book": "mikah", "chapter": 6, "from": 8, "to": 8,
+      "theme": "What is good",
+      "reflection": "Not complicated, only costly: do right, love kindness, walk humbly. Pick the one of the three you have been avoiding, and start there."
+    },
+    {
+      "book": "tsephanyah", "chapter": 3, "from": 17, "to": 17,
+      "theme": "He rejoices over you with singing",
+      "reflection": "Consider that the Mighty One in your midst is not merely tolerating you — He is singing. Let that be the sound in your ears today."
+    },
+    {
+      "book": "habaqquq", "chapter": 3, "from": 17, "to": 19,
+      "theme": "Yet I exult",
+      "reflection": "Every visible support is stripped away in this passage, and the joy remains, because it was never resting on the harvest. Yahuah is the strength, and the feet of deer are for high places."
+    },
+    {
+      "book": "nehemyah", "chapter": 8, "from": 10, "to": 10,
+      "theme": "The joy of Yahuah is your strength",
+      "reflection": "They were weeping over the Word when they were told to eat, share, and rejoice. Strength today may look like a good meal, a portion sent to someone with none, and a refusal to be sad."
+    },
+    {
+      "book": "2dibre-hayamim", "chapter": 7, "from": 14, "to": 14,
+      "theme": "If My people humble themselves",
+      "reflection": "Four things asked of us — humble, pray, seek, turn — and three promised in return: heard, forgiven, healed. Begin the first four and leave the rest to Him."
+    },
+    {
+      "book": "mattithyahu", "chapter": 11, "from": 28, "to": 30,
+      "theme": "Rest for your beings",
+      "reflection": "Yahusha does not offer the removal of every yoke, but the exchange of one. His is gentle, His burden light — and rest is found in the trade."
+    },
+    {
+      "book": "mattithyahu", "chapter": 6, "from": 25, "to": 27,
+      "theme": "Look at the birds",
+      "reflection": "Worry has never added a single hour to anyone's life. If the birds are fed without storehouses, your Father's arithmetic for you is not in doubt."
+    },
+    {
+      "book": "mattithyahu", "chapter": 6, "from": 33, "to": 33,
+      "theme": "Seek first the reign",
+      "reflection": "Order is the whole promise here. Put the reign of Aluahim first in today's hours and the matters you were anxious about are added, not abandoned."
+    },
+    {
+      "book": "mattithyahu", "chapter": 5, "from": 14, "to": 16,
+      "theme": "You are the light of the world",
+      "reflection": "A lamp is not lit to be admired but to be useful. Let one good work today be visible enough that the praise lands on your Father in the shamayim."
+    },
+    {
+      "book": "mattithyahu", "chapter": 7, "from": 7, "to": 8,
+      "theme": "Ask, seek, knock",
+      "reflection": "Three verbs, all continuous, all answered. The door is not opened to the one who admired it, but to the one who kept knocking."
+    },
+    {
+      "book": "yahuchanon", "chapter": 14, "from": 27, "to": 27,
+      "theme": "My shalom I give to you",
+      "reflection": "The world's peace depends on conditions; the shalom of Yahusha does not. It is given, not lent — so let not your heart be troubled."
+    },
+    {
+      "book": "yahuchanon", "chapter": 15, "from": 5, "to": 5,
+      "theme": "The vine and the branches",
+      "reflection": "Fruit is the by-product of staying, not of straining. Abide in Him today and let the growth be His business."
+    },
+    {
+      "book": "yahuchanon", "chapter": 8, "from": 12, "to": 12,
+      "theme": "The light of the world",
+      "reflection": "Following, not merely admiring, is what keeps you out of the dark. Take one step behind Yahusha today and you carry the light of life with you."
+    },
+    {
+      "book": "romans", "chapter": 8, "from": 28, "to": 28,
+      "theme": "All matters work together",
+      "reflection": "Not every matter is good; every matter is *worked*. Aluahim is at the loom, and the thread you are grieving over today is being woven, not wasted."
+    },
+    {
+      "book": "romans", "chapter": 8, "from": 38, "to": 39,
+      "theme": "Nothing can separate us",
+      "reflection": "Death, life, powers, height, depth, the present and the future — the list is exhaustive on purpose. Whatever you fear is already named and already answered."
+    },
+    {
+      "book": "romans", "chapter": 12, "from": 2, "to": 2,
+      "theme": "Renewing of your mind",
+      "reflection": "You are being shaped by something today — either the world's pressure or the renewing of your mind. Choose the input, and the transformation follows."
+    },
+    {
+      "book": "romans", "chapter": 15, "from": 13, "to": 13,
+      "theme": "Overflow with expectation",
+      "reflection": "Joy and shalom come *in believing*, and the overflow comes by the power of the Set-apart Ruach — never by squeezing harder on your own hope."
+    },
+    {
+      "book": "philippians", "chapter": 4, "from": 6, "to": 7,
+      "theme": "The shalom that guards",
+      "reflection": "Worry is replaced, not merely stopped: prayer, petition, thanksgiving. Then a peace beyond understanding stands guard at the gate of your heart and mind."
+    },
+    {
+      "book": "philippians", "chapter": 4, "from": 8, "to": 8,
+      "theme": "Think on these",
+      "reflection": "Your thoughts have a diet. Feed them what is true, noble, righteous, clean and lovely today and watch what happens to your mood by evening."
+    },
+    {
+      "book": "philippians", "chapter": 4, "from": 13, "to": 13,
+      "theme": "Through Mashiach who empowers me",
+      "reflection": "The strength is not self-generated and it is not unlimited in you — it is drawn. Whatever today asks of you, ask Him for it first."
+    },
+    {
+      "book": "galatians", "chapter": 5, "from": 22, "to": 23,
+      "theme": "The fruit of the Ruach",
+      "reflection": "Fruit is grown, not manufactured. Pick the one on the list you most lack today and ask the Ruach haQodesh to grow it rather than resolving to fake it."
+    },
+    {
+      "book": "ephesians", "chapter": 2, "from": 8, "to": 10,
+      "theme": "His workmanship",
+      "reflection": "Saved by chen, not by performance — and then made His workmanship for good works prepared beforehand. You are not earning your place; you are walking into it."
+    },
+    {
+      "book": "colossians", "chapter": 3, "from": 12, "to": 15,
+      "theme": "Put on compassion",
+      "reflection": "Character here is clothing: chosen each morning, put on deliberately. Wear compassion, kindness, humbleness, meekness and patience into today's hardest conversation."
+    },
+    {
+      "book": "1kepha", "chapter": 5, "from": 6, "to": 7,
+      "theme": "He is concerned about you",
+      "reflection": "Casting your worry is possible only under a mighty hand you trust. He is concerned about you — not about your usefulness, about *you*."
+    },
+    {
+      "book": "ibrim", "chapter": 11, "from": 1, "to": 1,
+      "theme": "The substance of what is expected",
+      "reflection": "Belief is not a feeling about the unseen but the proof of it. What you cannot see today is not therefore absent."
+    },
+    {
+      "book": "ibrim", "chapter": 12, "from": 1, "to": 2,
+      "theme": "Run with endurance",
+      "reflection": "Lay aside the weight — even the lawful weight that is slowing you. Fix your eyes on Yahusha, who ran the same road for the joy set before Him."
+    },
+    {
+      "book": "ibrim", "chapter": 13, "from": 5, "to": 6,
+      "theme": "I shall never leave you",
+      "reflection": "Contentment grows from a promise, not from a bank balance. He will never leave you — so you can say boldly what you were afraid to say quietly."
+    },
+    {
+      "book": "yaaqob", "chapter": 1, "from": 2, "to": 5,
+      "theme": "Endurance has a perfect work",
+      "reflection": "Trials are counted as joy not because they are pleasant, but because of what they build. And when you cannot see the point, wisdom is given generously, without reproach."
+    },
+    {
+      "book": "1yahuchanon", "chapter": 4, "from": 18, "to": 19,
+      "theme": "Perfect love casts out fear",
+      "reflection": "Fear and love cannot occupy the same room for long. Let yourself be loved first — we love Him because He first loved us."
+    }
+  ]
+}

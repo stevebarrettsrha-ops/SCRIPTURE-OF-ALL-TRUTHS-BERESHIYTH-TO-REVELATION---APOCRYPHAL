@@ -10,7 +10,8 @@ navigation.
 ## Structure
 
 ```
-index.html            # Book table of contents (104 books grouped by section)
+index.html            # HOME — Daily Bread, continue reading, reader, marks
+books.html            # Book table of contents (104 books grouped by section)
 book.html             # Chapter index for a single book (?id=<bookid>)
 chapter.html          # Renders verses for a chapter (?id=<bookid>&ch=<n>)
 besorah-offline.html  # Standalone single-file reader (open with file://)
@@ -19,8 +20,10 @@ start.command         # One-click launcher (macOS)
 start.sh              # One-click launcher (Linux)
 assets/
   style.css           # Site theme
-  besorah-marks.js    # Bookmark + last-read tracking (localStorage)
+  besorah-marks.js    # Bookmarks, marked text + last-read (localStorage)
   besorah-tts.js      # Read-aloud player (browser Web Speech API; offline)
+  besorah-home.js     # The home page panels (shared with the offline edition)
+  daily-bread.json    # Rotating pool of 98 daily portions + reflections
   index.json          # Book → chapter → PDF page mapping
   text/<bookid>.json  # Extracted verses per book (generated)
 SCRIPTURE/
@@ -47,6 +50,35 @@ scripts/
 
 Total: **104 books**.
 
+## The home page
+
+Opening the reader lands on the home page (`index.html`, or `#/` in the
+offline edition), which gathers everything you need to start reading:
+
+| Panel | What it does |
+|---|---|
+| **Daily Bread** | A portion of scripture with a short reflection, chosen for the day. The pool holds **98 passages** (Tehillim, Mishle, the prophets, the Messianic writings), and the choice is derived from the date, so the same portion greets you all day and turns over at your local midnight. Press **Read to me** to have it spoken, or open the whole chapter. |
+| **Continue reading** | Picks up at the last chapter you had open. |
+| **Choose your reader** | Who reads to you: the voices installed on your device, with a speed slider and a **Hear this reader** sample so you can compare them. Your choice is remembered and used on every chapter. |
+| **Tehillim** | Today's psalm (the 150 songs walk through the year), a "go to chapter" box, and every chapter one tap away. |
+| **Mishle** | The same, following the day of the month — the traditional way to read the 31 proverbs. |
+| **Marked text** | Every passage you have marked while reading, quoted with its reference. Click one to jump straight back to it in the chapter. |
+| **Bookmarks** | Whole chapters and single verses saved with ☆, plus Export/Import of everything you have kept. |
+
+The full table of contents now lives on **All Books** (`books.html`).
+
+## Marking text
+
+While reading a chapter, **select any words** — a small **✎ Mark text**
+bubble appears; click it and the passage is highlighted in gold and added to
+the Marked text panel on the home page. Click an existing highlight to remove
+it. Marks work in verses and in the long-form prose books, may span divine
+names, and merge when they overlap.
+
+Marks are stored in your browser's `localStorage`, exactly like bookmarks —
+nothing is sent anywhere. They are included in the home page's **Export** file,
+so they move with your bookmarks between devices or browsers.
+
 ## Reading features
 
 Each chapter page includes a **🔊 Read aloud** player. It uses the browser's
@@ -60,6 +92,7 @@ it works the same offline as online, including inside `besorah-offline.html`.
   still toggles a bookmark, as before).
 - A **speed slider** and **voice picker** let you tune the narration; your
   choices are remembered on your device (`localStorage`) and never leave it.
+  The same settings are on the home page under **Choose your reader**.
 - The player defaults to the **best-sounding voice** your device offers
   (preferring "natural"/"neural"/enhanced voices) until you pick another.
 
@@ -82,9 +115,10 @@ You have three ways to read the canon offline. Pick whichever is easiest.
 ### Option 1 — Just double-click `besorah-offline.html` (zero setup)
 
 A single self-contained HTML file at the repo root bundles every book
-and every chapter inline. No web server, no Python, no internet
-required. Download the repo, open `besorah-offline.html` in any modern
-browser, and read.
+and every chapter inline — including the home page, the Daily Bread pool
+and marked text. No web server, no Python, no internet required.
+Download the repo, open `besorah-offline.html` in any modern browser,
+and read.
 
 The only feature that needs the full repo (rather than just the one
 file) is the **PDF** cross-reference link on each chapter — that opens
@@ -130,6 +164,11 @@ python3 scripts/fix_broken_words.py    # repairs words split across PDF line bre
 python3 scripts/verify_transliteration.py  # checks divine names are wrapped & no Hebrew "disappeared"
 python3 scripts/build_offline.py       # rebuilds besorah-offline.html
 ```
+
+To change what the Daily Bread serves, edit `assets/daily-bread.json` — each
+entry is a book id, chapter, verse range, theme and reflection; the verse text
+itself is always read from `assets/text/`, so a portion can never drift from
+the canon. Rerun `build_offline.py` afterwards to refresh the offline edition.
 
 `verify_transliteration.py` cross-checks the rendered text against the
 CLAUDE.md mapping tables (imported from `transliterate.py`): it fails if a

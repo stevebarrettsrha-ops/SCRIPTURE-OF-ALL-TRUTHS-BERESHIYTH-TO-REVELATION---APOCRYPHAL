@@ -12,6 +12,7 @@ Usage:
 """
 import json
 import os
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -20,6 +21,8 @@ TEXT_DIR = ROOT / "assets" / "text"
 STYLE_PATH = ROOT / "assets" / "style.css"
 MARKS_JS_PATH = ROOT / "assets" / "besorah-marks.js"
 TTS_JS_PATH = ROOT / "assets" / "besorah-tts.js"
+HOME_JS_PATH = ROOT / "assets" / "besorah-home.js"
+DAILY_PATH = ROOT / "assets" / "daily-bread.json"
 OUTPUT = ROOT / "besorah-offline.html"
 
 
@@ -38,6 +41,16 @@ def load_all_text():
 
 def load_style():
     return STYLE_PATH.read_text(encoding="utf-8")
+
+
+def escape_script_close(js):
+    """Make JavaScript safe to inline inside a <script> block.
+
+    Only "</script" can end the block early, so that is the one sequence
+    escaped — blanket-escaping every "</" would silently break regular
+    expressions such as /</g.
+    """
+    return re.sub(r"</(?=script)", "<\\\\/", js, flags=re.IGNORECASE)
 
 
 HTML_TEMPLATE = r"""<!DOCTYPE html>
@@ -67,16 +80,38 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 </head>
 <body>
 
-<!-- ============ INDEX VIEW ============ -->
-<div id="view-index" class="view active">
+<!-- ============ HOME VIEW ============ -->
+<div id="view-home" class="view active">
   <div class="offline-banner">OFFLINE EDITION — all 104 books bundled in this single file</div>
   <header class="site-header">
     <h1>THE BESORAH</h1>
     <div class="sub">Bereshith &mdash; to &mdash; Ḥazon &mdash; with the Apocrypha</div>
+    <nav><a href="#/books">All 104 Books &rarr;</a></nav>
+  </header>
+  <main class="home">
+    <section class="card daily-card" id="daily-card"></section>
+    <div class="home-row">
+      <section class="card" id="continue-card"></section>
+      <section class="card" id="reader-card"></section>
+    </div>
+    <div class="home-row">
+      <section class="card quick-card" id="tehillim-card"></section>
+      <section class="card quick-card" id="mishle-card"></section>
+    </div>
+    <section class="card" id="marked-card"></section>
+    <section class="card" id="bookmarks-card"></section>
+  </main>
+</div>
+
+<!-- ============ INDEX (ALL BOOKS) VIEW ============ -->
+<div id="view-index" class="view">
+  <header class="site-header">
+    <h1>THE BESORAH</h1>
+    <div class="sub">Bereshith &mdash; to &mdash; Ḥazon &mdash; with the Apocrypha</div>
+    <nav><a href="#/">&larr; Home</a></nav>
   </header>
   <main>
     <input type="search" id="search" placeholder="Search for a book (Hebrew or English name)…" autocomplete="off">
-    <div id="reading-state"></div>
     <div id="content"></div>
   </main>
 </div>
@@ -86,7 +121,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
   <header class="site-header">
     <h1 id="book-page-title">THE BESORAH</h1>
     <div class="sub" id="book-page-section"></div>
-    <nav><a href="#/">&larr; All Books</a></nav>
+    <nav><a href="#/">⌂ Home</a><a href="#/books">&larr; All Books</a></nav>
   </header>
   <main>
     <div class="book-title">
@@ -101,7 +136,8 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 <div id="view-chapter" class="view">
   <div class="chapter-bar">
     <div class="title">
-      <a href="#/" style="margin-right:0.6rem;">&larr;</a>
+      <a href="#/" title="Home" style="margin-right:0.4rem;">⌂</a>
+      <a href="#/books" title="All books" style="margin-right:0.6rem;">&larr;</a>
       <span class="heb" id="bar-heb">…</span>
       <span class="eng" id="bar-eng"></span>
       <span id="bar-ch" style="margin-left:0.6rem; color: var(--ink-dim);"></span>
@@ -122,6 +158,8 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
       <div class="chapter-num" id="ch-num"></div>
       <div id="verses" class="verses"></div>
       <p class="note" id="loading" style="display:none;">Loading chapter…</p>
+      <p class="note mark-hint">Select any words to mark them — everything you
+        mark is gathered on the <a href="#/">home page</a>.</p>
     </div>
   </main>
   <footer class="chapter-footer">
@@ -135,6 +173,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 <!-- ============ EMBEDDED DATA ============ -->
 <script id="index-data" type="application/json">__INDEX_JSON__</script>
 <script id="text-data" type="application/json">__TEXT_JSON__</script>
+<script id="daily-data" type="application/json">__DAILY_JSON__</script>
 
 <!-- ============ MARKS LIBRARY ============ -->
 <script>
@@ -144,6 +183,11 @@ __MARKS_JS__
 <!-- ============ READ-ALOUD (TTS) LIBRARY ============ -->
 <script>
 __TTS_JS__
+</script>
+
+<!-- ============ HOME PAGE ============ -->
+<script>
+__HOME_JS__
 </script>
 
 <script>
@@ -160,105 +204,31 @@ __TTS_JS__
 
   const INDEX = JSON.parse(document.getElementById('index-data').textContent);
   const TEXT  = JSON.parse(document.getElementById('text-data').textContent);
+  const DAILY = JSON.parse(document.getElementById('daily-data').textContent);
 
-  // Hash-router URL builder for the offline single-file edition.
-  function chapterUrl(bookId, ch, verse) {
-    var base = `#/book/${encodeURIComponent(bookId)}/${ch}`;
-    return verse != null ? base + `/v/${verse}` : base;
+  // Hash-router URL builders for the offline single-file edition.
+  function chapterUrl(bookId, ch, verse, markId) {
+    var url = `#/book/${encodeURIComponent(bookId)}/${ch}`;
+    if (verse != null) url += `/v/${verse}`;
+    if (markId) url += `/m/${encodeURIComponent(markId)}`;
+    return url;
+  }
+  function bookUrl(bookId) {
+    return `#/book/${encodeURIComponent(bookId)}`;
   }
 
-  function refLabel(m) {
-    var ch = m.chapterCount > 1 ? ' ' + m.chapter : '';
-    return m.verse != null
-      ? `${m.hebrew}${ch}:${m.verse}`
-      : `${m.hebrew}${ch}`;
-  }
-
-  // ---------- READING STATE (Continue / Bookmarks) ----------
-  function renderReadingState() {
-    const root = document.getElementById('reading-state');
-    root.innerHTML = '';
-    const last = BesorahMarks.getLastRead();
-    const marks = BesorahMarks.getBookmarks();
-
-    if (last) {
-      const card = document.createElement('a');
-      card.className = 'continue-card';
-      card.href = chapterUrl(last.bookId, last.chapter);
-      const chSuffix = last.chapterCount > 1 ? ' ' + last.chapter : '';
-      card.innerHTML =
-        '<span class="continue-label">Continue reading</span>' +
-        `<span class="continue-target"><span class="heb">${last.hebrew}${chSuffix}</span>` +
-        `<span class="eng">${last.english}</span></span>`;
-      root.appendChild(card);
-    }
-
-    if (marks.length) {
-      const section = document.createElement('section');
-      section.className = 'section bookmarks-section';
-      const head = document.createElement('div');
-      head.className = 'bookmarks-head';
-      head.innerHTML =
-        `<h2>My Bookmarks <span class="count">(${marks.length})</span></h2>` +
-        '<div class="bookmarks-tools">' +
-        '<button id="bm-export" type="button">Export</button>' +
-        '<label class="bm-import-label">Import' +
-        '<input id="bm-import" type="file" accept="application/json" hidden></label>' +
-        '<button id="bm-clear" type="button">Clear</button>' +
-        '</div>';
-      section.appendChild(head);
-
-      const grid = document.createElement('div');
-      grid.className = 'book-grid';
-      for (const m of marks) {
-        const a = document.createElement('a');
-        a.className = 'book-link bookmark-item' + (m.verse != null ? ' bm-verse' : '');
-        a.href = chapterUrl(m.bookId, m.chapter, m.verse);
-        const verseAttr = m.verse != null ? ` data-v="${m.verse}"` : '';
-        a.innerHTML =
-          `<span class="heb">${refLabel(m)}</span>` +
-          `<span class="eng">${m.english}</span>` +
-          `<button class="bm-remove" type="button" title="Remove" ` +
-          `data-id="${m.bookId}" data-ch="${m.chapter}"${verseAttr}>×</button>`;
-        grid.appendChild(a);
-      }
-      section.appendChild(grid);
-      root.appendChild(section);
-
-      section.querySelectorAll('.bm-remove').forEach(btn => {
-        btn.addEventListener('click', e => {
-          e.preventDefault();
-          e.stopPropagation();
-          const v = btn.dataset.v ? parseInt(btn.dataset.v, 10) : undefined;
-          BesorahMarks.removeBookmark(btn.dataset.id, parseInt(btn.dataset.ch, 10), v);
-          renderReadingState();
-        });
-      });
-      document.getElementById('bm-export').addEventListener('click', () => {
-        BesorahMarks.exportToFile();
-      });
-      document.getElementById('bm-clear').addEventListener('click', () => {
-        if (confirm('Remove all bookmarks and reset Continue Reading?')) {
-          BesorahMarks.clearAll();
-          renderReadingState();
-        }
-      });
-      document.getElementById('bm-import').addEventListener('change', e => {
-        const f = e.target.files[0];
-        if (!f) return;
-        BesorahMarks.importFromFile(f, err => {
-          if (err) alert('Could not read that bookmark file.');
-          else renderReadingState();
-        });
-      });
-    }
+  // ---------- HOME ----------
+  function renderHome() {
+    BesorahHome.render({
+      index: INDEX,
+      pool: DAILY.pool,
+      loadBook: id => TEXT[id],
+      chapterUrl: chapterUrl,
+      bookUrl: bookUrl
+    });
   }
 
   // ---------- ROUTING ----------
-  // hash forms:
-  //   #/                   -> index
-  //   #/book/<id>          -> book chapters
-  //   #/book/<id>/<ch>     -> chapter view
   function show(viewId) {
     for (const v of document.querySelectorAll('.view')) v.classList.remove('active');
     document.getElementById(viewId).classList.add('active');
@@ -268,22 +238,30 @@ __TTS_JS__
   function route() {
     const h = location.hash || '#/';
     // Forms:
-    //   #/                       -> index
-    //   #/book/<id>              -> book chapters
-    //   #/book/<id>/<ch>         -> chapter view
-    //   #/book/<id>/<ch>/v/<n>   -> chapter view, scrolled to verse n
-    const m = h.match(/^#\/book\/([^/]+)(?:\/(\d+)(?:\/v\/(\d+))?)?\/?$/);
-    if (!m) {
-      renderReadingState();
+    //   #/                              -> home (Daily Bread & co.)
+    //   #/books                         -> all 104 books
+    //   #/book/<id>                     -> book chapters
+    //   #/book/<id>/<ch>                -> chapter view
+    //   #/book/<id>/<ch>/v/<n>          -> chapter view, scrolled to verse n
+    //   #/book/<id>/<ch>/m/<markId>     -> chapter view, scrolled to a mark
+    if (/^#\/books\/?$/.test(h)) {
       renderIndex(document.getElementById('search').value);
       show('view-index');
+      return;
+    }
+    const m = h.match(
+      /^#\/book\/([^/]+)(?:\/(\d+)(?:\/v\/(\d+))?(?:\/m\/([^/]+))?)?\/?$/);
+    if (!m) {
+      renderHome();
+      show('view-home');
       return;
     }
     const bookId = decodeURIComponent(m[1]);
     const ch = m[2] ? parseInt(m[2], 10) : null;
     const verse = m[3] ? parseInt(m[3], 10) : null;
+    const markId = m[4] ? decodeURIComponent(m[4]) : null;
     if (ch) {
-      renderChapter(bookId, ch, verse);
+      renderChapter(bookId, ch, verse, markId);
       show('view-chapter');
     } else {
       renderBook(bookId);
@@ -315,7 +293,7 @@ __TTS_JS__
       for (const b of books) {
         const a = document.createElement('a');
         a.className = 'book-link';
-        a.href = `#/book/${encodeURIComponent(b.id)}`;
+        a.href = bookUrl(b.id);
         a.innerHTML = `<span class="heb">${b.hebrew}</span><span class="eng">${b.english}</span>`;
         grid.appendChild(a);
       }
@@ -398,7 +376,7 @@ __TTS_JS__
     }
   }
 
-  function renderChapter(bookId, chapter, verseAnchor) {
+  function renderChapter(bookId, chapter, verseAnchor, markAnchor) {
     const book = INDEX.books.find(b => b.id === bookId);
     const text = TEXT[bookId];
     const verseBox = document.getElementById('verses');
@@ -424,13 +402,13 @@ __TTS_JS__
 
     document.getElementById('pdf-link').href = `SCRIPTURE/${ch.pdf}#page=${ch.page}`;
 
-    const prevHref = chapter > 1 ? `#/book/${book.id}/${chapter - 1}` : '#';
-    const nextHref = chapter < book.chapter_count ? `#/book/${book.id}/${chapter + 1}` : '#';
+    const prevHref = chapterUrl(book.id, chapter - 1);
+    const nextHref = chapterUrl(book.id, chapter + 1);
     setLink('prev',  prevHref, chapter <= 1);
     setLink('prev2', prevHref, chapter <= 1);
     setLink('next',  nextHref, chapter >= book.chapter_count);
     setLink('next2', nextHref, chapter >= book.chapter_count);
-    document.getElementById('book-toc').href = `#/book/${book.id}`;
+    document.getElementById('book-toc').href = bookUrl(book.id);
 
     // Bookmark + last-read tracking (localStorage; nothing leaves the device)
     BesorahMarks.recordLastRead(book, chapter);
@@ -464,9 +442,14 @@ __TTS_JS__
         verseBox.appendChild(p);
       }
       BesorahMarks.wireVerseClicks(verseBox, book, chapter);
-      BesorahMarks.scrollToVerse(verseAnchor);
     }
+    // Marked text: paint saved highlights and let a fresh selection be
+    // marked. Wired before the read-aloud player so tapping a highlight
+    // offers to remove it instead of starting playback there.
+    BesorahMarks.wireTextMarks(verseBox, book, chapter);
     BesorahTTS.bind(verseBox);
+    if (markAnchor) BesorahMarks.scrollToTextMark(markAnchor);
+    else BesorahMarks.scrollToVerse(verseAnchor);
   }
 
   // ---------- INIT ----------
@@ -486,28 +469,38 @@ def main():
     index = load_index()
     text = load_all_text()
     style = load_style()
+    with DAILY_PATH.open(encoding="utf-8") as f:
+        daily = json.load(f)
     marks_js = MARKS_JS_PATH.read_text(encoding="utf-8")
     tts_js = TTS_JS_PATH.read_text(encoding="utf-8")
+    home_js = HOME_JS_PATH.read_text(encoding="utf-8")
 
     index_json = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
     text_json = json.dumps(text, ensure_ascii=False, separators=(",", ":"))
+    daily_json = json.dumps(daily, ensure_ascii=False, separators=(",", ":"))
 
     # Embedded data lives in <script type="application/json"> tags, so the
     # only sequence that can break us is a literal "</script>" inside JSON.
     # Escape its closing slash to keep the parser happy.
     index_json = index_json.replace("</", "<\\/")
     text_json = text_json.replace("</", "<\\/")
-    # Same protection for the inlined libraries (regular <script>).
-    marks_js_safe = marks_js.replace("</", "<\\/")
-    tts_js_safe = tts_js.replace("</", "<\\/")
+    daily_json = daily_json.replace("</", "<\\/")
+    # Same protection for the inlined libraries (regular <script>), but only
+    # the sequence that can actually close the block. Escaping every "</"
+    # would corrupt regex literals such as /</g.
+    marks_js_safe = escape_script_close(marks_js)
+    tts_js_safe = escape_script_close(tts_js)
+    home_js_safe = escape_script_close(home_js)
 
     html = (
         HTML_TEMPLATE
         .replace("__STYLE__", style)
         .replace("__INDEX_JSON__", index_json)
         .replace("__TEXT_JSON__", text_json)
+        .replace("__DAILY_JSON__", daily_json)
         .replace("__MARKS_JS__", marks_js_safe)
         .replace("__TTS_JS__", tts_js_safe)
+        .replace("__HOME_JS__", home_js_safe)
     )
 
     OUTPUT.write_text(html, encoding="utf-8")
@@ -515,6 +508,7 @@ def main():
     print(f"Wrote {OUTPUT.relative_to(ROOT)} ({size_mb:.1f} MB)")
     print(f"  Books indexed:  {len(index['books'])}")
     print(f"  Text bundles:   {len(text)}")
+    print(f"  Daily portions: {len(daily.get('pool', []))}")
 
 
 if __name__ == "__main__":

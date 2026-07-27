@@ -22,7 +22,8 @@
 
 <div class="chapter-bar">
   <div class="title">
-    <a href="index.html" style="margin-right:0.6rem;">&larr;</a>
+    <a href="index.html" title="Home" style="margin-right:0.4rem;">⌂</a>
+    <a href="books.html" title="All books" style="margin-right:0.6rem;">&larr;</a>
     <span class="heb" id="bar-heb">…</span>
     <span class="eng" id="bar-eng"></span>
     <span id="bar-ch" style="margin-left:0.6rem; color: var(--ink-dim);"></span>
@@ -44,6 +45,8 @@
     <div class="chapter-num" id="ch-num"></div>
     <div id="verses" class="verses"></div>
     <p class="note" id="loading">Loading chapter…</p>
+    <p class="note mark-hint">Select any words to mark them — everything you mark
+      is gathered on the <a href="index.html">home page</a>.</p>
   </div>
 </main>
 
@@ -59,6 +62,7 @@ const params  = new URLSearchParams(location.search);
 const bookId  = params.get('id');
 const chapter = parseInt(params.get('ch'), 10) || 1;
 const verseAnchor = parseInt(params.get('v'), 10) || null;
+const markAnchor = params.get('m');   // a marked passage arrived at from home
 
 fetch('assets/index.json')
   .then(r => r.json())
@@ -119,11 +123,15 @@ fetch('assets/index.json')
 
     // Wire after verses are rendered (below — defer to next tick).
     queueMicrotask(() => {
-      BesorahMarks.wireVerseClicks(
-        document.getElementById('verses'), book, chapter
-      );
-      BesorahTTS.bind(document.getElementById('verses'));
-      BesorahMarks.scrollToVerse(verseAnchor);
+      const versesEl = document.getElementById('verses');
+      BesorahMarks.wireVerseClicks(versesEl, book, chapter);
+      // Marked text: paint saved highlights and let a fresh selection be
+      // marked. Wired before the read-aloud player so tapping a highlight
+      // offers to remove it instead of starting playback.
+      BesorahMarks.wireTextMarks(versesEl, book, chapter);
+      BesorahTTS.bind(versesEl);
+      if (markAnchor) BesorahMarks.scrollToTextMark(markAnchor);
+      else BesorahMarks.scrollToVerse(verseAnchor);
     });
 
     // Render verses
