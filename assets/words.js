@@ -133,16 +133,22 @@
   };
 
   // --- 4. house style -------------------------------------------------
-  // The Besorah renders qodesh as "set-apart" throughout — the Torah, the
-  // Prophets, the Writings and the Messianic writings use it 747 times and
-  // "set-apartness" 25 times. The apocryphal books were set from other
-  // editions and still carry "holy", "holiness" and "godly", so they are
-  // brought into line here: holy → set-apart, godly → set-apart.
+  // The Besorah does not use the Latin- and Greek-rooted church words. The
+  // Torah, the Prophets, the Writings and the Messianic writings contain
+  // no "holy", no "sacred", no "saints", no "sanctify", no "glory", no
+  // "cross", no "hell", no "ungodly" — not one occurrence between them.
+  // They use set-apart, set-apart ones, esteem, stake, Sheol, wicked. The
+  // apocryphal books were set from other editions and arrived carrying the
+  // church words, so this table brings them into line, and every entry is
+  // what the main books already say in the parallel place.
   //
   // Longer keys are matched first, so "holy of holies" and "holy ones"
-  // resolve before the bare word. Capitalisation is inherited from what
-  // was matched, so "Holy" becomes "Set-apart".
+  // resolve before the bare word. Capitalisation is inherited word by
+  // word, so "Holy One" becomes "Set-apart One".
   var HOUSE = {
+    // --- qodesh: the Latin-rooted words for what is set apart ----------
+    // "holy" appears 0 times in the Torah, the Prophets, the Writings and
+    // the Messianic writings, which use "set-apart" 747 times.
     "holy of holies": "Most Set-apart Place",
     // The church in Yerushalayim is a building with a name; it keeps it.
     "holy sepulcher": "Holy Sepulcher",
@@ -152,9 +158,118 @@
     "holy one": "set-apart one",
     "holy place": "set-apart place",
     "holiness": "set-apartness",
-    "godliness": "set-apartness",
+    "holy": "set-apart",
+    // sanctify → set apart          (Shemoth 19:10, 1 Corinthians 6:11)
+    "sanctification": "set-apartness",
+    "sanctified": "set-apart",
+    "sanctifies": "sets apart",
+    "sanctifying": "setting apart",
+    "sanctify": "set apart",
+    // consecrate → set apart        (the same qadash)
+    "consecration": "setting apart",
+    "consecrated": "set-apart",
+    "consecrates": "sets apart",
+    "consecrate": "set apart",
+    // hallowed → set-apart          (Mattithyahu 6:9, Luke 11:2)
+    "hallowed": "set-apart",
+    "hallows": "sets apart",
+    "hallow": "set apart",
+    // sacred → set-apart            (no "sacred" anywhere in the canon)
+    "sacred": "set-apart",
+    // saints → set-apart ones       (Romans 1:7, Ephesians 1:1, Ḥazon 13:7)
+    "saints": "set-apart ones",
+    "saintly": "set-apart",
+    "sainted": "set-apart",
+    "saint": "set-apart one",
+
+    // --- eusebeia: reverence, not "godliness" --------------------------
+    // The Messianic writings render it "reverence" nine times over
+    // (1 Timothy 2:2, 4:7, 4:8, 6:6, 6:11; 2 Kepha 1:3, 1:6, 3:11;
+    // Titus 1:1) and "reverently" in Titus 2:12.
+    "godliness": "reverence",
     "godly": "set-apart",
-    "holy": "set-apart"
+    "piety": "reverence",
+    "pious": "reverent",
+    "piously": "reverently",
+    "devoutly": "reverently",
+    "devout": "reverent",
+
+    // --- asebeia: wicked, not "ungodly" --------------------------------
+    // Romans 5:6 and 4:5, 1 Kepha 4:18, 2 Kepha 2:5 and Yahudah 1:15 all
+    // read "wicked"; Romans 1:18 and 11:26 and Titus 2:12 "wickedness".
+    "ungodliness": "wickedness",
+    "ungodly": "wicked",
+    "godlessness": "wickedness",
+    "godless": "wicked",
+    "impieties": "wickedness",
+    "impiety": "wickedness",
+    "impiously": "wickedly",
+    "impious": "wicked",
+    "godlessly": "wickedly",
+
+    // --- doxa: esteem, not "glory" -------------------------------------
+    // "glory" appears 0 times in the main books, which use "esteem" 383
+    // times (Romans 3:23, Yeshayahu 6:3, Tehillim 19:1, Yahuchanon 1:14)
+    // and "esteem" as the verb (Yahuchanon 17:1 "Esteem Your Son").
+    // "glory in" is boasting, not esteem — the main books say "boast"
+    // (1 Corinthians 1:31, Yehezqel 35:13).
+    "glories in": "boasts in",
+    "glorying": "boasting",
+    "gloried": "boasted",
+    "glories": "splendours",
+    "gloriously": "with esteem",
+    "glorious": "esteemed",
+    "glorified": "esteemed",
+    "glorifies": "esteems",
+    "glorifying": "esteeming",
+    "glorify": "esteem",
+    "glory": "esteem",
+
+    // --- divine → Mighty-like ------------------------------------------
+    // 2 Kepha 1:3-4 reads "His Mighty-like power" and "partakers of the
+    // Mighty-like nature". The main books use "divine" only as the verb
+    // for divination (Mikah 3:11, Yeḥezqel 13:9), so the adjective is
+    // listed by its collocations and the verb is left untouched.
+    "divine ruach": "Mighty-like ruach",
+    "divine justice": "Mighty-like justice",
+    "divine law": "Mighty-like law",
+    "divine laws": "Mighty-like laws",
+    "divine fire": "Mighty-like fire",
+    "divine nature": "Mighty-like nature",
+    "divine instructions": "Mighty-like instructions",
+    "divine instruction": "Mighty-like instruction",
+    "divine intervention": "Mighty-like intervention",
+    "divine matters": "Mighty-like matters",
+    "divine life": "Mighty-like life",
+    "divine philosophy": "Mighty-like philosophy",
+    "divine wrath": "Mighty-like wrath",
+    "divine hymns": "Mighty-like hymns",
+    "divine reason": "Mighty-like reason",
+    "divine legislation": "Mighty-like legislation",
+    "divine throne": "Mighty-like throne",
+    "divine providence": "Mighty-like providence",
+    "divine inheritance": "Mighty-like inheritance",
+    "divine mitsvot": "Mighty-like mitsvot",
+    "divine power": "Mighty-like power",
+    "divine hand": "Mighty-like hand",
+    "divine knowledge": "Mighty-like knowledge",
+    "divine and": "Mighty-like and",
+    // Standing alone at the end of a clause.
+    "was divine": "was Mighty-like",
+    "truly divine": "truly Mighty-like",
+    "and divine": "and Mighty-like",
+    "be divine": "be Mighty-like",
+    "godlike": "Mighty-like",
+
+    // --- the stake, not the cross --------------------------------------
+    // Mattithyahu 16:24, 1 Corinthians 1:18, Philippians 2:8, Galatians
+    // 6:14 — "stake" 37 times, "cross" never.
+    "cross": "stake",
+
+    // --- Sheol, not hell -----------------------------------------------
+    // Four of these verses gloss it themselves — "hell (Sheol)" — and
+    // CLAUDE.md gives grave/underworld as Sheol.
+    "hell": "Sheol"
   };
 
   // --- 5. inline verse markers ----------------------------------------
@@ -208,6 +323,10 @@
   var STRAY_STAR = /\*+/g;
   // A stray middle dot the scanner dropped into a word gap.
   var MIDDLE_DOT = /·/g;
+  // Some editions gloss the word they are translating — "hell (Sheol)",
+  // "Sheol (the grave)". Once both halves say the same thing the gloss is
+  // noise, so it is collapsed before the word tables run.
+  var SELF_GLOSS = /\b(hell|Sheol)\s*\((?:Sheol|the grave|hell)\)/gi;
   var BRACKETS = /[[\]{}]/g;
   // A bracketed number whose digits the scanner mangled: [4S] is [45].
   var BRACKET_DIGITS = /\[\s*([0-9SlIOB]{1,3})\s*[J\]\)}]/g;
@@ -250,6 +369,7 @@
       s = s.replace(STRAY_STAR, "");
     }
     s = s.replace(MIDDLE_DOT, "");
+    s = s.replace(SELF_GLOSS, "$1");
     return s;
   }
 

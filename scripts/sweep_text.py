@@ -122,6 +122,8 @@ FOOTNOTE = re.compile(r"\s\*{1,3}\s+(\S[\s\S]*)$")
 FOOTNOTE_BARE = re.compile(r"\s*\*{1,3}\s*$")
 STRAY_STAR = re.compile(r"\*+")
 MIDDLE_DOT = re.compile("\u00b7")
+# Some editions gloss the word they are translating — "hell (Sheol)".
+SELF_GLOSS = re.compile(r"\b(hell|Sheol)\s*\((?:Sheol|the grave|hell)\)", re.I)
 BRACKETS = re.compile(r"[\[\]{}]")
 BRACKET_DIGITS = re.compile(r"\[\s*([0-9SlIOB]{1,3})\s*[J\])}]")
 DIGIT_FOR_LETTER = {"S": "5", "l": "1", "I": "1", "O": "0", "B": "8"}
@@ -157,6 +159,7 @@ def repair_glyphs(text):
             s = s[:note.start()] + ' <span class="fn">' + body + "</span>"
         s = STRAY_STAR.sub("", s)
     s = MIDDLE_DOT.sub("", s)
+    s = SELF_GLOSS.sub(r"\1", s)
     return s
 
 
