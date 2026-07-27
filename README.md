@@ -225,24 +225,38 @@ asterisks and no minus signs at all; those books arrived with 417 brackets,
 
 ### House style
 
-The Besorah renders *qodesh* as **set-apart** throughout: the Torah, the
-Prophets, the Writings and the Messianic writings use it 747 times, and
-"set-apartness" 25 times. The apocryphal books were set from other editions
-and still carried the anglicised words, so the `HOUSE` table in `words.js`
-brings them into line — 534 replacements:
+The Torah, the Prophets, the Writings and the Messianic writings contain no
+"holy", no "glory", no "sacred", no "saints", no "sanctify", no "ungodly",
+no "cross", no "hell" — not one occurrence between them. They say set-apart,
+esteem, set-apart ones, wicked, stake, Sheol. The apocryphal books were set
+from other editions and arrived carrying the church words, so the `HOUSE`
+table in `words.js` brings them into line — **1,421 replacements in 36
+books**, every one of them what the main books already say in the parallel
+place:
 
-| Was | Now |
-|---|---|
-| holy, Holy | set-apart, Set-apart |
-| holy ones, Holy One | set-apart ones, Set-apart One |
-| holy place, holy of holies, most holy | set-apart place, Most Set-apart Place, most set-apart |
-| holiness | set-apartness |
-| godly, godliness | set-apart, set-apartness |
+| Was | Now | Where the main books say it |
+|---|---|---|
+| holy, holiness, sacred, hallowed | set-apart, set-apartness | Yeshayahu 6:3, Mattithyahu 6:9 |
+| holy ones, saints | set-apart ones | Romans 1:7, Ḥazon 13:7 |
+| sanctify, consecrate | set apart | Shemoth 19:10, 1 Corinthians 6:11 |
+| glory, glorify, glorious | esteem, esteemed | Romans 3:23, Yahuchanon 17:1 |
+| glory in, glorying | boast in, boasting | 1 Corinthians 1:31 |
+| ungodly, godless, impious | wicked | Romans 5:6, Yahudah 1:15 |
+| godliness, piety, devout | reverence, reverent | 1 Timothy 2:2, Titus 2:12 |
+| cross | stake | Mattithyahu 16:24, Philippians 2:8 |
+| hell | Sheol | the verses gloss it themselves — "hell (Sheol)" |
+| divine (adjective), Godlike | Mighty-like | 2 Kepha 1:3 |
 
 Capitalisation is inherited word by word, so "Holy One" becomes "Set-apart
-One" rather than "Set-apart one". One phrase is deliberately exempt: the
-Church of the **Holy Sepulcher**, named in an editorial footnote, is a
-building with a name and keeps it.
+One" rather than "Set-apart one". Two things are deliberately left alone:
+the **Church of the Holy Sepulcher**, a building with a name, and the **verb**
+"divine" (Mikah 3:11, "her neḇi'im divine for a price"), which is why the
+adjective is listed by its collocations instead.
+
+**[docs/house-style-report.md](docs/house-style-report.md)** has the full
+account: the counts, the verse evidence for every rendering, and four open
+questions left for the reader to decide (majesty, honour, divinity/deity,
+and whether "godly" should follow "pious" to "reverent").
 
 The sweep checks every verse of every book for inline verse markers, word
 forms, stray glyphs, markup that isn't the whitelisted `<span class="dn">` /
