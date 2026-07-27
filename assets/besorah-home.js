@@ -155,17 +155,9 @@
       '<div class="daily-actions">' +
         '<div class="tts-bar" id="daily-tts"></div>' +
         '<a class="card-more" id="daily-open">Open the whole chapter &rarr;</a>' +
-      "</div>" +
-      '<p class="daily-depth"></p>';
+      "</div>";
     root.appendChild(body);
     body.querySelector(".daily-reflection").textContent = entry.reflection;
-    var db = global.BesorahDailyBread;
-    if (db && db.size) {
-      var years = (db.size / 365.25).toFixed(1);
-      body.querySelector(".daily-depth").textContent =
-        "A different portion every day — " + db.size + " of them, drawn from " +
-        "every book, so none comes round again for " + years + " years.";
-    }
     var open = el("daily-open");
     open.href = ctx.chapterUrl(book.id, entry.chapter, entry.from);
 
