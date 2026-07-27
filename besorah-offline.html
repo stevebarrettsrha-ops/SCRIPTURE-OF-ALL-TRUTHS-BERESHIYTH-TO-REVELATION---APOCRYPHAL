@@ -696,12 +696,6 @@ main.home { max-width: 1100px; padding-top: 1.25rem; }
   margin: 0 0 0.4rem;
   max-width: 62ch;
 }
-.daily-depth {
-  margin: 0.9rem 0 0;
-  color: var(--ink-dim);
-  font-size: 0.75rem;
-  letter-spacing: 0.02em;
-}
 .daily-actions {
   display: flex;
   align-items: center;
@@ -4598,17 +4592,9 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
       '<div class="daily-actions">' +
         '<div class="tts-bar" id="daily-tts"></div>' +
         '<a class="card-more" id="daily-open">Open the whole chapter &rarr;</a>' +
-      "</div>" +
-      '<p class="daily-depth"></p>';
+      "</div>";
     root.appendChild(body);
     body.querySelector(".daily-reflection").textContent = entry.reflection;
-    var db = global.BesorahDailyBread;
-    if (db && db.size) {
-      var years = (db.size / 365.25).toFixed(1);
-      body.querySelector(".daily-depth").textContent =
-        "A different portion every day — " + db.size + " of them, drawn from " +
-        "every book, so none comes round again for " + years + " years.";
-    }
     var open = el("daily-open");
     open.href = ctx.chapterUrl(book.id, entry.chapter, entry.from);
 
