@@ -137,12 +137,36 @@ same tables so the data and the site can never disagree:
 python3 scripts/sweep_text.py            # audit all 104 books (exit 1 on issues)
 python3 scripts/sweep_text.py --fix      # repair, then report every change
 python3 scripts/sweep_text.py --verbose  # list each issue individually
+node scripts/check_render.js             # render all 47,937 verses, fail on anything visible
+python3 scripts/check_words_parity.py    # prove words.js and the sweeper agree
 ```
 
+`check_render.js` is the exhaustive check: it runs every verse through the
+same repair and escaping the chapter page uses, then fails on a stray
+bracket, asterisk, minus sign, verse marker, unescaped tag, scanner quote
+scar, doubled space or empty render. `check_words_parity.py` runs both
+implementations of the rules — the browser's and the sweeper's — over every
+verse and fails if they ever differ, which is what keeps the page and the
+data in step.
+
+The apocryphal books add a fourth kind of scar, because they were set from
+scholarly editions rather than from the Besorah plates. The Torah, the
+Prophets, the Writings and the Messianic books contain **no** brackets, no
+asterisks and no minus signs at all; those books arrived with 417 brackets,
+131 minus signs and 48 asterisks between them. `words.js` names each one:
+
+| Glyph | What it was | What is done |
+|---|---|---|
+| `[ ]` `{ }` | a translator's insertion, often left unbalanced because the pair straddles a verse | the words stay, the brackets go |
+| `−` | a minus sign standing in for a hyphen (`hard−hearted`) or a dash (`Ḥanoḵ−for he had shown`) | hyphen inside a compound, em dash before a function word |
+| `*` `**` | a footnote mark | the mark goes; a note behind it is kept and shown as a footnote |
+| `/'` `/,` `./I` | a closing quote the scanner broke apart (`"Yea, lady/' I said"`) | the quote is restored — a slash between two words, `language/lip`, is a real alternative and is left alone |
+| `[4S]` `[SO]` | a verse number whose digits were read as letters | un-mangled, then promoted into a real verse |
+
 The sweep checks every verse of every book for inline verse markers, word
-forms, markup that isn't the whitelisted `<span class="dn">` / `<span
-class="hwhy">`, chapter counts against `index.json`, verse numbering, empty
-text and stray whitespace. Inline markers are promoted into **real verses**
+forms, stray glyphs, markup that isn't the whitelisted `<span class="dn">` /
+`<span class="hwhy">` / `<span class="fn">`, chapter counts against
+`index.json`, verse numbering, empty text and stray whitespace. Inline markers are promoted into **real verses**
 when the numbering allows it (this is how Azaryah 1:18–28 and Sirach 15:13–26
 were recovered), and `words.js` runs again at render time, so a book
 re-extracted from its PDF is still shown correctly.

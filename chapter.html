@@ -4,9 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chapter — The Besorah</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%231a1410%22%2F%3E%3Cpath%20d%3D%22M8%207h16v18H8z%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M16%207v18M11%2012h3M18%2012h3M11%2017h3M18%2017h3%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!-- The reader is meant to work with no network at all, so the web font
+     is loaded without blocking the page: the local Cardo/Garamond/Palatino
+     fallback shows immediately and the web font swaps in if it arrives. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/words.js"></script>
 <script src="assets/pronunciation.js"></script>
@@ -155,10 +160,11 @@ fetch('assets/index.json')
           .replace(/&/g, '&amp;')
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');
-        return esc.replace(
-          /&lt;span class="(dn|hwhy)"&gt;([\s\S]*?)&lt;\/span&gt;/g,
-          '<span class="$1">$2</span>'
-        );
+        // Un-escape only the whitelisted tags, opening and closing handled
+        // separately so a footnote containing a divine name still renders.
+        return esc
+          .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+          .replace(/&lt;\/span&gt;/g, '</span>');
       }
 
       // Long-form chapters (Patriarchs, single-verse books) get single-block prose

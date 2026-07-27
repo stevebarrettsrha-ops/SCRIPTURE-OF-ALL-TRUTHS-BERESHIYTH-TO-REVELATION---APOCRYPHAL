@@ -72,6 +72,8 @@
   // ---- text helpers ---------------------------------------------------
   // Spoken text for a verse / prose element. Drops:
   //   .verse-n  — the leading verse number (not read aloud)
+  //   .fn       — a footnote carried over from the source edition, which
+  //               belongs on the page but not in the reading.
   //   .hwhy     — the paleo-Hebrew tetragrammaton glyph "HWHY", which is
   //               only ever shown as "(YAHUAH) HWHY"; the Name is already
   //               spoken from the neighbouring .dn span, so the glyph would
@@ -80,7 +82,7 @@
   // text, which is exactly what we want spoken ("Yahusha", "Aluahim", …).
   function elText(el) {
     var clone = el.cloneNode(true);
-    var drop = clone.querySelectorAll(".verse-n, .hwhy");
+    var drop = clone.querySelectorAll(".verse-n, .hwhy, .fn");
     for (var i = 0; i < drop.length; i++) {
       drop[i].parentNode.removeChild(drop[i]);
     }

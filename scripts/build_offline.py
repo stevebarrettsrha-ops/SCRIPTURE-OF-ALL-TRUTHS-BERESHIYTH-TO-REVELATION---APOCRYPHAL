@@ -61,6 +61,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Besorah — Offline</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%231a1410%22%2F%3E%3Cpath%20d%3D%22M8%207h16v18H8z%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M16%207v18M11%2012h3M18%2012h3M11%2017h3M18%2017h3%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E">
 <style>
 __STYLE__
 /* Offline-only tweaks */
@@ -370,10 +371,11 @@ __HOME_JS__
     // Word forms are corrected on the way to the screen (assets/words.js).
     const fixed = window.BesorahWords ? BesorahWords.repair(raw) : raw;
     const esc = fixed.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    return esc.replace(
-      /&lt;span class="(dn|hwhy)"&gt;([\s\S]*?)&lt;\/span&gt;/g,
-      '<span class="$1">$2</span>'
-    );
+    // Un-escape only the whitelisted tags, opening and closing handled
+    // separately so a footnote containing a divine name still renders.
+    return esc
+      .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+      .replace(/&lt;\/span&gt;/g, "</span>");
   }
 
   function setLink(elId, href, disabled) {

@@ -48,10 +48,11 @@
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;");
-    return esc.replace(
-      /&lt;span class="(dn|hwhy)"&gt;([\s\S]*?)&lt;\/span&gt;/g,
-      '<span class="$1">$2</span>'
-    );
+    // Un-escape only the whitelisted tags, opening and closing handled
+    // separately so a footnote containing a divine name still renders.
+    return esc
+      .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+      .replace(/&lt;\/span&gt;/g, "</span>");
   }
 
   function plain(raw) {

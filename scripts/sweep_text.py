@@ -43,8 +43,8 @@ WORDS_JS = ROOT / "assets" / "words.js"
 PRON_JS = ROOT / "assets" / "pronunciation.js"
 
 TAG = re.compile(r"<[^>]+>")
-ALLOWED_TAG = re.compile(r'<span class="(?:dn|hwhy)">|</span>')
-VERSE_MARKER = re.compile(r"\[\s*(\d{1,3})\s*[J\]\)]\s*")
+ALLOWED_TAG = re.compile(r'<span class="(?:dn|hwhy|fn)">|</span>')
+VERSE_MARKER = re.compile(r"\[\s*(\d{1,3})\s*[J\])}]\s*")
 # The double numbering some editions print for the Shepherd of Hermas —
 # "10[76]:2" — is a cross-reference, not part of the reading.
 DUAL_REFERENCE = re.compile(r"\b\d{1,3}\s*\[\s*\d{1,3}\s*[J\]\)]\s*:\s*\d{1,3}\s*")
@@ -93,7 +93,58 @@ def apply_case(sample, replacement):
     return replacement
 
 
-def repair_plain(text, log=None, where=""):
+# ---------------------------------------------------------------- glyphs
+# Mirror of the glyph layer in assets/words.js — see the commentary there.
+# scripts/check_words_parity.py proves the two agree over every verse.
+MINUS = re.compile("\u2212")
+# Mirror of the minus-sign rules in words.js.
+LETTER = "A-Za-z\u00c0-\u024f\u1e00-\u1eff0-9"
+DASH_WORDS = ("for|he|she|it|they|we|you|I|the|a|an|and|but|who|whom|that|"
+              "which|so|as|when|then|if|because|even|yet|to|in|of|on|with|"
+              "there|this|these|those")
+MINUS_DASH = re.compile("([" + LETTER + "])\u2212(?=(?:" + DASH_WORDS + r")\b)")
+MINUS_HYPHEN = re.compile("([" + LETTER + "])\u2212(?=[" + LETTER + "])")
+FOOTNOTE = re.compile(r"\s\*{1,3}\s+(\S[\s\S]*)$")
+FOOTNOTE_BARE = re.compile(r"\s*\*{1,3}\s*$")
+STRAY_STAR = re.compile(r"\*+")
+MIDDLE_DOT = re.compile("\u00b7")
+BRACKETS = re.compile(r"[\[\]{}]")
+BRACKET_DIGITS = re.compile(r"\[\s*([0-9SlIOB]{1,3})\s*[J\])}]")
+DIGIT_FOR_LETTER = {"S": "5", "l": "1", "I": "1", "O": "0", "B": "8"}
+
+
+def normalize_marker_digits(s):
+    def go(m):
+        body = m.group(1)
+        if not re.search(r"[SlIOB]", body):
+            return m.group(0)
+        fixed = "".join(DIGIT_FOR_LETTER.get(c, c) for c in body)
+        return "[" + fixed + "]" if re.fullmatch(r"\d{1,3}", fixed) else m.group(0)
+    return BRACKET_DIGITS.sub(go, s)
+
+
+def repair_glyphs(text):
+    s = text
+    s = re.sub(r"([A-Za-z,.])\s*/\s*['\u2019]", "\\1\u201d", s)
+    s = re.sub(r"([A-Za-z.])/I\b", "\\1\u201d", s)
+    s = re.sub(r"([A-Za-z])\s*/\s*,", "\\1,\u201d", s)
+    s = re.sub(r",\s1/\s+", ", \u201c", s)
+    s = re.sub(r"([A-Za-z])/ (?=[a-z])", "\\1, ", s)
+    s = MINUS_DASH.sub("\\1 \u2014 ", s)
+    s = MINUS_HYPHEN.sub(r"\1-", s)
+    s = MINUS.sub(" \u2014 ", s)
+    if "*" in s:
+        s = FOOTNOTE_BARE.sub("", s)
+        note = FOOTNOTE.search(s)
+        if note:
+            body = STRAY_STAR.sub("", note.group(1)).strip()
+            s = s[:note.start()] + ' <span class="fn">' + body + "</span>"
+        s = STRAY_STAR.sub("", s)
+    s = MIDDLE_DOT.sub("", s)
+    return s
+
+
+def repair_words(text, log=None, where=""):
     """Apply the word tables to a run of plain text (mirrors words.js)."""
     def sub(table):
         def go(m):
@@ -115,6 +166,7 @@ def repair_plain(text, log=None, where=""):
     if TYPO_RE:
         s = TYPO_RE.sub(sub(TYPOS), s)
     s = DUAL_REFERENCE.sub(" ", s)
+    s = VERSE_MARKER.sub(" ", s)
     s = re.sub(r"[ \t]{2,}", " ", s)
     # Close up a space before punctuation, but never inside an ellipsis.
     s = re.sub(r"(^|[^.…])[ \t]+([,;:!?]|\.(?![.…]))", r"\1\2", s)
@@ -122,16 +174,19 @@ def repair_plain(text, log=None, where=""):
 
 
 def repair(text, log=None, where=""):
-    """Apply the word tables outside of markup, never inside a tag."""
-    if "<" not in text:
-        return repair_plain(text, log, where)
+    """Repair a verse, markup and all — mirrors BesorahWords.repair()."""
+    s = normalize_marker_digits(text)
+    s = repair_glyphs(s)
     out, i = [], 0
-    for m in TAG.finditer(text):
-        out.append(repair_plain(text[i:m.start()], log, where))
+    for m in TAG.finditer(s):
+        out.append(repair_words(s[i:m.start()], log, where))
         out.append(m.group(0))
         i = m.end()
-    out.append(repair_plain(text[i:], log, where))
-    return "".join(out)
+    out.append(repair_words(s[i:], log, where))
+    joined = BRACKETS.sub("", "".join(out))
+    joined = re.sub(r"[ \t]{2,}", " ", joined)
+    joined = re.sub(r"(^|[^.\u2026])[ \t]+([,;:!?]|\.(?![.\u2026]))", r"\1\2", joined)
+    return joined.strip()
 
 
 def balanced(text):
@@ -261,6 +316,10 @@ def main():
                 issues["structure"].append(f"{where}: chapter has no verses")
                 continue
 
+            # "[4S]" is the marker "[45]"; normalise before counting so a
+            # mis-scanned number can still become a real verse.
+            for v in verses:
+                v["t"] = normalize_marker_digits(v["t"])
             marks_here = sum(len(VERSE_MARKER.findall(v["t"])) for v in verses)
             if marks_here:
                 marker_count += marks_here

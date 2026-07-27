@@ -117,7 +117,19 @@
   // printed page before being listed.
   var TYPOS = {
     "backfmy": "back my",
-    "carefull": "carefully"
+    "carefull": "carefully",
+    // Digits the scanner read for letters — an S read as 5, an o as 0.
+    // Each was checked against its verse.
+    "50dom": "Sodom",
+    "50stratus": "Sostratus",
+    "5halmaneser": "Shalmaneser",
+    "5eleucus": "Seleucus",
+    "5alu": "Salu",
+    // Two glyphs read as one.
+    "b~ cause": "because",
+    "1£ you": "If you",
+    "sellin&": "selling,",
+    "sprin&": "spring,"
   };
 
   // --- 4. inline verse markers ----------------------------------------
@@ -125,12 +137,89 @@
   // the running text. scripts/sweep_text.py turns these into real verses;
   // this pattern is what both sides agree on, and the render-time pass
   // removes any that survive.
-  var VERSE_MARKER = /\[\s*(\d{1,3})\s*[J\]\)]\s*/g;
+  var VERSE_MARKER = /\[\s*(\d{1,3})\s*[J\])}]\s*/g;
 
   // The double numbering some editions print for the Shepherd of Hermas —
   // "10[76]:2" — is a cross-reference, not part of the reading, so the
   // whole reference goes rather than just its bracket.
-  var DUAL_REFERENCE = /\b\d{1,3}\s*\[\s*\d{1,3}\s*[J\]\)]\s*:\s*\d{1,3}\s*/g;
+  var DUAL_REFERENCE = /\b\d{1,3}\s*\[\s*\d{1,3}\s*[J\])}]\s*:\s*\d{1,3}\s*/g;
+
+  // --- 5. glyphs that are not part of the reading ----------------------
+  // The Torah, the Prophets, the Writings and the Messianic books contain
+  // no brackets, no asterisks and no minus signs at all. The apocryphal
+  // books, printed from scholarly editions, arrive carrying all three:
+  //
+  //   [ ]  { }   editorial brackets marking a translator's insertion, very
+  //              often left unbalanced because the pair straddles a verse
+  //              boundary. The words inside are part of the text; only the
+  //              brackets are apparatus, so the brackets go and the words
+  //              stay.
+  //   −          a MINUS SIGN standing in for a hyphen ("hard−hearted") or,
+  //              between words, for a dash.
+  //   * ** ***   footnote marks. The mark itself is noise; a note that
+  //              follows one at the end of a verse is real content, so it
+  //              is kept and marked up as a footnote rather than deleted.
+  //   / ' , I    a closing double-quote the scanner broke apart, which is
+  //              how "Yea, lady/' I said" happens. A slash between two
+  //              words with no spaces ("language/lip") is a real
+  //              translator's alternative and is left alone.
+  var MINUS = /−/g;
+  // A minus sign between two letters is a hyphen ("hard−hearted"), unless
+  // what follows is a function word, in which case the printed line was a
+  // dash: "his father Ḥanoḵ−for he had shown him" reads as an aside.
+  var LETTER = "A-Za-zÀ-ɏḀ-ỿ0-9";
+  var DASH_WORDS =
+    "for|he|she|it|they|we|you|I|the|a|an|and|but|who|whom|that|which|so|as|" +
+    "when|then|if|because|even|yet|to|in|of|on|with|there|this|these|those";
+  var MINUS_DASH = new RegExp("([" + LETTER + "])−(?=(?:" + DASH_WORDS + ")\\b)", "g");
+  var MINUS_HYPHEN = new RegExp("([" + LETTER + "])−(?=[" + LETTER + "])", "g");
+  var FOOTNOTE = /\s\*{1,3}\s+(\S[\s\S]*)$/;
+  var FOOTNOTE_BARE = /\s*\*{1,3}\s*$/;
+  var STRAY_STAR = /\*+/g;
+  // A stray middle dot the scanner dropped into a word gap.
+  var MIDDLE_DOT = /·/g;
+  var BRACKETS = /[[\]{}]/g;
+  // A bracketed number whose digits the scanner mangled: [4S] is [45].
+  var BRACKET_DIGITS = /\[\s*([0-9SlIOB]{1,3})\s*[J\]\)}]/g;
+  var DIGIT_FOR_LETTER = { "S": "5", "l": "1", "I": "1", "O": "0", "B": "8" };
+
+  function normalizeMarkerDigits(s) {
+    return s.replace(BRACKET_DIGITS, function (m, body) {
+      if (!/[SlIOB]/.test(body)) return m;
+      var fixed = body.replace(/[SlIOB]/g, function (c) {
+        return DIGIT_FOR_LETTER[c];
+      });
+      return /^\d{1,3}$/.test(fixed) ? "[" + fixed + "]" : m;
+    });
+  }
+
+  function repairGlyphs(text) {
+    var s = text;
+    // Quote marks the scanner split into a slash and a stray letter.
+    s = s.replace(/([A-Za-z,.])\s*\/\s*['’]/g, "$1”")
+         .replace(/([A-Za-z.])\/I\b/g, "$1”")
+         .replace(/([A-Za-z])\s*\/\s*,/g, "$1,”")
+         .replace(/,\s1\/\s+/g, ", “")
+         .replace(/([A-Za-z])\/ (?=[a-z])/g, "$1, ");
+    // Minus sign: a dash before a function word, a hyphen inside a
+    // compound, an em dash anywhere else.
+    s = s.replace(MINUS_DASH, "$1 — ")
+         .replace(MINUS_HYPHEN, "$1-")
+         .replace(MINUS, " — ");
+    // Footnotes: keep the note, mark it as one; drop every other star.
+    if (s.indexOf("*") !== -1) {
+      s = s.replace(FOOTNOTE_BARE, "");
+      var note = s.match(FOOTNOTE);
+      if (note) {
+        s = s.slice(0, note.index) +
+            ' <span class="fn">' + note[1].replace(STRAY_STAR, "").trim() +
+            "</span>";
+      }
+      s = s.replace(STRAY_STAR, "");
+    }
+    s = s.replace(MIDDLE_DOT, "");
+    return s;
+  }
 
   // --------------------------------------------------------------------
   function applyCase(sample, replacement) {
@@ -162,8 +251,8 @@
     return table[key.toLowerCase().replace(/\s+/g, " ")];
   }
 
-  // Repair a run of plain text (no markup inside).
-  function repairPlain(text) {
+  // The word tables, over one run of plain text (never any markup inside).
+  function repairWords(text) {
     var s = String(text == null ? "" : text);
     if (JOIN_RE) {
       s = s.replace(JOIN_RE, function (m) {
@@ -192,18 +281,36 @@
     return s;
   }
 
-  // Repair text that may contain the whitelisted <span> markup: only the
-  // text between tags is touched, so the markup can never be corrupted.
+  // Repair a verse, markup and all. The order matters:
+  //
+  //   1. bracketed numbers are un-mangled, so "[4S]" can be recognised as
+  //      the verse marker "[45]" in step 3;
+  //   2. glyph repair runs over the whole verse — a footnote has to be
+  //      found against the real end of the verse, not the end of some run
+  //      between two <span>s;
+  //   3. the word tables and the marker strip run only on the text between
+  //      tags, so markup can never be corrupted;
+  //   4. whatever brackets remain are apparatus, and go — their contents
+  //      are words and stay.
   function repair(text) {
     var s = String(text == null ? "" : text);
-    if (s.indexOf("<") === -1) return repairPlain(s);
+    s = normalizeMarkerDigits(s);
+    s = repairGlyphs(s);
+
     var out = "", i = 0;
     var re = /<[^>]*>/g, m;
     while ((m = re.exec(s)) !== null) {
-      out += repairPlain(s.slice(i, m.index)) + m[0];
+      out += repairWords(s.slice(i, m.index)) + m[0];
       i = m.index + m[0].length;
     }
-    return out + repairPlain(s.slice(i));
+    out += repairWords(s.slice(i));
+
+    out = out.replace(BRACKETS, "");
+    // Closing up a bracket can leave a doubled space or a stranded one
+    // before punctuation.
+    return out.replace(/[ \t]{2,}/g, " ")
+              .replace(/(^|[^.…])[ \t]+([,;:!?]|\.(?![.…]))/g, "$1$2")
+              .trim();
   }
 
   global.BesorahWords = {
@@ -212,6 +319,7 @@
     TYPOS: TYPOS,
     VERSE_MARKER: VERSE_MARKER,
     repair: repair,
-    repairPlain: repairPlain
+    repairPlain: repair,
+    repairGlyphs: repairGlyphs
   };
 })(typeof window !== "undefined" ? window : this);
