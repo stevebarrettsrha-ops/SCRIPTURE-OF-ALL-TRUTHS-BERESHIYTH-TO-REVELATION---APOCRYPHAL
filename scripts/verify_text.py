@@ -15,13 +15,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Canonical verse counts (KJV-ish); used as a ballpark sanity check.
 CANONICAL = {
-    "bereshith": 1533, "shemoth": 1213, "wayyiqra": 859, "bemidbar": 1288,
-    "debarim": 959, "yahusha": 658, "shophetim": 618, "1shemuel": 810,
-    "2shemuel": 695, "1melakim": 816, "2melakim": 719, "yeshayahu": 1292,
-    "yirmeyahu": 1364, "yehezqel": 1273, "daniel": 357, "hoshea": 197,
-    "yoel": 73, "amos": 146, "obadyah": 21, "yonah": 48, "mikah": 105,
-    "nahum": 47, "habaqquq": 56, "tsephanyah": 53, "haggai": 38,
-    "zekaryah": 211, "malaki": 55, "tehillim": 2461, "mishle": 915,
+    "bereshith": 1533, "shamoth": 1213, "wayyiqra": 859, "bamidbar": 1288,
+    "dabarim": 959, "yahusha": 658, "shophetim": 618, "1shamual": 810,
+    "2shamual": 695, "1malakim": 816, "2malakim": 719, "yashayahu": 1292,
+    "yirmayahu": 1364, "yahazqal": 1273, "danial": 357, "hoshea": 197,
+    "yoal": 73, "amos": 146, "obadyahu": 21, "yonah": 48, "mikah": 105,
+    "nahum": 47, "habaqquq": 56, "tsephanyahu": 53, "haggai": 38,
+    "zakaryahu": 211, "malaki": 55, "tehillim": 2461, "mishle": 915,
     "iyob": 1070, "shir-hashirim": 117, "ruth": 85, "ekah": 154,
     "qoheleth": 222, "ester": 167, "ezra": 280, "nehemyah": 406,
     "1dibre-hayamim": 942, "2dibre-hayamim": 822,

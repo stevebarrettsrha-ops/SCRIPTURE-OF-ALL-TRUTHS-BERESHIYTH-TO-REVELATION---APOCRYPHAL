@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/besorah-ids.js"></script>
 <script src="assets/words.js"></script>
 <script src="assets/pronunciation.js"></script>
 <script src="assets/besorah-marks.js"></script>
@@ -67,7 +68,11 @@
 
 <script>
 const params  = new URLSearchParams(location.search);
-const bookId  = params.get('id');
+// An id from a link may be one a book carried before its name was
+// corrected; BesorahIds brings it forward (assets/besorah-ids.js).
+const bookId  = window.BesorahIds
+  ? BesorahIds.resolve(params.get('id'))
+  : params.get('id');
 const chapter = parseInt(params.get('ch'), 10) || 1;
 const verseAnchor = parseInt(params.get('v'), 10) || null;
 const markAnchor = params.get('m');   // a marked passage arrived at from home

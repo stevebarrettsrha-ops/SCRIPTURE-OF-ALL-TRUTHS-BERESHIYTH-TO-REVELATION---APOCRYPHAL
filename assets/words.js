@@ -132,6 +132,66 @@
     "sprin&": "spring,"
   };
 
+  // --- 3b. names ------------------------------------------------------
+  // How a name is spelled, once, everywhere. The books were extracted
+  // from editions that did not agree with each other — Zeḵaryah beside
+  // Zeḵaryahu, Tsephanyah beside Tsephanyahu — and the book names in
+  // assets/index.json follow the same spellings, so both are set here.
+  //
+  // Two patterns run through the list. The first vowel of these names is
+  // an a, not an e: Yashayahu, Malaḵim, Shamoth, Bamiḏbar, Daḇarim,
+  // naḇi'im. And the theophoric ending is Al (אֵל), the singular root
+  // behind Aluahim, capitalised because it is the Name in the name:
+  // Shamu'Al, Yahazq'Al, Dani'Al, Yo'Al.
+  //
+  // Longer keys are matched first and no replacement can match its own
+  // key, so the pass is idempotent: Zeḵaryahu is already past Zeḵaryah,
+  // and Tsephanyahu is not caught again by "tsephanyah".
+  var NAMES = {
+    // the a, not the e
+    "yeshayahu": "Yashayahu",
+    "yirmeyahu": "Yirmayahu",
+    "melaḵim": "Malaḵim",
+    "melakim": "Malakim",
+    "shemoth": "Shamoth",
+    "bemiḏbar": "Bamiḏbar",
+    "bemidbar": "Bamidbar",
+    "deḇarim": "Daḇarim",
+    "debarim": "Dabarim",
+    "neḇi'im": "naḇi'im",
+    "nebi'im": "nabi'im",
+    "neḇi": "naḇi",
+    "nebi": "nabi",
+    // the theophoric Al
+    "shemu'ĕl": "Shamu'Al",
+    "shemu'el": "Shamu'Al",
+    "shemu'al": "Shamu'Al",
+    "yeḥezq'ĕl": "Yahazq'Al",
+    "yeḥezqel": "Yahazq'Al",
+    "yehezq'el": "Yahazq'Al",
+    "yehezqel": "Yahazq'Al",
+    "dani'ĕl": "Dani'Al",
+    "dani'el": "Dani'Al",
+    "yo'ĕl": "Yo'Al",
+    "yo'el": "Yo'Al",
+    "yoal": "Yo'Al",
+    // Qodash for the place, Qadash for the verb — the two senses of the
+    // same root, kept apart. These carry forward the spellings already in
+    // the text so a swept book and a freshly extracted one agree.
+    "qadash haqadashim": "Qodash haQodashim",
+    "qodesh haqodashim": "Qodash haQodashim",
+    "qodesh": "Qodash",
+    "ruach haqodesh": "Ruach HaQadash",
+    // the long form of the theophoric -yahu
+    "oḇadyah": "Oḇadyahu",
+    "obadyah": "Obadyahu",
+    "tsephanyah": "Tsephanyahu",
+    "zeḵaryahu": "Zaḵaryahu",
+    "zeḵaryah": "Zaḵaryahu",
+    "zekaryahu": "Zakaryahu",
+    "zekaryah": "Zakaryahu"
+  };
+
   // --- 4. house style -------------------------------------------------
   // The Besorah does not use the Latin- and Greek-rooted church words. The
   // Torah, the Prophets, the Writings and the Messianic writings contain
@@ -154,12 +214,12 @@
     // The canon's word for what is set apart is qadash, and its plural
     // qadashiyms (CLAUDE.md). Both now stand in all 104 books with the
     // English kept alongside in brackets, so the reading is never lost.
-    // The Holy Spirit keeps its own name: CLAUDE.md gives Ruach haQodesh.
-    "set-apart ruach": "Ruach haQodesh",
-    "most set-apart place": "Qodesh haQodashim (Most Set Apart Place)",
-    "holy of holies": "Qodesh haQodashim (Most Set Apart Place)",
-    "set-apart place": "Qodesh (Set Apart Place)",
-    "holy place": "Qodesh (Set Apart Place)",
+    // The Set Apart Ruach keeps His own name: Ruach HaQadash.
+    "set-apart ruach": "Ruach HaQadash",
+    "most set-apart place": "Qodash haQodashim (Most Set Apart Place)",
+    "holy of holies": "Qodash haQodashim (Most Set Apart Place)",
+    "set-apart place": "Qodash (Set Apart Place)",
+    "holy place": "Qodash (Set Apart Place)",
     "set-apart ones": "qadashiyms (Set Apart Ones)",
     "holy ones": "qadashiyms (Set Apart Ones)",
     "set-apart one": "qadash (Set Apart One)",
@@ -348,12 +408,13 @@
   };
 
   // Names that carry their own capitalisation. Case is normally inherited
-  // from the source word, which would turn "the set-apart Ruach" into
-  // "Ruach HaQodesh"; these are written out exactly as listed instead.
+  // word by word from the source, which would turn "the set-apart Ruach"
+  // into "Ruach HAQADASH" and "Qodash haQodashim" into "Qodash
+  // HaQodashim"; these are written out exactly as listed instead.
   var LOCKED_CASE = {
-    "Ruach haQodesh": 1,
-    "Qodesh haQodashim (Most Set Apart Place)": 1,
-    "Qodesh (Set Apart Place)": 1,
+    "Ruach HaQadash": 1,
+    "Qodash haQodashim (Most Set Apart Place)": 1,
+    "Qodash (Set Apart Place)": 1,
     "Holy Sepulcher": 1,
     "Holy Sepulchre": 1
   };
@@ -489,9 +550,19 @@
   // times however long the tables grow.
   function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
 
+  // The extraction did not settle on one apostrophe: Shemu'al is spelled
+  // with a straight one 4 times and a typographic one 145 times, in the
+  // same book. A key written with the straight mark therefore matches
+  // either, and the lookup folds them back before reading the table, so
+  // one entry covers both. The replacement is always written straight,
+  // which is the form CLAUDE.md uses.
+  var APOSTROPHES = /['\u2019\u02BC\u2018\u00B4]/g;
+  function apostropheClass(s) { return s.replace(APOSTROPHES, "['\u2019\u02BC]"); }
+  function foldApostrophes(s) { return s.replace(APOSTROPHES, "'"); }
+
   function keysToRe(obj, wrap) {
     var keys = [];
-    for (var k in obj) if (obj.hasOwnProperty(k)) keys.push(escapeRe(k));
+    for (var k in obj) if (obj.hasOwnProperty(k)) keys.push(apostropheClass(escapeRe(k)));
     if (!keys.length) return null;
     keys.sort(function (a, b) { return b.length - a.length; });
     return new RegExp(wrap.replace("%s", "(" + keys.join("|") + ")"), "gi");
@@ -500,10 +571,11 @@
   var JOIN_RE = keysToRe(JOINS, "\\b%s\\b");
   var SPLIT_RE = keysToRe(SPLITS, "\\b%s\\b");
   var TYPO_RE = keysToRe(TYPOS, "\\b%s\\b");
+  var NAME_RE = keysToRe(NAMES, "\\b%s\\b");
   var HOUSE_RE = keysToRe(HOUSE, "\\b%s\\b");
 
   function lookup(table, key) {
-    return table[key.toLowerCase().replace(/\s+/g, " ")];
+    return table[foldApostrophes(key.toLowerCase()).replace(/\s+/g, " ")];
   }
 
   // The word tables, over one run of plain text (never any markup inside).
@@ -524,6 +596,12 @@
     if (TYPO_RE) {
       s = s.replace(TYPO_RE, function (m) {
         var r = lookup(TYPOS, m);
+        return r ? applyCase(m, r) : m;
+      });
+    }
+    if (NAME_RE) {
+      s = s.replace(NAME_RE, function (m) {
+        var r = lookup(NAMES, m);
         return r ? applyCase(m, r) : m;
       });
     }

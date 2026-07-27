@@ -44,22 +44,26 @@ came in untouched.
 
 ---
 
-## 2. Qodesh — the Hebrew, with the English in brackets
+## 2. Qadash and Qodash — the Hebrew, with the English in brackets
 
 Your call 0. The canon's own word is **qadash**, its plural
 **qadashiyms** (CLAUDE.md). Both now stand in all 104 books, with the
 English kept alongside in brackets so no reading is ever lost.
 
+The root carries two senses and they are kept apart: **Qodash when it is
+a place, Qadash when it is the verb** — and the adjective that comes off
+the verb.
+
 | Was | Now | Count |
 |---|---|---:|
 | holy, set-apart, sacred, hallowed, sanctified, consecrated | **qadash (Set Apart)** | 965 |
-| holy place, set-apart place | **Qodesh (Set Apart Place)** | 271 |
+| holy place, set-apart place | **Qodash (Set Apart Place)** | 271 |
 | holy ones, set-apart ones, saints | **qadashiyms (Set Apart Ones)** | 145 |
 | Holy One, Set-apart One, saint | **qadash (Set Apart One)** | 79 |
-| holy of holies, Most Set-apart Place | **Qodesh haQodashim (Most Set Apart Place)** | 21 |
-| Holy Spirit, Set-apart Ruach | **Ruach haQodesh** | 134 |
+| holy of holies, Most Set-apart Place | **Qodash haQodashim (Most Set Apart Place)** | 21 |
+| Holy Spirit, Set-apart Ruach | **Ruach HaQadash** | 134 |
 
-Yeshayahu 6:3 now reads:
+Yashayahu 6:3 now reads:
 
 > And one cried to another and said, "Qadash (Set Apart), qadash (Set
 > Apart), qadash (Set Apart) is (YAHUAH) HWHY of hosts; all the earth is
@@ -69,12 +73,12 @@ Mattithyahu 6:9: *"let Your Name be qadash (Set Apart)"*.
 
 Three things were deliberately **not** swept into the bracketed form:
 
-* **The Ruach haQodesh keeps His own name.** CLAUDE.md gives it, and the
+* **The Ruach HaQadash keeps His own name.** CLAUDE.md gives it, and the
   canon already used it 39 times; the other 95 came in as "Set-apart
   Ruach" and now match.
 * **"set-apartness"** (76 uses) stays as it is. There is no single Hebrew
   noun the canon uses for it, and *qadash-ness* would be a coinage.
-* **The verb "set … apart"** stays English — Shemoth 19:10 "set them
+* **The verb "set … apart"** stays English — Shamoth 19:10 "set them
   apart". Only the adjective and the noun take the Hebrew.
 
 ### The gloss is for the eye, not the ear
@@ -112,7 +116,7 @@ throne of the Greatness". All 30 uses were read first: every one is
 possessive or titular ("His majesty", "the majesty of Aluahim"), so a
 single rule was safe.
 
-The adjective follows Yeshayahu 4:2, "splendid and esteemed":
+The adjective follows Yashayahu 4:2, "splendid and esteemed":
 **majestic → splendid**, **majestically → splendidly**.
 
 ---
@@ -125,9 +129,9 @@ three ways and which one depends on the sentence.
 
 | Sense | Now | Authority |
 |---|---|---|
-| the verb, what you owe a person | **respect** | Shemoth 20:12, 1 Kepha 2:17 "Respect" |
+| the verb, what you owe a person | **respect** | Shamoth 20:12, 1 Kepha 2:17 "Respect" |
 | the noun, what a person is held in | **esteem** | Ibrim 5:4, Mishle 3:9 |
-| the adjective | **esteemed** | Yeshayahu 4:2 |
+| the adjective | **esteemed** | Yashayahu 4:2 |
 | the adverb | **worthily** | — |
 | the opposite | **disrespect** | Romans 1:24, 2:23 |
 
@@ -151,8 +155,8 @@ Mighty-like nature": **divine (adj.), Godlike → Mighty-like**, 52 uses,
 listed by collocation.
 
 **The verb "divine" is untouched.** The main books use it four times and
-always for divination — Mikah 3:11 "her neḇi'im divine for a price",
-Yeḥezqel 13:9 and 21:29, 1 Shemu'ĕl 28:8, Bereshith 44:5 "with which he
+always for divination — Mikah 3:11 "her naḇi'im divine for a price",
+Yahazq'Al 13:9 and 21:29, 1 Shamu'Al 28:8, Bereshith 44:5 "with which he
 indeed divines". Those are correct, and the collocation lists are what
 keeps them safe.
 
@@ -214,9 +218,9 @@ same verse. Both are now "Sheol", which flattens that distinction.
 ## Where this lives
 
 The `HOUSE` table in `assets/words.js`, with `LOCKED_CASE` beside it for
-the names that carry their own capitalisation (`Ruach haQodesh` would
+the names that carry their own capitalisation (`Ruach HaQadash` would
 otherwise inherit a capital from "Set-apart **R**uach" and come out
-"Ruach HaQodesh").
+"Ruach HAQADASH").
 
 It is applied twice — by `scripts/sweep_text.py --fix` to the stored text,
 and by `BesorahWords.repair()` to every verse on its way to the screen, so

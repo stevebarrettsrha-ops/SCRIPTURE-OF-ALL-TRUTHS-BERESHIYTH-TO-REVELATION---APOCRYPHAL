@@ -47,13 +47,13 @@ MAX_CHARS = 340
 # around it, so a single verse lifted out of them rarely encourages.
 SOURCE_BOOKS = {
     # Torah — Debarim alone, which is addressed to the reader throughout
-    "debarim",
+    "dabarim",
     # Wisdom and song
     "tehillim", "mishle", "iyob", "qoheleth", "ekah",
     # The Prophets
-    "yeshayahu", "yirmeyahu", "yehezqel", "hoshea", "yoel", "amos",
-    "obadyah", "yonah", "mikah", "nahum", "habaqquq", "tsephanyah", "haggai",
-    "zekaryah", "malaki",
+    "yashayahu", "yirmayahu", "yahazqal", "hoshea", "yoal", "amos",
+    "obadyahu", "yonah", "mikah", "nahum", "habaqquq", "tsephanyahu", "haggai",
+    "zakaryahu", "malaki",
     # The Messianic writings
     "mattithyahu", "mark", "luke", "yahuchanon", "romans",
     "1corinthians", "2corinthians", "galatians", "ephesians", "philippians",

@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/besorah-ids.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -31,7 +32,10 @@
 
 <script>
 const params = new URLSearchParams(location.search);
-const bookId = params.get('id');
+// An id from a link may predate a name correction — see besorah-ids.js.
+const bookId = window.BesorahIds
+  ? BesorahIds.resolve(params.get('id'))
+  : params.get('id');
 
 fetch('assets/index.json')
   .then(r => r.json())

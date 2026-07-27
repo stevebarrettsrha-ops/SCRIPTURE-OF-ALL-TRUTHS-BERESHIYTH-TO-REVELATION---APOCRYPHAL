@@ -27,6 +27,25 @@
     catch (e) { /* quota / private mode — silently ignore */ }
   }
 
+  // A book renamed since this reader last opened the page left its old id
+  // in everything already saved. besorah-ids.js knows what became what;
+  // this runs the three stores through it once, on load, so a bookmark
+  // made a year ago still opens and still shows the corrected name.
+  function migrateStoredIds() {
+    var ids = global.BesorahIds;
+    if (!ids || !ids.migrate) return;
+    var last = safeGet(LAST_KEY);
+    if (last && ids.migrate(last)) safeSet(LAST_KEY, last);
+    [MARKS_KEY, TEXT_KEY].forEach(function (key) {
+      var arr = safeGet(key);
+      if (!Array.isArray(arr)) return;
+      var moved = false;
+      arr.forEach(function (m) { if (ids.migrate(m)) moved = true; });
+      if (moved) safeSet(key, arr);
+    });
+  }
+  migrateStoredIds();
+
   function makeEntry(book, chapter, verse) {
     var entry = {
       bookId: book.id,
