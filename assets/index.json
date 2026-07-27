@@ -260,8 +260,8 @@
    }
   },
   {
-   "id": "shemoth",
-   "hebrew": "SHEMOTH",
+   "id": "shamoth",
+   "hebrew": "SHAMOTH",
    "english": "Exodus",
    "section": "Torah",
    "chapter_count": 40,
@@ -613,8 +613,8 @@
    }
   },
   {
-   "id": "bemidbar",
-   "hebrew": "BEMIḎBAR",
+   "id": "bamidbar",
+   "hebrew": "BAMIḎBAR",
    "english": "Numbers",
    "section": "Torah",
    "chapter_count": 36,
@@ -802,8 +802,8 @@
    }
   },
   {
-   "id": "debarim",
-   "hebrew": "DEḆARIM",
+   "id": "dabarim",
+   "hebrew": "DAḆARIM",
    "english": "Deuteronomy",
    "section": "Torah",
    "chapter_count": 34,
@@ -984,7 +984,7 @@
    "id": "yahusha",
    "hebrew": "YAHUSHA",
    "english": "Joshua",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 24,
    "chapters": {
     "1": {
@@ -1113,7 +1113,7 @@
    "id": "shophetim",
    "hebrew": "SHOPHETIM",
    "english": "Judges",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 21,
    "chapters": {
     "1": {
@@ -1224,10 +1224,10 @@
    }
   },
   {
-   "id": "1shemuel",
-   "hebrew": "1 SHEMU'ĔL",
+   "id": "1shamual",
+   "hebrew": "1 SHAMU'AL",
    "english": "1 Samuel",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 31,
    "chapters": {
     "1": {
@@ -1388,10 +1388,10 @@
    }
   },
   {
-   "id": "2shemuel",
-   "hebrew": "2 SHEMU'ĔL",
+   "id": "2shamual",
+   "hebrew": "2 SHAMU'AL",
    "english": "2 Samuel",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 24,
    "chapters": {
     "1": {
@@ -1517,10 +1517,10 @@
    }
   },
   {
-   "id": "1melakim",
-   "hebrew": "1 MELAḴIM",
+   "id": "1malakim",
+   "hebrew": "1 MALAḴIM",
    "english": "1 Kings",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 22,
    "chapters": {
     "1": {
@@ -1636,10 +1636,10 @@
    }
   },
   {
-   "id": "2melakim",
-   "hebrew": "2 MELAḴIM",
+   "id": "2malakim",
+   "hebrew": "2 MALAḴIM",
    "english": "2 Kings",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 25,
    "chapters": {
     "1": {
@@ -1770,10 +1770,10 @@
    }
   },
   {
-   "id": "yeshayahu",
-   "hebrew": "YESHAYAHU",
+   "id": "yashayahu",
+   "hebrew": "YASHAYAHU",
    "english": "Isaiah",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 66,
    "chapters": {
     "1": {
@@ -2109,10 +2109,10 @@
    }
   },
   {
-   "id": "yirmeyahu",
-   "hebrew": "YIRMEYAHU",
+   "id": "yirmayahu",
+   "hebrew": "YIRMAYAHU",
    "english": "Jeremiah",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 52,
    "chapters": {
     "1": {
@@ -2378,10 +2378,10 @@
    }
   },
   {
-   "id": "yehezqel",
-   "hebrew": "YEḤEZQ'ĔL",
+   "id": "yahazqal",
+   "hebrew": "YAHAZQ'AL",
    "english": "Ezekiel",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 48,
    "chapters": {
     "1": {
@@ -2627,10 +2627,10 @@
    }
   },
   {
-   "id": "daniel",
-   "hebrew": "DANI'ĔL",
+   "id": "danial",
+   "hebrew": "DANI'AL",
    "english": "Daniel",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 12,
    "chapters": {
     "1": {
@@ -2699,7 +2699,7 @@
    "id": "hoshea",
    "hebrew": "HOSHĔA",
    "english": "Hosea",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 14,
    "chapters": {
     "1": {
@@ -2775,10 +2775,10 @@
    }
   },
   {
-   "id": "yoel",
-   "hebrew": "YO'ĔL",
+   "id": "yoal",
+   "hebrew": "YO'AL",
    "english": "Joel",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 3,
    "chapters": {
     "1": {
@@ -2802,7 +2802,7 @@
    "id": "amos",
    "hebrew": "AMOS",
    "english": "Amos",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 9,
    "chapters": {
     "1": {
@@ -2853,10 +2853,10 @@
    }
   },
   {
-   "id": "obadyah",
-   "hebrew": "OḆADYAH",
+   "id": "obadyahu",
+   "hebrew": "OḆADYAHU",
    "english": "Obadiah",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 1,
    "chapters": {
     "1": {
@@ -2870,7 +2870,7 @@
    "id": "yonah",
    "hebrew": "YONAH",
    "english": "Jonah",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 4,
    "chapters": {
     "1": {
@@ -2899,7 +2899,7 @@
    "id": "mikah",
    "hebrew": "MIḴAH",
    "english": "Micah",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 7,
    "chapters": {
     "1": {
@@ -2943,7 +2943,7 @@
    "id": "nahum",
    "hebrew": "NAḤUM",
    "english": "Nahum",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 3,
    "chapters": {
     "1": {
@@ -2967,7 +2967,7 @@
    "id": "habaqquq",
    "hebrew": "ḤAḆAQQUQ",
    "english": "Habakkuk",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 3,
    "chapters": {
     "1": {
@@ -2988,10 +2988,10 @@
    }
   },
   {
-   "id": "tsephanyah",
-   "hebrew": "TSEPHANYAH",
+   "id": "tsephanyahu",
+   "hebrew": "TSEPHANYAHU",
    "english": "Zephaniah",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 3,
    "chapters": {
     "1": {
@@ -3015,7 +3015,7 @@
    "id": "haggai",
    "hebrew": "ḤAGGAI",
    "english": "Haggai",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 2,
    "chapters": {
     "1": {
@@ -3031,10 +3031,10 @@
    }
   },
   {
-   "id": "zekaryah",
-   "hebrew": "ZEḴARYAH",
+   "id": "zakaryahu",
+   "hebrew": "ZAḴARYAHU",
    "english": "Zechariah",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 14,
    "chapters": {
     "1": {
@@ -3113,7 +3113,7 @@
    "id": "malaki",
    "hebrew": "MAL'AḴI",
    "english": "Malachi",
-   "section": "Nebi'im",
+   "section": "Nabi'im",
    "chapter_count": 4,
    "chapters": {
     "1": {
@@ -8590,7 +8590,7 @@
   },
   {
    "id": "apoc-epistle-jeremiah",
-   "hebrew": "IGGERETH YIRMEYAHU",
+   "hebrew": "IGGERETH YIRMAYAHU",
    "english": "Letter of Jeremiah",
    "section": "Apocrypha",
    "chapter_count": 1,

@@ -71,22 +71,37 @@ def js_table(path, name):
 JOINS = js_table(WORDS_JS, "JOINS")
 SPLITS = js_table(WORDS_JS, "SPLITS")
 TYPOS = js_table(WORDS_JS, "TYPOS")
+NAMES = js_table(WORDS_JS, "NAMES")
 HOUSE = js_table(WORDS_JS, "HOUSE")
 LOCKED_CASE = js_table(WORDS_JS, "LOCKED_CASE")
 LEXICON = js_table(PRON_JS, "LEXICON")
+
+
+# Mirror of the apostrophe folding in words.js — see the commentary there.
+APOSTROPHES = re.compile("['\u2019\u02bc\u2018\u00b4]")
+
+
+def apostrophe_class(s):
+    return APOSTROPHES.sub("['\u2019\u02bc]", s)
+
+
+def fold_apostrophes(s):
+    return APOSTROPHES.sub("'", s)
 
 
 def _alt(keys):
     if not keys:
         return None
     ordered = sorted(keys, key=len, reverse=True)
-    return re.compile(r"\b(" + "|".join(re.escape(k) for k in ordered) + r")\b",
+    return re.compile(r"\b(" + "|".join(apostrophe_class(re.escape(k))
+                                        for k in ordered) + r")\b",
                       re.I)
 
 
 JOIN_RE = _alt(list(JOINS))
 SPLIT_RE = _alt(list(SPLITS))
 TYPO_RE = _alt(list(TYPOS))
+NAME_RE = _alt(list(NAMES))
 HOUSE_RE = _alt(list(HOUSE))
 
 
@@ -171,7 +186,7 @@ def repair_words(text, log=None, where=""):
     """Apply the word tables to a run of plain text (mirrors words.js)."""
     def sub(table):
         def go(m):
-            key = re.sub(r"\s+", " ", m.group(0).lower())
+            key = re.sub(r"\s+", " ", fold_apostrophes(m.group(0).lower()))
             rep = table.get(key)
             if rep is None:
                 return m.group(0)
@@ -188,6 +203,8 @@ def repair_words(text, log=None, where=""):
         s = SPLIT_RE.sub(sub(SPLITS), s)
     if TYPO_RE:
         s = TYPO_RE.sub(sub(TYPOS), s)
+    if NAME_RE:
+        s = NAME_RE.sub(sub(NAMES), s)
     if HOUSE_RE:
         s = HOUSE_RE.sub(sub(HOUSE), s)
     s = DUAL_REFERENCE.sub(" ", s)

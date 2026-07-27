@@ -15,7 +15,16 @@ You are working on a Hebrew-roots scripture project called **The Besorah**. All 
 | God (Elohim) | Aluahim | Al-oo-ah-heem |
 | god (singular, generic) | aluah | al-oo-ah |
 | Israel | Yasharal | Yasha-ral |
-| Holy Spirit | Ruach haQodesh | Roo-akh hah-Qoh-desh |
+| Holy Spirit | Ruach HaQadash | Roo-akh hah-Kah-dahsh |
+| divinity, deity, godhead | Aluahim | Al-oo-ah-heem |
+| Al (אֵל), the singular root | Al | Ahl |
+| Aluah (אֱלוֹהַ), the singular root | Aluah | Al-oo-ah |
+
+**The Name inside a name.** Where a book name ends in the theophoric
+*Al*, it is written with a capital A — Shamu'Al, Yahazq'Al, Dani'Al,
+Yo'Al — because the ending is the Name, not a suffix. The other names
+in this guide that end in *-al* (Yishma'al, Yasharal, Daniyal) still
+carry a small a and are unchanged.
 
 ---
 
@@ -52,13 +61,13 @@ You are working on a Hebrew-roots scripture project called **The Besorah**. All 
 | Moses | Mosheh | Moh-sheh |
 | Aaron | Aharon | Ah-hah-ron |
 | Joshua | Yahusha | Yah-hoo-shoo-ah |
-| Samuel | Shemu'al | Sheh-moo-al |
+| Samuel | Shamu'Al | Shah-moo-al |
 | David | Dawiḏ | Dah-weed |
 | Solomon | Shelomoh | Sheh-loh-moh |
 | Elijah | Ĕliyahu | Eh-lee-yah-hoo |
 | Isaiah | Yashayahu | Yasha-yah-hoo |
-| Jeremiah | Yirmeyahu | Yeer-meh-yah-hoo |
-| Daniel | Daniyal | — |
+| Jeremiah | Yirmayahu | Yeer-mah-yah-hoo |
+| Daniel | Dani'Al | Dahn-ee-al |
 | Jochebed | Yokeḇeḏ | Yoh-keh-ved |
 
 ## People — Tribes & Sons of Ya'aqoḇ
@@ -96,35 +105,35 @@ You are working on a Hebrew-roots scripture project called **The Besorah**. All 
 | English | Hebrew |
 |---|---|
 | Genesis | Bereshith |
-| Exodus | Shemoth |
+| Exodus | Shamoth |
 | Leviticus | Wayyiqra |
-| Numbers | Bemidbar |
-| Deuteronomy | Debarim |
+| Numbers | Bamidbar |
+| Deuteronomy | Dabarim |
 
-### Nebi'im (Prophets)
+### Nabi'im (Prophets)
 | English | Hebrew |
 |---|---|
 | Joshua | Yahusha |
 | Judges | Shophetim |
-| 1 Samuel | 1 Shemu'al |
-| 2 Samuel | 2 Shemu'al |
-| 1 Kings | 1 Melakim |
-| 2 Kings | 2 Melakim |
+| 1 Samuel | 1 Shamu'Al |
+| 2 Samuel | 2 Shamu'Al |
+| 1 Kings | 1 Malakim |
+| 2 Kings | 2 Malakim |
 | Isaiah | Yashayahu |
-| Jeremiah | Yirmeyahu |
-| Ezekiel | Yehezqal |
-| Daniel | Danial |
+| Jeremiah | Yirmayahu |
+| Ezekiel | Yahazq'Al |
+| Daniel | Dani'Al |
 | Hosea | Hoshea |
-| Joel | Yoal |
+| Joel | Yo'Al |
 | Amos | Amos |
-| Obadiah | Obadyah |
+| Obadiah | Obadyahu |
 | Jonah | Yonah |
 | Micah | Mikah |
 | Nahum | Nahum |
 | Habakkuk | Habaqquq |
-| Zephaniah | Tsephanyah |
+| Zephaniah | Tsephanyahu |
 | Haggai | Haggai |
-| Zechariah | Zekaryah |
+| Zechariah | Zakaryahu |
 | Malachi | Malaki |
 
 ### Kethubim (Writings)
@@ -222,8 +231,8 @@ You are working on a Hebrew-roots scripture project called **The Besorah**. All 
 | salvation | yasha | yeh-shoo-ah |
 | temple | heykal | hey-kahl |
 | grave, underworld | Sheol | sheh-ohl |
-| holy, set-apart | qadash | qah-dahsh |
-| holy ones | qadashiyms | qah-dah-sheems |
+| holy, set-apart | qadash | kah-dahsh |
+| holy ones | qadashiyms | kah-dah-sheems |
 | hypocrite | chaneph | khah-nef |
 | Sabbath | Shabbath | Shah-baht |
 | Torah, Law | Torah | Toh-rah |
@@ -232,7 +241,7 @@ You are working on a Hebrew-roots scripture project called **The Besorah**. All 
 | Praise Yah | HalleluYah | Hah-leh-loo-Yah |
 | Hebrew (person) | Iḇri | Eev-ree |
 | prophet | naḇi | nah-vee |
-| prophets (plural) | neḇi'im | neh-vee-eem |
+| prophets (plural) | naḇi'im | nah-vee-eem |
 | prophecy | neḇuah | neh-voo-ah |
 | to prophesy | naḇa | nah-vah |
 
@@ -263,4 +272,4 @@ You are working on a Hebrew-roots scripture project called **The Besorah**. All 
 | ḵ (k with line) | soft kaf, "kh" sound | Ḥanoḵ, Lemeḵ |
 | ḡ (g with line) | soft gimel, soft "g" | Haḡar |
 | ĕ (e with breve) | short "e" sound | Ĕsaw, Ĕliyahu |
-| ' (apostrophe) | ayin or glottal stop | Ya'aqoḇ, Shemu'al |
+| ' (apostrophe) | ayin or glottal stop | Ya'aqoḇ, Shamu'Al |

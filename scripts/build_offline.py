@@ -23,6 +23,7 @@ MARKS_JS_PATH = ROOT / "assets" / "besorah-marks.js"
 TTS_JS_PATH = ROOT / "assets" / "besorah-tts.js"
 HOME_JS_PATH = ROOT / "assets" / "besorah-home.js"
 DAILY_JS_PATH = ROOT / "assets" / "DailyBread.js"
+IDS_JS_PATH = ROOT / "assets" / "besorah-ids.js"
 WORDS_JS_PATH = ROOT / "assets" / "words.js"
 PRON_JS_PATH = ROOT / "assets" / "pronunciation.js"
 DAILY_PATH = ROOT / "assets" / "daily-bread.json"
@@ -182,6 +183,9 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 
 <!-- ============ WORD FORMS + PRONUNCIATION ============ -->
 <script>
+__IDS_JS__
+</script>
+<script>
 __WORDS_JS__
 </script>
 <script>
@@ -212,7 +216,7 @@ __HOME_JS__
 (function () {
   const SECTIONS = [
     { key: "Torah",       label: "Torah — Teaching" },
-    { key: "Nebi'im",     label: "Nebi'im — Prophets" },
+    { key: "Nabi'im",     label: "Nabi'im — Prophets" },
     { key: "Kethubim",    label: "Kethubim — Writings" },
     { key: "Messianic",   label: "Messianic Writings" },
     { key: "Apocryphal",  label: "Apocryphal Books" },
@@ -498,6 +502,7 @@ def main():
     tts_js = TTS_JS_PATH.read_text(encoding="utf-8")
     home_js = HOME_JS_PATH.read_text(encoding="utf-8")
     daily_js = DAILY_JS_PATH.read_text(encoding="utf-8")
+    ids_js = IDS_JS_PATH.read_text(encoding="utf-8")
     words_js = WORDS_JS_PATH.read_text(encoding="utf-8")
     pron_js = PRON_JS_PATH.read_text(encoding="utf-8")
 
@@ -518,6 +523,7 @@ def main():
     tts_js_safe = escape_script_close(tts_js)
     home_js_safe = escape_script_close(home_js)
     daily_js_safe = escape_script_close(daily_js)
+    ids_js_safe = escape_script_close(ids_js)
     words_js_safe = escape_script_close(words_js)
     pron_js_safe = escape_script_close(pron_js)
 
@@ -531,6 +537,7 @@ def main():
         .replace("__TTS_JS__", tts_js_safe)
         .replace("__HOME_JS__", home_js_safe)
         .replace("__DAILY_JS__", daily_js_safe)
+        .replace("__IDS_JS__", ids_js_safe)
         .replace("__WORDS_JS__", words_js_safe)
         .replace("__PRON_JS__", pron_js_safe)
     )

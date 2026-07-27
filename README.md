@@ -20,10 +20,11 @@ start.command         # One-click launcher (macOS)
 start.sh              # One-click launcher (Linux)
 assets/
   style.css           # Site theme
+  besorah-ids.js      # Book ids that have changed, and what they changed to
   besorah-marks.js    # Bookmarks, marked text + last-read (localStorage)
   besorah-tts.js      # Read-aloud player (browser Web Speech API; offline)
   besorah-home.js     # The home page panels (shared with the offline edition)
-  DailyBread.js       # 726 daily portions — two years without a repeat (generated)
+  DailyBread.js       # 721 daily portions — two years without a repeat (generated)
   pronunciation.js    # How the Hebrew-roots vocabulary is spoken
   words.js            # How a word must appear on the page
   daily-bread.json    # The 98 hand-written portions DailyBread.js starts from
@@ -43,8 +44,8 @@ scripts/
 
 ## Sections covered
 
-- **Torah** (5 books) — Bereshith, Shemoth, Wayyiqra, Bemidbar, Debarim
-- **Nebi'im** (22 books) — Yahusha through Mal'aki
+- **Torah** (5 books) — Bereshith, Shamoth, Wayyiqra, Bamidbar, Dabarim
+- **Nabi'im** (22 books) — Yahusha through Mal'aki
 - **Kethubim** (12 books) — Tehillim, Mishle, Iyob, … 2 Dibre haYamim
 - **Messianic Writings** (27 books) — Mattithyahu through Ḥazon (Revelation)
 - **Apocryphal Books** (4) — Ḥanok (Enoch), Yashar (Jasher), First & Second
@@ -74,7 +75,7 @@ The full table of contents now lives on **All Books** (`books.html`).
 
 ### Daily Bread
 
-`assets/DailyBread.js` holds the pool the portion is drawn from: **726
+`assets/DailyBread.js` holds the pool the portion is drawn from: **721
 portions**, so a reader receives a different one every day for **two years**
 before any comes round again — and the cycle only restarts once every one of
 them has been served. The card itself says nothing about this; it just shows
@@ -87,7 +88,7 @@ judgement that need their chapter around them, so the script keeps only what
 a reader can be handed cold:
 
 - drawn from the books that speak to the reader — Tehillim, Mishle, Iyoḇ,
-  Qoheleth, Debarim, all the Prophets (Yeshayahu, Yirmeyahu …), all the
+  Qoheleth, Dabarim, all the Prophets (Yashayahu, Yirmayahu …), all the
   Messianic writings (Mattithyahu, Mark, Luke, Yahuchanon …) and the wisdom
   books of the apocrypha;
 - a complete thought: long enough to stand alone, short enough to take in,
@@ -223,6 +224,49 @@ asterisks and no minus signs at all; those books arrived with 417 brackets,
 | `[4S]` `[SO]` | a verse number whose digits were read as letters | un-mangled, then promoted into a real verse |
 | `--` `—` | a dash typed as two hyphens, 135 times | the en dash the rest of the canon uses (1,358 times against a single em dash) |
 
+### Names
+
+The books were extracted from editions that did not agree with each
+other, so the same name arrived spelled more than one way — Zeḵaryah
+beside Zeḵaryahu, Shemu'al beside Shemu’al with a different apostrophe.
+The `NAMES` table in `words.js` settles each one, and it is applied to
+the book names in `assets/index.json` at the same time.
+
+Two patterns run through it. **The first vowel is an a, not an e:**
+
+| Was | Now |
+|---|---|
+| Yeshayahu | Yashayahu |
+| Yirmeyahu | Yirmayahu |
+| Melaḵim | Malaḵim |
+| Shemoth | Shamoth |
+| Bemiḏbar | Bamiḏbar |
+| Deḇarim | Daḇarim |
+| neḇi'im, Nebi'im | naḇi'im, Nabi'im |
+| Qodesh haQodashim | Qadash haQadashim |
+| Ruach haQodesh | Ruach HaQadash |
+
+**And the theophoric ending is Al** (אֵל), the singular root behind
+Aluahim, capitalised because it is the Name inside the name:
+
+| Was | Now |
+|---|---|
+| Shemu'ĕl | Shamu'Al |
+| Yeḥezq'ĕl | Yahazq'Al |
+| Dani'ĕl | Dani'Al |
+| Yo'ĕl | Yo'Al |
+
+Three more take the long form of the theophoric *-yahu*: **Oḇadyahu**,
+**Tsephanyahu**, **Zaḵaryahu**.
+
+A book's id is its file name and its place in every link, so the ids
+followed the names — `yeshayahu` became `yashayahu`. Anything a reader
+had already saved (a bookmark, a marked passage, "continue reading")
+still holds the old id, and so does any link they shared. **`assets/besorah-ids.js`**
+keeps every old id for good: the three pages resolve through it before
+they look a book up, and `besorah-marks.js` runs the saved state through
+it once on load. A link to `?id=zekaryah` still opens ZAḴARYAHU.
+
 ### House style
 
 The Torah, the Prophets, the Writings and the Messianic writings contain no
@@ -241,10 +285,10 @@ brackets so no reading is lost:
 | holy place | Qodesh (Set Apart Place) | 271 |
 | holy ones, saints | qadashiyms (Set Apart Ones) | 145 |
 | Holy One, saint | qadash (Set Apart One) | 79 |
-| holy of holies | Qodesh haQodashim (Most Set Apart Place) | 21 |
-| Holy Spirit, Set-apart Ruach | Ruach haQodesh | 134 |
+| holy of holies | Qadash haQadashim (Most Set Apart Place) | 21 |
+| Holy Spirit, Set-apart Ruach | Ruach HaQadash | 134 |
 
-Yeshayahu 6:3 reads *"Qadash (Set Apart), qadash (Set Apart), qadash (Set
+Yashayahu 6:3 reads *"Qadash (Set Apart), qadash (Set Apart), qadash (Set
 Apart) is (YAHUAH) HWHY of hosts"*. The bracket is for the eye: the reader
 strips exactly these glosses before speaking, so it says **kah-dahsh**, not
 "qadash Set Apart", while every other parenthesis in the canon still speaks.
@@ -260,8 +304,8 @@ The rest, each one what the main books already say in the parallel place:
 | godly | chasid (Faithful) | chasid (חָסִיד), faithful, devoted |
 | godliness, piety, devout | reverence, reverent | 1 Timothy 2:2, Titus 2:12 |
 | majesty | Greatness | Ibrim 8:1, "the throne of the Greatness" |
-| majestic | splendid | Yeshayahu 4:2, "splendid and esteemed" |
-| honour (verb) | respect | Shemoth 20:12, 1 Kepha 2:17 |
+| majestic | splendid | Yashayahu 4:2, "splendid and esteemed" |
+| honour (verb) | respect | Shamoth 20:12, 1 Kepha 2:17 |
 | honour (noun), honourable | esteem, esteemed | Ibrim 5:4, Mishle 3:9 |
 | dishonour | disrespect | Romans 1:24, 2:23 |
 | divinity, deity, godhead | Aluahim | אֱלֹהִים, with Al and Aluah its roots |
@@ -273,13 +317,13 @@ The rest, each one what the main books already say in the parallel place:
 Capitalisation is inherited word by word, so "Holy One" becomes "Qadash
 (Set Apart One)" rather than losing its capital; names that carry their own
 capitalisation are listed in `LOCKED_CASE` so "Set-apart Ruach" resolves to
-"Ruach haQodesh" and not "Ruach HaQodesh".
+"Ruach HaQadash" and not "Ruach HaQodesh".
 
 Four things are deliberately left alone: the **Church of the Holy
 Sepulcher**, a building with a name; the **verb** "divine" (Mikah 3:11,
-"her neḇi'im divine for a price"), which is why the adjective is listed by
+"her naḇi'im divine for a price"), which is why the adjective is listed by
 its collocations; **"set-apartness"**, which has no single Hebrew noun in
-this canon; and the **verb** "set … apart" (Shemoth 19:10), which stays
+this canon; and the **verb** "set … apart" (Shamoth 19:10), which stays
 English because only the adjective and noun take the Hebrew.
 
 **[docs/house-style-report.md](docs/house-style-report.md)** has the full

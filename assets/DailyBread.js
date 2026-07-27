@@ -607,7 +607,7 @@
     "r": "Strength and splendour are worn, not hoarded. Face the unknown of tomorrow with the Torah of kindness on your tongue and you can afford to laugh at it."
    },
    {
-    "b": "yeshayahu",
+    "b": "yashayahu",
     "c": 40,
     "f": 28,
     "t": 31,
@@ -615,7 +615,7 @@
     "r": "The Everlasting does not grow faint — and He gives that same strength away. Wait on Yahuah today and let renewal come from a source that never tires."
    },
    {
-    "b": "yeshayahu",
+    "b": "yashayahu",
     "c": 41,
     "f": 10,
     "t": 10,
@@ -623,7 +623,7 @@
     "r": "Four promises against one fear: I am with you, I am your Aluahim, I strengthen you, I uphold you. Read them slowly enough to believe them."
    },
    {
-    "b": "yeshayahu",
+    "b": "yashayahu",
     "c": 43,
     "f": 1,
     "t": 2,
@@ -631,7 +631,7 @@
     "r": "Not *if* you pass through the waters, but *when*. He does not promise dry ground; He promises company in the river and safety in the fire."
    },
    {
-    "b": "yeshayahu",
+    "b": "yashayahu",
     "c": 26,
     "f": 3,
     "t": 4,
@@ -639,7 +639,7 @@
     "r": "Shalom is guarded by what the mind stays on. Keep yours on Yahuah, the everlasting rock, and peace becomes a keeping rather than a striving."
    },
    {
-    "b": "yeshayahu",
+    "b": "yashayahu",
     "c": 30,
     "f": 21,
     "t": 21,
@@ -647,7 +647,7 @@
     "r": "The voice comes from behind — it is heard by those already walking. Take the next honest step and expect direction to meet you in motion."
    },
    {
-    "b": "yeshayahu",
+    "b": "yashayahu",
     "c": 55,
     "f": 8,
     "t": 9,
@@ -655,7 +655,7 @@
     "r": "When His answer does not match your reasoning, that is not evidence of neglect. Heaven's distance from earth is the measure of how much more He sees."
    },
    {
-    "b": "yeshayahu",
+    "b": "yashayahu",
     "c": 58,
     "f": 11,
     "t": 11,
@@ -663,7 +663,7 @@
     "r": "Guidance, satisfaction, strengthened bones — and then you become a spring for others. Yahuah waters people who intend to water someone else."
    },
    {
-    "b": "yeshayahu",
+    "b": "yashayahu",
     "c": 54,
     "f": 10,
     "t": 10,
@@ -671,7 +671,7 @@
     "r": "Mountains are the picture of permanence, and they are the thing said to move first. His kindness and His berith outlast the landscape."
    },
    {
-    "b": "yirmeyahu",
+    "b": "yirmayahu",
     "c": 29,
     "f": 11,
     "t": 13,
@@ -679,7 +679,7 @@
     "r": "This was spoken to exiles, not to people whose circumstances had already improved. Seek Him with all your heart from exactly where you are, and you will be found by the One with a future for you."
    },
    {
-    "b": "yirmeyahu",
+    "b": "yirmayahu",
     "c": 17,
     "f": 7,
     "t": 8,
@@ -687,7 +687,7 @@
     "r": "The drought still comes; the tree simply is not anxious in it. Roots reaching for the river are what make the difference between surviving heat and fearing it."
    },
    {
-    "b": "yirmeyahu",
+    "b": "yirmayahu",
     "c": 31,
     "f": 3,
     "t": 3,
@@ -703,7 +703,7 @@
     "r": "Written by a man who had watched everything he loved fall. If his compassions were new that morning, they are new on yours: Yahuah is my portion."
    },
    {
-    "b": "debarim",
+    "b": "dabarim",
     "c": 31,
     "f": 6,
     "t": 6,
@@ -719,7 +719,7 @@
     "r": "Meditation by day and night, and then courage wherever you go. The Torah you keep in your mouth becomes the steadiness you carry in your feet."
    },
    {
-    "b": "shemoth",
+    "b": "shamoth",
     "c": 14,
     "f": 14,
     "t": 14,
@@ -727,7 +727,7 @@
     "r": "Some battles are won by effort, and some by stillness. Ask which kind today is before you spend yourself on a fight Yahuah has claimed."
    },
    {
-    "b": "bemidbar",
+    "b": "bamidbar",
     "c": 6,
     "f": 24,
     "t": 26,
@@ -743,7 +743,7 @@
     "r": "Not complicated, only costly: do right, love kindness, walk humbly. Pick the one of the three you have been avoiding, and start there."
    },
    {
-    "b": "tsephanyah",
+    "b": "tsephanyahu",
     "c": 3,
     "f": 17,
     "t": 17,
@@ -969,19 +969,19 @@
   ];
   // book id -> [chapter, verse, theme index] …
   var POOL = {
-    "debarim": [[1,21,13],[2,7,9],[3,22,13],[4,36,3],[6,5,13],[8,10,9],[9,6,9],[10,15,7],[12,7,5],[12,10,12],[12,12,5],[14,26,13],[16,11,5],[16,20,6],[24,13,9],[25,19,12],[28,8,9],[28,12,9],[31,8,13],[31,23,13],[32,15,11],[32,36,13],[32,37,11],[33,12,7],[33,20,9],[34,9,15]],
-    "yeshayahu": [[5,1,7],[9,7,13],[11,5,2],[12,2,1],[12,4,9],[14,32,11],[19,4,1],[19,20,1],[24,15,9],[25,9,1],[25,12,11],[27,11,8],[30,18,8],[30,26,6],[33,6,15],[40,9,13],[40,11,10],[40,14,3],[40,26,13],[42,10,5],[42,12,9],[44,8,11],[44,17,1],[44,18,15],[45,21,3],[48,14,7],[49,4,13],[49,10,3],[49,13,5],[50,4,6],[51,3,0],[52,9,5],[53,11,15],[58,2,5],[61,6,13],[61,10,1],[61,11,9],[62,5,5],[63,1,13],[63,7,8],[63,14,12]],
-    "yirmeyahu": [[10,12,15],[14,13,12],[15,16,5],[20,13,1],[31,10,11],[47,7,12],[50,34,13],[51,15,15]],
-    "yehezqel": [[3,12,9],[3,27,0],[14,23,0],[18,19,6],[28,12,15],[29,16,11],[34,10,1],[34,23,10],[39,25,8],[43,27,12]],
+    "dabarim": [[1,21,13],[2,7,9],[3,22,13],[4,36,3],[6,5,13],[8,10,9],[9,6,9],[10,15,7],[12,7,5],[12,10,12],[12,12,5],[14,26,13],[16,11,5],[16,20,6],[24,13,9],[25,19,12],[28,8,9],[28,12,9],[31,8,13],[31,23,13],[32,15,11],[32,36,13],[32,37,11],[33,12,7],[33,20,9],[34,9,15]],
+    "yashayahu": [[5,1,7],[9,7,13],[11,5,2],[12,2,1],[12,4,9],[14,32,11],[19,4,1],[19,20,1],[24,15,9],[25,9,1],[25,12,11],[27,11,8],[30,18,8],[30,26,6],[33,6,15],[40,9,13],[40,11,10],[40,14,3],[40,26,13],[42,10,5],[42,12,9],[44,8,11],[44,17,1],[44,18,15],[45,21,3],[48,14,7],[49,4,13],[49,10,3],[49,13,5],[50,4,6],[51,3,0],[52,9,5],[53,11,15],[58,2,5],[61,6,13],[61,10,1],[61,11,9],[62,5,5],[63,1,13],[63,7,8],[63,14,12]],
+    "yirmayahu": [[10,12,15],[14,13,12],[15,16,5],[20,13,1],[31,10,11],[47,7,12],[50,34,13],[51,15,15]],
+    "yahazqal": [[3,12,9],[3,27,0],[14,23,0],[18,19,6],[28,12,15],[29,16,11],[34,10,1],[34,23,10],[39,25,8],[43,27,12]],
     "hoshea": [[2,23,8],[6,1,0],[6,6,5],[9,1,7],[10,12,8],[12,3,13],[12,6,8]],
-    "yoel": [[1,16,5],[2,23,5],[2,26,9],[3,16,11]],
+    "yoal": [[1,16,5],[2,23,5],[2,26,9],[3,16,11]],
     "amos": [[4,5,7],[5,14,6],[7,2,8]],
     "yonah": [[4,2,8],[4,6,1]],
     "mikah": [[5,4,13],[6,2,2],[6,9,15],[7,7,1],[7,18,5],[7,19,8]],
     "nahum": [[1,15,12]],
     "habaqquq": [[3,4,13],[3,6,2]],
-    "tsephanyah": [[3,5,6]],
-    "zekaryah": [[6,8,12],[6,13,12],[10,6,8],[12,5,13]],
+    "tsephanyahu": [[3,5,6]],
+    "zakaryahu": [[6,8,12],[6,13,12],[10,6,8],[12,5,13]],
     "malaki": [[1,9,8],[2,6,12],[3,15,9]],
     "tehillim": [[7,10,11],[11,7,7],[17,6,0],[18,2,11],[18,30,11],[18,50,1],[20,2,13],[20,7,14],[20,9,0],[21,7,8],[22,26,9],[24,5,1],[24,7,2],[24,9,2],[25,2,14],[25,5,3],[25,10,8],[27,9,1],[28,6,9],[28,7,11],[28,8,11],[31,21,13],[31,23,7],[31,24,13],[33,2,5],[33,12,9],[34,1,9],[34,8,11],[35,9,1],[35,27,5],[37,6,6],[37,40,1],[41,2,9],[42,4,5],[42,5,1],[42,8,8],[43,5,1],[46,7,11],[46,11,11],[47,7,5],[48,2,5],[48,10,9],[49,7,1],[49,15,1],[50,14,9],[50,23,1],[52,8,14],[54,4,13],[55,18,1],[55,19,13],[55,20,12],[56,1,8],[56,13,1],[57,3,1],[57,7,5],[59,1,1],[61,7,8],[62,1,1],[62,2,11],[62,11,13],[64,1,11],[64,10,11],[65,5,1],[65,6,13],[66,17,9],[67,1,6],[68,3,5],[68,28,13],[68,34,13],[69,30,9],[69,32,5],[69,34,9],[69,36,7],[70,4,5],[71,18,13],[72,7,12],[72,12,11],[72,13,1],[72,15,9],[72,17,9],[73,28,11],[77,8,8],[77,9,8],[77,14,13],[78,4,13],[78,35,11],[79,9,1],[81,1,13],[84,7,13],[90,2,2],[91,4,11],[93,1,13],[95,2,9],[97,4,6],[97,12,5],[98,2,1],[98,3,1],[104,33,5],[105,2,5],[105,39,6],[105,43,5],[105,45,13],[106,2,9],[106,45,8],[107,8,8],[107,15,8],[107,21,8],[107,22,5],[107,30,5],[107,31,8],[108,1,5],[109,17,5],[109,30,9],[111,4,8],[112,1,9],[115,9,11],[115,10,11],[116,5,8],[118,1,8],[118,3,8],[118,14,1],[118,27,6],[119,2,9],[123,2,8],[127,2,7],[135,3,9],[136,2,8],[136,4,8],[136,5,8],[136,6,8],[136,7,8],[136,9,8],[144,15,9],[145,9,8],[147,1,9],[147,5,13],[147,14,12],[147,20,9],[148,3,9],[148,4,9],[148,5,9],[148,13,9],[148,14,9],[149,1,9],[149,2,5],[149,3,9],[149,9,9],[150,3,9],[150,4,9],[150,5,9]],
     "mishle": [[3,4,8],[3,19,15],[3,34,8],[11,12,15],[11,28,14],[14,21,8],[14,31,8],[15,32,15],[16,20,14],[17,27,15],[18,1,15],[18,22,8],[19,8,7],[19,17,8],[20,7,9],[22,9,10],[24,7,15],[28,8,8],[28,23,8],[29,3,7],[30,5,11]],
