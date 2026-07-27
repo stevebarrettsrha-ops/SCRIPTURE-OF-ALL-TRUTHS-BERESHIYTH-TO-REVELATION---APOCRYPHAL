@@ -11,7 +11,7 @@ Checks (all 104 books, every chapter, every verse):
      With --fix these become real verses wherever the numbering allows it
      (the marker's number must continue the chapter's sequence and not
      collide with an existing verse); otherwise the marker is removed.
-  2. word forms             the JOINS / SPLITS / TYPOS tables in
+  2. word forms             the JOINS / SPLITS / TYPOS / HOUSE tables in
      assets/words.js — the one place a word's correct form is recorded.
      The tables are read straight out of the JavaScript so the site and
      this script can never disagree.
@@ -71,6 +71,7 @@ def js_table(path, name):
 JOINS = js_table(WORDS_JS, "JOINS")
 SPLITS = js_table(WORDS_JS, "SPLITS")
 TYPOS = js_table(WORDS_JS, "TYPOS")
+HOUSE = js_table(WORDS_JS, "HOUSE")
 LEXICON = js_table(PRON_JS, "LEXICON")
 
 
@@ -85,9 +86,19 @@ def _alt(keys):
 JOIN_RE = _alt(list(JOINS))
 SPLIT_RE = _alt(list(SPLITS))
 TYPO_RE = _alt(list(TYPOS))
+HOUSE_RE = _alt(list(HOUSE))
 
 
 def apply_case(sample, replacement):
+    """Mirror of applyCase in words.js — capitalisation word by word, so
+    "Holy One" becomes "Set-apart One" and not "Set-apart one"."""
+    frm = re.split(r"\s+", sample)
+    to = re.split(r"\s+", replacement)
+    if len(frm) == len(to):
+        out = []
+        for a, b in zip(frm, to):
+            out.append(b[:1].upper() + b[1:] if a[:1].isupper() else b)
+        return " ".join(out)
     if sample[:1].isupper():
         return replacement[:1].upper() + replacement[1:]
     return replacement
@@ -97,6 +108,9 @@ def apply_case(sample, replacement):
 # Mirror of the glyph layer in assets/words.js — see the commentary there.
 # scripts/check_words_parity.py proves the two agree over every verse.
 MINUS = re.compile("\u2212")
+# House typography is the en dash; the apocryphal books arrive with "--".
+DOUBLE_HYPHEN = re.compile(r"\s*--+\s*")
+EM_DASH = re.compile("\u2014")
 # Mirror of the minus-sign rules in words.js.
 LETTER = "A-Za-z\u00c0-\u024f\u1e00-\u1eff0-9"
 DASH_WORDS = ("for|he|she|it|they|we|you|I|the|a|an|and|but|who|whom|that|"
@@ -130,9 +144,11 @@ def repair_glyphs(text):
     s = re.sub(r"([A-Za-z])\s*/\s*,", "\\1,\u201d", s)
     s = re.sub(r",\s1/\s+", ", \u201c", s)
     s = re.sub(r"([A-Za-z])/ (?=[a-z])", "\\1, ", s)
-    s = MINUS_DASH.sub("\\1 \u2014 ", s)
+    s = MINUS_DASH.sub("\\1 \u2013 ", s)
     s = MINUS_HYPHEN.sub(r"\1-", s)
-    s = MINUS.sub(" \u2014 ", s)
+    s = MINUS.sub(" \u2013 ", s)
+    s = DOUBLE_HYPHEN.sub(" \u2013 ", s)
+    s = EM_DASH.sub("\u2013", s)
     if "*" in s:
         s = FOOTNOTE_BARE.sub("", s)
         note = FOOTNOTE.search(s)
@@ -165,6 +181,8 @@ def repair_words(text, log=None, where=""):
         s = SPLIT_RE.sub(sub(SPLITS), s)
     if TYPO_RE:
         s = TYPO_RE.sub(sub(TYPOS), s)
+    if HOUSE_RE:
+        s = HOUSE_RE.sub(sub(HOUSE), s)
     s = DUAL_REFERENCE.sub(" ", s)
     s = VERSE_MARKER.sub(" ", s)
     s = re.sub(r"[ \t]{2,}", " ", s)

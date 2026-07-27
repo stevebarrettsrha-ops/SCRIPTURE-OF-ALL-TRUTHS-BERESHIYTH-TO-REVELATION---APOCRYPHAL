@@ -132,7 +132,32 @@
     "sprin&": "spring,"
   };
 
-  // --- 4. inline verse markers ----------------------------------------
+  // --- 4. house style -------------------------------------------------
+  // The Besorah renders qodesh as "set-apart" throughout — the Torah, the
+  // Prophets, the Writings and the Messianic writings use it 747 times and
+  // "set-apartness" 25 times. The apocryphal books were set from other
+  // editions and still carry "holy", "holiness" and "godly", so they are
+  // brought into line here: holy → set-apart, godly → set-apart.
+  //
+  // Longer keys are matched first, so "holy of holies" and "holy ones"
+  // resolve before the bare word. Capitalisation is inherited from what
+  // was matched, so "Holy" becomes "Set-apart".
+  var HOUSE = {
+    "holy of holies": "Most Set-apart Place",
+    // The church in Yerushalayim is a building with a name; it keeps it.
+    "holy sepulcher": "Holy Sepulcher",
+    "holy sepulchre": "Holy Sepulchre",
+    "most holy": "most set-apart",
+    "holy ones": "set-apart ones",
+    "holy one": "set-apart one",
+    "holy place": "set-apart place",
+    "holiness": "set-apartness",
+    "godliness": "set-apartness",
+    "godly": "set-apart",
+    "holy": "set-apart"
+  };
+
+  // --- 5. inline verse markers ----------------------------------------
   // "[19]", "[19J", "[19 J" — a verse number the typesetter printed inside
   // the running text. scripts/sweep_text.py turns these into real verses;
   // this pattern is what both sides agree on, and the render-time pass
@@ -144,7 +169,7 @@
   // whole reference goes rather than just its bracket.
   var DUAL_REFERENCE = /\b\d{1,3}\s*\[\s*\d{1,3}\s*[J\])}]\s*:\s*\d{1,3}\s*/g;
 
-  // --- 5. glyphs that are not part of the reading ----------------------
+  // --- 6. glyphs that are not part of the reading ----------------------
   // The Torah, the Prophets, the Writings and the Messianic books contain
   // no brackets, no asterisks and no minus signs at all. The apocryphal
   // books, printed from scholarly editions, arrive carrying all three:
@@ -164,6 +189,11 @@
   //              words with no spaces ("language/lip") is a real
   //              translator's alternative and is left alone.
   var MINUS = /−/g;
+  // House typography is the en dash: the Torah, the Prophets, the Writings
+  // and the Messianic books use it 1,358 times and the em dash once. The
+  // apocryphal books arrive with "--" instead, 135 times.
+  var DOUBLE_HYPHEN = /\s*--+\s*/g;
+  var EM_DASH = /—/g;
   // A minus sign between two letters is a hyphen ("hard−hearted"), unless
   // what follows is a function word, in which case the printed line was a
   // dash: "his father Ḥanoḵ−for he had shown him" reads as an aside.
@@ -203,9 +233,11 @@
          .replace(/([A-Za-z])\/ (?=[a-z])/g, "$1, ");
     // Minus sign: a dash before a function word, a hyphen inside a
     // compound, an em dash anywhere else.
-    s = s.replace(MINUS_DASH, "$1 — ")
+    s = s.replace(MINUS_DASH, "$1 – ")
          .replace(MINUS_HYPHEN, "$1-")
-         .replace(MINUS, " — ");
+         .replace(MINUS, " – ")
+         .replace(DOUBLE_HYPHEN, " – ")
+         .replace(EM_DASH, "–");
     // Footnotes: keep the note, mark it as one; drop every other star.
     if (s.indexOf("*") !== -1) {
       s = s.replace(FOOTNOTE_BARE, "");
@@ -222,13 +254,28 @@
   }
 
   // --------------------------------------------------------------------
+  function isUpper(ch) {
+    return ch === ch.toUpperCase() && ch !== ch.toLowerCase();
+  }
+
+  // The replacement wears the capitalisation of what it replaced, word by
+  // word where the two line up — so "Holy One" becomes "Set-apart One" and
+  // not "Set-apart one".
   function applyCase(sample, replacement) {
     if (!sample) return replacement;
-    if (sample[0] === sample[0].toUpperCase() &&
-        sample[0] !== sample[0].toLowerCase()) {
-      return replacement.charAt(0).toUpperCase() + replacement.slice(1);
+    var from = sample.split(/\s+/), to = replacement.split(/\s+/);
+    if (from.length === to.length) {
+      var out = [];
+      for (var i = 0; i < to.length; i++) {
+        out.push(from[i] && isUpper(from[i].charAt(0))
+          ? to[i].charAt(0).toUpperCase() + to[i].slice(1)
+          : to[i]);
+      }
+      return out.join(" ");
     }
-    return replacement;
+    return isUpper(sample.charAt(0))
+      ? replacement.charAt(0).toUpperCase() + replacement.slice(1)
+      : replacement;
   }
 
   // Build one alternation per table so a verse is walked a fixed number of
@@ -246,6 +293,7 @@
   var JOIN_RE = keysToRe(JOINS, "\\b%s\\b");
   var SPLIT_RE = keysToRe(SPLITS, "\\b%s\\b");
   var TYPO_RE = keysToRe(TYPOS, "\\b%s\\b");
+  var HOUSE_RE = keysToRe(HOUSE, "\\b%s\\b");
 
   function lookup(table, key) {
     return table[key.toLowerCase().replace(/\s+/g, " ")];
@@ -269,6 +317,12 @@
     if (TYPO_RE) {
       s = s.replace(TYPO_RE, function (m) {
         var r = lookup(TYPOS, m);
+        return r ? applyCase(m, r) : m;
+      });
+    }
+    if (HOUSE_RE) {
+      s = s.replace(HOUSE_RE, function (m) {
+        var r = lookup(HOUSE, m);
         return r ? applyCase(m, r) : m;
       });
     }
@@ -317,6 +371,7 @@
     JOINS: JOINS,
     SPLITS: SPLITS,
     TYPOS: TYPOS,
+    HOUSE: HOUSE,
     VERSE_MARKER: VERSE_MARKER,
     repair: repair,
     repairPlain: repair,

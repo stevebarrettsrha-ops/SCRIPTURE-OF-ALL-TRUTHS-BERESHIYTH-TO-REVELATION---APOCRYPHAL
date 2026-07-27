@@ -221,6 +221,28 @@ asterisks and no minus signs at all; those books arrived with 417 brackets,
 | `*` `**` | a footnote mark | the mark goes; a note behind it is kept and shown as a footnote |
 | `/'` `/,` `./I` | a closing quote the scanner broke apart (`"Yea, lady/' I said"`) | the quote is restored — a slash between two words, `language/lip`, is a real alternative and is left alone |
 | `[4S]` `[SO]` | a verse number whose digits were read as letters | un-mangled, then promoted into a real verse |
+| `--` `—` | a dash typed as two hyphens, 135 times | the en dash the rest of the canon uses (1,358 times against a single em dash) |
+
+### House style
+
+The Besorah renders *qodesh* as **set-apart** throughout: the Torah, the
+Prophets, the Writings and the Messianic writings use it 747 times, and
+"set-apartness" 25 times. The apocryphal books were set from other editions
+and still carried the anglicised words, so the `HOUSE` table in `words.js`
+brings them into line — 534 replacements:
+
+| Was | Now |
+|---|---|
+| holy, Holy | set-apart, Set-apart |
+| holy ones, Holy One | set-apart ones, Set-apart One |
+| holy place, holy of holies, most holy | set-apart place, Most Set-apart Place, most set-apart |
+| holiness | set-apartness |
+| godly, godliness | set-apart, set-apartness |
+
+Capitalisation is inherited word by word, so "Holy One" becomes "Set-apart
+One" rather than "Set-apart one". One phrase is deliberately exempt: the
+Church of the **Holy Sepulcher**, named in an editorial footnote, is a
+building with a name and keeps it.
 
 The sweep checks every verse of every book for inline verse markers, word
 forms, stray glyphs, markup that isn't the whitelisted `<span class="dn">` /
