@@ -565,3 +565,345 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   background: rgba(212,175,55,0.15);
   color: var(--gold);
 }
+
+/* ================================================================
+   HOME PAGE
+   Daily Bread · Continue reading · Choose your reader ·
+   Tehillim · Mishle · Marked text · Bookmarks
+   ================================================================ */
+main.home { max-width: 1100px; padding-top: 1.25rem; }
+
+.home-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  padding: 1rem 1.15rem 1.15rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.home-row .card { margin-bottom: 0; }
+
+.card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+.card-head h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.card-head .card-sub {
+  color: var(--ink-dim);
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.82rem;
+  margin-left: 0.4rem;
+}
+.card-head .count { color: var(--ink-dim); font-size: 0.85rem; }
+.card-note {
+  color: var(--ink-dim);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+.card-empty { text-align: left; padding: 0.4rem 0 0.2rem; }
+.card-tools { margin-left: auto; }
+.card-more {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--link);
+  align-self: flex-start;
+}
+
+/* ---- Daily Bread ---- */
+.daily-card {
+  background: linear-gradient(180deg, #2c211a 0%, #1f1812 100%);
+  border-color: var(--gold-dim);
+}
+.daily-theme {
+  color: var(--gold);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-bottom: 0.2rem;
+}
+.daily-ref {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+}
+.daily-ref .heb {
+  color: var(--link);
+  letter-spacing: 0.05em;
+  font-size: 0.95rem;
+}
+.daily-ref .eng {
+  color: var(--ink-dim);
+  font-style: italic;
+  font-size: 0.82rem;
+}
+.daily-verses {
+  font-size: 1.12rem;
+  line-height: 1.75;
+  border-left: 2px solid var(--gold-dim);
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.daily-reflection {
+  color: var(--ink-dim);
+  font-style: italic;
+  margin: 0 0 0.4rem;
+  max-width: 62ch;
+}
+.daily-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+.daily-actions .card-more { margin-top: 0; }
+.tts-bar-compact {
+  flex: 0 0 auto;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* ---- Continue reading ---- */
+#continue-card .continue-card { margin: 0; max-width: none; }
+
+/* ---- Choose your reader ---- */
+.reader-panel { display: block; }
+.reader-field {
+  display: block;
+  margin-bottom: 0.7rem;
+}
+.reader-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+  margin-bottom: 0.25rem;
+}
+.reader-voice {
+  width: 100%;
+  max-width: none;
+  font-size: 0.9rem;
+  padding: 0.45rem 0.5rem;
+}
+.reader-speed { display: flex; align-items: center; gap: 0.6rem; }
+.reader-speed .tts-rate-input { width: 100%; max-width: 220px; }
+.reader-actions { display: flex; gap: 0.4rem; margin-top: 0.2rem; }
+.reader-hint {
+  color: var(--ink-dim);
+  font-size: 0.78rem;
+  font-style: italic;
+  margin: 0.7rem 0 0;
+}
+.reader-none { text-align: left; padding-left: 0; }
+
+/* ---- Tehillim / Mishle quick access ---- */
+.quick-today {
+  display: block;
+  padding: 0.7rem 0.9rem;
+  background: var(--bg);
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  color: var(--link);
+}
+.quick-today:hover {
+  border-color: var(--gold);
+  text-decoration: none;
+  background: rgba(212,175,55,0.06);
+}
+.quick-today-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ink-dim);
+}
+.quick-today-ref {
+  display: block;
+  color: var(--gold);
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+}
+.quick-today-line {
+  display: block;
+  color: var(--ink-dim);
+  font-size: 0.82rem;
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+.quick-jump {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.8rem 0 0.6rem;
+  font-size: 0.82rem;
+  color: var(--ink-dim);
+}
+.quick-jump input {
+  width: 5rem;
+  margin-left: 0.4rem;
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.3rem 0.4rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+.quick-jump input:focus { outline: none; border-color: var(--gold); }
+.chapter-grid.mini {
+  grid-template-columns: repeat(auto-fill, minmax(46px, 1fr));
+  gap: 0.25rem;
+  margin-top: 0.4rem;
+  /* Long books (150 psalms) scroll inside their own panel rather than
+     pushing the rest of the home page down. */
+  max-height: 170px;
+  overflow-y: auto;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.35rem;
+}
+.chapter-grid.mini .chapter-link {
+  padding: 0.35rem 0.2rem;
+  font-size: 0.85rem;
+}
+.chapter-grid.mini .chapter-link.is-today {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ---- Marked text ---- */
+.mark-list { list-style: none; margin: 0; padding: 0; }
+.mark-item {
+  position: relative;
+  border-left: 2px solid var(--gold-dim);
+  margin-bottom: 0.55rem;
+}
+.mark-item:hover { border-left-color: var(--gold); }
+.mark-link {
+  display: block;
+  padding: 0.35rem 2rem 0.4rem 0.8rem;
+  color: var(--ink);
+}
+.mark-link:hover { text-decoration: none; background: rgba(212,175,55,0.05); }
+.mark-quote {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.mark-quote::before { content: "“"; color: var(--gold); }
+.mark-quote::after  { content: "”"; color: var(--gold); }
+.mark-ref {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+}
+.mark-item .bm-remove {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.4rem;
+  background: transparent;
+  border: 0;
+  color: var(--ink-dim);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.15rem 0.35rem;
+  border-radius: 3px;
+}
+.mark-item .bm-remove:hover {
+  background: rgba(212,175,55,0.15);
+  color: var(--gold);
+}
+
+/* ================================================================
+   MARKED TEXT INSIDE A CHAPTER
+   ================================================================ */
+mark.tmark {
+  background: rgba(212,175,55,0.22);
+  color: inherit;
+  border-bottom: 1px solid var(--gold-dim);
+  border-radius: 2px;
+  padding: 0.05em 0;
+  cursor: pointer;
+}
+mark.tmark:hover { background: rgba(212,175,55,0.34); }
+mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
+.markable .verse, .markable .prose { -webkit-tap-highlight-color: transparent; }
+
+/* The floating "Mark text" bubble */
+.mark-pop {
+  position: absolute;
+  z-index: 50;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background: var(--panel);
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+.mark-pop[hidden] { display: none; }
+.mark-pop-btn {
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--link);
+  font-family: inherit;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.mark-pop-btn:hover {
+  background: var(--gold);
+  color: #1a1410;
+  border-color: var(--gold);
+}
+.mark-pop-btn.danger:hover { background: #a3512b; color: var(--ink); border-color: #a3512b; }
+
+.mark-hint {
+  border-top: 1px solid var(--rule);
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  main.home { padding: 1rem 0.85rem 2rem; }
+  .card { padding: 0.85rem 0.9rem 1rem; }
+  .daily-theme { font-size: 1.25rem; }
+  .daily-verses { font-size: 1.05rem; padding-left: 0.7rem; }
+  .home-row { grid-template-columns: 1fr; }
+}

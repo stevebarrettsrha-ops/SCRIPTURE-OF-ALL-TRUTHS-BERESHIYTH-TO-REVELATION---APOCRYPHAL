@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Books — The Besorah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <h1>THE BESORAH</h1>
+  <div class="sub">Bereshith &mdash; to &mdash; Ḥazon &mdash; with the Apocrypha</div>
+  <nav><a href="index.html">&larr; Home</a></nav>
+</header>
+
+<main>
+  <input type="search" id="search" placeholder="Search for a book (Hebrew or English name)…" autocomplete="off">
+  <div id="content">
+    <p class="note">Loading the canon…</p>
+  </div>
+</main>
+
+<script>
+const SECTIONS = [
+  { key: "Torah",       label: "Torah — Teaching" },
+  { key: "Nebi'im",     label: "Nebi'im — Prophets" },
+  { key: "Kethubim",    label: "Kethubim — Writings" },
+  { key: "Messianic",   label: "Messianic Writings" },
+  { key: "Apocryphal",  label: "Apocryphal Books" },
+  { key: "Patriarchs",  label: "Testaments of the Twelve Patriarchs" },
+  { key: "Apocrypha",   label: "Ethiopic & Eastern Apocrypha" },
+];
+
+function renderBooks(data, filter) {
+  const root = document.getElementById('content');
+  root.innerHTML = '';
+  const f = (filter || '').trim().toLowerCase();
+
+  for (const s of SECTIONS) {
+    const books = data.books.filter(b =>
+      b.section === s.key &&
+      (!f || b.hebrew.toLowerCase().includes(f) || b.english.toLowerCase().includes(f))
+    );
+    if (books.length === 0) continue;
+
+    const section = document.createElement('section');
+    section.className = 'section';
+    const h2 = document.createElement('h2');
+    h2.textContent = s.label;
+    section.appendChild(h2);
+
+    const grid = document.createElement('div');
+    grid.className = 'book-grid';
+    for (const b of books) {
+      const a = document.createElement('a');
+      a.className = 'book-link';
+      a.href = `book.html?id=${encodeURIComponent(b.id)}`;
+      a.innerHTML = `<span class="heb">${b.hebrew}</span><span class="eng">${b.english}</span>`;
+      grid.appendChild(a);
+    }
+    section.appendChild(grid);
+    root.appendChild(section);
+  }
+
+  if (root.children.length === 0) {
+    const p = document.createElement('p');
+    p.className = 'note';
+    p.textContent = 'No books match your search.';
+    root.appendChild(p);
+  }
+}
+
+fetch('assets/index.json')
+  .then(r => r.json())
+  .then(data => {
+    renderBooks(data, '');
+    document.getElementById('search').addEventListener('input', e => {
+      renderBooks(data, e.target.value);
+    });
+  })
+  .catch(err => {
+    document.getElementById('content').innerHTML =
+      '<p class="note">Failed to load canon index. Open this site via a local web server (not file://). E.g. <code>python3 -m http.server</code></p>';
+    console.error(err);
+  });
+</script>
+</body>
+</html>
