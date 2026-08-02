@@ -247,6 +247,45 @@
   // ==================================================================
   //  TEHILLIM / MISHLE QUICK ACCESS
   // ==================================================================
+  // A taste of the day's chapter. The opening line on its own is often
+  // not worth reading: a book can begin with its own title ("The proverbs
+  // of Shelomoh son of Dawiḏ, sovereign of Yasharal:"), and one line of a
+  // psalm usually stops well before the thought does. So the taste drops a
+  // heading, then runs on verse by verse until it has a whole sentence to
+  // show, and ends where a sentence ends rather than in the middle of a
+  // word.
+  var HEADING = /^\s*(these\s+(too\s+)?are\s+|the\s+)?(proverbs?|words|sayings|song|songs|prayer|psalm|vision|burden)\b[^:.!?]{0,80}:\s*/i;
+  var SENTENCE_END = /[.!?”’"]\s*$/;
+  var TASTE_MIN = 90;
+  var TASTE_MAX = 240;
+
+  function tasteOf(verses) {
+    var parts = [], text = "";
+    for (var i = 0; i < verses.length && parts.length < 4; i++) {
+      var s = plain(verses[i].t);
+      if (!parts.length) s = s.replace(HEADING, "");
+      if (!s) continue;
+      parts.push(s);
+      text = parts.join(" ");
+      if (text.length >= TASTE_MIN && SENTENCE_END.test(text)) break;
+      if (text.length >= TASTE_MAX) break;
+    }
+    if (!text) return "";
+    if (text.length <= TASTE_MAX) return text;
+    // End at the end of a sentence if one is in reach; failing that, at
+    // the end of a clause; only as a last resort in the middle of one.
+    var cut = Math.max(text.lastIndexOf(". ", TASTE_MAX),
+                       text.lastIndexOf("! ", TASTE_MAX),
+                       text.lastIndexOf("? ", TASTE_MAX));
+    if (cut >= TASTE_MIN) return text.slice(0, cut + 1);
+    cut = Math.max(text.lastIndexOf("; ", TASTE_MAX),
+                   text.lastIndexOf(", ", TASTE_MAX),
+                   text.lastIndexOf(": ", TASTE_MAX));
+    if (cut < TASTE_MIN) cut = text.lastIndexOf(" ", TASTE_MAX);
+    return text.slice(0, cut > 0 ? cut : TASTE_MAX)
+               .replace(/[,;:–—\s]+$/, "") + "…";
+  }
+
   // Tehillim walks the 150 songs across the year; Mishle follows the
   // day of the month, the way the 31 chapters are traditionally read.
   function todaysChapter(book, now) {
@@ -313,11 +352,8 @@
     // A taste of today's chapter, fetched after the panel is on screen.
     getBook(book.id).then(function (text) {
       var chap = text.chapters[String(ch)];
-      var first = chap && chap.verses && chap.verses[0];
       var line = today.querySelector(".quick-today-line");
-      if (!first) { line.textContent = ""; return; }
-      var s = plain(first.t);
-      line.textContent = s.length > 120 ? s.slice(0, 118).trim() + "…" : s;
+      line.textContent = tasteOf((chap && chap.verses) || []);
     }).catch(function () {
       var line = today.querySelector(".quick-today-line");
       if (line) line.textContent = "";

@@ -3,23 +3,34 @@
 build_daily_bread.py
 
 Builds assets/DailyBread.js — the pool the home page draws today's portion
-from. Every verse of all 104 books is read, and the ones that stand on their
-own as encouragement are kept, tagged with a theme, and written out as a
-compact table of references. The verse text itself is never copied: the page
-reads it from assets/text/ at run time, so a portion can never drift from
-the canon.
+from. Every verse of all 104 books is read, and the passages that stand on
+their own as encouragement are kept, tagged with a theme, and written out as
+a compact table of references. The verse text itself is never copied: the
+page reads it from assets/text/ at run time, so a portion can never drift
+from the canon.
+
+A portion is a **passage, never a lone line**. A single verse lifted out of
+its paragraph is often either a fragment ("and your ears hear a word behind
+you …") or a saying with nothing around it to say what it means. So a verse
+that qualifies is only a seed: the paragraph it belongs to is grown around
+it, backwards to the sentence that begins the thought and forwards until the
+thought lands, and the whole passage is what gets served.
 
 Selection, in order:
 
-  * the verse must read as a complete thought — long enough to stand alone,
+  * a seed verse must read as a complete thought — long enough to stand up,
     short enough to take in at a glance, ending in a full stop;
   * it must carry at least one note of encouragement (trust, refuge, mercy,
     joy, light, healing, promise …);
   * it must carry none of the hard matter that needs its surrounding
     chapter to be read rightly — slaughter, plague, curse, judgement
-    poured out, uncleanness, genealogy and census;
-  * no more than a few verses are taken from any one chapter, so the year
-    does not settle into one book.
+    poured out, uncleanness, betrayal, genealogy and census;
+  * the paragraph grown around it must be two to four verses, must begin
+    where a sentence begins, must land on a full stop, and every verse in
+    it must be as clean as the seed. A seed with no safe paragraph around
+    it is dropped rather than served bare;
+  * passages from one chapter never overlap, and no more than a few are
+    taken from any one chapter, so the year does not settle into one book.
 
 Usage:
     python3 scripts/build_daily_bread.py
@@ -37,9 +48,17 @@ CURATED_PATH = ROOT / "assets" / "daily-bread.json"
 OUTPUT = ROOT / "assets" / "DailyBread.js"
 
 TAG = re.compile(r"<[^>]+>")
-MAX_PER_CHAPTER = 6
+MAX_PER_CHAPTER = 3
 MIN_CHARS = 58
 MAX_CHARS = 340
+
+# The shape of a portion. Two verses at least, so nothing is served as a
+# bare line; four at most, so it is still a morning's reading and not a
+# chapter. The character bounds are what a paragraph looks like on screen.
+MIN_VERSES = 2
+MAX_VERSES = 4
+MIN_PASSAGE_CHARS = 170
+MAX_PASSAGE_CHARS = 620
 
 # Where a daily portion may come from. The books of teaching, prophecy,
 # wisdom and the Messianic writings speak directly to the reader; the
@@ -291,29 +310,63 @@ STRONG = re.compile(
 
 # The same words with the ground cut from under them — "not of shalom",
 # "loved evil", "no rest" — must not be read as encouragement.
+GOOD_THING = (r"shalom|peace|rest|joy|hope|mercy|mercies|kindness|comfort|"
+              r"compassion|compassions|chen|grace|favour|value|life|deliver|"
+              r"deliverance|redeem|redeemed|redemption|save|saved|salvation|"
+              r"light|love|trust|strength|help|healing|bread|food|water|feed")
 NEGATED = re.compile(
     r"\b(not|no|never|nor|without|neither|cease|ceased|lack|lacks|lacked|"
     r"fail|fails|failed|refuse|refused|deny|denied|far from)\b[^.;:!?]{0,28}?"
-    r"\b(shalom|peace|rest|joy|hope|mercy|kindness|comfort|deliver|"
-    r"deliverance|light|love|trust|strength|help|healing)\b", re.I)
+    r"\b(" + GOOD_THING + r")\b", re.I)
+
+# And the same undoing said the other way round — "Has His kindness ceased",
+# "the promise failed", "has He forgotten to show chen".
+# A negation inside the gap turns the sense back the right way round —
+# "His compassions do not fail" is the promise, not its loss — so the gap
+# is only read as far as the first "not".
+NEGATED_AFTER = re.compile(
+    r"\b(" + GOOD_THING + r"|promise|compassions?|chen)\b"
+    r"(?:(?!\b(?:not|never|nor|no)\b)[^.;:!?]){0,28}?"
+    r"\b(ceased?|failed?|forgotten|forsaken|rejected|withheld|shut up|"
+    r"run out|no more|gone)\b", re.I)
 
 # Matter that no single verse can carry on its own, whatever surrounds it.
 HARD_AVOID = re.compile(
-    r"\b(slaughter|slain|slew|slay|kill|killed|blood|bloody|corpse|carcass|"
-    r"dead body|plague|leprosy|leprous|boils|dung|urine|vomit|worm|maggot|"
-    r"torment|torture|harlot|whore|whoring|adultery|adulterous|abomination|"
+    r"\b(slaughter\w*|slain|slew|slay|kill|killed|blood|bloody|corpse|carcass|"
+    r"dead body|plague|leprosy|leprous|boils|dung\w*|urine|vomit|worm|maggot|"
+    r"harlot|whore|whoring|adultery|adulterous|abomination|"
     r"abominations|incest|nakedness|menstru|foreskin|circumcise|circumcised|"
     r"census|numbered|cubits|shekels|begat|genealogy|reigned|encamped|"
     r"pitched|smote|smitten|tribute|spoil|plunder|dungeon|prisoner|bondage|"
     r"drunk|drunkard|slander|scoff|scorn|mock|mocked|oppress|oppressed|"
-    r"idol|idols|demon|demons|satan|devil|beliar|sacrifice|burnt offering|"
+    r"locust|locusts|criminal|chains|dies|unbelieving|unbelief|enslaved|"
+    r"sour wine|sponge|reed|stake|impale\w*|crucif\w*|foe|foes|downfall|"
+    r"rotten|controversy|reprove|reproves|cut off|cut out|sharpness|"
+    r"howl\w*|melt away|trodden|carved image|graven image|molten image|"
+    r"epileptic|avenge\w*|millstone|assail|crush\w*|loathe\w*|cruel|"
+    r"harsh|frighten\w*|shudder\w*|struck me|drink offering|"
+    r"idol|idols|demon|demons|satan|devil|beliar|sacrifice|burnt offerings?|"
+    r"tithes|firstlings|tortur\w*|torment\w*|blasphem\w*|persecut\w*|"
+    r"insulter|insulters|flee|flees|fled|"
     r"unclean|uncleanness|years old|days of the life|died|dying|"
     r"smite|smitten|smote|under the ban|utterly destroy|dispossess|"
     r"drive out|drove out|sinner|sinners|wicked|wickedness|lying|lie|lies|"
     r"wail|wailing|dirge|woe|beware|take heed|scribes|Pharisees|Sadducees|accusation|accuse|accused|shortened|withered|"
     r"deceit|deceive|deceived|liar|folly|arrogant|envy|greed|greedy|"
-    r"strife|quarrel|siege|captive|captivity|famine|beast of|yoke of)\b",
+    r"strife|quarrel|siege|captive|captivity|famine|beast of|yoke of|"
+    r"whore|whored|whoredom|sewer|sulphur|brimstone|scourge|scourges|"
+    r"snares|scorching|tear off|torn|devour|devoured|swallow up)\b",
     re.I)
+
+# "Deliver" is the warmest word in the concordance and the coldest: the same
+# verb carries Yasharal out of Mitsrayim and Yahusha into the hands of the
+# kohanim. Handing a person over is never a portion, whatever the verb.
+BETRAYAL = re.compile(
+    r"\b(betray|betrays|betrayed|betrayer|betraying|"
+    r"deliver(?:s|ed|ing)?\s+(?:him|her|them|me|us|you|up)\b[^.;:!?]{0,20}\bup\b|"
+    r"deliver(?:s|ed|ing)?\s+up\b|deliver(?:s|ed|ing)?\s+(?:him|her|them|me|us|you)\s+to\b|"
+    r"handed?\s+over|given\s+over|"
+    r"thirty pieces|kiss(?:ed)? him|arrest|seize him|took him)\b", re.I)
 
 # Matter that belongs in a portion only when it is being overcome — "I fear
 # no evil", "shall not perish", "shall not be put to shame".
@@ -325,6 +378,7 @@ SOFT_AVOID = re.compile(
     r"iniquity|transgression|transgressions|lawless|guilty|enemy|enemies|"
     r"adversary|adversaries|sword|war|battle|trouble|troubles|distress|"
     r"sorrow|sorrows|grief|weep|wept|mourn|mourning|lament|die|death|"
+    r"futility|vanity|"
     r"humbled my|wasted away|consumed|faint|feeble|"
     r"trespass|trespasses|offence|offense|rebel|rebelled|rebellion|"
     r"grave|pit|sheol|hell|fall|fallen|stumble|hate|hated|hatred|"
@@ -335,7 +389,7 @@ SOFT_AVOID = re.compile(
 RESCUED = re.compile(
     r"\b(no|not|never|nor|neither|none|nothing|without|free from|saved from|"
     r"delivered from|deliver|delivers|delivered|redeem|redeems|redeemed|"
-    r"out of|from|over|overcome|overcomes|conquer|conquers|swallowed up|"
+    r"out of|overcome|overcomes|conquer|conquers|swallowed up|"
     r"turn from|turns from|forgive|forgives|forgiven|heal|heals|healed|"
     r"though|even though|yet)\b[^.;:!?]{0,30}?$", re.I)
 
@@ -362,7 +416,13 @@ NARRATIVE = re.compile(
     r"\b(said to|says to|answered|answering|replied|spoke to him|"
     r"went out|went up|came to him|came to her|arose|departed|returned|"
     r"dwelt|journeyed|camped|bore him|conceived|camels|donkeys|"
-    r"tent|tents|jar|wife of|daughter of|army|chariot)\b", re.I)
+    r"tent|tents|jar|wife of|daughter of|army|chariot|news|"
+    r"one of them|the rest said|ran and|took a|gave it to him|"
+    r"brought him|reported to|my own hand|written to you|"
+    r"how i am doing|concerning maidens|greeting of|"
+    r"a certain|asked him|asked her|asking him|questioned|urged|"
+    r"came near|drew near to him|sent him|sending him|and he said|"
+    r"and they said|and she said|as they were|when they had)\b", re.I)
 
 # Names that carry no theological weight in a lifted verse. Divine and
 # set-apart vocabulary is excluded from the count.
@@ -410,7 +470,12 @@ def proper_names(text):
 WARNING = re.compile(
     r"\b(if you do not|unless you|neither shall|shall not enter|shall not "
     r"inherit|do not think|beware|take heed|how shall you|why do you|"
-    r"cursed is|cursed be|it shall not go well)\b", re.I)
+    r"cursed is|cursed be|it shall not go well|without understanding|"
+    r"did not turn back|have not turned back|reject forever|"
+    r"still without|do you not|did not believe|do not believe|"
+    r"are you also|have you not|have you heard|what do you know|"
+    r"do you limit|are they withheld|where are your|where are their)\b",
+    re.I)
 
 # Verses that are really lists, headings or fragments.
 LIST_LIKE = re.compile(r"\bson of\b.*\bson of\b|\bthe sons of\b|^\s*and\s+\w+\s*,",
@@ -477,7 +542,7 @@ def qualifies(text):
             return False
         if text[-1] not in '.!;”’"?':
             return False
-    if HARD_AVOID.search(text):
+    if HARD_AVOID.search(text) or BETRAYAL.search(text):
         return False
     if SOFT_AVOID.search(text) and not soft_is_rescued(text):
         return False
@@ -518,6 +583,138 @@ def qualifies(text):
     return True
 
 
+# ------------------------------------------------------------- passages
+# A verse that opens with one of these is answering something said in the
+# verse before it — "Therefore …", "For …", "so that …". Served alone it
+# begins in the middle of a thought, so the verse before must come with it.
+# A verse that opens in lower case is plainly a continuation of the last.
+OPENS_LOWER = re.compile(r"^\s*[“‘\"'(–— ]*[a-zà-ɏḁ-ỿ]")
+DEPENDENT = re.compile(
+    r"^\s*[“‘\"'(–— ]*(?:therefore|thus|so|then|for|because|but|yet|which|"
+    r"who|whom|whose|nor|neither|since|though|although|however|wherefore|"
+    r"hence|that)\b", re.I)
+
+# A capitalised "And …" is not a continuation: Hebrew keeps it at the head
+# of complete sentences, and a portion may open there.
+
+# Where a thought lands. A verse ending in a comma or a dash is still
+# talking; one ending here has finished.
+LANDS = re.compile(r"[.!?”’\"]\s*$")
+
+# A companion verse does not have to preach — it has to be safe to read
+# beside the seed. It must not drag in the matter the seed was chosen for
+# avoiding, and it must not be a scene with a cast.
+def companion_ok(text):
+    if not text or len(text) > MAX_CHARS:
+        return False
+    if HARD_AVOID.search(text) or BETRAYAL.search(text):
+        return False
+    if SOFT_AVOID.search(text) and not soft_is_rescued(text):
+        return False
+    if NEGATED.search(text) or NEGATED_AFTER.search(text):
+        return False
+    if WARNING.search(text) or LIST_LIKE.search(text) or NARRATIVE.search(text):
+        return False
+    if len(proper_names(text)) >= 3:
+        return False
+    if len(DIGITS.findall(text)) > 2:
+        return False
+    words = re.findall(r"[A-Za-zÀ-ɏḀ-ỿ'’]+", text)
+    if len(words) < 4:
+        return False
+    caps = sum(1 for w in words[1:] if w[:1].isupper())
+    return caps <= len(words) * 0.34
+
+
+def leans_back(text):
+    """This verse leans on the one before it and cannot open a portion."""
+    return bool(OPENS_LOWER.match(text) or DEPENDENT.match(text))
+
+
+def passage_ok(text):
+    """The paragraph as a whole is what the reader meets, so it is judged
+    as a whole: one bad line in it spoils the portion however good the
+    verse at its heart."""
+    if HARD_AVOID.search(text) or BETRAYAL.search(text):
+        return False
+    if SOFT_AVOID.search(text) and not soft_is_rescued(text):
+        return False
+    if NEGATED.search(text) or NEGATED_AFTER.search(text):
+        return False
+    if WARNING.search(text):
+        return False
+    if LIST_LIKE.search(text) or NARRATIVE.search(text):
+        return False
+    # A portion is not an interrogation. One or two questions can carry a
+    # thought ("Whom should I fear?"); a paragraph of them is an argument
+    # with the reader in the middle of it.
+    if text.count("?") >= 3:
+        return False
+    if len(proper_names(text)) >= 3:
+        return False
+    if not STRONG.search(text):
+        return False
+    # Two different notes of encouragement across the paragraph: enough
+    # that the portion is about something, not merely free of trouble.
+    if len(set(w.lower() for w in UPLIFT.findall(text))) < 2:
+        return False
+    if not (ADDRESS.search(text) and DIVINE.search(text)):
+        return False
+    words = re.findall(r"[A-Za-zÀ-ɏḀ-ỿ'’]+", text)
+    caps = sum(1 for w in words[1:] if w[:1].isupper())
+    return caps <= len(words) * 0.30
+
+
+def score_passage(text, verse_count):
+    """How well a paragraph carries a day. Warmth counts for it, hard
+    matter and a crowd of names count against it and a short reading is
+    preferred to a long one that says no more."""
+    strong = len(STRONG.findall(text))
+    notes = len(set(w.lower() for w in UPLIFT.findall(text)))
+    soft = len(SOFT_AVOID.findall(text))
+    return (3 * strong + 2 * notes - 5 * soft
+            - 3 * len(proper_names(text)) - 2 * (verse_count - MIN_VERSES))
+
+
+def build_passage(verses, seed, taken):
+    """Choose the paragraph to serve around a seed verse.
+
+    Every window of two to four verses that contains the seed is considered;
+    the one that reads best as a whole is returned as (first verse, last
+    verse, passage). None means no window around this seed is fit to serve —
+    the seed is then dropped rather than served as a bare line.
+    """
+    texts = [plain(v["t"]) for v in verses]
+    best = None
+    for lo in range(max(0, seed - MAX_VERSES + 1), seed + 1):
+        if leans_back(texts[lo]):
+            continue
+        for hi in range(seed, min(len(verses), lo + MAX_VERSES)):
+            if hi - lo + 1 < MIN_VERSES or not LANDS.search(texts[hi]):
+                continue
+            window = range(lo, hi + 1)
+            # A few books number their verses with gaps in them. The
+            # reference printed on the page is a range, so the verses in it
+            # have to run without one.
+            if verses[hi]["n"] - verses[lo]["n"] != hi - lo:
+                continue
+            if any(verses[i]["n"] in taken for i in window):
+                continue
+            if any(i != seed and not companion_ok(texts[i]) for i in window):
+                continue
+            text = " ".join(texts[i] for i in window)
+            if not (MIN_PASSAGE_CHARS <= len(text) <= MAX_PASSAGE_CHARS):
+                continue
+            if not passage_ok(text):
+                continue
+            mark = score_passage(text, hi - lo + 1)
+            if best is None or mark > best[0]:
+                best = (mark, verses[lo]["n"], verses[hi]["n"], text)
+    if best is None:
+        return None
+    return best[1], best[2], best[3]
+
+
 def main():
     index = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     order = [b["id"] for b in index["books"]]
@@ -538,24 +735,37 @@ def main():
             continue
         data = json.loads(path.read_text(encoding="utf-8"))
         for cn in sorted(data["chapters"], key=lambda x: int(x)):
+            verses = data["chapters"][cn].get("verses", [])
             kept = 0
-            for v in data["chapters"][cn].get("verses", []):
+            taken = set()
+            for i, v in enumerate(verses):
                 scanned += 1
                 if kept >= MAX_PER_CHAPTER:
                     break
+                if v["n"] in taken:
+                    continue
                 if (bid, int(cn), v["n"]) in curated_refs:
                     continue          # already served as a featured portion
                 text = plain(v["t"])
                 if not qualifies(text):
                     continue
-                theme = theme_of(text)
+                grown = build_passage(verses, i, taken)
+                if grown is None:      # no paragraph around it — leave it out
+                    continue
+                first, last, passage = grown
+                if any((bid, int(cn), n) in curated_refs
+                       for n in range(first, last + 1)):
+                    continue          # the paragraph runs into a featured one
+                theme = theme_of(passage)
                 if theme is None:      # nothing to frame it with — leave it out
                     continue
-                pool[bid].append([int(cn), v["n"], THEME_NAMES.index(theme)])
+                pool[bid].append([int(cn), first, last, THEME_NAMES.index(theme)])
+                taken.update(range(first, last + 1))
                 per_theme[theme] += 1
                 kept += 1
 
     total = sum(len(v) for v in pool.values())
+    verse_count = sum(r[2] - r[1] + 1 for rows in pool.values() for r in rows)
 
     curated = json.loads(CURATED_PATH.read_text(encoding="utf-8"))["pool"]
     featured = [
@@ -571,12 +781,12 @@ def main():
     ).replace("\n", "\n  ") + ";\n")
     js.append("  var FEATURED = " + json.dumps(featured, ensure_ascii=False,
                                                indent=1).replace("\n", "\n  ") + ";\n")
-    js.append("  // book id -> [chapter, verse, theme index] …\n")
+    js.append("  // book id -> [chapter, first verse, last verse, theme index] …\n")
     js.append("  var POOL = {\n")
     for bid in order:
         if not pool[bid]:
             continue
-        rows = ",".join("[%d,%d,%d]" % tuple(r) for r in pool[bid])
+        rows = ",".join("[%d,%d,%d,%d]" % tuple(r) for r in pool[bid])
         js.append(f'    "{bid}": [{rows}],\n')
     js[-1] = js[-1].rstrip(",\n") + "\n"
     js.append("  };\n")
@@ -586,7 +796,9 @@ def main():
     print(f"Wrote {OUTPUT.relative_to(ROOT)}")
     print(f"  verses scanned   {scanned}")
     print(f"  featured (hand-written reflections)  {len(featured)}")
-    print(f"  pool             {total} verses from {len(pool)} books")
+    books_used = sum(1 for rows in pool.values() if rows)
+    print(f"  pool             {total} passages ({verse_count} verses, "
+          f"{verse_count / total:.1f} a portion) from {books_used} books")
     print(f"  portions total   {total + len(featured)}  "
           f"({(total + len(featured)) / 365.25:.1f} years without repeat)")
     print("  by theme:")
@@ -598,8 +810,10 @@ HEADER = '''// DailyBread.js
 // The pool the home page draws today's portion from.
 //
 // GENERATED by scripts/build_daily_bread.py — edit that script, not this
-// file. It reads every verse of all 104 books and keeps the ones that stand
-// on their own as encouragement (see the commentary there for the rules).
+// file. It reads every verse of all 104 books and keeps the passages that
+// stand on their own as encouragement (see the commentary there for the
+// rules). Every portion is a paragraph of two to four verses: a single line
+// lifted out of its place too often says nothing on its own.
 //
 //   BesorahDailyBread.forDay(dayNumber)  -> {book, chapter, from, to,
 //                                            theme, reflection}
@@ -610,7 +824,8 @@ HEADER = '''// DailyBread.js
 //
 // A portion is chosen by walking the pool with a stride that is coprime
 // with its length: every portion is served exactly once before any is
-// served twice, and the cycle is decades long rather than a year.
+// served twice, and the cycle runs the better part of a year. A shorter
+// pool of paragraphs is worth more than a long one of bare lines.
 (function (global) {
   "use strict";
 
@@ -626,7 +841,7 @@ BODY = '''
       if (!POOL.hasOwnProperty(bid)) continue;
       var rows = POOL[bid];
       for (var i = 0; i < rows.length; i++) {
-        flat.push([bid, rows[i][0], rows[i][1], rows[i][2]]);
+        flat.push([bid, rows[i][0], rows[i][1], rows[i][2], rows[i][3]]);
       }
     }
     return flat;
@@ -663,11 +878,11 @@ BODY = '''
       };
     }
     var e = entries()[idx - FEATURED.length];
-    var theme = THEME_NAMES[e[3]] || "trust";
+    var theme = THEME_NAMES[e[4]] || "trust";
     var bank = REFLECTIONS[theme];
     var line = bank[Math.abs(day + idx) % bank.length];
     return {
-      book: e[0], chapter: e[1], from: e[2], to: e[2],
+      book: e[0], chapter: e[1], from: e[2], to: e[3],
       theme: theme.charAt(0).toUpperCase() + theme.slice(1),
       reflection: line
     };
