@@ -71,20 +71,49 @@ def reader():
     return _PDF
 
 
+# The running banner on every page carries the printed page number beside
+# it, and pypdf often splits that number ("144" comes through as "14 4").
+# Left in, those digits land inside the verse the page break interrupted —
+# "his companions secretly 14 4 entered the villages". Only that page's own
+# printed number (pdf page − 2 in this volume) is removed, and only where
+# it sits against a banner: a verse marker often opens the line right after
+# the top banner and must survive.
+_BANNERS = [r"(?:Joseph|Yoseph)\s+[B8]\.\s+Lumpkin",
+            r"The Apocrypha:\s*Including Books from the\s*Eth[i;]op[i;]c Bible"]
+
+
+def _spaced_digits(n):
+    return r"\s?".join(re.escape(d) for d in str(n))
+
+
+def strip_banner(t, printed=None):
+    for b in _BANNERS:
+        if printed is not None:
+            for pn in (printed, printed - 1, printed + 1):
+                d = _spaced_digits(pn)
+                t = re.sub(rf"(?:(?<=\s)|^){d}\s*(?={b})", " ", t)
+                t = re.sub(rf"({b})\s*{d}(?=\s|$)", r"\1", t)
+        t = re.sub(b, " ", t)
+    if printed is not None:
+        for pn in (printed - 1, printed, printed + 1):
+            d = _spaced_digits(pn)
+            t = re.sub(rf"(?:(?<=\s)|^){d}\s*$", " ", t)
+            t = re.sub(rf"^\s*{d}(?=\s)", " ", t)
+    return t
+
+
 def raw_span(start, end):
     r = reader()
     parts = []
     for p in range(start, end + 1):
-        t = r.pages[p - 1].extract_text() or ""
-        t = t.replace("Joseph B. Lumpkin", " ").replace("Joseph 8. Lumpkin", " ")
-        t = re.sub(r"The Apocrypha:\s*Including Books from the\s*Ethiopic Bible",
-                   " ", t)
+        t = strip_banner(r.pages[p - 1].extract_text() or "", printed=p - 2)
         parts.append(t)
     return "\n".join(parts)
 
 
 def clean_text(s):
     s = re.sub(r"­", "", s)                       # soft hyphen
+    s = re.sub(r"<\s*br\s*/?\s*>", " ", s)       # stray HTML remnant in the scan
     s = re.sub(r"[\x00-\x08\x0b-\x1f\x7f]", " ", s)
     s = re.sub(r"(?<!\d)\b0\b(?!\d)", "O", s)     # vocative 0 -> O
     s = re.sub(r"\s+", " ", s).strip()
@@ -92,22 +121,74 @@ def clean_text(s):
     return s
 
 
+# The scan garbles a bracketed number three ways, and each cost verses until
+# it was read back: digits set as letters ("[S2]" for [52], "[lS]" for [18]),
+# a closing bracket set as the digit 1 ("[551" for [55], "[881" for [88]),
+# and an opening bracket set as the digit 1 ("136]" for [36], "116]" for
+# [16]). A repaired reading is only trusted when it lands on exactly the
+# verse the chapter is waiting for — the sequence is the proof.
+_M_NORMAL = r"[\[\{]\s*([0-9SlIOBZgqb]{1,3})\s*(?:-\s*(\d+))?\s*[\]\}J]"
+_M_CLOSE1 = r"[\[\{]\s*(\d{1,3})1(?=\s)"      # "]" printed as "1"
+_M_OPEN1 = r"(?<=\s)1(\d{1,3})\s*[\]\}J]"     # "[" printed as "1"
+_M_ANY = re.compile(f"(?:{_M_NORMAL})|(?:{_M_CLOSE1})|(?:{_M_OPEN1})")
+
+_DIGIT_FOR = {"S": "58", "l": "1", "I": "1", "O": "0", "B": "8",
+              "Z": "2", "g": "9", "q": "9", "b": "6"}
+
+
+def _candidates(token):
+    """All numbers a letter-garbled token could stand for, and whether the
+    reading needed repair at all."""
+    outs = [""]
+    repaired = False
+    for c in token:
+        if c.isdigit():
+            outs = [o + c for o in outs]
+        else:
+            repaired = True
+            outs = [o + d for o in outs for d in _DIGIT_FOR.get(c, "")]
+    nums = {int(o) for o in outs if o}
+    return nums, repaired
+
+
 def _verses(body):
     """Bracketed [N] verses (ranges keep the start number)."""
-    marks = list(re.finditer(MARKER, body))
-    out, expected = [], None
-    for i, m in enumerate(marks):
-        n = int(m.group(1))
-        end = marks[i + 1].start() if i + 1 < len(marks) else len(body)
-        txt = clean_text(body[m.end():end])
-        # keep monotonic-ish verse numbers; tolerate small jumps
-        if expected is not None and (n < expected - 0 or n > expected + 5):
-            if n < expected:
+    accepted = []                       # (n, match) that continue the chapter
+    expected = None
+    for m in _M_ANY.finditer(body):
+        if m.group(1) is not None:      # normal bracket pair
+            nums, repaired = _candidates(m.group(1))
+        elif m.group(3) is not None:    # closing bracket read as 1
+            nums, repaired = {int(m.group(3))}, True
+        else:                           # opening bracket read as 1
+            nums, repaired = {int(m.group(4))}, True
+        want = 1 if expected is None else expected
+        if repaired:
+            # a guessed reading must land exactly on the next verse
+            if want not in nums:
                 continue
-        out.append({"n": n, "t": txt})
-        expected = n + 1
-    # drop empties but keep numbering
-    return [v for v in out if v["t"]]
+            n = want
+        else:
+            n = next(iter(nums))
+            if expected is not None and (n < expected or n > expected + 5):
+                continue
+        accepted.append((n, m))
+        # A range marker "[15-26]" groups verses; the next verse the chapter
+        # is waiting for follows the END of the range, not its start.
+        if m.group(2) is not None and int(m.group(2)) >= n:
+            expected = int(m.group(2)) + 1
+        else:
+            expected = n + 1
+    out = []
+    for i, (n, m) in enumerate(accepted):
+        end = accepted[i + 1][1].start() if i + 1 < len(accepted) else len(body)
+        txt = clean_text(body[m.end():end])
+        # a "verse" that is nothing but stray page digits is not a verse
+        if re.fullmatch(r"[\d\s.,-]*", txt):
+            txt = ""
+        if txt:
+            out.append({"n": n, "t": txt})
+    return out
 
 
 def _strip_pagenums(full):

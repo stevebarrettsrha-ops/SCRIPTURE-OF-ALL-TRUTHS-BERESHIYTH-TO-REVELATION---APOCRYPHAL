@@ -715,10 +715,34 @@ def parse_testament(book, start_pg, end_pg):
 
 # ---------------------------- APOCRYPHA FORMAT ----------------------------
 
-def strip_apoc_page(raw):
+_APOC_BANNERS = [r"(?:Joseph|Yoseph)\s+[B8]\.\s+Lumpkin",
+                 r"The Apocrypha:\s*Including Books from the\s*Eth[i;]op[i;]c Bible"]
+
+
+def _spaced_digits(n):
+    """A regex for `n` as the scan prints it: pypdf may split the digits
+    ("144" arrives as "14 4")."""
+    return r"\s?".join(re.escape(d) for d in str(n))
+
+
+def strip_apoc_page(raw, printed=None):
+    """Remove the running banners; when `printed` (this page's printed page
+    number) is known, also remove that exact number where it sits against a
+    banner — and only that number, because a verse marker often opens the
+    line right after the top banner and must survive."""
     txt = raw
-    txt = re.sub(r'The Apocrypha:\s*Including Books from the\s*Ethiopic Bible\s*', '', txt)
-    txt = re.sub(r'Joseph B\. Lumpkin\s*', '', txt)
+    for b in _APOC_BANNERS:
+        if printed is not None:
+            for pn in (printed, printed - 1, printed + 1):
+                d = _spaced_digits(pn)
+                txt = re.sub(rf'(?:(?<=\s)|^){d}\s*(?={b})', ' ', txt)
+                txt = re.sub(rf'({b})\s*{d}(?=\s|$)', r'\1', txt)
+        txt = re.sub(b, ' ', txt)
+    if printed is not None:
+        for pn in (printed - 1, printed, printed + 1):
+            d = _spaced_digits(pn)
+            txt = re.sub(rf'(?:(?<=\s)|^){d}\s*$', ' ', txt)
+            txt = re.sub(rf'^\s*{d}(?=\s)', ' ', txt)
     # Strip the apocrypha PDF's inline chapter labels — `Wis.8`, `Jdt.9`,
     # `Sir.51`, `Tob.14`, `Bar.6`, `Bel.1`, `IMac.16`, etc. — that mark
     # the next chapter and otherwise bleed into the prior chapter's text.
@@ -783,7 +807,8 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
     parts = []
     for pg in range(start_pg, end_pg + 1):
         if 1 <= pg <= len(r.pages):
-            parts.append(strip_apoc_page(r.pages[pg - 1].extract_text() or ''))
+            parts.append(strip_apoc_page(r.pages[pg - 1].extract_text() or '',
+                                         printed=pg - 2))
     full = '\n'.join(parts)
 
     bid = book['id']
@@ -831,6 +856,15 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
     if n:
         full = full[:n.start()]
 
+    # Lumpkin's own commentary — "[Author's note: …]", "(Note: …)" — is
+    # printed inside the reading. It is apparatus, not scripture: left in,
+    # it welds onto a verse and its inner numbers spawn phantom verses
+    # (Enoch 84 grew a "verse 10" out of "See Daniel Chapter 10").
+    full = re.sub(r"\((?:Author'?s\s+)?[Nn]ote\b(?:[^()]|\([^()]*\))*\)",
+                  " ", full)
+    full = re.sub(r"\[(?:Author'?s\s+)?[Nn]ote\b(?:[^\[\]]|\[[^\[\]]*\])*\]",
+                  " ", full)
+
     # Bracketed verse markers: [1], [2], …
     # Sirach uses ranges like [1-14], [15-26]; expand to start verse only.
     verse_pat = re.compile(r'\[(\d+)(?:\s*-\s*\d+)?\]\s*')
@@ -857,17 +891,33 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
                 return None
             state["expected"] = vn + 1
             return vn
+        accept.state = state
         return accept
 
     if matches:
         verses = _slice_at_markers(full, matches, sequential(200))
 
     if not verses:
-        # Fallback to plain numeric markers
+        # Fallback to plain numeric markers. The second alternative reads a
+        # marker the scan welded to its first word — "21Abram rejoiced",
+        # "llAbram went into Egypt" — which is only believed when it names
+        # exactly the verse the chapter is waiting for.
         verse_pat2 = re.compile(
-            rf'(?:^|\n|(?<=\s))([0-9SBlZgqb]{{1,3}})\s+(?=[{LETTER}“"\'])')
+            rf'(?:^|\n|(?<=\s))(?:([0-9SBlZgqb]{{1,3}})\s+(?=[{LETTER}“"\'\[(])'
+            rf'|([0-9SBlZgqb]{{1,3}})(?=[A-ZÀ-ÖØ-Þ][a-zà-ÿ]))')
+        seq = sequential(200)
+
+        def accept2(mm, nxt):
+            if mm.group(1) is not None:
+                return seq(mm, nxt)
+            vn, _ = _marker_number(mm.group(2))
+            if vn is None or vn != seq.state["expected"]:
+                return None
+            seq.state["expected"] = vn + 1
+            return vn
+
         verses = _slice_at_markers(full, list(verse_pat2.finditer(full)),
-                                   sequential(200))
+                                   accept2)
 
     if not verses:
         text = re.sub(r'\s+', ' ', full).strip()
