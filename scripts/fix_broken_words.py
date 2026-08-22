@@ -8,6 +8,8 @@ Operates on the per-book JSON files in assets/text/.
 
 Strategy:
   1. Hyphen-line-break:  "moun- tains" or "<word>-<lowercase>" -> drop hyphen, join.
+     Where the two halves are not one word ("eighty- four"), the hyphen
+     stays and only the space the line break left is closed up.
   2. Soft-wrap:          For lower/Title-case "<a> <b>" pairs, join when
                          the *joined* form is a real English word AND at
                          least one of the parts is not.
@@ -113,6 +115,10 @@ def split_protected(text):
 
 # Hyphen-line-break: "<letters>- <lowercase letters>" -> joined, hyphen dropped.
 HYPHEN_BREAK_PAT = re.compile(r"\b([A-Za-z]{2,})-\s+([a-z][a-z]{1,15})\b")
+# The same break where the two halves do NOT make a single word, so the
+# hyphen belongs in the compound and only the space has to go.
+HYPHEN_SPACE_PAT = re.compile(
+    r"([A-Za-zÀ-ɏḀ-ỿ]{2,})-[ \t]+(?=[a-zà-ɏḁ-ỿ])(\w)")
 
 # Token splitter: alphabetic word OR run of non-letters (kept verbatim).
 # We rebuild the text from tokens, so word/separator structure is preserved.
@@ -170,6 +176,16 @@ def fix_text_segment(seg, stats):
             return joined
         return m.group(0)
     seg = HYPHEN_BREAK_PAT.sub(_drop_hyphen, seg)
+
+    # Pass 1b: whatever the hyphen pass declined to fuse, still close up the
+    # space the line break left behind. A hyphen with a space after it and a
+    # word character before it is never how a compound is set — "a widow of
+    # about eighty- four years", "the neighbour- hood of the Yardĕn" — so the
+    # hyphen keeps its place and the space goes.
+    def _close_hyphen(m):
+        stats["hyphen"] += 1
+        return m.group(1) + "-" + m.group(2)
+    seg = HYPHEN_SPACE_PAT.sub(_close_hyphen, seg)
 
     # Pass 2: soft-wrap merges using dictionary check.
     # Walk all adjacent (word, single-space, word) triples manually so that

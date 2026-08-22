@@ -11,6 +11,10 @@ Checks (all 104 books, every chapter, every verse):
      With --fix these become real verses wherever the numbering allows it
      (the marker's number must continue the chapter's sequence and not
      collide with an existing verse); otherwise the marker is removed.
+     Bare markers — a plain "6" left mid-verse where the PDF wrapped the
+     number into the middle of a line instead of the start of one — are
+     promoted the same way, but never stripped: an unpromotable number is
+     part of the reading ("5,000 and 500 years").
   2. word forms             the JOINS / SPLITS / TYPOS / HOUSE tables in
      assets/words.js — the one place a word's correct form is recorded.
      The tables are read straight out of the JavaScript so the site and
@@ -48,6 +52,15 @@ VERSE_MARKER = re.compile(r"\[\s*(\d{1,3})\s*[J\])}]\s*")
 # The double numbering some editions print for the Shepherd of Hermas —
 # "10[76]:2" — is a cross-reference, not part of the reading.
 DUAL_REFERENCE = re.compile(r"\b\d{1,3}\s*\[\s*\d{1,3}\s*[J\]\)]\s*:\s*\d{1,3}\s*")
+# A verse number the PDF left loose in the middle of a verse, with no
+# brackets around it — "…to explain it to him. 6 Then Aluahim in his mercy…".
+# It only counts as a marker when it follows the end of a sentence and a new
+# sentence starts right after it (allowing for markup and an opening quote);
+# `split_bare_markers` then checks the number itself against the chapter's
+# numbering before promoting it.
+BARE_MARKER = re.compile(
+    r'(?<=[.!?;:"\u201d\u2019\'\)\u2026])\s+(\d{1,3})\s+'
+    r'(?=(?:<[^>]+>)*["\u201c\u2018\'(\[\u2013\u2014]?(?:<[^>]+>)*[A-Z\u00c0-\u024f\u1e00-\u1eff])')
 WORD = re.compile(r"[A-Za-zÀ-ɏḀ-ỿ'’‛ʻʼ]+")
 
 
@@ -286,6 +299,71 @@ def split_markers(verses, log=None, where=""):
     return out
 
 
+def count_bare_markers(verses):
+    """How many bare numbers in this chapter would `split_bare_markers`
+    promote? Counting and fixing must agree, so both walk the same rule."""
+    return sum(len(found) for _, found in _bare_candidates(verses))
+
+
+def _bare_candidates(verses):
+    """Yield (index, [(match, number), …]) for every verse holding bare
+    markers that continue the chapter's numbering.
+
+    A number only qualifies when it is the very next verse number after the
+    one before it, and it does not already exist in the chapter. That is a
+    deliberately narrow rule: a bare number is far more often part of the
+    reading ("5,000 and 500 years", "he was 30 years old") than a marker,
+    and mistaking one for the other would cut a verse in half.
+    """
+    existing = {v["n"] for v in verses}
+    for idx, v in enumerate(verses):
+        following = [w["n"] for w in verses[idx + 1:]]
+        ceiling = following[0] if following else 10 ** 6
+        found, prev = [], v["n"]
+        for m in BARE_MARKER.finditer(v["t"]):
+            n = int(m.group(1))
+            if n != prev + 1 or n >= ceiling or n in existing:
+                continue
+            found.append((m, n))
+            prev = n
+        if found:
+            yield idx, found
+
+
+def split_bare_markers(verses, log=None, where=""):
+    """Turn a bare inline number into the verse it was always meant to open.
+
+    Unlike `split_markers` there is no fallback that removes the number: a
+    bare digit that cannot be promoted belongs to the sentence around it.
+    """
+    plan = dict(_bare_candidates(verses))
+    if not plan:
+        return verses
+    out = []
+    for idx, v in enumerate(verses):
+        found = plan.get(idx)
+        if not found:
+            out.append(v)
+            continue
+        text = v["t"]
+        pieces, numbers, last_end = [], [], 0
+        for m, n in found:
+            pieces.append(text[last_end:m.start()])
+            numbers.append(n)
+            last_end = m.end()
+        pieces.append(text[last_end:])
+        if not (all(balanced(p) for p in pieces) and all(p.strip() for p in pieces)):
+            out.append(v)
+            continue
+        out.append({"n": v["n"], "t": pieces[0].strip()})
+        for n, body in zip(numbers, pieces[1:]):
+            out.append({"n": n, "t": body.strip()})
+        if log is not None:
+            log.append((where, f"verse {v['n']}",
+                        "split into " + ", ".join(str(n) for n in [v["n"]] + numbers)))
+    return out
+
+
 # ------------------------------------------------------------ speech check
 AYIN = re.compile(r"[‘’‚‛ʻʼʹ׳'`´]")
 
@@ -368,6 +446,15 @@ def main():
                 issues["markers"].append(f"{where}: {marks_here} inline verse marker(s)")
                 if fix:
                     verses = split_markers(verses, changes, where)
+                    touched = True
+
+            bare_here = count_bare_markers(verses)
+            if bare_here:
+                marker_count += bare_here
+                issues["markers"].append(
+                    f"{where}: {bare_here} bare inline verse marker(s)")
+                if fix:
+                    verses = split_bare_markers(verses, changes, where)
                     touched = True
 
             new_verses = []

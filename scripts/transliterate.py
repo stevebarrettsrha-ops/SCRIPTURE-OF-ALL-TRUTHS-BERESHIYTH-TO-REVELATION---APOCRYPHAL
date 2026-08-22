@@ -617,9 +617,24 @@ def wrap_bare_divine(text):
 
 
 def main():
+    """Transliterate every book, or only the ids named on the command line.
+
+    Naming ids matters when a single book has just been re-extracted: the
+    passes here are not idempotent (the Ĕl → Al prefix rule would take a
+    second bite at "Ĕliyahu"), so a finished book must not be run again.
+    """
+    import sys
+    wanted = [a for a in sys.argv[1:] if not a.startswith("-")]
     rules = build_replacements(DIVINE, PEOPLE_PATRIARCHS, PEOPLE_LEADERS,
                                PEOPLE_J_NAMES, PEOPLE_TRIBES, PLACES, TERMS)
     files = sorted(glob.glob(os.path.join(TEXT_DIR, "*.json")))
+    if wanted:
+        keep = set(wanted)
+        files = [f for f in files
+                 if os.path.basename(f)[:-5] in keep]
+        missing = keep - {os.path.basename(f)[:-5] for f in files}
+        if missing:
+            raise SystemExit("no such book(s): " + ", ".join(sorted(missing)))
     total_verses = 0
     for f in files:
         with open(f, encoding='utf-8') as fp:

@@ -339,25 +339,33 @@ def parse_besorah_chapter(book, chapter, start_pg, end_pg, continuation=None):
     verse_pat = re.compile(rf'(?:^|(?<=\s))(\d+)\s*(?=[{LETTER}"“‘\'(])')
     matches = list(verse_pat.finditer(full))
 
-    verses = []
-    seen = set()
-    expected = 1
-    for i, mm in enumerate(matches):
-        try: n = int(mm.group(1))
-        except: continue
-        if n < 1 or n > 200: continue
-        if n in seen: continue
-        # Allow only forward progression (skip duplicates / out-of-order)
-        if n < expected: continue
-        if n > expected + 5: continue   # likely a stray number, not a verse marker
-        end = matches[i+1].start() if i+1 < len(matches) else len(full)
-        text = full[mm.end():end].strip()
-        text = re.sub(r'\s+', ' ', text)
-        if not text: continue
-        verses.append({"n": n, "t": text})
-        seen.add(n)
-        expected = n + 1
-    return verses
+    state = {"expected": 1, "seen": set()}
+
+    def accept(mm, nxt):
+        n = int(mm.group(1))
+        if not (1 <= n <= 200) or n in state["seen"]:
+            return None
+        expected = state["expected"]
+        if n < expected or n > expected + 5:
+            return None                 # a stray number, not a verse marker
+        if n > expected and expected not in state["seen"] and nxt is not None:
+            # The volume itself misprints a verse number now and then —
+            # Luke 10 runs "25 … 28And He said to him, 'What has been
+            # written in the Torah?' 27And he answering, said …", where the
+            # 28 stands for 26. The marker after it resuming at exactly
+            # expected + 1 is what gives the misprint away; read it as the
+            # number the chapter is waiting for, so the verses that follow
+            # keep their own numbers instead of being thrown away.
+            try:
+                if int(nxt.group(1)) == expected + 1:
+                    n = expected
+            except ValueError:
+                pass
+        state["seen"].add(n)
+        state["expected"] = n + 1
+        return n
+
+    return _slice_at_markers(full, matches, accept)
 
 
 # ---------------------------- ENOCH FORMAT ----------------------------
@@ -715,8 +723,58 @@ def strip_apoc_page(raw):
     # `Sir.51`, `Tob.14`, `Bar.6`, `Bel.1`, `IMac.16`, etc. — that mark
     # the next chapter and otherwise bleed into the prior chapter's text.
     txt = re.sub(r'\b(?:Wis|Jdt|Sir|Tob|Bar|Bel|IMac|IIMac|IIIMac|IVMac|Esd|Mac)\.\s*\d+\b', '', txt)
+    # The scan reads a chapter's opening verse marker as a letter —
+    # "[Chapter 49] I For wisdom is poured out like water", "[Chapter 46]
+    # li t happened that after the death of Jacob" — for "1 For wisdom…"
+    # and "1 It happened…". Left as letters, the marker never matches and
+    # the chapter loses its first verse outright.
+    txt = re.sub(r'(\[Chapter\s+\d+\]\s*)li\s+t(?=\s)', r'\g<1>1 It', txt)
+    txt = re.sub(r'(\[Chapter\s+\d+\]\s*)[lI](?=\s+[A-Z])', r'\g<1>1', txt)
     txt = '\n'.join(l for l in txt.split('\n') if not re.match(r'^\s*\d+\s*$', l.strip()))
     return txt
+
+
+# The scan reads some digits as letters. Only the unambiguous ones are
+# listed: "O" and "I" are left out because a verse really can open with the
+# words "O" and "I", and mistaking either for a marker would eat a word.
+OCR_DIGITS = {"S": "5", "B": "8", "l": "1", "Z": "2", "g": "9", "q": "9",
+              "b": "6"}
+
+
+def _marker_number(token):
+    """Read a verse marker that the scan may have set in letters.
+
+    "S On the third day He commanded the waters…" is verse 5; "B On the
+    fourth day…" is verse 8. Returns (number, was_repaired) or (None, ...).
+    """
+    fixed = "".join(OCR_DIGITS.get(c, c) for c in token)
+    if not fixed.isdigit():
+        return None, False
+    return int(fixed), fixed != token
+
+
+def _slice_at_markers(full, matches, accept):
+    """Slice `full` into verses at the markers `accept` approves.
+
+    `accept(match)` returns the verse number, or None to reject. Text that
+    follows a REJECTED marker stays with the verse it interrupts instead of
+    being dropped along with it — a number the chapter's sequence cannot
+    take is part of the reading, not a verse of its own. Jubilees lost a
+    line every time one turned up ("its height amounted to 5433 cubits and
+    2 palms", "the day 1 die, you will take me in and bury me near Sarah").
+    """
+    kept = []
+    for i, mm in enumerate(matches):
+        n = accept(mm, matches[i + 1] if i + 1 < len(matches) else None)
+        if n is not None:
+            kept.append((n, mm))
+    verses = []
+    for i, (n, mm) in enumerate(kept):
+        end = kept[i + 1][1].start() if i + 1 < len(kept) else len(full)
+        text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
+        if text:
+            verses.append({"n": n, "t": text})
+    return verses
 
 
 def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
@@ -740,16 +798,10 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
         if n:
             full = full[:n.start()]
         verse_pat = re.compile(rf'1Clem\s+{chapter}\s*:\s*(\d+)\s*')
-        matches = list(verse_pat.finditer(full))
-        verses = []
-        for i, mm in enumerate(matches):
-            try: vn = int(mm.group(1))
-            except: continue
-            if vn < 1 or vn > 100: continue
-            end = matches[i+1].start() if i+1 < len(matches) else len(full)
-            text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
-            if text:
-                verses.append({"n": vn, "t": text})
+        def accept(mm, _nxt):
+            vn, _ = _marker_number(mm.group(1))
+            return vn if vn is not None and 1 <= vn <= 100 else None
+        verses = _slice_at_markers(full, list(verse_pat.finditer(full)), accept)
         return verses or [{"n": 1, "t": re.sub(r'\s+', ' ', full).strip()}]
 
     # ---- Shepherd of Hermas: verse markers "1:5", "2:10", etc.
@@ -765,16 +817,10 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
         if nxt:
             full = full[:nxt.start()]
         verse_pat = re.compile(rf'(?:^|\n|\s){chapter}\s*:\s*(\d+)\s')
-        matches = list(verse_pat.finditer(full))
-        verses = []
-        for i, mm in enumerate(matches):
-            try: vn = int(mm.group(1))
-            except: continue
-            if vn < 1 or vn > 100: continue
-            end = matches[i+1].start() if i+1 < len(matches) else len(full)
-            text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
-            if text:
-                verses.append({"n": vn, "t": text})
+        def accept(mm, _nxt):
+            vn, _ = _marker_number(mm.group(1))
+            return vn if vn is not None and 1 <= vn <= 100 else None
+        verses = _slice_at_markers(full, list(verse_pat.finditer(full)), accept)
         return verses or [{"n": 1, "t": re.sub(r'\s+', ' ', full).strip()}]
 
     # ---- Standard apocrypha: "Chapter <N>" + bracketed verse markers
@@ -790,34 +836,38 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
     verse_pat = re.compile(r'\[(\d+)(?:\s*-\s*\d+)?\]\s*')
     matches = list(verse_pat.finditer(full))
     verses = []
+
+    def sequential(limit):
+        """Accept a marker only while it continues the chapter's numbering.
+
+        A marker the scan set in letters has to land on exactly the next
+        verse number — the loose tolerance that lets a genuine digit skip a
+        few is too generous for a guess about a letter.
+        """
+        state = {"expected": 1}
+
+        def accept(mm, _nxt):
+            vn, repaired = _marker_number(mm.group(1))
+            if vn is None or not (1 <= vn <= limit):
+                return None
+            if repaired:
+                if vn != state["expected"]:
+                    return None
+            elif vn < state["expected"] or vn > state["expected"] + 5:
+                return None
+            state["expected"] = vn + 1
+            return vn
+        return accept
+
     if matches:
-        expected = 1
-        for i, mm in enumerate(matches):
-            try: vn = int(mm.group(1))
-            except: continue
-            if vn < 1 or vn > 200: continue
-            if vn < expected or vn > expected + 5: continue
-            end = matches[i+1].start() if i+1 < len(matches) else len(full)
-            text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
-            if text:
-                verses.append({"n": vn, "t": text})
-                expected = vn + 1
+        verses = _slice_at_markers(full, matches, sequential(200))
 
     if not verses:
         # Fallback to plain numeric markers
-        verse_pat2 = re.compile(rf'(?:^|\n|(?<=\s))(\d+)\s+(?=[{LETTER}“"\'])')
-        matches = list(verse_pat2.finditer(full))
-        expected = 1
-        for i, mm in enumerate(matches):
-            try: vn = int(mm.group(1))
-            except: continue
-            if vn < 1 or vn > 200: continue
-            if vn < expected or vn > expected + 5: continue
-            end = matches[i+1].start() if i+1 < len(matches) else len(full)
-            text = re.sub(r'\s+', ' ', full[mm.end():end]).strip()
-            if text:
-                verses.append({"n": vn, "t": text})
-                expected = vn + 1
+        verse_pat2 = re.compile(
+            rf'(?:^|\n|(?<=\s))([0-9SBlZgqb]{{1,3}})\s+(?=[{LETTER}“"\'])')
+        verses = _slice_at_markers(full, list(verse_pat2.finditer(full)),
+                                   sequential(200))
 
     if not verses:
         text = re.sub(r'\s+', ' ', full).strip()
@@ -827,7 +877,13 @@ def parse_apocrypha_chapter(book, chapter, start_pg, end_pg):
 
 # ---------------------------- BUILD ----------------------------
 
-def build():
+def build(only=None):
+    """Extract every book, or only the ids in `only`.
+
+    Naming ids matters when one book needs re-extracting: this writes
+    ENGLISH text, so a finished, transliterated book must not be rebuilt
+    unless it is going back through transliterate.py afterwards.
+    """
     with open(INDEX_IN, encoding='utf-8') as f:
         index = json.load(f)
 
@@ -849,6 +905,8 @@ def build():
 
     for book in index['books']:
         bid     = book['id']
+        if only and bid not in only:
+            continue
         section = book['section']
         chapters = book['chapters']
         ch_count = book['chapter_count']
@@ -946,7 +1004,9 @@ def build():
     # multi-chapter structure during this run).
     with open(INDEX_IN, 'w', encoding='utf-8') as f:
         json.dump(index, f, ensure_ascii=False, indent=1)
+        f.write('\n')
 
 
 if __name__ == '__main__':
-    build()
+    import sys
+    build(only={a for a in sys.argv[1:] if not a.startswith('-')} or None)
