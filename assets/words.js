@@ -74,6 +74,11 @@
   // compounds (showbread, herdsmen, watchmen, firstfruits, overnight,
   // seedtime, wholesome …) are deliberately absent.
   var SPLITS = {
+    // A name welded to the word before it survives the transliteration pass
+    // untouched, because the pass never sees the name as a word — so the
+    // split has to put the Hebrew form back itself.
+    "inyerushalayim": "in Yahrushalayim",
+    "ofisrael": "of Yasharal",
     "becausethey": "because they",
     "headshall": "head shall",
     "sharesin": "shares in",
@@ -175,6 +180,13 @@
     "yo'ĕl": "Yo'Al",
     "yo'el": "Yo'Al",
     "yoal": "Yo'Al",
+    // Kena'an keeps its people (CLAUDE.md rule 6: compounds follow the base
+    // word). The transliterator only reaches "Canaan" itself, so the forms
+    // built on it are recorded here.
+    "canaanite": "Kena'anite",
+    "canaanites": "Kena'anites",
+    "canaanitish": "Kena'anitish",
+    "canaanitess": "Kena'anitess",
     // Qodash for the place, Qadash for the verb — the two senses of the
     // same root, kept apart. These carry forward the spellings already in
     // the text so a swept book and a freshly extracted one agree.

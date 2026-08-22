@@ -16,6 +16,18 @@ The generic Adam & Eve parser in extract_text.py left two defects:
     let chapters swallow the next chapter's opening verses (e.g. 3:1-3 were
     lost into 2:7).
 
+  * Dropped text: a line that opens with a number the sequence cannot
+    accept was treated as a mis-numbered verse and thrown away with its
+    words — losing, among others, the second half of Adam & Eve 1 3:6
+    ("...these were 5,000 and 500 years; and how One would then come and
+    save him and his descendants"). A number that is not the next verse is
+    now read as what it is: part of the sentence.
+
+  * Mid-line verse numbers: where the PDF wrapped a number into the middle
+    of a line ("...prayed to God to explain it to him. 6 Then God in his
+    mercy...") the verse was never opened, so two verses ran together and
+    the numbering skipped.
+
 This re-extractor strips the footer block per page (everything from the
 running-header marker to end-of-page), then splits on the real in-body
 chapter headings and parses verses with the correct per-book rules.
@@ -48,6 +60,13 @@ def from_roman(s):
 
 def clean_text(s):
     s = re.sub(r"−−|--", " - ", s)        # "−−" / "--" -> spaced dash
+    # 44.pdf sets its dashes as a control character ("four elements\x14fire,
+    # earth, air, and water\x14was widely accepted"); left in, it welds the
+    # words on either side together.
+    s = re.sub(r"[\x00-\x08\x0b-\x1f\x7f]", " ", s)
+    # The scan reads a vocative "O" as a zero — "0 Adam, from the time ye
+    # have dwelt in this cave".
+    s = re.sub(r"(?<![\d,.])\b0\b(?![\d,.])", "O", s)
     s = re.sub(r"\s+", " ", s).strip()
     s = re.sub(r"(\w)- (\w)", r"\1\2", s)            # de-hyphenate line breaks
     return s
@@ -113,6 +132,13 @@ def extract_book1():
         if vm:
             body = body[vm.start():]
         verses = _parse_numbered(body, first_expected=1)
+        if verses:
+            # The book's closing verse runs straight into the colophon
+            # ("…defiled with blood. . . . End of First Book of Adam and
+            # Eve"), whose tail the footer strip has already removed. Take
+            # the orphaned "End of" with it so the verse ends where it does.
+            verses[-1]["t"] = re.sub(r"\s*\.(?:\s*\.)+\s*End of\s*$", ".",
+                                     verses[-1]["t"]).rstrip()
         if verses:                            # only advance on a real chapter
             cur = n
             chapters[n] = verses
@@ -153,15 +179,26 @@ def extract_book2():
         expected = 2
         for blk in blocks[2:]:
             mm = re.match(r"(\d{1,3})\s*(.*)$", blk, re.S)
-            if not mm:
+            vn = int(mm.group(1)) if mm else None
+            txt = clean_text(mm.group(2)) if mm else ""
+            if vn is not None and expected <= vn <= expected + 3:
+                if txt:
+                    verses.append({"n": vn, "t": txt})
+                    expected = vn + 1
                 continue
-            vn = int(mm.group(1))
-            if vn < expected or vn > expected + 3:
+            if vn is not None and vn > expected + 3 and len(txt.split()) >= 5:
+                # The source mis-prints the number — 2 Adam & Eve 13:13 is
+                # set as "18" — but the block is plainly the next verse.
+                # Give it the number the chapter's sequence calls for
+                # rather than dropping a verse of the reading.
+                verses.append({"n": expected, "t": txt})
+                expected += 1
                 continue
-            txt = clean_text(mm.group(2))
-            if txt:
-                verses.append({"n": vn, "t": txt})
-                expected = vn + 1
+            # A continuation line, a stray page number, a date: not a verse
+            # of its own, so keep the words with the verse they follow.
+            tail = clean_text(blk)
+            if tail and verses:
+                verses[-1]["t"] = (verses[-1]["t"] + " " + tail).strip()
         if verses:
             cur = n
             chapters[n] = verses
@@ -186,19 +223,35 @@ def _fix_dropcap(s):
     return s
 
 
+# A verse number opens a line, or — where the PDF wrapped the number into
+# the middle of a line — follows the end of the previous sentence.
+_MARK = re.compile(r"""(?:^|\n)\s*(\d{1,3})\s+(?=[A-Za-z"\u201c\u2018'(])"""
+                   r"""|(?<=[.!?"'\u201d\u2019])\s+(\d{1,3})\s+"""
+                   r"""(?=[A-Za-z"\u201c\u2018'(])""")
+
+
 def _parse_numbered(body, first_expected=1):
-    marks = list(re.finditer(r"(?:^|\n)\s*(\d{1,3})\s+(?=[A-Za-z\"“‘'(])", body))
-    verses = []
+    """Split a chapter body at its verse numbers.
+
+    Only a number that continues the chapter's sequence opens a verse.
+    Anything else — "500 years; and how One would then come" beginning a
+    line, a date, a tally — is prose, so the text around it stays with the
+    verse it belongs to instead of being dropped on the floor.
+    """
+    accepted = []
     expected = first_expected
-    for i, mm in enumerate(marks):
-        n = int(mm.group(1))
+    for mm in _MARK.finditer(body):
+        n = int(mm.group(1) or mm.group(2))
         if n < expected or n > expected + 3:
             continue
-        end = marks[i + 1].start() if i + 1 < len(marks) else len(body)
-        txt = clean_text(body[mm.end():end])
+        accepted.append((n, mm.start(), mm.end()))
+        expected = n + 1
+    verses = []
+    for i, (n, _start, end) in enumerate(accepted):
+        stop = accepted[i + 1][1] if i + 1 < len(accepted) else len(body)
+        txt = clean_text(body[end:stop])
         if txt:
             verses.append({"n": n, "t": txt})
-            expected = n + 1
     return verses
 
 
