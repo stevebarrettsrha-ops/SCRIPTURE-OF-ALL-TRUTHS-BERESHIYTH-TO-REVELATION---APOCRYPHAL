@@ -73,14 +73,11 @@ KNOWN_SOURCE_GAPS = {
     # The print sets Addition 11:1 — the Greek colophon — at the END of the
     # book, where it stands as 7:11; chapter 1 therefore opens at verse 2.
     ("apoc-esther-add", "1", "start", 2),
-    # Lumpkin's Jubilees runs these verses into the one before them.
-    ("apoc-jubilees", "19", 24, 27), ("apoc-jubilees", "32", 10, 12),
-    ("apoc-jubilees", "41", 10, 12), ("apoc-jubilees", "48", 7, 9),
     # The RSV-lineage Sirach omits many verses and prints others as grouped
     # ranges ("[15-26]"); the numbering here mirrors that page for page.
     ("apoc-sirach", "1", 1, 15), ("apoc-sirach", "1", 15, 27),
     ("apoc-sirach", "2", 18, 22), ("apoc-sirach", "4", 18, 20),
-    ("apoc-sirach", "4", 24, 26), ("apoc-sirach", "8", 2, 4),
+    ("apoc-sirach", "4", 24, 26),
     ("apoc-sirach", "11", 20, 22), ("apoc-sirach", "12", 14, 17),
     ("apoc-sirach", "14", 13, 15), ("apoc-sirach", "17", 14, 17),
     ("apoc-sirach", "18", 4, 6), ("apoc-sirach", "18", 8, 10),
@@ -90,9 +87,6 @@ KNOWN_SOURCE_GAPS = {
     ("apoc-sirach", "21", 2, 4), ("apoc-sirach", "23", 8, 11),
     ("apoc-sirach", "25", 17, 19), ("apoc-sirach", "25", 23, 25),
     ("apoc-sirach", "26", 11, 13), ("apoc-sirach", "27", 18, 28),
-    # The 1887 Jasher printing omits these two verses (the page shows the
-    # numbering step over them).
-    ("yashar", "23", 66, 68), ("yashar", "63", 23, 25),
 }
 
 TAG = re.compile(r"<[^>]+>")

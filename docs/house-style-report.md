@@ -189,7 +189,7 @@ is recorded next to it. It is the only "Holy" left in the canon.
 
 ## 9. What is left, and why
 
-A search of all 48,061 verses finds these and nothing else:
+A search of all 48,068 verses finds these and nothing else:
 
 * `holy` — 1, the Holy Sepulcher above.
 * `divin` — 43, every one the divination verb or its nouns.
@@ -225,5 +225,5 @@ otherwise inherit a capital from "Set-apart **R**uach" and come out
 It is applied twice — by `scripts/sweep_text.py --fix` to the stored text,
 and by `BesorahWords.repair()` to every verse on its way to the screen, so
 a book re-extracted from its PDF is still shown correctly.
-`scripts/check_words_parity.py` proves the two agree on all 48,061 verses;
+`scripts/check_words_parity.py` proves the two agree on all 48,068 verses;
 `scripts/check_render.js` proves nothing reaches a reader that should not.
