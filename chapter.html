@@ -198,8 +198,12 @@ fetch('assets/index.json')
   })
   .catch(err => {
     console.error(err);
-    document.getElementById('loading').textContent =
-      'Failed to load chapter. Make sure you opened this site through a local web server (e.g. `python3 -m http.server`).';
+    // Say what actually went wrong: a link to a book or chapter that does
+    // not exist is a different failure from opening the site off file://.
+    const known = /^(Book|Chapter) not found$/.test(err.message);
+    document.getElementById('loading').textContent = known
+      ? err.message + '. Check the link, or pick the book again from the Books page.'
+      : 'Failed to load chapter. Make sure you opened this site through a local web server (e.g. `python3 -m http.server`).';
   });
 </script>
 </body>

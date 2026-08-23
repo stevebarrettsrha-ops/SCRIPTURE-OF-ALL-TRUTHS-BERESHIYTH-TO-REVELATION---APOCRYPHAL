@@ -33,6 +33,11 @@
   // Keys are lower-case; the replacement inherits the capitalisation of
   // the first fragment, so "Sover eign" comes out "Sovereign".
   var JOINS = {
+    // A word the scan split before its last letter; the halves are words
+    // themselves ("pat", "upo" is in the dictionary too), so the automatic
+    // dictionary-gated joiner leaves them alone and they are named here.
+    "pat h": "path",
+    "upo n": "upon",
     "them selves": "themselves",
     "your selves": "yourselves",
     "him self": "himself",
@@ -121,6 +126,10 @@
   // A scanner reading two glyphs as one. Each was checked against the
   // printed page before being listed.
   var TYPOS = {
+    // A letter the scan destroyed outright (U+FFFD in the extracted text);
+    // each reading is unambiguous and was checked against its verse.
+    "patie\uFFFDtly": "patiently",
+    "peop\uFFFDe": "people",
     "backfmy": "back my",
     "carefull": "carefully",
     // Digits the scanner read for letters — an S read as 5, an o as 0.
