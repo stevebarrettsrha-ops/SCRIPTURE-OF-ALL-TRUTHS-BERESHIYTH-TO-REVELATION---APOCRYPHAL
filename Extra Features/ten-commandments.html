@@ -373,11 +373,15 @@ function drawTablet(x,w,y,h,words,seed,startN){
       cy+=rowH;
     }
     if(wd.en){
-      for(const p of [[-1,-1,'rgba(255,248,230,.5)'],[0,0,'#241f18']]){
+      const caps=[];
+      for(const p of [[-1.2,-1.2,'rgba(20,16,10,.85)'],[1.1,1.1,'rgba(255,248,230,.6)'],[0,0,'#1c1712']]){
         const t=el('text',{x:x+w/2+p[0],y:cy+capH*.55+p[1],'text-anchor':'middle',
-          'font-family':'Cardo,Georgia,serif','font-style':'italic','font-size':18.5,fill:p[2]},svg);
-        t.textContent=wd.en;
+          'font-family':'Cardo,Georgia,serif','font-style':'italic','font-weight':'600',
+          'font-size':21,fill:p[2]},svg);
+        t.textContent=wd.en; caps.push(t);
       }
+      const tl=caps[2].getComputedTextLength();     /* a long word must still keep off the broken edge */
+      if(tl>w*.88) caps.forEach(t=>t.setAttribute('font-size',(21*w*.88/tl).toFixed(1)));
       cy+=capH;
     }
     cy+=gap;
