@@ -36,7 +36,7 @@
     text-decoration:none; transition:all .18s; display:inline-block; }
   .btn:hover{ background:rgba(212,175,55,.14); border-color:var(--gold); }
   #wheelbox{ display:flex; justify-content:center; margin:1vh 0 2vh; }
-  #wheel{ width:min(84vw,520px); height:min(84vw,520px); }
+  #wheel{ width:min(88vw,540px); height:min(88vw,540px); }
   .today{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
     text-align:center; padding:2.2vh 18px; margin-bottom:3vh; }
   .today .d1{ font-size:clamp(14px,2.6vmin,20px); color:var(--gold); letter-spacing:.16em; }
@@ -91,7 +91,7 @@
   <div class="nav">
     <a class="btn" href="../index.html">⟵ The Besorah</a>
     <a class="btn" href="calendar-of-hanok.html">📅 The Calendar</a>
-    <a class="btn" href="earth.html">🌍 The Earth</a>
+    <a class="btn" href="earth.html"><svg class="earth-icon" style="height:1.05em;width:auto;vertical-align:-0.18em;margin-right:.35em" viewBox="0 0 36 26" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M4 20 A14 14 0 0 1 32 20" fill="rgba(232,238,244,.07)" stroke="#cfd8e3" stroke-width="1.1" stroke-linecap="round"/><circle cx="18" cy="12.5" r="2" fill="#ffe9a8"/><circle cx="18" cy="12.5" r="3.4" fill="rgba(255,233,168,.25)"/><ellipse cx="18" cy="20" rx="13" ry="3.8" fill="#2e5d8f"/><ellipse cx="14.5" cy="19.3" rx="4.6" ry="1.5" fill="#5a8f4e"/><ellipse cx="23" cy="20.6" rx="3.4" ry="1.2" fill="#b89a5e"/><ellipse cx="18" cy="20" rx="13" ry="3.8" fill="none" stroke="#e8eef4" stroke-width="1"/></svg>The Earth</a>
   </div>
 
   <div id="wheelbox"><canvas id="wheel"></canvas></div>
@@ -235,9 +235,9 @@ function feastState(t){
 /* ---------- the wheel of the year ---------- */
 {
   const cvw=document.getElementById('wheel'), wg=cvw.getContext('2d');
-  const px=Math.min(window.innerWidth*.84,520), DPR=Math.min(3,Math.max(2,window.devicePixelRatio||1));
+  const px=Math.min(window.innerWidth*.88,540), DPR=Math.min(3,Math.max(2,window.devicePixelRatio||1));
   cvw.width=px*DPR; cvw.height=px*DPR; wg.scale(DPR,DPR);
-  const C=px/2, R1=px*.295, R2=px*.365;
+  const C=px/2, R1=px*.27, R2=px*.335;
   const ang=d=>-Math.PI/2+((d-1)/364)*Math.PI*2;      // day 1 at the top, sunwise
   /* the four seasons */
   const SC=['rgba(110,160,90,.16)','rgba(210,170,80,.16)','rgba(170,110,60,.16)','rgba(110,140,190,.16)'];
@@ -254,7 +254,7 @@ function feastState(t){
     wg.lineTo(C+Math.cos(a)*R2,C+Math.sin(a)*R2);
     wg.strokeStyle='rgba(212,175,55,.28)'; wg.lineWidth=1; wg.stroke();
     const am=ang(d+14);
-    wg.fillStyle='rgba(200,188,150,.75)'; wg.font=`${Math.max(9,px*.026)}px Georgia,serif`;
+    wg.fillStyle='rgba(200,188,150,.75)'; wg.font=`${Math.max(9,px*.026)}px Cardo,Georgia,serif`;
     wg.textAlign='center'; wg.textBaseline='middle';
     wg.fillText(m,C+Math.cos(am)*(R1+R2)/2,C+Math.sin(am)*(R1+R2)/2);
   }
@@ -270,10 +270,13 @@ function feastState(t){
       wg.lineTo(C+Math.cos(a)*(R2+px*.026),C+Math.sin(a)*(R2+px*.026));
       wg.strokeStyle='#fff3b8'; wg.lineWidth=k===0?2.2:1.1; wg.stroke(); }
     const a=ang(dayFor(t.m,t.d)+t.len/2);
-    const mul={pesach:1.10,matstsoth:1.0,bikkurim:.90,shabuoth:1.0,
-      teruah:.90,kippurim:1.10,sukkoth:1.0}[t.id];
-    const lr=px*.425*mul;
-    wg.fillStyle='#d4af37'; wg.font=`${Math.max(8,px*.022)}px Georgia,serif`;
+    // Three label tiers, all clear of the ring and its tick marks, so the
+    // feasts that fall within days of each other stack instead of touching.
+    const tier={bikkurim:.385,teruah:.385,
+      matstsoth:.425,shabuoth:.425,sukkoth:.425,
+      pesach:.468,kippurim:.468}[t.id];
+    const lr=px*tier;
+    wg.fillStyle='#d4af37'; wg.font=`${Math.max(8.5,px*.023)}px Cardo,Georgia,serif`;
     const short={pesach:'PESACH',matstsoth:'MATSTSOTH',bikkurim:'SHEAF',shabuoth:'SHAḆU‛OTH',
       teruah:'TERU‛AH',kippurim:'KIPPURIM',sukkoth:'SUKKOTH'}[t.id];
     wg.fillText(short,C+Math.cos(a)*lr,C+Math.sin(a)*lr);
@@ -286,9 +289,9 @@ function feastState(t){
     wg.fillStyle=gl; wg.beginPath(); wg.arc(gx,gy,px*.05,0,Math.PI*2); wg.fill();
     wg.fillStyle='#fff3c4'; wg.beginPath(); wg.arc(gx,gy,px*.016,0,Math.PI*2); wg.fill(); }
   /* the heart of it */
-  wg.fillStyle='rgba(212,175,55,.85)'; wg.font=`${Math.max(9,px*.028)}px Georgia,serif`;
+  wg.fillStyle='rgba(212,175,55,.85)'; wg.font=`${Math.max(9,px*.028)}px Cardo,Georgia,serif`;
   wg.fillText('364 DAYS',C,C-px*.02);
-  wg.fillStyle='rgba(154,143,116,.9)'; wg.font=`italic ${Math.max(8,px*.023)}px Georgia,serif`;
+  wg.fillStyle='rgba(154,143,116,.9)'; wg.font=`italic ${Math.max(8,px*.023)}px Cardo,Georgia,serif`;
   wg.fillText('52 weeks · 4 seasons',C,C+px*.022);
 }
 

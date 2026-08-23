@@ -24,13 +24,16 @@
   #head{ top:2.2vh; left:0; right:0; text-align:center; }
   #head .t{ font-size:clamp(17px,3.4vmin,30px); letter-spacing:.34em; color:var(--gold);
     text-shadow:0 0 18px rgba(212,175,55,.35); }
-  #head .s{ font-size:clamp(10px,1.7vmin,14px); letter-spacing:.22em; color:#c9b893; margin-top:.6vh; font-style:italic; }
-  #verse{ left:50%; bottom:9.5vh; transform:translateX(-50%); width:min(88vw,760px); text-align:center;
+  #head .s{ font-size:clamp(10px,1.7vmin,14px); letter-spacing:.22em; color:#c9b893;
+    margin:.6vh auto 0; max-width:min(46vw,560px); line-height:1.6; font-style:italic; }
+  #verse{ left:50%; bottom:9.5vh; transform:translateX(-50%); text-align:center;
+    width:min(640px, calc(100vw - 560px)); min-width:280px;
     transition:opacity 1.4s ease; opacity:0; }
   #verse .vt{ font-style:italic; font-size:clamp(12px,2vmin,17px); line-height:1.55; color:#f4ead5;
     text-shadow:0 2px 8px rgba(0,0,0,.8); }
   #verse .vr{ margin-top:.8vh; font-size:clamp(10px,1.5vmin,13px); letter-spacing:.24em; color:var(--gold); }
-  #clock{ top:2.2vh; right:2.4vw; text-align:right; font-size:clamp(10px,1.6vmin,13px);
+  #clock{ position:absolute; top:0; right:2.4vw; text-align:right;
+    width:min(24vw,300px); font-size:clamp(10px,1.6vmin,13px);
     letter-spacing:.14em; color:#c9b893; line-height:1.7; }
   #hint{ left:50%; bottom:2.2vh; transform:translateX(-50%); font-size:clamp(9px,1.45vmin,12px);
     letter-spacing:.18em; color:#8a7a5c; white-space:nowrap; }
@@ -42,7 +45,16 @@
     cursor:pointer; text-transform:uppercase; transition:all .18s; }
   .btn:hover{ background:rgba(212,175,55,.16); border-color:var(--gold); }
   .btn.off{ opacity:.5; }
-  @media (max-width:700px){ #hint{ display:none; } #clock{ top:auto; bottom:2vh; right:2.4vw; } }
+  @media (max-width:700px){
+    #hint{ display:none; }
+    #head{ top:8.5vh; }   /* below the back button, which keeps the corner */
+    #head .s{ max-width:88vw; }
+    #clock{ position:static; width:auto; text-align:center; margin-top:1vh; line-height:1.55; }
+    #ui{ left:2vw; right:64px; bottom:1.8vh; flex-direction:row; flex-wrap:wrap;
+      justify-content:center; gap:6px; }
+    #ui .btn{ padding:.9vh 1.2vh; }
+    #verse{ width:86vw; min-width:0; bottom:22vh; }
+  }
 </style>
 </head>
 <body>
@@ -51,8 +63,8 @@
 <div class="hud" id="head">
   <div class="t">THE EARTH</div>
   <div class="s">the world within the firmament — the earth stands fast, and the lights run their courses</div>
+  <div id="clock"></div>
 </div>
-<div class="hud" id="clock"></div>
 <div class="hud" id="verse"><div class="vt" id="verse-t"></div><div class="vr" id="verse-r"></div></div>
 <div class="hud" id="hint">the earth stands fast — drag to turn your view &nbsp;·&nbsp; scroll on any land to draw near to it &nbsp;·&nbsp; double-tap to return</div>
 <button class="btn" id="back">⟵ The Besorah</button>
