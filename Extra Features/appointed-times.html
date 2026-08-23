@@ -3,31 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0a0e1a">
+<meta name="theme-color" content="#1a1410">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%231a1410%22%2F%3E%3Cpath%20d%3D%22M8%207h16v18H8z%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M16%207v18M11%2012h3M18%2012h3M11%2017h3M18%2017h3%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <title>THE APPOINTED TIMES — Mo‛edim</title>
 <style>
-  :root{ --gold:#e8c66a; --gold-dim:#9a8351; --ink:#e8dfc8; --dim:#9a8f74;
-    --bg:#0a0e1a; --panel:rgba(16,20,36,.72); --rule:rgba(232,198,106,.22); }
+  :root{ --gold:#d4af37; --gold-dim:#8a6f23; --ink:#f4ead5; --dim:#c9b893;
+    --bg:#1a1410; --panel:rgba(37,28,22,.80); --rule:rgba(212,175,55,.28); }
   *{ box-sizing:border-box; margin:0; padding:0; }
   html,body{ background:var(--bg); color:var(--ink);
-    font-family:Georgia,'Times New Roman',serif; min-height:100%; }
+    font-family:'Cardo',Georgia,'Times New Roman',serif; min-height:100%; }
   body{ background:
-    radial-gradient(ellipse at 50% -10%, #1a2340 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 100%, #12182e 0%, transparent 50%), var(--bg);
+    radial-gradient(ellipse at 50% -10%, #2b2118 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 100%, #221a10 0%, transparent 50%), var(--bg);
     padding-bottom:8vh; }
   #stars{ position:fixed; inset:0; z-index:0; pointer-events:none; }
   .wrap{ position:relative; z-index:1; max-width:920px; margin:0 auto; padding:0 20px; }
   header{ text-align:center; padding:5.5vh 0 1vh; }
   header .t{ font-size:clamp(22px,4.4vmin,40px); letter-spacing:.3em; color:var(--gold);
-    text-shadow:0 0 20px rgba(232,198,106,.35); }
+    text-shadow:0 0 20px rgba(212,175,55,.35); }
   header .s{ margin-top:1.2vh; font-style:italic; color:var(--dim);
     font-size:clamp(11px,1.8vmin,15px); letter-spacing:.12em; line-height:1.6; }
   .nav{ display:flex; justify-content:center; gap:10px; margin:2.4vh 0; flex-wrap:wrap; }
-  .btn{ background:rgba(14,18,32,.85); color:var(--ink); border:1px solid var(--rule);
+  .btn{ background:rgba(30,23,17,.85); color:var(--ink); border:1px solid var(--rule);
     border-radius:4px; padding:9px 16px; font-family:inherit; letter-spacing:.14em;
     font-size:clamp(10px,1.6vmin,13px); cursor:pointer; text-transform:uppercase;
     text-decoration:none; transition:all .18s; display:inline-block; }
-  .btn:hover{ background:rgba(232,198,106,.14); border-color:var(--gold); }
+  .btn:hover{ background:rgba(212,175,55,.14); border-color:var(--gold); }
   #wheelbox{ display:flex; justify-content:center; margin:1vh 0 2vh; }
   #wheel{ width:min(84vw,520px); height:min(84vw,520px); }
   .today{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
@@ -35,35 +42,35 @@
   .today .d1{ font-size:clamp(14px,2.6vmin,20px); color:var(--gold); letter-spacing:.16em; }
   .today .d2{ margin-top:.8vh; color:var(--ink); font-size:clamp(12px,2vmin,15px); font-style:italic; }
   .today .d3{ margin-top:.8vh; color:var(--dim); font-size:clamp(11px,1.7vmin,13px); letter-spacing:.1em; }
-  .today .feast{ color:#ffe27a; font-style:normal; letter-spacing:.14em; }
+  .today .feast{ color:#fff3b8; font-style:normal; letter-spacing:.14em; }
   h2{ font-size:clamp(13px,2.2vmin,17px); letter-spacing:.28em; color:var(--gold);
     text-align:center; margin:4.5vh 0 1.6vh; font-weight:normal; }
   h2::before,h2::after{ content:'  ✦  '; color:var(--gold-dim); }
   .law{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
     padding:2.4vh 22px; margin-bottom:1.6vh; }
-  .law .q{ font-style:italic; line-height:1.75; font-size:clamp(13px,2.1vmin,16.5px); color:#efe6cf; }
+  .law .q{ font-style:italic; line-height:1.75; font-size:clamp(13px,2.1vmin,16.5px); color:#f4ead5; }
   .law .r{ margin-top:.9vh; text-align:right; color:var(--gold); letter-spacing:.2em;
     font-size:clamp(10px,1.5vmin,12px); }
   .law .note{ margin-top:1.4vh; color:var(--dim); font-size:clamp(11px,1.75vmin,13.5px);
-    line-height:1.65; border-top:1px solid rgba(232,198,106,.14); padding-top:1.3vh; }
+    line-height:1.65; border-top:1px solid rgba(212,175,55,.14); padding-top:1.3vh; }
   .moed{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
     margin-bottom:1.8vh; overflow:hidden; }
-  .moed.now{ border-color:#ffe27a; box-shadow:0 0 22px rgba(255,226,122,.16); }
+  .moed.now{ border-color:#fff3b8; box-shadow:0 0 22px rgba(255,243,184,.16); }
   .mh{ padding:2vh 22px 1.6vh; }
   .mh .nm{ color:var(--gold); letter-spacing:.18em; font-size:clamp(14px,2.35vmin,19px); }
   .mh .wn{ margin-top:.7vh; color:var(--dim); font-size:clamp(10.5px,1.65vmin,13px); letter-spacing:.1em; }
-  .mh .cd{ margin-top:.7vh; font-size:clamp(11px,1.75vmin,13.5px); color:#cfc4a4; }
-  .mh .cd b{ color:#ffe27a; font-weight:normal; letter-spacing:.12em; }
-  .mh .es{ margin-top:1vh; font-style:italic; color:#e2d8bd; line-height:1.65;
+  .mh .cd{ margin-top:.7vh; font-size:clamp(11px,1.75vmin,13.5px); color:#c9b893; }
+  .mh .cd b{ color:#fff3b8; font-weight:normal; letter-spacing:.12em; }
+  .mh .es{ margin-top:1vh; font-style:italic; color:#e6dcc2; line-height:1.65;
     font-size:clamp(12.5px,2vmin,15.5px); }
-  details{ border-top:1px solid rgba(232,198,106,.14); }
+  details{ border-top:1px solid rgba(212,175,55,.14); }
   summary{ list-style:none; cursor:pointer; padding:1.4vh 22px; color:var(--gold-dim);
     letter-spacing:.16em; font-size:clamp(10px,1.6vmin,12.5px); text-transform:uppercase; }
   summary:hover{ color:var(--gold); }
   summary::before{ content:'▸ '; }
   details[open] summary::before{ content:'▾ '; }
   .how{ padding:0 22px 2vh; }
-  .how .q{ font-style:italic; line-height:1.75; color:#efe6cf;
+  .how .q{ font-style:italic; line-height:1.75; color:#f4ead5;
     font-size:clamp(12.5px,2vmin,15.5px); margin-top:1.2vh; }
   .how .r{ margin-top:.5vh; text-align:right; color:var(--gold);
     letter-spacing:.18em; font-size:clamp(9.5px,1.45vmin,11.5px); }
@@ -82,7 +89,7 @@
       by the reckoning of ḤANOK and the book of YOḆELIM: three hundred and sixty-four days, a complete year</div>
   </header>
   <div class="nav">
-    <a class="btn" href="index.html">⟵ Berĕshith</a>
+    <a class="btn" href="../index.html">⟵ The Besorah</a>
     <a class="btn" href="calendar-of-hanok.html">📅 The Calendar</a>
     <a class="btn" href="earth.html">🌍 The Earth</a>
   </div>
@@ -239,13 +246,13 @@ function feastState(t){
     wg.arc(C,C,R1,ang(q*91+91.99),ang(q*91+1),true); wg.closePath();
     wg.fillStyle=SC[q]; wg.fill();
   }
-  wg.beginPath(); wg.arc(C,C,R2,0,Math.PI*2); wg.strokeStyle='rgba(232,198,106,.35)'; wg.lineWidth=1.4; wg.stroke();
+  wg.beginPath(); wg.arc(C,C,R2,0,Math.PI*2); wg.strokeStyle='rgba(212,175,55,.35)'; wg.lineWidth=1.4; wg.stroke();
   wg.beginPath(); wg.arc(C,C,R1,0,Math.PI*2); wg.stroke();
   /* month lines */
   for(let m=1;m<=12;m++){ const d=dayFor(m,1), a=ang(d);
     wg.beginPath(); wg.moveTo(C+Math.cos(a)*R1,C+Math.sin(a)*R1);
     wg.lineTo(C+Math.cos(a)*R2,C+Math.sin(a)*R2);
-    wg.strokeStyle='rgba(232,198,106,.22)'; wg.lineWidth=1; wg.stroke();
+    wg.strokeStyle='rgba(212,175,55,.28)'; wg.lineWidth=1; wg.stroke();
     const am=ang(d+14);
     wg.fillStyle='rgba(200,188,150,.75)'; wg.font=`${Math.max(9,px*.026)}px Georgia,serif`;
     wg.textAlign='center'; wg.textBaseline='middle';
@@ -261,12 +268,12 @@ function feastState(t){
     for(let k=0;k<t.len;k++){ const a=ang(dayFor(t.m,t.d)+k);
       wg.beginPath(); wg.moveTo(C+Math.cos(a)*(R2+2),C+Math.sin(a)*(R2+2));
       wg.lineTo(C+Math.cos(a)*(R2+px*.026),C+Math.sin(a)*(R2+px*.026));
-      wg.strokeStyle='#ffe27a'; wg.lineWidth=k===0?2.2:1.1; wg.stroke(); }
+      wg.strokeStyle='#fff3b8'; wg.lineWidth=k===0?2.2:1.1; wg.stroke(); }
     const a=ang(dayFor(t.m,t.d)+t.len/2);
     const mul={pesach:1.10,matstsoth:1.0,bikkurim:.90,shabuoth:1.0,
       teruah:.90,kippurim:1.10,sukkoth:1.0}[t.id];
     const lr=px*.425*mul;
-    wg.fillStyle='#e8c66a'; wg.font=`${Math.max(8,px*.022)}px Georgia,serif`;
+    wg.fillStyle='#d4af37'; wg.font=`${Math.max(8,px*.022)}px Georgia,serif`;
     const short={pesach:'PESACH',matstsoth:'MATSTSOTH',bikkurim:'SHEAF',shabuoth:'SHAḆU‛OTH',
       teruah:'TERU‛AH',kippurim:'KIPPURIM',sukkoth:'SUKKOTH'}[t.id];
     wg.fillText(short,C+Math.cos(a)*lr,C+Math.sin(a)*lr);
@@ -279,7 +286,7 @@ function feastState(t){
     wg.fillStyle=gl; wg.beginPath(); wg.arc(gx,gy,px*.05,0,Math.PI*2); wg.fill();
     wg.fillStyle='#fff3c4'; wg.beginPath(); wg.arc(gx,gy,px*.016,0,Math.PI*2); wg.fill(); }
   /* the heart of it */
-  wg.fillStyle='rgba(232,198,106,.85)'; wg.font=`${Math.max(9,px*.028)}px Georgia,serif`;
+  wg.fillStyle='rgba(212,175,55,.85)'; wg.font=`${Math.max(9,px*.028)}px Georgia,serif`;
   wg.fillText('364 DAYS',C,C-px*.02);
   wg.fillStyle='rgba(154,143,116,.9)'; wg.font=`italic ${Math.max(8,px*.023)}px Georgia,serif`;
   wg.fillText('52 weeks · 4 seasons',C,C+px*.022);
@@ -298,5 +305,6 @@ function feastState(t){
   fit(); window.addEventListener('resize',fit);
 }
 </script>
+<script src="../assets/besorah-fullscreen.js" defer></script>
 </body>
 </html>

@@ -937,6 +937,40 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
   .home-row { grid-template-columns: 1fr; }
 }
 
+/* ------------------------- extra features card ------------------------- */
+.extras-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.7rem;
+}
+.extra-link {
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.85rem 0.95rem;
+  background: rgba(212, 175, 55, 0.045);
+  transition: border-color 120ms, background 120ms;
+}
+.extra-link:hover {
+  border-color: var(--gold);
+  background: rgba(212, 175, 55, 0.09);
+  text-decoration: none;
+}
+.extra-link .extra-icon { display: block; font-size: 1.25rem; margin-bottom: 0.35rem; }
+.extra-link .extra-name {
+  display: block;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+.extra-link .extra-desc {
+  display: block;
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
 /* Offline-only tweaks */
 body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 .view { display: none; }
@@ -2633,8 +2667,18 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
     return entry;
   }
 
+  var VISITED_KEY = "besorah:visited";
+
   function recordLastRead(book, chapter) {
     safeSet(LAST_KEY, makeEntry(book, chapter));
+    // A quiet ledger of which chapters have been opened, per book. The
+    // Extra Features pages read it — the Earth page reveals the sites of a
+    // book as the reader actually walks through it.
+    try {
+      var v = JSON.parse(localStorage.getItem(VISITED_KEY) || "{}");
+      (v[book.id] = v[book.id] || {})[String(chapter)] = 1;
+      localStorage.setItem(VISITED_KEY, JSON.stringify(v));
+    } catch (e) {}
   }
 
   function getLastRead() {

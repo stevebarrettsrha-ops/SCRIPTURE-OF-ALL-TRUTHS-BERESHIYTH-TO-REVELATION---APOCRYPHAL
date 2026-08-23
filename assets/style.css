@@ -924,3 +924,37 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
   .daily-verses { font-size: 1.05rem; padding-left: 0.7rem; }
   .home-row { grid-template-columns: 1fr; }
 }
+
+/* ------------------------- extra features card ------------------------- */
+.extras-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.7rem;
+}
+.extra-link {
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.85rem 0.95rem;
+  background: rgba(212, 175, 55, 0.045);
+  transition: border-color 120ms, background 120ms;
+}
+.extra-link:hover {
+  border-color: var(--gold);
+  background: rgba(212, 175, 55, 0.09);
+  text-decoration: none;
+}
+.extra-link .extra-icon { display: block; font-size: 1.25rem; margin-bottom: 0.35rem; }
+.extra-link .extra-name {
+  display: block;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+.extra-link .extra-desc {
+  display: block;
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.45;
+}
