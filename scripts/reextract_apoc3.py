@@ -59,10 +59,24 @@ def raw_pages(start, end):
     offset = 0
     for p in range(start, end + 1):
         t = r.pages[p - 1].extract_text() or ""
-        t = t.replace("Joseph B. Lumpkin", " ")
-        t = t.replace("Joseph 8. Lumpkin", " ")          # OCR variant seen p570
-        t = re.sub(r"The Apocrypha:\s*Including Books from the\s*Ethiopic Bible",
-                   " ", t)
+        # The printed folio (pdf page − 2) often sits hard against a banner
+        # and pypdf may split its digits ("601" comes through as "60 1");
+        # remove that exact number where it touches a banner, and only that
+        # number — a verse marker can open the line right after the banner.
+        banners = [r"(?:Joseph|Yoseph)\s+[B8]\.\s+Lumpkin",
+                   r"The Apocrypha:\s*Including Books from the\s*Eth[i;]op[i;]c Bible"]
+        for b in banners:
+            for pn in (p - 3, p - 2, p - 1):
+                d = r"\s?".join(re.escape(c) for c in str(pn))
+                t = re.sub(rf"(?:(?<=\s)|^){d}\s*(?={b})", " ", t)
+                t = re.sub(rf"({b})\s*{d}(?=\s|$)", r"\1", t)
+            t = re.sub(b, " ", t)
+        # The folio can also end the page's text with no banner beside it
+        # (the banner opens the NEXT page); eat it at the extreme edges too.
+        for pn in (p - 3, p - 2, p - 1):
+            d = r"\s?".join(re.escape(c) for c in str(pn))
+            t = re.sub(rf"(?:(?<=\s)|^){d}\s*$", " ", t)
+            t = re.sub(rf"^\s*{d}(?=\s)", " ", t)
         # Drop standalone page-number lines (the printed folio at page bottom).
         t = "\n".join(l for l in t.split("\n") if not re.match(r"^\s*\d{1,4}\s*$", l))
         page_index.append((offset, p))
@@ -152,10 +166,18 @@ _HERMAS_MARK = re.compile(
     # bracketed: <sect>[<continuous>]:<v>. The OCR renders "[" as "[" or "{",
     # "]" as "]"/"J"/"}", and a sub-chapter letter suffix ("104a") may sit on
     # either side of the closing bracket.
-    r"(\d+)\s*[\[\{]\s*(\d+)[a-z]?\s*[\]J\}][a-z]?"   # 1=sect 2=continuous
-    r"|(?<![\d\]J\}])(\d+)"                            # 3=bare section number
+    r"(\d+)\s*[\[\{]\s*(\d+)[a-z]?\s*[\]J\})][a-z]?"  # 1=sect 2=continuous
+    r"|(?<![\d\]J\})])(\d+)"                           # 3=bare section number
     r")\s*:\s*(\d+)"                                   # 4=verse
 )
+
+# Three more shapes the scan gives a bracketed marker, normalised before
+# matching: "8116]:9" ("[" set as the digit 1), "27[1 04]:6" (a space inside
+# the bracketed number), and "10[76):2" (")" for "]", handled above).
+def _normalize_hermas_marks(full):
+    full = re.sub(r"(?<=\d)1(\d{2})\](?=\s*:)", r"[\1]", full)
+    full = re.sub(r"\[\s*(\d)\s+(\d+)\s*([\]J\})])", r"[\1\2]", full)
+    return full
 
 
 def _emit(chapters, ch, v, text):
@@ -168,6 +190,7 @@ def extract_hermas():
     # The section banners ("Vision 1" ...) sit between markers; blanking them
     # keeps offsets stable so the page index stays valid.
     full = _HERMAS_SECTION.sub(lambda m: " " * len(m.group(0)), full)
+    full = _normalize_hermas_marks(full)
 
     marks = list(_HERMAS_MARK.finditer(full))
     chapters, pages = {}, {}
@@ -222,7 +245,7 @@ def extract_esther_add():
         body = full[h.end():end]
         # Verse markers are "[n]"; the OCR sometimes renders a brace for either
         # bracket ("[2}", "{15]"), so accept [ or { open and ] or } close.
-        vmarks = list(re.finditer(r"[\[\{](\d+)[\]\}]\s*", body))
+        vmarks = list(re.finditer(r"[\[\{](\d+)\s*[\]J\})]\s*", body))
         verses = []
         last_v = 0
         for j, vm in enumerate(vmarks):

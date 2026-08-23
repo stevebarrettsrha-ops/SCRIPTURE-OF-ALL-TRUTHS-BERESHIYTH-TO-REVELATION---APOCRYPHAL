@@ -16,7 +16,7 @@ Checks
    - U+FFFD replacement chars (a diacritic that got corrupted)
    - NUL sentinel (\\x00) leaked from the replacement engine
    - <span> / </span> imbalance
-   - any span class other than the whitelisted dn / hwhy
+   - any span class other than the whitelisted dn / hwhy / fn
    - a divine-name span glued to the middle of a word (stranded markup)
 
 2. Untranslated source names (hard fail)
@@ -116,7 +116,10 @@ def scan(only=None):
         if t.count("<span") != t.count("</span>"):
             f["imbalance"].append(loc)
         for cls in _SPAN_OPEN.findall(t):
-            if cls not in ("dn", "hwhy"):
+            # dn/hwhy mark divine names; fn carries a footnote from the
+            # source edition (styled and skipped by speech, like sweep_text
+            # and check_render both allow).
+            if cls not in ("dn", "hwhy", "fn"):
                 f["bad_class"].append((loc, cls))
         if _STRANDED.search(t):
             f["stranded"].append((loc, t[:90]))
