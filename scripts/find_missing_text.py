@@ -117,7 +117,12 @@ def book_pdf_span(info):
 # is right to drop them.
 APPARATUS = re.compile(
     r"\bChapter\s+[IVXLC]+\b|\bCHAP[.,]\s*[IVXLC]+|\bPage\s*\||"
-    r"\bBook of [A-Z\u1e00-\u1eff]|\bTHE [A-Z ]{6,}\b", re.U)
+    r"\bBook of [A-Z\u1e00-\u1eff]|\bTHE [A-Z ]{6,}\b|"
+    # The editor's own voice: Lumpkin's bracketed commentary (stripped from
+    # the reading on purpose) and the study notes the Besorah volumes set in
+    # small print under the text (extract_notes.py's business, not ours).
+    r"Author'?s\s+[Nn]ote|Note from (?:the )?editor|\bOverview of Books\b|"
+    r"\bKJV with concordance\b|\bconcordance numbers\b", re.U)
 
 
 def is_apparatus(text):
