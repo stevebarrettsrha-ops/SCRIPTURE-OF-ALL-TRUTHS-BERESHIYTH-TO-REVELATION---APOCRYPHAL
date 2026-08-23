@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0e1a">
+<title>THE TEN WORDS — Aseret haDeḇarim</title>
+<style>
+  :root{ --gold:#e8c66a; --gold-dim:#9a8351; --ink:#e8dfc8; --dim:#9a8f74;
+    --bg:#0a0e1a; --panel:rgba(16,20,36,.72); --rule:rgba(232,198,106,.22); }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ background:var(--bg); color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif; min-height:100%; }
+  body{ background:
+    radial-gradient(ellipse at 50% -12%, #241a30 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 100%, #12182e 0%, transparent 50%), var(--bg);
+    padding-bottom:9vh; }
+  #stars{ position:fixed; inset:0; z-index:0; pointer-events:none; }
+  .wrap{ position:relative; z-index:1; max-width:1020px; margin:0 auto; padding:0 20px; }
+  header{ text-align:center; padding:5.5vh 0 1vh; }
+  header .t{ font-size:clamp(22px,4.4vmin,40px); letter-spacing:.3em; color:var(--gold);
+    text-shadow:0 0 22px rgba(232,198,106,.4); }
+  header .s{ margin-top:1.2vh; font-style:italic; color:var(--dim);
+    font-size:clamp(11px,1.8vmin,15px); letter-spacing:.12em; line-height:1.6; }
+  .nav{ display:flex; justify-content:center; gap:10px; margin:2.4vh 0 1vh; flex-wrap:wrap; }
+  .btn{ background:rgba(14,18,32,.85); color:var(--ink); border:1px solid var(--rule);
+    border-radius:4px; padding:9px 16px; font-family:inherit; letter-spacing:.14em;
+    font-size:clamp(10px,1.6vmin,13px); cursor:pointer; text-transform:uppercase;
+    text-decoration:none; transition:all .18s; display:inline-block; }
+  .btn:hover{ background:rgba(232,198,106,.14); border-color:var(--gold); }
+  #tablets{ display:block; width:100%; height:auto; margin:2vh 0 1vh; }
+  .cap{ text-align:center; font-style:italic; color:var(--dim); line-height:1.7;
+    font-size:clamp(11.5px,1.85vmin,14.5px); max-width:760px; margin:0 auto; }
+  .cap .r{ color:var(--gold); font-style:normal; letter-spacing:.2em;
+    font-size:clamp(9.5px,1.5vmin,12px); margin-top:.6vh; }
+  h2{ font-size:clamp(13px,2.2vmin,17px); letter-spacing:.28em; color:var(--gold);
+    text-align:center; margin:5vh 0 1.8vh; font-weight:normal; }
+  h2::before,h2::after{ content:'  ✦  '; color:var(--gold-dim); }
+  .word{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
+    padding:2vh 22px; margin-bottom:1.5vh; }
+  .word .n{ color:var(--gold); letter-spacing:.22em; font-size:clamp(11px,1.7vmin,13.5px);
+    margin-bottom:.9vh; }
+  .word .q{ font-style:italic; line-height:1.75; color:#efe6cf;
+    font-size:clamp(13px,2.05vmin,16px); }
+  .word .r{ margin-top:.8vh; text-align:right; color:var(--gold); letter-spacing:.2em;
+    font-size:clamp(9.5px,1.5vmin,11.5px); }
+  #alephbeth,#script{ display:grid; grid-template-columns:repeat(auto-fill,minmax(146px,1fr));
+    gap:12px; margin:2.2vh 0 1vh; }
+  .ab{ background:linear-gradient(180deg,#ecdfba,#d9c89c); border:1px solid #b09b6f;
+    border-radius:7px; text-align:center; padding:12px 6px 10px;
+    box-shadow:0 3px 12px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,250,235,.6); }
+  .ab svg{ display:block; width:58px; height:58px; margin:0 auto 5px; }
+  .ab .nm{ color:#8b2b1e; font-weight:bold; font-size:clamp(13px,2vmin,16px);
+    letter-spacing:.05em; }
+  .ab .no{ color:#7a5f35; font-weight:normal; font-size:.82em; }
+  .ab .mn{ color:#4a3c28; font-size:clamp(10px,1.55vmin,11.5px); line-height:1.5;
+    margin-top:4px; }
+  footer{ text-align:center; margin-top:5vh; color:var(--dim); font-style:italic;
+    font-size:clamp(11px,1.75vmin,14px); line-height:1.75; }
+  footer .r{ color:var(--gold); letter-spacing:.18em; font-style:normal;
+    font-size:clamp(9.5px,1.5vmin,11.5px); margin-top:.8vh; }
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div class="wrap">
+  <header>
+    <div class="t">THE TEN WORDS</div>
+    <div class="s">Aseret haDeḇarim — spoken with a great voice out of the midst of the fire,<br>
+      and written on two tablets of stone with the finger of Aluahim</div>
+  </header>
+  <div class="nav">
+    <a class="btn" href="index.html">⟵ Berĕshith</a>
+    <a class="btn" href="earth.html">🌍 The Earth</a>
+    <a class="btn" href="appointed-times.html">✦ Appointed Times</a>
+  </div>
+
+  <svg id="tablets" viewBox="0 0 1600 1150" xmlns="http://www.w3.org/2000/svg" role="img"
+    aria-label="Two stone tablets bearing the Ten Words in Paleo-Hebrew"></svg>
+
+  <div class="cap">
+    “And when He had ended speaking with him on Mount Sinai, He gave Mosheh two tablets of the Witness,
+    tablets of stone, written with the finger of Aluahim.”
+    <div class="r">— SHEMOTH 31:18</div>
+  </div>
+
+  <h2>THE ANCIENT HEBREW LETTERS — THE ALEPH-BĔYTH</h2>
+  <div class="cap">the oldest pictures of the letters — each a sign bearing a meaning</div>
+  <div id="alephbeth"></div>
+
+  <h2>THE PALEO-HEBREW SCRIPT</h2>
+  <div class="cap">the letters as they were written on stone and scroll until the first century —
+    the script the tablets above are engraved in</div>
+  <div id="script"></div>
+
+  <h2>THE WORDS, AS THEY WERE SPOKEN</h2>
+  <div id="words"></div>
+
+  <footer>
+    “These Words YAHUAH spoke to all your qahal, in the mountain from the midst of the fire, of the cloud
+    and of the thick darkness, with a loud voice — and He added no more. He wrote them on two tablets of
+    stone and gave them to me.”
+    <div class="r">— DEḆARIM 5:22</div>
+  </footer>
+</div>
+
+<script>
+'use strict';
+/* ===================== the Paleo-Hebrew letters, drawn as strokes =====================
+   Each letter of the old script, as on the earliest stones, given as strokes in a unit
+   box (x right, y down). Final forms are the same shapes in the old script.            */
+const PALEO={
+  /* each letter drawn as its ancient picture, redrawn stroke for stroke
+     after the chart of the ancient letters (tan card, dark red strokes) */
+  'א':[['P','M',.08,.04,'Q',.14,.28,.34,.40],                               /* the ox head: two long horns */
+       ['P','M',.64,.02,'Q',.52,.18,.53,.34],
+       ['P','M',.32,.42,'Q',.52,.30,.68,.38,'Q',.86,.48,.72,.62,
+             'Q',.56,.76,.42,.68,'Q',.24,.56,.32,.42,'Z']],                 /* and the head beneath them */
+  'ב':[[[.62,.52],[.34,.52],[.34,.16],[.72,.16],[.72,.84],[.20,.84]]],      /* the house, its floor-plan */
+  'ג':[[[.72,.14],[.48,.14],[.48,.74],[.22,.74]]],                          /* the leg bent at the hip, the foot stepping */
+  'ד':[[[.10,.28],[.90,.28]],[[.30,.28],[.30,.76]],[[.70,.28],[.70,.76]]],  /* the tent door, hanging in its frame */
+  'ה':[['c',.5,.12,.075],[[.5,.20],[.5,.60]],
+       [[.5,.32],[.30,.22],[.24,.04]],[[.5,.32],[.70,.22],[.76,.04]],       /* the man with lifted hands: Lo! Behold! */
+       [[.5,.60],[.32,.92]],[[.5,.60],[.68,.92]]],
+  'ו':[['P','M',.30,.08,'Q',.42,.24,.5,.32],['P','M',.70,.08,'Q',.58,.24,.5,.32],
+       [[.5,.32],[.5,.92]]],                                                /* the nail, the peg */
+  'ז':[[[.32,.10],[.68,.10]],[[.5,.10],[.5,.90]],[[.32,.90],[.68,.90]]],    /* the plow, the cutting tool */
+  'ח':[[[.12,.28],[.88,.28]],[[.12,.72],[.88,.72]],
+       [[.26,.28],[.26,.72]],[[.5,.28],[.5,.72]],[[.74,.28],[.74,.72]]],    /* the tent wall, a standing fence */
+  'ט':[['c',.5,.5,.34],[[.34,.34],[.66,.66]],[[.66,.34],[.34,.66]]],        /* the basket: surround */
+  'י':[[[.30,.14],[.66,.20]],[[.66,.20],[.44,.44]],[[.44,.44],[.68,.54]],[[.44,.44],[.34,.88]]], /* the arm and hand */
+  'כ':[['P','M',.5,.52,'Q',.34,.40,.28,.14],['P','M',.5,.52,'L',.5,.10],
+       ['P','M',.5,.52,'Q',.66,.40,.72,.14],['P','M',.5,.52,'Q',.46,.72,.54,.92]], /* the open palm */
+  'ל':[['P','M',.62,.12,'Q',.42,.04,.36,.20,'Q',.32,.32,.44,.38,'L',.60,.90]],     /* the shepherd staff */
+  'מ':[[[.10,.34],[.23,.18],[.36,.34],[.5,.18],[.64,.34],[.77,.18],[.90,.34]],
+       [[.10,.70],[.23,.54],[.36,.70],[.5,.54],[.64,.70],[.77,.54],[.90,.70]]],    /* water, the waves */
+  'נ':[['c',.40,.15,.06],
+       ['P','M',.45,.20,'Q',.58,.30,.55,.50,'Q',.52,.70,.58,.90]],          /* the sprouting seed: the head, and the tail curving down */
+  'ס':[[[.5,.06],[.5,.94]],[[.26,.24],[.74,.24]],[[.26,.48],[.74,.48]],[[.26,.72],[.74,.72]]],  /* the hand on the staff: a prop */
+  'ע':[['P','M',.12,.50,'Q',.50,.22,.88,.50],
+       ['P','M',.12,.50,'Q',.50,.78,.88,.50],['c',.5,.5,.085]],             /* the eye that sees: the lids, and the iris within */
+  'פ':[['P','M',.16,.50,'Q',.16,.34,.50,.34,'Q',.84,.34,.84,.50,
+        'Q',.84,.66,.50,.66,'Q',.16,.66,.16,.50,'Z']],                      /* the mouth: the closed lips */
+  'צ':[['P','M',.42,.28,'Q',.44,.12,.30,.10,'Q',.18,.09,.17,.20,'Q',.16,.30,.30,.30,'L',.40,.29],
+       ['P','M',.42,.28,'L',.60,.42,'L',.48,.56,'L',.68,.72,'L',.58,.92]],  /* the man on his side: the curled head, the body trailing */
+  'ק':[['c',.5,.42,.27],[[.06,.42],[.94,.42]]],                             /* the sun on the horizon */
+  'ר':[['P','M',.42,.46,'Q',.34,.14,.58,.10,'Q',.78,.08,.74,.32,
+        'Q',.72,.50,.52,.50,'L',.42,.46,'Z'],['P','M',.48,.50,'L',.38,.90]],/* the head, and the neck beneath */
+  'ש':[[[.14,.24],[.14,.72],[.86,.72],[.86,.24]],[[.5,.24],[.5,.72]]],      /* the two front teeth: eat, consume */
+  'ת':[[[.5,.10],[.5,.90]],[[.24,.38],[.76,.38]]],                          /* the mark: two crossed sticks */
+};
+const FINALS={'ך':'כ','ם':'מ','ן':'נ','ף':'פ','ץ':'צ'};
+
+/* ===================== the Paleo-Hebrew script =====================
+   The letters as they were written on stone and scroll until the first
+   century A.D. — rendered as accurately as possible from the script chart.
+   (Tsade is not on the chart; it is drawn after the same script's manner.) */
+const SCRIPT={
+  'א':[['P','M',.08,.50,'L',.88,.16],['P','M',.08,.50,'L',.88,.84],
+       ['P','M',.52,.08,'L',.52,.92]],                                      /* alep: the ox head laid sideways — the muzzle points left, the upright crosses the horns */
+  'ב':[[[.62,.12],[.36,.24],[.58,.42],[.62,.12]],
+       ['P','M',.58,.42,'Q',.54,.70,.26,.84]],                              /* bet */
+  'ג':[[[.32,.16],[.62,.30],[.52,.88]]],                                    /* gimel */
+  'ד':[[[.68,.18],[.24,.44],[.62,.62],[.68,.18]]],                          /* dalet: the triangle */
+  'ה':[[[.68,.10],[.58,.88]],[[.68,.16],[.28,.22]],
+       [[.64,.40],[.28,.44]],[[.61,.62],[.28,.65]]],                        /* he: the three arms */
+  'ו':[['P','M',.28,.10,'Q',.34,.28,.5,.31],['P','M',.72,.08,'Q',.62,.26,.5,.31],
+       [[.5,.31],[.46,.90]]],                                               /* waw */
+  'ז':[[[.40,.14],[.80,.14]],[[.20,.86],[.60,.86]],[[.62,.14],[.38,.86]]],  /* zayin: the offset bars, the stroke slanting between */
+  'ח':[[[.28,.14],[.26,.86]],[[.74,.14],[.72,.86]],
+       [[.28,.18],[.74,.18]],[[.27,.50],[.73,.50]],[[.26,.82],[.72,.82]]],  /* het: the barred box */
+  'ט':[['c',.5,.5,.32],[[.32,.32],[.68,.68]],[[.68,.32],[.32,.68]]],        /* tet */
+  'י':[[[.30,.18],[.68,.14]],[[.68,.14],[.52,.82]],
+       [[.62,.42],[.32,.46]],[[.52,.82],[.74,.86]]],                        /* yod: the bar, the arm, the leaning stem, the foot */
+  'כ':[['P','M',.68,.08,'L',.48,.90],
+       ['P','M',.20,.16,'L',.58,.48],['P','M',.20,.80,'L',.58,.48]],        /* kap: the backward K — two arms meeting the leaning stem */
+  'ל':[['P','M',.66,.08,'L',.48,.60,'Q',.42,.80,.28,.76,'Q',.20,.72,.26,.62]], /* lamed: the coiled crook */
+  'מ':[[[.14,.26],[.26,.12],[.38,.26],[.50,.12],[.62,.26]],[[.62,.26],[.48,.88]]], /* mem: waves and the long stroke */
+  'נ':[[[.34,.14],[.54,.24],[.38,.38],[.56,.50]],[[.56,.50],[.48,.90]]],    /* nun */
+  'ס':[[[.26,.16],[.72,.16]],[[.26,.34],[.72,.34]],[[.26,.52],[.72,.52]],
+       [[.52,.10],[.44,.92]]],                                              /* samek: the pillar through the bars */
+  'ע':[['c',.5,.5,.30]],                                                    /* ayin: the open eye */
+  'פ':[['P','M',.26,.32,'Q',.24,.12,.46,.13,'L',.68,.16,'L',.42,.90]],      /* pe: the curled lip, the long stroke falling away */
+  'צ':[[[.28,.18],[.56,.28],[.32,.42],[.60,.52]],[[.60,.52],[.48,.90]]],    /* tsade, after the script's manner */
+  'ק':[['c',.5,.32,.22],[[.5,.54],[.5,.92]]],                               /* qop */
+  'ר':[[[.60,.12],[.34,.22],[.56,.38],[.60,.12]],[[.56,.38],[.38,.88]]],    /* res */
+  'ש':[[[.14,.26],[.32,.62],[.5,.26],[.68,.62],[.86,.26]]],                 /* sin: the pointed teeth */
+  'ת':[[[.26,.22],[.74,.78]],[[.74,.22],[.26,.78]]],                        /* taw: the crossed mark */
+};
+
+/* the Ten Words, each command in full, with the Besorah's own English */
+const WORDS1=[
+ {rows:['אנכי יהוה אלהיך אשר הוצאתיך','מארץ מצרים מבית עבדים','לא יהיה לך אלהים אחרים על פני'],
+  en:'I am YAHUAH your Aluahim — no other mighty ones against My face'},
+ {rows:['לא תעשה לך פסל וכל תמונה'], en:'You do not make for yourself a carved image, or any likeness'},
+ {rows:['לא תשא את שם יהוה אלהיך לשוא'], en:'You do not bring the Name of YAHUAH your Aluahim to naught'},
+ {rows:['זכור את יום השבת לקדשו'], en:'Remember the Shabbath day, to set it apart'},
+ {rows:['כבד את אביך ואת אמך'], en:'Respect your father and your mother'},
+];
+const WORDS2=[
+ {rows:['לא תרצח'], en:'You do not murder'},
+ {rows:['לא תנאף'], en:'You do not commit adultery'},
+ {rows:['לא תגנב'], en:'You do not steal'},
+ {rows:['לא תענה ברעך עד שקר'], en:'You do not bear false witness against your neighbour'},
+ {rows:['לא תחמד בית רעך'], en:'You do not covet your neighbour’s house'},
+];
+
+const NS='http://www.w3.org/2000/svg';
+const svg=document.getElementById('tablets');
+const el=(n,at,parent)=>{ const e=document.createElementNS(NS,n);
+  for(const k in at) e.setAttribute(k,at[k]); (parent||svg).appendChild(e); return e; };
+
+/* ---------- stone ---------- */
+const defs=el('defs',{});
+{ const gr=el('linearGradient',{id:'stone',x1:'0',y1:'0',x2:'0',y2:'1'},defs);
+  el('stop',{offset:'0%','stop-color':'#8d8276'},gr);
+  el('stop',{offset:'45%','stop-color':'#7a7064'},gr);
+  el('stop',{offset:'100%','stop-color':'#5f564b'},gr);
+  const gr2=el('linearGradient',{id:'stoneEdge',x1:'0',y1:'0',x2:'0',y2:'1'},defs);
+  el('stop',{offset:'0%','stop-color':'#4a4239'},gr2);
+  el('stop',{offset:'100%','stop-color':'#332d26'},gr2);
+  const gl=el('radialGradient',{id:'sinaiGlow',cx:'50%',cy:'8%',r:'85%'},defs);
+  el('stop',{offset:'0%','stop-color':'rgba(232,198,106,.20)'},gl);
+  el('stop',{offset:'100%','stop-color':'rgba(232,198,106,0)'},gl);
+}
+el('rect',{x:0,y:0,width:1600,height:1150,fill:'url(#sinaiGlow)'});
+
+function tabletPath(x,w,y,h){
+  const r=w*.42;
+  return `M ${x} ${y+h} L ${x} ${y+r*.62} Q ${x} ${y}, ${x+w*.5} ${y} Q ${x+w} ${y}, ${x+w} ${y+r*.62} L ${x+w} ${y+h} Z`;
+}
+function mulberry(a){ return function(){ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+
+function drawTablet(x,w,y,h,words,seed,startN){
+  /* the hewn stone: shadow, body, bevel, grain */
+  el('path',{d:tabletPath(x+10,w,y+14,h),fill:'rgba(0,0,0,.5)'});
+  el('path',{d:tabletPath(x,w,y,h),fill:'url(#stoneEdge)'});
+  el('path',{d:tabletPath(x+7,w-14,y+7,h-14),fill:'url(#stone)'});
+  el('path',{d:tabletPath(x+7,w-14,y+7,h-14),fill:'none',stroke:'rgba(255,248,230,.20)','stroke-width':2.5});
+  const rng=mulberry(seed);
+  for(let i=0;i<26;i++){                          /* the grain and pocking of the rock */
+    const gx=x+20+rng()*(w-40), gy=y+26+rng()*(h-50), gl2=6+rng()*26, ga=rng()*6.28;
+    el('line',{x1:gx,y1:gy,x2:gx+Math.cos(ga)*gl2,y2:gy+Math.sin(ga)*gl2,
+      stroke:rng()<.5?'rgba(0,0,0,.10)':'rgba(255,248,230,.07)','stroke-width':1.6,'stroke-linecap':'round'});
+  }
+  /* a crack or two, as stone is */
+  el('path',{d:`M ${x+w*.2} ${y+8} q ${w*.04} ${h*.06}, ${-w*.02} ${h*.12}`,fill:'none',stroke:'rgba(0,0,0,.16)','stroke-width':2});
+  el('path',{d:`M ${x+w*.82} ${y+h-6} q ${-w*.03} ${-h*.05}, ${w*.01} ${-h*.1}`,fill:'none',stroke:'rgba(0,0,0,.14)','stroke-width':2});
+
+  /* the Words, engraved: numbered one to ten, each command in full */
+  const pad=h*.095, numH=34, capH=30, gapMin=22;
+  const totalRows=words.reduce((s,wd)=>s+wd.rows.length,0);
+  const avail=h-pad*1.8;
+  const fixed=words.length*(numH+capH);
+  let rowH=(avail-fixed-gapMin*(words.length-1))/totalRows;
+  rowH=Math.min(rowH,72);
+  const gap=(avail-fixed-rowH*totalRows)/(words.length-1);
+  let cy=y+pad*.9;
+  words.forEach((wd,i)=>{
+    const n=startN+i;                             /* the number above the command — the letter IS the number */
+    const NUMLET=['','א','ב','ג','ד','ה','ו','ז','ח','ט','י'];
+    drawPaleo(NUMLET[n], x+w/2-16, cy+numH*.5, 26);
+    for(const p of [[-1.3,-1.3,'rgba(20,16,10,.9)'],[1,1,'rgba(255,248,230,.35)'],[0,0,'#3a332a']]){
+      const t=el('text',{x:x+w/2+18+p[0],y:cy+numH*.66+p[1],'text-anchor':'middle',
+        'font-family':'Georgia,serif','font-weight':'bold','font-size':17,fill:p[2]},svg);
+      t.textContent=String(n);
+    }
+    cy+=numH;
+    for(const row of wd.rows){
+      const chars=[...row], nL=chars.filter(c=>c!==' ').length, nS=chars.length-nL;
+      const fit=(w*.78)/(1.2*nL+.84*nS);
+      drawPaleo(row, x+w/2, cy+rowH*.5, Math.min(rowH*.6, fit));
+      cy+=rowH;
+    }
+    if(wd.en){
+      for(const p of [[-1,-1,'rgba(255,248,230,.5)'],[0,0,'#241f18']]){
+        const t=el('text',{x:x+w/2+p[0],y:cy+capH*.55+p[1],'text-anchor':'middle',
+          'font-family':'Georgia,serif','font-style':'italic','font-size':18.5,fill:p[2]},svg);
+        t.textContent=wd.en;
+      }
+      cy+=capH;
+    }
+    cy+=gap;
+  });
+}
+
+/* engrave one line of the old script, right to left */
+function drawPaleo(str,cx,cy,size){
+  const chars=[...str];
+  const adv=size*.86, gap=size*.34;
+  let widthTotal=0;
+  for(const ch of chars) widthTotal+=(ch===' '? size*.5 : adv)+gap;
+  widthTotal-=gap;
+  let px=cx+widthTotal/2;                        /* begin at the right: the old tongue reads rightward */
+  for(const ch of chars){
+    if(ch===' '){ px-=size*.5+gap; continue; }
+    const glyph=SCRIPT[FINALS[ch]||ch];          /* the tablets are written in the paleo script */
+    if(glyph){
+      px-=adv;
+      engraveGlyph(glyph,px,cy-size*.5,adv,size);
+      px-=gap;
+    }
+  }
+}
+function glyphStrokes(parent,glyph,gx,gy,gw,gh,passes){
+  for(const pass of passes){
+    for(const st of glyph){
+      if(st[0]==='c'){
+        el('circle',{cx:gx+st[1]*gw+pass.dx,cy:gy+st[2]*gh+pass.dy,r:st[3]*gh,
+          fill:'none',stroke:pass.col,'stroke-width':pass.w},parent);
+      } else if(st[0]==='P'){                       /* curved stroke: SVG tokens, unit coords */
+        let d='',i=1;
+        while(i<st.length){
+          if(typeof st[i]==='string'){ d+=st[i]+' '; i++; }
+          else { d+=(gx+st[i]*gw+pass.dx)+' '+(gy+st[i+1]*gh+pass.dy)+' '; i+=2; }
+        }
+        el('path',{d,fill:'none',stroke:pass.col,'stroke-width':pass.w,
+          'stroke-linecap':'round','stroke-linejoin':'round'},parent);
+      } else {
+        let d='';
+        st.forEach((pt,i)=>{ d+=(i?'L':'M')+(gx+pt[0]*gw+pass.dx)+' '+(gy+pt[1]*gh+pass.dy)+' '; });
+        el('path',{d,fill:'none',stroke:pass.col,'stroke-width':pass.w,
+          'stroke-linecap':'round','stroke-linejoin':'round'},parent);
+      }
+    }
+  }
+}
+function engraveGlyph(glyph,gx,gy,gw,gh){
+  const sw=Math.max(3,gh*.13);
+  glyphStrokes(svg,glyph,gx,gy,gw,gh,[
+    {dx:-1.4,dy:-1.4,col:'rgba(20,16,10,.9)',w:sw},
+    {dx:1.1,dy:1.1,col:'rgba(255,248,230,.30)',w:sw*.8},
+    {dx:0,dy:0,col:'#3a332a',w:sw} ]);
+}
+
+drawTablet(140,600,70,1010,WORDS1,7,1);
+drawTablet(860,600,70,1010,WORDS2,23,6);
+
+/* every letter is also a number: the ones, the tens, the hundreds */
+const GEMATRIA={'א':1,'ב':2,'ג':3,'ד':4,'ה':5,'ו':6,'ז':7,'ח':8,'ט':9,'י':10,
+  'כ':20,'ל':30,'מ':40,'נ':50,'ס':60,'ע':70,'פ':80,'צ':90,'ק':100,'ר':200,'ש':300,'ת':400};
+
+/* ---------- the aleph-bĕyth, as on the chart of the ancient letters ---------- */
+const ALEPHBETH=[
+ ['א','Alef','Ox · Strength · Leader'],
+ ['ב','Beyt','House · “In”'],
+ ['ג','Gimel','Foot · Camel · Pride'],
+ ['ד','Dalet','Tent Door · Pathway'],
+ ['ה','Hey','Lo! Behold! · “The”'],
+ ['ו','Uau','Nail · Peg · “And”'],
+ ['ז','Zayin','Plow · Weapon · Cut Off'],
+ ['ח','Chet','Tent Wall · Fence · Separation'],
+ ['ט','Tet','Basket · Snake · Surround'],
+ ['י','Yod','Arm and Hand · Work · Deed'],
+ ['כ','Kaf','Palm of Hand · To Open'],
+ ['ל','Lamed','Staff · Control · “To” / “From”'],
+ ['מ','Mem','Water · Chaos'],
+ ['נ','Nun','Seed · Fish · Life'],
+ ['ס','Samekh','Hand on Staff · Support · Prop'],
+ ['ע','Ayin','Eye · To See · Experience'],
+ ['פ','Pey','Mouth · Word · Speak'],
+ ['צ','Tsade','Man on Side · Desire · Need'],
+ ['ק','Qof','Sun on Horizon · Behind'],
+ ['ר','Resh','Head · Person · First'],
+ ['ש','Shin','Eat · Consume · Destroy'],
+ ['ת','Tav','Mark · Sign · Covenant'],
+];
+{ const box=document.getElementById('alephbeth');
+  for(const [ch,nm,mn] of ALEPHBETH){
+    const d=document.createElement('div'); d.className='ab';
+    const s=document.createElementNS(NS,'svg');
+    s.setAttribute('viewBox','0 0 100 100');
+    s.setAttribute('role','img'); s.setAttribute('aria-label',nm);
+    d.appendChild(s);
+    glyphStrokes(s, PALEO[ch], 16, 15, 68, 68, [
+      {dx:2.4,dy:2.6,col:'rgba(70,36,18,.28)',w:8.5},
+      {dx:0,dy:0,col:'#7e2818',w:8.5} ]);
+    const nmd=document.createElement('div'); nmd.className='nm';
+    nmd.innerHTML=`${nm} <span class="no">· ${GEMATRIA[ch]}</span>`;
+    const mnd=document.createElement('div'); mnd.className='mn'; mnd.textContent=mn;
+    d.appendChild(nmd); d.appendChild(mnd);
+    box.appendChild(d);
+  } }
+
+/* ---------- the paleo-hebrew script chart ---------- */
+const SCRIPTCHART=[
+ ['א','Alep','silent'],['ב','Bet','b'],['ג','Gimel','g'],['ד','Dalet','d'],
+ ['ה','He','h'],['ו','Waw','w'],['ז','Zayin','z'],['ח','Het','ḥ'],
+ ['ט','Tet','t'],['י','Yod','y'],['כ','Kap','k'],['ל','Lamed','l'],
+ ['מ','Mem','m'],['נ','Nun','n'],['ס','Samek','s'],['ע','Ayin','silent'],
+ ['פ','Pe','p'],['צ','Tsade','ts'],['ק','Qop','q'],['ר','Res','r'],
+ ['ש','Sin','s / sh'],['ת','Taw','t'],
+];
+{ const box=document.getElementById('script');
+  for(const [ch,nm,snd] of SCRIPTCHART){
+    const d=document.createElement('div'); d.className='ab';
+    const s=document.createElementNS(NS,'svg');
+    s.setAttribute('viewBox','0 0 100 100');
+    s.setAttribute('role','img'); s.setAttribute('aria-label',nm);
+    d.appendChild(s);
+    glyphStrokes(s, SCRIPT[ch], 16, 15, 68, 68, [
+      {dx:2.4,dy:2.6,col:'rgba(70,36,18,.28)',w:8.5},
+      {dx:0,dy:0,col:'#7e2818',w:8.5} ]);
+    const nmd=document.createElement('div'); nmd.className='nm';
+    nmd.innerHTML=`${nm} <span class="no">· ${GEMATRIA[ch]}</span>`;
+    const mnd=document.createElement('div'); mnd.className='mn'; mnd.textContent=snd;
+    d.appendChild(nmd); d.appendChild(mnd);
+    box.appendChild(d);
+  } }
+
+/* ---------- the Words in full, from the Besorah ---------- */
+const WORDS=[
+ ['THE FIRST WORD','“I am YAHUAH your Aluahim, who brought you out of the land of Mitsrayim, out of the house of slavery. You have no other mighty ones against My face.','SHEMOTH 20:2–3'],
+ ['THE SECOND WORD','“You do not make for yourself a carved image, or any likeness of that which is in the shamayim above, or which is in the earth beneath, or which is in the waters under the earth, you do not bow down to them nor serve them. For I, YAHUAH your Aluahim, am a jealous Al, visiting the crookedness of the fathers on the children to the third and fourth generations of those who hate Me, but showing kindness to thousands, to those who love Me and guard My commands.','SHEMOTH 20:4–6'],
+ ['THE THIRD WORD','“You do not bring the Name of YAHUAH your Aluahim to naught, because YAHUAH does not leave the one unpunished who brings His Name to ruin.','SHEMOTH 20:7'],
+ ['THE FOURTH WORD','“Remember the Shabbath day, to set it apart. Six days you labour and shall do all your work, but the seventh day is a Shabbath of YAHUAH your Aluahim. You do not do any work — you, nor your son, nor your daughter, nor your male servant, nor your female servant, nor your cattle, nor your stranger who is within your gates. For in six days YAHUAH made the shamayim and the earth, the sea and all that is in them, and rested the seventh day. Therefore YAHUAH baruk the Shabbath day and set it apart.','SHEMOTH 20:8–11'],
+ ['THE FIFTH WORD','“Respect your father and your mother, so that your days are prolonged upon the soil which YAHUAH your Aluahim is giving you.','SHEMOTH 20:12'],
+ ['THE SIXTH WORD','“You do not murder.','SHEMOTH 20:13'],
+ ['THE SEVENTH WORD','“You do not commit adultery.','SHEMOTH 20:14'],
+ ['THE EIGHTH WORD','“You do not steal.','SHEMOTH 20:15'],
+ ['THE NINTH WORD','“You do not bear false witness against your neighbour.','SHEMOTH 20:16'],
+ ['THE TENTH WORD','“You do not covet your neighbour’s house, you do not covet your neighbour’s wife, nor his male servant, nor his female servant, nor his ox, nor his donkey, or whatever belongs to your neighbour.”','SHEMOTH 20:17'],
+];
+{ const box=document.getElementById('words');
+  for(const [n,q,r] of WORDS){
+    const d=document.createElement('div'); d.className='word';
+    d.innerHTML=`<div class="n">✦ ${n}</div><div class="q">${q}</div><div class="r">— ${r}</div>`;
+    box.appendChild(d);
+  } }
+
+/* ---------- a quiet sky ---------- */
+{ const sc=document.getElementById('stars'), sg=sc.getContext('2d');
+  const fit=()=>{ const d=Math.min(3,Math.max(2,window.devicePixelRatio||1));
+    sc.width=window.innerWidth*d; sc.height=window.innerHeight*d;
+    sc.style.width=window.innerWidth+'px'; sc.style.height=window.innerHeight+'px';
+    sg.setTransform(d,0,0,d,0,0);
+    sg.clearRect(0,0,window.innerWidth,window.innerHeight);
+    for(let i=0;i<180;i++){ sg.fillStyle=`rgba(235,240,250,${.15+Math.random()*.5})`;
+      sg.fillRect(Math.random()*window.innerWidth,Math.random()*window.innerHeight,1.1,1.1); } };
+  fit(); window.addEventListener('resize',fit);
+}
+</script>
+</body>
+</html>
