@@ -154,6 +154,10 @@ parchment-on-dark gold as the reader and linked from the home page under
 - **The Appointed Times** (`appointed-times.html`) — the seven moʽedim on
   the wheel of the year, each with the Scriptures that command it and a
   count of the days until the next.
+- **The Ten Words** (`ten-commandments.html`) — Aseret haDeḇarim engraved
+  on the two tablets in Paleo-Hebrew, each Word with its Scripture, and
+  the ancient aleph-bĕyth card by card, each sign with the picture it
+  bears and the meaning it carries.
 
 ## Marking text
 

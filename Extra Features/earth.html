@@ -75,6 +75,7 @@
   <button class="btn" id="b-names">🏷 Names: on</button>
   <button class="btn" id="b-sites">🏺 Sites: your journey</button>
   <button class="btn" id="b-moedim">✦ Appointed Times</button>
+  <button class="btn" id="b-words">𐤀 The Ten Words</button>
 </div>
 
 <script>
@@ -820,6 +821,7 @@ $('b-sites').onclick=()=>{ siteMode=(siteMode+1)%3;
   $('b-sites').textContent='🏺 Sites: '+['your journey','all','off'][siteMode];
   $('b-sites').classList.toggle('off',siteMode===2); };
 $('b-moedim').onclick=()=>{ location.href='appointed-times.html'; };
+$('b-words').onclick=()=>{ location.href='ten-commandments.html'; };
 
 requestAnimationFrame(frame);
 </script>
