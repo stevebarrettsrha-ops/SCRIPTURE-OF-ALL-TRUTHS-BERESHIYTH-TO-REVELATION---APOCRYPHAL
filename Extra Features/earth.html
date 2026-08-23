@@ -3,37 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#0a0e1a">
+<meta name="theme-color" content="#1a1410">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%231a1410%22%2F%3E%3Cpath%20d%3D%22M8%207h16v18H8z%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M16%207v18M11%2012h3M18%2012h3M11%2017h3M18%2017h3%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <title>THE EARTH — Within the Firmament</title>
 <style>
-  :root{ --gold:#e8c66a; --ink:#e8dfc8; --bg:#05070f; }
+  :root{ --gold:#d4af37; --ink:#f4ead5; --bg:#0b0806; }
   *{ box-sizing:border-box; margin:0; padding:0; }
   html,body{ width:100%; height:100%; overflow:hidden; background:var(--bg);
-    font-family:Georgia,'Times New Roman',serif; color:var(--ink);
+    font-family:'Cardo',Georgia,'Times New Roman',serif; color:var(--ink);
     -webkit-user-select:none; user-select:none; touch-action:none; }
   #cv{ position:fixed; inset:0; width:100%; height:100%; display:block; cursor:grab; }
   #cv.dragging{ cursor:grabbing; }
   .hud{ position:fixed; z-index:5; pointer-events:none; }
   #head{ top:2.2vh; left:0; right:0; text-align:center; }
   #head .t{ font-size:clamp(17px,3.4vmin,30px); letter-spacing:.34em; color:var(--gold);
-    text-shadow:0 0 18px rgba(232,198,106,.35); }
-  #head .s{ font-size:clamp(10px,1.7vmin,14px); letter-spacing:.22em; color:#9a8f74; margin-top:.6vh; font-style:italic; }
+    text-shadow:0 0 18px rgba(212,175,55,.35); }
+  #head .s{ font-size:clamp(10px,1.7vmin,14px); letter-spacing:.22em; color:#c9b893; margin-top:.6vh; font-style:italic; }
   #verse{ left:50%; bottom:9.5vh; transform:translateX(-50%); width:min(88vw,760px); text-align:center;
     transition:opacity 1.4s ease; opacity:0; }
-  #verse .vt{ font-style:italic; font-size:clamp(12px,2vmin,17px); line-height:1.55; color:#efe6cf;
+  #verse .vt{ font-style:italic; font-size:clamp(12px,2vmin,17px); line-height:1.55; color:#f4ead5;
     text-shadow:0 2px 8px rgba(0,0,0,.8); }
   #verse .vr{ margin-top:.8vh; font-size:clamp(10px,1.5vmin,13px); letter-spacing:.24em; color:var(--gold); }
   #clock{ top:2.2vh; right:2.4vw; text-align:right; font-size:clamp(10px,1.6vmin,13px);
-    letter-spacing:.14em; color:#9a8f74; line-height:1.7; }
+    letter-spacing:.14em; color:#c9b893; line-height:1.7; }
   #hint{ left:50%; bottom:2.2vh; transform:translateX(-50%); font-size:clamp(9px,1.45vmin,12px);
-    letter-spacing:.18em; color:#6a6252; white-space:nowrap; }
+    letter-spacing:.18em; color:#8a7a5c; white-space:nowrap; }
   #ui{ position:fixed; z-index:6; right:2.2vw; bottom:6.5vh; display:flex; flex-direction:column; gap:1vh; }
   #back{ position:fixed; z-index:6; left:2.2vw; top:2.2vh; }
-  .btn{ pointer-events:auto; background:rgba(14,18,32,.82); color:var(--ink);
-    border:1px solid rgba(232,198,106,.45); border-radius:4px; padding:1.1vh 1.6vh;
+  .btn{ pointer-events:auto; background:rgba(30,23,17,.82); color:var(--ink);
+    border:1px solid rgba(212,175,55,.45); border-radius:4px; padding:1.1vh 1.6vh;
     font-family:inherit; font-size:clamp(10px,1.6vmin,13px); letter-spacing:.14em;
     cursor:pointer; text-transform:uppercase; transition:all .18s; }
-  .btn:hover{ background:rgba(232,198,106,.16); border-color:var(--gold); }
+  .btn:hover{ background:rgba(212,175,55,.16); border-color:var(--gold); }
   .btn.off{ opacity:.5; }
   @media (max-width:700px){ #hint{ display:none; } #clock{ top:auto; bottom:2vh; right:2.4vw; } }
 </style>
@@ -48,7 +55,7 @@
 <div class="hud" id="clock"></div>
 <div class="hud" id="verse"><div class="vt" id="verse-t"></div><div class="vr" id="verse-r"></div></div>
 <div class="hud" id="hint">the earth stands fast — drag to turn your view &nbsp;·&nbsp; scroll on any land to draw near to it &nbsp;·&nbsp; double-tap to return</div>
-<button class="btn" id="back">⟵ Berĕshith</button>
+<button class="btn" id="back">⟵ The Besorah</button>
 <div id="ui">
   <button class="btn" id="b-time">⏸ Hold the sun</button>
   <button class="btn" id="b-speed">⏩ Course: swift</button>
@@ -159,7 +166,7 @@ function buildTexture(){
   // 4) the courses of the sun: the two tropics and the equator, drawn as rings
   for(const [rr,al] of [[.37,.16],[.5,.10],[.63,.16]]){
     t.beginPath(); t.arc(Tc,Tc,rr*Tr,0,Math.PI*2);
-    t.strokeStyle=`rgba(232,198,106,${al})`; t.lineWidth=3; t.setLineDash([16,22]); t.stroke();
+    t.strokeStyle=`rgba(212,175,55,${al})`; t.lineWidth=3; t.setLineDash([16,22]); t.stroke();
     t.setLineDash([]);
   }
   // 5) the rim of the deep, where the ice meets the sea
@@ -193,15 +200,19 @@ const ANCIENTS=[
 /* ---------------- the ancient sites of the land, revealed by your journey ----------------
    The earth reads the same saves the books write: as the player walks each story,
    the places where it happened appear on the face of the land.                      */
-function bookProgress(key,total){
-  try{ const d=JSON.parse(localStorage.getItem(key));
-    return d&&d.done?Math.min(1,Object.keys(d.done).length/total):0; }catch(e){ return 0; }
+/* The journey is the Besorah's own: the reader (chapter pages and the
+   offline edition alike) keeps a quiet ledger of which chapters have been
+   opened, under localStorage "besorah:visited". A site appears when the
+   walk through its book reaches it. */
+function bookProgress(bookId,chapters){
+  try{ const v=JSON.parse(localStorage.getItem('besorah:visited')||'{}')[bookId];
+    return v?Math.min(1,Object.keys(v).length/chapters):0; }catch(e){ return 0; }
 }
 const PROG={
-  bereshith:bookProgress('bereshith_v2',45),
-  shemoth:  bookProgress('shemoth_v1',40),
-  bamidbar: bookProgress('bamidbar_v1',19),
-  devarim:  bookProgress('devarim_v1',19),
+  bereshith:bookProgress('bereshith',50),
+  shemoth:  bookProgress('shamoth',40),
+  bamidbar: bookProgress('bamidbar',36),
+  devarim:  bookProgress('dabarim',34),
 };
 /* u:[book, fraction of that book walked] — the site appears when the journey reaches it */
 const SITES=[
@@ -449,7 +460,7 @@ function frame(t){
         g.closePath(); g.fill(); } }
     for(const [rr,al] of [[.37,.2],[.5,.13],[.63,.2]]){
       g.beginPath(); g.arc(Tc,Tc,rr*Tr,0,Math.PI*2);
-      g.strokeStyle=`rgba(232,198,106,${al})`; g.lineWidth=2.4/texScale;
+      g.strokeStyle=`rgba(212,175,55,${al})`; g.lineWidth=2.4/texScale;
       g.setLineDash([16/texScale,22/texScale]); g.stroke(); g.setLineDash([]);
     }
   }
@@ -513,20 +524,20 @@ function frame(t){
       if(!a.star){ if(clash(px,py,lw)) continue; placed.push([px,py,lw]); }
       else placed.push([px,py-fs2*1.1,lw]);
       if(a.star){
-        g.fillStyle='#ffe27a';
+        g.fillStyle='#fff3b8';
         g.save(); g.translate(px,py); g.rotate(t*.0004);
         g.beginPath();
         for(let k=0;k<8;k++){ const rr=k%2?fs2*.16:fs2*.42, an=k*Math.PI/4;
           g[k?'lineTo':'moveTo'](Math.cos(an)*rr,Math.sin(an)*rr); }
         g.closePath(); g.fill(); g.restore();
         g.fillStyle='rgba(12,10,4,.6)'; g.fillText(a.n,px+1,py-fs2*1.1+1);
-        g.fillStyle='#ffe27a'; g.fillText(a.n,px,py-fs2*1.1);
+        g.fillStyle='#fff3b8'; g.fillText(a.n,px,py-fs2*1.1);
         if(view.zoom>1.5){ g.font=`italic ${Math.max(8,fs2*.55)}px Georgia,serif`;
-          g.fillStyle='rgba(232,198,106,.75)'; g.fillText(a.sub,px,py+fs2*.9);
+          g.fillStyle='rgba(212,175,55,.75)'; g.fillText(a.sub,px,py+fs2*.9);
           g.font=`${fs2}px Georgia,serif`; }
       } else {
         g.fillStyle='rgba(12,10,4,.6)'; g.fillText(a.n,px+1,py+1);
-        g.fillStyle='rgba(232,198,106,.9)'; g.fillText(a.n,px,py);
+        g.fillStyle='rgba(212,175,55,.9)'; g.fillText(a.n,px,py);
       }
     }
   }
@@ -551,14 +562,14 @@ function frame(t){
       g.beginPath(); g.arc(px,py,Math.max(2.4,fs3*.22),0,Math.PI*2);
       g.fillStyle='#ffe9a8'; g.fill();
       g.beginPath(); g.arc(px,py,Math.max(4,fs3*.42),0,Math.PI*2);
-      g.strokeStyle='rgba(232,198,106,.8)'; g.lineWidth=1.3; g.stroke();
+      g.strokeStyle='rgba(212,175,55,.8)'; g.lineWidth=1.3; g.stroke();
       g.fillStyle='rgba(12,10,4,.65)'; g.fillText(st.n,px+1,py-fs3*1.2+1);
       g.fillStyle='#f4dfa8'; g.fillText(st.n,px,py-fs3*1.2);
       if(noteOn&&st.note){
         g.font=`italic ${fs3*.76}px Georgia,serif`;
         g.fillStyle='rgba(10,8,4,.6)'; g.fillText(st.note,px+1,py+fs3*1.05+1);
         g.fillStyle='rgba(232,222,196,.95)'; g.fillText(st.note,px,py+fs3*1.05);
-        g.fillStyle='rgba(232,198,106,.85)';
+        g.fillStyle='rgba(212,175,55,.85)';
         g.font=`${fs3*.64}px Georgia,serif`;
         g.fillText('— '+st.ref+' —',px,py+fs3*2.05);
         g.font=`${fs3}px Georgia,serif`;
@@ -613,7 +624,7 @@ function frame(t){
     `month ${ed.month}, day ${ed.day} · the ${WD[ed.weekday]} · ${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}<br>`+
     `the sun runs the ${north?'northern':'southern'} course${Math.abs(sun.R-0.37)<0.004?' — the summer turning':(Math.abs(sun.R-0.63)<0.004?' — the winter turning':'')}<br>`+
     `the moon is ${age.toFixed(1)} days old · ${moonWord}<br>`+
-    (feast?`<span style="color:#ffe27a;letter-spacing:.14em">${feast}</span>`:
+    (feast?`<span style="color:#fff3b8;letter-spacing:.14em">${feast}</span>`:
      `next appointed time: ${next.n} — in ${nd} day${nd===1?'':'s'}`);
 
   requestAnimationFrame(frame);
@@ -691,7 +702,7 @@ function drawFoundation(t){
     gr.addColorStop(1,'#241d15');
     g.fillStyle='#4a3e2c'; g.fill();
     g.fillStyle=gr; g.fill();
-    g.strokeStyle='rgba(232,198,106,.28)'; g.lineWidth=Math.max(1,S*.006); g.stroke(); }
+    g.strokeStyle='rgba(212,175,55,.28)'; g.lineWidth=Math.max(1,S*.006); g.stroke(); }
   /* the words upon its four edges */
   if(sinP>.22){
     const fs=Math.max(8,Math.min(19,S*.028));
@@ -711,7 +722,7 @@ function drawFoundation(t){
       g.fillStyle=`rgba(16,12,6,${al*.7})`; g.fillText(v9.t,1,1);
       g.fillStyle=`rgba(214,192,146,${al})`; g.fillText(v9.t,0,0);
       g.font=`${fs*.72}px Georgia,serif`;
-      g.fillStyle=`rgba(232,198,106,${al*.85})`;
+      g.fillStyle=`rgba(212,175,55,${al*.85})`;
       g.fillText('— '+v9.r+' —',0,fs*1.35);
       g.restore();
     }
@@ -782,7 +793,7 @@ cv.addEventListener('dblclick',()=>{ view.yaw=0.65; view.pitch=0.52; view.zoom=1
 
 /* ---------------- the buttons ---------------- */
 const $=id=>document.getElementById(id);
-$('back').onclick=()=>{ location.href='index.html'; };
+$('back').onclick=()=>{ location.href='../index.html'; };
 $('b-time').onclick=()=>{ view.paused=!view.paused;
   $('b-time').textContent=view.paused?'▶ Loose the sun':'⏸ Hold the sun';
   $('b-time').classList.toggle('off',view.paused); };
@@ -800,5 +811,6 @@ $('b-moedim').onclick=()=>{ location.href='appointed-times.html'; };
 
 requestAnimationFrame(frame);
 </script>
+<script src="../assets/besorah-fullscreen.js" defer></script>
 </body>
 </html>

@@ -131,6 +131,30 @@ Regenerate after any change to the rules or the text:
 python3 scripts/build_daily_bread.py
 ```
 
+## Beyond the text — Extra Features
+
+Three companion pages live in `Extra Features/`, dressed in the same
+parchment-on-dark gold as the reader and linked from the home page under
+**Beyond the text** (each page links back, and to its two companions):
+
+- **The Earth** (`earth.html`) — the world within the firmament, drawn on a
+  full-screen canvas: the earth stands fast while the sun and moon run
+  their courses overhead, with the clock and moʽedim of the day in the
+  corner. The sites of the Scriptures — Shekem, Bĕyth Ăl, Mount Moriyah,
+  Sedom, and dozens more — **appear as you actually read**: the reader
+  keeps a quiet ledger of which chapters you have opened (`besorah:visited`
+  in localStorage, written by the chapter pages and the offline edition
+  alike), and each site is revealed when your walk through Berĕshith,
+  Shamoth, Bamiḏbar or Daḇarim reaches it. A button shows all sites at
+  once if you would rather not wait.
+- **The Calendar of Ḥanoḵ** (`calendar-of-hanok.html`) — the 364-day year
+  of the courses of the lights, month by month with the Shabbath columns,
+  the seasons of the sun's course, and every appointed time marked in its
+  day.
+- **The Appointed Times** (`appointed-times.html`) — the seven moʽedim on
+  the wheel of the year, each with the Scriptures that command it and a
+  count of the days until the next.
+
 ## Marking text
 
 **Touch any verse** and a small menu opens where you touched, with two

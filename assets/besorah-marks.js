@@ -59,8 +59,18 @@
     return entry;
   }
 
+  var VISITED_KEY = "besorah:visited";
+
   function recordLastRead(book, chapter) {
     safeSet(LAST_KEY, makeEntry(book, chapter));
+    // A quiet ledger of which chapters have been opened, per book. The
+    // Extra Features pages read it — the Earth page reveals the sites of a
+    // book as the reader actually walks through it.
+    try {
+      var v = JSON.parse(localStorage.getItem(VISITED_KEY) || "{}");
+      (v[book.id] = v[book.id] || {})[String(chapter)] = 1;
+      localStorage.setItem(VISITED_KEY, JSON.stringify(v));
+    } catch (e) {}
   }
 
   function getLastRead() {
