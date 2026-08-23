@@ -221,40 +221,131 @@ const el=(n,at,parent)=>{ const e=document.createElementNS(NS,n);
 /* ---------- stone ---------- */
 const defs=el('defs',{});
 { const gr=el('linearGradient',{id:'stone',x1:'0',y1:'0',x2:'0',y2:'1'},defs);
-  el('stop',{offset:'0%','stop-color':'#8d8276'},gr);
-  el('stop',{offset:'45%','stop-color':'#7a7064'},gr);
-  el('stop',{offset:'100%','stop-color':'#5f564b'},gr);
+  el('stop',{offset:'0%','stop-color':'#9a9082'},gr);
+  el('stop',{offset:'45%','stop-color':'#867d6f'},gr);
+  el('stop',{offset:'100%','stop-color':'#675e51'},gr);
   const gr2=el('linearGradient',{id:'stoneEdge',x1:'0',y1:'0',x2:'0',y2:'1'},defs);
   el('stop',{offset:'0%','stop-color':'#4a4239'},gr2);
-  el('stop',{offset:'100%','stop-color':'#332d26'},gr2);
+  el('stop',{offset:'100%','stop-color':'#2c2721'},gr2);
   const gl=el('radialGradient',{id:'sinaiGlow',cx:'50%',cy:'8%',r:'85%'},defs);
   el('stop',{offset:'0%','stop-color':'rgba(212,175,55,.20)'},gl);
   el('stop',{offset:'100%','stop-color':'rgba(212,175,55,0)'},gl);
+  const vg=el('radialGradient',{id:'stoneVignette',cx:'50%',cy:'46%',r:'74%'},defs);
+  el('stop',{offset:'0%','stop-color':'rgba(0,0,0,0)'},vg);
+  el('stop',{offset:'72%','stop-color':'rgba(0,0,0,.06)'},vg);
+  el('stop',{offset:'100%','stop-color':'rgba(0,0,0,.32)'},vg);
+  const bl=el('filter',{id:'softBlur',x:'-60%',y:'-60%',width:'220%',height:'220%'},defs);
+  el('feGaussianBlur',{stdDeviation:16},bl);
+  const sh=el('filter',{id:'dropSoft',x:'-20%',y:'-20%',width:'140%',height:'140%'},defs);
+  el('feGaussianBlur',{stdDeviation:8},sh);
 }
 el('rect',{x:0,y:0,width:1600,height:1150,fill:'url(#sinaiGlow)'});
 
-function tabletPath(x,w,y,h){
-  const r=w*.42;
-  return `M ${x} ${y+h} L ${x} ${y+r*.62} Q ${x} ${y}, ${x+w*.5} ${y} Q ${x+w} ${y}, ${x+w} ${y+r*.62} L ${x+w} ${y+h} Z`;
+/* raise fractal noise into raking light and multiply it over the stone's own colour:
+   this is what gives the rock its pitted, granular face */
+function stoneTexture(id,seed){
+  const f=el('filter',{id,x:'-6%',y:'-6%',width:'112%',height:'112%'},defs);
+  el('feTurbulence',{type:'fractalNoise',baseFrequency:'0.035 0.045',numOctaves:'5',seed:String(seed),result:'n'},f);
+  const lt=el('feDiffuseLighting',{in:'n','lighting-color':'#f5ecd9',surfaceScale:'4.2',diffuseConstant:'1.05',result:'lt'},f);
+  el('feDistantLight',{azimuth:'232',elevation:'56'},lt);
+  el('feComposite',{in:'lt',in2:'SourceGraphic',operator:'arithmetic',k1:'1',k2:'0',k3:'0',k4:'0',result:'lit'},f);
+  /* a second, finer grain: dark speckle ground into the face */
+  el('feTurbulence',{type:'fractalNoise',baseFrequency:'0.26 0.3',numOctaves:'2',seed:String(seed*3+1),result:'sp'},f);
+  el('feColorMatrix',{in:'sp',type:'matrix',
+    values:'.55 .55 .55 0 .38 .55 .55 .55 0 .38 .55 .55 .55 0 .38 0 0 0 0 1',result:'spw'},f);
+  el('feBlend',{in:'lit',in2:'spw',mode:'multiply',result:'sl'},f);
+  el('feComposite',{in:'sl',in2:'SourceAlpha',operator:'in'},f);
 }
+
 function mulberry(a){ return function(){ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a);
   t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
 
-function drawTablet(x,w,y,h,words,seed,startN){
-  /* the hewn stone: shadow, body, bevel, grain */
-  el('path',{d:tabletPath(x+10,w,y+14,h),fill:'rgba(0,0,0,.5)'});
-  el('path',{d:tabletPath(x,w,y,h),fill:'url(#stoneEdge)'});
-  el('path',{d:tabletPath(x+7,w-14,y+7,h-14),fill:'url(#stone)'});
-  el('path',{d:tabletPath(x+7,w-14,y+7,h-14),fill:'none',stroke:'rgba(255,248,230,.20)','stroke-width':2.5});
-  const rng=mulberry(seed);
-  for(let i=0;i<26;i++){                          /* the grain and pocking of the rock */
-    const gx=x+20+rng()*(w-40), gy=y+26+rng()*(h-50), gl2=6+rng()*26, ga=rng()*6.28;
-    el('line',{x1:gx,y1:gy,x2:gx+Math.cos(ga)*gl2,y2:gy+Math.sin(ga)*gl2,
-      stroke:rng()<.5?'rgba(0,0,0,.10)':'rgba(255,248,230,.07)','stroke-width':1.6,'stroke-linecap':'round'});
+/* hew the outline: a rounded-top slab whose every edge is broken a little,
+   with a few deeper chips where the years have bitten */
+function hewnOutline(x,w,y,h,rng){
+  const r=w*.42, sh=r*.62, pts=[];
+  const q=(p0,c,p1,t)=>({X:(1-t)*(1-t)*p0.X+2*(1-t)*t*c.X+t*t*p1.X,
+                         Y:(1-t)*(1-t)*p0.Y+2*(1-t)*t*c.Y+t*t*p1.Y});
+  for(let yy=y+h; yy>y+sh; yy-=32) pts.push({X:x,Y:yy});
+  for(let t=0;t<=1.001;t+=.11) pts.push(q({X:x,Y:y+sh},{X:x,Y:y},{X:x+w/2,Y:y},t));
+  for(let t=.11;t<=1.001;t+=.11) pts.push(q({X:x+w/2,Y:y},{X:x+w,Y:y},{X:x+w,Y:y+sh},t));
+  for(let yy=y+sh+32; yy<y+h; yy+=32) pts.push({X:x+w,Y:yy});
+  const baseFrom=pts.length;
+  for(let xx=x+w; xx>x; xx-=38) pts.push({X:xx,Y:y+h});
+  pts.forEach((p,i)=>{ const amp=i>=baseFrom?11:7;   /* the base breaks roughest */
+    p.X+=(rng()*2-1)*amp; p.Y+=(rng()*2-1)*amp; });
+  const cx0=x+w/2, cy0=y+h/2, chips=3+Math.floor(rng()*2);
+  for(let c=0;c<chips;c++){
+    const at=Math.floor(rng()*pts.length), span=2+Math.floor(rng()*3), deep=14+rng()*20;
+    for(let k=0;k<=span;k++){
+      const p=pts[(at+k)%pts.length], f=Math.sin(Math.PI*k/span)*deep;
+      const dx=cx0-p.X, dy=cy0-p.Y, dl=Math.hypot(dx,dy)||1;
+      p.X+=dx/dl*f; p.Y+=dy/dl*f;
+    }
   }
-  /* a crack or two, as stone is */
-  el('path',{d:`M ${x+w*.2} ${y+8} q ${w*.04} ${h*.06}, ${-w*.02} ${h*.12}`,fill:'none',stroke:'rgba(0,0,0,.16)','stroke-width':2});
-  el('path',{d:`M ${x+w*.82} ${y+h-6} q ${-w*.03} ${-h*.05}, ${w*.01} ${-h*.1}`,fill:'none',stroke:'rgba(0,0,0,.14)','stroke-width':2});
+  return pts;
+}
+const toPath=pts=>'M '+pts.map(p=>p.X.toFixed(1)+' '+p.Y.toFixed(1)).join(' L ')+' Z';
+const insetPts=(pts,d)=>{
+  const cx=pts.reduce((s,p)=>s+p.X,0)/pts.length, cy=pts.reduce((s,p)=>s+p.Y,0)/pts.length;
+  return pts.map(p=>{ const dx=cx-p.X, dy=cy-p.Y, dl=Math.hypot(dx,dy)||1;
+    return {X:p.X+dx/dl*d, Y:p.Y+dy/dl*d}; });
+};
+
+function drawTablet(x,w,y,h,words,seed,startN){
+  const rng=mulberry(seed);
+  const outer=hewnOutline(x,w,y,h,rng);
+  const face=insetPts(outer,7);
+  const dOuter=toPath(outer), dFace=toPath(face);
+  stoneTexture('rock'+seed,seed);
+  /* the slab: cast shadow, dark broken rim, then the lit face of the rock */
+  el('path',{d:toPath(outer.map(p=>({X:p.X+12,Y:p.Y+16}))),fill:'rgba(0,0,0,.45)',filter:'url(#dropSoft)'});
+  el('path',{d:dOuter,fill:'url(#stoneEdge)'});
+  el('path',{d:dFace,fill:'url(#stone)',filter:`url(#rock${seed})`});
+  const cp=el('clipPath',{id:'clip'+seed},defs); el('path',{d:dFace},cp);
+  const g=el('g',{'clip-path':`url(#clip${seed})`});
+  /* weathering: soft stains of age, light and dark */
+  for(let i=0;i<11;i++){
+    el('ellipse',{cx:x+30+rng()*(w-60),cy:y+40+rng()*(h-80),rx:34+rng()*110,ry:24+rng()*80,
+      fill:rng()<.55?'rgba(24,18,10,.16)':'rgba(255,242,214,.10)',filter:'url(#softBlur)'},g);
+  }
+  /* pocking: each pit dark with a fleck of light on its lower lip */
+  for(let i=0;i<90;i++){
+    const px=x+16+rng()*(w-32), py=y+18+rng()*(h-36), pr=.8+rng()*2.4;
+    el('circle',{cx:px+1.1,cy:py+1.1,r:pr,fill:'rgba(255,246,224,.10)'},g);
+    el('circle',{cx:px,cy:py,r:pr,fill:'rgba(15,11,6,.22)'},g);
+  }
+  /* cracks: each wanders in from an edge, forks, and catches the light on its lower lip */
+  const cracks=3+Math.floor(rng()*2);
+  for(let c=0;c<cracks;c++){
+    let px,py,ang; const edge=rng();
+    if(edge<.35){ px=x+w*.12+rng()*w*.76; py=y+2; ang=Math.PI*.5+(rng()-.5)*.8; }
+    else if(edge<.6){ px=x+2; py=y+h*.2+rng()*h*.65; ang=(rng()-.5)*.9; }
+    else if(edge<.85){ px=x+w-2; py=y+h*.2+rng()*h*.65; ang=Math.PI+(rng()-.5)*.9; }
+    else { px=x+w*.12+rng()*w*.76; py=y+h-2; ang=-Math.PI*.5+(rng()-.5)*.8; }
+    const main=[[px,py]], forks=[];
+    const steps=5+Math.floor(rng()*4);
+    for(let s2=0;s2<steps;s2++){
+      const len=24+rng()*46; ang+=(rng()-.5)*.9;
+      px+=Math.cos(ang)*len; py+=Math.sin(ang)*len;
+      main.push([px,py]);
+      if(rng()<.32){
+        const ba=ang+(rng()<.5?1:-1)*(.7+rng()*.7), bl2=14+rng()*26;
+        forks.push([px,py,px+Math.cos(ba)*bl2,py+Math.sin(ba)*bl2]);
+      }
+    }
+    const line=pts=>'M '+pts.map(p=>p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' L ');
+    el('path',{d:line(main.map(p=>[p[0]+1.7,p[1]+1.5])),fill:'none',
+      stroke:'rgba(255,246,224,.20)','stroke-width':2.2,'stroke-linecap':'round','stroke-linejoin':'round'},g);
+    el('path',{d:line(main),fill:'none',
+      stroke:'rgba(12,9,5,.55)','stroke-width':2.4,'stroke-linecap':'round','stroke-linejoin':'round'},g);
+    for(const b of forks)
+      el('path',{d:`M ${b[0].toFixed(1)} ${b[1].toFixed(1)} L ${b[2].toFixed(1)} ${b[3].toFixed(1)}`,
+        fill:'none',stroke:'rgba(12,9,5,.4)','stroke-width':1.4,'stroke-linecap':'round'},g);
+  }
+  /* the light falls off toward the broken edges, and a faint rim catches it */
+  el('path',{d:dFace,fill:'url(#stoneVignette)'},g);
+  el('path',{d:dFace,fill:'none',stroke:'rgba(255,248,230,.14)','stroke-width':2});
 
   /* the Words, engraved: numbered one to ten, each command in full */
   const pad=h*.095, numH=34, capH=30, gapMin=22;
@@ -269,7 +360,7 @@ function drawTablet(x,w,y,h,words,seed,startN){
     const n=startN+i;                             /* the number above the command — the letter IS the number */
     const NUMLET=['','א','ב','ג','ד','ה','ו','ז','ח','ט','י'];
     drawPaleo(NUMLET[n], x+w/2-16, cy+numH*.5, 26);
-    for(const p of [[-1.3,-1.3,'rgba(20,16,10,.9)'],[1,1,'rgba(255,248,230,.35)'],[0,0,'#3a332a']]){
+    for(const p of [[-1.3,-1.3,'rgba(20,16,10,.9)'],[1,1,'rgba(255,248,230,.35)'],[0,0,'#2b241d']]){
       const t=el('text',{x:x+w/2+18+p[0],y:cy+numH*.66+p[1],'text-anchor':'middle',
         'font-family':'Cardo,Georgia,serif','font-weight':'bold','font-size':17,fill:p[2]},svg);
       t.textContent=String(n);
@@ -339,7 +430,7 @@ function engraveGlyph(glyph,gx,gy,gw,gh){
   glyphStrokes(svg,glyph,gx,gy,gw,gh,[
     {dx:-1.4,dy:-1.4,col:'rgba(20,16,10,.9)',w:sw},
     {dx:1.1,dy:1.1,col:'rgba(255,248,230,.30)',w:sw*.8},
-    {dx:0,dy:0,col:'#3a332a',w:sw} ]);
+    {dx:0,dy:0,col:'#2b241d',w:sw} ]);
 }
 
 drawTablet(140,600,70,1010,WORDS1,7,1);
