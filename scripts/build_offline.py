@@ -26,6 +26,7 @@ DAILY_JS_PATH = ROOT / "assets" / "DailyBread.js"
 IDS_JS_PATH = ROOT / "assets" / "besorah-ids.js"
 WORDS_JS_PATH = ROOT / "assets" / "words.js"
 PRON_JS_PATH = ROOT / "assets" / "pronunciation.js"
+FS_JS_PATH = ROOT / "assets" / "besorah-fullscreen.js"
 DAILY_PATH = ROOT / "assets" / "daily-bread.json"
 OUTPUT = ROOT / "besorah-offline.html"
 
@@ -62,6 +63,10 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a1410">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>The Besorah — Offline</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%231a1410%22%2F%3E%3Cpath%20d%3D%22M8%207h16v18H8z%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M16%207v18M11%2012h3M18%2012h3M11%2017h3M18%2017h3%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E">
 <style>
@@ -190,6 +195,9 @@ __WORDS_JS__
 </script>
 <script>
 __PRON_JS__
+</script>
+<script>
+__FS_JS__
 </script>
 
 <!-- ============ MARKS LIBRARY ============ -->
@@ -505,6 +513,7 @@ def main():
     ids_js = IDS_JS_PATH.read_text(encoding="utf-8")
     words_js = WORDS_JS_PATH.read_text(encoding="utf-8")
     pron_js = PRON_JS_PATH.read_text(encoding="utf-8")
+    fs_js = FS_JS_PATH.read_text(encoding="utf-8")
 
     index_json = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
     text_json = json.dumps(text, ensure_ascii=False, separators=(",", ":"))
@@ -526,6 +535,7 @@ def main():
     ids_js_safe = escape_script_close(ids_js)
     words_js_safe = escape_script_close(words_js)
     pron_js_safe = escape_script_close(pron_js)
+    fs_js_safe = escape_script_close(fs_js)
 
     html = (
         HTML_TEMPLATE
@@ -540,6 +550,7 @@ def main():
         .replace("__IDS_JS__", ids_js_safe)
         .replace("__WORDS_JS__", words_js_safe)
         .replace("__PRON_JS__", pron_js_safe)
+        .replace("__FS_JS__", fs_js_safe)
     )
 
     OUTPUT.write_text(html, encoding="utf-8")

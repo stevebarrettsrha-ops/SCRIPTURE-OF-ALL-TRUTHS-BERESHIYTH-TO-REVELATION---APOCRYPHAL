@@ -166,6 +166,19 @@ it works the same offline as online, including inside `besorah-offline.html`.
 - A **speed slider** and **voice picker** let you tune the narration; your
   choices are remembered on your device (`localStorage`) and never leave it.
   The same settings are on the home page under **Choose your reader**.
+
+### Fullscreen
+
+Every page — the home page, the book lists, every chapter, and the offline
+edition — carries a small **⛶ fullscreen button** in the bottom-right
+corner. Click or tap it (or press **F**) to read with nothing on screen but
+the text; press it again, or **Esc**, to come back. It works on desktop
+browsers and Android phones through the standard Fullscreen API.
+
+iPhones do not offer that API to web pages, so there the button stays out
+of the way; instead, every page carries the "add to home screen" metadata —
+open the site in Safari, share → **Add to Home Screen**, and the Besorah
+opens fullscreen from its own icon, no browser chrome at all.
 - The player defaults to the **best-sounding voice** your device offers
   (preferring "natural"/"neural"/enhanced voices) until you pick another.
 
