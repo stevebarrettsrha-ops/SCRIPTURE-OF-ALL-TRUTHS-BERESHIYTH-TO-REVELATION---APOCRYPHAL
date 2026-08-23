@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0e1a">
+<title>THE CALENDAR OF ḤANOK — a year to walk in</title>
+<style>
+  :root{ --gold:#e8c66a; --gold-dim:#9a8351; --ink:#e8dfc8; --dim:#9a8f74;
+    --bg:#0a0e1a; --panel:rgba(16,20,36,.72); --rule:rgba(232,198,106,.22); }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ background:var(--bg); color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif; min-height:100%; }
+  body{ background:
+    radial-gradient(ellipse at 50% -10%, #1a2340 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 100%, #12182e 0%, transparent 50%), var(--bg);
+    padding-bottom:8vh; }
+  #stars{ position:fixed; inset:0; z-index:0; pointer-events:none; }
+  .wrap{ position:relative; z-index:1; max-width:1060px; margin:0 auto; padding:0 18px; }
+  header{ text-align:center; padding:5.5vh 0 1vh; }
+  header .t{ font-size:clamp(22px,4.4vmin,40px); letter-spacing:.3em; color:var(--gold);
+    text-shadow:0 0 20px rgba(232,198,106,.35); }
+  header .s{ margin-top:1.2vh; font-style:italic; color:var(--dim);
+    font-size:clamp(11px,1.8vmin,15px); letter-spacing:.12em; line-height:1.6; }
+  .nav{ display:flex; justify-content:center; gap:10px; margin:2.4vh 0; flex-wrap:wrap; }
+  .btn{ background:rgba(14,18,32,.85); color:var(--ink); border:1px solid var(--rule);
+    border-radius:4px; padding:9px 16px; font-family:inherit; letter-spacing:.14em;
+    font-size:clamp(10px,1.6vmin,13px); cursor:pointer; text-transform:uppercase;
+    text-decoration:none; transition:all .18s; display:inline-block; }
+  .btn:hover{ background:rgba(232,198,106,.14); border-color:var(--gold); }
+  .today{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
+    text-align:center; padding:2.2vh 18px; margin-bottom:2.6vh; }
+  .today .d1{ font-size:clamp(14px,2.6vmin,20px); color:var(--gold); letter-spacing:.16em; }
+  .today .d2{ margin-top:.8vh; color:var(--ink); font-size:clamp(12px,2vmin,15px); font-style:italic; }
+  .today .feast{ color:#ffe27a; font-style:normal; letter-spacing:.14em; }
+  .yearnav{ display:flex; justify-content:center; align-items:center; gap:14px; margin:1vh 0 2.6vh; }
+  .yearnav .yl{ color:var(--gold); letter-spacing:.18em; font-size:clamp(12px,2vmin,16px); text-align:center; }
+  .yearnav .yl small{ display:block; color:var(--dim); font-style:italic; letter-spacing:.08em;
+    margin-top:.5vh; font-size:clamp(10px,1.6vmin,12.5px); }
+  h2{ font-size:clamp(13px,2.2vmin,17px); letter-spacing:.28em; color:var(--gold);
+    text-align:center; margin:4.5vh 0 1.6vh; font-weight:normal; }
+  h2::before,h2::after{ content:'  ✦  '; color:var(--gold-dim); }
+  .law{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
+    padding:2.4vh 22px; margin-bottom:1.6vh; }
+  .law .q{ font-style:italic; line-height:1.75; font-size:clamp(13px,2.1vmin,16.5px); color:#efe6cf; }
+  .law .r{ margin-top:.9vh; text-align:right; color:var(--gold); letter-spacing:.2em;
+    font-size:clamp(10px,1.5vmin,12px); }
+  .law .note{ color:var(--dim); font-size:clamp(11px,1.75vmin,13.5px); line-height:1.7; }
+  .law .note b{ color:#cfc4a4; font-weight:normal; }
+  .season{ margin-bottom:1.2vh; }
+  .season .sh{ text-align:center; color:var(--gold-dim); letter-spacing:.24em;
+    font-size:clamp(11px,1.8vmin,14px); text-transform:uppercase; margin:3vh 0 1.4vh; }
+  .months{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }
+  .month{ background:var(--panel); border:1px solid var(--rule); border-radius:6px; padding:14px 12px 12px; }
+  .month .mt{ text-align:center; color:var(--gold); letter-spacing:.18em;
+    font-size:clamp(11.5px,1.85vmin,14.5px); }
+  .month .ms{ text-align:center; color:var(--dim); font-style:italic;
+    font-size:clamp(9.5px,1.5vmin,11.5px); margin:.5vh 0 1.2vh; letter-spacing:.08em; }
+  .grid{ display:grid; grid-template-columns:repeat(7,1fr); gap:3px; }
+  .wdh{ text-align:center; color:var(--gold-dim); font-size:clamp(8px,1.3vmin,10px);
+    letter-spacing:.06em; padding-bottom:4px; }
+  .cell{ position:relative; min-height:44px; border:1px solid rgba(232,198,106,.10);
+    border-radius:3px; padding:3px 4px; background:rgba(10,14,26,.35); }
+  .cell.blank{ border-color:transparent; background:transparent; }
+  .cell .n{ font-size:clamp(11px,1.8vmin,14px); color:var(--ink); }
+  .cell .g{ position:absolute; top:3px; right:4px; color:var(--dim);
+    font-size:clamp(7.5px,1.2vmin,9px); font-style:italic; }
+  .cell .f{ display:block; margin-top:2px; color:#ffe27a; letter-spacing:.04em;
+    font-size:clamp(7px,1.15vmin,8.5px); line-height:1.25; text-transform:uppercase; }
+  .cell.sab{ background:rgba(232,198,106,.10); border-color:rgba(232,198,106,.28); }
+  .cell.sab .n{ color:var(--gold); }
+  .cell.feast{ background:rgba(255,226,122,.12); border-color:rgba(255,226,122,.4); }
+  .cell.rem .n::after{ content:' ✦'; color:#cfe0ee; font-size:.8em; }
+  .cell.today{ border:1.5px solid #ffe27a; box-shadow:0 0 14px rgba(255,226,122,.35); }
+  .watch{ background:var(--panel); border:1px dashed rgba(207,224,238,.4); border-radius:6px;
+    padding:14px 12px; margin-top:2.2vh; }
+  .watch .mt{ text-align:center; color:#cfe0ee; letter-spacing:.2em;
+    font-size:clamp(11.5px,1.85vmin,14.5px); }
+  .watch .ms{ text-align:center; color:var(--dim); font-style:italic;
+    font-size:clamp(10px,1.6vmin,12.5px); margin:.6vh auto 1.2vh; max-width:640px; line-height:1.6; }
+  .watch .grid{ max-width:560px; margin:0 auto; }
+  .watch .cell{ border-color:rgba(207,224,238,.25); }
+  .watch .cell.blank{ border-color:transparent; background:transparent; }
+  .legend{ display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin:2.2vh 0 0;
+    color:var(--dim); font-size:clamp(9.5px,1.5vmin,11.5px); letter-spacing:.08em; }
+  .legend .k{ display:inline-block; width:11px; height:11px; border-radius:2px;
+    vertical-align:-1px; margin-right:5px; }
+  footer{ text-align:center; margin-top:5vh; color:var(--dim); font-style:italic;
+    font-size:clamp(11px,1.75vmin,13.5px); line-height:1.7; }
+  footer .r{ color:var(--gold); letter-spacing:.18em; font-style:normal;
+    font-size:clamp(9.5px,1.5vmin,11.5px); margin-top:.8vh; }
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div class="wrap">
+  <header>
+    <div class="t">THE CALENDAR OF ḤANOK</div>
+    <div class="s">a year to walk in — three hundred and sixty-four days, two and fifty weeks,<br>
+      reckoned by the courses of the sun as ḤANOK received them, and as YOḆELIM commands them</div>
+  </header>
+  <div class="nav">
+    <a class="btn" href="index.html">⟵ Berĕshith</a>
+    <a class="btn" href="appointed-times.html">✦ The Appointed Times</a>
+    <a class="btn" href="earth.html">🌍 The Earth</a>
+  </div>
+
+  <div class="today" id="today"></div>
+
+  <div class="yearnav">
+    <button class="btn" id="prevY">‹ former year</button>
+    <div class="yl" id="ylabel"></div>
+    <button class="btn" id="nextY">coming year ›</button>
+  </div>
+
+  <div id="calendar"></div>
+
+  <div class="legend">
+    <span><span class="k" style="background:rgba(232,198,106,.35)"></span>SHABBATH</span>
+    <span><span class="k" style="background:rgba(255,226,122,.5)"></span>appointed time</span>
+    <span>✦ day of remembrance</span>
+    <span><span class="k" style="border:1.5px solid #ffe27a"></span>today</span>
+  </div>
+
+  <h2>THE ORDINANCE OF THE RECKONING</h2>
+  <div class="law"><div class="q">On that day the night decreases and amounts to nine parts, and the day
+    to nine parts, and the night is equal to the day and the year is exactly as to its days three hundred
+    and sixty-four.</div><div class="r">— ḤANOK 72:32, the last day of the twelfth month</div></div>
+  <div class="law"><div class="q">Command the children of Yasharal that they observe the years according
+    to this counting, three hundred and sixty-four days, and these will constitute a complete year, and
+    they will not disturb its time from its days and from its feasts; they will not leave out any day nor
+    disturb any feasts.</div><div class="r">— YOḆELIM 6:32</div></div>
+  <div class="law"><div class="note">
+    <b>How this calendar is reckoned.</b> The sun's sign is watched at Yarushalayim: the day when the
+    night is made equal to the day (about the sixteenth or seventeenth of March by the reckoning of the
+    nations). That equal day is the <b>364th day, the last of the year</b> (ḤANOK 72:32). The new year
+    then begins on the <b>fourth day of the week</b> that follows it — the day the lights were set in the
+    expanse — and because the year is two and fifty whole weeks, every appointed time keeps its own
+    weekday forever. Within every year <b>all 364 days are counted; none is left out and none is added</b>
+    (YOḆELIM 6:30–32), and the week of seven days is <b>never broken</b>. In most years the 364th day
+    lands beside the next equal day and the years join seamlessly. When the count would outrun the sun,
+    the last week is followed by <b>days of watching</b> — a whole week outside the year, in which the
+    turning of the sun is awaited — so that no Shabbath is ever moved and no day of the year is ever
+    misnamed. The books themselves command the count and the sign but are silent on how the two are to be
+    joined across many years; the days of watching are this calendar's answer, and they are shown plainly,
+    never hidden.
+  </div></div>
+
+  <footer>
+    <div class="q">And all the days of the mitsvah will be two and fifty weeks of days, and these will make
+      the entire year complete. Thus it is engraved and ordained on the heavenly tablets.</div>
+    <div class="r">— YOḆELIM 6:30–31</div>
+  </footer>
+</div>
+
+<script>
+'use strict';
+/* ============ the reckoning ============
+   New Year = the 4th day of the week following the day of equal night and day
+   at Yarushalayim (31.778 N). All dates handled at UTC day granularity. */
+const DAY=86400000, LAT=31.778*Math.PI/180;
+function dayLen(y,mo,dd){                       // apparent daylight, hours
+  const N=Math.floor((Date.UTC(y,mo-1,dd)-Date.UTC(y,0,1))/DAY)+1;
+  const g=2*Math.PI/365.24*(N-.5);
+  const dec=0.006918-0.399912*Math.cos(g)+0.070257*Math.sin(g)
+    -0.006758*Math.cos(2*g)+0.000907*Math.sin(2*g)
+    -0.002697*Math.cos(3*g)+0.00148*Math.sin(3*g);
+  const cosH=(Math.cos(90.833*Math.PI/180)-Math.sin(LAT)*Math.sin(dec))
+             /(Math.cos(LAT)*Math.cos(dec));
+  return 2*Math.acos(Math.min(1,Math.max(-1,cosH)))*180/Math.PI/15;
+}
+function equalDay(y){                           // first March day with daylight >= 12h
+  for(let d=1;d<=31;d++) if(dayLen(y,3,d)>=12) return Date.UTC(y,2,d);
+  return Date.UTC(y,2,17);
+}
+function yearHead(y){                           // UTC ms of month 1, day 1
+  const t=equalDay(y)+DAY, wd=new Date(t).getUTCDay();   // 3 = 4th day of the week
+  return t+(((3-wd)+7)%7)*DAY;
+}
+function yearInfo(y){ const h=yearHead(y), n=yearHead(y+1);
+  return {era:y, head:h, next:n, len:Math.round((n-h)/DAY)}; }  // len = 364 or 371
+
+/* ============ the shape of the year ============ */
+function dayFor(m,d){ const q=Math.floor((m-1)/3), mIn=(m-1)%3;
+  return q*91+(mIn===0?0:(mIn===1?30:60))+d; }
+function monthLen(m){ return (m%3===0)?31:30; }
+const WD=['','1st day','2nd day','3rd day','4th day','5th day','6th day','SHABBATH'];
+const WDH=['1st','2nd','3rd','4th','5th','6th','7th'];
+const SEASONS=['SPRING — the sun runs northward','SUMMER — the sun turns southward',
+  'AUTUMN — the sun runs southward','WINTER — the sun turns northward'];
+const GMON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const ORD=['','1st','2nd','3rd','4th','5th','6th','7th','8th','9th','10th','11th','12th'];
+function greg(ms){ const t=new Date(ms); return t.getUTCDate()+' '+GMON[t.getUTCMonth()]; }
+function gregY(ms){ return greg(ms)+' '+new Date(ms).getUTCFullYear(); }
+
+/* the appointed times upon the year */
+const FEASTS={};                                 // dayOfYear -> label
+FEASTS[dayFor(1,14)]='PESACH';
+for(let k=0;k<7;k++) FEASTS[dayFor(1,15)+k]=(k===0?'MATSTSOTH I':(k===6?'MATSTSOTH VII':'matstsoth'));
+FEASTS[dayFor(1,26)]='THE SHEAF';
+FEASTS[dayFor(3,15)]='SHAḆU‛OTH';
+FEASTS[dayFor(7,1)]='TERU‛AH';
+FEASTS[dayFor(7,10)]='KIPPURIM';
+for(let k=0;k<7;k++) FEASTS[dayFor(7,15)+k]=(k===0?'SUKKOTH I':(k===6?'SUKKOTH VII':'sukkoth'));
+FEASTS[dayFor(7,22)]='8TH DAY';
+const REMEMBER=new Set([dayFor(1,1),dayFor(4,1),dayFor(7,1),dayFor(10,1)]);
+
+/* ============ today ============ */
+function enochNow(){
+  const n=new Date(), t=Date.UTC(n.getFullYear(),n.getMonth(),n.getDate());
+  let Y=yearInfo(n.getFullYear());
+  if(t<Y.head) Y=yearInfo(Y.era-1);
+  return {t, Y, d:Math.floor((t-Y.head)/DAY)+1};
+}
+const NOW=enochNow();
+
+/* ============ render ============ */
+let shown=NOW.Y.era;
+function render(){
+  const Y=yearInfo(shown);
+  document.getElementById('ylabel').innerHTML=
+    `THE YEAR BEGINNING ${gregY(Y.head).toUpperCase()}<small>ends ${gregY(Y.head+363*DAY)}`+
+    (Y.len>364?` · followed by ${Y.len-364} days of watching`:' · joined seamlessly to the next year')+
+    `</small>`;
+  const box=document.getElementById('calendar'); box.innerHTML='';
+  for(let q=0;q<4;q++){
+    const sec=document.createElement('div'); sec.className='season';
+    sec.innerHTML=`<div class="sh">${SEASONS[q]}</div>`;
+    const months=document.createElement('div'); months.className='months';
+    for(let mIn=0;mIn<3;mIn++){
+      const m=q*3+mIn+1, len=monthLen(m), first=dayFor(m,1);
+      const wd1=((first-1)+3)%7+1;                       // day 1 of year = 4th day
+      const el=document.createElement('div'); el.className='month';
+      let g=`<div class="mt">${ORD[m].toUpperCase()} MONTH</div>
+        <div class="ms">${len} days · begins ${greg(Y.head+(first-1)*DAY)}</div><div class="grid">`;
+      for(let w=0;w<7;w++) g+=`<div class="wdh">${w===6?'SHAB':WDH[w]}</div>`;
+      for(let b=1;b<wd1;b++) g+=`<div class="cell blank"></div>`;
+      for(let d=1;d<=len;d++){
+        const doy=first+d-1, wd=((doy-1)+3)%7+1, f=FEASTS[doy];
+        const cls=['cell']; if(wd===7)cls.push('sab');
+        if(f&&f===f.toUpperCase())cls.push('feast');
+        if(REMEMBER.has(doy))cls.push('rem');
+        if(Y.era===NOW.Y.era&&doy===NOW.d)cls.push('today');
+        g+=`<div class="${cls.join(' ')}"><span class="n">${d}</span>`+
+           `<span class="g">${greg(Y.head+(doy-1)*DAY)}</span>`+
+           (f&&f===f.toUpperCase()?`<span class="f">${f}</span>`:'')+`</div>`;
+      }
+      el.innerHTML=g+'</div>'; months.appendChild(el);
+    }
+    sec.appendChild(months); box.appendChild(sec);
+  }
+  if(Y.len>364){
+    const w=document.createElement('div'); w.className='watch';
+    let g=`<div class="mt">THE DAYS OF WATCHING</div>
+      <div class="ms">the year of 364 days is complete; the turning of the sun is awaited.
+      These days stand outside the count — no day of the year is misnamed and no Shabbath is moved —
+      until the equal day comes and the new year begins on the 4th day of the week.</div><div class="grid">`;
+    for(let w7=0;w7<7;w7++) g+=`<div class="wdh">${w7===6?'SHAB':WDH[w7]}</div>`;
+    for(let k=1;k<=Y.len-364;k++){
+      const doy=364+k, wd=((doy-1)+3)%7+1;
+      for(;k===1&&wd>1&&g.split('cell blank').length<wd;) g+=`<div class="cell blank"></div>`;
+      const cls=['cell']; if(wd===7)cls.push('sab');
+      if(Y.era===NOW.Y.era&&doy===NOW.d)cls.push('today');
+      g+=`<div class="${cls.join(' ')}"><span class="n">·</span>`+
+         `<span class="g">${greg(Y.head+(doy-1)*DAY)}</span></div>`;
+    }
+    w.innerHTML=g+'</div>'; box.appendChild(w);
+  }
+}
+document.getElementById('prevY').onclick=()=>{ shown--; render(); };
+document.getElementById('nextY').onclick=()=>{ shown++; render(); };
+
+/* today panel */
+{
+  const d=NOW.d, wd=((d-1)+3)%7+1;
+  let line;
+  if(d>364){
+    line=`<div class="d1">TODAY — the ${ORD[d-364]} of the days of watching · the ${WD[wd]}</div>
+      <div class="d2">the year is complete; the turning of the sun is awaited —
+      the new year begins ${greg(NOW.Y.next)}</div>`;
+  }else{
+    const q=Math.floor((d-1)/91), dq=(d-1)%91, mIn=dq<30?0:(dq<60?1:2);
+    const m=q*3+mIn+1, day=dq-(mIn===0?0:(mIn===1?30:60))+1, f=FEASTS[d];
+    line=`<div class="d1">TODAY — month ${m}, day ${day} · the ${WD[wd]}</div>
+      <div class="d2">${f&&f===f.toUpperCase()?`<span class="feast">✦ ${f} ✦</span>`
+        :(wd===7?`<span class="feast">✦ the SHABBATH ✦</span>`:`day ${d} of 364`)}
+      · this year began ${greg(NOW.Y.head)} and its last day falls on the equal day, ${greg(NOW.Y.head+363*DAY)}</div>`;
+  }
+  document.getElementById('today').innerHTML=line;
+}
+render();
+
+/* a quiet sky */
+{
+  const sc=document.getElementById('stars'), sg=sc.getContext('2d');
+  const fit=()=>{ const d=Math.min(3,Math.max(2,window.devicePixelRatio||1));
+    sc.width=window.innerWidth*d; sc.height=window.innerHeight*d;
+    sc.style.width=window.innerWidth+'px'; sc.style.height=window.innerHeight+'px';
+    sg.setTransform(d,0,0,d,0,0);
+    sg.clearRect(0,0,window.innerWidth,window.innerHeight);
+    for(let i=0;i<180;i++){ sg.fillStyle=`rgba(235,240,250,${.15+Math.random()*.5})`;
+      sg.fillRect(Math.random()*window.innerWidth,Math.random()*window.innerHeight,1.1,1.1); } };
+  fit(); window.addEventListener('resize',fit);
+}
+</script>
+</body>
+</html>

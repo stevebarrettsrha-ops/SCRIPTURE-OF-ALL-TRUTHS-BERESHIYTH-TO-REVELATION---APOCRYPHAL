@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0e1a">
+<title>THE APPOINTED TIMES — Mo‛edim</title>
+<style>
+  :root{ --gold:#e8c66a; --gold-dim:#9a8351; --ink:#e8dfc8; --dim:#9a8f74;
+    --bg:#0a0e1a; --panel:rgba(16,20,36,.72); --rule:rgba(232,198,106,.22); }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ background:var(--bg); color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif; min-height:100%; }
+  body{ background:
+    radial-gradient(ellipse at 50% -10%, #1a2340 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 100%, #12182e 0%, transparent 50%), var(--bg);
+    padding-bottom:8vh; }
+  #stars{ position:fixed; inset:0; z-index:0; pointer-events:none; }
+  .wrap{ position:relative; z-index:1; max-width:920px; margin:0 auto; padding:0 20px; }
+  header{ text-align:center; padding:5.5vh 0 1vh; }
+  header .t{ font-size:clamp(22px,4.4vmin,40px); letter-spacing:.3em; color:var(--gold);
+    text-shadow:0 0 20px rgba(232,198,106,.35); }
+  header .s{ margin-top:1.2vh; font-style:italic; color:var(--dim);
+    font-size:clamp(11px,1.8vmin,15px); letter-spacing:.12em; line-height:1.6; }
+  .nav{ display:flex; justify-content:center; gap:10px; margin:2.4vh 0; flex-wrap:wrap; }
+  .btn{ background:rgba(14,18,32,.85); color:var(--ink); border:1px solid var(--rule);
+    border-radius:4px; padding:9px 16px; font-family:inherit; letter-spacing:.14em;
+    font-size:clamp(10px,1.6vmin,13px); cursor:pointer; text-transform:uppercase;
+    text-decoration:none; transition:all .18s; display:inline-block; }
+  .btn:hover{ background:rgba(232,198,106,.14); border-color:var(--gold); }
+  #wheelbox{ display:flex; justify-content:center; margin:1vh 0 2vh; }
+  #wheel{ width:min(84vw,520px); height:min(84vw,520px); }
+  .today{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
+    text-align:center; padding:2.2vh 18px; margin-bottom:3vh; }
+  .today .d1{ font-size:clamp(14px,2.6vmin,20px); color:var(--gold); letter-spacing:.16em; }
+  .today .d2{ margin-top:.8vh; color:var(--ink); font-size:clamp(12px,2vmin,15px); font-style:italic; }
+  .today .d3{ margin-top:.8vh; color:var(--dim); font-size:clamp(11px,1.7vmin,13px); letter-spacing:.1em; }
+  .today .feast{ color:#ffe27a; font-style:normal; letter-spacing:.14em; }
+  h2{ font-size:clamp(13px,2.2vmin,17px); letter-spacing:.28em; color:var(--gold);
+    text-align:center; margin:4.5vh 0 1.6vh; font-weight:normal; }
+  h2::before,h2::after{ content:'  ✦  '; color:var(--gold-dim); }
+  .law{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
+    padding:2.4vh 22px; margin-bottom:1.6vh; }
+  .law .q{ font-style:italic; line-height:1.75; font-size:clamp(13px,2.1vmin,16.5px); color:#efe6cf; }
+  .law .r{ margin-top:.9vh; text-align:right; color:var(--gold); letter-spacing:.2em;
+    font-size:clamp(10px,1.5vmin,12px); }
+  .law .note{ margin-top:1.4vh; color:var(--dim); font-size:clamp(11px,1.75vmin,13.5px);
+    line-height:1.65; border-top:1px solid rgba(232,198,106,.14); padding-top:1.3vh; }
+  .moed{ background:var(--panel); border:1px solid var(--rule); border-radius:6px;
+    margin-bottom:1.8vh; overflow:hidden; }
+  .moed.now{ border-color:#ffe27a; box-shadow:0 0 22px rgba(255,226,122,.16); }
+  .mh{ padding:2vh 22px 1.6vh; }
+  .mh .nm{ color:var(--gold); letter-spacing:.18em; font-size:clamp(14px,2.35vmin,19px); }
+  .mh .wn{ margin-top:.7vh; color:var(--dim); font-size:clamp(10.5px,1.65vmin,13px); letter-spacing:.1em; }
+  .mh .cd{ margin-top:.7vh; font-size:clamp(11px,1.75vmin,13.5px); color:#cfc4a4; }
+  .mh .cd b{ color:#ffe27a; font-weight:normal; letter-spacing:.12em; }
+  .mh .es{ margin-top:1vh; font-style:italic; color:#e2d8bd; line-height:1.65;
+    font-size:clamp(12.5px,2vmin,15.5px); }
+  details{ border-top:1px solid rgba(232,198,106,.14); }
+  summary{ list-style:none; cursor:pointer; padding:1.4vh 22px; color:var(--gold-dim);
+    letter-spacing:.16em; font-size:clamp(10px,1.6vmin,12.5px); text-transform:uppercase; }
+  summary:hover{ color:var(--gold); }
+  summary::before{ content:'▸ '; }
+  details[open] summary::before{ content:'▾ '; }
+  .how{ padding:0 22px 2vh; }
+  .how .q{ font-style:italic; line-height:1.75; color:#efe6cf;
+    font-size:clamp(12.5px,2vmin,15.5px); margin-top:1.2vh; }
+  .how .r{ margin-top:.5vh; text-align:right; color:var(--gold);
+    letter-spacing:.18em; font-size:clamp(9.5px,1.45vmin,11.5px); }
+  footer{ text-align:center; margin-top:5vh; color:var(--dim); font-style:italic;
+    font-size:clamp(11px,1.75vmin,13.5px); line-height:1.7; }
+  footer .r{ color:var(--gold); letter-spacing:.18em; font-style:normal;
+    font-size:clamp(9.5px,1.5vmin,11.5px); margin-top:.8vh; }
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div class="wrap">
+  <header>
+    <div class="t">THE APPOINTED TIMES</div>
+    <div class="s">the mo‛edim of YAHUAH — seven set-apart meetings in their seasons,<br>
+      by the reckoning of ḤANOK and the book of YOḆELIM: three hundred and sixty-four days, a complete year</div>
+  </header>
+  <div class="nav">
+    <a class="btn" href="index.html">⟵ Berĕshith</a>
+    <a class="btn" href="calendar-of-hanok.html">📅 The Calendar</a>
+    <a class="btn" href="earth.html">🌍 The Earth</a>
+  </div>
+
+  <div id="wheelbox"><canvas id="wheel"></canvas></div>
+  <div class="today" id="today"></div>
+
+  <h2>THE ORDINANCE OF THE YEAR</h2>
+  <div id="law"></div>
+  <div class="law"><div class="note">
+    The year of ḤANOK and YOḆELIM is exactly <b>364 days — 52 weeks — four equal seasons of 13 weeks</b>.
+    Each season holds three months of 30, 30, and 31 days; the added day of each third month is a
+    <b>day of remembrance</b> — the new moons of the first, fourth, seventh, and tenth months, standing at
+    the four turnings of the sun. The year begins at the spring turning, on the <b>fourth day of the week</b> —
+    the day the lights were set in the expanse — so every appointed time keeps its own weekday forever:
+    the sheaf is always waved on the first day of the week, and the fiftieth day always falls on the first
+    day of the week. Nothing drifts, because the courses do not change.
+  </div></div>
+
+  <h2>THE SEVEN, AND THE SHABBATH BEFORE THEM</h2>
+  <div id="times"></div>
+
+  <footer>
+    <div class="q" id="pilgrim-t"></div>
+    <div class="r" id="pilgrim-r"></div>
+  </footer>
+</div>
+
+<script>
+window.MOEDIM={"calendar":[{"ref":"YOḆELIM 6:32","t":"Command the children of Yasharal that they observe the years according to this counting, three hundred and sixty-four days, and these will constitute a complete year, and they will not disturb its time from its days and from its feasts; for every thing will fall out in them according to their eduth, and they will not leave out any day nor disturb any feasts."},{"ref":"YOḆELIM 6:30","t":"All the days of the mitsvah will be two and fifty weeks of days, and these will make the entire year complete. Thus it is engraved and ordained on the heavenly tablets."},{"ref":"YOḆELIM 6:23","t":"On the new moon of the first month, and on the new moon of the fourth month, and on the new moon of the seventh month, and on the new moon of the tenth month are the days of remembrance, and the days of the seasons in the four divisions of the year. These are written and ordained as a eduth forever."},{"ref":"YOḆELIM 6:17","t":"For this reason it is ordained and written on the heavenly tablets, that they should celebrate the feast of weeks in this month once a year, to renew the berith every year."},{"ref":"YOḆELIM 6:38","t":"For this reason I command and testify to you that you may testify to them; for after your death your children will disturb them, so that they will not make the year three hundred and sixty-four days only, and for this reason they will go wrong as to the new moons and seasons and Shabbaths and festivals, and they will eat all kinds of blood with all kinds of flesh."},{"ref":"ḤANOK 2:1","t":"Observe ye everything that takes place in the shamayim, how they do not change their orbits, and the luminaries which are in the shamayim, how they all rise and set in order each in its season, and transgress not against their appointed order."}],"times":[{"id":"shabbath","name":"SHABBATH","when":"every seventh day","m":0,"d":0,"len":1,"wd":7,"essence":"The weekly rest — the first of all the appointed times, the sign forever.","how":[{"ref":"VAYIQRA 23:3","t":"‘Six days work is done, but the seventh day is a Shabbath of rest, a set- apart gathering. You do no work, it is a Shabbath to YAHUAH in all your dwellings."},{"ref":"SHEMOTH 20:8–11","t":"“Remember the Shabbath day, to set it apart. “Six days you labour and shall do all your work, but the seventh day is a Shabbath of YAHUAH your Aluahim. you do not do any work – you, nor your son, nor your daughter, nor your male servant, nor your female servant, nor your cattle, nor your stranger who is within your gates. “For in six days YAHUAH made the shamayim and the earth, the sea and all that is in them and rested the seventh day. Therefore YAHUAH baruk the Shabbath day and set it apart."}]},{"id":"pesach","name":"PESACH","when":"1st month, day 14, between the evenings","m":1,"d":14,"len":1,"wd":3,"essence":"The Passover of YAHUAH — the lamb, the blood, and the going out of Mitsrayim.","how":[{"ref":"VAYIQRA 23:5","t":"‘In the first month, on the fourteenth day of the month, between the evenings, is the Pesach to YAHUAH."},{"ref":"SHEMOTH 12:8–11","t":"‘And they shall eat the flesh on that night, roasted in fire – with unleavened bread and with bitter herbs they shall eat it. ‘And this is how you eat it: your loins girded, your sandals on your feet and your staff in your hand. And you shall eat it in haste. It is the Pesach of YAHUAH."},{"ref":"DEḆARIM 16:1","t":"“Guard the month of Aḇiḇ and perform the Pesach to YAHUAH your Aluahim, for in the month of Aḇiḇ YAHUAH your Aluahim brought you out of Mitsrayim by night."}]},{"id":"matstsoth","name":"FESTIVAL OF UNLEAVENED BREAD","when":"1st month, days 15–21 · seven days","m":1,"d":15,"len":7,"wd":4,"essence":"Matstsoth — seven days without leaven; the first day and the seventh are set-apart gatherings.","how":[{"ref":"VAYIQRA 23:6–8","t":"‘And on the fifteenth day of this month is the Festival of Unleavened Bread to YAHUAH – seven days you eat unleavened bread. ‘On the first day you have a set-apart gathering, you do no servile work. ‘And you shall bring an offering made by fire to YAHUAH for seven days. On the seventh day is a set-apart gathering, you do no servile work.’ ”"},{"ref":"SHEMOTH 12:15–19","t":"‘Seven days you shall eat unleavened bread. Indeed on the first day you cause leaven to cease from your houses. For whoever eats leavened bread from the first day until the seventh day, that being shall be cut off from Yasharal. ‘For seven days no leaven is to be found in your houses, for if anyone eats what is leavened, that same being shall be cut off from the qahal of Yasharal, whether sojourner or native of the land."}]},{"id":"bikkurim","name":"FIRSTFRUITS — THE WAVING OF THE SHEAF","when":"1st month, day 26 · the morrow after the Shabbath","m":1,"d":26,"len":1,"wd":1,"essence":"The first sheaf of the harvest waved before YAHUAH — and the counting of fifty days begins.","how":[{"ref":"VAYIQRA 23:10–14","t":"“Speak to the children of Yasharal and you shall say to them, ‘When you come into the land which I give you and shall reap its harvest, then you shall bring a sheaf of the first-fruits of your harvest to the kohen. ‘And he shall wave the sheaf before YAHUAH, for your acceptance. On the morrow after the Shabbath the kohen waves it. ‘And you do not eat bread or roasted grain or fresh grain until the same day that you have brought an offering to your Aluahim – a law forever throughout your generations in all your dwellings."}]},{"id":"shabuoth","name":"SHAḆU‛OTH — FESTIVAL OF WEEKS","when":"3rd month, day 15 · the fiftieth day","m":3,"d":15,"len":1,"wd":1,"essence":"Seven completed Shabbathoth from the sheaf, then the fiftieth day — the renewing of the covenant.","how":[{"ref":"VAYIQRA 23:15–21","t":"‘And from the morrow after the Shabbath, from the day that you brought the sheaf of the wave offering, you shall count for yourselves: seven completed Shabbaths. ‘Until the morrow after the seventh Shabbath you count fifty days, then you shall bring a new grain offering to YAHUAH. ‘Bring from your dwellings for a wave offering two loaves of bread, of two-tenths of an ĕphah of fine flour they are, baked with leaven, first-fruits to YAHUAH. ‘And on this same day you shall proclaim a set-apart gathering for yourselves, you do no servile work on it – a law forever in all your dwellings throughout your generations."},{"ref":"YOḆELIM 6:17","t":"For this reason it is ordained and written on the heavenly tablets, that they should celebrate the feast of weeks in this month once a year, to renew the berith every year."}]},{"id":"teruah","name":"YOM TERU‛AH — DAY OF TRUMPETS","when":"7th month, day 1","m":7,"d":1,"len":1,"wd":4,"essence":"A rest, a remembrance of blowing of trumpets — and a day of remembrance on the heavenly tablets.","how":[{"ref":"VAYIQRA 23:24–25","t":"“Speak to the children of Yasharal, saying, ‘In the seventh month, on the first day of the month, you have a rest, a remembrance of blowing of trumpets, a set-apart gathering. ‘You do no servile work and you shall bring an offering made by fire to YAHUAH.’ ”"},{"ref":"BAMIḎBAR 29:1","t":"‘And in the seventh month, on the first day of the month, you have a set-apart gathering, you do no servile work, it is a day of blowing the trumpets for you."}]},{"id":"kippurim","name":"YOM HAKKIPPURIM — DAY OF ATONEMENT","when":"7th month, day 10 · evening to evening","m":7,"d":10,"len":1,"wd":6,"essence":"Afflict your beings and do no work at all — for on this day atonement is made for you.","how":[{"ref":"VAYIQRA 23:27–32","t":"“On the tenth day of this seventh month is the Day of Atonement. It shall be a set-apart gathering for you. And you shall afflict your beings and shall bring an offering made by fire to YAHUAH. “And you do no work on that same day, for it is the Day of Atonement, to make atonement for you before YAHUAH your Aluahim. ‘It is a Shabbath of rest to you and you shall afflict your beings. On the ninth day of the month at evening, from evening to evening, you observe your Shabbath.”"}]},{"id":"sukkoth","name":"SUKKOTH — FESTIVAL OF BOOTHS","when":"7th month, days 15–21, and the eighth day","m":7,"d":15,"len":8,"wd":4,"essence":"Dwell in booths seven days and rejoice before YAHUAH — so that your generations know the wilderness.","how":[{"ref":"VAYIQRA 23:34–43","t":"“Speak to the children of Yasharal, saying, ‘On the fifteenth day of this seventh month is the Festival of Booths for seven days to YAHUAH. ‘On the first day is a set-apart gathering, you do no servile work. ‘And you shall take for yourselves on the first day the fruit of good trees, branches of palm trees, twigs of leafy trees and willows of the stream and shall rejoice before YAHUAH your Aluahim for seven days. ‘Dwell in booths for seven days; all who are native Yahsra’Alites dwell in booths, so that your generations know that I made the children of Yasharal dwell in booths when I brought them out of the land of Mitsrayim. I am YAHUAH your Aluahim.’ ”"},{"ref":"VAYIQRA 23:36","t":"‘For seven days you bring an offering made by fire to YAHUAH. On the eighth day there shall be a set-apart gathering for you and you shall bring an offering made by fire to YAHUAH. It is a closing festival, you do no servile work."}]}],"pilgrim":{"ref":"DEḆARIM 16:16–17","t":"“Three times a year all your males appear before YAHUAH your Aluahim in the place which He chooses: at the Festival of Unleavened Bread and at the Festival of Weeks and at the Festival of Booths. And none should appear before YAHUAH empty-handed, but each one with the gift of his hand, according to the berakah of YAHUAH your Aluahim which He has given you."}};
+</script>
+<script>
+'use strict';
+const M=window.MOEDIM;
+
+/* ---------- the reckoning: real today -> the 364-day year of Hanok ---------- */
+/* the year ends on the day of equal night and day at Yarushalayim (HANOK 72:32,
+   about the 16th-17th of March) and begins on the 4th day of the week that follows;
+   whole weeks of watching stand between years when the count would outrun the sun */
+const DAYMS=86400000, JLAT=31.778*Math.PI/180;
+function dayLen(y,mo,dd){
+  const N=Math.floor((Date.UTC(y,mo-1,dd)-Date.UTC(y,0,1))/DAYMS)+1;
+  const g=2*Math.PI/365.24*(N-.5);
+  const dec=0.006918-0.399912*Math.cos(g)+0.070257*Math.sin(g)
+    -0.006758*Math.cos(2*g)+0.000907*Math.sin(2*g)
+    -0.002697*Math.cos(3*g)+0.00148*Math.sin(3*g);
+  const cosH=(Math.cos(90.833*Math.PI/180)-Math.sin(JLAT)*Math.sin(dec))
+             /(Math.cos(JLAT)*Math.cos(dec));
+  return 2*Math.acos(Math.min(1,Math.max(-1,cosH)))*180/Math.PI/15;
+}
+function equalDay(y){ for(let d=1;d<=31;d++) if(dayLen(y,3,d)>=12) return Date.UTC(y,2,d);
+  return Date.UTC(y,2,17); }
+function yearHead(y){ const t=equalDay(y)+DAYMS, wd=new Date(t).getUTCDay();
+  return t+(((3-wd)+7)%7)*DAYMS; }
+function enochToday(){
+  const n=new Date(), t=Date.UTC(n.getFullYear(),n.getMonth(),n.getDate());
+  let era=n.getFullYear(), head=yearHead(era);
+  if(t<head){ era--; head=yearHead(era); }
+  return {d:Math.floor((t-head)/DAYMS)+1,
+          yLen:Math.round((yearHead(era+1)-head)/DAYMS)};
+}
+function enochDate(d){          // day of year (1..364) -> {q,month,day,weekday}
+  const q=Math.floor((d-1)/91), dq=(d-1)%91;
+  const mIn=dq<30?0:(dq<60?1:2);
+  const month=q*3+mIn+1;
+  const day=dq-(mIn===0?0:(mIn===1?30:60))+1;
+  const weekday=((d-1)+3)%7+1;                 // day 1 of the year = the 4th day of the week
+  return {q,month,day,weekday};
+}
+const WD=['','1st day','2nd day','3rd day','4th day','5th day','6th day','SHABBATH'];
+const SEASON=['spring — the sun runs northward','summer — the sun turns southward',
+  'autumn — the sun runs southward','winter — the sun turns northward'];
+function dayFor(m,d){ const q=Math.floor((m-1)/3), mIn=(m-1)%3;
+  return q*91+(mIn===0?0:(mIn===1?30:60))+d; }
+
+/* ---------- today panel ---------- */
+const TN=enochToday(), today=TN.d, YLEN=TN.yLen, WATCHING=today>364,
+      ed=enochDate(Math.min(today,364));
+ed.weekday=((today-1)+3)%7+1;   // the true week runs on through the days of watching
+function feastState(t){
+  if(t.id==='shabbath'){
+    const wd=ed.weekday;
+    return wd===7?{now:true,label:'TODAY is the Shabbath'}:{days:7-wd,label:(7-wd)+(7-wd===1?' day':' days')+' until the Shabbath'};
+  }
+  const s=dayFor(t.m,t.d);
+  if(today>=s&&today<s+t.len) return {now:true,dayN:today-s+1};
+  let dd=s-today; if(dd<0) dd+=YLEN;
+  return {days:dd};
+}
+{
+  let feastLine='';
+  for(const t of M.times){ if(t.id==='shabbath') continue;
+    const st=feastState(t);
+    if(st.now){ feastLine=`✦ TODAY is ${t.name}${t.len>1?' — day '+st.dayN+' of '+t.len:''} ✦`; break; } }
+  if(!feastLine&&ed.weekday===7) feastLine='✦ TODAY is the SHABBATH — a set-apart gathering ✦';
+  let next=null,nd=999;
+  for(const t of M.times){ if(t.id==='shabbath') continue;
+    const st=feastState(t); if(!st.now&&st.days<nd){ nd=st.days; next=t; } }
+  document.getElementById('today').innerHTML= WATCHING
+    ?`<div class="d1">TODAY — the days of watching · the ${WD[ed.weekday]}</div>`+
+     `<div class="d2">the year of 364 days is complete; the turning of the sun is awaited</div>`+
+     `<div class="d3">next appointed time: ${next.name} — in ${nd} day${nd===1?'':'s'}</div>`
+    :`<div class="d1">TODAY — month ${ed.month}, day ${ed.day} · the ${WD[ed.weekday]}</div>`+
+     `<div class="d2">${feastLine?`<span class="feast">${feastLine}</span>`:`day ${today} of 364 · ${SEASON[ed.q]}`}</div>`+
+     `<div class="d3">next appointed time: ${next.name} — in ${nd} day${nd===1?'':'s'}</div>`;
+}
+
+/* ---------- the ordinance quotes ---------- */
+{
+  const box=document.getElementById('law');
+  for(const v of M.calendar){
+    const div=document.createElement('div'); div.className='law';
+    div.innerHTML=`<div class="q">${v.t}</div><div class="r">— ${v.ref}</div>`;
+    box.appendChild(div);
+  }
+}
+
+/* ---------- the times themselves ---------- */
+{
+  const box=document.getElementById('times');
+  for(const t of M.times){
+    const st=feastState(t);
+    const div=document.createElement('div'); div.className='moed'+(st.now?' now':'');
+    const cd=st.now
+      ?`<b>✦ NOW — ${t.len>1?'day '+st.dayN+' of '+t.len:(t.id==='shabbath'?'this is the day':'this is the day')} ✦</b>`
+      :(t.id==='shabbath'?st.label:`in <b>${st.days}</b> day${st.days===1?'':'s'}`);
+    div.innerHTML=
+      `<div class="mh">
+        <div class="nm">${t.name}</div>
+        <div class="wn">${t.when}${t.wd?` · always the ${WD[t.wd]}${t.wd===7?'':' of the week'}`:''}</div>
+        <div class="cd">${cd}</div>
+        <div class="es">${t.essence}</div>
+      </div>
+      <details><summary>How to keep it — from the Besorah</summary><div class="how">`+
+      t.how.map(h=>`<div class="q">${h.t}</div><div class="r">— ${h.ref}</div>`).join('')+
+      `</div></details>`;
+    box.appendChild(div);
+  }
+  document.getElementById('pilgrim-t').textContent=M.pilgrim.t;
+  document.getElementById('pilgrim-r').textContent='— '+M.pilgrim.ref;
+}
+
+/* ---------- the wheel of the year ---------- */
+{
+  const cvw=document.getElementById('wheel'), wg=cvw.getContext('2d');
+  const px=Math.min(window.innerWidth*.84,520), DPR=Math.min(3,Math.max(2,window.devicePixelRatio||1));
+  cvw.width=px*DPR; cvw.height=px*DPR; wg.scale(DPR,DPR);
+  const C=px/2, R1=px*.295, R2=px*.365;
+  const ang=d=>-Math.PI/2+((d-1)/364)*Math.PI*2;      // day 1 at the top, sunwise
+  /* the four seasons */
+  const SC=['rgba(110,160,90,.16)','rgba(210,170,80,.16)','rgba(170,110,60,.16)','rgba(110,140,190,.16)'];
+  for(let q=0;q<4;q++){
+    wg.beginPath(); wg.arc(C,C,R2,ang(q*91+1),ang(q*91+91.99));
+    wg.arc(C,C,R1,ang(q*91+91.99),ang(q*91+1),true); wg.closePath();
+    wg.fillStyle=SC[q]; wg.fill();
+  }
+  wg.beginPath(); wg.arc(C,C,R2,0,Math.PI*2); wg.strokeStyle='rgba(232,198,106,.35)'; wg.lineWidth=1.4; wg.stroke();
+  wg.beginPath(); wg.arc(C,C,R1,0,Math.PI*2); wg.stroke();
+  /* month lines */
+  for(let m=1;m<=12;m++){ const d=dayFor(m,1), a=ang(d);
+    wg.beginPath(); wg.moveTo(C+Math.cos(a)*R1,C+Math.sin(a)*R1);
+    wg.lineTo(C+Math.cos(a)*R2,C+Math.sin(a)*R2);
+    wg.strokeStyle='rgba(232,198,106,.22)'; wg.lineWidth=1; wg.stroke();
+    const am=ang(d+14);
+    wg.fillStyle='rgba(200,188,150,.75)'; wg.font=`${Math.max(9,px*.026)}px Georgia,serif`;
+    wg.textAlign='center'; wg.textBaseline='middle';
+    wg.fillText(m,C+Math.cos(am)*(R1+R2)/2,C+Math.sin(am)*(R1+R2)/2);
+  }
+  /* the four turnings: days of remembrance */
+  for(const m of [1,4,7,10]){ const a=ang(dayFor(m,1));
+    wg.beginPath(); wg.arc(C+Math.cos(a)*R2,C+Math.sin(a)*R2,px*.011,0,Math.PI*2);
+    wg.fillStyle='#cfe0ee'; wg.fill(); }
+  /* the appointed times */
+  wg.textAlign='center';
+  for(const t of M.times){ if(t.id==='shabbath') continue;
+    for(let k=0;k<t.len;k++){ const a=ang(dayFor(t.m,t.d)+k);
+      wg.beginPath(); wg.moveTo(C+Math.cos(a)*(R2+2),C+Math.sin(a)*(R2+2));
+      wg.lineTo(C+Math.cos(a)*(R2+px*.026),C+Math.sin(a)*(R2+px*.026));
+      wg.strokeStyle='#ffe27a'; wg.lineWidth=k===0?2.2:1.1; wg.stroke(); }
+    const a=ang(dayFor(t.m,t.d)+t.len/2);
+    const mul={pesach:1.10,matstsoth:1.0,bikkurim:.90,shabuoth:1.0,
+      teruah:.90,kippurim:1.10,sukkoth:1.0}[t.id];
+    const lr=px*.425*mul;
+    wg.fillStyle='#e8c66a'; wg.font=`${Math.max(8,px*.022)}px Georgia,serif`;
+    const short={pesach:'PESACH',matstsoth:'MATSTSOTH',bikkurim:'SHEAF',shabuoth:'SHAḆU‛OTH',
+      teruah:'TERU‛AH',kippurim:'KIPPURIM',sukkoth:'SUKKOTH'}[t.id];
+    wg.fillText(short,C+Math.cos(a)*lr,C+Math.sin(a)*lr);
+  }
+  /* today: the sun on its course */
+  { const a=ang(Math.min(today,364)), r=(R1+R2)/2;
+    const gx=C+Math.cos(a)*r, gy=C+Math.sin(a)*r;
+    const gl=wg.createRadialGradient(gx,gy,1,gx,gy,px*.05);
+    gl.addColorStop(0,'rgba(255,236,170,.95)'); gl.addColorStop(1,'rgba(255,214,110,0)');
+    wg.fillStyle=gl; wg.beginPath(); wg.arc(gx,gy,px*.05,0,Math.PI*2); wg.fill();
+    wg.fillStyle='#fff3c4'; wg.beginPath(); wg.arc(gx,gy,px*.016,0,Math.PI*2); wg.fill(); }
+  /* the heart of it */
+  wg.fillStyle='rgba(232,198,106,.85)'; wg.font=`${Math.max(9,px*.028)}px Georgia,serif`;
+  wg.fillText('364 DAYS',C,C-px*.02);
+  wg.fillStyle='rgba(154,143,116,.9)'; wg.font=`italic ${Math.max(8,px*.023)}px Georgia,serif`;
+  wg.fillText('52 weeks · 4 seasons',C,C+px*.022);
+}
+
+/* ---------- a quiet sky ---------- */
+{
+  const sc=document.getElementById('stars'), sg=sc.getContext('2d');
+  const fit=()=>{ const d=Math.min(3,Math.max(2,window.devicePixelRatio||1));
+    sc.width=window.innerWidth*d; sc.height=window.innerHeight*d;
+    sc.style.width=window.innerWidth+'px'; sc.style.height=window.innerHeight+'px';
+    sg.setTransform(d,0,0,d,0,0);
+    sg.clearRect(0,0,window.innerWidth,window.innerHeight);
+    for(let i=0;i<180;i++){ sg.fillStyle=`rgba(235,240,250,${.15+Math.random()*.5})`;
+      sg.fillRect(Math.random()*window.innerWidth,Math.random()*window.innerHeight,1.1,1.1); } };
+  fit(); window.addEventListener('resize',fit);
+}
+</script>
+</body>
+</html>
