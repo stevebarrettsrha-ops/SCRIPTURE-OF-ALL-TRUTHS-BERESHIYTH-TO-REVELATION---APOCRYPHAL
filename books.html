@@ -33,6 +33,11 @@
 </main>
 
 <script>
+// Wrapped in an IIFE because assets/besorah-nav.js re-runs this script on
+// every soft (in-document) visit to this page.
+(function () {
+"use strict";
+
 const SECTIONS = [
   { key: "Torah",       label: "Torah — Teaching" },
   { key: "Nabi'im",     label: "Nabi'im — Prophets" },
@@ -44,7 +49,10 @@ const SECTIONS = [
 ];
 
 function renderBooks(data, filter) {
+  // The fetch can resolve after a soft navigation has swapped this page
+  // out; there is nothing to render into then.
   const root = document.getElementById('content');
+  if (!root) return;
   root.innerHTML = '';
   const f = (filter || '').trim().toLowerCase();
 
@@ -86,16 +94,20 @@ fetch('assets/index.json')
   .then(r => r.json())
   .then(data => {
     renderBooks(data, '');
-    document.getElementById('search').addEventListener('input', e => {
+    const search = document.getElementById('search');
+    if (search) search.addEventListener('input', e => {
       renderBooks(data, e.target.value);
     });
   })
   .catch(err => {
-    document.getElementById('content').innerHTML =
+    const root = document.getElementById('content');
+    if (root) root.innerHTML =
       '<p class="note">Failed to load canon index. Open this site via a local web server (not file://). E.g. <code>python3 -m http.server</code></p>';
     console.error(err);
   });
+})();
 </script>
+<script src="assets/besorah-nav.js" defer></script>
 <script src="assets/besorah-fullscreen.js" defer></script>
 </body>
 </html>

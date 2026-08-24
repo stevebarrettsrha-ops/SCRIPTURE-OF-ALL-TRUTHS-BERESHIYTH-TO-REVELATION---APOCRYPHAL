@@ -351,7 +351,12 @@
   var popup = null;
 
   function ensurePopup() {
-    if (popup) return popup;
+    if (popup) {
+      // A soft page swap (assets/besorah-nav.js) replaces the body and can
+      // leave the popup detached; adopt it back, listeners and all.
+      if (!popup.isConnected) document.body.appendChild(popup);
+      return popup;
+    }
     popup = document.createElement("div");
     popup.className = "mark-pop";
     popup.setAttribute("hidden", "");
