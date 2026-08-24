@@ -71,144 +71,198 @@
 </footer>
 
 <script>
-const params  = new URLSearchParams(location.search);
-// An id from a link may be one a book carried before its name was
-// corrected; BesorahIds brings it forward (assets/besorah-ids.js).
-const bookId  = window.BesorahIds
-  ? BesorahIds.resolve(params.get('id'))
-  : params.get('id');
-const chapter = parseInt(params.get('ch'), 10) || 1;
-const verseAnchor = parseInt(params.get('v'), 10) || null;
-const markAnchor = params.get('m');   // a marked passage arrived at from home
+// Chapters load and swap in place: Prev/Next push the new URL with
+// history.pushState and re-render this same document instead of navigating
+// to a fresh one. Leaving the document is what drops the browser out of
+// fullscreen, so a reader in fullscreen keeps it while turning pages (the
+// offline edition keeps it the same way with its hash routes).
 
-fetch('assets/index.json')
-  .then(r => r.json())
-  .then(idx => {
-    const book = idx.books.find(b => b.id === bookId);
-    if (!book) throw new Error('Book not found');
-    return fetch(`assets/text/${book.id}.json`)
-      .then(r => r.json())
-      .then(text => ({book, text}));
-  })
-  .then(({book, text}) => {
-    const ch = text.chapters[String(chapter)];
-    if (!ch) throw new Error('Chapter not found');
+function parseState(search) {
+  const params = new URLSearchParams(search);
+  // An id from a link may be one a book carried before its name was
+  // corrected; BesorahIds brings it forward (assets/besorah-ids.js).
+  const rawId = params.get('id');
+  return {
+    bookId: window.BesorahIds ? BesorahIds.resolve(rawId) : rawId,
+    chapter: parseInt(params.get('ch'), 10) || 1,
+    verseAnchor: parseInt(params.get('v'), 10) || null,
+    markAnchor: params.get('m')   // a marked passage arrived at from home
+  };
+}
 
-    // Header / title
-    document.title = `${book.hebrew}${book.chapter_count > 1 ? ' ' + chapter : ''} — The Besorah`;
-    document.getElementById('bar-heb').textContent = book.hebrew;
-    document.getElementById('bar-eng').textContent = `(${book.english})`;
-    if (book.chapter_count > 1) {
-      document.getElementById('bar-ch').textContent = `Chapter ${chapter}`;
-    }
-    document.getElementById('page-heb').textContent = book.hebrew;
-    document.getElementById('page-eng').textContent = book.english;
-    if (book.chapter_count > 1) {
-      document.getElementById('ch-num').textContent = chapter;
-    }
+// The index and each book's text are fetched once and kept, so a page turn
+// within a book renders without waiting on the network again.
+let indexPromise = null;
+const textPromises = {};
+function getIndex() {
+  if (!indexPromise) indexPromise = fetch('assets/index.json').then(r => r.json());
+  return indexPromise;
+}
+function getText(bookId) {
+  if (!textPromises[bookId]) {
+    textPromises[bookId] = fetch(`assets/text/${bookId}.json`).then(r => r.json());
+  }
+  return textPromises[bookId];
+}
 
-    // PDF link (still available for cross-reference)
-    document.getElementById('pdf-link').href = `SCRIPTURE/${ch.pdf}#page=${ch.page}`;
+function setLink(elId, href, disabled) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  if (disabled) {
+    el.classList.add('disabled');
+    el.removeAttribute('href');
+  } else {
+    el.classList.remove('disabled');
+    el.href = href;
+  }
+}
 
-    // Prev / Next links
-    function setLink(elId, href, disabled) {
-      const el = document.getElementById(elId);
-      if (!el) return;
-      if (disabled) {
-        el.classList.add('disabled');
-        el.removeAttribute('href');
-      } else {
-        el.classList.remove('disabled');
-        el.href = href;
-      }
-    }
-    const prevHref = chapter > 1 ? `chapter.html?id=${book.id}&ch=${chapter - 1}` : '#';
-    const nextHref = chapter < book.chapter_count ? `chapter.html?id=${book.id}&ch=${chapter + 1}` : '#';
-    setLink('prev',  prevHref, chapter <= 1);
-    setLink('prev2', prevHref, chapter <= 1);
-    setLink('next',  nextHref, chapter >= book.chapter_count);
-    setLink('next2', nextHref, chapter >= book.chapter_count);
-    document.getElementById('book-toc').href = `book.html?id=${book.id}`;
+// Verse text may contain <span class="dn">…</span> for divine names
+// and <span class="hwhy">HWHY</span> for the paleo-Hebrew
+// tetragrammaton. Escape every other angle bracket and only
+// un-escape these two whitelisted elements.
+function renderVerseText(raw) {
+  // Word forms are corrected on the way to the screen (assets/words.js)
+  // so a re-extracted book still reads correctly.
+  const fixed = window.BesorahWords ? BesorahWords.repair(raw) : raw;
+  const esc = fixed
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  // Un-escape only the whitelisted tags, opening and closing handled
+  // separately so a footnote containing a divine name still renders.
+  return esc
+    .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+    .replace(/&lt;\/span&gt;/g, '</span>');
+}
 
-    // Bookmark + last-read tracking (localStorage; nothing leaves the device)
-    BesorahMarks.recordLastRead(book, chapter);
-    BesorahMarks.wireBookmarkButton(
-      document.getElementById('bookmark-btn'), book, chapter
-    );
-    // Read-aloud player (built once; re-pointed at this chapter's verses).
-    BesorahTTS.init(document.getElementById('tts-bar'));
+function loadChapter(state) {
+  const bookId = state.bookId;
+  const chapter = state.chapter;
+  const loading = document.getElementById('loading');
+  loading.textContent = 'Loading chapter…';
+  loading.style.display = '';
 
-    // Wire after verses are rendered (below — defer to next tick).
-    queueMicrotask(() => {
-      const versesEl = document.getElementById('verses');
-      BesorahMarks.wireVerseClicks(versesEl, book, chapter);
-      // Marked text: paint saved highlights and let a fresh selection be
-      // marked. Wired before the read-aloud player so tapping a highlight
-      // offers to remove it instead of starting playback.
-      BesorahMarks.wireTextMarks(versesEl, book, chapter, {
-        onRead: el => BesorahTTS.readFrom(el)
+  getIndex()
+    .then(idx => {
+      const book = idx.books.find(b => b.id === bookId);
+      if (!book) throw new Error('Book not found');
+      return getText(book.id).then(text => ({book, text}));
+    })
+    .then(({book, text}) => {
+      const ch = text.chapters[String(chapter)];
+      if (!ch) throw new Error('Chapter not found');
+
+      // Header / title
+      document.title = `${book.hebrew}${book.chapter_count > 1 ? ' ' + chapter : ''} — The Besorah`;
+      document.getElementById('bar-heb').textContent = book.hebrew;
+      document.getElementById('bar-eng').textContent = `(${book.english})`;
+      document.getElementById('bar-ch').textContent =
+        book.chapter_count > 1 ? `Chapter ${chapter}` : '';
+      document.getElementById('page-heb').textContent = book.hebrew;
+      document.getElementById('page-eng').textContent = book.english;
+      document.getElementById('ch-num').textContent =
+        book.chapter_count > 1 ? chapter : '';
+
+      // PDF link (still available for cross-reference)
+      document.getElementById('pdf-link').href = `SCRIPTURE/${ch.pdf}#page=${ch.page}`;
+
+      // Prev / Next links
+      const prevHref = chapter > 1 ? `chapter.html?id=${book.id}&ch=${chapter - 1}` : '#';
+      const nextHref = chapter < book.chapter_count ? `chapter.html?id=${book.id}&ch=${chapter + 1}` : '#';
+      setLink('prev',  prevHref, chapter <= 1);
+      setLink('prev2', prevHref, chapter <= 1);
+      setLink('next',  nextHref, chapter >= book.chapter_count);
+      setLink('next2', nextHref, chapter >= book.chapter_count);
+      document.getElementById('book-toc').href = `book.html?id=${book.id}`;
+
+      // Bookmark + last-read tracking (localStorage; nothing leaves the device)
+      BesorahMarks.recordLastRead(book, chapter);
+      // A fresh clone of the button each render, so in-place page turns do
+      // not stack click handlers still wired to earlier chapters.
+      const staleBtn = document.getElementById('bookmark-btn');
+      const bookmarkBtn = staleBtn.cloneNode(true);
+      staleBtn.replaceWith(bookmarkBtn);
+      BesorahMarks.wireBookmarkButton(bookmarkBtn, book, chapter);
+      // Read-aloud player (built once; re-pointed at this chapter's verses).
+      BesorahTTS.init(document.getElementById('tts-bar'));
+
+      // Wire after verses are rendered (below — defer to next tick).
+      queueMicrotask(() => {
+        const versesEl = document.getElementById('verses');
+        BesorahMarks.wireVerseClicks(versesEl, book, chapter);
+        // Marked text: paint saved highlights and let a fresh selection be
+        // marked. Wired before the read-aloud player so tapping a highlight
+        // offers to remove it instead of starting playback.
+        BesorahMarks.wireTextMarks(versesEl, book, chapter, {
+          onRead: el => BesorahTTS.readFrom(el)
+        });
+        BesorahTTS.bind(versesEl);
+        if (state.markAnchor) BesorahMarks.scrollToTextMark(state.markAnchor);
+        else BesorahMarks.scrollToVerse(state.verseAnchor);
       });
-      BesorahTTS.bind(versesEl);
-      if (markAnchor) BesorahMarks.scrollToTextMark(markAnchor);
-      else BesorahMarks.scrollToVerse(verseAnchor);
-    });
 
-    // Render verses
-    const out = document.getElementById('verses');
-    out.innerHTML = '';
-    const verses = ch.verses || [];
-    if (verses.length === 0) {
-      out.innerHTML = `<p class="note">No text extracted for this chapter. <a href="SCRIPTURE/${ch.pdf}#page=${ch.page}" target="_blank">Open the PDF page</a>.</p>`;
-    } else {
-      // Verse text may contain <span class="dn">…</span> for divine names
-      // and <span class="hwhy">HWHY</span> for the paleo-Hebrew
-      // tetragrammaton. Escape every other angle bracket and only
-      // un-escape these two whitelisted elements.
-      function renderVerseText(raw) {
-        // Word forms are corrected on the way to the screen (assets/words.js)
-        // so a re-extracted book still reads correctly.
-        const fixed = window.BesorahWords ? BesorahWords.repair(raw) : raw;
-        const esc = fixed
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;');
-        // Un-escape only the whitelisted tags, opening and closing handled
-        // separately so a footnote containing a divine name still renders.
-        return esc
-          .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
-          .replace(/&lt;\/span&gt;/g, '</span>');
-      }
-
-      // Long-form chapters (Patriarchs, single-verse books) get single-block prose
-      const isProse = verses.length === 1 && verses[0].t.length > 600;
-      if (isProse) {
-        const para = document.createElement('p');
-        para.className = 'prose';
-        para.innerHTML = renderVerseText(verses[0].t);
-        out.appendChild(para);
+      // Render verses
+      const out = document.getElementById('verses');
+      out.innerHTML = '';
+      const verses = ch.verses || [];
+      if (verses.length === 0) {
+        out.innerHTML = `<p class="note">No text extracted for this chapter. <a href="SCRIPTURE/${ch.pdf}#page=${ch.page}" target="_blank">Open the PDF page</a>.</p>`;
       } else {
-        for (const v of verses) {
-          const p = document.createElement('p');
-          p.className = 'verse';
-          p.id = `v-${v.n}`;
-          p.dataset.v = v.n;
-          p.innerHTML =
-            `<sup class="verse-n">${v.n}</sup> ` + renderVerseText(v.t);
-          out.appendChild(p);
+        // Long-form chapters (Patriarchs, single-verse books) get single-block prose
+        const isProse = verses.length === 1 && verses[0].t.length > 600;
+        if (isProse) {
+          const para = document.createElement('p');
+          para.className = 'prose';
+          para.innerHTML = renderVerseText(verses[0].t);
+          out.appendChild(para);
+        } else {
+          for (const v of verses) {
+            const p = document.createElement('p');
+            p.className = 'verse';
+            p.id = `v-${v.n}`;
+            p.dataset.v = v.n;
+            p.innerHTML =
+              `<sup class="verse-n">${v.n}</sup> ` + renderVerseText(v.t);
+            out.appendChild(p);
+          }
         }
       }
-    }
-    document.getElementById('loading').style.display = 'none';
-  })
-  .catch(err => {
-    console.error(err);
-    // Say what actually went wrong: a link to a book or chapter that does
-    // not exist is a different failure from opening the site off file://.
-    const known = /^(Book|Chapter) not found$/.test(err.message);
-    document.getElementById('loading').textContent = known
-      ? err.message + '. Check the link, or pick the book again from the Books page.'
-      : 'Failed to load chapter. Make sure you opened this site through a local web server (e.g. `python3 -m http.server`).';
+      loading.style.display = 'none';
+    })
+    .catch(err => {
+      console.error(err);
+      // Say what actually went wrong: a link to a book or chapter that does
+      // not exist is a different failure from opening the site off file://.
+      const known = /^(Book|Chapter) not found$/.test(err.message);
+      loading.textContent = known
+        ? err.message + '. Check the link, or pick the book again from the Books page.'
+        : 'Failed to load chapter. Make sure you opened this site through a local web server (e.g. `python3 -m http.server`).';
+    });
+}
+
+// The page turn itself: an ordinary click on an enabled Prev/Next link is
+// taken over and rendered in place. Modified clicks (new tab, download)
+// and middle clicks keep their native behaviour.
+for (const id of ['prev', 'next', 'prev2', 'next2']) {
+  document.getElementById(id).addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (!href || href === '#' || this.classList.contains('disabled')) return;
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    history.pushState(null, '', href);
+    window.scrollTo(0, 0);
+    loadChapter(parseState(new URL(href, location.href).search));
   });
+}
+
+// Back/Forward across in-place page turns re-render the same way.
+window.addEventListener('popstate', () => {
+  window.scrollTo(0, 0);
+  loadChapter(parseState(location.search));
+});
+
+loadChapter(parseState(location.search));
 </script>
 <script src="assets/besorah-fullscreen.js" defer></script>
 </body>
