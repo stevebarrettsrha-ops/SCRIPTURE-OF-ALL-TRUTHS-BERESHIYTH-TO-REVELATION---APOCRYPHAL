@@ -75,7 +75,13 @@
 // history.pushState and re-render this same document instead of navigating
 // to a fresh one. Leaving the document is what drops the browser out of
 // fullscreen, so a reader in fullscreen keeps it while turning pages (the
-// offline edition keeps it the same way with its hash routes).
+// offline edition keeps it the same way with its hash routes). Links to the
+// other pages stay in-document too — assets/besorah-nav.js swaps them in,
+// re-running this script each time, which is why it is wrapped in an IIFE
+// and wires nothing above <body> level (Back/Forward included: popstate
+// belongs to the router).
+(function () {
+"use strict";
 
 function parseState(search) {
   const params = new URLSearchParams(search);
@@ -150,6 +156,9 @@ function loadChapter(state) {
       return getText(book.id).then(text => ({book, text}));
     })
     .then(({book, text}) => {
+      // The fetch can resolve after a soft navigation has swapped this
+      // page out; a detached loading note means nothing to render into.
+      if (!loading.isConnected) return;
       const ch = text.chapters[String(chapter)];
       if (!ch) throw new Error('Chapter not found');
 
@@ -251,19 +260,16 @@ for (const id of ['prev', 'next', 'prev2', 'next2']) {
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     e.preventDefault();
     history.pushState(null, '', href);
+    if (window.BesorahNav) BesorahNav.note();
     window.scrollTo(0, 0);
     loadChapter(parseState(new URL(href, location.href).search));
   });
 }
 
-// Back/Forward across in-place page turns re-render the same way.
-window.addEventListener('popstate', () => {
-  window.scrollTo(0, 0);
-  loadChapter(parseState(location.search));
-});
-
 loadChapter(parseState(location.search));
+})();
 </script>
+<script src="assets/besorah-nav.js" defer></script>
 <script src="assets/besorah-fullscreen.js" defer></script>
 </body>
 </html>

@@ -84,6 +84,11 @@
 </main>
 
 <script>
+// Wrapped in an IIFE because assets/besorah-nav.js re-runs this script on
+// every soft (in-document) visit to this page.
+(function () {
+"use strict";
+
 function chapterUrl(bookId, ch, verse, markId) {
   let url = `chapter.html?id=${encodeURIComponent(bookId)}&ch=${ch}`;
   if (verse != null) url += `&v=${verse}`;
@@ -98,6 +103,9 @@ Promise.all([
   fetch('assets/index.json').then(r => r.json()),
   fetch('assets/daily-bread.json').then(r => r.json())
 ]).then(([index, daily]) => {
+  // The fetches can resolve after a soft navigation has swapped this page
+  // out; there is nothing to render into then.
+  if (!document.getElementById('daily-card')) return;
   BesorahHome.render({
     index: index,
     pool: daily.pool,
@@ -107,6 +115,7 @@ Promise.all([
   });
 }).catch(err => {
   const box = document.getElementById('home-error');
+  if (!box) return;
   box.hidden = false;
   box.innerHTML =
     'Failed to load the canon. Open this site via a local web server (not file://) — ' +
@@ -114,7 +123,9 @@ Promise.all([
     '<a href="besorah-offline.html">single-file offline edition</a>.';
   console.error(err);
 });
+})();
 </script>
+<script src="assets/besorah-nav.js" defer></script>
 <script src="assets/besorah-fullscreen.js" defer></script>
 </body>
 </html>
