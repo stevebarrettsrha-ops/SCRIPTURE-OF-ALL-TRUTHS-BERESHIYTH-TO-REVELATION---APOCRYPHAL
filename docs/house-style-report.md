@@ -227,3 +227,77 @@ and by `BesorahWords.repair()` to every verse on its way to the screen, so
 a book re-extracted from its PDF is still shown correctly.
 `scripts/check_words_parity.py` proves the two agree on all 48,068 verses;
 `scripts/check_render.js` proves nothing reaches a reader that should not.
+
+---
+
+# Round three — Baḇal, and the names that stand beside it
+
+The reader's report was one line: *Babylon is wrong; the reference is
+Baḇal (Baḇylon).* The same split the church words had was underneath it.
+The main books had settled on **Baḇal** 296 times and never once wrote
+"Babylon"; the apocryphal books, set from other editions, still had the
+Greek-Latin form throughout. Neither carried the English alongside.
+
+## 1. What was found
+
+| Was | Where | Count |
+|---|---|---:|
+| Baḇal, bare — no English beside it | main books, 18 of them | 296 |
+| Babylon | 10 apocryphal books | 52 |
+| Nebuchadnezzar | 6 apocryphal books | 35 |
+| Zerubbabal — no soft bet | 1 Esdras, Sirach | 12 |
+| Babal — no soft bet | Yashar, Jubilees | 10 |
+| Babylonians | Bel & the Dragon, Epistle of Yirmayahu | 5 |
+| Babylonia | 1 Esdras, 2 Maccabees | 4 |
+| Baḇelians — a stem the canon uses nowhere else | Yahazq'Al 23 | 3 |
+| Belshazzar | Baruch | 2 |
+| Baḇal,jand — a scanner scar | Yirmayahu 51:6 | 1 |
+
+## 2. What it says now
+
+**Baḇal (Baḇylon)**, at every occurrence, all 104 books — the bracket the
+qadash entries already use, so the familiar reading is never lost. 357
+places. The possessive keeps the bracket beside it: *"the sovereign of
+Baḇal's (Baḇylon's) army"* (Yirmayahu 34:7, 34:21, 38:3, 39:13, 50:46).
+
+**Baḇalites (Baḇylonians)** for the people, 8 places. The people follow
+the place, the way Kena'anite follows Kena'an (CLAUDE.md rule 6). This
+retires *Baḇelians*, which was built on a stem — Baḇel — that the canon
+does not otherwise use; the three verses are Yahazq'Al 23:15, 23:17 and
+23:23.
+
+**Neḇuḵaḏnetstsar** (35), **Bĕlshatstsar** (2) and **Zerubbaḇal** (12) —
+each one is what the main books already say in the parallel place: the
+main books spell the sovereign Neḇuḵaḏnetstsar 60 times across eight of
+them, Dani'Al spells his regent Bĕlshatstsar 8 times, and the soft bet in
+Zerubbaḇal stands 25 times in Ezra, Ḥaggai, Zakaryahu, Neḥemyah,
+1 Dibre haYamim, Mattithyahu and Luke.
+
+**Yirmayahu 51:6** read *"Flee from the midst of Baḇal,jand let each one
+save his life!"* The stray letter is the scan; the reading is *"Baḇal
+(Baḇylon), and let each one save his life!"*
+
+## 3. Left as they stand
+
+**Chaldeans** (91), **Chaldea** (8), **Chaldees** (16) — not a split. The
+main books use all three themselves: Bereshith, Yirmayahu, Yahazq'Al,
+Dani'Al, Iyob, Ḥabaqquq and Neḥemyah. There is nothing for the apocrypha
+to be brought into line with.
+
+**Bel** (16, Bel & the Dragon) is the idol's own name, not the city's.
+**Shinar** (22) is the land, and the main books keep it.
+
+## 4. Where this lives
+
+The anglicised forms are entries in the `NAMES` table in
+`assets/words.js`, with `LOCKED_CASE` beside them. The bracket on Baḇal
+itself could not be a table entry — the key would be the word it
+produces, and the pass would gloss its own output every time it ran — so
+it is the `BABAL_GLOSS` rule, whose two lookaheads pass over a name that
+already wears its bracket. `scripts/sweep_text.py` mirrors it, and
+`scripts/check_words_parity.py` proves the two agree on all 48,068
+verses. Running the sweep a second and third time changes nothing.
+
+`assets/pronunciation.js` gained the five respellings the new words need,
+so the speech engine says *Baḇal* as "bah-vel" and the bracket beside it
+the familiar way.

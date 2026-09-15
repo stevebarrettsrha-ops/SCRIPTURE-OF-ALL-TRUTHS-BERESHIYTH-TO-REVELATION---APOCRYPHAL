@@ -143,7 +143,11 @@
     "b~ cause": "because",
     "1£ you": "If you",
     "sellin&": "selling,",
-    "sprin&": "spring,"
+    "sprin&": "spring,",
+    // A stray letter the scan welded onto the comma after a name —
+    // Yirmayahu 51:6, "Flee from the midst of Baḇal,jand let each one
+    // save his life!" The reading is "Baḇal, and".
+    "baḇal,jand": "Baḇal, and"
   };
 
   // --- 3b. names ------------------------------------------------------
@@ -210,7 +214,33 @@
     "zeḵaryahu": "Zaḵaryahu",
     "zeḵaryah": "Zaḵaryahu",
     "zekaryahu": "Zakaryahu",
-    "zekaryah": "Zakaryahu"
+    "zekaryah": "Zakaryahu",
+    // Baḇal, with the English in brackets — the same bracket the
+    // qadash entries use, so the reading is never lost. The main books
+    // settled on Baḇal 296 times; the apocryphal books arrived from
+    // other editions still saying Babylon, and Yashar and Jubilees say
+    // Babal without the soft bet. Baḇelians (Yahazq'Al 23) was built
+    // on a stem the canon does not otherwise use; the people follow the
+    // place, as Kena'anite follows Kena'an (CLAUDE.md rule 6).
+    "babylonians": "Baḇalites (Baḇylonians)",
+    "babylonian": "Baḇalite (Baḇylonian)",
+    "baḇelians": "Baḇalites (Baḇylonians)",
+    "baḇelian": "Baḇalite (Baḇylonian)",
+    "babelians": "Baḇalites (Baḇylonians)",
+    "babelian": "Baḇalite (Baḇylonian)",
+    "babylonia": "Baḇal (Baḇylon)",
+    "babylon": "Baḇal (Baḇylon)",
+    "babal": "Baḇal (Baḇylon)",
+    // The names that stand beside it. Both are what the main books
+    // already say in the parallel place: Dani'Al and Yirmayahu spell the
+    // sovereign Neḇuḵaḏnetstsar 60 times, Dani'Al spells his regent
+    // Bĕlshatstsar 8 times, and Zerubbaḇal keeps the soft bet the rest of
+    // the canon gives him.
+    "nebuchadnezzar": "Neḇuḵaḏnetstsar",
+    "nebuchadrezzar": "Neḇuḵaḏnetstsar",
+    "belshazzar": "Bĕlshatstsar",
+    "zerubbabal": "Zerubbaḇal",
+    "zerubbabel": "Zerubbaḇal"
   };
 
   // --- 4. house style -------------------------------------------------
@@ -437,7 +467,13 @@
     "Qodash haQodashim (Most Set Apart Place)": 1,
     "Qodash (Set Apart Place)": 1,
     "Holy Sepulcher": 1,
-    "Holy Sepulchre": 1
+    "Holy Sepulchre": 1,
+    "Baḇal (Baḇylon)": 1,
+    "Baḇalites (Baḇylonians)": 1,
+    "Baḇalite (Baḇylonian)": 1,
+    "Neḇuḵaḏnetstsar": 1,
+    "Bĕlshatstsar": 1,
+    "Zerubbaḇal": 1
   };
 
   // --- 5. inline verse markers ----------------------------------------
@@ -495,6 +531,26 @@
   // "Sheol (the grave)". Once both halves say the same thing the gloss is
   // noise, so it is collapsed before the word tables run.
   var SELF_GLOSS = /\b(hell|Sheol)\s*\((?:Sheol|the grave|hell)\)/gi;
+
+  // Baḇal carries its English in brackets wherever it stands — Baḇal
+  // (Baḇylon) — the way qadash carries (Set Apart). A table entry cannot
+  // do this one: the key would be the word it produces, and the pass would
+  // gloss its own output on the next run. The lookahead does instead, so a
+  // name already wearing its bracket is passed over however often the
+  // repair runs. The possessive keeps the bracket beside it ("the
+  // sovereign of Baḇal’s (Baḇylon’s) army"), and the people take the
+  // plural gloss.
+  // The two lookaheads are both needed. The second passes over a name that
+  // already wears its bracket; without the first, "Baḇal’s (Baḇylon’s)"
+  // would fail on the possessive branch, back off to the bare "Baḇal", find
+  // no bracket directly after it and gloss the name a second time.
+  var BABAL_GLOSS = /\bBaḇal(ites?)?(['’]s)?\b(?!['’]s)(?!\s*\(Baḇylon)/g;
+
+  function glossBabal(m, people, poss) {
+    poss = poss || "";
+    return m + " (Baḇylon" + (people ? (people === "ites" ? "ians" : "ian") : "")
+      + poss + ")";
+  }
   var BRACKETS = /[[\]{}]/g;
   // A bracketed number whose digits the scanner mangled: [4S] is [45].
   var BRACKET_DIGITS = /\[\s*([0-9SlIOB]{1,3})\s*[J\]\)}]/g;
@@ -632,6 +688,7 @@
         return r ? applyCase(m, r) : m;
       });
     }
+    s = s.replace(BABAL_GLOSS, glossBabal);
     s = s.replace(DUAL_REFERENCE, " ").replace(VERSE_MARKER, " ");
     // Tidy the seams the repairs can leave behind. The space before a
     // punctuation mark is closed up only when the mark is not part of an

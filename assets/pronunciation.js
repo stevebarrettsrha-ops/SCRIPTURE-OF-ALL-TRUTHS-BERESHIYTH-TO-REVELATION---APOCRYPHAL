@@ -295,6 +295,14 @@
     "sinai": "sye-nye",
     "horeb": "khoh-rev",
     "babal": "bah-vel",
+    // The people follow the place, as Kena'anite follows Kena'an; and the
+    // bracket beside the name is there so the familiar reading is not
+    // lost, so it is spoken the familiar way.
+    "babalite": "bah-vel-ite",
+    "babalites": "bah-vel-ites",
+    "babylon": "bab-ih-lon",
+    "babylonian": "bab-ih-loh-nee-uhn",
+    "babylonians": "bab-ih-loh-nee-uhns",
     "ashshur": "ahsh-shoor",
     "ninaweh": "nee-neh-veh",
     "nineweh": "nee-neh-veh",
