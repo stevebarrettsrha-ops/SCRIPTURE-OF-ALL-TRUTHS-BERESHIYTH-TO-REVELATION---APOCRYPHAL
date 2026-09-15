@@ -156,6 +156,18 @@ STRAY_STAR = re.compile(r"\*+")
 MIDDLE_DOT = re.compile("\u00b7")
 # Some editions gloss the word they are translating — "hell (Sheol)".
 SELF_GLOSS = re.compile(r"\b(hell|Sheol)\s*\((?:Sheol|the grave|hell)\)", re.I)
+# Baḇal carries its English in brackets wherever it stands — mirror of
+# BABAL_GLOSS in words.js, where the reasoning is written out. The lookahead
+# keeps the pass idempotent: a name already wearing its bracket is passed
+# over however often the repair runs.
+BABAL_GLOSS = re.compile(r"\bBaḇal(ites?)?(['’]s)?\b(?!['’]s)(?!\s*\(Baḇylon)")
+
+
+def gloss_babal(m):
+    people, poss = m.group(1), m.group(2) or ""
+    plural = "" if not people else ("ians" if people == "ites" else "ian")
+    return m.group(0) + " (Baḇylon" + plural + poss + ")"
+
 BRACKETS = re.compile(r"[\[\]{}]")
 BRACKET_DIGITS = re.compile(r"\[\s*([0-9SlIOB]{1,3})\s*[J\])}]")
 DIGIT_FOR_LETTER = {"S": "5", "l": "1", "I": "1", "O": "0", "B": "8"}
@@ -220,6 +232,7 @@ def repair_words(text, log=None, where=""):
         s = NAME_RE.sub(sub(NAMES), s)
     if HOUSE_RE:
         s = HOUSE_RE.sub(sub(HOUSE), s)
+    s = BABAL_GLOSS.sub(gloss_babal, s)
     s = DUAL_REFERENCE.sub(" ", s)
     s = VERSE_MARKER.sub(" ", s)
     s = re.sub(r"[ \t]{2,}", " ", s)

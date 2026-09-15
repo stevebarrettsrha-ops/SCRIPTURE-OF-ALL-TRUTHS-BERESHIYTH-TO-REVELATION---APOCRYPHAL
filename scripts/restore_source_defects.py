@@ -134,7 +134,7 @@ SUPPLIES = [
      "I was small among my brothers, and youngest in my father's house; I "
      "tended my father's sheep."),
     ("apoc-susanna", "1", 1,
-     "There was a man living in Babylon whose name was Yoaqim."),
+     "There was a man living in Baḇal (Baḇylon) whose name was Yoaqim."),
 ]
 
 
