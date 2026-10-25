@@ -111,6 +111,21 @@ INSERTS = [
      "gets out of distress."),
 ]
 
+# Words the print carries in the middle or at the end of a verse, set in
+# capitals on a line of their own, which the extractor once dropped as a
+# page banner. (book, chapter, verse, anchor, words): the words go straight
+# after the anchor, verbatim from the source page.
+COMPLETES = [
+    ("shamoth", "29", 41, "an offering made by fire to",
+     ' (<span class="dn">YAHUAH</span>) <span class="hwhy">HWHY</span>–'),
+    ("luke", "2", 23, "shall be called qadash (Set Apart) to",
+     ' (<span class="dn">YAHUAH</span>) <span class="hwhy">HWHY</span>” –'),
+    ("hazon", "17", 5, "BAḆAL THE GREAT,",
+     " THE MOTHER OF THE WHORES AND OF THE ABOMINATIONS OF"),
+    ("hazon", "19", 16, "a Name written: SOVEREIGN",
+     " OF SOVEREIGNS AND MASTER OF"),
+]
+
 # (book, chapter, verse number, verse text) — the printing omits the verse;
 # supplied in the edition's own voice, with the footnote appended.
 SUPPLIES = [
@@ -235,6 +250,22 @@ def main():
             save(p, d)
             changed += 1
             print(f"  restore {bid} {cn}:{n}")
+
+    for bid, cn, n, anchor, words in COMPLETES:
+        p, d = load(bid)
+        v = next(x for x in d["chapters"][cn]["verses"] if x["n"] == n)
+        plain = re.sub(r"<[^>]+>", "", v["t"])
+        if re.sub(r"<[^>]+>", "", anchor + words).strip(" –”") in plain:
+            continue                          # already whole
+        i = v["t"].find(anchor)
+        if i < 0:
+            print(f"  !! {bid} {cn}:{n}: anchor not found; skipped")
+            continue
+        i += len(anchor)
+        v["t"] = v["t"][:i] + words + v["t"][i:]
+        save(p, d)
+        changed += 1
+        print(f"  complete {bid} {cn}:{n}")
 
     for kind, table in (("insert", INSERTS), ("supply", SUPPLIES)):
         for bid, cn, n, text in table:

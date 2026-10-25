@@ -177,6 +177,12 @@ FOOTNOTE_PAT = re.compile(
 )
 
 
+# Marks an all-caps line as verse text rather than a running-header banner.
+# A line that opens with a dash is the tail of a banner ("– CONVENER", from
+# "QOHELETH – CONVENER"), so it stays a banner.
+_CAPS_VERSE_TEXT = re.compile(r"^(?![ \t]*[–—])(?:.*\b(?:THE|AND|HWHY)\b|.*[–—“”])")
+
+
 def strip_besorah_page(raw):
     """Strip page header lines and any trailing footnote block."""
     lines = raw.split('\n')
@@ -222,9 +228,15 @@ def strip_besorah_page(raw):
     #   - optional trailing chapter and/or page number.
     # Without this, "BERĔSHITH 3" mid-verse gets misread as verse-3 marker,
     # which truncates the prior verse and skips the real verse 2.
+    #
+    # Verse text set in capitals wraps onto all-caps lines too — "THE MOTHER
+    # OF THE WHORES" (Hazon 17:5), "OF SOVEREIGNS AND MASTER OF" (Hazon
+    # 19:16), a line holding only "HWHY–" (Shamoth 29:41, Luke 2:23). A
+    # banner never carries THE, AND, the Name, a closing dash or a quote, so
+    # such lines are kept.
     body = re.sub(
         rf"(?m)^[ \t]*(?:\d[ \t]+)?[{UPPER}][{UPPER}'\s\-]{{2,}}(?:[ \t]+\d+){{0,3}}[ \t]*$",
-        "",
+        lambda m: m.group(0) if _CAPS_VERSE_TEXT.search(m.group(0)) else "",
         body,
     )
 
