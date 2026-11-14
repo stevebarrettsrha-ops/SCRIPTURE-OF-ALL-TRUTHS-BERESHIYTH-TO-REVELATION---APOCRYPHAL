@@ -114,7 +114,9 @@ def _strip_markers(chunk, opening):
         take, cut_to = [], None
         for d in re.finditer(r"\d+", run):
             n = int(d.group(0))
-            if n != expected:
+            # One lost margin number (Zebulun 4:4) must not make every
+            # number after it look like prose, so a single skip is allowed.
+            if not (expected <= n <= expected + 1):
                 # Only the numbers before this one were markers; the rest
                 # of the run is prose and must stay where it is.
                 cut_to = m.start(1) + d.start()

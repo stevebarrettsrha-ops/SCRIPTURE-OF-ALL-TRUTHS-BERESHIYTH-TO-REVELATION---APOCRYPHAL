@@ -193,6 +193,11 @@
     "yo'ĕl": "Yo'Al",
     "yo'el": "Yo'Al",
     "yoal": "Yo'Al",
+    "dani'al": "Dani'Al",
+    // Yasharal's people follow Yasharal (CLAUDE.md rule 6: "Israelite →
+    // Yasharalite"); the Yi → Yah pass had made them Yahsra'Alites.
+    "yahsra'alites": "Yasharalites",
+    "yahsra'alite": "Yasharalite",
     // Kena'an keeps its people (CLAUDE.md rule 6: compounds follow the base
     // word). The transliterator only reaches "Canaan" itself, so the forms
     // built on it are recorded here.
@@ -455,7 +460,26 @@
 
     // --- Sheol, not hell -----------------------------------------------
     // Four of these verses gloss it themselves — "hell (Sheol)".
-    "hell": "Sheol"
+    "hell": "Sheol",
+
+    // --- the CLAUDE.md terms the extraction never reached ---------------
+    // CLAUDE.md lists each of these; the transliterator's term table did
+    // not, so 132 "atonement", 235 "mercy", 71 "prophesy" and 20
+    // "hypocrite" stood in English. The forms are CLAUDE.md's own; the
+    // plurals CLAUDE.md does not list follow Hebrew (chanephim, Iḇrim,
+    // kohanim gedolim), as kohanim follows kohen.
+    "day of atonement": "Yom Kippur",
+    "an atonement": "a kippur",
+    "atonement": "kippur",
+    "lovingkindness": "chesed",
+    "mercy": "chesed",
+    "prophesy": "naḇa",
+    "hypocrites": "chanephim",
+    "hypocrite": "chaneph",
+    "kohen gadols": "kohanim gedolim",
+    "hebrews": "Iḇrim",
+    "prophet": "naḇi",
+    "commandments": "mitsvot"
   };
 
   // Names that carry their own capitalisation. Case is normally inherited
@@ -473,7 +497,9 @@
     "Baḇalite (Baḇylonian)": 1,
     "Neḇuḵaḏnetstsar": 1,
     "Bĕlshatstsar": 1,
-    "Zerubbaḇal": 1
+    "Zerubbaḇal": 1,
+    "Yom Kippur": 1,
+    "Iḇrim": 1
   };
 
   // --- 5. inline verse markers ----------------------------------------

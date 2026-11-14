@@ -29,6 +29,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import reextract_testaments as _T  # noqa: E402  (verse snapping)
+
 ROOT = Path(__file__).resolve().parent.parent
 TEXT_DIR = ROOT / "assets" / "text"
 
@@ -201,6 +204,11 @@ COMPLETES = [
      " After him Meshullam son of Bereḵyah"),
     ("2dibre-hayamim", "21", 2, "the sons of",
      " Yahhoshaphat: Azaryahu and Yahḥi’al and Zaḵaryahu and Azaryahu and Miḵa’al"),
+    # Defects of the print itself, mended from the parallel the Besorah
+    # prints elsewhere. 2 Dibre haYamim 18:33 breaks off at "And he"; its
+    # end was set after 18:22, and 1 Malakim 22:34 reads it so.
+    ("2dibre-hayamim", "18", 33, "between the joints of his armour. And he",
+     " said to the driver of his chariot, “Turn around and take me out of the battle, for I am wounded.”"),
 ]
 
 
@@ -244,7 +252,100 @@ PATCHES = [
     ("apoc-eth-enoch", "84", 2, "you, 0 <", "you, O <"),
     ("apoc-eth-enoch", "84", 5, "now, 0 <", "now, O <"),
     ("apoc-eth-enoch", "84", 6, "servant, 0 <", "servant, O <"),
+    ("2dibre-hayamim", "36", 23, "Yahuḏah. whoever is among you", "Yahuḏah. Whoever is among you"),
+    ("yaaqob", "4", 8, "to you. cleanse hands, sinners.", "to you. Cleanse hands, you sinners."),
+    ("yashayahu", "41", 8, "But you, Yahsra’al,", "But you, <span class=\"dn\">Yasharal</span>,"),
+    ("bamidbar", "25", 1, "And Yasra’al dwelt", "And <span class=\"dn\">Yasharal</span> dwelt"),
+    ("testament-levi", "9", 8, "w bile yet", "while yet"),
+    ("testament-levi", "9", 8, "first -fruits", "first-fruits"),
+    ("testament-levi", "9", 8, "sacrifice, wash Of twelve", "sacrifice, wash. Of twelve"),
+    # The apocrypha volume is an OCR'd scan: S read as 5 in names, I as 1
+    # or l, l as I or L, a closing quote as II or 11, O as a, and words split
+    # by a space ("W rite"). Each checked against the page.
+    ("apoc-1esdras", "2", 26, "\"1 have read", "\"I have read"),
+    ("apoc-1esdras", "7", 1, "Then 5isinnes", "Then Sisinnes"),
+    ("apoc-1esdras", "7", 1, "and 5athrabuzanes", "and Sathrabuzanes"),
+    ("apoc-1esdras", "8", 1, "son of5hallum", "son of Shallum"),
+    ("apoc-1esdras", "8", 54, "kohanim, 5herebiah", "kohanim, Sherebiah"),
+    ("apoc-1esdras", "1", 30, "from the battIe,", "from the battle,"),
+    ("apoc-1esdras", "1", 30, "line of battIe.", "line of battle."),
+    ("apoc-tobit", "1", 18, "if 5ennacherib", "if Sennacherib"),
+    ("apoc-tobit", "5", 13, "great 5hemaiah", "great Shemaiah"),
+    ("apoc-tobit", "2", 4, "50 before I tasted", "So before I tasted"),
+    ("apoc-tobit", "3", 7, "father's maidsJ", "father's maids,"),
+    ("apoc-2maccabees", "4", 26, "50 Yason, who", "So Yason, who"),
+    ("apoc-2maccabees", "4", 31, "50 the king went", "So the king went"),
+    ("apoc-2maccabees", "6", 25, "my oid age", "my old age"),
+    ("apoc-2maccabees", "6", 27, "my oid age", "my old age"),
+    ("apoc-2maccabees", "7", 11, "back again.11", "back again.\""),
+    ("apoc-2maccabees", "11", 30, "Xanthic us", "Xanthicus"),
+    ("apoc-4maccabees", "5", 33, "my oid age", "my old age"),
+    ("apoc-4maccabees", "5", 36, "my oid age", "my old age"),
+    ("apoc-jubilees", "42", 11, "my oId age", "my old age"),
+    ("apoc-sirach", "28", 2, "stones, 50 sin i5 wedged", "stones, so sin is wedged"),
+    ("apoc-sirach", "25", 13, "grew taIl like", "grew tall like"),
+    ("apoc-sirach", "25", 14, "grew taIl like", "grew tall like"),
+    ("apoc-sirach", "25", 14, "I grew talL", "I grew tall."),
+    ("apoc-sirach", "35", 26, "who wiIl listen", "who will listen"),
+    ("apoc-1maccabees", "1", 18, "wounded and felL", "wounded and fell."),
+    ("apoc-1maccabees", "1", 33, "their citadeL", "their citadel."),
+    ("apoc-2esdras", "7", 132, "\"1 know,", "\"I know,"),
+    ("apoc-2esdras", "8", 45, "own creation. II", "own creation.\""),
+    ("apoc-2esdras", "8", 46, "said, IIThings", "said, \"Things"),
+    ("apoc-2esdras", "8", 62, "like you.1I Then", "like you.\" Then"),
+    ("apoc-2esdras", "8", 63, "IIBehold", "\"Behold"),
+    ("apoc-2esdras", "11", 45, "littIe wings", "little wings"),
+    ("apoc-3maccabees", "1", 9, "excelIence", "excellence"),
+    ("apoc-3maccabees", "3", 24, "are iIl disposed", "are ill disposed"),
+    ("apoc-wisdom", "2", 22, "blameless souIs", "blameless souls"),
+    ("apoc-eth-enoch", "16", 4, "shalom.\"1", "shalom.\""),
+    ("apoc-eth-enoch", "52", 2, "soft meta1,", "soft metal,"),
+    ("apoc-eth-enoch", "52", 6, "soft meta1,", "soft metal,"),
+    ("apoc-hermas", "10", 1, "say 1. \"Listen", "say I. \"Listen"),
+    ("apoc-hermas", "30", 1, "and 1 apprehend", "and I apprehend"),
+    ("apoc-hermas", "31", 1, "Sir,\" say 1, \"from", "Sir,\" say I, \"from"),
+    ("apoc-hermas", "31", 7, "\"1 was quickened", "\"I was quickened"),
+    ("apoc-hermas", "35", 1, "say 1. \"But now", "say I. \"But now"),
+    ("apoc-hermas", "38", 5, "say 1. \"Aye", "say I. \"Aye"),
+    ("apoc-hermas", "46", 1, "\"1 would fain", "\"I would fain"),
+    ("apoc-hermas", "58", 1, "\"1 told you", "\"I told you"),
+    ("apoc-hermas", "92", 1, "\"H ear,\"", "\"Hear,\""),
+    ("apoc-jubilees", "1", 22, "\"1 know their", "\"I know their"),
+    ("apoc-jubilees", "1", 27, "\"W rite for", "\"Write for"),
+    ("apoc-jubilees", "12", 17, "he said, U All", "he said, \"All"),
+    ("apoc-jubilees", "14", 7, "\"1 am <span", "\"I am <span"),
+    ("apoc-jubilees", "35", 21, "\"1 will do all", "\"I will do all"),
+    ("apoc-jubilees", "35", 26, "\"1 shall do your", "\"I shall do your"),
+    ("apoc-jubilees", "43", 11, "\"a my master", "\"O my master"),
+    # "Lord" (and once "lord's") said to a man, not to Yahuah, was carried
+    # over as the Name: Terah to Nimroḏ, Sarai of Aḇram, Ya'aqoḇ to Ĕsaw,
+    # Yahuḏah to Yoseph. Lowercase lord is master (CLAUDE.md rule 3).
+    ("apoc-jubilees", "43", 11, "in my <span class=\"dn\">Yahuah</span>'s ear", "in my master's ear"),
+    ("yashar", "8", 17, "My <span class=\"dn\">Yahuah</span> and king", "My master and king"),
+    ("yashar", "12", 52, "my <span class=\"dn\">Yahuah</span> and king", "my master and king"),
+    ("yashar", "15", 17, "my <span class=\"dn\">Yahuah</span> Aḇram", "my master Aḇram"),
+    ("yashar", "18", 35, "Not so my <span class=\"dn\">Yahuah</span>,", "Not so my master,"),
+    ("yashar", "26", 2, "my <span class=\"dn\">Yahuah</span> Aḇraham", "my master Aḇraham"),
+    ("yashar", "26", 28, "That which my <span class=\"dn\">Yahuah</span> has", "That which my master has"),
+    ("yashar", "32", 69, "my <span class=\"dn\">Yahuah</span>'s place", "my master's place"),
 ]
+
+# (book, chapter, verse) — R. H. Charles prints the Testaments' verse numbers
+# in the margin, against the LINE a verse begins on, and the scan set them
+# inline ("till he was 5 sold to the Ishmaelites. And when Re'uḇen came").
+# reextract_testaments.py snaps each number to the nearest sentence break;
+# it took only the exact next number, so where the scan lost one (Zebulun
+# 4:4) every number after it was refused and the chapter ran together.
+# These verses are split with the same snapping, allowing one lost number.
+# Where the scan lost a margin number the verses stay together; those gaps
+# are listed in audit_structure.py.
+MARGIN_SPLITS = [
+    ("testament-zebulun", "4", 3), ("testament-dan", "3", 1),
+    ("testament-levi", "3", 5), ("testament-levi", "9", 8),
+    ("testament-yahudah", "7", 4), ("testament-yahudah", "10", 3),
+    ("testament-yahudah", "13", 3), ("testament-issakar", "2", 3),
+]
+_MARGIN = re.compile(r"\s(\d{1,2})(?:,\s?(\d{1,2}))?(,?)(?=\s)")
 
 # (book, chapter, verse, true ending) — the extractor read past a book's last
 # verse into the pages printed after it (a study essay, the "Ten Words" back
@@ -253,6 +354,24 @@ PATCHES = [
 TRUNCATES = [
     ("hazon", "22", 21, "qadashiyms (Set Apart Ones). Amĕn."),
     ("2dibre-hayamim", "36", 23, "let him go up!’ ”"),
+    # A study note set inside the verse ("This has not been filled yet but
+    # this prophesy …") — the editor's voice, not the prophet's.
+    ("yashayahu", "11", 11, "from the islands of the sea."),
+    # The PRINT sets the end of 18:33 here, after 18:22 (see COMPLETES).
+    ("2dibre-hayamim", "18", 22, "has spoken evil concerning you.”"),
+    # Page apparatus run on at a verse end: a running head ("IMacA",
+    # "Mandate S", "Parables Which He spoke With Me"), a section title page
+    # (Chanok's "Book 2: The Parables" ...), a stray margin "3" left by the
+    # 9:31 split, and the closing "THE END".
+    ("apoc-1maccabees", "3", 60, "so he will do.\""),
+    ("apoc-hermas", "32", 4, "walk in this purity.\""),
+    ("apoc-hermas", "49", 5, "shall live unto <span class=\"dn\">Aluahim</span>.\""),
+    ("chanok", "7", 68, "bless Him for ever."),
+    ("chanok", "9", 30, "Ruchot be baruk."),
+    ("chanok", "10", 80, "committing sin.\""),
+    ("chanok", "19", 152, "seen that vision."),
+    ("chanok", "14", 27, "strong before <span class=\"dn\">Yahuah</span> of Ruchot."),
+    ("yashar", "91", 17, "<span class=\"dn\">Yahuah</span> be of good courage."),
 ]
 
 # (book, chapter, verse number, verse text) — the printing omits the verse;
@@ -439,6 +558,46 @@ def main():
             save(p, d)
             changed += 1
             print(f"  patch {bid} {cn}:{n}")
+
+    for bid, cn, n in MARGIN_SPLITS:
+        p, d = load(bid)
+        vs = d["chapters"][cn]["verses"]
+        v = next(x for x in vs if x["n"] == n)
+        t, last, marks = v["t"], n, []
+        for m in _MARGIN.finditer(t):
+            nums = [int(m.group(1))] + ([int(m.group(2))] if m.group(2) else [])
+            if not (last < nums[0] <= last + 2):
+                continue
+            marks.append((m.start(), m.end(), nums))
+            last = nums[-1]
+        if not marks:
+            continue                          # already split
+        clean, at, pos = "", 0, []
+        for a, b, nums in marks:
+            clean += t[at:a] + " "
+            pos += [(k, len(clean)) for k in nums]
+            at = b
+        clean = re.sub(r"\s+", " ", clean + t[at:])
+        # the same snapping the Testaments extractor uses for every other
+        # verse: the nearest sentence boundary, before or after the number
+        starts = _T._sentence_starts(clean)
+        cuts, floor = [], 0
+        for k, i in pos:
+            cut = _T._snap(starts, i, floor)
+            if cut <= floor:
+                continue                      # shares a sentence; no split
+            cuts.append((k, cut))
+            floor = cut
+        bounds = [(n, 0)] + cuts
+        new = []
+        for i, (k, cut) in enumerate(bounds):
+            end = bounds[i + 1][1] if i + 1 < len(bounds) else len(clean)
+            new.append({"n": k, "t": clean[cut:end].strip()})
+        at = vs.index(v)
+        vs[at:at + 1] = new
+        save(p, d)
+        changed += 1
+        print(f"  margin-split {bid} {cn}:{n} -> {[k for k, _ in cuts]}")
 
     for bid, cn, n, ending in TRUNCATES:
         p, d = load(bid)

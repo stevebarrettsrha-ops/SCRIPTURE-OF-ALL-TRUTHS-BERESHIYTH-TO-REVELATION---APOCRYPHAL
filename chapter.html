@@ -9,14 +9,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Chapter — The Besorah</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%231a1410%22%2F%3E%3Cpath%20d%3D%22M8%207h16v18H8z%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M16%207v18M11%2012h3M18%2012h3M11%2017h3M18%2017h3%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- The reader is meant to work with no network at all, so the web font
-     is loaded without blocking the page: the local Cardo/Garamond/Palatino
-     fallback shows immediately and the web font swaps in if it arrives. -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
 <link rel="stylesheet" href="assets/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<!-- Theme, text size and reading mode are applied before first paint, so a
+     reader who chose Light never sees a flash of Dark (assets/besorah-ui.js). -->
+<script>(function(){try{var p=JSON.parse(localStorage.getItem("besorah-prefs")||"{}"),d=document.documentElement;d.setAttribute("data-theme",p.theme||"auto");if(p.size)d.style.setProperty("--fs",p.size);if(p.compact)d.classList.add("compact-reading")}catch(e){}})();</script>
+<script src="assets/besorah-ui.js"></script>
+
 <script src="assets/besorah-ids.js"></script>
 <script src="assets/words.js"></script>
 <script src="assets/pronunciation.js"></script>
@@ -34,16 +34,20 @@
 
 <div class="chapter-bar">
   <div class="title">
-    <a href="index.html" title="Home" style="margin-right:0.4rem;">⌂</a>
-    <a href="books.html" title="All books" style="margin-right:0.6rem;">&larr;</a>
-    <span class="heb" id="bar-heb">…</span>
-    <span class="eng" id="bar-eng"></span>
-    <span id="bar-ch" style="margin-left:0.6rem; color: var(--ink-dim);"></span>
+    <a href="index.html" title="Home" aria-label="Home" style="margin-right:0.4rem;">⌂</a>
+    <a href="books.html" title="All books" aria-label="All books" style="margin-right:0.6rem;">&larr;</a>
+    <button type="button" class="qp-btn" data-ui-picker aria-haspopup="dialog"
+            title="Go to a book and chapter" aria-label="Go to a book and chapter">
+      <span class="heb" id="bar-heb">…</span>
+      <span class="eng" id="bar-eng"></span>
+      <span id="bar-ch"></span><span class="qp-caret" aria-hidden="true">▾</span>
+    </button>
+    <a href="search.html" class="bar-search" title="Search the scriptures" aria-label="Search the scriptures">🔍</a>
   </div>
   <div class="controls">
     <a id="prev" href="#">&larr; Prev</a>
     <a id="book-toc" href="#">Chapters</a>
-    <a id="pdf-link" href="#" target="_blank" title="Open original PDF page">PDF</a>
+    <a id="pdf-link" href="#" target="_blank" title="Open original PDF page" aria-label="Open the original PDF page">PDF</a>
     <button id="bookmark-btn" class="btn" type="button" title="Bookmark this chapter" aria-pressed="false">☆</button>
     <a id="next" href="#">Next &rarr;</a>
   </div>
@@ -57,9 +61,11 @@
     <div class="chapter-num" id="ch-num"></div>
     <div id="verses" class="verses"></div>
     <p class="note" id="loading">Loading chapter…</p>
-    <p class="note mark-hint">Touch any verse to mark it or start the reader
-      there. Select words first to mark just those — everything you mark is
-      gathered on the <a href="index.html">home page</a>.</p>
+    <p class="note mark-hint">Touch any verse to mark, copy or share it, or
+      start the reader there. Select words first to mark just those —
+      everything you mark is gathered on the <a href="index.html">home
+      page</a>. Tap a dotted Hebrew word for its meaning; turn chapters with
+      ← → or a swipe.</p>
   </div>
 </main>
 
@@ -137,9 +143,12 @@ function renderVerseText(raw) {
     .replace(/>/g, '&gt;');
   // Un-escape only the whitelisted tags, opening and closing handled
   // separately so a footnote containing a divine name still renders.
-  return esc
+  const html = esc
     .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
     .replace(/&lt;\/span&gt;/g, '</span>');
+  // Names, glosses and Hebrew words get their spans (assets/besorah-ui.js)
+  // for the compact reading mode and the tap-to-reveal glossary.
+  return window.BesorahUI ? BesorahUI.decorate(html) : html;
 }
 
 function loadChapter(state) {
@@ -187,6 +196,7 @@ function loadChapter(state) {
 
       // Bookmark + last-read tracking (localStorage; nothing leaves the device)
       BesorahMarks.recordLastRead(book, chapter);
+      if (window.BesorahUI) BesorahUI.chapterRendered(book, chapter);
       // A fresh clone of the button each render, so in-place page turns do
       // not stack click handlers still wired to earlier chapters.
       const staleBtn = document.getElementById('bookmark-btn');

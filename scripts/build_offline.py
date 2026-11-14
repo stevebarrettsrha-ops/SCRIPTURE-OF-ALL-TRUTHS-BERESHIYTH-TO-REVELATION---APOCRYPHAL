@@ -27,6 +27,9 @@ IDS_JS_PATH = ROOT / "assets" / "besorah-ids.js"
 WORDS_JS_PATH = ROOT / "assets" / "words.js"
 PRON_JS_PATH = ROOT / "assets" / "pronunciation.js"
 FS_JS_PATH = ROOT / "assets" / "besorah-fullscreen.js"
+UI_JS_PATH = ROOT / "assets" / "besorah-ui.js"
+SEARCH_JS_PATH = ROOT / "assets" / "besorah-search.js"
+FONT_DIR = ROOT / "assets" / "fonts"
 DAILY_PATH = ROOT / "assets" / "daily-bread.json"
 OUTPUT = ROOT / "besorah-offline.html"
 
@@ -45,7 +48,14 @@ def load_all_text():
 
 
 def load_style():
-    return STYLE_PATH.read_text(encoding="utf-8")
+    """The stylesheet, with the bundled Cardo inlined as data: URIs so the
+    single file needs neither the fonts folder nor a font service."""
+    import base64
+    css = STYLE_PATH.read_text(encoding="utf-8")
+    def inline(m):
+        data = (FONT_DIR / m.group(1)).read_bytes()
+        return 'url("data:font/woff2;base64,' + base64.b64encode(data).decode() + '")'
+    return re.sub(r'url\("fonts/([^"]+\.woff2)"\)', inline, css)
 
 
 def escape_script_close(js):
@@ -69,6 +79,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>The Besorah — Offline</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%231a1410%22%2F%3E%3Cpath%20d%3D%22M8%207h16v18H8z%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M16%207v18M11%2012h3M18%2012h3M11%2017h3M18%2017h3%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem("besorah-prefs")||"{}"),d=document.documentElement;d.setAttribute("data-theme",p.theme||"auto");if(p.size)d.style.setProperty("--fs",p.size);if(p.compact)d.classList.add("compact-reading")}catch(e){}})();</script>
 <style>
 __STYLE__
 /* Offline-only tweaks */
@@ -79,7 +90,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 #view-chapter.active { display: flex; }
 #view-chapter > main { flex: 1 1 auto; }
 .offline-banner {
-  background: #2c211a;
+  background: var(--panel-hi);
   color: var(--ink-dim);
   text-align: center;
   font-size: 0.78rem;
@@ -96,7 +107,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
   <header class="site-header">
     <h1>THE BESORAH</h1>
     <div class="sub">Bereshith &mdash; to &mdash; Ḥazon &mdash; with the Apocrypha</div>
-    <nav><a href="#/books">All 104 Books &rarr;</a></nav>
+    <nav><a href="#/books">All 104 Books &rarr;</a><a href="#/search">Search</a></nav>
   </header>
   <main class="home">
     <section class="card daily-card" id="daily-card"></section>
@@ -121,9 +132,20 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
     <nav><a href="#/">&larr; Home</a></nav>
   </header>
   <main>
-    <input type="search" id="search" placeholder="Search for a book (Hebrew or English name)…" autocomplete="off">
+    <input type="search" id="search" placeholder="Search for a book (Hebrew or English name)…" autocomplete="off" aria-label="Search for a book by name">
+    <p class="search-inside"><a href="#/search">Search inside the text — find a verse or phrase &rarr;</a></p>
     <div id="content"></div>
   </main>
+</div>
+
+<!-- ============ SEARCH VIEW ============ -->
+<div id="view-search" class="view">
+  <header class="site-header">
+    <h1>THE BESORAH</h1>
+    <div class="sub">Search the Scriptures</div>
+    <nav><a href="#/">&larr; Home</a><a href="#/books">All 104 Books</a></nav>
+  </header>
+  <main class="search-main"><div id="search-box"></div></main>
 </div>
 
 <!-- ============ BOOK VIEW ============ -->
@@ -146,16 +168,20 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 <div id="view-chapter" class="view">
   <div class="chapter-bar">
     <div class="title">
-      <a href="#/" title="Home" style="margin-right:0.4rem;">⌂</a>
-      <a href="#/books" title="All books" style="margin-right:0.6rem;">&larr;</a>
-      <span class="heb" id="bar-heb">…</span>
-      <span class="eng" id="bar-eng"></span>
-      <span id="bar-ch" style="margin-left:0.6rem; color: var(--ink-dim);"></span>
+      <a href="#/" title="Home" aria-label="Home" style="margin-right:0.4rem;">⌂</a>
+      <a href="#/books" title="All books" aria-label="All books" style="margin-right:0.6rem;">&larr;</a>
+      <button type="button" class="qp-btn" data-ui-picker aria-haspopup="dialog"
+              title="Go to a book and chapter" aria-label="Go to a book and chapter">
+        <span class="heb" id="bar-heb">…</span>
+        <span class="eng" id="bar-eng"></span>
+        <span id="bar-ch"></span><span class="qp-caret" aria-hidden="true">▾</span>
+      </button>
+      <a href="#/search" class="bar-search" title="Search the scriptures" aria-label="Search the scriptures">🔍</a>
     </div>
     <div class="controls">
       <a id="prev" href="#">&larr; Prev</a>
       <a id="book-toc" href="#">Chapters</a>
-      <a id="pdf-link" href="#" target="_blank" title="Open original PDF page">PDF</a>
+      <a id="pdf-link" href="#" target="_blank" title="Open original PDF page" aria-label="Open the original PDF page">PDF</a>
       <button id="bookmark-btn" class="btn" type="button" title="Bookmark this chapter" aria-pressed="false">☆</button>
       <a id="next" href="#">Next &rarr;</a>
     </div>
@@ -168,9 +194,11 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
       <div class="chapter-num" id="ch-num"></div>
       <div id="verses" class="verses"></div>
       <p class="note" id="loading" style="display:none;">Loading chapter…</p>
-      <p class="note mark-hint">Touch any verse to mark it or start the reader
-        there. Select words first to mark just those — everything you mark is
-        gathered on the <a href="#/">home page</a>.</p>
+      <p class="note mark-hint">Touch any verse to mark, copy or share it, or
+        start the reader there. Select words first to mark just those —
+        everything you mark is gathered on the <a href="#/">home page</a>.
+        Tap a dotted Hebrew word for its meaning; turn chapters with ← → or a
+        swipe.</p>
     </div>
   </main>
   <footer class="chapter-footer">
@@ -198,6 +226,32 @@ __PRON_JS__
 </script>
 <script>
 __FS_JS__
+</script>
+
+<!-- ============ READING SETTINGS, GLOSSARY, PICKER, SEARCH ============ -->
+<script>
+// This edition describes itself to assets/besorah-ui.js: hash routes and
+// the index bundled above instead of fetches.
+window.BesorahEnv = (function () {
+  var idx = null;
+  return {
+    offline: true,
+    getIndex: function () {
+      if (!idx) idx = JSON.parse(document.getElementById('index-data').textContent);
+      return Promise.resolve(idx);
+    },
+    chapterUrl: function (id, ch, v) {
+      return '#/book/' + encodeURIComponent(id) + '/' + ch + (v ? '/v/' + v : '');
+    },
+    searchUrl: function (q) { return '#/search' + (q ? '?q=' + encodeURIComponent(q) : ''); }
+  };
+})();
+</script>
+<script>
+__UI_JS__
+</script>
+<script>
+__SEARCH_JS__
 </script>
 
 <!-- ============ MARKS LIBRARY ============ -->
@@ -258,6 +312,8 @@ __HOME_JS__
     });
   }
 
+  let searchUi = null;
+
   // ---------- ROUTING ----------
   function show(viewId) {
     for (const v of document.querySelectorAll('.view')) v.classList.remove('active');
@@ -274,6 +330,23 @@ __HOME_JS__
     //   #/book/<id>/<ch>                -> chapter view
     //   #/book/<id>/<ch>/v/<n>          -> chapter view, scrolled to verse n
     //   #/book/<id>/<ch>/m/<markId>     -> chapter view, scrolled to a mark
+    const sq = h.match(/^#\/search(?:\?q=(.*))?$/);
+    if (sq) {
+      const q = sq[1] ? decodeURIComponent(sq[1]) : '';
+      if (!searchUi) {
+        searchUi = BesorahSearch.mount(document.getElementById('search-box'), {
+          query: q,
+          getIndex: () => Promise.resolve(INDEX),
+          getBook: id => Promise.resolve(TEXT[id]),
+          chapterUrl: (id, c, v) => chapterUrl(id, c, v),
+          // Keep the query in the address without adding history entries.
+          onQuery: q2 => history.replaceState(null, '', '#/search' + (q2 ? '?q=' + encodeURIComponent(q2) : ''))
+        });
+      }
+      show('view-search');
+      searchUi.focus();
+      return;
+    }
     if (/^#\/books\/?$/.test(h)) {
       renderIndex(document.getElementById('search').value);
       show('view-index');
@@ -392,9 +465,10 @@ __HOME_JS__
     const esc = fixed.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     // Un-escape only the whitelisted tags, opening and closing handled
     // separately so a footnote containing a divine name still renders.
-    return esc
+    const html = esc
       .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
       .replace(/&lt;\/span&gt;/g, "</span>");
+    return window.BesorahUI ? BesorahUI.decorate(html) : html;
   }
 
   function setLink(elId, href, disabled) {
@@ -445,6 +519,7 @@ __HOME_JS__
 
     // Bookmark + last-read tracking (localStorage; nothing leaves the device)
     BesorahMarks.recordLastRead(book, chapter);
+    if (window.BesorahUI) BesorahUI.chapterRendered(book, chapter);
     BesorahMarks.wireBookmarkButton(
       document.getElementById('bookmark-btn'), book, chapter
     );
@@ -514,6 +589,8 @@ def main():
     words_js = WORDS_JS_PATH.read_text(encoding="utf-8")
     pron_js = PRON_JS_PATH.read_text(encoding="utf-8")
     fs_js = FS_JS_PATH.read_text(encoding="utf-8")
+    ui_js = UI_JS_PATH.read_text(encoding="utf-8")
+    search_js = SEARCH_JS_PATH.read_text(encoding="utf-8")
 
     index_json = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
     text_json = json.dumps(text, ensure_ascii=False, separators=(",", ":"))
@@ -551,6 +628,8 @@ def main():
         .replace("__WORDS_JS__", words_js_safe)
         .replace("__PRON_JS__", pron_js_safe)
         .replace("__FS_JS__", fs_js_safe)
+        .replace("__UI_JS__", escape_script_close(ui_js))
+        .replace("__SEARCH_JS__", escape_script_close(search_js))
     )
 
     OUTPUT.write_text(html, encoding="utf-8")

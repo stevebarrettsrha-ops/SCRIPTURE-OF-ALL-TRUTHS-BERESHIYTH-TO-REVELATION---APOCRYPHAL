@@ -50,9 +50,11 @@
       .replace(/>/g, "&gt;");
     // Un-escape only the whitelisted tags, opening and closing handled
     // separately so a footnote containing a divine name still renders.
-    return esc
+    var html = esc
       .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
       .replace(/&lt;\/span&gt;/g, "</span>");
+    // Compact reading and the glossary, as on the chapter page.
+    return global.BesorahUI ? global.BesorahUI.decorate(html) : html;
   }
 
   function plain(raw) {

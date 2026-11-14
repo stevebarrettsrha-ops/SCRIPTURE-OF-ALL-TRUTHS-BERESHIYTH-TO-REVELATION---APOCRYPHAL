@@ -30,8 +30,8 @@
       !global.history || !history.pushState ||
       !Element.prototype.closest) return;
 
-  var PAGES = ["index.html", "books.html", "book.html", "chapter.html"];
-  var KEEP = ".fs-btn, .mark-pop";
+  var PAGES = ["index.html", "books.html", "book.html", "chapter.html", "search.html"];
+  var KEEP = ".fs-btn, .mark-pop, .ui-btn, .ui-panel, .ui-pop, .ui-toast, .qp-panel";
   var dir = location.pathname.replace(/[^/]*$/, "");
 
   // Where we are, ignoring the hash — used to tell a hash-only history
