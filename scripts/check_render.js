@@ -52,7 +52,9 @@ for (const book of index.books) {
   for (const [cn, ch] of Object.entries(data.chapters)) {
     chapters++;
     if (!ch.verses || !ch.verses.length) { failures.push([book.id, cn, 'no verses']); continue; }
-    for (const v of ch.verses) {
+    // A book's unnumbered opening is rendered and checked like a verse.
+    const rows = ch.intro ? [{ n: 'intro', t: ch.intro }, ...ch.verses] : ch.verses;
+    for (const v of rows) {
       verses++;
       const html = renderVerseText(v.t);
       // What the reader actually sees, once the markup is drawn.

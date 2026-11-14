@@ -236,6 +236,14 @@ function loadChapter(state) {
           para.innerHTML = renderVerseText(verses[0].t);
           out.appendChild(para);
         } else {
+          // An opening the book prints before verse 1, unnumbered (the
+          // superscription of Jubilees, the salutation of 1 Clement).
+          if (ch.intro) {
+            const intro = document.createElement('p');
+            intro.className = 'intro';
+            intro.innerHTML = renderVerseText(ch.intro);
+            out.appendChild(intro);
+          }
           for (const v of verses) {
             const p = document.createElement('p');
             p.className = 'verse';

@@ -1174,3 +1174,7 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
 .ui-save { width: 100%; font-family: inherit; font-size: 0.9rem; cursor: pointer;
   background: var(--bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; padding: 0.5rem; }
 .ui-save-row[hidden] { display: none; }
+
+/* A book's unnumbered opening, above verse 1 (Jubilees, 1 Clement). */
+.verses .intro { font-style: italic; color: var(--ink-dim); margin: 0 0 1.2rem;
+  padding: 0 0 0.9rem; border-bottom: 1px solid var(--rule); line-height: 1.7; }

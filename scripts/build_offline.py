@@ -541,6 +541,13 @@ __HOME_JS__
       p.innerHTML = renderVerseText(verses[0].t);
       verseBox.appendChild(p);
     } else {
+      // An opening the book prints before verse 1, unnumbered.
+      if (ch.intro) {
+        const intro = document.createElement('p');
+        intro.className = 'intro';
+        intro.innerHTML = renderVerseText(ch.intro);
+        verseBox.appendChild(intro);
+      }
       for (const v of verses) {
         const p = document.createElement('p');
         p.className = 'verse';

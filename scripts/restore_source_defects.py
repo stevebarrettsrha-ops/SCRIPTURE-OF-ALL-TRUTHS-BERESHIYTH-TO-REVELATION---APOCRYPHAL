@@ -347,6 +347,18 @@ MARGIN_SPLITS = [
 ]
 _MARGIN = re.compile(r"\s(\d{1,2})(?:,\s?(\d{1,2}))?(,?)(?=\s)")
 
+# (book, chapter, text) — an opening the source prints before verse 1 with
+# no number of its own: the superscription of Jubilees (Lumpkin p. 478)
+# and the salutation of 1 Clement ("1Clem prologue:1", p. 582). Kept as the
+# chapter's "intro" and shown unnumbered above verse 1; transliterated and
+# word-formed exactly as the verses are.
+INTROS = [
+    ("apoc-jubilees", "1",
+     "This is the history of how the days were divided and of the days of the law and of the eduth, of the events of the years, and of the weeks of years, of their Yobelim throughout all the years of the world, as <span class=\"dn\">Yahuah</span> spoke to Mosheh on Mount Sinai when he went up to receive the tablets of the law and the mitsvah, according to the voice of <span class=\"dn\">Aluahim</span> when he said to him, \"Go up to the top of the Mount.\""),
+    ("apoc-1clements", "1",
+     "The Church of <span class=\"dn\">Aluahim</span> which sojourns in Rome to the Church of <span class=\"dn\">Aluahim</span> which sojourns in Corinth, to them which are called and qadash (Set Apart) by the will of <span class=\"dn\">Aluahim</span> through our <span class=\"dn\">Yahuah</span> <span class=\"dn\">Yahusha haMashiach</span>. Chen to you and shalom from Almighty <span class=\"dn\">Aluahim</span> through <span class=\"dn\">Yahusha haMashiach</span> be multiplied."),
+]
+
 # (book, chapter, verse, true ending) — the extractor read past a book's last
 # verse into the pages printed after it (a study essay, the "Ten Words" back
 # page) and ran them on as part of the verse. Everything after the true
@@ -359,6 +371,13 @@ TRUNCATES = [
     ("yashayahu", "11", 11, "from the islands of the sea."),
     # The PRINT sets the end of 18:33 here, after 18:22 (see COMPLETES).
     ("2dibre-hayamim", "18", 22, "has spoken evil concerning you.”"),
+    # Lumpkin sets New Testament cross-references inline after these Enoch
+    # verses ("JOH 17:24 Father, I will…"); they are his apparatus, not
+    # Enoch's words.
+    ("apoc-eth-enoch", "71", 15, "for ever and for ever and ever."),
+    ("apoc-eth-enoch", "71", 17, "of ruchot for ever and ever.'"),
+    ("apoc-eth-enoch", "100", 3, "submerged to its height."),
+    ("apoc-eth-enoch", "108", 12, "on the throne of his esteem."),
     # Page apparatus run on at a verse end: a running head ("IMacA",
     # "Mandate S", "Parables Which He spoke With Me"), a section title page
     # (Chanok's "Book 2: The Parables" ...), a stray margin "3" left by the
@@ -598,6 +617,15 @@ def main():
         save(p, d)
         changed += 1
         print(f"  margin-split {bid} {cn}:{n} -> {[k for k, _ in cuts]}")
+
+    for bid, cn, text in INTROS:
+        p, d = load(bid)
+        ch = d["chapters"][cn]
+        if ch.get("intro") != text:
+            ch["intro"] = text
+            save(p, d)
+            changed += 1
+            print(f"  intro {bid} {cn}")
 
     for bid, cn, n, ending in TRUNCATES:
         p, d = load(bid)

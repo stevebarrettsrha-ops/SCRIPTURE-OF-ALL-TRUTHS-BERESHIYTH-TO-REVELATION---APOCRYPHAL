@@ -427,6 +427,14 @@ apocrypha against their PDFs then fixed 72 scan misreads ("5ennacherib",
 "oid age", "1 have"), running heads and title pages run into verses, and
 seven more places where a man's "lord" had become the Name.
 
+Two openings the source prints before verse 1, with no number of their own
+— the superscription of Jubilees and the salutation of 1 Clement — are kept
+as the chapter's `intro` (the `INTROS` table) and shown unnumbered, in
+italic, above verse 1; `check_render.js` checks them like verses. And
+Lumpkin's inline New Testament cross-references in Ḥanoḵ (Ethiopic) 71:15,
+71:17, 100:3 and 108:12 ("JOH 17:24 …", "HEB 4:3 …") are cut: they are his
+apparatus, not Enoch's words.
+
 A third pass then went after the vouched list itself, and closed every gap
 whose words could honestly be recovered. Seven turned out to be merges the
 scan had hidden — the "missing" verse's words were sitting inside the verse
