@@ -124,6 +124,135 @@ COMPLETES = [
      " THE MOTHER OF THE WHORES AND OF THE ABOMINATIONS OF"),
     ("hazon", "19", 16, "a Name written: SOVEREIGN",
      " OF SOVEREIGNS AND MASTER OF"),
+    # A line lost where a verse crosses a page or column: the first line of
+    # the page after the running header, or one line of a two-column page
+    # shuffled into the other column. Verbatim from the source page.
+    ("bamidbar", "16", 5, "“Tomorrow morning",
+     " (<span class=\"dn\">YAHUAH</span>) <span class=\"hwhy\">HWHY</span> shall make known who is His"),
+    ("bereshith", "22", 9, "to the place which",
+     " <span class=\"dn\">Aluahim</span> had commanded him and"),
+    ("bereshith", "37", 2, "with his brothers.",
+     " And the young man was with the sons"),
+    ("wayyiqra", "13", 6, "pronounce him clean.",
+     " It is a scab and he shall wash his"),
+    ("dabarim", "12", 18, "within your gates.",
+     " And you shall rejoice before (<span class=\"dn\">YAHUAH</span>) <span class=\"hwhy\">HWHY</span>"),
+    ("yahusha", "2", 1, "and Yahriḥo.”",
+     " And they went and came to the house"),
+    ("yahusha", "10", 34, "to Eḡlon.",
+     " And they encamped against it and"),
+    ("yahusha", "21", 32, "slayer and",
+     " Ḥammoth Dor with its open land and"),
+    ("shophetim", "18", 23, "the children of Dan.",
+     " So they turned around and said to"),
+    ("1shamual", "15", 1, "said to Sha’ul,",
+     " “(<span class=\"dn\">YAHUAH</span>) <span class=\"hwhy\">HWHY</span> sent me to anoint you"),
+    ("1malakim", "4", 33, "out of the wall.",
+     " And he spoke of beasts and of birds"),
+    ("1malakim", "7", 40, "and the bowls.",
+     " And Ḥiram completed doing all the"),
+    ("1malakim", "10", 22, "fleet of Ḥiram.",
+     " Once every three years the ships of"),
+    ("2malakim", "15", 25, "fifty men of Gil‛aḏ.",
+     " So he killed him and reigned in his"),
+    ("yashayahu", "33", 6, "and knowledge.",
+     " The fear of (<span class=\"dn\">YAHUAH</span>) <span class=\"hwhy\">HWHY</span> – that is His"),
+    ("yashayahu", "40", 4, "hill made low.",
+     " And the steep ground shall become"),
+    ("yirmayahu", "7", 10, "stood before",
+     " Me in this house which is called by"),
+    ("yirmayahu", "15", 15, "<span class=\"hwhy\">HWHY</span>.",
+     " Remember me and visit me and"),
+    ("habaqquq", "2", 6, "and say,",
+     " ‘Woe to him who increases what is"),
+    ("tehillim", "3", 7, "O my <span class=\"dn\">Aluahim</span>!",
+     " Because You have smitten all my"),
+    ("tehillim", "8", 1, "in all the earth,",
+     " You who set Your splendour above"),
+    ("tehillim", "31", 11, "a dread to my friends;",
+     " Those who see me outside flee from"),
+    ("tehillim", "37", 35, "in great power,",
+     " And spreading himself"),
+    ("tehillim", "55", 4, "pained within me,",
+     " And the frights of death"),
+    ("tehillim", "69", 5, "my foolishness;",
+     " And my guilt has not been hidden"),
+    ("tehillim", "81", 14, "at once,",
+     " And turn My hand against their"),
+    ("tehillim", "86", 4, "the being of Your",
+     " servant, For to You, O (<span class=\"dn\">YAHUAH</span>) <span class=\"hwhy\">HWHY</span>, I lift up my being."),
+    ("tehillim", "99", 6, "upon His Name.",
+     " They called upon (<span class=\"dn\">YAHUAH</span>) <span class=\"hwhy\">HWHY</span>"),
+    ("tehillim", "107", 42, "see and rejoice,",
+     " And all unrighteousness shuts its"),
+    ("tehillim", "109", 15, "<span class=\"hwhy\">HWHY</span>,",
+     " And let Him cut off their"),
+    ("tehillim", "146", 9, "fatherless and widow,",
+     " But the way of the wrong ones"),
+    ("mishle", "25", 1, "proverbs of",
+     " Shelomoh which the men of"),
+    ("mishle", "25", 28, "over his ruach",
+     " Is like a broken-down city"),
+    ("mishle", "31", 3, "to women,",
+     " Nor your ways to wiping"),
+    ("ekah", "2", 2, "down to the ground.",
+     " He has profaned the reign and its"),
+    ("nehemyah", "3", 30, "repaired another section.",
+     " After him Meshullam son of Bereḵyah"),
+    ("2dibre-hayamim", "21", 2, "the sons of",
+     " Yahhoshaphat: Azaryahu and Yahḥi’al and Zaḵaryahu and Azaryahu and Miḵa’al"),
+]
+
+
+# (book, chapter, verse) — a run of verses the source prints with a double
+# number, "36(106)", which the extractor did not take for markers, so the
+# whole run sits inside one verse. Split at each marker, numbered by the
+# number in brackets (2 Esdras 7 continues 106–140 after the restored
+# fragment, as the NRSV prints it).
+UNMERGES = [
+    ("apoc-2esdras", "7", 105),
+]
+_DOUBLE_MARK = re.compile(r"\s*\b\d{1,3}\((\d{1,3})\)\s*")
+
+# (book, chapter, verse holding the run, heading) — the extractor lost a
+# chapter's opening: Enoch 89:1-8 came out as a second copy of 85:1-8, and
+# 89:9 swallowed the rest of 85 with all of 86-88 (printed again in their
+# own places) and then the true 89:1-9 behind a "Chapter 89" heading. The
+# verses after the heading replace the chapter's opening, by their own
+# printed numbers.
+REBUILDS = [
+    ("apoc-eth-enoch", "89", 9, "Chapter 89"),
+]
+_INLINE_MARK = re.compile(r"\s*\b(\d{1,2})\s+(?=[A-Z‘“'\"])")
+
+# (book, chapter, verse, wrong, right) — a scan misread inside a verse: a
+# page header run into the text ("Yoseph 8. Lumpkin"), or a letter read as
+# a digit ("1" for I, "0" for O, "50" for So). Checked against the page.
+PATCHES = [
+    ("apoc-susanna", "1", 59, "your Yoseph 8. Lumpkin own head", "your own head"),
+    ("apoc-hermas", "28", 3, "if 1 can be saved", "if I can be saved"),
+    ("apoc-jubilees", "35", 20, "the day 1 die", "the day I die"),
+    ("apoc-jubilees", "18", 13, "\" 50 that it is said", "\" so that it is said"),
+    ("apoc-1esdras", "7", 4, ". 50 with the consent", ". So with the consent"),
+    ("apoc-2maccabees", "4", 29, "while 50 stratus left", "while Sostratus left"),
+    ("apoc-sirach", "19", 16, "? 50 a word", "? So a word"),
+    ("hazon", "20", 4, "hands.And", "hands. And"),
+    ("apoc-jubilees", "1", 19, "'0 <", "'O <"),
+    ("apoc-jubilees", "1", 20, "mercy, 0 <", "mercy, O <"),
+    ("apoc-jubilees", "12", 21, "heart, 0 my", "heart, O my"),
+    ("apoc-jubilees", "25", 13, "him, 0 <", "him, O <"),
+    ("apoc-eth-enoch", "84", 2, "you, 0 <", "you, O <"),
+    ("apoc-eth-enoch", "84", 5, "now, 0 <", "now, O <"),
+    ("apoc-eth-enoch", "84", 6, "servant, 0 <", "servant, O <"),
+]
+
+# (book, chapter, verse, true ending) — the extractor read past a book's last
+# verse into the pages printed after it (a study essay, the "Ten Words" back
+# page) and ran them on as part of the verse. Everything after the true
+# ending is cut.
+TRUNCATES = [
+    ("hazon", "22", 21, "qadashiyms (Set Apart Ones). Amĕn."),
+    ("2dibre-hayamim", "36", 23, "let him go up!’ ”"),
 ]
 
 # (book, chapter, verse number, verse text) — the printing omits the verse;
@@ -266,6 +395,63 @@ def main():
         save(p, d)
         changed += 1
         print(f"  complete {bid} {cn}:{n}")
+
+    for bid, cn, n in UNMERGES:
+        p, d = load(bid)
+        vs = d["chapters"][cn]["verses"]
+        v = next(x for x in vs if x["n"] == n)
+        parts = _DOUBLE_MARK.split(v["t"])
+        if len(parts) < 3:
+            continue                          # already split
+        v["t"] = parts[0].rstrip()
+        at = vs.index(v) + 1
+        for num, text in zip(parts[1::2], parts[2::2]):
+            vs.insert(at, {"n": int(num), "t": text.strip()})
+            at += 1
+        save(p, d)
+        changed += 1
+        print(f"  unmerge {bid} {cn}:{n} -> {len(parts) // 2} verses")
+
+    for bid, cn, n, heading in REBUILDS:
+        p, d = load(bid)
+        vs = d["chapters"][cn]["verses"]
+        v = next(x for x in vs if x["n"] == n)
+        i = v["t"].find(heading)
+        if i < 0:
+            continue                          # already rebuilt
+        parts = _INLINE_MARK.split(v["t"][i + len(heading):])
+        fresh = {int(k): t.strip() for k, t in zip(parts[1::2], parts[2::2])}
+        if sorted(fresh) != list(range(1, n + 1)):
+            print(f"  !! {bid} {cn}:{n}: markers {sorted(fresh)}; skipped")
+            continue
+        for x in vs:
+            if x["n"] in fresh:
+                x["t"] = fresh[x["n"]]
+        save(p, d)
+        changed += 1
+        print(f"  rebuild {bid} {cn}:1-{n}")
+
+    for bid, cn, n, wrong, right in PATCHES:
+        p, d = load(bid)
+        v = next(x for x in d["chapters"][cn]["verses"] if x["n"] == n)
+        if wrong in v["t"]:
+            v["t"] = v["t"].replace(wrong, right, 1)
+            save(p, d)
+            changed += 1
+            print(f"  patch {bid} {cn}:{n}")
+
+    for bid, cn, n, ending in TRUNCATES:
+        p, d = load(bid)
+        v = next(x for x in d["chapters"][cn]["verses"] if x["n"] == n)
+        i = v["t"].find(ending)
+        if i < 0:
+            print(f"  !! {bid} {cn}:{n}: ending not found; skipped")
+            continue
+        if v["t"][i + len(ending):].strip():
+            v["t"] = v["t"][:i + len(ending)]
+            save(p, d)
+            changed += 1
+            print(f"  truncate {bid} {cn}:{n}")
 
     for kind, table in (("insert", INSERTS), ("supply", SUPPLIES)):
         for bid, cn, n, text in table:

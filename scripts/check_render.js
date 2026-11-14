@@ -6,7 +6,7 @@
 //   node scripts/check_render.js
 //
 // This is the exhaustive counterpart to the browser sweep: the browser
-// proves the page works, this proves all 47,000+ verses come out clean.
+// proves the page works, this proves all 48,000+ verses come out clean.
 const fs = require('fs');
 const path = require('path');
 
