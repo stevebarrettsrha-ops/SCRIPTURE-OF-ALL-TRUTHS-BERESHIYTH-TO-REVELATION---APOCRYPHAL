@@ -363,7 +363,9 @@
     popup.innerHTML =
       '<button type="button" class="mark-pop-btn" data-act="mark">✎ Mark Text</button>' +
       '<button type="button" class="mark-pop-btn danger" data-act="unmark">✕ Remove Mark</button>' +
-      '<button type="button" class="mark-pop-btn" data-act="read">▶ Start Reader</button>';
+      '<button type="button" class="mark-pop-btn" data-act="read">▶ Start Reader</button>' +
+      '<button type="button" class="mark-pop-btn" data-act="copy">⧉ Copy</button>' +
+      '<button type="button" class="mark-pop-btn" data-act="share">↗ Share</button>';
     document.body.appendChild(popup);
     return popup;
   }
@@ -377,7 +379,9 @@
   // `acts` is the list of buttons to offer, in order — e.g. ["mark", "read"].
   function showPopup(rect, acts) {
     var pop = ensurePopup();
-    var all = ["mark", "unmark", "read"];
+    var all = ["mark", "unmark", "read", "copy", "share"];
+    // Copy and Share travel with Start Reader, and need besorah-ui.js.
+    if (acts.indexOf("read") !== -1 && global.BesorahUI) acts = acts.concat(["copy", "share"]);
     for (var i = 0; i < all.length; i++) {
       pop.querySelector('[data-act="' + all[i] + '"]').style.display =
         acts.indexOf(all[i]) === -1 ? "none" : "";
@@ -485,6 +489,16 @@
         var sel2 = global.getSelection && global.getSelection();
         if (sel2 && sel2.removeAllRanges) sel2.removeAllRanges();
         if (el && ctx && typeof ctx.onRead === "function") ctx.onRead(el);
+      } else if ((btn.dataset.act === "copy" || btn.dataset.act === "share") &&
+                 pendingEl && global.BesorahUI) {
+        // A selection copies just those words; a tap copies the verse.
+        var part = pending && !pending.whole && pending.fullText
+          ? pending.fullText.slice(pending.start, pending.end).replace(/\s+/g, " ").trim()
+          : null;
+        var vn = pendingEl.dataset && pendingEl.dataset.v ? parseInt(pendingEl.dataset.v, 10) : null;
+        global.BesorahUI.shareVerse(btn.dataset.act,
+          { book: ctx.book, chapter: ctx.chapter, verse: vn, el: pendingEl, text: part });
+        hidePopup();
       } else if (btn.dataset.act === "unmark" && pendingId) {
         var gone = getTextMarks().filter(function (m) { return m.id === pendingId; })[0];
         removeTextMark(pendingId);

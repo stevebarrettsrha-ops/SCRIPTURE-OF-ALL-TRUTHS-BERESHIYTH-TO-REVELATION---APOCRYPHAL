@@ -460,6 +460,14 @@
     "qadash": "kah-dahsh",
     "qadashiyms": "kah-dah-sheems",
     "chaneph": "khah-nef",
+    // The CLAUDE.md terms the November 2026 audit brought into the text.
+    "chanephim": "khah-neh-feem",
+    "iḇri": "eev-ree",
+    "iḇrim": "eev-reem",
+    "naḇa": "nah-vah",
+    "gedolim": "geh-doh-leem",
+    "yom": "yohm",
+    "mashiachs": "mah-shee-akhs",
     "nabi": "nah-vee",
     "nabiim": "nah-vee-eem",
     "nebuah": "neh-voo-ah",
@@ -625,7 +633,7 @@
   // would be "qadash Set Apart" a thousand times over, so the gloss is
   // silenced here. Only these exact brackets go; every other parenthesis
   // in the canon is part of the reading and is left alone.
-  var GLOSS = /\s*\((?:Most Set Apart Place|Set Apart Ones|Set Apart One|Set Apart Place|Set Apart|Faithful|Sheol)\)/g;
+  var GLOSS = /\s*\((?:Assemblies|Assembly|Most Set Apart Place|Set Apart Ones|Set Apart One|Set Apart Place|Set Apart|Faithful|Sheol)\)/g;
 
   function speakable(text) {
     var s = String(text || "").replace(GLOSS, "");

@@ -87,6 +87,13 @@ KNOWN_SOURCE_GAPS = {
     ("apoc-sirach", "21", 2, 4), ("apoc-sirach", "23", 8, 11),
     ("apoc-sirach", "25", 17, 19), ("apoc-sirach", "25", 23, 25),
     ("apoc-sirach", "26", 11, 13), ("apoc-sirach", "27", 18, 28),
+    # The Testaments scan lost these margin numbers; the verse's words are
+    # present, inside the verse before (restore_source_defects.py,
+    # MARGIN_SPLITS).
+    ("testament-dan", "3", 1, 3), ("testament-issakar", "2", 3, 5),
+    ("testament-levi", "3", 5, 7), ("testament-levi", "9", 8, 10),
+    ("testament-yahudah", "7", 4, 6), ("testament-yahudah", "10", 3, 5),
+    ("testament-yahudah", "13", 3, 5), ("testament-zebulun", "4", 3, 5),
 }
 
 TAG = re.compile(r"<[^>]+>")

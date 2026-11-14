@@ -1,6 +1,33 @@
+/* Cardo, bundled (SIL Open Font License, assets/fonts/OFL-Cardo.txt) so the
+   reader needs no font service: latin + latin-ext carry every diacritic of
+   the transliteration (ḇ ḥ ḵ ĕ …). */
+@font-face { font-family: "Cardo"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/cardo-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cardo"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/cardo-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Cardo"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url("fonts/cardo-latin-400-italic.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cardo"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url("fonts/cardo-latin-ext-400-italic.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Cardo"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/cardo-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cardo"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/cardo-latin-ext-700-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* ---- themes --------------------------------------------------------------
+   Dark is the house colour; Light and Sepia are chosen in the "Aa" panel
+   (assets/besorah-ui.js), and "Device" (the default) follows the system. */
 :root {
   --bg: #1a1410;
   --panel: #251c16;
+  --panel-hi: #2c211a;
+  --panel-2: #2a2018;
   --ink: #f4ead5;
   --ink-dim: #c9b893;
   --gold: #d4af37;
@@ -8,7 +35,39 @@
   --rule: #4a3a28;
   --link: #f1d573;
   --link-hover: #fff3b8;
+  --on-gold: #1a1410;
+  --danger: #a3512b;
+  --shadow: rgba(0,0,0,0.45);
+  color-scheme: dark;
 }
+:root[data-theme="light"] {
+  --bg: #fbf7ee; --panel: #f3ead8; --panel-hi: #efe3c9; --panel-2: #ece0c6;
+  --ink: #2a2017; --ink-dim: #65543a; --gold: #85600f; --gold-dim: #c9a85a;
+  --rule: #d8c7a2; --link: #74490a; --link-hover: #3d2700; --on-gold: #fffaf0;
+  --danger: #a3412b; --shadow: rgba(60,40,10,0.18); color-scheme: light;
+}
+:root[data-theme="sepia"] {
+  --bg: #f1e4c8; --panel: #e9d9b8; --panel-hi: #e4d2ad; --panel-2: #e2cfa8;
+  --ink: #3b2a17; --ink-dim: #6a5232; --gold: #865a12; --gold-dim: #b8924c;
+  --rule: #cdb486; --link: #74440a; --link-hover: #3a2300; --on-gold: #fff6e2;
+  --danger: #a3412b; --shadow: rgba(70,45,10,0.2); color-scheme: light;
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme="auto"], :root:not([data-theme]) {
+    --bg: #fbf7ee; --panel: #f3ead8; --panel-hi: #efe3c9; --panel-2: #ece0c6;
+    --ink: #2a2017; --ink-dim: #65543a; --gold: #85600f; --gold-dim: #c9a85a;
+    --rule: #d8c7a2; --link: #74490a; --link-hover: #3d2700; --on-gold: #fffaf0;
+    --danger: #a3412b; --shadow: rgba(60,40,10,0.18); color-scheme: light;
+  }
+}
+
+/* Text size: every size in this sheet is in rem, so one factor scales the
+   whole reader. */
+html { font-size: calc(100% * var(--fs, 1)); }
+
+/* Keyboard focus is always visible. */
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
 
 * { box-sizing: border-box; }
 
@@ -28,7 +87,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 .site-header {
   border-bottom: 1px solid var(--rule);
   padding: 1.25rem 1.5rem;
-  background: linear-gradient(180deg, #2c211a 0%, #1a1410 100%);
+  background: linear-gradient(180deg, var(--panel-hi) 0%, var(--bg) 100%);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -138,7 +197,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 }
 .chapter-link:hover {
   background: var(--gold);
-  color: #1a1410;
+  color: var(--on-gold);
   border-color: var(--gold);
   text-decoration: none;
 }
@@ -186,7 +245,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 }
 .chapter-bar .controls a:hover {
   background: var(--gold);
-  color: #1a1410;
+  color: var(--on-gold);
   border-color: var(--gold);
   text-decoration: none;
 }
@@ -200,7 +259,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   height: calc(100vh - 110px);
   border: 0;
   display: block;
-  background: #2a2018;
+  background: var(--panel-2);
 }
 
 /* Chapter rendering (text mode) */
@@ -341,7 +400,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 }
 .chapter-footer .controls a:hover {
   background: var(--gold);
-  color: #1a1410;
+  color: var(--on-gold);
   border-color: var(--gold);
   text-decoration: none;
 }
@@ -372,7 +431,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   font-family: inherit;
   font-size: 0.95rem;
 }
-#search:focus { outline: none; border-color: var(--gold); }
+#search:focus { border-color: var(--gold); }
 
 @media (max-width: 600px) {
   .pdf-frame { height: calc(100vh - 150px); }
@@ -394,11 +453,11 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 }
 #bookmark-btn:hover {
   background: var(--gold);
-  color: #1a1410;
+  color: var(--on-gold);
   border-color: var(--gold);
 }
 #bookmark-btn.on { color: var(--gold); }
-#bookmark-btn.on:hover { color: #1a1410; }
+#bookmark-btn.on:hover { color: var(--on-gold); }
 
 /* ============ Read-aloud (text-to-speech) player ============ */
 /* Sits as its own full-width row inside the sticky .chapter-bar. */
@@ -428,7 +487,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 }
 .tts-btn:hover:not(:disabled) {
   background: var(--gold);
-  color: #1a1410;
+  color: var(--on-gold);
   border-color: var(--gold);
 }
 .tts-btn:disabled { opacity: 0.4; cursor: default; }
@@ -452,7 +511,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   padding: 0.3rem 0.4rem;
   max-width: 220px;
 }
-.tts-voice:focus { outline: none; border-color: var(--gold); }
+.tts-voice:focus { border-color: var(--gold); }
 
 /* Verses become click-to-read-from-here once the player is bound */
 .tts-readable .verse,
@@ -482,7 +541,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   max-width: 700px;
   margin: 1rem auto 0;
   padding: 0.8rem 1.1rem;
-  background: linear-gradient(180deg, #2c211a 0%, #1f1812 100%);
+  background: linear-gradient(180deg, var(--panel-hi) 0%, var(--panel) 100%);
   border: 1px solid var(--gold-dim);
   border-radius: 4px;
   color: var(--link);
@@ -552,7 +611,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 .bookmarks-tools button:hover,
 .bookmarks-tools .bm-import-label:hover {
   background: var(--gold);
-  color: #1a1410;
+  color: var(--on-gold);
   border-color: var(--gold);
 }
 .bookmark-item { position: relative; padding-right: 2rem; }
@@ -649,7 +708,7 @@ main.home { max-width: 1100px; padding-top: 1.25rem; }
 
 /* ---- Daily Bread ---- */
 .daily-card {
-  background: linear-gradient(180deg, #2c211a 0%, #1f1812 100%);
+  background: linear-gradient(180deg, var(--panel-hi) 0%, var(--panel) 100%);
   border-color: var(--gold-dim);
 }
 .daily-theme {
@@ -791,7 +850,7 @@ main.home { max-width: 1100px; padding-top: 1.25rem; }
   font-family: inherit;
   font-size: 0.9rem;
 }
-.quick-jump input:focus { outline: none; border-color: var(--gold); }
+.quick-jump input:focus { border-color: var(--gold); }
 .chapter-grid.mini {
   grid-template-columns: repeat(auto-fill, minmax(46px, 1fr));
   gap: 0.25rem;
@@ -889,7 +948,7 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
   background: var(--panel);
   border: 1px solid var(--gold-dim);
   border-radius: 4px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  box-shadow: 0 4px 14px var(--shadow);
 }
 .mark-pop[hidden] { display: none; }
 .mark-pop-btn {
@@ -905,10 +964,10 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
 }
 .mark-pop-btn:hover {
   background: var(--gold);
-  color: #1a1410;
+  color: var(--on-gold);
   border-color: var(--gold);
 }
-.mark-pop-btn.danger:hover { background: #a3512b; color: var(--ink); border-color: #a3512b; }
+.mark-pop-btn.danger:hover { background: var(--danger); color: #fff; border-color: var(--danger); }
 
 .mark-hint {
   border-top: 1px solid var(--rule);
@@ -959,3 +1018,163 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
   font-style: italic;
   line-height: 1.45;
 }
+
+/* ======================================================================
+   Reading settings, glossary, picker, search, print (assets/besorah-ui.js,
+   assets/besorah-search.js)
+   ====================================================================== */
+
+/* -- the "Aa" button and its panel -------------------------------------- */
+.ui-btn {
+  position: fixed; right: 14px; bottom: 66px; z-index: 60;
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid var(--rule); background: var(--panel); color: var(--gold);
+  font-family: inherit; font-size: 17px; font-weight: 700; line-height: 1;
+  cursor: pointer; box-shadow: 0 2px 10px var(--shadow); opacity: .9;
+}
+.ui-btn.ui-btn-solo { bottom: 14px; }
+.ui-btn:hover { opacity: 1; color: var(--link-hover); }
+.ui-panel {
+  position: fixed; right: 14px; bottom: 118px; z-index: 61;
+  width: min(340px, calc(100vw - 28px));
+  background: var(--panel); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 10px;
+  box-shadow: 0 8px 28px var(--shadow); padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+}
+.ui-panel[hidden] { display: none; }
+.ui-row { margin: 0.2rem 0 0.85rem; }
+.ui-row:last-child { margin-bottom: 0; }
+.ui-label { display: block; color: var(--ink-dim); font-size: 0.8rem;
+  letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.35rem; }
+.ui-seg { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+.ui-seg button, .ui-size button, .ui-close {
+  font-family: inherit; font-size: 0.9rem; cursor: pointer;
+  background: var(--bg); color: var(--ink); border: 1px solid var(--rule);
+  border-radius: 6px; padding: 0.45rem 0.3rem; min-height: 40px;
+}
+.ui-seg button.on { background: var(--gold); color: var(--on-gold); border-color: var(--gold); }
+.ui-size { display: flex; align-items: center; gap: 0.6rem; }
+.ui-size button { width: 3.2rem; font-weight: 700; }
+.ui-size-v { min-width: 3.5rem; text-align: center; color: var(--ink); }
+.ui-check { display: block; cursor: pointer; line-height: 1.4; }
+.ui-check input { width: 1.1rem; height: 1.1rem; vertical-align: -0.15rem; accent-color: var(--gold); }
+.ui-check small { color: var(--ink-dim); }
+.ui-links { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.ui-close { padding: 0.45rem 0.9rem; }
+
+/* -- toast ---------------------------------------------------------------- */
+.ui-toast {
+  position: fixed; left: 50%; bottom: 24px; z-index: 70;
+  transform: translate(-50%, 20px); opacity: 0; pointer-events: none;
+  background: var(--gold); color: var(--on-gold); border-radius: 999px;
+  padding: 0.5rem 1.1rem; font-size: 0.92rem; box-shadow: 0 4px 14px var(--shadow);
+  transition: opacity 160ms, transform 160ms;
+}
+.ui-toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+/* -- names, glosses and the glossary -------------------------------------- */
+.term { text-decoration: underline dotted; text-decoration-color: var(--gold-dim);
+  text-underline-offset: 0.18em; cursor: help; }
+.term:hover { text-decoration-color: var(--gold); }
+.nm { cursor: help; }
+/* Compact reading: "(YAHUAH) HWHY" reads as Yahuah, glosses step aside. */
+.compact-reading .nm-x, .compact-reading .nm .hwhy, .compact-reading .gloss { display: none; }
+.compact-reading .nm .dn { text-transform: lowercase; display: inline-block; }
+.compact-reading .nm .dn::first-letter { text-transform: uppercase; }
+.ui-pop {
+  position: absolute; z-index: 65; max-width: min(320px, calc(100vw - 16px));
+  background: var(--panel); color: var(--ink); border: 1px solid var(--gold-dim);
+  border-radius: 8px; box-shadow: 0 6px 20px var(--shadow); padding: 0.6rem 0.8rem;
+  font-size: 0.95rem; line-height: 1.4;
+}
+.ui-pop[hidden] { display: none; }
+.ui-pop-w { color: var(--gold); font-size: 1.1rem; font-weight: 700; }
+.ui-pop-m { margin-top: 0.15rem; }
+.ui-pop-s { margin-top: 0.35rem; color: var(--ink-dim); font-size: 0.88rem; }
+.ui-pop-s b { color: var(--ink); font-weight: 600; }
+.ui-say { background: none; border: 1px solid var(--rule); border-radius: 6px;
+  color: var(--ink); cursor: pointer; padding: 0.1rem 0.4rem; margin-left: 0.3rem; }
+
+/* -- the quick picker in the chapter bar ---------------------------------- */
+.qp-btn {
+  font: inherit; color: inherit; background: none; border: 1px solid transparent;
+  border-radius: 6px; padding: 0.15rem 0.4rem; cursor: pointer; text-align: left;
+}
+.qp-btn:hover { border-color: var(--rule); background: rgba(212,175,55,0.06); }
+.qp-btn #bar-ch { margin-left: 0.6rem; color: var(--ink-dim); }
+.qp-caret { margin-left: 0.35rem; color: var(--gold); font-size: 0.85em; }
+.bar-search { margin-left: 0.5rem; text-decoration: none; }
+.bar-search:hover { text-decoration: none; }
+.qp-panel {
+  position: absolute; z-index: 62; width: min(420px, calc(100vw - 16px));
+  max-height: 70vh; overflow: auto;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 10px;
+  box-shadow: 0 8px 28px var(--shadow); padding: 0.8rem;
+}
+.qp-panel[hidden] { display: none; }
+.qp-l { display: block; color: var(--ink-dim); font-size: 0.85rem; }
+.qp-book { display: block; width: 100%; margin-top: 0.3rem; font: inherit; font-size: 1rem;
+  background: var(--bg); color: var(--ink); border: 1px solid var(--rule);
+  border-radius: 6px; padding: 0.45rem; }
+.qp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(2.6rem, 1fr));
+  gap: 4px; margin-top: 0.7rem; }
+.qp-grid a { display: flex; align-items: center; justify-content: center; min-height: 2.5rem;
+  border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--ink); }
+.qp-grid a:hover { border-color: var(--gold); text-decoration: none; }
+.qp-grid a.on { background: var(--gold); color: var(--on-gold); border-color: var(--gold); }
+
+/* -- search --------------------------------------------------------------- */
+.search-inside { text-align: center; margin: 0.4rem 0 1rem; }
+.search-main { max-width: 820px; margin: 0 auto; padding: 1rem 1.25rem 4rem; }
+.srch-l { display: block; color: var(--ink-dim); margin-bottom: 0.4rem; }
+.srch-row { display: flex; gap: 0.5rem; }
+.srch-row input {
+  flex: 1 1 auto; min-width: 0; font: inherit; font-size: 1.05rem;
+  background: var(--panel); color: var(--ink); border: 1px solid var(--rule);
+  border-radius: 6px; padding: 0.6rem 0.75rem;
+}
+.srch-row input:focus { border-color: var(--gold); }
+.srch-row button { font: inherit; cursor: pointer; background: var(--gold); color: var(--on-gold);
+  border: 1px solid var(--gold); border-radius: 6px; padding: 0 1rem; }
+.srch-opts { margin-top: 0.5rem; color: var(--ink-dim); font-size: 0.92rem; }
+.srch-opts select { font: inherit; background: var(--panel); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 0.25rem 0.4rem; margin-left: 0.3rem; }
+.srch-goto { display: inline-block; margin: 0.2rem 0 0.6rem; padding: 0.45rem 0.9rem;
+  border: 1px solid var(--gold); border-radius: 999px; }
+.srch-results { list-style: none; padding: 0; margin: 0; }
+.srch-results li { padding: 0.7rem 0; border-bottom: 1px solid var(--rule); }
+.srch-ref { color: var(--gold); font-weight: 700; }
+.srch-eng { color: var(--ink-dim); font-size: 0.88rem; }
+.srch-t { margin-top: 0.2rem; line-height: 1.55; }
+.srch-t mark { background: rgba(212,175,55,0.3); color: inherit; border-radius: 2px; padding: 0 1px; }
+.srch-more-wrap { text-align: center; }
+.srch-more { font: inherit; cursor: pointer; background: var(--panel); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 0.5rem 1.2rem; margin-top: 1rem; }
+.srch-more[hidden] { display: none; }
+
+/* -- print: just the text ------------------------------------------------- */
+@media print {
+  :root, :root[data-theme] {
+    --bg: #fff; --panel: #fff; --panel-hi: #fff; --panel-2: #fff; --ink: #000;
+    --ink-dim: #333; --gold: #000; --gold-dim: #666; --rule: #999; --link: #000;
+  }
+  html { font-size: 11pt; }
+  body { background: #fff !important; color: #000; }
+  .chapter-bar .controls, .tts-bar, .chapter-footer, .mark-hint, .ui-btn, .ui-panel,
+  .ui-pop, .ui-toast, .qp-panel, .qp-caret, .bar-search, .mark-pop, .fs-btn,
+  .site-header nav, #search, .search-inside, .offline-banner { display: none !important; }
+  .chapter-bar { position: static !important; background: none !important; border: 0; }
+  .chapter-bar .title a { display: none; }
+  .verse, .prose { break-inside: avoid; }
+  .term { text-decoration: none; }
+  mark.tmark { background: none; text-decoration: underline; }
+  a { color: #000; text-decoration: none; }
+}
+.ui-save { width: 100%; font-family: inherit; font-size: 0.9rem; cursor: pointer;
+  background: var(--bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; padding: 0.5rem; }
+.ui-save-row[hidden] { display: none; }
+
+/* A book's unnumbered opening, above verse 1 (Jubilees, 1 Clement). */
+.verses .intro { font-style: italic; color: var(--ink-dim); margin: 0 0 1.2rem;
+  padding: 0 0 0.9rem; border-bottom: 1px solid var(--rule); line-height: 1.7; }
