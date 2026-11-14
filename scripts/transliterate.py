@@ -326,7 +326,21 @@ PLACES = [
 
 # Theological / liturgical terms (case-sensitive — only lowercase forms unless
 # specified otherwise — Sabbath / Torah etc. capitalized in source map to capitalized targets).
+GENERIC_EXACT = {"lords", "lord", "gods", "god", "Christs", "Messiahs", "messiahs"}
+
 TERMS = [
+    # Lowercase generics: a human lord, a heathen god. Never the Name, never
+    # styled (CLAUDE.md: "god (singular, generic) → aluah"). The plurals
+    # follow the Besorah's own wording — "Elohim of mighty ones and Master
+    # of masters" (Dabarim 10:17). Matched lowercase only; see GENERIC_EXACT.
+    ("lords",        "masters"),
+    ("lord",         "master"),
+    ("gods",         "mighty ones"),
+    ("god",          "aluah"),
+    # False messiahs are not the Messiah: lowercase, unstyled.
+    ("Christs",      "mashiachs"),
+    ("Messiahs",     "mashiachs"),
+    ("messiahs",     "mashiachs"),
     # plurals first (so "angels" matches before "angel")
     ("commandments", "mitsvot"),
     ("commandment",  "mitsvah"),
@@ -442,11 +456,26 @@ def build_replacements(divine, *groups):
             # and we end up with "Shemu'<span class=dn>Al</span>" stranded
             # markup. Specifically anchor to a negative lookbehind for any
             # kind of apostrophe.
-            apos_guard = r"(?<!['’])" if src in ("Ĕl", "El") else ""
-            pat = re.compile(
-                rf"{apos_guard}\b{re.escape(src)}(?='s\b|s\b|\b)",
-                re.IGNORECASE,
-            )
+            # ‛ (U+201B) marks an ayin: "Yishma‛ĕl", "El‛azar" are names, not the Name.
+            apos_guard = r"(?<!['’‛])" if src in ("Ĕl", "El") else ""
+            if kind == 'divine' and src[:1].isupper():
+                # A divine name is a capitalised word. The sources mark the
+                # difference by case: "the Lord" is Yahuah, but "my lord the
+                # king" is a man and "their gods" are idols. So the first
+                # letter must match exactly (God, GOD — never god), and no
+                # plural "s" is taken: there are no "Yahuahs" or "Aluahims".
+                # The lowercase generics are rendered by GENERIC below.
+                body = f"(?-i:{re.escape(src[:1])}){re.escape(src[1:])}"
+                tail = "(?!‛)" if src in ("Ĕl", "El") else ""
+                pat = re.compile(
+                    rf"{apos_guard}\b{body}{tail}(?='s\b|\b)", re.IGNORECASE)
+            elif src in GENERIC_EXACT:
+                pat = re.compile(rf"\b{re.escape(src)}\b")
+            else:
+                pat = re.compile(
+                    rf"{apos_guard}\b{re.escape(src)}(?='s\b|s\b|\b)",
+                    re.IGNORECASE,
+                )
         compiled.append((kind, pat, src, dst))
     return compiled
 
@@ -487,6 +516,8 @@ def transliterate(text, rules):
                 # Plural added — for proper nouns we add 's' to the transliteration
                 # (e.g. Israelites already in PLACES; otherwise simple "s")
                 final = case_match(dst, matched[:-1]) + "s"
+            elif src in GENERIC_EXACT:
+                final = dst                   # generics keep their own case
             else:
                 final = case_match(dst, matched)
             # Wrap divine names with sentinel-protected span
@@ -549,9 +580,15 @@ def annotate_hwhy(text):
 # "ĚL", "ĕL") is supported, with the new suffix ("AL"/"Al"/"aL"/"al")
 # derived per-character from the source case.
 _EL_SUFFIX_PAT = re.compile(
-    r"\b[A-ZĀ-ɏḀ-ỿ][A-Za-zÀ-ɏḀ-ỿ'’]+[EeĔĕ][Ll]\b"
+    r"\b[A-ZĀ-ɏḀ-ỿ][A-Za-zÀ-ɏḀ-ỿ'’‛]+[EeĔĕ][Ll]\b"
 )
+# A name that OPENS with "El" before an ayin mark — El‛azar, El‛asah,
+# El‛alĕh — is a name, not the Name: plain "Al", never styled.
+_EL_AYIN_PREFIX = re.compile(r"\b[EĔ]l(?=‛)")
+
+
 def el_suffix_to_al(text):
+    text = _EL_AYIN_PREFIX.sub("Al", text)
     def _r(m):
         word = m.group(0)
         wl = word.lower()

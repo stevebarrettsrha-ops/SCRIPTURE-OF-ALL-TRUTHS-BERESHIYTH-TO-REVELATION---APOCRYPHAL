@@ -79,8 +79,14 @@ SOURCE_NAMES_MUST_CONVERT = [
 
 _DN_SPAN = re.compile(r'<span class="(?:dn|hwhy)">.*?</span>')
 _SPAN_OPEN = re.compile(r'<span class="([^"]*)">')
-_STRANDED = re.compile(r"[A-Za-zÀ-ɏḀ-ỿ][\'’]?"
-                       r'<span class="dn">(?:Al|al|El|el)</span>')
+# Also catches the ayin mark ‛ on either side (Yishma‛<dn>Al</dn>,
+# <dn>Al</dn>‛azar) and a divine name pluralised as if it were a generic
+# ("<dn>Aluahim</dn>s" for "gods", "<dn>Yahuah</dn>s" for "lords") — there
+# is one Yahuah; heathen gods and human lords are never styled as the Name.
+_STRANDED = re.compile(r"[A-Za-zÀ-ɏḀ-ỿ][\'’‛]?"
+                       r'<span class="dn">(?:Al|al|El|el)</span>'
+                       r'|<span class="dn">(?:Al|al|El|el)</span>‛'
+                       r'|<span class="dn">[^<]+</span>s\b')
 
 
 def _strip_spans(text):
