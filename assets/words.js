@@ -479,7 +479,18 @@
     "kohen gadols": "kohanim gedolim",
     "hebrews": "Iḇrim",
     "prophet": "naḇi",
-    "commandments": "mitsvot"
+    "commandments": "mitsvot",
+
+    // --- ekklesia: the assembly, not "the Church" ----------------------
+    // The main books call the called-out gathering the qahal (CLAUDE.md:
+    // "assembly, congregation → qahal"), 429 times; the apocryphal
+    // editions arrived saying "Church". The English stays alongside in
+    // brackets, as with qadash. A church building's proper name is a name.
+    "church of the holy sepulchre": "Church of the Holy Sepulchre",
+    "church of the holy sepulcher": "Church of the Holy Sepulcher",
+    "churches": "qahalim (Assemblies)",
+    "church's": "qahal's",
+    "church": "qahal (Assembly)"
   };
 
   // Names that carry their own capitalisation. Case is normally inherited
@@ -499,7 +510,12 @@
     "Bĕlshatstsar": 1,
     "Zerubbaḇal": 1,
     "Yom Kippur": 1,
-    "Iḇrim": 1
+    "Iḇrim": 1,
+    "qahal (Assembly)": 1,
+    "qahalim (Assemblies)": 1,
+    "qahal's": 1,
+    "Church of the Holy Sepulcher": 1,
+    "Church of the Holy Sepulchre": 1
   };
 
   // --- 5. inline verse markers ----------------------------------------

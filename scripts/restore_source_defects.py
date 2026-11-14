@@ -356,7 +356,7 @@ INTROS = [
     ("apoc-jubilees", "1",
      "This is the history of how the days were divided and of the days of the law and of the eduth, of the events of the years, and of the weeks of years, of their Yobelim throughout all the years of the world, as <span class=\"dn\">Yahuah</span> spoke to Mosheh on Mount Sinai when he went up to receive the tablets of the law and the mitsvah, according to the voice of <span class=\"dn\">Aluahim</span> when he said to him, \"Go up to the top of the Mount.\""),
     ("apoc-1clements", "1",
-     "The Church of <span class=\"dn\">Aluahim</span> which sojourns in Rome to the Church of <span class=\"dn\">Aluahim</span> which sojourns in Corinth, to them which are called and qadash (Set Apart) by the will of <span class=\"dn\">Aluahim</span> through our <span class=\"dn\">Yahuah</span> <span class=\"dn\">Yahusha haMashiach</span>. Chen to you and shalom from Almighty <span class=\"dn\">Aluahim</span> through <span class=\"dn\">Yahusha haMashiach</span> be multiplied."),
+     "The qahal (Assembly) of <span class=\"dn\">Aluahim</span> which sojourns in Rome to the qahal (Assembly) of <span class=\"dn\">Aluahim</span> which sojourns in Corinth, to them which are called and qadash (Set Apart) by the will of <span class=\"dn\">Aluahim</span> through our <span class=\"dn\">Yahuah</span> <span class=\"dn\">Yahusha haMashiach</span>. Chen to you and shalom from Almighty <span class=\"dn\">Aluahim</span> through <span class=\"dn\">Yahusha haMashiach</span> be multiplied."),
 ]
 
 # (book, chapter, verse, true ending) — the extractor read past a book's last

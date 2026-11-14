@@ -633,7 +633,7 @@
   // would be "qadash Set Apart" a thousand times over, so the gloss is
   // silenced here. Only these exact brackets go; every other parenthesis
   // in the canon is part of the reading and is left alone.
-  var GLOSS = /\s*\((?:Most Set Apart Place|Set Apart Ones|Set Apart One|Set Apart Place|Set Apart|Faithful|Sheol)\)/g;
+  var GLOSS = /\s*\((?:Assemblies|Assembly|Most Set Apart Place|Set Apart Ones|Set Apart One|Set Apart Place|Set Apart|Faithful|Sheol)\)/g;
 
   function speakable(text) {
     var s = String(text || "").replace(GLOSS, "");

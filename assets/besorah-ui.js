@@ -150,7 +150,7 @@
   // Bracketed English the text carries after a Hebrew word: "qadash (Set
   // Apart)". These are the house-style glosses; any other bracket is part
   // of the reading and is left as it is.
-  var GLOSSES = "Most Set Apart Place|Set Apart Ones|Set Apart One|Set Apart Place|Set Apart|Faithful|Baḇylonians|Baḇylonian|Baḇylon";
+  var GLOSSES = "Assemblies|Assembly|Most Set Apart Place|Set Apart Ones|Set Apart One|Set Apart Place|Set Apart|Faithful|Baḇylonians|Baḇylonian|Baḇylon";
   var GLOSS_RE = new RegExp("((?:Qodash haQodashim)|[A-Za-zÀ-ɏḀ-ỿ'’]+) \\((" + GLOSSES + ")\\)", "g");
   var TERM_KEYS = Object.keys(GLOSSARY).filter(function (k) { return k !== "yahuah" && k !== "hwhy"; })
     .sort(function (a, b) { return b.length - a.length; });
