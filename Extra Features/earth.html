@@ -203,9 +203,9 @@ const LL=(lon,lat)=>{ const r=(90-lat)/180, a=lon*Math.PI/180; return [r*Math.si
 const ANCIENTS=[
   {n:'YAHRUSHALAYIM', p:LL(35.22,31.78), star:true, sub:'set in the midst of the nations · YAHAZQ\'AL 5:5'},
   {n:'MITSRAYIM', p:LL(29.8,26.5)}, {n:'KUSH', p:LL(31,15.5)}, {n:'SHEḆA', p:LL(45.4,15.8)},
-  {n:'BAḆEL', p:LL(44.4,32.5)}, {n:'ASHSHUR', p:LL(43.3,36.2)}, {n:'ARARAT', p:LL(44.3,39.7)},
+  {n:'BAḆAL', p:LL(44.4,32.5)}, {n:'ASHSHUR', p:LL(43.3,36.2)}, {n:'ARARAT', p:LL(44.3,39.7)},
   {n:'MADAI', p:LL(52,34)}, {n:'YAWAN', p:LL(22.5,39.2)}, {n:'TARSHISH', p:LL(-4.5,37.6)},
-  {n:'GOMER', p:LL(33,39.4)}, {n:'MAGOG', p:LL(48,47.5)},
+  {n:'GOMER', p:LL(33,39.4)}, {n:'MAḠOḠ', p:LL(48,47.5)},
 ];
 
 /* ---------------- the ancient sites of the land, revealed by your journey ----------------
@@ -231,28 +231,28 @@ const SITES=[
   {n:'THE GREAT SEA', ll:[33.6,32.6], geo:true},
   {n:'THE SALT SEA', ll:[35.49,31.33], geo:true},
   {n:'SEA OF KINNERETH', ll:[35.59,32.82], geo:true},
-  {n:'THE YARDĔN', ll:[35.57,32.30], geo:true},
-  {n:'THE NEGEV', ll:[34.85,30.85], geo:true},
+  {n:'THE YARDEN', ll:[35.57,32.30], geo:true},
+  {n:'THE NEḠEḆ', ll:[34.85,30.85], geo:true},
   /* BERĔSHITH — the fathers in the land */
-  {n:'SHEKEM', ll:[35.282,32.213], note:'Aḇram’s first altar in the land, at the terebinth of Moreh', ref:'BERĔSHITH 12:6–7', u:['bereshith',.24]},
-  {n:'BĔYTH ĂL', ll:[35.240,31.930], note:'the altar between Bĕyth Ăl and Ai — and the ladder set up to the shamayim', ref:'BERĔSHITH 12:8 · 28:12–19', u:['bereshith',.24]},
+  {n:'SHEḴEM', ll:[35.282,32.213], note:'Aḇram’s first mizbe\'ach in the land, at the terebinth of Moreh', ref:'BERĔSHITH 12:6–7', u:['bereshith',.24]},
+  {n:'BĔYTH AL', ll:[35.240,31.930], note:'the mizbe\'ach between Bĕyth Al and Ai — and the ladder set up to the shamayim', ref:'BERĔSHITH 12:8 · 28:12–19', u:['bereshith',.24]},
   {n:'MAMRĔ — ḤEḆRON', ll:[35.110,31.525], note:'the terebinths of Mamrĕ, the three visitors, and the burial-place of Makpelah', ref:'BERĔSHITH 13:18 · 18 · 23', u:['bereshith',.30]},
-  {n:'SEDOM', ll:[35.40,31.08], note:'overthrown with fire and brimstone from YAHUAH out of the shamayim', ref:'BERĔSHITH 19:24–25', u:['bereshith',.36]},
+  {n:'SEḎOM', ll:[35.40,31.08], note:'overthrown with sulphur and fire from YAHUAH out of the shamayim', ref:'BERĔSHITH 19:24–25', u:['bereshith',.36]},
   {n:'GERAR', ll:[34.61,31.38], note:'where Aḇraham and Yahtsḥaq sojourned among the Philistines', ref:'BERĔSHITH 20 · 26', u:['bereshith',.42]},
   {n:'BE’ĔRSHEḆA', ll:[34.79,31.245], note:'the well of the oath — the tamarisk planted in the Name of YAHUAH', ref:'BERĔSHITH 21:31–33', u:['bereshith',.44]},
   {n:'MOUNT MORIYAH', ll:[35.235,31.778], note:'the binding of Yahtsḥaq — on the mount of YAHUAH it is provided', ref:'BERĔSHITH 22', u:['bereshith',.47]},
-  {n:'PENU’AL', ll:[35.70,32.19], note:'where Ya‛aqoḇ wrestled until the breaking of day, and was named Yasharal', ref:'BERĔSHITH 32:24–30', u:['bereshith',.60]},
-  {n:'BĔYTH LEḤEM', ll:[35.21,31.705], note:'on the way to Ephrath — where Raḥĕl was buried', ref:'BERĔSHITH 35:19', u:['bereshith',.63]},
-  {n:'DOTHAN', ll:[35.24,32.414], note:'where Yosĕph was sold by his brothers to the traders', ref:'BERĔSHITH 37:17–28', u:['bereshith',.68]},
+  {n:'PENU’AL', ll:[35.70,32.19], note:'where Ya\'aqoḇ wrestled until the breaking of day, and was named Yasharal', ref:'BERĔSHITH 32:24–30', u:['bereshith',.60]},
+  {n:'BĔYTH LEḤEM', ll:[35.21,31.705], note:'on the way to Ephrath — where Raḥal was buried', ref:'BERĔSHITH 35:19', u:['bereshith',.63]},
+  {n:'DOTHAN', ll:[35.24,32.414], note:'where Yoseph was sold by his brothers to the traders', ref:'BERĔSHITH 37:17–28', u:['bereshith',.68]},
   /* SHAMOTH — the way out */
   {n:'ḤORĔḆ — MOUNT SINAI', ll:[33.973,28.539], note:'the bush that burned, and the mountain of the covenant, wrapped in fire', ref:'SHAMOTH 3 · 19–20', u:['shemoth',.20]},
   /* BAMIḎBAR — the wilderness */
   {n:'QAḎĔSH BARNĔA', ll:[34.49,30.687], note:'from here the twelve went up to see the land — and a generation turned back', ref:'BAMIḎBAR 13–14', u:['bamidbar',.40]},
   {n:'MOSĔRAH — MOUNT HOR', ll:[35.407,30.317], note:'where Aharon died, and Al‛azar his son became kohen in his place', ref:'BAMIḎBAR 20:22–29 · DAḆARIM 10:6', u:['bamidbar',.60]},
   {n:'ḤESHBON', ll:[35.809,31.805], note:'the city of Siḥon sovereign of the Amorites, taken by Yasharal', ref:'BAMIḎBAR 21:21–26', u:['bamidbar',.75]},
-  {n:'EDRE‛I', ll:[36.10,32.60], note:'where Og of Bashan, the last of the Rephaim, came out and fell', ref:'BAMIḎBAR 21:33–35', u:['bamidbar',.75]},
+  {n:'EḎRE‛I', ll:[36.10,32.60], note:'where Oḡ of Bashan, the last of the Repha’im, came out and fell', ref:'BAMIḎBAR 21:33–35', u:['bamidbar',.75]},
   {n:'SHITTIM — PLAINS OF MO’AḆ', ll:[35.65,31.84], note:'the last camp — where Mosheh spoke all the words of DAḆARIM', ref:'BAMIḎBAR 25:1 · DAḆARIM 1:1', u:['bamidbar',.85]},
-  /* DAḆARIM — the words beyond the Yardĕn */
+  /* DAḆARIM — the words beyond the Yarden */
   {n:'TOP OF PISGAH', ll:[35.71,31.76], note:'“Go up to the top of Pisgah, and lift up your eyes — and look with your eyes”', ref:'DAḆARIM 3:27', u:['devarim',.14]},
   {n:'BETSER', ll:[35.90,31.60], note:'a city of refuge in the wilderness, for the Re’uḇĕnites', ref:'DAḆARIM 4:43', u:['devarim',.20]},
   {n:'RAMOTH IN GIL‛AḎ', ll:[36.02,32.55], note:'a city of refuge, for the Gaḏites', ref:'DAḆARIM 4:43', u:['devarim',.20]},

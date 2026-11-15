@@ -42,6 +42,7 @@ SCRIPTURE/
 scripts/
   sweep_text.py       # Audits/repairs every book (markers, word forms, markup)
   build_daily_bread.py # Checks daily-bread.json, builds assets/DailyBread.js
+  unify_names.py      # One name, one spelling: finds and settles variant forms
   extract_index.py    # Builds assets/index.json by scanning the PDFs
   extract_text.py     # Builds assets/text/*.json by extracting verse text
   transliterate.py    # Applies CLAUDE.md Hebrew-roots transliteration rules

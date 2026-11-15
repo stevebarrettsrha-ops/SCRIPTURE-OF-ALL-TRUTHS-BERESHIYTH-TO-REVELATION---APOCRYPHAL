@@ -23,12 +23,19 @@ You are working on a Hebrew-roots scripture project called **The Besorah**. All 
 **The Name inside a name.** Where a book name ends in the theophoric
 *Al*, it is written with a capital A — Shamu'Al, Yahazq'Al, Dani'Al,
 Yo'Al — because the ending is the Name, not a suffix. The other names
-in this guide that end in *-al* (Yishma'al, Yasharal, Daniyal) still
+in this guide that end in *-al* (Yahshma'al, Yasharal, Daniyal) still
 carry a small a and are unchanged.
 
 ---
 
 ## People — Patriarchs & Matriarchs
+
+**The ancient forms win.** Where the canon prints a name in its ancient
+*Yah-* or *Al-* form — Yahrushalayim, Yahtsḥaq, Yahshma'al, Yahshayahu,
+Yahrmeyahu, Aliyahu — that form is used everywhere: in the verses, the
+Daily Bread, the Extra Features pages and the notes. One name has one
+spelling; `scripts/unify_names.py` checks it. (The book titles Yashayahu
+and Yirmayahu in the tables below are titles and are unchanged.)
 
 | English | Hebrew | Pronunciation |
 |---|---|---|
@@ -47,8 +54,8 @@ carry a small a and are unchanged.
 | Abraham | Aḇraham | Ahv-rah-hahm |
 | Abram | Aḇram | Ahv-rahm |
 | Hagar | Haḡar | Hah-gar |
-| Ishmael | Yishma'al | Yeesh-mah-al |
-| Isaac | Yitsḥaq | Yeets-khahk |
+| Ishmael | Yahshma'al | Yah-shmah-al |
+| Isaac | Yahtsḥaq | Yah-tskhahk |
 | Rebecca | Riḇqah | Reev-kah |
 | Esau | Ĕsaw | Eh-sahw |
 | Jacob | Ya'aqoḇ | Yah-ah-kohv |
@@ -64,9 +71,9 @@ carry a small a and are unchanged.
 | Samuel | Shamu'Al | Shah-moo-al |
 | David | Dawiḏ | Dah-weed |
 | Solomon | Shelomoh | Sheh-loh-moh |
-| Elijah | Ĕliyahu | Eh-lee-yah-hoo |
-| Isaiah | Yashayahu | Yasha-yah-hoo |
-| Jeremiah | Yirmayahu | Yeer-mah-yah-hoo |
+| Elijah | Aliyahu | Al-ee-yah-hoo |
+| Isaiah | Yahshayahu | Yah-shah-yah-hoo |
+| Jeremiah | Yahrmeyahu | Yahr-meh-yah-hoo |
 | Daniel | Dani'Al | Dahn-ee-al |
 | Jochebed | Yokeḇeḏ | Yoh-keh-ved |
 
@@ -88,7 +95,7 @@ carry a small a and are unchanged.
 
 | English | Hebrew | Pronunciation |
 |---|---|---|
-| Jerusalem | Yerushalayim | Yeh-roo-shah-lah-yeem |
+| Jerusalem | Yahrushalayim | Yah-roo-shah-lah-yeem |
 | Egypt | Mitsrayim | Meets-rah-yeem |
 | Egyptians | Mitsrites | — |
 | Canaan | Kena'an | Keh-nah-ahn |
@@ -269,9 +276,9 @@ carry a small a and are unchanged.
 |---|---|---|
 | ḇ (b with line) | soft bet, "v" sound | Aḇraham, Ya'aqoḇ |
 | ḏ (d with line) | soft dalet, "dh" sound | Aḏam, Dawiḏ |
-| ḥ (h with dot) | chet, guttural "kh" | Yitsḥaq, Noaḥ |
+| ḥ (h with dot) | chet, guttural "kh" | Yahtsḥaq, Noaḥ |
 | ṭ (t with dot) | tet, emphatic "t" | — |
 | ḵ (k with line) | soft kaf, "kh" sound | Ḥanoḵ, Lemeḵ |
 | ḡ (g with line) | soft gimel, soft "g" | Haḡar |
-| ĕ (e with breve) | short "e" sound | Ĕsaw, Ĕliyahu |
+| ĕ (e with breve) | short "e" sound | Ĕsaw, Kĕpha |
 | ' (apostrophe) | ayin or glottal stop | Ya'aqoḇ, Shamu'Al |

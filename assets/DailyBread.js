@@ -298,7 +298,7 @@
     "f": 6,
     "t": 7,
     "th": "A Child shall be born unto us",
-    "r": "Yashayahu speaks to a people walking in darkness and gives them a Son, with the rule on His shoulder and a Name: Wonder, Counsellor, Strong Al, Father of Continuity, Prince of Shalom. His rule and His shalom have no end. “The ardour of Yahuah of hosts does this.”"
+    "r": "Yahshayahu speaks to a people walking in darkness and gives them a Son, with the rule on His shoulder and a Name: Wonder, Counsellor, Strong Al, Father of Continuity, Prince of Shalom. His rule and His shalom have no end. “The ardour of Yahuah of hosts does this.”"
    },
    {
     "b": "yashayahu",
@@ -338,7 +338,7 @@
     "f": 19,
     "t": 21,
     "th": "This is the Way, walk in it",
-    "r": "Yashayahu speaks to people who had looked to Mitsrayim for help. He promises a day when Yahuah answers at the sound of their cry and their Teacher is no longer hidden. Whenever they drift right or left, a word comes from behind: “This is the Way, walk in it.”"
+    "r": "Yahshayahu speaks to people who had looked to Mitsrayim for help. He promises a day when Yahuah answers at the sound of their cry and their Teacher is no longer hidden. Whenever they drift right or left, a word comes from behind: “This is the Way, walk in it.”"
    },
    {
     "b": "yashayahu",
@@ -450,7 +450,7 @@
     "f": 4,
     "t": 6,
     "th": "By His stripes we are healed",
-    "r": "Yashayahu speaks of the Servant of Yahuah, and every line trades places. The sicknesses and pains are ours and He carried them. The transgressions are ours and He was pierced. We went astray like sheep, each to his own way, “and Yahuah has laid on Him the crookedness of us all.”"
+    "r": "Yahshayahu speaks of the Servant of Yahuah, and every line trades places. The sicknesses and pains are ours and He carried them. The transgressions are ours and He was pierced. We went astray like sheep, each to his own way, “and Yahuah has laid on Him the crookedness of us all.”"
    },
    {
     "b": "yashayahu",
@@ -562,7 +562,7 @@
     "f": 5,
     "t": 8,
     "th": "Do not say, “I am a youth”",
-    "r": "Yirmayahu is told he was known before he was formed and set apart before he was born. His objection is his age and his speech. Yahuah does not argue about either. He says go where I send you, speak what I command you, and, “I am with you to deliver you.”"
+    "r": "Yahrmeyahu is told he was known before he was formed and set apart before he was born. His objection is his age and his speech. Yahuah does not argue about either. He says go where I send you, speak what I command you, and, “I am with you to deliver you.”"
    },
    {
     "b": "yirmayahu",
@@ -586,7 +586,7 @@
     "f": 6,
     "t": 7,
     "th": "A heart to know Me",
-    "r": "Yirmayahu was shown two baskets of figs, and these words were spoken over the good ones, the exiles carried off to the land of the Chaldeans. Yahuah sets His eyes on them for good. The best of His promises to them is a gift inside: “a heart to know Me.”"
+    "r": "Yahrmeyahu was shown two baskets of figs, and these words were spoken over the good ones, the exiles carried off to the land of the Chaldeans. Yahuah sets His eyes on them for good. The best of His promises to them is a gift inside: “a heart to know Me.”"
    },
    {
     "b": "yirmayahu",
@@ -594,7 +594,7 @@
     "f": 11,
     "t": 13,
     "th": "Plans of shalom",
-    "r": "This is from a letter Yirmayahu sent to the exiles in Baḇal, telling them to build houses and plant gardens because they would be there seventy years. In that long wait Yahuah says He knows His plans for them, “a future and an expectancy,” and that He will be found when they seek Him with all their heart."
+    "r": "This is from a letter Yahrmeyahu sent to the exiles in Baḇal, telling them to build houses and plant gardens because they would be there seventy years. In that long wait Yahuah says He knows His plans for them, “a future and an expectancy,” and that He will be found when they seek Him with all their heart."
    },
    {
     "b": "yirmayahu",
@@ -618,7 +618,7 @@
     "f": 2,
     "t": 3,
     "th": "Call unto Me",
-    "r": "Yirmayahu is shut up in the court of the guard and the city is under siege when this word comes. The One who made the earth and formed it gives a prisoner an open invitation: “Call unto Me and I shall answer you,” and show you great matters you have not known."
+    "r": "Yahrmeyahu is shut up in the court of the guard and the city is under siege when this word comes. The One who made the earth and formed it gives a prisoner an open invitation: “Call unto Me and I shall answer you,” and show you great matters you have not known."
    },
    {
     "b": "yahazqal",
@@ -1666,7 +1666,7 @@
     "f": 6,
     "t": 8,
     "th": "The snare was broken",
-    "r": "“If Yahuah had not been for us,” the psalm begins, and this is how it ends. The bird did not free itself. The snare was broken, and we escaped. The conclusion is one every generation of Yasharal has had to learn: “Our help is in the Name of Yahuah.”"
+    "r": "“If it had not been Yahuah who was on our side,” the psalm begins, and this is how it ends. The bird did not free itself. The snare was broken, and we escaped. The conclusion is one every generation of Yasharal has had to learn: “Our help is in the Name of Yahuah.”"
    },
    {
     "b": "tehillim",
@@ -2378,7 +2378,7 @@
     "f": 5,
     "t": 6,
     "th": "You are Yahuah, You alone",
-    "r": "The Lĕwites call the people to stand and bless, and their prayer starts at the beginning: the shamayim and their host, the earth, the seas, “and You give life to them all.” Before they confess anything about themselves they say who He is. That order is worth keeping."
+    "r": "The Lewites call the people to stand and bless, and their prayer starts at the beginning: the shamayim and their host, the earth, the seas, “and You give life to them all.” Before they confess anything about themselves they say who He is. That order is worth keeping."
    },
    {
     "b": "1dibre-hayamim",
@@ -2610,7 +2610,7 @@
     "f": 29,
     "t": 32,
     "th": "My eyes have seen Your deliverance",
-    "r": "Shim‛on was an old man in Yahrushalayim who had been told he would not see death before he saw the Mashiach of Yahuah. He takes the child in his arms and says he can go in shalom. He names what he is holding: “a light for the unveiling of the gentiles and the esteem of Your people Yasharal.”"
+    "r": "Shim'on was an old man in Yahrushalayim who had been told he would not see death before he saw the Mashiach of Yahuah. He takes the child in his arms and says he can go in shalom. He names what he is holding: “a light for the unveiling of the gentiles and the esteem of Your people Yasharal.”"
    },
    {
     "b": "luke",
@@ -2986,7 +2986,7 @@
     "f": 9,
     "t": 11,
     "th": "With the heart and with the mouth",
-    "r": "The Word is near, in the mouth and in the heart; Sha’ul has just quoted Mosheh to say so. The heart believes that Aluahim raised Yahusha from the dead, and the mouth confesses Him as Master. Yashayahu is his witness: whoever trusts in Him “shall not be put to shame.”"
+    "r": "The Word is near, in the mouth and in the heart; Sha’ul has just quoted Mosheh to say so. The heart believes that Aluahim raised Yahusha from the dead, and the mouth confesses Him as Master. Yahshayahu is his witness: whoever trusts in Him “shall not be put to shame.”"
    },
    {
     "b": "romans",
@@ -3034,7 +3034,7 @@
     "f": 12,
     "t": 13,
     "th": "The Aluahim of expectation",
-    "r": "Sha’ul quotes Yashayahu's promise of the root of Yahshai, on whom the gentiles set their expectation. Then he prays for the believers in Rome: that Aluahim fill them with all joy and shalom in believing, and that they overflow with expectation “by the power of the Ruach HaQadash.”"
+    "r": "Sha’ul quotes Yahshayahu's promise of the root of Yahshai, on whom the gentiles set their expectation. Then he prays for the believers in Rome: that Aluahim fill them with all joy and shalom in believing, and that they overflow with expectation “by the power of the Ruach HaQadash.”"
    },
    {
     "b": "1corinthians",
@@ -3042,7 +3042,7 @@
     "f": 30,
     "t": 31,
     "th": "Let him boast in Yahuah",
-    "r": "Sha’ul has reminded the believers in Corinth that not many of them were wise, mighty or noble. What they have, they have in Mashiach Yahusha, who became for us wisdom from Aluahim, righteousness, set-apartness and redemption. So Yirmayahu's word holds: “He who boasts, let him boast in Yahuah.”"
+    "r": "Sha’ul has reminded the believers in Corinth that not many of them were wise, mighty or noble. What they have, they have in Mashiach Yahusha, who became for us wisdom from Aluahim, righteousness, set-apartness and redemption. So Yahrmeyahu's word holds: “He who boasts, let him boast in Yahuah.”"
    },
    {
     "b": "1corinthians",
@@ -3482,7 +3482,7 @@
     "f": 11,
     "t": 13,
     "th": "Afterward it yields the peaceable fruit",
-    "r": "The writer does not pretend discipline is pleasant. At the time it is grievous. The word to hold is “afterward”: it yields the peaceable fruit of righteousness to those trained by it. So he takes up Yashayahu's words about strengthening drooping hands and weak knees, and making straight paths."
+    "r": "The writer does not pretend discipline is pleasant. At the time it is grievous. The word to hold is “afterward”: it yields the peaceable fruit of righteousness to those trained by it. So he takes up Yahshayahu's words about strengthening drooping hands and weak knees, and making straight paths."
    },
    {
     "b": "ibrim",
@@ -3594,7 +3594,7 @@
     "f": 22,
     "t": 25,
     "th": "The living Word of Aluahim, which remains forever",
-    "r": "Kĕpha tells believers scattered through Asia to love one another fervently, and bases it on how they were born again: of incorruptible seed, through the living Word of Aluahim. He quotes Yashayahu. Grass withers and the flower falls, “but the Word of Aluahim remains forever.”"
+    "r": "Kĕpha tells believers scattered through Asia to love one another fervently, and bases it on how they were born again: of incorruptible seed, through the living Word of Aluahim. He quotes Yahshayahu. Grass withers and the flower falls, “but the Word of Aluahim remains forever.”"
    },
    {
     "b": "1kepha",
@@ -3794,7 +3794,7 @@
     "f": 16,
     "t": 17,
     "th": "Come!",
-    "r": "Yahusha names Himself the Root and the Offspring of Dawiḏ, the bright and Morning Star. Then the invitation goes out from every side, the Ruach, the bride, and each one who hears. It is for anyone thirsty: “take the water of life without paying!” Yashayahu gave the same call."
+    "r": "Yahusha names Himself the Root and the Offspring of Dawiḏ, the bright and Morning Star. Then the invitation goes out from every side, the Ruach, the bride, and each one who hears. It is for anyone thirsty: “take the water of life without paying!” Yahshayahu gave the same call."
    },
    {
     "b": "apoc-baruch",
@@ -3834,7 +3834,7 @@
     "f": 22,
     "t": 24,
     "th": "Bless the Aluahim of all",
-    "r": "Ben Sira has just described the kohen gadol Shim‛on coming out of the House in his splendour, and he turns to the people with a berakah. Bless the Aluahim of all, who does great things and deals with us according to His chesed. He asks for gladness of heart and shalom in Yasharal."
+    "r": "Ben Sira has just described the kohen gadol Shim'on coming out of the House in his splendour, and he turns to the people with a berakah. Bless the Aluahim of all, who does great things and deals with us according to His chesed. He asks for gladness of heart and shalom in Yasharal."
    },
    {
     "b": "apoc-wisdom",
