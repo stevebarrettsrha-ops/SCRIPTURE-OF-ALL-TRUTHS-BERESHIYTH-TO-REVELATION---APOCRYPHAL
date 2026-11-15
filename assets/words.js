@@ -47,6 +47,14 @@
     "it self": "itself",
     "false hood": "falsehood",
     "sover eign": "sovereign",
+    "weakness es": "weaknesses",
+    "say ing": "saying",
+    "accord ing": "according",
+    "concern ing": "concerning",
+    "commit ted": "committed",
+    "west ward": "westward",
+    "pressure s": "pressures",
+    "over come": "overcome",
     "peopl es": "peoples",
     "gate keepers": "gatekeepers",
     "command ments": "commandments",
@@ -79,6 +87,16 @@
   // compounds (showbread, herdsmen, watchmen, firstfruits, overnight,
   // seedtime, wholesome …) are deliberately absent.
   var SPLITS = {
+    "webless": "we bless",
+    "shouldbe": "should be",
+    "myfather": "my father",
+    "daysher": "days her",
+    "motherin-law": "mother-in-law",
+    "fatherin-law": "father-in-law",
+    "ironand": "iron and",
+    "myknowledge": "my knowledge",
+    "whobelieve": "who believe",
+    "remnantto": "remnant to",
     // A name welded to the word before it survives the transliteration pass
     // untouched, because the pass never sees the name as a word — so the
     // split has to put the Hebrew form back itself.
