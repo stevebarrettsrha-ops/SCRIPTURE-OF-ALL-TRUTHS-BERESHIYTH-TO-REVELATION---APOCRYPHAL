@@ -20,6 +20,14 @@ Which form wins:
      marks wins — "Laḇan" over "Laban", "Ḥeḇron" over "Hebron" — and a tie
      goes to the commoner form.
 
+  4. There is no J in these names: J is Y, and Ja is Yah. A name that
+     still arrived with a J (mostly in Ḥanoḵ, Yashar, Yoḇelim and 1 Ezra)
+     takes the form the canon already prints for the same person or place
+     where there is one (Jebusites -> Yahḇusites, Jethro -> Yahthro), and
+     otherwise is respelled by the rule (Ijasusa'al -> Yahsusa'Al,
+     Gida'ljal -> Gada'lYah'Al). Roman names (Julius, Justus, Julia,
+     Junias) are left as they are.
+
 Pairs that only look alike are left alone (DISTINCT): "Baruk" the word and
 "Baruḵ" the man, "Haran" the man and "Ḥaran" the city, "Ramah" and
 "Ra‛mah", and so on.
@@ -76,6 +84,53 @@ GUIDE = {
 # The letter of Yahudah (Jude) is named as the guide names it.
 GUIDE_SKIP_BOOKS = {"Yahudah": {"yahudah"}}
 
+# 4. No J: J is Y, Ja is Yah. Left side as it arrived, right side settled.
+NO_J = {
+    # --- the form the canon already prints for the same name
+    "Jeshua": "Yĕshua", "Joppa": "Yapho", "Jamnia": "Yaḇneh",
+    "Jozadak": "Yahhotsaḏaq", "Jebusites": "Yahḇusites",
+    "Jebusite": "Yahḇusite", "Jabus": "Yahḇus", "Jephuneh": "Yahphunneh",
+    "Joab": "Yo’aḇ", "Jozabad": "Yozaḇaḏ", "Jeremoth": "Yahrĕmoth",
+    "Jamin": "Yamin", "Jachin": "Yaḵin", "Jesse": "Yahshai",
+    "Jeshaiah": "Yahshayah", "Jarib": "Yariḇ", "Jehohanan": "Yahhoḥanan",
+    "Malchijah": "Malkiyah", "Malchiyah": "Malkiyah", "Joarib": "Yoyariḇ",
+    "Jazer": "Ya‛zĕr", "Jemual": "Yahmu’al", "Jeush": "Ye‛ush",
+    "Jetzer": "Yĕtser", "Jezer": "Yĕtser", "Jaakon": "Ya‛aqan",
+    "Jahaz": "Yahats", "James": "Ya'aqoḇ", "Jehoiachin": "Yahhoyaḵin",
+    "Jorah": "Yorah", "Jedaiah": "Yahḏayah", "Jahazial": "Yaḥazi’al",
+    "Josiphiah": "Yosiphyah", "Jahzeiah": "Yaḥzeyah", "Mijamin": "Miyamin",
+    "Jeremai": "Yahrĕmai", "Ahijah": "Aḥiyah", "Kirjath": "Qiryath",
+    "Jabbok": "Yabboq", "Jabbuk": "Yabboq", "Jasub": "Yashuḇ",
+    "Jahleal": "Yaḥle’al", "Jachleal": "Yaḥle’al", "Yachleal": "Yaḥle’al",
+    "Jahzial": "Yaḥtsi’al", "Jachzeal": "Yaḥtse’al", "Yachzeal": "Yaḥtse’al",
+    "Jeroboam": "Yaroḇ‛am", "Jobal": "Yobal", "Jabal": "Yaḇal",
+    "Jubal": "Yuḇal", "Jetheth": "Yahthĕth", "Ajah": "Ayah",
+    "Jehoseph": "Yahhosĕph", "Jishvah": "Yahshwah", "Jishvi": "Yahshwi",
+    "Jethro": "Yahthro", "Jered": "Yahreḏ", "Jarmuth": "Yarmuth",
+    "Ajalon": "Ayalon", "Hallelujah": "HalleluYah", "Halleluyah": "HalleluYah",
+    "Judith": "Yehudith", "Jehudith": "Yehudith",
+    # --- by the rule alone
+    "Jambri": "Yahmbri", "Jaalah": "Yahalah", "Jaddus": "Yahddus",
+    "Joda": "Yoda", "Johanan": "Yoḥanan", "Jeual": "Yeual",
+    "Jodan": "Yodan", "Jeremial": "Yahrĕmial", "Jathan": "Yahthan",
+    "Javanim": "Yahwanim", "Jimnah": "Yimnah", "Jekuthial": "Yequthial",
+    "Janiah": "Yahniah", "Jobat": "Yobat", "Jephal": "Yephal",
+    "Jannes": "Yahnnes", "Jambres": "Yahmbres",
+    # --- the names in Ḥanoḵ and Yoḇelim
+    "Ijasusa'al": "Yahsusa'Al", "Gida'ljal": "Gada'lYah'Al",
+    "Mel'ejal": "Mel'eYah'Al", "Melkejal": "MelkeYah'Al",
+    "Baraqijal": "BaraqiYah'Al", "Rumjal": "RumYah'Al",
+    "Danjal": "DanYah'Al", "Batarjal": "BatarYah'Al",
+    "Busasejal": "BusaseYah'Al", "Rasujal": "RasuYah'Al",
+    "Jomjaal": "YomYah'Al", "Semjaza": "SemYahza", "Samjaza": "SamYahza",
+    "Kasdeja": "KasdeYah", "Asonja": "AsonYah", "Orjares": "OrYahres",
+    "Hilujaseph": "HiluYahseph", "Abelsjail": "Abelsyail",
+    "Jetral": "Yetral", "Jeqon": "Yeqon", "Aljo": "Alyo",
+    "Ijaska": "Yahska", "Ijasaka": "Yahsaka", "Ijaka": "Yahka",
+    "Ijona": "Iyona", "Ije": "Iyĕ",
+}
+THE_NAME = '(<span class="dn">YAHUAH</span>) <span class="hwhy">HWHY</span>'
+
 # Look-alikes that are different names, or a name beside a common word.
 DISTINCT = {
     "baruk", "shelah", "haran", "er", "ramah", "ben", "heal", "hor", "abi",
@@ -113,12 +168,14 @@ def count_words():
 def build_map(cnt):
     """variant -> winner, for whole words."""
     mapping = dict(EXPLICIT)
+    mapping.update(NO_J)
     guide_stems = []
     for win, rivals in GUIDE.items():
         for r in rivals:
             mapping[r] = win
             guide_stems.append((r, win))
     settled = {fold(w) for w in list(mapping) + list(mapping.values())}
+    settled -= {fold(w) for w in NO_J.values()} - {fold(w) for w in NO_J}
     stems = sorted(((fold(win), win) for win in GUIDE), key=lambda p: -len(p[0]))
 
     def built_on_guide(w):
@@ -160,6 +217,7 @@ def apply(text, mapping, book):
         if win and book not in GUIDE_SKIP_BOOKS.get(w, ()):
             return win + tail
         return m.group(0)
+    text = re.sub(r"\bJehovah\b", THE_NAME, text)
     parts = TAG.split(text)
     for i in range(0, len(parts), 2):          # even parts are outside tags
         parts[i] = WORD.sub(one, parts[i])
