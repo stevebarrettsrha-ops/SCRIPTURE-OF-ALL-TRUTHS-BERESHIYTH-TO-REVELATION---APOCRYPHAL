@@ -27,6 +27,8 @@ Which form wins:
      otherwise is respelled by the rule (Ijasusa'al -> Yahsusa'Al,
      Gida'ljal -> Gada'lYah'Al). Roman names (Julius, Justus, Julia,
      Junias) are left as they are.
+  5. Ye- and Je- are Yah-, as the canon already has it in Yahrushalayim
+     and Yahrmeyahu: Yĕshua -> Yahshua, Yĕhu -> Yahhu, Yehudith -> Yahudith.
 
 Pairs that only look alike are left alone (DISTINCT): "Baruk" the word and
 "Baruḵ" the man, "Haran" the man and "Ḥaran" the city, "Ramah" and
@@ -129,6 +131,17 @@ NO_J = {
     "Ijaska": "Yahska", "Ijasaka": "Yahsaka", "Ijaka": "Yahka",
     "Ijona": "Iyona", "Ije": "Iyĕ",
 }
+# 5. Ye- and Je- are Yah-: the same rule the canon already follows in
+#    Yahrushalayim, Yahriḥo and Yahrmeyahu, carried to the names it missed.
+YE_YAH = {
+    "Yĕhu": "Yahhu", "Yĕshua": "Yahshua", "Yehudith": "Yahudith",
+    "Ye‛arim": "Yah‛arim", "Ye‛i’ĕl": "Yah‛i’ĕl", "Ye‛ush": "Yahush",
+    "Yĕtser": "Yahtser", "Yĕtserites": "Yahtserites", "Yĕsher": "Yahsher",
+    "Ye‛u’ĕl": "Yah‛u’ĕl", "Ye‛uts": "Yah‛uts", "Yeual": "Yahual",
+    "Yequthial": "Yahquthial", "Yephal": "Yahphal", "Yetral": "Yahtral",
+    "Yeqon": "Yahqon", "Miḵayehu": "Miḵayahu",
+    "Alyeho‛ĕynai": "Alyahho‛ĕynai",
+}
 THE_NAME = '(<span class="dn">YAHUAH</span>) <span class="hwhy">HWHY</span>'
 
 # Look-alikes that are different names, or a name beside a common word.
@@ -169,6 +182,7 @@ def build_map(cnt):
     """variant -> winner, for whole words."""
     mapping = dict(EXPLICIT)
     mapping.update(NO_J)
+    mapping.update(YE_YAH)
     guide_stems = []
     for win, rivals in GUIDE.items():
         for r in rivals:
@@ -176,6 +190,7 @@ def build_map(cnt):
             guide_stems.append((r, win))
     settled = {fold(w) for w in list(mapping) + list(mapping.values())}
     settled -= {fold(w) for w in NO_J.values()} - {fold(w) for w in NO_J}
+    settled |= {fold(w) for w in YE_YAH} | {fold(w) for w in YE_YAH.values()}
     stems = sorted(((fold(win), win) for win in GUIDE), key=lambda p: -len(p[0]))
 
     def built_on_guide(w):
@@ -203,6 +218,12 @@ def build_map(cnt):
         for f in forms:
             if f != win and f.lower() != win.lower():
                 mapping[f] = win
+    # Follow a chain to its end: Jeush -> Ye‛ush -> Yahush.
+    for k in list(mapping):
+        seen = {k}
+        while mapping[k] in mapping and mapping[mapping[k]] not in seen:
+            seen.add(mapping[k])
+            mapping[k] = mapping[mapping[k]]
     return {k: v for k, v in mapping.items() if k != v}
 
 

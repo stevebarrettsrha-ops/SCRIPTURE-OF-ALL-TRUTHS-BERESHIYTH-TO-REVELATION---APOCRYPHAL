@@ -457,7 +457,7 @@ def build_apocrypha():
         ("wisdom",      "ḤOḴMATH SHELOMOH",      "Wisdom of Solomon",     295, 19),
         ("esther-add",  "TOSEPHOTH ESTĔR",       "Additions to Esther",   320, 6),
         ("tobit",       "TOḆIYAH",               "Tobit",                 327, 14),
-        ("judith",      "YEHUDITH",              "Judith",                343, 16),
+        ("judith",      "YAHUDITH",              "Judith",                343, 16),
         ("susanna",     "SHOSHANNAH",            "Susanna",               367, 1),
         ("psalm151",    "TEHILLIM 151",          "Psalm 151",             371, 1),
         ("eth-enoch",   "ḤANOḴ HABASHIY",        "Enoch (Ethiopic)",      372, 108),
