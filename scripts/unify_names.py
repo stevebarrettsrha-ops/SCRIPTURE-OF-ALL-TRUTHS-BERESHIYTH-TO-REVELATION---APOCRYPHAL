@@ -239,6 +239,10 @@ def apply(text, mapping, book):
             return win + tail
         return m.group(0)
     text = re.sub(r"\bJehovah\b", THE_NAME, text)
+    # Joshua son of Nun is Yahusha, whatever form the edition gave him;
+    # the other men named Yahshua (the kohen gadol, the Lewites) keep it.
+    text = re.sub(r"\bY(?:ahshuah?|ĕshua|eshua|ahushua) (the )?son of Nun\b",
+                  lambda m: "Yahusha " + (m.group(1) or "") + "son of Nun", text)
     parts = TAG.split(text)
     for i in range(0, len(parts), 2):          # even parts are outside tags
         parts[i] = WORD.sub(one, parts[i])
