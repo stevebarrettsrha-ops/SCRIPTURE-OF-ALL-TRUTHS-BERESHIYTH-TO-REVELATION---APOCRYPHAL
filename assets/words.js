@@ -268,7 +268,7 @@
   var HOUSE = {
     // --- qodesh: the Hebrew, with the English in brackets --------------
     // The canon's word for what is set apart is qadash, and its plural
-    // qadashiyms (CLAUDE.md). Both now stand in all 104 books with the
+    // qadashiyms (CLAUDE.md). Both now stand in all 105 books with the
     // English kept alongside in brackets, so the reading is never lost.
     // The Set Apart Ruach keeps His own name: Ruach HaQadash.
     "set-apart ruach": "Ruach HaQadash",

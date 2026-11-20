@@ -200,7 +200,7 @@
       var p = parts[i];
       if (!p) continue;
       if (p.charAt(0) === "<") {
-        if (/^<span class="(?:dn|hwhy|fn|term|gloss)"/.test(p)) depth++;
+        if (/^<span class="(?:dn|hwhy|fn|rs|term|gloss)"/.test(p)) depth++;
         else if (p === "</span>" && depth > 0) depth--;
         continue;
       }
@@ -241,7 +241,7 @@
     '<button type="button" data-size="1" aria-label="Larger text">A+</button></div></div>' +
     '<div class="ui-row"><label class="ui-check"><input type="checkbox" data-compact> ' +
     'Compact reading <small>— show YAHUAH without “HWHY”, hide the bracketed English; tap a Hebrew word for its meaning</small></label></div>' +
-    '<div class="ui-row ui-save-row" hidden><button type="button" class="ui-save">⬇ Keep all 104 books on this device</button></div>' +
+    '<div class="ui-row ui-save-row" hidden><button type="button" class="ui-save">⬇ Keep all 105 books on this device</button></div>' +
     '<div class="ui-row ui-links"><a data-ui-search href="#">🔍 Search the scriptures</a>' +
     '<button type="button" class="ui-close">Close</button></div>';
 
@@ -287,8 +287,8 @@
         for (var i = 0; i < 4; i++) pump();
       });
     }).then(function () {
-      button.textContent = "✓ All 104 books are on this device";
-      say2("All 104 books saved for offline reading");
+      button.textContent = "✓ All 105 books are on this device";
+      say2("All 105 books saved for offline reading");
     }, function () { button.disabled = false; button.textContent = "⬇ Try again"; });
   }
 
@@ -399,7 +399,8 @@
   var SECTIONS = [
     ["Torah", "Torah"], ["Nabi'im", "Nabi'im — Prophets"], ["Kethubim", "Kethubim — Writings"],
     ["Messianic", "Messianic Writings"], ["Apocryphal", "Apocryphal Books"],
-    ["Patriarchs", "Testaments of the Patriarchs"], ["Apocrypha", "Ethiopic & Eastern Apocrypha"]
+    ["Patriarchs", "Testaments of the Patriarchs"], ["Apocrypha", "Ethiopic & Eastern Apocrypha"],
+    ["Dead Sea Scrolls", "Dead Sea Scrolls — Additions"]
   ];
   var here = { bookId: null, chapter: null };
 
@@ -454,7 +455,8 @@
     var grid = qp.querySelector(".qp-grid");
     grid.innerHTML = "";
     if (!book) return;
-    for (var i = 1; i <= book.chapter_count; i++) {
+    var first = book.first_chapter || 1;
+    for (var i = first; i < first + book.chapter_count; i++) {
       var a = doc.createElement("a");
       a.href = chapterUrl(book.id, i);
       a.textContent = i;
@@ -518,8 +520,14 @@
       return w.charAt(0) + w.slice(1).toLowerCase();
     }).join(" ");
   }
-  function reference(book, chapter, verse) {
+  // A book numbered on from another is cited by the shared name: Psalm 155
+  // of the Dead Sea Scrolls is "Tehillim 155:3", not "Tehillim 151–174 155:3".
+  function citeName(book) {
     var name = titleCase(book.hebrew);
+    return book.first_chapter > 1 ? name.replace(/\s+\d+[–-]\d+$/, "") : name;
+  }
+  function reference(book, chapter, verse) {
+    var name = citeName(book);
     if (book.chapter_count <= 1 && !verse) return name;
     return name + " " + chapter + (verse ? ":" + verse : "");
   }
@@ -592,6 +600,7 @@
     chapterRendered: function (book, chapter) { here.bookId = book.id; here.chapter = chapter; mount(); },
     shareVerse: shareVerse,
     reference: reference,
+    citeName: citeName,
     titleCase: titleCase,
     toast: say2,
     KEEP: KEEP_SEL,

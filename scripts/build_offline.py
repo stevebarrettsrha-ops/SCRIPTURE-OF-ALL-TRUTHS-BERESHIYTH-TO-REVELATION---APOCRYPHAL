@@ -103,11 +103,11 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 
 <!-- ============ HOME VIEW ============ -->
 <div id="view-home" class="view active">
-  <div class="offline-banner">OFFLINE EDITION — all 104 books bundled in this single file</div>
+  <div class="offline-banner">OFFLINE EDITION — all 105 books bundled in this single file</div>
   <header class="site-header">
     <h1>THE BESORAH</h1>
     <div class="sub">Bereshith &mdash; to &mdash; Ḥazon &mdash; with the Apocrypha</div>
-    <nav><a href="#/books">All 104 Books &rarr;</a><a href="#/search">Search</a></nav>
+    <nav><a href="#/books">All 105 Books &rarr;</a><a href="#/search">Search</a></nav>
   </header>
   <main class="home">
     <section class="card daily-card" id="daily-card"></section>
@@ -143,7 +143,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
   <header class="site-header">
     <h1>THE BESORAH</h1>
     <div class="sub">Search the Scriptures</div>
-    <nav><a href="#/">&larr; Home</a><a href="#/books">All 104 Books</a></nav>
+    <nav><a href="#/">&larr; Home</a><a href="#/books">All 105 Books</a></nav>
   </header>
   <main class="search-main"><div id="search-box"></div></main>
 </div>
@@ -283,7 +283,8 @@ __HOME_JS__
     { key: "Messianic",   label: "Messianic Writings" },
     { key: "Apocryphal",  label: "Apocryphal Books" },
     { key: "Patriarchs",  label: "Testaments of the Twelve Patriarchs" },
-    { key: "Apocrypha",   label: "Ethiopic & Eastern Apocrypha" }
+    { key: "Apocrypha",   label: "Ethiopic & Eastern Apocrypha" },
+    { key: "Dead Sea Scrolls", label: "Dead Sea Scrolls — Additions" }
   ];
 
   const INDEX = JSON.parse(document.getElementById('index-data').textContent);
@@ -325,7 +326,7 @@ __HOME_JS__
     const h = location.hash || '#/';
     // Forms:
     //   #/                              -> home (Daily Bread & co.)
-    //   #/books                         -> all 104 books
+    //   #/books                         -> all 105 books
     //   #/book/<id>                     -> book chapters
     //   #/book/<id>/<ch>                -> chapter view
     //   #/book/<id>/<ch>/v/<n>          -> chapter view, scrolled to verse n
@@ -430,7 +431,7 @@ __HOME_JS__
     if (book.chapter_count === 1) {
       const a = document.createElement('a');
       a.className = 'chapter-link';
-      a.href = `#/book/${encodeURIComponent(book.id)}/1`;
+      a.href = `#/book/${encodeURIComponent(book.id)}/${book.first_chapter || 1}`;
       a.style.maxWidth = '300px';
       a.style.margin = '2rem auto';
       a.style.fontSize = '1.1rem';
@@ -442,12 +443,15 @@ __HOME_JS__
       heading.style.textAlign = 'center';
       heading.style.color = 'var(--ink-dim)';
       heading.style.marginTop = '1rem';
-      heading.textContent = `${book.chapter_count} chapters`;
+      const first = book.first_chapter || 1;
+      heading.textContent = first > 1
+        ? `${book.chapter_count} chapters · ${first}–${first + book.chapter_count - 1}`
+        : `${book.chapter_count} chapters`;
       list.appendChild(heading);
 
       const grid = document.createElement('div');
       grid.className = 'chapter-grid';
-      for (let i = 1; i <= book.chapter_count; i++) {
+      for (let i = first; i < first + book.chapter_count; i++) {
         const a = document.createElement('a');
         a.className = 'chapter-link';
         a.href = `#/book/${encodeURIComponent(book.id)}/${i}`;
@@ -466,7 +470,7 @@ __HOME_JS__
     // Un-escape only the whitelisted tags, opening and closing handled
     // separately so a footnote containing a divine name still renders.
     const html = esc
-      .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+      .replace(/&lt;span class="(dn|hwhy|fn|rs)"&gt;/g, '<span class="$1">')
       .replace(/&lt;\/span&gt;/g, "</span>");
     return window.BesorahUI ? BesorahUI.decorate(html) : html;
   }
@@ -509,12 +513,13 @@ __HOME_JS__
 
     document.getElementById('pdf-link').href = `SCRIPTURE/${ch.pdf}#page=${ch.page}`;
 
+    const first = book.first_chapter || 1, last = first + book.chapter_count - 1;
     const prevHref = chapterUrl(book.id, chapter - 1);
     const nextHref = chapterUrl(book.id, chapter + 1);
-    setLink('prev',  prevHref, chapter <= 1);
-    setLink('prev2', prevHref, chapter <= 1);
-    setLink('next',  nextHref, chapter >= book.chapter_count);
-    setLink('next2', nextHref, chapter >= book.chapter_count);
+    setLink('prev',  prevHref, chapter <= first);
+    setLink('prev2', prevHref, chapter <= first);
+    setLink('next',  nextHref, chapter >= last);
+    setLink('next2', nextHref, chapter >= last);
     document.getElementById('book-toc').href = bookUrl(book.id);
 
     // Bookmark + last-read tracking (localStorage; nothing leaves the device)
