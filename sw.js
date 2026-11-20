@@ -12,7 +12,7 @@
 //   SCRIPTURE/*.pdf — always from the network; far too large to keep.
 //
 // Bump VERSION when the list below changes.
-var VERSION = "besorah-v1";
+var VERSION = "besorah-v2";
 var SHELL = [
   "./",
   "index.html",

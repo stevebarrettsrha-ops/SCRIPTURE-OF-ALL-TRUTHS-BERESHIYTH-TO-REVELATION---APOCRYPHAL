@@ -125,7 +125,7 @@ def scan(only=None):
             # dn/hwhy mark divine names; fn carries a footnote from the
             # source edition (styled and skipped by speech, like sweep_text
             # and check_render both allow).
-            if cls not in ("dn", "hwhy", "fn"):
+            if cls not in ("dn", "hwhy", "fn", "rs"):
                 f["bad_class"].append((loc, cls))
         if _STRANDED.search(t):
             f["stranded"].append((loc, t[:90]))

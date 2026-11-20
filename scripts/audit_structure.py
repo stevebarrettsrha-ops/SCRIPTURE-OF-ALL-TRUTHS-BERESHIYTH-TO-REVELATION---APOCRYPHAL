@@ -61,6 +61,7 @@ CHAPTERS = {
  'adam-eve-1': 79, 'adam-eve-2': 22,
  'apoc-azariah': 1, 'apoc-manasseh': 1, 'apoc-susanna': 1,
  'apoc-bel-dragon': 1, 'apoc-epistle-jeremiah': 1, 'apoc-psalm151': 1,
+ 'tehillim-dss': 24,
 }
 
 # (book, chapter, last verse before the gap, first verse after) — every one
@@ -121,9 +122,12 @@ def main():
         if d["chapter_count"] != len(chs):
             problems.append(f"{bid}: chapter_count field {d['chapter_count']}"
                             f" != {len(chs)}")
+        # A book may be numbered on from another: Psalms 151-174 of the
+        # Dead Sea Scrolls begin at 151 ("first_chapter" in the index).
+        first = d.get("first_chapter", 1)
         keys = sorted(int(k) for k in chs)
-        if keys != list(range(1, len(keys) + 1)):
-            problems.append(f"{bid}: chapter keys not 1..N")
+        if keys != list(range(first, first + len(keys))):
+            problems.append(f"{bid}: chapter keys not {first}..N")
         want = CHAPTERS.get(bid)
         if want is None:
             problems.append(f"{bid}: no expected chapter count on record")

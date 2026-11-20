@@ -25,7 +25,7 @@
     ["", "All books"], ["Torah", "Torah"], ["Nabi'im", "Nabi'im — Prophets"],
     ["Kethubim", "Kethubim — Writings"], ["Messianic", "Messianic Writings"],
     ["Apocryphal", "Apocryphal Books"], ["Patriarchs", "Testaments of the Patriarchs"],
-    ["Apocrypha", "Ethiopic & Eastern Apocrypha"]
+    ["Apocrypha", "Ethiopic & Eastern Apocrypha"], ["Dead Sea Scrolls", "Dead Sea Scrolls — Additions"]
   ];
   var PAGE = 100;
 
@@ -137,8 +137,19 @@
       }
     });
     if (!best) return null;
-    if (!m) return { book: best, ch: 1, v: null };
-    if (ch < 1 || ch > best.chapter_count) return null;
+    var first = function (b) { return b.first_chapter || 1; };
+    var holds = function (b, c) { return c >= first(b) && c < first(b) + b.chapter_count; };
+    if (!m) return { book: best, ch: first(best), v: null };
+    if (!holds(best, ch)) {
+      // "Tehillim 155": the psalm lives in the book that carries on the
+      // numbering (Psalms 151–174, Dead Sea Scrolls).
+      var on = idx.books.filter(function (b) {
+        return b !== best && holds(b, ch) &&
+          foldQ(b.hebrew).replace(/[\s\-]/g, "").indexOf(foldQ(best.hebrew).replace(/[\s\-]/g, "")) === 0;
+      })[0];
+      if (!on) return null;
+      best = on;
+    }
     return { book: best, ch: ch, v: v };
   }
 
@@ -158,7 +169,9 @@
   function mount(box, env) {
     var engine = new Engine(env);
     var ui = global.BesorahUI;
-    var name = function (b) { return ui ? ui.titleCase(b.hebrew) : b.hebrew; };
+    var name = function (b) {
+      return ui && ui.citeName ? ui.citeName(b) : ui ? ui.titleCase(b.hebrew) : b.hebrew;
+    };
     box.innerHTML =
       '<form class="srch-form" role="search">' +
       '<label class="srch-l" for="srch-q">Find a verse or phrase</label>' +

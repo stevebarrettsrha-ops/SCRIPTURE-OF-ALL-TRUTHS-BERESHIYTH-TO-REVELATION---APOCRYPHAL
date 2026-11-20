@@ -60,8 +60,11 @@ scripts/
 - **Testaments of the Twelve Patriarchs** (12)
 - **Ethiopic & Eastern Apocrypha** (22) — 1–4 Maccabees, Tobit, Judith, Sirach,
   Wisdom, Baruch, Jubilees, 1 Enoch, 1 Clements, Shepherd of Hermas, …
+- **Dead Sea Scrolls — Additions** (1) — Tehillim 151–174, the psalms the
+  Dead Sea Scrolls carry beyond the 150 (11QPsᵃ and the fragmentary
+  scrolls), numbered on from Tehillim as the edition numbers them
 
-Total: **104 books**.
+Total: **105 books**.
 
 ## Reading comforts
 
@@ -426,6 +429,22 @@ lost, the gap is listed in `audit_structure.py`). An agent pass over the
 apocrypha against their PDFs then fixed 72 scan misreads ("5ennacherib",
 "oid age", "1 have"), running heads and title pages run into verses, and
 seven more places where a man's "lord" had become the Name.
+
+### Tehillim 151–174 (Dead Sea Scrolls)
+
+`scripts/add_psalms_dss.py` builds the book from
+`SCRIPTURE/Psalms-151-174-Dead-Sea-Scrolls.pdf` (Bethabara Scriptures,
+public domain), then `sweep_text.py --fix` gives it the house words like
+every other book. Its chapters are numbered 151–174 (`"first_chapter":
+151` in the index), so it reads and is cited as Tehillim 155:3; the
+Tehillim card on the home page carries on past 150 into it, and a search for
+"Tehillim 155" goes there. Each psalm's heading ("A HalleluYah of Dawiḏ son
+of Yahshai") is its unnumbered opening. The scrolls' square brackets become
+the reader's own marks: words lost and not restored read "…", and words the
+editors restored where a scroll is damaged are set lighter and in italic
+(`<span class="rs">`), so the scroll's own words can always be told from the
+restoration. The Hebrew acrostic letters beside Psalms 157 and 161 are not
+printed, as they are not for Tehillim 119.
 
 Two openings the source prints before verse 1, with no number of their own
 — the superscription of Jubilees and the salutation of 1 Clement — are kept
