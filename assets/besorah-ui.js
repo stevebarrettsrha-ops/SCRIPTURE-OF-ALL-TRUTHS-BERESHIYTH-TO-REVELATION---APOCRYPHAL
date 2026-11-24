@@ -200,7 +200,7 @@
       var p = parts[i];
       if (!p) continue;
       if (p.charAt(0) === "<") {
-        if (/^<span class="(?:dn|hwhy|fn|rs|term|gloss)"/.test(p)) depth++;
+        if (/^<span class="(?:dn|hwhy|fn|rs|cj|term|gloss)"/.test(p)) depth++;
         else if (p === "</span>" && depth > 0) depth--;
         continue;
       }

@@ -47,7 +47,7 @@ WORDS_JS = ROOT / "assets" / "words.js"
 PRON_JS = ROOT / "assets" / "pronunciation.js"
 
 TAG = re.compile(r"<[^>]+>")
-ALLOWED_TAG = re.compile(r'<span class="(?:dn|hwhy|fn|rs)">|</span>')
+ALLOWED_TAG = re.compile(r'<span class="(?:dn|hwhy|fn|rs|cj)">|</span>')
 VERSE_MARKER = re.compile(r"\[\s*(\d{1,3})\s*[J\])}]\s*")
 # The double numbering some editions print for the Shepherd of Hermas —
 # "10[76]:2" — is a cross-reference, not part of the reading.

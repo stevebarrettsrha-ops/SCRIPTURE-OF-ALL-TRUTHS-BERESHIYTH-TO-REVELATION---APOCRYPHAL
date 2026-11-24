@@ -449,8 +449,16 @@ fragments of the giants' story; the "Five Elements" and "Hearers" pages that
 follow them are Manichaean teaching, not the story, and are not included.
 Each fragment is split at its sentences (and, where long, at its gaps) into
 verses of the canon's length. The brackets become "…" and
-`<span class="rs">` restorations as for the Dead Sea Scrolls psalms below,
-and `sweep_text.py --fix` then applies the house words.
+`<span class="rs">` restorations as for the Dead Sea Scrolls psalms below.
+The gaps are then filled with conjectured words from
+`scripts/giants_conjectures.py` — drawn from 1 Enoch 6–16, Bereshith 6, the
+fuller translations of the same scrolls, Henning's Middle Persian edition, and
+a paraphrase reconstruction ("The Book of Giants — the reconstruction, based
+on biblical texts") followed in chapters 1–4 wherever it offers a reading.
+They are set as `<span class="cj">`, lighter and in italic like the editors'
+restorations, so the scroll's own words always stand apart from what is
+supplied; two gaps where nothing sensible can be offered stay "…".
+`sweep_text.py --fix` then applies the house words.
 
 ### Tehillim 151–174 (Dead Sea Scrolls)
 

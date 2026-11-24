@@ -46,6 +46,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import transliterate as T  # noqa: E402
+from giants_conjectures import FILLS  # noqa: E402
 
 PDF_NAME = "The-Book-of-Giants-Lumpkin.pdf"
 PDF = ROOT / "SCRIPTURE" / PDF_NAME
@@ -302,6 +303,25 @@ def render(body, rules):
     return brackets(translit(body, rules))
 
 
+def conjecture(t, fills, rules, key):
+    """Fill each gap in turn with its conjectured words (<span class="cj">);
+    None keeps the gap."""
+    parts = t.split("…")
+    assert len(fills) == len(parts) - 1, (key, len(parts) - 1, len(fills))
+    out = parts[0]
+    for fill, rest in zip(fills, parts[1:]):
+        if fill is None:
+            out += "…" + rest
+        else:
+            out += ' <span class="cj">' + translit(fill, rules) + "</span> " + rest
+    out = re.sub(r"\s+", " ", out)
+    out = re.sub(r'\s+([,;:.?!"])(?=\s|$|<)', r"\1", out)
+    out = re.sub(r'</span> ([,;:.?!])', r"</span>\1", out)
+    out = re.sub(r'</span> "(?=[.,]|$)', '</span>"', out)
+    out = re.sub(r"(^|\. )([a-z])", lambda m: m.group(1) + m.group(2).upper(), out.strip())
+    return out
+
+
 def page_of(fragment, first, last):
     from pypdf import PdfReader
     r = PdfReader(str(PDF))
@@ -327,6 +347,8 @@ def main():
         vs = []
         for frag in frags[a:b]:
             vs += verses_of(render(frag, rules))
+        vs = [conjecture(t, FILLS.get(f"{n}:{i}", []), rules, f"{n}:{i}")
+              for i, t in enumerate(vs, 1)]
         page = page_of(frags[a], *pages_)
         chapters[str(n)] = {"verses": [{"n": i, "t": t} for i, t in enumerate(vs, 1)],
                             "pdf": PDF_NAME, "page": page}

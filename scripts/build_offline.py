@@ -470,7 +470,7 @@ __HOME_JS__
     // Un-escape only the whitelisted tags, opening and closing handled
     // separately so a footnote containing a divine name still renders.
     const html = esc
-      .replace(/&lt;span class="(dn|hwhy|fn|rs)"&gt;/g, '<span class="$1">')
+      .replace(/&lt;span class="(dn|hwhy|fn|rs|cj)"&gt;/g, '<span class="$1">')
       .replace(/&lt;\/span&gt;/g, "</span>");
     return window.BesorahUI ? BesorahUI.decorate(html) : html;
   }

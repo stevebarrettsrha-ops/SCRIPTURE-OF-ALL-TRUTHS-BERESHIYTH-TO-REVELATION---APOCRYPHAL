@@ -1182,6 +1182,6 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
 /* Words restored where a scroll is damaged (Psalms 151–174, Dead Sea
    Scrolls): set lighter and in italic, so the reader can tell the scroll's
    own words from the editor's restoration. */
-.rs { font-style: italic; color: var(--ink-dim); }
-.rs::before, .rs::after { content: ""; }
+.rs, .cj { font-style: italic; color: var(--ink-dim); }
+.rs::before, .rs::after, .cj::before, .cj::after { content: ""; }
 .dss-note { margin: 0.8rem 0 0.3rem; color: var(--ink-dim); font-size: 0.85rem; }
