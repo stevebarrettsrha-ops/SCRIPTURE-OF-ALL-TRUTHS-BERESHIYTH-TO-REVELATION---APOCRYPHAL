@@ -3772,6 +3772,10 @@ window.BesorahEnv = (function () {
     var word = key === "hwhy" ? "Yahuah" : target.textContent;
     var spoken = global.BesorahPron && BesorahPron.wordFor
       ? word.split(/\s+/).map(BesorahPron.wordFor).join(" ") : word;
+    // What the voice is given: the same respelling, with the marks taken
+    // out as the read-aloud player does (a hyphen becomes a space, so no
+    // voice announces "dash").
+    var voiced = global.BesorahPron && BesorahPron.speakable ? BesorahPron.speakable(word) : spoken;
     pop.innerHTML =
       '<div class="ui-pop-w">' + esc(shown) + "</div>" +
       (meaning ? '<div class="ui-pop-m">' + esc(meaning) + "</div>" : "") +
@@ -3791,7 +3795,7 @@ window.BesorahEnv = (function () {
     if (r.bottom + pop.offsetHeight + 16 > global.innerHeight) top = r.top + sy - pop.offsetHeight - 8;
     pop.style.left = left + "px";
     pop.style.top = top + "px";
-    pop.querySelector(".ui-say") && pop.querySelector(".ui-say").addEventListener("click", function () { say(spoken); });
+    pop.querySelector(".ui-say") && pop.querySelector(".ui-say").addEventListener("click", function () { say(voiced); });
   }
   function hidePop() { pop.hidden = true; }
 
