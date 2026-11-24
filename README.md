@@ -58,13 +58,14 @@ scripts/
 - **Apocryphal Books** (4) — Ḥanok (Enoch), Yashar (Jasher), First & Second
   Book of Adam and Eve
 - **Testaments of the Twelve Patriarchs** (12)
-- **Ethiopic & Eastern Apocrypha** (22) — 1–4 Maccabees, Tobit, Judith, Sirach,
-  Wisdom, Baruch, Jubilees, 1 Enoch, 1 Clements, Shepherd of Hermas, …
+- **Ethiopic & Eastern Apocrypha** (23) — 1–4 Maccabees, Tobit, Judith, Sirach,
+  Wisdom, Baruch, Jubilees, 1 Enoch, the Book of Giants, 1 Clements,
+  Shepherd of Hermas, …
 - **Dead Sea Scrolls — Additions** (1) — Tehillim 151–174, the psalms the
   Dead Sea Scrolls carry beyond the 150 (11QPsᵃ and the fragmentary
   scrolls), numbered on from Tehillim as the edition numbers them
 
-Total: **105 books**.
+Total: **106 books**.
 
 ## Reading comforts
 
@@ -73,7 +74,7 @@ Total: **105 books**.
 | **Light, Sepia or Dark** — or follow the device (the default) | the round **Aa** button, bottom-right of every page |
 | **Text size**, 85%–170% | Aa → Text size; everything scales, menus included |
 | **Compact reading** — "(YAHUAH) HWHY" reads as Yahuah, and the bracketed English after a Hebrew word ("qadash (Set Apart)") steps aside | Aa → Compact reading |
-| **Glossary** — tap any dotted Hebrew word (shamayim, berith, naḇi, chesed …) for its meaning and how to say it, with a 🔊 button | any verse |
+| **Glossary** — tap any dotted Hebrew word (shamayim, berith, naḇi, chesed …) for its meaning and how to say it, with a 🔊 button. Names are tappable too — Ya'aqoḇ ("heel-holder — Jacob"), Mosheh, Yerushalayim, the Name's titles (Aluahim, Mashiach, Yasharal) and the Watchers and giants of Ḥanoḵ — underlined more lightly; the canon's spellings of one name (Ya'aqoḇ / Ya‛aqoḇ, Yoseph / Yosĕph) share one entry, and a people (Kena'anites, Yasharalites) is explained through its name. About 330 names, covering 85% of the Hebrew names in the text | any verse, every book |
 | **Search the text** — words in order, ignoring case, diacritics and apostrophe style; a reference ("Bereshith 1:1", "John 3:16") offers a Go-to link | 🔍 in the chapter bar, Search on the home page, `search.html` |
 | **Go to** — pick a book and chapter from the chapter bar | tap the book name ▾ |
 | **Turn chapters** with ← / → or a horizontal swipe on the text | chapter page |
@@ -429,6 +430,35 @@ lost, the gap is listed in `audit_structure.py`). An agent pass over the
 apocrypha against their PDFs then fixed 72 scan misreads ("5ennacherib",
 "oid age", "1 have"), running heads and title pages run into verses, and
 seven more places where a man's "lord" had become the Name.
+
+### The Book of Giants (Gibborim)
+
+`scripts/add_book_of_giants.py` builds `apoc-giants` from
+`SCRIPTURE/The-Book-of-Giants-Lumpkin.pdf` (Joseph B. Lumpkin), taking the
+Book of Giants alone: the volume's copy of 1 Enoch, which the canon already
+has, and Lumpkin's commentary are left out. It sits in the Ethiopic &
+Eastern Apocrypha straight after Ḥanoḵ (Ethiopic), and reads like the books
+around it — six chapters of numbered verses, transliterated by the canon's
+rules, with the names in the forms Ḥanoḵ already prints (Semjaza, Azazal,
+Baraqal, Raphaal). Chapters 1–4 are the Aramaic version, the Qumran
+fragments (1Q23, 2Q26, 4Q530–532, 6Q8) in Lumpkin's order with the one
+passage he adds from the Manichean version (3:13–18): the Watchers' sin and
+the giants' violence; the giants' fear and dreams; Mahway's flight to Ḥanoḵ;
+Ḥanoḵ's tablet to Semjaza. Chapters 5–6 are the Manichean (Middle Persian)
+fragments of the giants' story; the "Five Elements" and "Hearers" pages that
+follow them are Manichaean teaching, not the story, and are not included.
+Each fragment is split at its sentences (and, where long, at its gaps) into
+verses of the canon's length. The brackets become "…" and
+`<span class="rs">` restorations as for the Dead Sea Scrolls psalms below.
+The gaps are then filled with conjectured words from
+`scripts/giants_conjectures.py` — drawn from 1 Enoch 6–16, Bereshith 6, the
+fuller translations of the same scrolls, Henning's Middle Persian edition, and
+a paraphrase reconstruction ("The Book of Giants — the reconstruction, based
+on biblical texts") followed in chapters 1–4 wherever it offers a reading.
+They are set as `<span class="cj">`, lighter and in italic like the editors'
+restorations, so the scroll's own words always stand apart from what is
+supplied; two gaps where nothing sensible can be offered stay "…".
+`sweep_text.py --fix` then applies the house words.
 
 ### Tehillim 151–174 (Dead Sea Scrolls)
 
