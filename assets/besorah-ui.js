@@ -147,6 +147,407 @@
     "yahuah": "the Name — יהוה, YHWH",
     "hwhy": "the Name written in paleo-Hebrew letters (read right to left: YHWH)"
   };
+  // Names — what each Hebrew name means, then the English form it replaces.
+  // Keys are lower case with a plain apostrophe and no breve (ĕ -> e), so
+  // the canon's spellings of one name (Ya'aqoḇ, Ya‛aqoḇ; Yoseph, Yosĕph)
+  // find the same entry. Matched only where the word starts with a capital.
+  var NAMES = {
+    // The Name and its titles
+    "aluahim": "the Mighty One, the Almighty — Elohim, God",
+    "al": "the Mighty One — El, God",
+    "yah": "the short form of the Name, as in HalleluYah",
+    "yahusha": "Yah is salvation — Yahusha (Jesus); also Joshua son of Nun",
+    "mashiach": "the Anointed One — Messiah, Christ",
+    "yasharal": "upright with Al, he rules with Al — Israel",
+    "yahusha hamashiach": "Yahusha the Anointed — Jesus Christ",
+    "ruach haqadash": "the Set-apart Spirit — the Holy Spirit",
+    "yasharalite": "one of Yasharal — Israelite",
+    "yasharalites": "the people of Yasharal — Israelites",
+    "yeshua": "salvation, deliverance — Jeshua",
+    // Patriarchs and matriarchs
+    "aḏam": "man, mankind; from adamah, the ground — Adam",
+    "ḥawwah": "life, living — Eve",
+    "qayin": "acquired, possession — Cain",
+    "heḇel": "breath, vapour — Abel",
+    "heḇal": "breath, vapour — Abel",
+    "sheth": "appointed, set in place — Seth",
+    "ḥanoḵ": "dedicated, trained — Enoch",
+    "methushelaḥ": "man of the dart; when he dies it is sent — Methuselah",
+    "lemeḵ": "powerful — Lamech",
+    "noaḥ": "rest, comfort — Noah",
+    "shem": "name, renown — Shem",
+    "ḥam": "hot, warm — Ham",
+    "yepheth": "enlarged, he will open — Japheth",
+    "nimroḏ": "let us rebel — Nimrod",
+    "eḇer": "the one from beyond (the river) — Eber, father of the Iḇrim",
+    "teraḥ": "wanderer, delay — Terah",
+    "naḥor": "snorting, breathing hard — Nahor",
+    "ḥaran": "mountaineer; a place in the north — Haran",
+    "aḇram": "exalted father — Abram",
+    "aḇraham": "father of a multitude — Abraham",
+    "aḇrahim": "father of a multitude — Abraham",
+    "sarah": "princess — Sarah",
+    "haḡar": "flight, the stranger — Hagar",
+    "yishma'al": "Al hears — Ishmael",
+    "yahshma'al": "Al hears — Ishmael",
+    "yitsḥaq": "he laughs — Isaac",
+    "yahtsḥaq": "he laughs — Isaac",
+    "riḇqah": "a tie, a binding — Rebecca",
+    "esaw": "hairy — Esau",
+    "eḏom": "red — Edom, Esaw's land and people",
+    "eḏomites": "the people of Eḏom — Edomites",
+    "ya'aqoḇ": "heel-holder, one who supplants — Jacob",
+    "laḇan": "white — Laban",
+    "le'ah": "weary — Leah",
+    "raḥal": "ewe — Rachel",
+    "yoseph": "he adds, may He add — Joseph",
+    "lot": "covering, veil — Lot",
+    // The tribes
+    "re'uḇen": "behold, a son — Reuben",
+    "re'uḇenites": "the tribe of Re'uḇen — Reubenites",
+    "shim'on": "hearing, he has heard — Simeon",
+    "lewi": "joined, attached — Levi",
+    "lewite": "one of the tribe of Lewi — Levite",
+    "lewites": "the tribe of Lewi, the servants of the dwelling place — Levites",
+    "yahuḏah": "praise — Judah",
+    "yahuḏim": "the people of Yahuḏah — Jews",
+    "yahuḏi": "a man of Yahuḏah — a Jew",
+    "yahuḏite": "of Yahuḏah — Judahite",
+    "yahhuḏite": "of Yahuḏah — Judahite",
+    "dan": "judge — Dan",
+    "naphtali": "my wrestling — Naphtali",
+    "gaḏ": "troop, good fortune — Gad",
+    "gaḏites": "the tribe of Gaḏ — Gadites",
+    "asher": "happy, blessed — Asher",
+    "yahssasḵar": "there is reward — Issachar",
+    "yissakar": "there is reward — Issachar",
+    "zeḇulun": "dwelling, exalted — Zebulun",
+    "binyamin": "son of the right hand — Benjamin",
+    "ephrayim": "doubly fruitful — Ephraim",
+    "menashsheh": "causing to forget — Manasseh",
+    "maḵir": "sold — Machir",
+    "gereshon": "exile, a stranger there — Gershon",
+    "gereshom": "a stranger there — Gershom",
+    "qoraḥ": "bald — Korah",
+    // Leaders, prophets and kings
+    "mosheh": "drawn out (of the water) — Moses",
+    "aharon": "Aaron, brother of Mosheh, the first kohen gadol (meaning uncertain; perhaps 'bearer of light')",
+    "yokeḇeḏ": "Yah is esteem — Jochebed",
+    "al'azar": "Al has helped — Eleazar",
+    "pineḥas": "mouth of brass — Phinehas",
+    "naḏaḇ": "generous, willing — Nadab",
+    "aḇihu": "He is my father — Abihu",
+    "kaleḇ": "wholehearted, dog — Caleb",
+    "naḥshon": "diviner, serpent-like — Nahshon",
+    "amminaḏaḇ": "my people is generous — Amminadab",
+    "ḥur": "white linen, noble — Hur",
+    "bil'am": "not of the people, devourer — Balaam",
+    "siḥon": "sweeping away — Sihon",
+    "oḡ": "long-necked — Og, the giant king of Bashan",
+    "giḏ'on": "hewer, cutter down — Gideon",
+    "yahrubba'al": "let Ba'al contend — Jerubbaal, Gideon's other name",
+    "yahphtaḥ": "he opens — Jephthah",
+    "manowaḥ": "rest — Manoah",
+    "shimshon": "like the sun — Samson",
+    "ruth": "friend, companion — Ruth",
+    "na'omi": "my pleasantness — Naomi",
+    "bo'az": "in him is strength — Boaz",
+    "oḇeḏ": "servant, worshipper — Obed",
+    "ḥannah": "favour, grace — Hannah",
+    "shamu'al": "heard of Al; his name is Al — Samuel",
+    "eli": "ascent, my Al — Eli",
+    "sha'ul": "asked for — Saul",
+    "yahunathan": "Yah has given — Jonathan",
+    "miḵal": "who is like Al? — Michal",
+    "aḇner": "father of light — Abner",
+    "ner": "lamp — Ner",
+    "dawiḏ": "beloved — David",
+    "yo'aḇ": "Yah is father — Joab",
+    "aḇishai": "my father is a gift — Abishai",
+    "asah'al": "Al has made — Asahel",
+    "aḇshalom": "father of peace — Absalom",
+    "aḥithophal": "brother of folly — Ahithophel",
+    "ḥushai": "hasty — Hushai",
+    "naḇal": "fool — Nabal",
+    "aḇiḡayil": "my father is joy — Abigail",
+    "aḵish": "Achish, king of Gath (a Philistine name)",
+    "mephiḇosheth": "from the mouth of shame — Mephibosheth",
+    "tsiḇa": "plant, statue — Ziba",
+    "tsaḏoq": "righteous — Zadok",
+    "eḇyathar": "father of abundance — Abiathar",
+    "aḥimeleḵ": "my brother is king — Ahimelech",
+    "aḥituḇ": "my brother is goodness — Ahitub",
+    "aḥima'ats": "my brother is wrath — Ahimaaz",
+    "nathan": "he gave — Nathan",
+    "shelomoh": "peaceful, his peace — Solomon",
+    "aḏoniyahu": "my Master is Yah — Adonijah",
+    "ḥiram": "noble, exalted brother — Hiram",
+    "ḥuram": "noble — Huram (Hiram)",
+    "heman": "faithful — Heman",
+    "yahḏuthun": "praising — Jeduthun",
+    "yaroḇ'am": "the people will contend — Jeroboam",
+    "neḇat": "look, regard — Nebat",
+    "reḥaḇ'am": "the people is enlarged — Rehoboam",
+    "aḇiyah": "Yah is my father — Abijah",
+    "ma'aḵah": "oppression — Maachah",
+    "ba'asha": "offensive — Baasha",
+    "aḥaḇ": "father's brother — Ahab",
+    "izeḇal": "where is the prince? — Jezebel",
+    "eliyahu": "my Al is Yah — Elijah",
+    "alisha": "Al is salvation — Elisha",
+    "geḥazi": "valley of vision — Gehazi",
+    "na'aman": "pleasantness — Naaman",
+    "naḇoth": "fruits, sprouts — Naboth",
+    "aḥazyahu": "Yah has grasped — Ahaziah",
+    "yehu": "Yah is He — Jehu",
+    "yahhoyaḏa": "Yah knows — Jehoiada",
+    "yo'ash": "Yah has given — Joash",
+    "yahho'ash": "Yah has given — Jehoash",
+    "yahho'aḥaz": "Yah has grasped — Jehoahaz",
+    "ḥaza'al": "Al has seen — Hazael",
+    "aḥaz": "he has grasped — Ahaz",
+    "ḥizqiyahu": "Yah is my strength — Hezekiah",
+    "ḥizqiyah": "Yah is my strength — Hezekiah",
+    "ḥilqiyahu": "Yah is my portion — Hilkiah",
+    "ḥilqiyah": "Yah is my portion — Hilkiah",
+    "yoshiyahu": "Yah supports — Josiah",
+    "tsiḏqiyahu": "Yah is righteousness — Zedekiah",
+    "yahhoyaḵin": "Yah establishes — Jehoiachin",
+    "geḏalyahu": "Yah is great — Gedaliah",
+    "aḥiqam": "my brother has risen — Ahikam",
+    "qareaḥ": "bald — Kareah",
+    "ḥananyah": "Yah has been gracious — Hananiah",
+    "miḵah": "who is like Yah? — Micah",
+    "miḵayehu": "who is like Yah? — Micaiah",
+    "aḥiyah": "Yah is brother — Ahijah",
+    "shim'i": "renowned, heard — Shimei",
+    "hoshea": "salvation — Hosea",
+    "yo'al": "Yah is Al — Joel",
+    "naḥum": "comfort — Nahum",
+    "yashayahu": "Yah is salvation — Isaiah",
+    "yirmayahu": "Yah lifts up — Jeremiah",
+    "baruḵ": "blessed — Baruch",
+    "yahazq'al": "Al strengthens — Ezekiel",
+    "dani'al": "Al is my judge — Daniel",
+    "shaḏraḵ": "Shadrach, the Baḇylonian name given to Ḥananyah",
+    "meyshaḵ": "Meshach, the Baḇylonian name given to Misha'al",
+    "zaḵaryahu": "Yah remembers — Zechariah",
+    "zerubbaḇal": "seed of Baḇel — Zerubbabel",
+    "she'alti'al": "I have asked of Al — Shealtiel",
+    "ezra": "help — Ezra",
+    "nehemyah": "Yah comforts — Nehemiah",
+    "alyashiḇ": "Al restores — Eliashib",
+    "toḇiyah": "Yah is good — Tobiah",
+    "mordeḵai": "Mordecai, of Shushan (a Persian-era name)",
+    "ester": "star; Haḏassah, myrtle, was her Hebrew name — Esther",
+    "aḥashwerosh": "Ahasuerus (Xerxes), king of Persia",
+    "artaḥshashta": "Artaxerxes, king of Persia",
+    "iyoḇ": "where is the Father?; persecuted one — Job",
+    "uzzi'al": "Al is my strength — Uzziel",
+    "ali'ezer": "my Al is help — Eliezer",
+    "ma'aseyah": "work of Yah — Maaseiah",
+    "ḥashaḇyah": "Yah has regarded — Hashabiah",
+    "yahḏayah": "Yah knows — Jedaiah",
+    "yahḥi'al": "Al lives — Jehiel",
+    "ye'i'el": "Al sweeps away — Jeiel",
+    "nethane'l": "Al has given — Nethanel",
+    "ziḵri": "my remembrance — Zichri",
+    "maḥli": "sick, weak — Mahli",
+    "ḥetsron": "enclosed — Hezron",
+    "zeraḥ": "rising, dawn — Zerah",
+    "ḥanan": "gracious — Hanan",
+    "aliyaḇ": "my Al is father — Eliab",
+    "aḇinaḏaḇ": "my father is generous — Abinadab",
+    "aḇimeleḵ": "my father is king — Abimelech",
+    "reḵaḇ": "rider — Rechab",
+    "yonaḏaḇ": "Yah is generous — Jonadab",
+    "ya'ir": "he enlightens — Jair",
+    "aḇeḏ": "servant — Ebed",
+    "zeḇaḥ": "sacrifice — Zebah",
+    "ḥamor": "donkey — Hamor",
+    "pharaoh": "the great house — the title of Mitsrayim's kings",
+    "neḇuḵaḏnetstsar": "Nebo, protect the son — Nebuchadnezzar, king of Baḇel",
+    "neḇuḵaḏretstsar": "Nebo, protect the son — Nebuchadnezzar, king of Baḇel",
+    "neḇuzaraḏan": "Nebo has given seed — Nebuzaradan",
+    "sanḥeriḇ": "Sin has multiplied brothers — Sennacherib, king of Ashshur",
+    "raḇshaqeh": "chief cupbearer — Rabshakeh, an Ashshurite title",
+    "haḏaḏ": "Hadad, a name of the Aramean storm god",
+    "haḏaḏezer": "Haḏaḏ is help — Hadadezer",
+    "neḡo": "Necho, king of Mitsrayim",
+    // The Messianic writings
+    "kepha": "rock, stone — Peter (Cephas)",
+    "yahuchanon": "Yah has been gracious — John",
+    "mattithyahu": "gift of Yah — Matthew",
+    "barnaḇah": "son of encouragement — Barnabas",
+    "t'oma": "twin — Thomas",
+    "zaḇdai": "my gift — Zebedee",
+    "maḡdala": "tower — Magdala",
+    "miryam": "bitterness, beloved — Miriam, Mary",
+    // Places
+    "yerushalayim": "foundation of peace, possession of peace — Jerusalem",
+    "tsiyon": "a fortress, a signpost — Zion",
+    "mitsrayim": "the two narrow places — Egypt",
+    "mitsrite": "of Mitsrayim — Egyptian",
+    "mitsrites": "the people of Mitsrayim — Egyptians",
+    "kena'an": "lowland — Canaan",
+    "kena'anite": "of Kena'an — Canaanite",
+    "kena'anites": "the people of Kena'an — Canaanites",
+    "yarden": "the descender, flowing down — the Jordan",
+    "miḏyan": "strife — Midian",
+    "sinai": "Sinai, the mountain where the Torah was given",
+    "ḥoreḇ": "dry, desolate — Horeb, the mountain of Aluahim",
+    "baḇal": "confusion; to the Baḇylonians 'gate of the gods' — Babel, Babylon",
+    "baḇel": "confusion — Babel, Babylon",
+    "baḇylon": "Babylon (Baḇel)",
+    "ashshur": "a step, level — Assyria",
+    "mo'aḇ": "from the father — Moab",
+    "mo'aḇites": "the people of Mo'aḇ — Moabites",
+    "ammon": "of the people — Ammon",
+    "gil'aḏ": "heap of witness — Gilead",
+    "shomeron": "watch-mountain — Samaria",
+    "yahriḥo": "fragrant; city of the moon — Jericho",
+    "ḥeḇron": "joining, alliance — Hebron",
+    "leḇanon": "white (with snow) — Lebanon",
+    "sheḵem": "shoulder — Shechem",
+    "seḏom": "burning — Sodom",
+    "beyth": "house (of), as in Beyth Leḥem, house of bread",
+    "leḥem": "bread, as in Beyth Leḥem — Bethlehem",
+    "giḇ'ah": "hill — Gibeah",
+    "giḇ'on": "hill town — Gibeon",
+    "geḇa": "hill — Geba",
+    "se'ir": "hairy, rugged — Seir",
+    "ḥeshbon": "reckoning — Heshbon",
+    "ḥamath": "fortress — Hamath",
+    "tsiḏon": "fishing — Sidon",
+    "tsiḏonians": "the people of Tsiḏon — Sidonians",
+    "be'ersheḇa": "well of the oath, well of seven — Beersheba",
+    "qaḏesh": "set apart — Kadesh",
+    "qeḏesh": "set apart — Kedesh",
+    "eylam": "eternity, hidden — Elam",
+    "yaḇesh": "dry — Jabesh",
+    "laḵish": "Lachish, a fortress city of Yahuḏah",
+    "ḥatsor": "enclosure — Hazor",
+    "ashdoḏ": "stronghold — Ashdod",
+    "eḏen": "delight, pleasure — Eden",
+    "nineweh": "Nineveh, the great city of Ashshur",
+    "ye'arim": "forests, as in Qiryath Ye'arim — Kirjath Jearim",
+    "qe'ilah": "fortress — Keilah",
+    "liḇnah": "whiteness — Libnah",
+    "aro'er": "ruins, juniper — Aroer",
+    "ḥermon": "devoted, set apart — Hermon",
+    "tsiqlaḡ": "Ziklag, the town given to Dawiḏ",
+    "pe'or": "opening — Peor",
+    "neḇo": "height — Nebo",
+    "deḇir": "inner shrine, oracle — Debir",
+    "ḥoron": "hollow — Horon",
+    "maḥanayim": "two camps — Mahanaim",
+    "ya'zer": "he helps — Jazer",
+    "meḡiddo": "place of troops — Megiddo",
+    "eḡlon": "calf-like — Eglon",
+    "qeḏar": "dark — Kedar",
+    "reḥoḇ": "broad place — Rehob",
+    "taḇor": "height — Tabor",
+    "tsoḇah": "station — Zobah",
+    "qiḏron": "dark, murky — the Kidron valley",
+    "araḇah": "desert plain — the Arabah",
+    "aḇal": "meadow, mourning — Abel (a place)",
+    "ḥatsar": "village, enclosure — Hazar",
+    "yahzre'al": "Al sows — Jezreel",
+    "sheḇa": "seven, an oath — Sheba",
+    "ḥeth": "terror — Heth, father of the Ḥittites",
+    "ḥittite": "of Ḥeth — Hittite",
+    "ḥittites": "the people of Ḥeth — Hittites",
+    "ḥiwwite": "villager — Hivite",
+    "ḥiwwites": "villagers — Hivites",
+    "yahḇusite": "of Yeḇus, the city before Yerushalayim — Jebusite",
+    "yahḇusites": "the people of Yeḇus — Jebusites",
+    "amaleq": "dweller in the valley — Amalek",
+    "amaleqites": "the people of Amaleq — Amalekites",
+    "goḡ": "Gog, the prince from the north",
+    // Other words that read as names
+    "heḇrew": "one from beyond (the river) — Hebrew (Iḇri)",
+    "heḇrews": "those from beyond (the river) — Hebrews (Iḇrim)",
+    "keruḇ": "a cherub, a winged guardian of the throne",
+    "keruḇim": "cherubim, winged guardians of the throne",
+    "ephah": "a dry measure, about 22 litres",
+    "ba'al": "lord, master — the Kena'anite storm god Baal",
+    "ba'als": "the Ba'als, the Kena'anite lords",
+    "asherah": "Asherah, the Kena'anite mother goddess, and her wooden pole",
+    "asherim": "the wooden poles set up for Asherah",
+    "daḡon": "Dagon, the god of the Philistines",
+    "beliya'al": "worthless, without profit — Belial, the wicked one",
+    "mastema": "hostility — the chief of the evil spirits in Jubilees",
+    // and the next most frequent
+    "en": "spring, fountain, as in En Geḏi",
+    "malkitseḏeq": "king of righteousness — Melchizedek",
+    "bathsheḇa": "daughter of the oath — Bathsheba",
+    "oḇaḏyah": "servant of Yah — Obadiah",
+    "haggai": "festive — Haggai",
+    "ḥaggai": "festive — Haggai",
+    "mamre": "strength, fatness — Mamre",
+    "meriḇah": "strife, quarrel — Meribah",
+    "arpaḵshaḏ": "Arphaxad, son of Shem",
+    "repha'im": "the Rephaim, a race of giants",
+    "belshatstsar": "Bel, protect the king — Belshazzar",
+    "re'uw'el": "friend of Al — Reuel (Jethro)",
+    "teman": "south, the right hand — Teman",
+    "be'or": "torch, burning — Beor",
+    "ḥeḇer": "companion, associate — Heber",
+    "ḥepher": "a well, a pit — Hepher",
+    "tselophḥaḏ": "Zelophehad, whose daughters inherited",
+    "beri'ah": "in evil, a gift — Beriah",
+    "ḥanun": "favoured — Hanun",
+    "ḥanani": "gracious — Hanani",
+    "ḥarim": "set apart, devoted — Harim",
+    "aḇiram": "my father is exalted — Abiram",
+    "peqaḥ": "open-eyed — Pekah",
+    "diḇon": "wasting — Dibon",
+    "aḏar": "glorious, ample — Adar, the twelfth month",
+    "naḥash": "serpent — Nahash",
+    "bethu'al": "dweller in Al's house — Bethuel",
+    "ali'al": "my Al is Al — Eliel",
+    "yahroḥam": "he finds compassion — Jeroham",
+    "ammihuḏ": "my people is majesty — Ammihud",
+    "immer": "lamb — Immer",
+    "ba'anah": "in affliction — Baanah",
+    "yozaḇaḏ": "Yah has endowed — Jozabad",
+    "kerethites": "Cherethites, of Dawiḏ's guard",
+    "tso'ar": "small — Zoar",
+    "deḏan": "low country — Dedan",
+    "er": "watchful — Er",
+    "yo'aḥ": "Yah is brother — Joah",
+    "barnea": "as in Qaḏesh Barnea, desert of wandering — Kadesh Barnea",
+    // The Watchers and the giants (Ḥanoḵ, the Book of Giants)
+    "semjaza": "my name has seen — Shemihaza, leader of the Watchers who came down",
+    "azazal": "Azazel, a leader of the fallen Watchers, who taught weapons and adornment",
+    "raphaal": "Al heals — Raphael, a mal'ak of the presence",
+    "urial": "Al is my light — Uriel, a mal'ak of the presence",
+    "miḵa'al": "who is like Al? — Michael, a mal'ak of the presence",
+    "gaḇri'al": "Al is my strength — Gabriel, a mal'ak of the presence",
+    "baraqal": "lightning of Al — Baraqel, a Watcher, father of Mahway",
+    "ohya": "Ohya, a giant, son of Semjaza",
+    "hahya": "Hahya, a giant, son of Semjaza and brother of Ohya",
+    "ahya": "Ahya (Hahya), a giant, son of Semjaza",
+    "mahway": "Mahway, a giant, son of Baraqal, sent to Ḥanoḵ",
+    "gilgamesh": "Gilgamesh, a giant; the name of the hero of the Baḇylonian epic",
+    "gibborim": "mighty ones, giants",
+    // The books (as titled in the canon)
+    "bereshith": "in the beginning — Genesis",
+    "shamoth": "names — Exodus",
+    "wayyiqra": "and He called — Leviticus",
+    "bamidbar": "in the wilderness — Numbers",
+    "dabarim": "words — Deuteronomy",
+    "shophetim": "judges, rulers — Judges",
+    "malakim": "kings — Kings",
+    "tehillim": "praises — Psalms",
+    "mishle": "proverbs, parables — Proverbs",
+    "qoheleth": "the gatherer, the preacher — Ecclesiastes",
+    "ekah": "how! (the opening cry) — Lamentations",
+    "ibrim": "Hebrews",
+    "yahshar": "the upright — Jasher",
+    "yashar": "the upright — Jasher"
+  };
+
   // Bracketed English the text carries after a Hebrew word: "qadash (Set
   // Apart)". These are the house-style glosses; any other bracket is part
   // of the reading and is left as it is.
@@ -165,6 +566,27 @@
 
   function keyOf(word) {
     return word.toLowerCase().replace(/’/g, "'");
+  }
+  // A name's key: one spelling for all the canon's (‛ ’ ʼ -> ', ĕ -> e).
+  function nameKey(word) {
+    return word.toLowerCase().replace(/[’‛ʼ]/g, "'").replace(/ĕ/g, "e");
+  }
+  // What a key means: the vocabulary, then the names, then a people named
+  // for a name ("Kena'anites", "Yasharalites") through the name itself.
+  function meaningOf(key) {
+    if (!key) return "";
+    var k = nameKey(key);
+    var m = GLOSSARY[key] || GLOSSARY[key.replace(/['’]/g, "")] || NAMES[k];
+    if (m) return m;
+    var ends = [["ites", ""], ["ite", ""], ["ians", ""], ["im", ""], ["ites", "i"], ["ite", "i"]];
+    for (var i = 0; i < ends.length; i++) {
+      var e = ends[i][0];
+      if (k.length > e.length + 2 && k.slice(-e.length) === e) {
+        var base = k.slice(0, -e.length) + ends[i][1];
+        if (NAMES[base]) return "of " + base.charAt(0).toUpperCase() + base.slice(1) + " — " + NAMES[base];
+      }
+    }
+    return "";
   }
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
@@ -187,8 +609,20 @@
     return pieces.join("");
   }
   function terms(s) {
-    return s.replace(TERM_RE, function (m, pre, word) {
+    s = s.replace(TERM_RE, function (m, pre, word) {
       return pre + '<span class="term" data-k="' + esc(keyOf(word)) + '">' + word + "</span>";
+    });
+    // Then the names, in the text the vocabulary pass left alone.
+    var parts = s.split(/(<span class="term"[^>]*>[^<]*<\/span>)/);
+    for (var i = 0; i < parts.length; i += 2) parts[i] = names(parts[i]);
+    return parts.join("");
+  }
+  var NAME_RE = new RegExp("(^|[^" + L + "'’‛])([" + L + "][" + L + "'’‛ʼ]*?)((?:['’]s)?)(?![" + L + "'’‛ʼ])", "g");
+  function names(s) {
+    return s.replace(NAME_RE, function (m, pre, word, poss) {
+      var c = word.charAt(0);
+      if (c === c.toLowerCase() || !meaningOf(word)) return m;
+      return pre + '<span class="term name" data-k="' + esc(nameKey(word)) + '">' + word + "</span>" + poss;
     });
   }
 
@@ -200,7 +634,12 @@
       var p = parts[i];
       if (!p) continue;
       if (p.charAt(0) === "<") {
-        if (/^<span class="(?:dn|hwhy|fn|rs|cj|term|gloss)"/.test(p)) depth++;
+        // A name set as the Name's (Aluahim, Mashiach, Yasharal …) can be
+        // tapped for its meaning too; the "(YAHUAH) HWHY" pair has its own.
+        if (p === '<span class="dn">' && depth === 0 && meaningOf(nameKey(parts[i + 1] || ""))) {
+          parts[i] = p = '<span class="dn term" data-k="' + esc(nameKey(parts[i + 1])) + '">';
+        }
+        if (/^<span class="(?:dn|hwhy|fn|rs|cj|term|gloss|nm|nm-x)(?: [^"]*)?"/.test(p)) depth++;
         else if (p === "</span>" && depth > 0) depth--;
         continue;
       }
@@ -337,7 +776,7 @@
   function showPop(target) {
     var key = target.getAttribute("data-k");
     var shown = key === "hwhy" ? "YAHUAH · HWHY" : target.textContent;
-    var meaning = GLOSSARY[key] || GLOSSARY[key.replace(/['’]/g, "")] || "";
+    var meaning = meaningOf(key);
     var gloss = target.getAttribute("data-g");
     var word = key === "hwhy" ? "Yahuah" : target.textContent;
     var spoken = global.BesorahPron && BesorahPron.wordFor

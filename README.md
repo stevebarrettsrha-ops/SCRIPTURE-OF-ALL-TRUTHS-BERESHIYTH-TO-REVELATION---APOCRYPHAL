@@ -74,7 +74,7 @@ Total: **106 books**.
 | **Light, Sepia or Dark** — or follow the device (the default) | the round **Aa** button, bottom-right of every page |
 | **Text size**, 85%–170% | Aa → Text size; everything scales, menus included |
 | **Compact reading** — "(YAHUAH) HWHY" reads as Yahuah, and the bracketed English after a Hebrew word ("qadash (Set Apart)") steps aside | Aa → Compact reading |
-| **Glossary** — tap any dotted Hebrew word (shamayim, berith, naḇi, chesed …) for its meaning and how to say it, with a 🔊 button | any verse |
+| **Glossary** — tap any dotted Hebrew word (shamayim, berith, naḇi, chesed …) for its meaning and how to say it, with a 🔊 button. Names are tappable too — Ya'aqoḇ ("heel-holder — Jacob"), Mosheh, Yerushalayim, the Name's titles (Aluahim, Mashiach, Yasharal) and the Watchers and giants of Ḥanoḵ — underlined more lightly; the canon's spellings of one name (Ya'aqoḇ / Ya‛aqoḇ, Yoseph / Yosĕph) share one entry, and a people (Kena'anites, Yasharalites) is explained through its name. About 330 names, covering 85% of the Hebrew names in the text | any verse, every book |
 | **Search the text** — words in order, ignoring case, diacritics and apostrophe style; a reference ("Bereshith 1:1", "John 3:16") offers a Go-to link | 🔍 in the chapter bar, Search on the home page, `search.html` |
 | **Go to** — pick a book and chapter from the chapter bar | tap the book name ▾ |
 | **Turn chapters** with ← / → or a horizontal swipe on the text | chapter page |
