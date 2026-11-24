@@ -437,15 +437,20 @@ seven more places where a man's "lord" had become the Name.
 `SCRIPTURE/The-Book-of-Giants-Lumpkin.pdf` (Joseph B. Lumpkin), taking the
 Book of Giants alone: the volume's copy of 1 Enoch, which the canon already
 has, and Lumpkin's commentary are left out. It sits in the Ethiopic &
-Eastern Apocrypha straight after Ḥanoḵ (Ethiopic). Chapter 1 is the Aramaic
-version — the Qumran fragments (1Q23, 2Q26, 4Q530–532, 6Q8) in Lumpkin's
-order, with the one passage he adds from the Manichean version; chapter 2 is
-the Manichean (Middle Persian) fragments of the giants' story. The pages
-printed after those, "On the Five Elements" and "On the Hearers", are
-Manichaean teaching rather than the giants' story and are not included. Each
-fragment is a verse, with its scroll number as the verse's note; the
-brackets become "…" and `<span class="rs">` restorations as for the Dead Sea
-Scrolls psalms below. `sweep_text.py --fix` then applies the house words.
+Eastern Apocrypha straight after Ḥanoḵ (Ethiopic), and reads like the books
+around it — six chapters of numbered verses, transliterated by the canon's
+rules, with the names in the forms Ḥanoḵ already prints (Semjaza, Azazal,
+Baraqal, Raphaal). Chapters 1–4 are the Aramaic version, the Qumran
+fragments (1Q23, 2Q26, 4Q530–532, 6Q8) in Lumpkin's order with the one
+passage he adds from the Manichean version (3:13–18): the Watchers' sin and
+the giants' violence; the giants' fear and dreams; Mahway's flight to Ḥanoḵ;
+Ḥanoḵ's tablet to Semjaza. Chapters 5–6 are the Manichean (Middle Persian)
+fragments of the giants' story; the "Five Elements" and "Hearers" pages that
+follow them are Manichaean teaching, not the story, and are not included.
+Each fragment is split at its sentences (and, where long, at its gaps) into
+verses of the canon's length. The brackets become "…" and
+`<span class="rs">` restorations as for the Dead Sea Scrolls psalms below,
+and `sweep_text.py --fix` then applies the house words.
 
 ### Tehillim 151–174 (Dead Sea Scrolls)
 

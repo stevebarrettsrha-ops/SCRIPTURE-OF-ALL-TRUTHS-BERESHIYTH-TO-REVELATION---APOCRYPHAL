@@ -216,36 +216,121 @@ def manichean():
     return [(tidy(p), None) for p in paras]
 
 
-def build(verses, rules):
+# Names the transliteration tables do not carry, in the forms the canon's
+# own Ḥanoḵ already prints them (Semjaza, Azazal, Baraqal, Raphaal).
+NAMES = [
+    (r"\bShemihaza\b", "Semjaza"), (r"\bAzaiel\b", "Azazel"),
+    (r"\bBaraq[’']el\b", "Baraqel"), (r"\bBarakel\b", "Baraqel"),
+]
+
+# Chapters, as runs of fragments: the Aramaic version (Qumran) in four,
+# the Manichean in two. Each chapter's title is not printed (no book in the
+# canon has chapter titles); it is here for whoever reads the script.
+ARAMAIC_CHAPTERS = [
+    (0, 5),     # 1  the Watchers' sin; the giants born and their violence
+    (5, 13),    # 2  the tablet in the water; the giants' fear and dreams
+    (13, 17),   # 3  the dreams of the two brothers; Mahway flies to Ḥanoḵ
+    (17, 19),   # 4  Ḥanoḵ's tablet to Semjaza; the judgment
+]
+MANICHEAN_CHAPTERS = [
+    (0, 3),     # 5  the giants' strife, the signs, Ḥanoḵ's message
+    (3, 6),     # 6  the giants' boasts and proverbs; the rule of the Watchers
+]
+MIN_WORDS, MAX_WORDS = 7, 45
+
+
+def split_points(t):
+    """Offsets in t where a verse may begin: after a sentence's end, or at a
+    gap ("…"), never inside a span."""
+    sentence, gap, depth, i = [], [], 0, 0
+    while i < len(t):
+        if t.startswith("<span", i):
+            depth += 1
+        elif t.startswith("</span>", i):
+            depth -= 1
+        elif depth == 0 and t[i] == " " and i > 0:
+            before, after = t[:i].rstrip(), t[i + 1:]
+            if re.search(r"[.?!][\"”’']?$", before) and not before.endswith("…") \
+                    and re.match(r"[A-Z\"“…<]", after):
+                sentence.append(i)
+            elif before.endswith("…") and not after.startswith("<span class=\"fn"):
+                gap.append(i)
+        i += 1
+    return sentence, gap
+
+
+def words(t):
+    return len(re.findall(r"[A-Za-zḀ-ỿ']+", re.sub(r"<[^>]+>", " ", t)))
+
+
+def verses_of(t):
+    """One fragment -> verses the length of the canon's: split at sentences,
+    then at gaps where a piece is still long; short pieces join the one
+    before (or after, at the start)."""
+    sentence, gap = split_points(t)
+    pieces, last = [], 0
+    for i in sentence:
+        pieces.append(t[last:i].strip()); last = i
+    pieces.append(t[last:].strip())
     out = []
-    for n, (body, fn) in enumerate(verses, 1):
-        t = brackets(translit(body, rules))
-        if fn:
-            t += note(translit(fn, rules))
-        out.append({"n": n, "t": t})
-    return out
+    for piece in pieces:
+        while words(piece) > MAX_WORDS:
+            _, g = split_points(piece)
+            # the gap nearest the middle that leaves both halves long enough
+            best = None
+            for i in g:
+                a, b = words(piece[:i]), words(piece[i:])
+                if a >= MIN_WORDS * 2 and b >= MIN_WORDS:
+                    if best is None or abs(a - b) < abs(words(piece[:best]) - words(piece[best:])):
+                        best = i
+            if best is None:
+                break
+            out.append(piece[:best].strip()); piece = piece[best:].strip()
+        out.append(piece)
+    merged = []
+    for piece in out:
+        if merged and (words(piece) < MIN_WORDS or words(merged[-1]) < MIN_WORDS):
+            merged[-1] += " " + piece
+        else:
+            merged.append(piece)
+    return [m for m in merged if words(m)]
+
+
+def render(body, rules):
+    for a, b in NAMES:
+        body = re.sub(a, b, body)
+    return brackets(translit(body, rules))
+
+
+def page_of(fragment, first, last):
+    from pypdf import PdfReader
+    r = PdfReader(str(PDF))
+    key = re.sub(r"\W+", "", fragment)[:40]
+    for p in range(first, last + 1):
+        page = re.sub(r"\W+", "", tidy(r.pages[p - 1].extract_text() or ""))
+        if key[:25] in page:
+            return p
+    return first
 
 
 def main():
     rules = T.build_replacements(T.DIVINE, T.PEOPLE_PATRIARCHS, T.PEOPLE_LEADERS,
                                  T.PEOPLE_J_NAMES, T.PEOPLE_TRIBES, T.PLACES, T.TERMS)
-    aram = aramaic()
-    mani = manichean()
-    assert len(aram) >= 18, len(aram)
-    assert len(mani) == 6, [m[0][:40] for m in mani]
-    chapters = {
-        "1": {"intro": "The Aramaic version, from the caves of Qumran, in the "
-              "order the editor reconstructs it. … marks words lost from the "
-              "scroll; words set lighter and in italic were restored by the "
-              "editors. Each fragment's scroll number is noted beneath it.",
-              "verses": build(aram, rules)},
-        "2": {"intro": "The Manichean version, from fragments in Middle Persian. "
-              "The pages are so small and broken that their first order cannot "
-              "be recovered, so some of the order is uncertain.",
-              "verses": build(mani, rules)},
-    }
-    chapters["1"].update(pdf=PDF_NAME, page=ARAMAIC_PAGES[0])
-    chapters["2"].update(pdf=PDF_NAME, page=MANICHEAN_PAGES[0])
+    aram = [b for b, _ in aramaic()]
+    mani = [b for b, _ in manichean()]
+    assert len(aram) == 19, len(aram)
+    assert len(mani) == 6, [m[:40] for m in mani]
+    chapters, refs = {}, {}
+    plan = [(aram, a, b, ARAMAIC_PAGES) for a, b in ARAMAIC_CHAPTERS] + \
+           [(mani, a, b, MANICHEAN_PAGES) for a, b in MANICHEAN_CHAPTERS]
+    for n, (frags, a, b, pages_) in enumerate(plan, 1):
+        vs = []
+        for frag in frags[a:b]:
+            vs += verses_of(render(frag, rules))
+        page = page_of(frags[a], *pages_)
+        chapters[str(n)] = {"verses": [{"n": i, "t": t} for i, t in enumerate(vs, 1)],
+                            "pdf": PDF_NAME, "page": page}
+        refs[str(n)] = {"pdf": PDF_NAME, "page": page}
     data = {"id": BOOK_ID, "hebrew": "GIBBORIM", "english": "Book of Giants",
             "section": "Apocrypha", "chapter_count": len(chapters),
             "chapters": chapters}
@@ -253,15 +338,14 @@ def main():
 
     idx = json.loads(INDEX.read_text(encoding="utf-8"))
     entry = {k: data[k] for k in ("id", "hebrew", "english", "section", "chapter_count")}
-    entry["chapters"] = {"1": {"pdf": PDF_NAME, "page": ARAMAIC_PAGES[0]},
-                         "2": {"pdf": PDF_NAME, "page": MANICHEAN_PAGES[0]}}
+    entry["chapters"] = refs
     books = [b for b in idx["books"] if b["id"] != BOOK_ID]
     at = next(i for i, b in enumerate(books) if b["id"] == AFTER) + 1
     books.insert(at, entry)
     idx["books"] = books
     INDEX.write_text(json.dumps(idx, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"Wrote {OUT.relative_to(ROOT)}: chapter 1 {len(aram)} fragments, "
-          f"chapter 2 {len(mani)} fragments")
+    print(f"Wrote {OUT.relative_to(ROOT)}: {len(chapters)} chapters, "
+          + ", ".join(f"{k}:{len(c['verses'])}" for k, c in chapters.items()) + " verses")
 
 
 if __name__ == "__main__":

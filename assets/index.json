@@ -9732,13 +9732,29 @@
    "hebrew": "GIBBORIM",
    "english": "Book of Giants",
    "section": "Apocrypha",
-   "chapter_count": 2,
+   "chapter_count": 6,
    "chapters": {
     "1": {
      "pdf": "The-Book-of-Giants-Lumpkin.pdf",
      "page": 20
     },
     "2": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 21
+    },
+    "3": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 22
+    },
+    "4": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 23
+    },
+    "5": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 31
+    },
+    "6": {
      "pdf": "The-Book-of-Giants-Lumpkin.pdf",
      "page": 31
     }
