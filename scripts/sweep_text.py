@@ -5,7 +5,7 @@ sweep_text.py
 Sweeps every book in assets/text/ and reports — or repairs — the scars the
 PDF extraction leaves behind, so what reaches the reader is clean.
 
-Checks (all 105 books, every chapter, every verse):
+Checks (all 106 books, every chapter, every verse):
 
   1. inline verse markers   "[19]" / "[19J" printed inside a sentence.
      With --fix these become real verses wherever the numbering allows it

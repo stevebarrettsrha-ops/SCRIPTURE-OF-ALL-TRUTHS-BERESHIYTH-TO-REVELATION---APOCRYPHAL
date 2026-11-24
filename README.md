@@ -58,13 +58,14 @@ scripts/
 - **Apocryphal Books** (4) — Ḥanok (Enoch), Yashar (Jasher), First & Second
   Book of Adam and Eve
 - **Testaments of the Twelve Patriarchs** (12)
-- **Ethiopic & Eastern Apocrypha** (22) — 1–4 Maccabees, Tobit, Judith, Sirach,
-  Wisdom, Baruch, Jubilees, 1 Enoch, 1 Clements, Shepherd of Hermas, …
+- **Ethiopic & Eastern Apocrypha** (23) — 1–4 Maccabees, Tobit, Judith, Sirach,
+  Wisdom, Baruch, Jubilees, 1 Enoch, the Book of Giants, 1 Clements,
+  Shepherd of Hermas, …
 - **Dead Sea Scrolls — Additions** (1) — Tehillim 151–174, the psalms the
   Dead Sea Scrolls carry beyond the 150 (11QPsᵃ and the fragmentary
   scrolls), numbered on from Tehillim as the edition numbers them
 
-Total: **105 books**.
+Total: **106 books**.
 
 ## Reading comforts
 
@@ -429,6 +430,22 @@ lost, the gap is listed in `audit_structure.py`). An agent pass over the
 apocrypha against their PDFs then fixed 72 scan misreads ("5ennacherib",
 "oid age", "1 have"), running heads and title pages run into verses, and
 seven more places where a man's "lord" had become the Name.
+
+### The Book of Giants (Gibborim)
+
+`scripts/add_book_of_giants.py` builds `apoc-giants` from
+`SCRIPTURE/The-Book-of-Giants-Lumpkin.pdf` (Joseph B. Lumpkin), taking the
+Book of Giants alone: the volume's copy of 1 Enoch, which the canon already
+has, and Lumpkin's commentary are left out. It sits in the Ethiopic &
+Eastern Apocrypha straight after Ḥanoḵ (Ethiopic). Chapter 1 is the Aramaic
+version — the Qumran fragments (1Q23, 2Q26, 4Q530–532, 6Q8) in Lumpkin's
+order, with the one passage he adds from the Manichean version; chapter 2 is
+the Manichean (Middle Persian) fragments of the giants' story. The pages
+printed after those, "On the Five Elements" and "On the Hearers", are
+Manichaean teaching rather than the giants' story and are not included. Each
+fragment is a verse, with its scroll number as the verse's note; the
+brackets become "…" and `<span class="rs">` restorations as for the Dead Sea
+Scrolls psalms below. `sweep_text.py --fix` then applies the house words.
 
 ### Tehillim 151–174 (Dead Sea Scrolls)
 

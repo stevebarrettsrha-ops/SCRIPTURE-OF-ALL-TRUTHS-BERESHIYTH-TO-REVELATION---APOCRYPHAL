@@ -61,7 +61,7 @@ CHAPTERS = {
  'adam-eve-1': 79, 'adam-eve-2': 22,
  'apoc-azariah': 1, 'apoc-manasseh': 1, 'apoc-susanna': 1,
  'apoc-bel-dragon': 1, 'apoc-epistle-jeremiah': 1, 'apoc-psalm151': 1,
- 'tehillim-dss': 24,
+ 'tehillim-dss': 24, 'apoc-giants': 2,
 }
 
 # (book, chapter, last verse before the gap, first verse after) — every one

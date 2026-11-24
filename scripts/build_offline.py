@@ -103,11 +103,11 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
 
 <!-- ============ HOME VIEW ============ -->
 <div id="view-home" class="view active">
-  <div class="offline-banner">OFFLINE EDITION — all 105 books bundled in this single file</div>
+  <div class="offline-banner">OFFLINE EDITION — all 106 books bundled in this single file</div>
   <header class="site-header">
     <h1>THE BESORAH</h1>
     <div class="sub">Bereshith &mdash; to &mdash; Ḥazon &mdash; with the Apocrypha</div>
-    <nav><a href="#/books">All 105 Books &rarr;</a><a href="#/search">Search</a></nav>
+    <nav><a href="#/books">All 106 Books &rarr;</a><a href="#/search">Search</a></nav>
   </header>
   <main class="home">
     <section class="card daily-card" id="daily-card"></section>
@@ -143,7 +143,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
   <header class="site-header">
     <h1>THE BESORAH</h1>
     <div class="sub">Search the Scriptures</div>
-    <nav><a href="#/">&larr; Home</a><a href="#/books">All 105 Books</a></nav>
+    <nav><a href="#/">&larr; Home</a><a href="#/books">All 106 Books</a></nav>
   </header>
   <main class="search-main"><div id="search-box"></div></main>
 </div>
@@ -326,7 +326,7 @@ __HOME_JS__
     const h = location.hash || '#/';
     // Forms:
     //   #/                              -> home (Daily Bread & co.)
-    //   #/books                         -> all 105 books
+    //   #/books                         -> all 106 books
     //   #/book/<id>                     -> book chapters
     //   #/book/<id>/<ch>                -> chapter view
     //   #/book/<id>/<ch>/v/<n>          -> chapter view, scrolled to verse n

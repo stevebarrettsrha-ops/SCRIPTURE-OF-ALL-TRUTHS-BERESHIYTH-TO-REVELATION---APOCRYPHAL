@@ -241,7 +241,7 @@
     '<button type="button" data-size="1" aria-label="Larger text">A+</button></div></div>' +
     '<div class="ui-row"><label class="ui-check"><input type="checkbox" data-compact> ' +
     'Compact reading <small>— show YAHUAH without “HWHY”, hide the bracketed English; tap a Hebrew word for its meaning</small></label></div>' +
-    '<div class="ui-row ui-save-row" hidden><button type="button" class="ui-save">⬇ Keep all 105 books on this device</button></div>' +
+    '<div class="ui-row ui-save-row" hidden><button type="button" class="ui-save">⬇ Keep all 106 books on this device</button></div>' +
     '<div class="ui-row ui-links"><a data-ui-search href="#">🔍 Search the scriptures</a>' +
     '<button type="button" class="ui-close">Close</button></div>';
 
@@ -287,8 +287,8 @@
         for (var i = 0; i < 4; i++) pump();
       });
     }).then(function () {
-      button.textContent = "✓ All 105 books are on this device";
-      say2("All 105 books saved for offline reading");
+      button.textContent = "✓ All 106 books are on this device";
+      say2("All 106 books saved for offline reading");
     }, function () { button.disabled = false; button.textContent = "⬇ Try again"; });
   }
 

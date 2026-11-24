@@ -9728,6 +9728,23 @@
    }
   },
   {
+   "id": "apoc-giants",
+   "hebrew": "GIBBORIM",
+   "english": "Book of Giants",
+   "section": "Apocrypha",
+   "chapter_count": 2,
+   "chapters": {
+    "1": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 20
+    },
+    "2": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 31
+    }
+   }
+  },
+  {
    "id": "apoc-jubilees",
    "hebrew": "YOḆELIM",
    "english": "Jubilees",
