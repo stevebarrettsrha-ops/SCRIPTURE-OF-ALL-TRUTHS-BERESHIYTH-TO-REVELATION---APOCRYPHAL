@@ -57,6 +57,18 @@
     return global.BesorahUI ? global.BesorahUI.decorate(html) : html;
   }
 
+  // The reflection under the daily portion is plain prose. It is escaped,
+  // and then the Names are given the same styling they carry in the verses
+  // above it. "Yahusha son of Nun" is the man, and is left as it is.
+  var NAMES = /(Yahusha haMashiach|Ruach HaQadash|Yahuah|Aluahim|Yahusha(?! son of Nun)|Mashiach|Yasharal)(?![A-Za-z])/g;
+  function styleNames(text) {
+    var esc = String(text == null ? "" : text)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+    return esc.replace(NAMES, '<span class="dn">$1</span>');
+  }
+
   function plain(raw) {
     var fixed = global.BesorahWords ? global.BesorahWords.repair(raw) : raw;
     return String(fixed).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
@@ -113,11 +125,10 @@
   // ==================================================================
   //  DAILY BREAD
   // ==================================================================
-  // Today's portion comes from assets/DailyBread.js, which holds every
-  // verse in the canon that stands on its own as encouragement — enough
-  // for years of reading before any one of them comes round again. The
-  // older curated list is kept as a fallback for a page that has not
-  // loaded DailyBread.js.
+  // Today's portion comes from assets/DailyBread.js, which is built from
+  // assets/daily-bread.json: passages chosen by hand, each with a
+  // reflection written for that passage alone. The JSON itself is kept as
+  // a fallback for a page that has not loaded DailyBread.js.
   function todaysPortion(now) {
     var db = global.BesorahDailyBread;
     if (db && db.size) {
@@ -147,7 +158,7 @@
     var range = entry.from === entry.to
       ? String(entry.from) : entry.from + "–" + entry.to;
     body.innerHTML =
-      '<div class="daily-theme">' + entry.theme + "</div>" +
+      '<div class="daily-theme"></div>' +
       '<div class="daily-ref"><span class="heb">' +
         chapterLabel(book, entry.chapter) + ":" + range + "</span>" +
         '<span class="eng">' + book.english + " " + entry.chapter + ":" + range +
@@ -159,7 +170,8 @@
         '<a class="card-more" id="daily-open">Open the whole chapter &rarr;</a>' +
       "</div>";
     root.appendChild(body);
-    body.querySelector(".daily-reflection").textContent = entry.reflection;
+    body.querySelector(".daily-theme").textContent = entry.theme;
+    body.querySelector(".daily-reflection").innerHTML = styleNames(entry.reflection);
     var open = el("daily-open");
     open.href = ctx.chapterUrl(book.id, entry.chapter, entry.from);
 

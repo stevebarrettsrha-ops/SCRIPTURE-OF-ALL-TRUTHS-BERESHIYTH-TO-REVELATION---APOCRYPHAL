@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link href="../assets/fonts/cardo.css" rel="stylesheet">
-<title>THE CALENDAR OF ḤANOK — a year to walk in</title>
+<title>THE CALENDAR OF ḤANOḴ — a year to walk in</title>
 <style>
   :root{ --gold:#d4af37; --gold-dim:#8a6f23; --ink:#f4ead5; --dim:#c9b893;
     --bg:#1a1410; --panel:rgba(37,28,22,.80); --rule:rgba(212,175,55,.28); }
@@ -102,9 +102,9 @@
 <canvas id="stars"></canvas>
 <div class="wrap">
   <header>
-    <div class="t">THE CALENDAR OF ḤANOK</div>
+    <div class="t">THE CALENDAR OF ḤANOḴ</div>
     <div class="s">a year to walk in — three hundred and sixty-four days, two and fifty weeks,<br>
-      reckoned by the courses of the sun as ḤANOK received them, and as YOḆELIM commands them</div>
+      reckoned by the courses of the sun as ḤANOḴ received them, and as YOḆELIM commands them</div>
   </header>
   <div class="nav">
     <a class="btn" href="../index.html">⟵ The Besorah</a>
@@ -133,15 +133,15 @@
   <h2>THE ORDINANCE OF THE RECKONING</h2>
   <div class="law"><div class="q">On that day the night decreases and amounts to nine parts, and the day
     to nine parts, and the night is equal to the day and the year is exactly as to its days three hundred
-    and sixty-four.</div><div class="r">— ḤANOK 72:32, the last day of the twelfth month</div></div>
+    and sixty-four.</div><div class="r">— ḤANOḴ HABASHIY 72:32, the last day of the twelfth month</div></div>
   <div class="law"><div class="q">Command the children of Yasharal that they observe the years according
     to this counting, three hundred and sixty-four days, and these will constitute a complete year, and
-    they will not disturb its time from its days and from its feasts; they will not leave out any day nor
-    disturb any feasts.</div><div class="r">— YOḆELIM 6:32</div></div>
+    they will not disturb its time from its days and from its feasts; for every thing will fall out in them
+    according to their eduth, and they will not leave out any day nor disturb any feasts.</div><div class="r">— YOḆELIM 6:32</div></div>
   <div class="law"><div class="note">
-    <b>How this calendar is reckoned.</b> The sun's sign is watched at Yarushalayim: the day when the
+    <b>How this calendar is reckoned.</b> The sun's sign is watched at Yahrushalayim: the day when the
     night is made equal to the day (about the sixteenth or seventeenth of March by the reckoning of the
-    nations). That equal day is the <b>364th day, the last of the year</b> (ḤANOK 72:32). The new year
+    nations). That equal day is the <b>364th day, the last of the year</b> (ḤANOḴ HABASHIY 72:32). The new year
     then begins on the <b>fourth day of the week</b> that follows it — the day the lights were set in the
     expanse — and because the year is two and fifty whole weeks, every appointed time keeps its own
     weekday forever. Within every year <b>all 364 days are counted; none is left out and none is added</b>
@@ -155,9 +155,9 @@
   </div></div>
 
   <footer>
-    <div class="q">And all the days of the mitsvah will be two and fifty weeks of days, and these will make
+    <div class="q">All the days of the mitsvah will be two and fifty weeks of days, and these will make
       the entire year complete. Thus it is engraved and ordained on the heavenly tablets.</div>
-    <div class="r">— YOḆELIM 6:30–31</div>
+    <div class="r">— YOḆELIM 6:30</div>
   </footer>
 </div>
 
@@ -165,7 +165,7 @@
 'use strict';
 /* ============ the reckoning ============
    New Year = the 4th day of the week following the day of equal night and day
-   at Yarushalayim (31.778 N). All dates handled at UTC day granularity. */
+   at Yahrushalayim (31.778 N). All dates handled at UTC day granularity. */
 const DAY=86400000, LAT=31.778*Math.PI/180;
 function dayLen(y,mo,dd){                       // apparent daylight, hours
   const N=Math.floor((Date.UTC(y,mo-1,dd)-Date.UTC(y,0,1))/DAY)+1;
