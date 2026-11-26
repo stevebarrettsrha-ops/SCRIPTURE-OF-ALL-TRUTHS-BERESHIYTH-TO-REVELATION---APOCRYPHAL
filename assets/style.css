@@ -1077,6 +1077,11 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
 .term { text-decoration: underline dotted; text-decoration-color: var(--gold-dim);
   text-underline-offset: 0.18em; cursor: help; }
 .term:hover { text-decoration-color: var(--gold); }
+/* Names are tappable for their meaning too, underlined more lightly than
+   the vocabulary so a page of names does not read as a page of links. */
+.term.name { text-decoration-color: var(--rule); }
+.dn.term { text-decoration-color: var(--rule); }
+.term.name:hover, .dn.term:hover { text-decoration-color: var(--gold); }
 .nm { cursor: help; }
 /* Compact reading: "(YAHUAH) HWHY" reads as Yahuah, glosses step aside. */
 .compact-reading .nm-x, .compact-reading .nm .hwhy, .compact-reading .gloss { display: none; }
@@ -1178,3 +1183,10 @@ mark.tmark.flash { animation: verseFlash 1.6s ease-out 1; }
 /* A book's unnumbered opening, above verse 1 (Jubilees, 1 Clement). */
 .verses .intro { font-style: italic; color: var(--ink-dim); margin: 0 0 1.2rem;
   padding: 0 0 0.9rem; border-bottom: 1px solid var(--rule); line-height: 1.7; }
+
+/* Words restored where a scroll is damaged (Psalms 151–174, Dead Sea
+   Scrolls): set lighter and in italic, so the reader can tell the scroll's
+   own words from the editor's restoration. */
+.rs, .cj { font-style: italic; color: var(--ink-dim); }
+.rs::before, .rs::after, .cj::before, .cj::after { content: ""; }
+.dss-note { margin: 0.8rem 0 0.3rem; color: var(--ink-dim); font-size: 0.85rem; }

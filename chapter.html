@@ -144,7 +144,7 @@ function renderVerseText(raw) {
   // Un-escape only the whitelisted tags, opening and closing handled
   // separately so a footnote containing a divine name still renders.
   const html = esc
-    .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+    .replace(/&lt;span class="(dn|hwhy|fn|rs|cj)"&gt;/g, '<span class="$1">')
     .replace(/&lt;\/span&gt;/g, '</span>');
   // Names, glosses and Hebrew words get their spans (assets/besorah-ui.js)
   // for the compact reading mode and the tap-to-reveal glossary.
@@ -153,7 +153,7 @@ function renderVerseText(raw) {
 
 function loadChapter(state) {
   const bookId = state.bookId;
-  const chapter = state.chapter;
+  let chapter = state.chapter;
   const loading = document.getElementById('loading');
   loading.textContent = 'Loading chapter…';
   loading.style.display = '';
@@ -168,6 +168,9 @@ function loadChapter(state) {
       // The fetch can resolve after a soft navigation has swapped this
       // page out; a detached loading note means nothing to render into.
       if (!loading.isConnected) return;
+      // A link without ?ch= opens a book at its first chapter (151 for the
+      // Dead Sea Scrolls psalms).
+      if (chapter < (book.first_chapter || 1)) chapter = book.first_chapter;
       const ch = text.chapters[String(chapter)];
       if (!ch) throw new Error('Chapter not found');
 
@@ -186,12 +189,16 @@ function loadChapter(state) {
       document.getElementById('pdf-link').href = `SCRIPTURE/${ch.pdf}#page=${ch.page}`;
 
       // Prev / Next links
-      const prevHref = chapter > 1 ? `chapter.html?id=${book.id}&ch=${chapter - 1}` : '#';
-      const nextHref = chapter < book.chapter_count ? `chapter.html?id=${book.id}&ch=${chapter + 1}` : '#';
-      setLink('prev',  prevHref, chapter <= 1);
-      setLink('prev2', prevHref, chapter <= 1);
-      setLink('next',  nextHref, chapter >= book.chapter_count);
-      setLink('next2', nextHref, chapter >= book.chapter_count);
+      // Chapters run first_chapter … last (151–174 for the Dead Sea Scrolls
+      // psalms; 1 … chapter_count for every other book).
+      const first = book.first_chapter || 1;
+      const last = first + book.chapter_count - 1;
+      const prevHref = chapter > first ? `chapter.html?id=${book.id}&ch=${chapter - 1}` : '#';
+      const nextHref = chapter < last ? `chapter.html?id=${book.id}&ch=${chapter + 1}` : '#';
+      setLink('prev',  prevHref, chapter <= first);
+      setLink('prev2', prevHref, chapter <= first);
+      setLink('next',  nextHref, chapter >= last);
+      setLink('next2', nextHref, chapter >= last);
       document.getElementById('book-toc').href = `book.html?id=${book.id}`;
 
       // Bookmark + last-read tracking (localStorage; nothing leaves the device)

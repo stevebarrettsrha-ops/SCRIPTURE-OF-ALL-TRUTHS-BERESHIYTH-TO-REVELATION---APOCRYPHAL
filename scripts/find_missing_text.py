@@ -146,7 +146,7 @@ def runs_of_misses(pdf_words, covered, min_run):
 
 
 def corpus_shingles():
-    """Every N-gram the reader can actually reach, across all 104 books."""
+    """Every N-gram the reader can actually reach, across all 106 books."""
     known = set()
     for path in sorted(TEXT_DIR.glob("*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))

@@ -81,12 +81,17 @@ fetch('assets/index.json')
       heading.style.textAlign = 'center';
       heading.style.color = 'var(--ink-dim)';
       heading.style.marginTop = '1rem';
-      heading.textContent = `${book.chapter_count} chapters`;
+      // A book numbered on from another (Psalms 151–174) lists its own
+      // numbers: first_chapter … first_chapter + count − 1.
+      const first = book.first_chapter || 1;
+      heading.textContent = first > 1
+        ? `${book.chapter_count} chapters · ${first}–${first + book.chapter_count - 1}`
+        : `${book.chapter_count} chapters`;
       list.appendChild(heading);
 
       const grid = document.createElement('div');
       grid.className = 'chapter-grid';
-      for (let i = 1; i <= book.chapter_count; i++) {
+      for (let i = first; i < first + book.chapter_count; i++) {
         const a = document.createElement('a');
         a.className = 'chapter-link';
         a.href = `chapter.html?id=${encodeURIComponent(book.id)}&ch=${i}`;

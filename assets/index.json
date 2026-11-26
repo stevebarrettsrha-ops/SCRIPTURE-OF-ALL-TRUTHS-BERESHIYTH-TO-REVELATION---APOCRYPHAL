@@ -9728,6 +9728,39 @@
    }
   },
   {
+   "id": "apoc-giants",
+   "hebrew": "GIBBORIM",
+   "english": "Book of Giants",
+   "section": "Apocrypha",
+   "chapter_count": 6,
+   "chapters": {
+    "1": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 20
+    },
+    "2": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 21
+    },
+    "3": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 22
+    },
+    "4": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 23
+    },
+    "5": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 31
+    },
+    "6": {
+     "pdf": "The-Book-of-Giants-Lumpkin.pdf",
+     "page": 31
+    }
+   }
+  },
+  {
    "id": "apoc-jubilees",
    "hebrew": "YOḆELIM",
    "english": "Jubilees",
@@ -10717,6 +10750,136 @@
     "114": {
      "pdf": "ilide.info-the-apocrypha-including-books-from-the-ethiopic-bible-pr_08c2e4c2f2223e5d640766290ee98f9b.pdf",
      "page": 726
+    }
+   }
+  },
+  {
+   "id": "tehillim-dss",
+   "hebrew": "TEHILLIM 151–174",
+   "english": "Psalms 151–174, Dead Sea Scrolls",
+   "section": "Dead Sea Scrolls",
+   "chapter_count": 24,
+   "first_chapter": 151,
+   "chapters": {
+    "151": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 3,
+     "printed": 3
+    },
+    "152": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 3,
+     "printed": 3
+    },
+    "153": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 3,
+     "printed": 3
+    },
+    "154": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 4,
+     "printed": 4
+    },
+    "155": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 4,
+     "printed": 4
+    },
+    "156": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 5,
+     "printed": 5
+    },
+    "157": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 5,
+     "printed": 5
+    },
+    "158": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 6,
+     "printed": 6
+    },
+    "159": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 6,
+     "printed": 6
+    },
+    "160": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 6,
+     "printed": 6
+    },
+    "161": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 7,
+     "printed": 7
+    },
+    "162": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 7,
+     "printed": 7
+    },
+    "163": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 8,
+     "printed": 8
+    },
+    "164": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 8,
+     "printed": 8
+    },
+    "165": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 8,
+     "printed": 8
+    },
+    "166": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 8,
+     "printed": 8
+    },
+    "167": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 9,
+     "printed": 9
+    },
+    "168": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 9,
+     "printed": 9
+    },
+    "169": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 10,
+     "printed": 10
+    },
+    "170": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 10,
+     "printed": 10
+    },
+    "171": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 11,
+     "printed": 11
+    },
+    "172": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 11,
+     "printed": 11
+    },
+    "173": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 12,
+     "printed": 12
+    },
+    "174": {
+     "pdf": "Psalms-151-174-Dead-Sea-Scrolls.pdf",
+     "page": 12,
+     "printed": 12
     }
    }
   }

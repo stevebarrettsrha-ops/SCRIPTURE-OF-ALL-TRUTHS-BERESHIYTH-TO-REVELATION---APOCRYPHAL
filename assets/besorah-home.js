@@ -51,7 +51,7 @@
     // Un-escape only the whitelisted tags, opening and closing handled
     // separately so a footnote containing a divine name still renders.
     var html = esc
-      .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+      .replace(/&lt;span class="(dn|hwhy|fn|rs|cj)"&gt;/g, '<span class="$1">')
       .replace(/&lt;\/span&gt;/g, "</span>");
     // Compact reading and the glossary, as on the chapter page.
     return global.BesorahUI ? global.BesorahUI.decorate(html) : html;
@@ -322,6 +322,10 @@
     ));
 
     var ch = todaysChapter(book, now);
+    // Tehillim carries on past 150 in the Dead Sea Scrolls (151–174), kept
+    // as their own book; the card offers them as the numbering continues.
+    var more2 = bookId === "tehillim" ? bookById("tehillim-dss") : null;
+    var maxN = more2 ? more2.first_chapter + more2.chapter_count - 1 : book.chapter_count;
     var today = document.createElement("a");
     today.className = "quick-today";
     today.href = ctx.chapterUrl(book.id, ch);
@@ -335,14 +339,15 @@
     jump.className = "quick-jump";
     jump.innerHTML =
       '<label>Go to chapter ' +
-        '<input type="number" min="1" max="' + book.chapter_count + '" ' +
+        '<input type="number" min="1" max="' + maxN + '" ' +
         'value="' + ch + '" aria-label="Chapter number"></label>' +
       '<button type="submit" class="tts-btn">Open</button>';
     jump.addEventListener("submit", function (e) {
       e.preventDefault();
       var n = parseInt(jump.querySelector("input").value, 10);
-      if (!n || n < 1 || n > book.chapter_count) return;
-      global.location.href = ctx.chapterUrl(book.id, n);
+      if (!n || n < 1 || n > maxN) return;
+      global.location.href = n > book.chapter_count && more2
+        ? ctx.chapterUrl(more2.id, n) : ctx.chapterUrl(book.id, n);
     });
     root.appendChild(jump);
 
@@ -356,6 +361,22 @@
       grid.appendChild(a);
     }
     root.appendChild(grid);
+    if (more2) {
+      var lab = document.createElement("p");
+      lab.className = "card-note dss-note";
+      lab.textContent = "Psalms " + more2.first_chapter + "–" + maxN + " · Dead Sea Scrolls";
+      root.appendChild(lab);
+      var grid2 = document.createElement("div");
+      grid2.className = "chapter-grid mini";
+      for (var j = more2.first_chapter; j <= maxN; j++) {
+        var b2 = document.createElement("a");
+        b2.className = "chapter-link";
+        b2.href = ctx.chapterUrl(more2.id, j);
+        b2.textContent = j;
+        grid2.appendChild(b2);
+      }
+      root.appendChild(grid2);
+    }
 
     var more = document.createElement("a");
     more.className = "card-more";

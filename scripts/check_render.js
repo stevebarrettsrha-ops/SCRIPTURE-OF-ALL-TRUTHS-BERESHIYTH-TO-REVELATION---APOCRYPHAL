@@ -23,7 +23,7 @@ function renderVerseText(raw) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
   return esc
-    .replace(/&lt;span class="(dn|hwhy|fn)"&gt;/g, '<span class="$1">')
+    .replace(/&lt;span class="(dn|hwhy|fn|rs|cj)"&gt;/g, '<span class="$1">')
     .replace(/&lt;\/span&gt;/g, '</span>');
 }
 
