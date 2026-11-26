@@ -124,8 +124,35 @@
   // ---- voices ---------------------------------------------------------
   function loadVoices() {
     if (!synth) return;
-    voices = synth.getVoices() || [];
+    var got = [];
+    try { got = synth.getVoices() || []; } catch (e) { got = []; }
+    // Never trade a list we have for an empty one: some browsers answer
+    // with nothing while they are busy and with everything a moment later.
+    if (got.length || !voices.length) voices = got;
     populateVoiceSelect();
+  }
+
+  // Browsers hand over the voice list late, and not all of them announce
+  // it: Chrome fires "voiceschanged", Safari and some Android builds only
+  // answer when asked again, and several answer only after the reader has
+  // touched the page. So the list is asked for repeatedly for a while, and
+  // once more at the first touch, instead of once.
+  var voicePolls = 0;
+  var voicesGaveUp = false;
+  function pollVoices() {
+    loadVoices();
+    if (voices.length) { voicesGaveUp = false; return; }
+    if (++voicePolls > 40) {              // ten seconds
+      voicesGaveUp = true;
+      populateVoiceSelect();
+      return;
+    }
+    global.setTimeout(pollVoices, 250);
+  }
+  function wakeVoices() {
+    if (!synth || voices.length) return;
+    voicePolls = 0; voicesGaveUp = false;
+    pollVoices();
   }
 
   // A friendlier label than the raw voice name: "Samantha — English (US)".
@@ -198,7 +225,28 @@
     if (typeof onVoicesRendered === "function") onVoicesRendered(voices.length);
   }
 
+  // ---- telling the reader when nothing can be heard -------------------
+  var NO_SOUND =
+    "This browser did not read aloud. Read-aloud uses the voices built into " +
+    "your device, and this browser offered none. Open the reader in Chrome, " +
+    "Edge or Safari itself (not inside another app), check that the device " +
+    "is not muted, and that a text-to-speech voice is installed in the " +
+    "device settings.";
+  function notice(text) {
+    if (!toolbar || !toolbar.parentNode) return;
+    var n = toolbar.parentNode.querySelector(".tts-note");
+    if (!text) { if (n) n.parentNode.removeChild(n); return; }
+    if (!n) {
+      n = document.createElement("p");
+      n.className = "note tts-note";
+      n.setAttribute("role", "status");
+      toolbar.parentNode.insertBefore(n, toolbar.nextSibling);
+    }
+    n.textContent = text;
+  }
+
   var onVoicesRendered = null;   // set by the reader panel to show a count
+  var onSampleSilent = null;     // set by the reader panel: the sample made no sound
 
   function setRate(value, source) {
     rate = parseFloat(value) || 1.0;
@@ -216,6 +264,7 @@
   function setVoice(uri) {
     autoVoice = false;
     voiceURI = uri || null;
+    plainVoice = false; failures = 0;
     savePref(VOICE_KEY, voiceURI || "");
     for (var i = 0; i < voiceSelects.length; i++) {
       voiceSelects[i].value = voiceURI || "";
@@ -313,7 +362,12 @@
   }
 
   // ---- playback engine ------------------------------------------------
-  function nextGen() { gen++; if (synth) synth.cancel(); }
+  function nextGen() {
+    gen++;
+    if (speakTimer) { global.clearTimeout(speakTimer); speakTimer = null; }
+    if (watchdog) { global.clearTimeout(watchdog); watchdog = null; }
+    if (synth) { try { synth.cancel(); } catch (e) {} }
+  }
 
   function clearHighlight() {
     for (var i = 0; i < segments.length; i++) {
@@ -333,6 +387,48 @@
     }
   }
 
+  // Chrome drops an utterance queued in the same breath as cancel(), and
+  // stays silent for ever after if it was left paused. So speech is always
+  // handed over a moment after the cancel, and resumed first.
+  var speakTimer = null;
+  var watchdog = null;
+  var plainVoice = false;      // the chosen voice failed: use the default
+  var failures = 0;            // utterances in a row that made no sound
+
+  function clearTimers() {
+    if (speakTimer) { global.clearTimeout(speakTimer); speakTimer = null; }
+    if (watchdog) { global.clearTimeout(watchdog); watchdog = null; }
+  }
+
+  function hand(u, myGen, onSilent) {
+    clearTimers();
+    speakTimer = global.setTimeout(function () {
+      speakTimer = null;
+      if (myGen !== gen) return;
+      var started = false;
+      var prevStart = u.onstart;
+      u.onstart = function (e) {
+        started = true; failures = 0; notice("");
+        if (prevStart) prevStart.call(u, e);
+      };
+      try { synth.resume(); } catch (e1) {}
+      try { synth.speak(u); } catch (e2) { onSilent("threw"); return; }
+      // No start and nothing in progress after a few seconds: the engine
+      // swallowed it.
+      watchdog = global.setTimeout(function () {
+        watchdog = null;
+        if (myGen !== gen || started) return;
+        if (synth.speaking && !synth.pending) return;   // speaking, no event
+        onSilent("silent");
+      }, 4000);
+    }, 80);
+  }
+
+  function giveUp() {
+    finish();
+    notice(NO_SOUND);
+  }
+
   function speakCurrent() {
     if (!synth) return;
     if (segIdx >= segments.length) { finish(); return; }
@@ -347,29 +443,46 @@
     var myGen = gen;
     var u = new global.SpeechSynthesisUtterance(seg.chunks[chunkIdx]);
     u.rate = rate;
-    var v = currentVoice();
-    if (v) { u.voice = v; u.lang = v.lang; }
-    u.onend = function () {
-      if (myGen !== gen) return;         // superseded by cancel/restart
+    var v = plainVoice ? null : currentVoice();
+    if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = "en-US"; }
+
+    function advance() {
       chunkIdx++;
       if (chunkIdx >= seg.chunks.length) { segIdx++; chunkIdx = 0; }
       if (segIdx >= segments.length) { finish(); return; }
       speakCurrent();
+    }
+    // An utterance that made no sound: try once more on the device's own
+    // default voice (a saved voice may have been removed), then stop and
+    // say so rather than racing silently to the end of the chapter.
+    function silent() {
+      if (myGen !== gen) return;
+      clearTimers();
+      failures++;
+      if (!plainVoice && v) { plainVoice = true; nextGen(); speakCurrent(); return; }
+      if (failures >= 2) { giveUp(); return; }
+      nextGen(); speakCurrent();
+    }
+
+    u.onend = function () {
+      if (myGen !== gen) return;         // superseded by cancel/restart
+      clearTimers();
+      advance();
     };
     u.onerror = function (e) {
       if (myGen !== gen) return;
       // "interrupted"/"canceled" are expected when we cancel deliberately.
       if (e && (e.error === "interrupted" || e.error === "canceled")) return;
-      chunkIdx++;
-      if (chunkIdx >= seg.chunks.length) { segIdx++; chunkIdx = 0; }
-      if (segIdx >= segments.length) { finish(); return; }
-      speakCurrent();
+      silent();
     };
-    synth.speak(u);
+    hand(u, myGen, silent);
   }
 
   function playFrom(i) {
     if (!segments.length) return;
+    wakeVoices();
+    failures = 0;
+    notice("");
     nextGen();
     segIdx = Math.max(0, Math.min(i, segments.length - 1));
     chunkIdx = 0;
@@ -449,11 +562,16 @@
     if (!synth) return;
     stop();
     nextGen();
+    wakeVoices();
     var u = new global.SpeechSynthesisUtterance(speakable(text || SAMPLE));
     u.rate = rate;
     var v = currentVoice();
-    if (v) { u.voice = v; u.lang = v.lang; }
-    synth.speak(u);
+    if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = "en-US"; }
+    var myGen = gen;
+    hand(u, myGen, function () {
+      if (myGen !== gen) return;
+      if (typeof onSampleSilent === "function") onSampleSilent();
+    });
   }
 
   // Build the home page's reader panel: who reads to you, how fast, and a
@@ -497,8 +615,15 @@
       hint.textContent = n
         ? n + " voice" + (n === 1 ? "" : "s") + " available on this device. " +
           "Your choice is remembered here and used on every chapter."
-        : "Loading the voices installed on this device…";
+        : (voicesGaveUp
+            ? "This browser has not offered any voices. Read-aloud uses the " +
+              "voices built into your device: open the reader in Chrome, Edge " +
+              "or Safari itself (not inside another app), and check that a " +
+              "text-to-speech voice is installed in the device settings. " +
+              "“Hear this reader” will still try the device's default voice."
+            : "Loading the voices installed on this device…");
     };
+    onSampleSilent = function () { hint.textContent = NO_SOUND; };
     onVoicesRendered(voices.length);
 
     container.querySelector(".reader-sample").addEventListener("click", function () {
@@ -516,7 +641,18 @@
     if (ready || !supported) return;
     ready = true;
     loadPrefs();
-    loadVoices();
+    pollVoices();
+    // Several browsers release the voice list only after a touch.
+    var woke = function () {
+      wakeVoices();
+      global.removeEventListener("pointerdown", woke, true);
+      global.removeEventListener("keydown", woke, true);
+    };
+    global.addEventListener("pointerdown", woke, true);
+    global.addEventListener("keydown", woke, true);
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) wakeVoices();
+    });
     if (synth && typeof synth.addEventListener === "function") {
       synth.addEventListener("voiceschanged", loadVoices);
     } else if (synth) {
